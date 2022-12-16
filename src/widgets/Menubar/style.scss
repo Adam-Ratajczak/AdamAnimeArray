@@ -20,11 +20,13 @@ $white: #FFFFFF;
     align-items: center;
     height: 75px;
     background-color: $base-color;
+    background-image: url("headerbg.png");
+    background-repeat: no-repeat;
 }
 
 #aaaHeader{
     color: $white;
-    text-align: center;
+    text-align: right;
     width: 40%;
 }
 
@@ -74,5 +76,5 @@ $white: #FFFFFF;
     background-color: $cool-color;
     border: 2px solid $cool-color;
 
-    background-image: url("../../../public/searchicon.png");
+    background-image: url("searchicon.png");
 }
