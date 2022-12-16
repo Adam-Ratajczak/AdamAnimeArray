@@ -1,0 +1,78 @@
+$base-color: #00273B;
+$bottom-color: #444444;
+$btn-hover-color: #6666AA55;
+$cool-color: #A334E8;
+$white: #FFFFFF;
+
+#Content{
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#HeaderContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: $base-color;
+}
+
+#aaaHeader{
+    color: $white;
+    text-align: center;
+    width: 40%;
+}
+
+#Search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    width: 50%;
+}
+
+#MenuContent{
+    height: 50px;
+    background-color: $bottom-color;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Button{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    float: left;
+}
+
+.Button:hover{
+    color: $cool-color;
+    background-color: $btn-hover-color;
+}
+
+#Searchbar{
+    height: 30px;
+    width: 50%;
+    background-color: $bottom-color;
+    color: whitesmoke;
+    border: 2px solid black;
+    font-size: large;
+}
+
+#Searchbtn{
+    width: 30px;
+    height: 30px;
+    background-color: $cool-color;
+    border: 2px solid $cool-color;
+
+    background-image: url("../../../public/searchicon.png");
+}
