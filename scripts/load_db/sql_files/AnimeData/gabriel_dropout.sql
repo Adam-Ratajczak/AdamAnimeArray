@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (561, CONCAT('Gabriel DropOut'), CONCAT('For centuries, Heaven has required its young angels to live and study among humans in order to become full-fledged angels. This is no different for top-of-her-class Gabriel White Tenma, who believes it is her mission to be a great angel who will bring happiness to mankind. However, Gabriel grows addicted to video games on Earth and eventually becomes a hikikomori. Proclaiming herself a "Fallen Angel," she is apathetic to everything else—much to the annoyance of Vignette April Tsukinose, a demon whom Gabriel befriended in her angelic early days on Earth.<br>
+<br>Vignette', CHAR(39), 's attempts to revert Gabriel back to her previous self are in vain, as Gabriel shoots down any attempt to change her precious lifestyle. As they spend their time on Earth, they meet two eccentric personalities: the angel Raphiel Ainsworth Shiraha, Gabriel', CHAR(39), 's classmate with a penchant for sadism, and the demon Satanichia McDowell Kurumizawa, a clumsy self-proclaimed future ruler of the Underworld.<br><br>Gabriel DropOut follows these four friends', CHAR(39), ' comedic lives as they utterly fail to understand what it truly means to be a demon or an angel.<br>
+<br>[Written by MAL Rewrite]'), 1, '2017-01-09', '2017-03-27', 'Winter 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/82590.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (254, 561, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1396, 561, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1397, 561, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (626, 561, 13);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (571, 561, 28);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (572, 561, 11);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (573, 561, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10363, 561, 1, CONCAT('The Day I Knew I Could Never Go Back'), '2017-01-09', 'https://ebd.cda.pl/800x450/12483309c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10364, 561, 2, CONCAT('The Angel, the Demon, and the Class President'), '2017-01-16', 'https://ebd.cda.pl/800x450/1249212dd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10365, 561, 3, CONCAT('Friends, Work, and the Summer of Bugs'), '2017-01-23', 'https://ebd.cda.pl/800x450/124921528');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10366, 561, 4, CONCAT('Summer Vacation, Ho!'), '2017-01-30', 'https://ebd.cda.pl/800x450/1244204cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10367, 561, 5, CONCAT('The Angel Whose Illusions Were Shattered Like Hell'), '2017-02-06', 'https://ebd.cda.pl/800x450/125401582');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10368, 561, 6, CONCAT('Satania', CHAR(39), 's Counterattack'), '2017-02-13', 'https://ebd.cda.pl/800x450/126425405');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10369, 561, 7, CONCAT('Vigne', CHAR(39), 's Demonic Life'), '2017-02-20', 'https://ebd.cda.pl/800x450/127626233');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10370, 561, 8, CONCAT('Fall School Life'), '2017-02-27', 'https://ebd.cda.pl/800x450/128566596');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10371, 561, 9, CONCAT('Christmas and New Year', CHAR(39), 's Eve Surprise'), '2017-03-06', 'https://ebd.cda.pl/800x450/1296429e6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10372, 561, 10, CONCAT(' The Angels and Demons Return Home'), '2017-03-13', 'https://ebd.cda.pl/800x450/7354891dc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10373, 561, 11, CONCAT('Fun Forever After...'), '2017-03-20', 'https://ebd.cda.pl/800x450/4114351a9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10374, 561, 12, CONCAT('Gabriel DropOut!'), '2017-03-27', 'https://ebd.cda.pl/800x450/41143547c');

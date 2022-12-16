@@ -1,0 +1,13 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (187, CONCAT('Battery'), CONCAT('At only 12 years old, Takumi Harada is already hailed as a prodigious baseball pitcher. But when his family moves to the backwater town of Nitta, Takumi has no choice but to join his new school', CHAR(39), 's unskilled baseball team. This development has little effect on the boy, as he believes it is more interesting if this no-name club becomes a powerhouse due to his presence. However, due to his overwhelming talent, Takumi is in need of a catcher able to keep up with his pitches.<br>
+<br>His worries are soon put to rest after meeting Gou Nagakura. As his fan and fellow student, Gou is eager to prove that he is not a simple braggart, but rather a player skillful enough to catch Takumi', CHAR(39), 's pitches. Amid struggling to form a "battery" with Gou, Takumi comes into conflict with his new teammates due to his irreverent personality but grapples to find the true joy of the sport under his grandfather', CHAR(39), 's guidance.<br>
+<br>[Written by MAL Rewrite]'), 1, '2016-07-15', '2016-09-23', 'Summer 2016', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/79158.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (133, 187, '"Itsuka no Jibun (いつかの自分)"', ' by anderlust', 'js-theme-songs', 'https://open.spotify.com/track/3b56HAdHcGaZHx5ZkZwKIS')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (433, 187, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (434, 187, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (435, 187, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (210, 187, 31);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2631, 187, 1, CONCAT('The Day They Met'), '2016-07-15', 'https://ebd.cda.pl/620x395/5800199ae');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2632, 187, 2, CONCAT('The Bank of a Pond'), '2016-07-22', 'https://ebd.cda.pl/620x395/580023595');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2633, 187, 3, CONCAT('Dispute'), '2016-07-29', 'https://ebd.cda.pl/620x395/580020242');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2634, 187, 4, CONCAT('Standing on the Ground'), '2016-08-05', 'https://ebd.cda.pl/620x395/5800214d4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2635, 187, 5, CONCAT('Incident in the Locked Room'), '2016-08-12', 'https://ebd.cda.pl/620x395/5800205e9');

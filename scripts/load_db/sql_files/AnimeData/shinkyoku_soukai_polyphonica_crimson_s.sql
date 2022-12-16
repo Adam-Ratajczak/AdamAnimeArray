@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1717, CONCAT('Shinkyoku Soukai Polyphonica Crimson S'), CONCAT('The new series will again focus on Corticarte, but it will tie into Ichiro Sakaki and Noboru Kannatsuki', CHAR(39), 's Shinkyoku Sōkai Polyphonica crimson S light novel adaptation, which are set during the Academy years of the storyline. <br>
+<br>(Source: ANN)'), 1, '2009-04-05', '2009-06-21', 'Spring 2009', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1550/95575.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1214, 1717, '"phosphorus"', ' by eufonius', 'js-theme-songs', 'https://open.spotify.com/track/06UJYXyxiGv6TjIOsR2no1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4265, 1717, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4266, 1717, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4267, 1717, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1855, 1717, 30);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1914, 1717, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1915, 1717, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30949, 1717, 1, CONCAT('Encounter ~ Misterioso'), NULL, 'https://drive.google.com/file/d/0BwosCNI6cTo3RFNfRXgyTHJXaGM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30950, 1717, 2, CONCAT('Maze ~ Piangendo'), NULL, 'https://fileone.tv/v/5843qr0r179ro');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30951, 1717, 3, CONCAT('Oath ~ Loco'), NULL, 'https://embed.tune.pk/play/6247173');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30952, 1717, 4, CONCAT('Lurking ~ Rubato'), NULL, 'https://drive.google.com/file/d/0BwosCNI6cTo3M1JjOWNsOEM1NFk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30953, 1717, 5, CONCAT('Strategy ~ Feroce'), NULL, 'https://drive.google.com/file/d/0BwosCNI6cTo3Vy1KQ29OR2k1OXM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30954, 1717, 6, CONCAT('Twin Souls ~ Affettuoso'), NULL, 'https://drive.google.com/file/d/0BwosCNI6cTo3bzRWR3pxYURJcUU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30955, 1717, 7, CONCAT('Initiation ~ Amabile'), NULL, 'https://drive.google.com/file/d/0BwosCNI6cTo3MDk5d1FRTUV3VUU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30956, 1717, 8, CONCAT('Seism ~ Furioso'), NULL, 'https://drive.google.com/file/d/0BwosCNI6cTo3ZHpGNGNOOXBQNVk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30957, 1717, 9, CONCAT('Ambition ~ Marcato'), NULL, 'https://myvi.ru/player/embed/html/opsCXC9SkeXdLzg8YNnwtbbDspKlQeMK9xNS4hUqgUdzfdwmSrPZgN4oQZ-8FcAZi0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30958, 1717, 10, CONCAT('Assault ~ Risoluto'), NULL, 'https://drive.google.com/file/d/0BwosCNI6cTo3cGQxdTZCQk5Mbkk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30959, 1717, 11, CONCAT('Dissolution ~ Tempestoso'), NULL, 'https://myvi.ru/player/embed/html/owJi_gw_CqlT8ghBqbKRPMeLeiA_3HDwUznx-J1ghiZgzSniDbONU3bcuS5N5qyHE0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30960, 1717, 12, CONCAT('Hope ~ Vivace'), NULL, 'https://drive.google.com/file/d/0BwosCNI6cTo3d005dHROUmZiU2M/preview');

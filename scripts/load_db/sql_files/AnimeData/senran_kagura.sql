@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1670, CONCAT('Senran Kagura'), CONCAT('At the renowned Hanzo Academy, a select group of students trains in secret to become ninjas of an elite clan known as the Shinobi Masters. Following her grandfather', CHAR(39), 's footsteps, the hopeful Asuka undergoes this intensive training alongside her distinctive group of friends: Ikaruga, Katsuragi, Yagyuu, and Hibari. Relentlessly studying the secret ninja arts, they hone their skills in the hopes of one day becoming full-fledged female ninjas. <br><br>Senran Kagura follows the girls as they fight valiantly against a mysterious new evil terrorizing Hanzo Academy. Dressed in tight clothing, they must prove their worth and protect the academy from its adversaries before it is too late!<br>
+<br>[Written by MAL Rewrite]'), 1, '2013-01-06', '2013-03-24', 'Winter 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/45640.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1178, 1670, '"Break your world"', ' by Sayaka Sasaki', 'js-theme-songs', 'https://open.spotify.com/track/6Z4eHKT7P3Zfm2ZLG6I9n7')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4131, 1670, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4132, 1670, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4133, 1670, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1800, 1670, 175);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30313, 1670, 1, CONCAT('Ninja That Stand Atop Skyscrapers'), '2013-01-06', 'https://ebd.cda.pl/620x395/62610989b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30314, 1670, 2, CONCAT('The Legendary Shinobi Appears'), '2013-01-13', 'https://ebd.cda.pl/620x395/626112816');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30315, 1670, 3, CONCAT('Moonlight Intruder'), '2013-01-20', 'https://ebd.cda.pl/620x395/6261137b6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30316, 1670, 4, CONCAT('Seaside Training - Shinobi Island'), '2013-01-27', 'https://ebd.cda.pl/620x395/626110498');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30317, 1670, 5, CONCAT('Sneak Attack! Hanzo Academy'), '2013-02-03', 'https://ebd.cda.pl/620x395/62611259b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30318, 1670, 6, CONCAT('Interlocking Shinobi Kekkai Barriers'), '2013-02-10', 'https://ebd.cda.pl/620x395/626108988');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30319, 1670, 7, CONCAT('Hiking Terror'), '2013-02-17', 'https://ebd.cda.pl/620x395/6261107ff');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30320, 1670, 8, CONCAT('A Shinobi Classroom Retrospective'), '2013-02-24', 'https://ebd.cda.pl/620x395/6261119a4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30321, 1670, 9, CONCAT('Hebijo Clandestine Girls', CHAR(39), ' Academy'), '2013-03-03', 'https://ebd.cda.pl/620x395/626113416');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30322, 1670, 10, CONCAT('Yin and Yang'), '2013-03-10', 'https://ebd.cda.pl/620x395/6261122c3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30323, 1670, 11, CONCAT('Castle Showdown'), '2013-03-17', 'https://ebd.cda.pl/620x395/62611169d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30324, 1670, 12, CONCAT('Super-Secret Ninja Art'), '2013-03-24', 'https://ebd.cda.pl/620x395/626111314');

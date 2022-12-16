@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (539, CONCAT('Full Metal Panic! The Second Raid'), CONCAT('After overcoming various tumultuous events, mercenary sergeant Sousuke Sagara of Mithril and "Whispered" school girl Kaname Chidori return to their normal high school lives. Sousuke continues his efforts to assimilate with the civilian population and manage his mission at the same time, while Kaname attempts to support his endeavors (even though his antics often drive her up a wall). <br>
+<br>However, as their lives calm, new problems begin to appear. The appearance of an independent terrorist organization  known as Amalgam and internal conflicts within Mithril threaten to wreak unity into a series of failures and betrayals. And new, powerful Arm Slave models only worsen the situation when the world', CHAR(39), 's peace is at stake. <br>
+<br>As Kaname and Sousuke face their own inner battles amidst life-threatening fights, will they be able to make the right choices and change their future?<br>
+<br>[Written by MAL Rewrite]'), 1, '2005-07-14', '2005-10-20', 'Summer 2005', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/75261.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (603, 539, 14);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (546, 539, 3);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (547, 539, 25);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9908, 539, 1, CONCAT('The End of Day by Day'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162112951&hash=f128b874c567f8b9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9909, 539, 2, CONCAT('The Scene Below the Water'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162113100&hash=3b1391cea429f8e5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9910, 539, 3, CONCAT('Labyrinth and the Dragon'), NULL, 'https://video.sibnet.ru/shell.php?videoid=526518');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9911, 539, 4, CONCAT('Daylight'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162117019&hash=301160c64d917738');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9912, 539, 5, CONCAT('Beautiful Sicily'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162117387&hash=5e47988da71a84f3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9913, 539, 6, CONCAT('Edge of Heaven'), NULL, 'https://dood.so/e/89a3tujv57cliity6bbpgdhgsm99s83x');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9914, 539, 7, CONCAT('Left Behind'), NULL, 'https://embed.tune.pk/play/6778549');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9915, 539, 8, CONCAT('Jungle Groove'), NULL, 'https://embed.tune.pk/play/6778550');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9916, 539, 9, CONCAT('Her Problem'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162302091&hash=b6601bb98d2387a7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9917, 539, 10, CONCAT('Hong Kong in Two'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162352214&hash=05d542d4f9f2d653');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9918, 539, 11, CONCAT('His Problem'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162352217&hash=1cfd2f0240df535d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9919, 539, 12, CONCAT('Burning Hong Kong'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162352793&hash=38ad2df145bb7c86&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9920, 539, 13, CONCAT('The Continuing Day by Day'), NULL, 'https://vk.com/video_ext.php?oid=165785337&id=162352796&hash=a8b20dfd4aff1292');

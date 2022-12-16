@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1233, CONCAT('Mawaru Penguindrum'), CONCAT('For the Takakura family, destiny is an ever-spinning wheel, pointing passionately in their direction with equal tides of joy and sorrow before ticking on to the next wishmaker. With their parents gone, twin brothers Kanba and Shouma live alone with their beloved little sister Himari, whose poor health cannot decline any further.<br>
+<br>On the day Himari is given permission to temporarily leave the hospital, her brothers take her out to the aquarium to celebrate, where the family', CHAR(39), 's supposed fate is brought forth with her sudden collapse. However, when Himari is inexplicably revived by a penguin hat from the aquarium', CHAR(39), 's souvenir shop, the hand of fate continues to tick faithfully forward.<br>
+<br>With her miraculous recovery, though, comes a cost: there is a new entity within her body, whose condition for keeping her fate at bay sends the boys on a wild goose chase for the mysterious "Penguin Drum." In their search, the boys will have to follow the threads of fate leading from their own shocking past and into the lives of other wishmakers vying for the Penguin Drum, all hoping to land upon their chosen destiny.<br>
+<br>[Written by MAL Rewrite]'), 1, '2011-07-08', '2011-12-23', 'Summer 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/30238.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (863, 1233, '"Shounen yo Ware ni Kaere (少年よ我に帰れ)"', ' by Etsuko Yakushimaru Metro Orchestra', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3014, 1233, 20);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3015, 1233, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3016, 1233, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3017, 1233, 4);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1333, 1233, 35);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21132, 1233, 1, CONCAT('The Egg of Easter Rolls'), '2011-07-08', 'https://drive.google.com/file/d/0B_CeHsXvKFXXd2pVdDNWQ1YxeUE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21133, 1233, 2, CONCAT('Risky Survival Strategy'), '2011-07-15', 'https://drive.google.com/file/d/1Yej8UfZ_KXMmUkRgc-vsiHJNk1WkJxKO/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21134, 1233, 3, CONCAT('Then Devour Me Courageously'), '2011-07-22', 'https://ebd.cda.pl/620x395/58294225b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21135, 1233, 4, CONCAT('Descension of a Princess'), '2011-07-29', 'https://ebd.cda.pl/620x395/5829416e9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21136, 1233, 5, CONCAT('That', CHAR(39), 's Why I Do That'), '2011-08-05', 'https://ebd.cda.pl/620x395/58294253a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21137, 1233, 6, CONCAT('You & I are Connected by M'), '2011-08-19', 'https://drive.google.com/file/d/19a-M2U6y4pIOt9YuslXsObmtna-ISXc2/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21138, 1233, 7, CONCAT('Tamahomare Girl'), '2011-08-26', 'https://ebd.cda.pl/800x450/5829431f2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21139, 1233, 8, CONCAT('Even if Your Love is a Lie...'), '2011-09-02', 'https://ebd.cda.pl/620x395/582943703');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21140, 1233, 9, CONCAT('The World of Ice'), '2011-09-09', 'https://ebd.cda.pl/620x395/582949137');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21141, 1233, 10, CONCAT('Because I Love Him'), '2011-09-16', 'https://drive.google.com/file/d/0B_CeHsXvKFXXM0dJYjlKWHdOdzA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21142, 1233, 11, CONCAT('You Have Finally Realized It'), '2011-09-23', 'https://ebd.cda.pl/620x395/582944367');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21143, 1233, 12, CONCAT('The Wheel That Spins Us Round'), '2011-09-30', 'https://ebd.cda.pl/620x395/58294465a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21144, 1233, 13, CONCAT('Our Crime & Punishment'), '2011-10-07', 'https://ebd.cda.pl/620x395/5829494e1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21145, 1233, 14, CONCAT('Princess of Lies'), '2011-10-14', 'https://drive.google.com/file/d/1taVqZYREUvFiNvrTXHMKZTC_L2eN_cVw/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21146, 1233, 15, CONCAT('Saving the World'), '2011-10-21', 'https://ebd.cda.pl/620x395/5829449c1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21147, 1233, 16, CONCAT('Immortal Man'), '2011-10-28', 'https://ebd.cda.pl/620x395/58294613d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21148, 1233, 17, CONCAT('Those Who Cannot Be Forgiven'), '2011-11-04', 'https://ebd.cda.pl/620x395/582945808');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21149, 1233, 18, CONCAT('So, I Want You to Be Here for My Sake'), '2011-11-11', 'https://ebd.cda.pl/620x395/58294672e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21150, 1233, 19, CONCAT('My Fated Person'), '2011-11-18', 'https://ebd.cda.pl/620x395/5829464a2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21151, 1233, 20, CONCAT('Thank You for Choosing Me'), '2011-11-25', 'https://ebd.cda.pl/620x395/5829473cc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21152, 1233, 21, CONCAT('The Door of Fate We Choose'), '2011-12-02', 'https://ebd.cda.pl/620x395/5829470a6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21153, 1233, 22, CONCAT('Beautiful Casket'), '2011-12-09', 'https://ebd.cda.pl/620x395/582947934');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21154, 1233, 23, CONCAT('Fate', CHAR(39), 's Destination'), '2011-12-16', 'https://ebd.cda.pl/620x395/582947646');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21155, 1233, 24, CONCAT('I Love You'), '2011-12-23', 'https://ebd.cda.pl/620x395/582948282');

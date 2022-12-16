@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2103, CONCAT('Yuyushiki'), CONCAT('The story follows the school life of the three girls, Yuzuko, Yukari, and Yui, who join their high school', CHAR(39), 's Data Processing Club. The odd friendship between the three make for wacky humor in even the most mundane of events.'), 1, '2013-04-10', '2013-06-26', 'Spring 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/48747.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1504, 2103, '"Se-no! (せーのっ!)"', ' by Jouhoushori-bu (Rumi Ookubo, Risa Taneda, Minami Tsuda)', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2276, 2103, 75);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2327, 2103, 28);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2328, 2103, 38);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2329, 2103, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36744, 2103, 1, CONCAT('Now We', CHAR(39), 're High School Students'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1099916');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36745, 2103, 2, CONCAT('The Data Processing Club'), NULL, 'https://myvi.ru/player/embed/html/o3xtvV2gwSNJ26OR7EE5WC1ho7LcWzfchJ2EdR6lPACI1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36746, 2103, 3, CONCAT('It', CHAR(39), 's Summer Vacation!'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1127550');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36747, 2103, 4, CONCAT('Chairman'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1132191');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36748, 2103, 5, CONCAT('Yui and Yukari and Yuzuko'), NULL, 'https://vk.com/video_ext.php?oid=191293674&id=165043027&hash=3a73f7d658333377&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36749, 2103, 6, CONCAT('First Snow Hotpot'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1148973');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36750, 2103, 7, CONCAT('3rd Semester!'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1165167');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36751, 2103, 8, CONCAT('We', CHAR(39), 're In Our Second Year Now'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1164778');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36752, 2103, 9, CONCAT('Mishmash'), NULL, 'https://myvi.ru/player/embed/html/oEnh9yOvovurvlf2niSiPn6TB5GO54J9hjRoK8gF7saaykaAp1R69cYfQsTEhNMSb0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36753, 2103, 10, CONCAT('Because It', CHAR(39), 's Fun'), NULL, 'https://myvi.ru/player/embed/html/oO4YmRjT1jHcsPDQ9o32-Bbu-TQYxe5IkllkUAMA90pY1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36754, 2103, 11, CONCAT('Times Like These'), NULL, 'https://myvi.ru/player/embed/html/o3TYsRzCp264WaugQt5CDVQsQNkOwr66iko-gJoa2Ry6m7lb2U6Cg4Np37PKXfyba2aONargjYtA1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36755, 2103, 12, CONCAT('Uneventful Good Life'), NULL, 'https://myvi.ru/player/embed/html/oqwHRWnjp1jHWjSeFCCgksLKP1DEKdUcBsGEPRokerHcnjXEAtAG8LBYeSq2_keRf0');

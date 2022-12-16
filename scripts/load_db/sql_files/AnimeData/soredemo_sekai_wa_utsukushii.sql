@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1789, CONCAT('Soredemo Sekai wa Utsukushii'), CONCAT('In the Sun Kingdom, sunshine is part of its citizens', CHAR(39), ' everyday lives, and rain is something that they have never even heard of. However, in a faraway land called the Rain Dukedom, the weather is reversed, and everybody has the power to create rain with their voices.<br>
+<br>Livius Ifrikia has conquered the entire world and expanded the Sun Kingdom', CHAR(39), 's influence in the three short years since he was crowned king. Upon learning about the powers to create rain, Livius decides to marry Nike Remercier, one of the princesses of the Rain Dukedom. However, those outside the Sun Kingdom have spread a rumor that Livius is a cruel, ruthless, and tyrannical ruler, and as word reaches the princess, she begins to prepare herself for the worst. But when she finally meets her fiancé, Nike discovers that he is an entirely different person from what she originally expected.<br>
+<br>[Written by MAL Rewrite]'), 1, '2014-04-06', '2014-06-29', 'Spring 2014', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/59259.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1268, 1789, '"BEAUTIFUL WORLD"', ' by Joanna Koike (小池ジョアンナ)', 'js-theme-songs', 'https://open.spotify.com/track/1wK9moZNBETqd4y9Y6Aqp2')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (749, 1789, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4440, 1789, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4441, 1789, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4442, 1789, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1933, 1789, 42);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32169, 1789, 1, CONCAT('The Sun Kingdom'), '2014-04-06', 'https://drive.google.com/file/d/0B3g2KqMctI9qdjdLS2RWVFluRnc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32170, 1789, 2, CONCAT('The Rain Princess'), '2014-04-13', 'https://drive.google.com/file/d/1xyEgkhDV-51qDJcb_Gpijtrg66efgIh0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32171, 1789, 3, CONCAT('Chancellor', CHAR(39), 's Declaration'), '2014-04-20', 'https://drive.google.com/file/d/1lz-X9S3nkWA6eosdwh63XymeBozNVbbG/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32172, 1789, 4, CONCAT('Ring of Tales (1)'), '2014-04-27', 'https://drive.google.com/file/d/0Bx0HQ6Ndm4f5cldRS3VwTXAxVFk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32173, 1789, 5, CONCAT('Ring of Tales (2)'), '2014-05-04', 'https://ebd.cda.pl/620x395/492521589');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32174, 1789, 6, CONCAT('Call My Name'), '2014-05-11', 'https://drive.google.com/file/d/0BzvxohbkF3bvR185NzUxb21JRzA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32175, 1789, 7, CONCAT('Wild Waltz'), '2014-05-25', 'https://ebd.cda.pl/620x395/867232214');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32176, 1789, 8, CONCAT('Shelter From the Rain'), '2014-06-01', 'https://drive.google.com/file/d/0BzvxohbkF3bvUmVjM3BzZFVYeW8/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32177, 1789, 9, CONCAT('The Principality of Rain'), '2014-06-08', 'https://ebd.cda.pl/800x450/3718378ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32178, 1789, 10, CONCAT('A Righteous Country'), '2014-06-15', 'https://ebd.cda.pl/800x450/46855168e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32179, 1789, 11, CONCAT('A Passing Wind'), '2014-06-22', 'https://ebd.cda.pl/800x450/371840879');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32180, 1789, 12, CONCAT('Homecoming'), '2014-06-29', 'https://ebd.cda.pl/800x450/3718429f5');

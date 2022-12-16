@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (394, CONCAT('Date A Live III'), CONCAT('Shidou Itsuka carries on with his quest for Ratatoskr in finding Spirits and trying to seal their powers, all while maintaining his relationships with the ones he had already sealed. Moreover, as new Spirits appear, he must undergo more complicated trials—all to put a stop to further disasters as he discovers more about the Spirits', CHAR(39), ' origin.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2019-01-11', '2019-03-29', 'Winter 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1055/100468.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (284, 394, '"Last Promise"', ' by Erii Yamazaki', 'js-theme-songs', 'https://open.spotify.com/track/3n0z4EYGSVg05caYFoTSAH');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (925, 394, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (926, 394, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (927, 394, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (441, 394, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (419, 394, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (420, 394, 3);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (421, 394, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6769, 394, 1, CONCAT('The Seventh Spirit'), '2019-01-11', 'https://ebd.cda.pl/620x368/29695474e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6770, 394, 2, CONCAT('Can You Find Me?'), '2019-01-18', 'https://ebd.cda.pl/620x368/300710192');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6771, 394, 3, CONCAT('You', CHAR(39), 're Natsumi'), '2019-01-25', 'https://ebd.cda.pl/620x368/3032781ec');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6772, 394, 4, CONCAT('Transformation'), '2019-02-01', 'https://ebd.cda.pl/620x368/305723706');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6773, 394, 5, CONCAT('Despair Comes Crashing Down'), '2019-02-08', 'https://ebd.cda.pl/620x368/3177860ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6774, 394, 6, CONCAT('Crossroads'), '2019-02-15', 'https://ebd.cda.pl/620x368/3125211b8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6775, 394, 7, CONCAT('The Power Given'), '2019-02-22', 'https://ebd.cda.pl/620x368/315236056');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6776, 394, 8, CONCAT('Demon King of Descending Darkness'), '2019-03-01', 'https://ebd.cda.pl/620x368/3179081ed');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6777, 394, 9, CONCAT('Tengu City, Five Years Ago'), '2019-03-08', 'https://ebd.cda.pl/620x368/320554441');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6778, 394, 10, CONCAT('Another World, Another Girl'), '2019-03-15', 'https://ebd.cda.pl/620x368/32334228a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6779, 394, 11, CONCAT('Angel of the Starry Night'), '2019-03-22', 'https://ebd.cda.pl/620x368/325498000');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6780, 394, 12, CONCAT('Make Shido Itsuka Swoon'), '2019-03-29', 'https://ebd.cda.pl/620x368/3307528cc');

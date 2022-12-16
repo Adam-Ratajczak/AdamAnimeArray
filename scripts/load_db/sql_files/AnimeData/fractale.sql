@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (521, CONCAT('Fractale'), CONCAT('The story takes place on an island, where a "Fractale System" is beginning to collapse. One day, Clain finds an injured girl called Phryne under a cliff. She disappears leaving a pendant. Clain sets out for a journey with the girl-shaped avatar Nessa to look for Phryne and discovers the secret of the Fractale System.'), 1, '2011-01-14', '2011-04-01', 'Winter 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/28197.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (377, 521, '"Harinezumi (ハリネズミ)"', ' by Azuma Hitomi', 'js-theme-songs', 'https://open.spotify.com/track/60liQJyk7qEeVINnGlV4fv')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1290, 521, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1291, 521, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1292, 521, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (583, 521, 6);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9599, 521, 1, CONCAT('Encounter'), '2011-01-14', 'https://drive.google.com/file/d/0B85PwG_7jyJrYjVsa2tfcXQyX2c/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9600, 521, 2, CONCAT('Nessa'), '2011-01-21', 'https://drive.google.com/file/d/0B85PwG_7jyJrQTNYV3ZydmRxdTA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9601, 521, 3, CONCAT('The Village of Granites'), '2011-01-28', 'https://drive.google.com/file/d/0B85PwG_7jyJrOEVFcEdQcFNYSmM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9602, 521, 4, CONCAT('Departure'), '2011-02-04', 'https://drive.google.com/file/d/0B85PwG_7jyJrVzI2U3hrc3M4bjA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9603, 521, 5, CONCAT('Journey'), '2011-02-18', 'https://drive.google.com/file/d/0B85PwG_7jyJrNVFNMVpCTUpucUE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9604, 521, 6, CONCAT('The Farthest Town'), '2011-02-25', 'https://drive.google.com/file/d/0B85PwG_7jyJrTVYzb2dMMnltTms/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9605, 521, 7, CONCAT('Veneer Town'), '2011-03-04', 'https://drive.google.com/file/d/0B85PwG_7jyJrcFk5V0kyN1JlZmM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9606, 521, 8, CONCAT('Secret of the Underground'), '2011-03-11', 'https://drive.google.com/file/d/0B85PwG_7jyJrTVVmaUNFZ0dVREk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9607, 521, 9, CONCAT('No Way Out'), '2011-03-18', 'https://drive.google.com/file/d/0B85PwG_7jyJrajF6TUNIUmw4Vzg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9608, 521, 10, CONCAT('To the Temple'), '2011-03-25', 'https://drive.google.com/file/d/0B85PwG_7jyJrSTJRdS1RRHhPTGs/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9609, 521, 11, CONCAT('Paradise'), '2011-04-01', 'https://drive.google.com/file/d/0B_bGTvpBw_8CSmVTSEZxQzVfNzg/preview');

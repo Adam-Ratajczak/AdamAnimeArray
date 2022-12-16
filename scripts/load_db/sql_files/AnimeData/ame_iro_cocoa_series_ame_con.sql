@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (82, CONCAT('Ame-iro Cocoa Series: Ame-con!!'), CONCAT('The series follows Nozomu Tokura as he tries to get more sales to the cafe he recently opened with the new helpers he met.'), 1, '2017-10-04', '2017-12-20', 'Fall 2017', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1165/111716.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (49, 82, '"Aratanaru Makuake no Tame no Makuake ni yoru Kyoushikyoku ~Kimi ga Ireba Oretachi mo Egao Mugendai~ (新たなる幕開けのための幕開けによる狂詩曲～キミがいればオレたちも笑顔∞（無限大）～)"', ' by Fudanjuku', 'js-theme-songs', 'https://open.spotify.com/track/7odvjNhC6TEJ8nW2ossXPb')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (188, 82, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (189, 82, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (190, 82, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (94, 82, 49);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1230, 82, 1, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-pa46zgrbrv4q.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1231, 82, 2, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-ku3ndfhsg6fc.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1232, 82, 3, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-p8aqrcs9ynx2.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1233, 82, 4, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-ft33gzntbom7.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1234, 82, 5, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-5egy18jawy6m.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1235, 82, 6, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-ky7n0cdyq0rn.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1236, 82, 7, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-k0m6sop1ocag.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1237, 82, 8, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-xbj5bws06691.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1238, 82, 9, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-99xhydyjsfag.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1239, 82, 10, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-mht0zozzi3b0.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1240, 82, 11, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-4r6p8dmanxd2.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1241, 82, 12, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-reyftj723j2m.html');

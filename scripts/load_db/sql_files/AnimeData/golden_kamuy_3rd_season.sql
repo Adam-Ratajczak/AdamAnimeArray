@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (635, CONCAT('Golden Kamuy 3rd Season'), CONCAT('Third season of Golden Kamuy. Will Asirpa and Sugimoto ever be reunited? A new battle for survival begins in the frozen land of Karafuto! After the battle at the prison, Sugimoto and Asirpa were separated. Kiroranke and Ogata take Asirpa north to Karafuto, along with Shiraishi, the "Escape King," to follow a clue about her father. With Noppera-bo, the man who stole the Ainu gold, dead, only his daughter Asirpa can solve the mystery. Kiroranke', CHAR(39), 's goal is to take her to meet his former comrades, Far-East Russian partisans. Meanwhile, Sugimoto teams up with Lt. Tsurumi and the rest of the 7th. He and Tanigaki volunteer to go ahead to search for her. They head to Karafuto, along with Tsukishima and Koito. What awaits them in the frozen lands of the North? A new battle for survival!<br>
+<br>(Source: Crunchyroll)'), 1, '2020-10-05', '2020-12-21', 'Fall 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1763/108108.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (454, 635, '"Grey"', ' by FOMARE', 'js-theme-songs', 'https://open.spotify.com/track/4Ch9TQoFvN7YMb6soOKX71')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (287, 635, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1572, 635, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1573, 635, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (707, 635, 155);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (673, 635, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (674, 635, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (675, 635, 25);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11552, 635, 1, CONCAT('To Karafuto'), '2020-10-05', 'https://ebd.cda.pl/620x368/590447071');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11553, 635, 2, CONCAT('Stenka'), '2020-10-12', 'https://ebd.cda.pl/620x368/5946791c0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11554, 635, 3, CONCAT('Igogusa'), '2020-10-19', 'https://ebd.cda.pl/620x368/59847624c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11555, 635, 4, CONCAT('The Immortal Sugimoto Harakiri Show'), '2020-10-26', 'https://ebd.cda.pl/620x368/602030302');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11556, 635, 5, CONCAT('The Border'), '2020-11-02', 'https://ebd.cda.pl/620x368/6054479b6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11557, 635, 6, CONCAT('Bad Sign'), '2020-11-09', 'https://ebd.cda.pl/620x368/609319155');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11558, 635, 7, CONCAT('Meko Oyasi'), '2020-11-16', 'https://ebd.cda.pl/620x368/614190238');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11559, 635, 8, CONCAT('Manslayer'), '2020-11-23', 'https://ebd.cda.pl/620x368/618756808');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11560, 635, 9, CONCAT('Revolutionary'), '2020-11-30', 'https://ebd.cda.pl/620x368/623327076');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11561, 635, 10, CONCAT('Catching Up to the Wolf'), '2020-12-07', 'https://ebd.cda.pl/620x368/628145318');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11562, 635, 11, CONCAT('Sin and Impurity'), '2020-12-14', 'https://ebd.cda.pl/620x368/632213645');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11563, 635, 12, CONCAT('To Live'), '2020-12-21', 'https://ebd.cda.pl/620x368/63547101a');

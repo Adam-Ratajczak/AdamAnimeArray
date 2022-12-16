@@ -1,0 +1,15 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1407, CONCAT('One Punch Man 2nd Season Specials'), CONCAT('Short anime specials included in the One Punch Man 2nd Season BD & DVD.'), 5, '2019-10-25', '2020-03-27', '', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1618/103829.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (991, 1407, '"Chizu ga Nakutemo Modoru kara (地図が無くても戻るから)"', ' by Makoto Furukawa', 'js-theme-songs', 'https://open.spotify.com/track/68ywGAs951Fe4rrmqfMdH7');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (609, 1407, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3491, 1407, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3492, 1407, 12);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1515, 1407, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1544, 1407, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1545, 1407, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1546, 1407, 29);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25540, 1407, 1, CONCAT('Saitama and Those With Reasonable Abilities'), '2019-10-25', 'https://ebd.cda.pl/620x368/5494712bf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25541, 1407, 2, CONCAT('Old Dudes and Fishing'), '2019-11-26', 'https://ebd.cda.pl/620x368/5494721f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25542, 1407, 3, CONCAT('Genos and Memory Loss'), '2019-12-25', 'https://ebd.cda.pl/620x368/549471573');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25543, 1407, 4, CONCAT('Games and Rivals'), '2020-01-28', 'https://dood.so/e/x3o96ruloppj');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25544, 1407, 5, CONCAT('Puri Puri Prisoner and the Escaped Prisoners'), '2020-02-27', 'https://gounlimited.to/embed-gq822zkrhdwe.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25545, 1407, 6, CONCAT('The Zombieman Murder Case 2: A Chalet Amid the Blizzard, and the Ones Bothered by the Cold'), '2020-03-27', 'https://ebd.cda.pl/620x368/7110964ac');

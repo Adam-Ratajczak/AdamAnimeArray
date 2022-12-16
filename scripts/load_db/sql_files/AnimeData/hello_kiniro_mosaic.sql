@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (733, CONCAT('Hello!! Kiniro Mosaic'), CONCAT('Although learning different languages continues to be an interest for Shinobu and her friends, the new school year brings unexpected difficulties. Not only is there always something new and different to distract them from their studies, but Alice and Yoko also are having trouble adjusting to being in a different class from Shinobu and Aya.<br>
+<br>Meanwhile, Karen isn', CHAR(39), 't getting along at all with her new homeroom teacher, and it doesn', CHAR(39), 't help that the teacher is having trouble figuring out how to make herself seem friendlier to her students as well. Craziness may ensue, but sometimes, all it takes is the right mutual experience to bring everyone together.<br>
+<br>While some of those experiences may not be as well-thought-out as others (like when Alice and Aya act like juvenile delinquents to seem more grown up), 1, CHAR(39), 's new adventures are certain to warm everyone', CHAR(39), 's heart as the fun and friendships keep growing in HELLO!! KINMOZA!<br>
+<br>(Source: Sentai Filmworks)'), 5, '2015-04-06', '2015-06-22', 'Spring 2015', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1107/117611.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (528, 733, '"Yume-iro Parade! (夢色パレード！)"', ' by Rhodanthe*', 'js-theme-songs', 'https://open.spotify.com/track/262NQKLCiqHZgklrDd7z8e')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (338, 733, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (807, 733, 16);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (772, 733, 28);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (773, 733, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13273, 733, 1, CONCAT('Spring is Here'), '2015-04-06', 'https://ebd.cda.pl/800x450/5639621c1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13274, 733, 2, CONCAT('Present For You'), '2015-04-13', 'https://video.sibnet.ru/shell.php?videoid=1767052');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13275, 733, 3, CONCAT('You', CHAR(39), 're So Bright'), '2015-04-20', 'https://video.sibnet.ru/shell.php?videoid=1773345');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13276, 733, 4, CONCAT('Rain or Shine'), '2015-04-27', 'https://video.sibnet.ru/shell.php?videoid=1777403');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13277, 733, 5, CONCAT('Come Play with Your Big Sister'), '2015-05-04', 'https://video.sibnet.ru/shell.php?videoid=1784612');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13278, 733, 6, CONCAT('The Girl on My Mind'), '2015-05-11', 'https://video.sibnet.ru/shell.php?videoid=1784613');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13279, 733, 7, CONCAT('My Dear Hero'), '2015-05-18', 'https://video.sibnet.ru/shell.php?videoid=1786041');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13280, 733, 8, CONCAT('Almost Summer Vacation'), '2015-05-25', 'https://video.sibnet.ru/shell.php?videoid=1790124');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13281, 733, 9, CONCAT('A Special Day'), '2015-06-01', 'https://video.sibnet.ru/shell.php?videoid=1794898');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13282, 733, 10, CONCAT('Seaside Promise'), '2015-06-08', 'https://ebd.cda.pl/800x450/368472487');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13283, 733, 11, CONCAT('A Long Night'), '2015-06-15', 'https://video.sibnet.ru/shell.php?videoid=1820037');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13284, 733, 12, CONCAT('Because I Love You More Than Anything'), '2015-06-22', 'https://video.sibnet.ru/shell.php?videoid=1833532');

@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (285, CONCAT('Cannon Busters'), CONCAT('Follow the adventures and exploits of S.A.M, a high-end, royal-class friendship droid who', CHAR(39), 's joined by a quirky, discarded maintenance robot and a brash, deadly fugitive. Together, the unlikely trio embarks on an unforgettable journey in a fantastic and dangerous world in search of S.A.M', CHAR(39), 's best friend, the heir to a powerful kingdom under siege.<br>
+<br>(Source: Official Website)'), 1, '2019-08-15', NULL, '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1452/102628.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (202, 285, '"Showdown"', ' by Marty Grimes and BJRNCK', 'js-theme-songs', 'https://open.spotify.com/track/0NKmwQhgNeTlfe5vcC5krz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (666, 285, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (667, 285, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (668, 285, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (669, 285, 8);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (670, 285, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (322, 285, 31);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4539, 285, 1, CONCAT('High Risk, Low Reward!'), '2019-08-15', 'https://drive.google.com/file/d/1U_7MKzig3jKZdZKSdriJe5EAZ2zzC5zp/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4540, 285, 2, CONCAT('Grifters Gonna Grift'), '2019-08-15', 'https://drive.google.com/file/d/15lSG00aNUojN5wZfTRFHYr7EUxnFqGpH/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4541, 285, 3, CONCAT('Watch Out for the Wet Spot'), '2019-08-15', 'https://ebd.cda.pl/800x450/6123209bf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4542, 285, 4, CONCAT('9ine'), '2019-08-15', 'https://ebd.cda.pl/800x450/6123215d6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4543, 285, 5, CONCAT('21 the Hard Way'), '2019-08-15', 'https://drive.google.com/file/d/1aN8y46ZUUn31eAovqsHM2hkt2LaJqlGN/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4544, 285, 6, CONCAT('Unfettered'), '2019-08-15', 'https://ebd.cda.pl/800x450/6461072eb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4545, 285, 7, CONCAT('Lady & The Kid'), '2019-08-15', 'https://ebd.cda.pl/800x450/6730088b2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4546, 285, 8, CONCAT('Turnbuckle Ex-Machina'), '2019-08-15', 'https://ebd.cda.pl/800x450/6977419c8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4547, 285, 9, CONCAT('Lullaby of the Stars'), '2019-08-15', 'https://ebd.cda.pl/800x450/6977422d6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4548, 285, 10, CONCAT('Squeaking Springs Afternoon'), '2019-08-15', 'https://ebd.cda.pl/800x450/6977425c4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4549, 285, 11, CONCAT('Innocence Lost Pt.1'), '2019-08-15', 'https://ebd.cda.pl/800x450/6977428d2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4550, 285, 12, CONCAT('Innocence Lost Pt.2'), '2019-08-15', 'https://ebd.cda.pl/800x450/697743161');

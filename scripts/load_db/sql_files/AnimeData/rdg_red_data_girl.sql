@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1526, CONCAT('RDG: Red Data Girl'), CONCAT('Fifteen-year-old Izumiko Suzuhara just wants to be a normal girl, but that is easier said than done. Raised in a shrine deep in the mountains, she grew up extremely sheltered and painfully shy. She also has the unfortunate tendency to destroy any electronic device simply by touching it.<br>
+<br>Despite this, she still wants to try and change her life. To mark her determination to follow through on this transformation, Izumiko begins by cutting her bangs, which shocks both her classmates and protectors. And that', CHAR(39), 's only the start! Her guardian, Yukimasa Sagara, forces his son, Miyuki, to come to the mountain shrine and become Izumiko', CHAR(39), 's lifelong servant and protector. Too bad Izumiko and Miyuki cannot stand each other. They have known each other since they were children, and Miyuki bullied her terribly. He simply does not understand what is so special about Izumiko. His father calls Izumiko a goddess, but that cannot be true…can it? Will Izumiko and Miyuki work past their differences? Is she actually a literal goddess? Find out in RDG: Red Data Girl!'), 1, '2013-04-04', '2013-06-20', 'Spring 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/47053.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3794, 1526, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3795, 1526, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3796, 1526, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1643, 1526, 52);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1665, 1526, 11);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1666, 1526, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28045, 1526, 1, CONCAT('The First Transfer Student'), '2013-04-04', 'https://ebd.cda.pl/800x450/609223400');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28046, 1526, 2, CONCAT('The First Palm of Someone', CHAR(39), 's Hand'), '2013-04-11', 'https://ebd.cda.pl/800x450/60922192e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28047, 1526, 3, CONCAT('My First Familiar'), '2013-04-18', 'https://ebd.cda.pl/800x450/609221061');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28048, 1526, 4, CONCAT('My First Roommate'), '2013-04-25', 'https://ebd.cda.pl/800x450/60922491c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28049, 1526, 5, CONCAT('My First Makeup'), '2013-05-02', 'https://ebd.cda.pl/800x450/609222865');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28050, 1526, 6, CONCAT('My First Slumber Party'), '2013-05-09', 'https://ebd.cda.pl/800x450/6092195d4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28051, 1526, 7, CONCAT('My First Time Getting Lost'), '2013-05-16', 'https://ebd.cda.pl/800x450/609219234');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28052, 1526, 8, CONCAT('My First Wish'), '2013-05-23', 'https://ebd.cda.pl/800x450/6092189a8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28053, 1526, 9, CONCAT('My First Debut'), '2013-05-30', 'https://ebd.cda.pl/800x450/609219815');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28054, 1526, 10, CONCAT('My First School Festival'), '2013-06-06', 'https://ebd.cda.pl/800x450/609220449');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28055, 1526, 11, CONCAT('My First Rejection'), '2013-06-13', 'https://ebd.cda.pl/800x450/609220159');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28056, 1526, 12, CONCAT('World Heritage Girl'), '2013-06-20', 'https://ebd.cda.pl/800x450/60922400c');

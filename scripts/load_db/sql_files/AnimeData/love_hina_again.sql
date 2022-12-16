@@ -1,0 +1,10 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1140, CONCAT('Love Hina Again'), CONCAT('Keitaro has finally passed the entrance exams, and is officially a Toudai student. But after breaking his leg in an accident in the entrance ceremony, he thought and re-evaluated himself. Having new goals, Keitaro follows Seta on an overseas archeology trip. During his absence, however, all was not well in Hinata Lodge. Urashima Kanako, Keitaro', CHAR(39), 's sister, arrives on the scene. She claims to be the new manager of Hinata Lodge starts to go against all the tenants. Things become even more complicated when they recieve a letter from Keitaro. The tenants and Kanako made a big mess trying to get the letter, but Seta', CHAR(39), 's car crashes in before anyone could read the letter...'), 1, '2002-01-26', '2002-03-27', '', '30 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/10289.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (505, 1140, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1237, 1140, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1248, 1140, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1249, 1140, 37);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1250, 1140, 4);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1251, 1140, 9);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19487, 1140, 1, CONCAT('Kanako'), '2002-01-26', 'https://ebd.cda.pl/620x395/598867759');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19488, 1140, 2, CONCAT('Keitarou'), '2002-02-28', 'https://ebd.cda.pl/620x395/5988680ce');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19489, 1140, 3, CONCAT('Naru'), '2002-03-27', 'https://ebd.cda.pl/620x395/5988683cc');

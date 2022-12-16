@@ -1,0 +1,23 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1485, CONCAT('Pokemon Best Wishes! Season 2: Episode N'), CONCAT('In this new series, Satoshi, Pikachu and friends start a new journey towards the "White Ruins." There, they meet the young "N", who can hear the voices from Pokémon', CHAR(39), 's hearts... The door of truth leading to an Utopia for Pokémon and humans now lies open!<br>
+<br>(Source: AniDB)'), 1, '2013-01-17', '2013-04-18', 'Winter 2013', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/45749.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1052, 1485, '"Sakura Go-Round (サクラ・ゴーラウンド)"', ' by Shiritsu Ebisu Chuugaku (私立恵比寿中学)', 'js-theme-songs', 'https://open.spotify.com/track/3zm3TV4AGIMAxzikjzj8Du');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (641, 1485, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3696, 1485, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3697, 1485, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3698, 1485, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3699, 1485, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1595, 1485, 3);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27032, 1485, 1, CONCAT('New Places... Familiar Faces!'), '2013-01-17', 'https://www.mp4upload.com/embed-x8fe2vlrhhyc.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27033, 1485, 2, CONCAT('The Name', CHAR(39), 's N!'), '2013-01-24', 'https://www.mp4upload.com/embed-3ox01dejcor0.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27034, 1485, 3, CONCAT('There', CHAR(39), 's a New Gym Leader in Town!'), '2013-01-31', 'https://www.mp4upload.com/embed-dduj175zvqll.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27035, 1485, 4, CONCAT('Team Plasma', CHAR(39), 's Pokémon Power Plot!'), '2013-02-07', 'https://www.mp4upload.com/embed-i2rbyp6nx713.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27036, 1485, 5, CONCAT('The Light of Floccesy Ranch!'), '2013-02-14', 'https://www.mp4upload.com/embed-94200ew32s8o.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27037, 1485, 6, CONCAT('Saving Braviary'), '2013-02-21', 'https://www.mp4upload.com/embed-8nyiiczuh5t4.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27038, 1485, 7, CONCAT('The Pokémon Harbor Patrol!'), '2013-02-28', 'https://www.mp4upload.com/embed-heboy8uu1ftl.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27039, 1485, 8, CONCAT('The Fires of a Red-Hot Reunion!'), '2013-03-07', 'https://www.mp4upload.com/embed-xzdkch4vzres.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27040, 1485, 9, CONCAT('Team Plasma', CHAR(39), 's Pokémon Manipulation!'), '2013-03-14', 'https://www.mp4upload.com/embed-ydp7xejuotm5.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27041, 1485, 10, CONCAT('Secrets From Out of the Fog!'), '2013-03-21', 'https://www.mp4upload.com/embed-wc87ydm68hf7.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27042, 1485, 11, CONCAT('Meowth, Colress and Team Rivalry!'), '2013-03-28', 'https://www.mp4upload.com/embed-g2i9lgqgw1eo.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27043, 1485, 12, CONCAT('Ash and N: A Clash of Ideals!'), '2013-04-04', 'https://www.mp4upload.com/embed-0e5iwq3738f4.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27044, 1485, 13, CONCAT('Team Plasma and the Awakening Ceremony!'), '2013-04-11', 'https://www.mp4upload.com/embed-3kok2swek4a0.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27045, 1485, 14, CONCAT('What Lies Beyond Truth and Ideals!'), '2013-04-18', 'https://www.mp4upload.com/embed-f15j0gvbf4vs.html');

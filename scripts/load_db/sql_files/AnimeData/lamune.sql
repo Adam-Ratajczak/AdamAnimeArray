@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1115, CONCAT('Lamune'), CONCAT('Lamune tells the story of a boy named Kenji and his childhood friend Nanami. Although, everyone seems to know that they have a relationship, neither are determined to push it anymore than close friends. The story goes through flashbacks, explaining why they are such close friends and any action doesn', CHAR(39), 't seem to push them apart, but draw them closer.<br>
+<br>(Source: ANN)'), 1, '2005-10-11', '2005-12-27', 'Fall 2005', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/15900.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (501, 1115, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2713, 1115, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2714, 1115, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1209, 1115, 50);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1232, 1115, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1233, 1115, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19094, 1115, 1, CONCAT('The Hermit Crab and the Straw Hat'), '2005-10-11', 'https://vk.com/video_ext.php?oid=167461777&id=162404049&hash=f28333031267474f&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19095, 1115, 2, CONCAT('The Summer Field and the Nanami Special'), '2005-10-18', 'https://video.sibnet.ru/shell.php?videoid=555730');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19096, 1115, 3, CONCAT('Little Cousin and Fireworks'), '2005-10-25', 'https://video.sibnet.ru/shell.php?videoid=557501');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19097, 1115, 4, CONCAT('The School Council President and the Reward'), '2005-11-01', 'https://vk.com/video_ext.php?oid=167461777&id=162422795&hash=2708686a9c078591&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19098, 1115, 5, CONCAT('The Starry Sky and a Telescope'), '2005-11-08', 'https://video.sibnet.ru/shell.php?videoid=558524');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19099, 1115, 6, CONCAT('Three People and Two Pearls'), '2005-11-15', 'https://vk.com/video_ext.php?oid=167461777&id=162431418&hash=ff27e5161ca4fd9d&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19100, 1115, 7, CONCAT('Biker Girl and Part-Time Job'), '2005-11-22', 'https://vk.com/video_ext.php?oid=167461777&id=162431614&hash=74f135a94e7d7af9&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19101, 1115, 8, CONCAT('The Bond Between the Two and Swaying Feelings'), '2005-11-29', 'https://vk.com/video_ext.php?oid=167461777&id=162431615&hash=f8c89ec2b6e70a08&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19102, 1115, 9, CONCAT('The Distance Between the Two and a Lamune Bottle'), '2005-12-06', 'https://vk.com/video_ext.php?oid=167461777&id=162431617&hash=7d0116772a8a63cd&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19103, 1115, 10, CONCAT('The Folk Dance and Overlapping Hearts'), '2005-12-13', 'https://video.sibnet.ru/shell.php?videoid=559366');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19104, 1115, 11, CONCAT('The Typhoon Night and the End of Summer'), '2005-12-20', 'https://vk.com/video_ext.php?oid=167461777&id=162431809&hash=0a9a8600dfd09c0d&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19105, 1115, 12, CONCAT('100 Loans and 100 Debts'), '2005-12-27', 'https://vk.com/video_ext.php?oid=167461777&id=162431838&hash=6fd9dee632a62604&hd=2');

@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1905, CONCAT('To Heart'), CONCAT('For as long as Akari can remember, she and Hiroyuki have always been friends. But with time, everything changes, and her feelings have turned into something more. As a new semester of high school begins, will the two childhood friends come closer together or drift further apart? Join Hiroyuki, Akari and all their friends—the bubbly Shiho, the quiet Serika, the lovely Kotone, and more—in this heartwarming tale of love, relationships and friendship!<br>
+<br>(Source: RightStuf)'), 2, '1999-04-02', '1999-06-25', 'Spring 1999', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/29922.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4725, 1905, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4726, 1905, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2060, 1905, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2113, 1905, 41);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2114, 1905, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33910, 1905, 1, CONCAT('A Brand New Morning'), '1999-04-02', 'https://ebd.cda.pl/620x395/598835617');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33911, 1905, 2, CONCAT('After School Incident'), '1999-04-09', 'https://ebd.cda.pl/800x450/5988368d2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33912, 1905, 3, CONCAT('In a Sunny Spot'), '1999-04-16', 'https://ebd.cda.pl/800x450/5988371ee');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33913, 1905, 4, CONCAT('Shining Moment'), '1999-04-23', 'https://video.sibnet.ru/shell.php?videoid=4116209');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33914, 1905, 5, CONCAT('Beneath the Blue Sky'), '1999-04-30', 'https://video.sibnet.ru/shell.php?videoid=4116217');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33915, 1905, 6, CONCAT('Admiration'), '1999-05-07', 'https://video.sibnet.ru/shell.php?videoid=4116231');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33916, 1905, 7, CONCAT('Wavering Gaze'), '1999-05-14', 'https://video.sibnet.ru/shell.php?videoid=4116236');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33917, 1905, 8, CONCAT('A Tranquil Time'), '1999-05-21', 'https://video.sibnet.ru/shell.php?videoid=4116239');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33918, 1905, 9, CONCAT('Where The Heart Is'), '1999-05-28', 'https://video.sibnet.ru/shell.php?videoid=4116243');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33919, 1905, 10, CONCAT('Dreaming Smile'), '1999-06-04', 'https://video.sibnet.ru/shell.php?videoid=4116252');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33920, 1905, 11, CONCAT('A Warm Gaze'), '1999-06-11', 'https://ebd.cda.pl/620x395/598837750');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33921, 1905, 12, CONCAT('The Season of Emotions'), '1999-06-18', 'https://video.sibnet.ru/shell.php?videoid=4116275');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33922, 1905, 13, CONCAT('On a Day of Snow'), '1999-06-25', 'https://video.sibnet.ru/shell.php?videoid=4116293');

@@ -1,0 +1,32 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (291, CONCAT('Cardcaptor Sakura: Clear Card-hen'), CONCAT('With all of the Clow Cards recaptured and changed into her own Sakura Cards, Sakura Kinomoto now enters her first year at Tomoeda Middle School. After her initial day of classes, Sakura reunites with her love Shaoran Li, who informs her that he is permanently moving back to Tomoeda. Much to her surprise, it even turns out that Shaoran will attend the same school and it seems as if Sakura', CHAR(39), 's life is heading in all the right directions.<br>
+<br>However, when Sakura goes to sleep, she encounters in her dream a mysterious cloaked figure and finds herself surrounded by transparent cards. Waking up in fear, Sakura is shocked to see her dream has come true, with the Sakura Cards having turned clear. Continued dreamlike encounters with the unknown enemy and her gaining a new magical key sets the stage for Cardcaptor Sakura', CHAR(39), 's latest adventure!<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2018-01-07', '2018-06-10', 'Winter 2018', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1467/90338.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (205, 291, '"CLEAR"', ' by Maaya Sakamoto', 'js-theme-songs', 'https://open.spotify.com/track/1dmxpZEJUyxglqyuo3DqGh')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (146, 291, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (685, 291, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (686, 291, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (687, 291, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (688, 291, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (328, 291, 21);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4802, 291, 1, CONCAT('Sakura and the Clear Cards'), NULL, 'https://ebd.cda.pl/620x395/680435376');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4803, 291, 2, CONCAT('Sakura and the Room with No Exit'), NULL, 'https://ebd.cda.pl/620x395/680435669');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4804, 291, 3, CONCAT('Sakura', CHAR(39), 's Heavy Rain Alert'), NULL, 'https://ebd.cda.pl/800x450/528642394');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4805, 291, 4, CONCAT('Sakura and the Lovely Transfer Student'), NULL, 'https://ebd.cda.pl/800x450/5293014d1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4806, 291, 5, CONCAT('Sakura Feels a Pull at the Flower Viewing'), NULL, 'https://ebd.cda.pl/620x395/6804371cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4807, 291, 6, CONCAT('Sakura, the Rabbit, and the Song of the Moon'), NULL, 'https://ebd.cda.pl/620x395/6804359ae');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4808, 291, 7, CONCAT('Sakura and a Game of Tag in the Garden'), NULL, 'https://ebd.cda.pl/620x395/6804374ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4809, 291, 8, CONCAT('Sakura, the Clock, and a Hide-and-Seek Game'), NULL, 'https://ebd.cda.pl/620x395/6804368ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4810, 291, 9, CONCAT('Sakura', CHAR(39), 's Thrilling Aquarium Visit'), NULL, 'https://ebd.cda.pl/620x395/680437731');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4811, 291, 10, CONCAT('Sakura and the Sleep Labyrinth'), NULL, 'https://ebd.cda.pl/620x395/6804383a8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4812, 291, 11, CONCAT('Sakura and the Upside-down Penguin'), NULL, 'https://ebd.cda.pl/620x395/680439270');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4813, 291, 12, CONCAT('Sakura and the Icy Ball-Sports Tournament'), NULL, 'https://ebd.cda.pl/620x395/680438066');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4814, 291, 13, CONCAT('Sakura and Welcome Back, Meiling'), NULL, 'https://ebd.cda.pl/620x395/68043896e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4815, 291, 14, CONCAT('Sakura, the Shrine, and the Zoo'), NULL, 'https://ebd.cda.pl/800x450/551916863');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4816, 291, 15, CONCAT('Sakura', CHAR(39), 's Nostalgic Viewing Party'), NULL, 'https://ebd.cda.pl/800x450/5521133d6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4817, 291, 16, CONCAT('Sakura and Meiling', CHAR(39), 's Friend'), NULL, 'https://ebd.cda.pl/620x395/680440421');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4818, 291, 17, CONCAT('Sakura and the Crazy Sweets'), NULL, 'https://ebd.cda.pl/620x395/6804398d8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4819, 291, 18, CONCAT('Sakura and the Fire and Water Birds'), NULL, 'https://ebd.cda.pl/620x395/680440124');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4820, 291, 19, CONCAT('Sakura and Akiho', CHAR(39), 's Lullaby'), NULL, 'https://ebd.cda.pl/800x450/55443636d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4821, 291, 20, CONCAT('Sakura, Rainbows, and Grandpa'), NULL, 'https://ebd.cda.pl/800x450/5545317e0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4822, 291, 21, CONCAT('Sakura, the Mirror, and the Key of Memories'), NULL, 'https://ebd.cda.pl/800x450/5548935ce');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4823, 291, 22, CONCAT('Sakura', CHAR(39), 's Clear Cards'), NULL, 'https://ebd.cda.pl/620x395/680441601');

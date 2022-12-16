@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1132, CONCAT('Lodoss-tou Senki'), CONCAT('Created from the aftermath of the last great battle of the gods, Lodoss and its kingdoms have been plagued by war for thousands of years. As a quiet peace and unity finally become foreseeable over the land, an unknown evil begins to stir. An ancient witch has awakened, bent on preserving the island of Lodoss by creating political unbalance throughout the many kingdoms and keeping any one from maintaining central control. Only a mixed-race party of six young champions, led by the young warrior Parn, stand between this new threat and Lodoss', CHAR(39), ' descent back into the darkness of war and destruction. <br>
+<br>(Source: ANN) '), 3, '1990-06-30', '1991-11-23', '', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1644/92493.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (503, 1132, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2760, 1132, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2761, 1132, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2762, 1132, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2763, 1132, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1228, 1132, 21);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19367, 1132, 1, CONCAT('Prologue to the Legend'), '1990-06-30', 'https://ebd.cda.pl/620x395/561902455');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19368, 1132, 2, CONCAT('Blazing Departure'), NULL, 'https://ebd.cda.pl/620x395/561901853');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19369, 1132, 3, CONCAT('The Black Knight'), NULL, 'https://ebd.cda.pl/620x395/561905183');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19370, 1132, 4, CONCAT('The Grey Witch'), NULL, 'https://ebd.cda.pl/620x395/561901273');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19371, 1132, 5, CONCAT('The Desert King'), NULL, 'https://drive.google.com/file/d/1PIKbzBzneWzFTVz_XtsUDRaTTyCDB8P0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19372, 1132, 6, CONCAT('The Sword of the Dark Emperor'), NULL, 'https://ebd.cda.pl/620x395/56190273f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19373, 1132, 7, CONCAT('The War of Heroes'), NULL, 'https://ebd.cda.pl/620x395/56190308c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19374, 1132, 8, CONCAT('Requiem for Warriors'), NULL, 'https://ebd.cda.pl/620x395/5619042e5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19375, 1132, 9, CONCAT('The Scepter of Domination'), NULL, 'https://ebd.cda.pl/620x395/56190331c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19376, 1132, 10, CONCAT('The Demon Dragon of Fire Dragon Mountain'), NULL, 'https://ebd.cda.pl/620x395/56190542e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19377, 1132, 11, CONCAT('The Wizard', CHAR(39), 's Ambition'), NULL, 'https://ebd.cda.pl/620x395/561903989');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19378, 1132, 12, CONCAT('Final Battle! Marmo - The Dark Island'), NULL, 'https://ebd.cda.pl/620x395/561904504');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19379, 1132, 13, CONCAT('Lodoss - The Burning Continent'), NULL, 'https://ebd.cda.pl/620x395/561904868');

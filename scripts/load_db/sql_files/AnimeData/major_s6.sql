@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1206, CONCAT('Major S6'), CONCAT('The intense Baseball World Cup has reached its conclusion. Gorou Honda has regained his passion for baseball and is once again back in full gear. He has secured a team position with the Hornets and has travelled back to America to prepare for his spectacular debut as a Major League pitcher.<br>
+<br>However, Gorou encounters a sudden series of unexpected issues and devastating events follow, crushing his motivation and potentially reducing the baseball career that he has worked tirelessly to maintain into crumbs. In the final season of Major, Gorou must yet again overcome immense hardship in order to save his baseball career. This time there is no simple solution, as the problem is deeply rooted within his own mind...<br>
+<br>[Written by MAL Rewrite]'), 1, '2010-04-03', '2010-09-25', 'Spring 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/75216.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (851, 1206, '"Kokoro e"', ' by TRIPLANE', 'js-theme-songs', 'https://open.spotify.com/track/1Kc6hTgJ4LAWiAf3OoY2tv')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (535, 1206, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2943, 1206, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2944, 1206, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2945, 1206, 19);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1305, 1206, 3);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20785, 1206, 1, CONCAT('Super Rookie'), '2010-04-03', 'https://ebd.cda.pl/620x368/5145777c0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20786, 1206, 2, CONCAT('A Prominent Debut!'), '2010-04-10', 'https://ebd.cda.pl/620x368/5145780e1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20787, 1206, 3, CONCAT('In an Impossible Dilemma'), '2010-04-17', 'https://ebd.cda.pl/620x368/514578378');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20788, 1206, 4, CONCAT('The Southpaw in Distress'), '2010-04-24', 'https://ebd.cda.pl/620x368/514578641');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20789, 1206, 5, CONCAT('The Fruits of the Treatment'), '2010-05-01', 'https://ebd.cda.pl/620x368/514578924');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20790, 1206, 6, CONCAT('What it Takes to be a Pro'), '2010-05-08', 'https://ebd.cda.pl/620x368/514579251');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20791, 1206, 7, CONCAT('Rookies', CHAR(39), ' Troubles'), '2010-05-15', 'https://ebd.cda.pl/620x368/514579567');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20792, 1206, 8, CONCAT('An Electrifying Return'), '2010-05-22', 'https://ebd.cda.pl/620x368/51457983d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20793, 1206, 9, CONCAT('Fully Back on the Mound'), '2010-05-29', 'https://ebd.cda.pl/620x368/51458017f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20794, 1206, 10, CONCAT('Each Person', CHAR(39), 's Summer'), '2010-06-05', 'https://ebd.cda.pl/620x368/5145804e6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20795, 1206, 11, CONCAT('The Entrusted Dream'), '2010-06-12', 'https://ebd.cda.pl/620x368/514580739');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20796, 1206, 12, CONCAT('The Unspoken Rule'), '2010-06-19', 'https://video.sibnet.ru/shell.php?videoid=4037250');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20797, 1206, 13, CONCAT('A Chain of Negativity'), '2010-06-26', 'https://ebd.cda.pl/620x368/51458135c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20798, 1206, 14, CONCAT('Ace', CHAR(39), 's Responsibility'), '2010-07-03', 'https://ebd.cda.pl/620x368/5145894c0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20799, 1206, 15, CONCAT('Weak Point'), '2010-07-10', 'https://ebd.cda.pl/620x368/514589751');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20800, 1206, 16, CONCAT('A Resolute Will'), '2010-07-17', 'https://ebd.cda.pl/620x368/514590038');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20801, 1206, 17, CONCAT('Unexpected Guest'), '2010-07-24', 'https://ebd.cda.pl/620x368/514590327');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20802, 1206, 18, CONCAT('Different?!'), '2010-07-31', 'https://ebd.cda.pl/620x368/514590607');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20803, 1206, 19, CONCAT('Creeping Shadow'), '2010-08-07', 'https://ebd.cda.pl/620x368/514590986');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20804, 1206, 20, CONCAT('That Dream'), '2010-08-21', 'https://ebd.cda.pl/620x368/514591539');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20805, 1206, 21, CONCAT('Never Give Up!'), '2010-08-28', 'https://ebd.cda.pl/620x368/5145918bb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20806, 1206, 22, CONCAT('Remaining Opportunity'), '2010-09-04', 'https://ebd.cda.pl/620x368/51459246f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20807, 1206, 23, CONCAT('Beyond Capability'), '2010-09-11', 'https://ebd.cda.pl/620x368/51459279c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20808, 1206, 24, CONCAT('Tenacity to Glory'), '2010-09-18', 'https://ebd.cda.pl/620x368/514593010');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20809, 1206, 25, CONCAT('To the Future'), '2010-09-25', 'https://ebd.cda.pl/620x368/29707566c');

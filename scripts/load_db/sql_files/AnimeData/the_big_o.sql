@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1894, CONCAT('The Big O'), CONCAT('Paradigm City, a city of amnesia and a place of belonging. It remains populated by forgotten pasts and the ruins of their labors due to a calamity 40 years ago. Shrouded in a fog-like mystery, it is up to people like Roger Smith to shine a light through the mist. Acting as a professional negotiator and suave agent, Roger is a self-tailored ladies man whose only love is for funeral black. However, as he gets deeply involved with his clients, what often starts as a simple negotiation evolves into Roger saving Paradigm from crime and peril.<br>
+<br>In the process, Roger stumbles even deeper into the untold folds of the city. As a rule, things are hardly ever as they appear. Serving as gray knight in a gray world, Roger is not without allies. By his side are Norman, a loyal and widely skilled butler, and Dorothy, a human-like android with deadpan snark. Together with the relic Big O, a jet-black mecha of gargantuan size and weight, they help Roger serve iron justice to Paradigm', CHAR(39), 's lurking villains as he discovers the truth about 40 years ago.<br>
+<br>[Written by MAL Rewrite]'), 1, '1999-10-13', '2003-03-27', 'Fall 1999', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1/567.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4695, 1894, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4696, 1894, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4697, 1894, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4698, 1894, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2049, 1894, 73);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33722, 1894, 1, CONCAT('Roger The Negotiator'), '1999-10-13', 'https://drive.google.com/file/d/1sZ8E3Khy83rB_k1AsxyjQxX3IN6AOzRg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33723, 1894, 2, CONCAT('Dorothy Dorothy'), '1999-10-20', 'https://drive.google.com/file/d/1gqd9XdsKNQgp8QIIeaJcyVro4muVbqvA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33724, 1894, 3, CONCAT('Electric City'), '1999-10-27', 'https://drive.google.com/file/d/1Niycl4QZKXA_9zl1zkeJUrVevrGOUQc6/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33725, 1894, 4, CONCAT('Underground Terror'), '1999-11-03', 'https://drive.google.com/file/d/1X0gT2dPjYYg-PfSl_EQKe-57miW439k7/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33726, 1894, 5, CONCAT('Bring Back My Ghost'), '1999-11-10', 'https://drive.google.com/file/d/1F-l7eI2IHHc8iQS-dUHvVUkaew-kRSIm/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33727, 1894, 6, CONCAT('A Legacy of Amadeus'), '1999-11-17', 'https://video.sibnet.ru/shell.php?videoid=984410');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33728, 1894, 7, CONCAT('The Call from The Past'), '1999-11-24', 'https://video.sibnet.ru/shell.php?videoid=987542');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33729, 1894, 8, CONCAT('Missing Cat'), '1999-12-01', 'https://video.sibnet.ru/shell.php?videoid=987553');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33730, 1894, 9, CONCAT('Beck Comes Back'), '1999-12-08', 'https://ebd.cda.pl/620x395/5374956cd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33731, 1894, 10, CONCAT('Winter Night Phantom'), '1999-12-15', 'https://ebd.cda.pl/620x395/537496543');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33732, 1894, 11, CONCAT('Daemonseed'), '2000-01-05', 'https://ebd.cda.pl/620x395/5374971f4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33733, 1894, 12, CONCAT('Enemy is Another Big!'), '2000-01-12', 'https://ebd.cda.pl/620x395/5374962de');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33734, 1894, 13, CONCAT('R・D'), '2000-01-19', 'https://ebd.cda.pl/620x395/53749742f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33735, 1894, 14, CONCAT('Roger the Wanderer'), '2003-01-02', 'https://ebd.cda.pl/620x395/537497714');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33736, 1894, 15, CONCAT('Negotiation with the Dead'), '2003-01-09', 'https://ebd.cda.pl/620x395/5374980cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33737, 1894, 16, CONCAT('Day of the Advent'), '2003-01-16', 'https://ebd.cda.pl/620x395/5375019b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33738, 1894, 17, CONCAT('Leviathan'), '2003-01-23', 'https://ebd.cda.pl/620x395/5374986d9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33739, 1894, 18, CONCAT('The Greatest Villain'), '2003-01-30', 'https://ebd.cda.pl/620x395/53749898f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33740, 1894, 19, CONCAT('Eyewitness'), '2003-02-06', 'https://ebd.cda.pl/620x395/5374992d8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33741, 1894, 20, CONCAT('Stripes'), '2003-02-13', 'https://ebd.cda.pl/620x395/5375001db');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33742, 1894, 21, CONCAT('The Third Big'), '2003-02-20', 'https://ebd.cda.pl/620x395/537499546');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33743, 1894, 22, CONCAT('Hydra'), '2003-02-27', 'https://ebd.cda.pl/620x395/5374998d8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33744, 1894, 23, CONCAT('Twisted Memories'), '2003-03-06', 'https://ebd.cda.pl/620x395/53750078c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33745, 1894, 24, CONCAT('The Big Fight!'), '2003-03-13', 'https://ebd.cda.pl/620x395/5375004b5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33746, 1894, 25, CONCAT('The War of the Paradigm City'), '2003-03-20', 'https://drive.google.com/file/d/1lkQ0Dhc7sqFnF6hSV_n8cAX2M3ZjO3HV/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33747, 1894, 26, CONCAT('The Show Must Go On'), '2003-03-27', 'https://video.sibnet.ru/shell.php?videoid=1023415');

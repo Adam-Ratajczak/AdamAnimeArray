@@ -1,0 +1,12 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (340, CONCAT('Cinderella Girls Gekijou: Kayou Cinderella Theater 4th Season'), CONCAT('Bonus segments of Cinderella Girls Gekijou 4th Season streamed on The iDOLM@STER Cinderella Girls Mobage following the television broadcast.'), 1, '2019-04-02', '2019-06-25', '', '1 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1277/100399.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (784, 340, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (785, 340, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (383, 340, 74);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (384, 340, 107);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5807, 340, 1, CONCAT('In Daydreams and in Reality!'), NULL, 'https://ebd.cda.pl/620x395/591625109');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5808, 340, 2, CONCAT('Choose With My Gut!'), NULL, 'https://ebd.cda.pl/620x395/5916254f7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5809, 340, 3, CONCAT('Putting Everything Into This One Kick!'), NULL, 'https://ebd.cda.pl/620x395/5916260b8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5810, 340, 4, CONCAT('I Felt a Gaze'), NULL, 'https://ebd.cda.pl/620x395/591626318');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5811, 340, 5, CONCAT('Noriko', CHAR(39), 's Fuel'), NULL, 'https://ebd.cda.pl/620x395/591626944');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5812, 340, 6, CONCAT('Something... for Relief!'), NULL, 'https://ebd.cda.pl/620x395/59162725e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5813, 340, 7, CONCAT('I Didn', CHAR(39), 't Slip Up!'), NULL, 'https://ebd.cda.pl/620x395/591626657');

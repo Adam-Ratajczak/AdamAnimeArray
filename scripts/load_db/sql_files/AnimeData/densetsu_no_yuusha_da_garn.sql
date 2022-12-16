@@ -1,0 +1,6 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (412, CONCAT('Densetsu no Yuusha Da Garn'), CONCAT('One day, the Earth was assaulted by a space pirate, Orbus. He aimed at Planet Energy, the life energy of the Earth. If several Release Points, where the Planet Energy concentrated, were attacked at once, the Earth would explode.<br>When the first attack was made, Takasugi Seiji escaped into an old temple with his girl friend Kosaka Hikaru. Then, he received, Orin, a token of the leader of the Earth guardians, from the conscience of the Earth. By the power of Orin, the patrol car was turned into a Robot, Da Garn. <br><br>(Source: AnimeNfo)'), 1, '1992-02-08', '1993-01-23', 'Winter 1992', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1206/105983.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (967, 412, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (968, 412, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (969, 412, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (462, 412, 44);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (7061, 412, 46, CONCAT('To the Future of the Wind'), '1993-01-23', 'https://www.mp4upload.com/embed-7op9ieryfuf0.html');

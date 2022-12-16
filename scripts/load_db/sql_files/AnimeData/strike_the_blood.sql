@@ -1,0 +1,36 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1818, CONCAT('Strike the Blood'), CONCAT('Kojou Akatsuki', CHAR(39), 's days as an ordinary high school student in the Demon District of Itogami Island come to an abrupt end after a fateful encounter leaves him with the remarkable abilities of a vampire.<br>
+<br>It isn', CHAR(39), 't long before he is thrust into the center of attention when it is discovered that he is the fourth primogenitor, an immensely powerful vampire whom most consider to be merely a legend. Fearing Kojou', CHAR(39), 's destructive potential, the Lion King Organization sends in an apprentice sword-shaman, Yukina Himeragi, to monitor, and should he become a threat, kill the boy deemed the world', CHAR(39), 's most powerful vampire. Forced together by circumstance, the two form an unlikely alliance as Kojou comes to terms with his abilities and they both struggle to protect the city from various emerging chaotic forces.<br>
+<br>[Written by MAL Rewrite]'), 3, '2013-10-04', '2014-03-28', 'Fall 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/56163.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1294, 1818, '"Strike the Blood (ストライク・ザ・ブラッド)"', ' by Kishida Kyoudan & The Akeboshi Rockets', 'js-theme-songs', 'https://open.spotify.com/track/0OY5p2Zr79YFH0IqTlaljw')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4496, 1818, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4497, 1818, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4498, 1818, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4499, 1818, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1968, 1818, 50);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1969, 1818, 51);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2019, 1818, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2020, 1818, 19);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32694, 1818, 1, CONCAT('The Right Arm of the Saint I'), '2013-10-04', 'https://ebd.cda.pl/620x368/175474935');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32695, 1818, 2, CONCAT('The Right Arm of the Saint II'), '2013-10-11', 'https://ebd.cda.pl/620x368/1754752c1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32696, 1818, 3, CONCAT('The Right Arm of the Saint III'), '2013-10-18', 'https://ebd.cda.pl/620x368/1754755ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32697, 1818, 4, CONCAT('The Right Arm of the Saint IV'), '2013-10-25', 'https://ebd.cda.pl/620x368/17547582e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32698, 1818, 5, CONCAT('From the Warlord', CHAR(39), 's Empire I'), '2013-11-01', 'https://ebd.cda.pl/620x368/175476161');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32699, 1818, 6, CONCAT('From the Warlord', CHAR(39), 's Empire II'), '2013-11-08', 'https://ebd.cda.pl/620x368/17547649c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32700, 1818, 7, CONCAT('From the Warlord', CHAR(39), 's Empire III'), '2013-11-15', 'https://ebd.cda.pl/620x368/17548218c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32701, 1818, 8, CONCAT('From the Warlord', CHAR(39), 's Empire IV'), '2013-11-22', 'https://ebd.cda.pl/620x368/1754824f2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32702, 1818, 9, CONCAT('The Amphisbaena I'), '2013-11-29', 'https://ebd.cda.pl/620x368/175482701');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32703, 1818, 10, CONCAT('The Amphisbaena II'), '2013-12-06', 'https://ebd.cda.pl/620x368/17548304c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32704, 1818, 11, CONCAT('The Amphisbaena III'), '2013-12-13', 'https://ebd.cda.pl/620x368/17548334c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32705, 1818, 12, CONCAT('The Amphisbaena IV'), '2013-12-20', 'https://ebd.cda.pl/620x368/175483999');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32706, 1818, 13, CONCAT('Labyrinth of the Blue Witch I'), '2014-01-10', 'https://ebd.cda.pl/620x368/17548429b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32707, 1818, 14, CONCAT('Labyrinth of the Blue Witch II'), '2014-01-17', 'https://ebd.cda.pl/620x368/17549743c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32708, 1818, 15, CONCAT('Labyrinth of the Blue Witch III'), '2014-01-24', 'https://ebd.cda.pl/620x368/1754977bd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32709, 1818, 16, CONCAT('Fiesta for the Observers I'), '2014-01-31', 'https://ebd.cda.pl/620x368/140575343');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32710, 1818, 17, CONCAT('Fiesta for the Observers II'), '2014-02-07', 'https://ebd.cda.pl/620x368/175498361');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32711, 1818, 18, CONCAT('Fiesta for the Observers III'), '2014-02-14', 'https://ebd.cda.pl/620x368/175498666');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32712, 1818, 19, CONCAT('Fiesta for the Observers IV'), '2014-02-21', 'https://ebd.cda.pl/620x368/1754989ad');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32713, 1818, 20, CONCAT('Return of the Alchemist I'), '2014-02-28', 'https://ebd.cda.pl/620x368/175499223');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32714, 1818, 21, CONCAT('Return of the Alchemist II'), '2014-03-07', 'https://ebd.cda.pl/620x368/175499575');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32715, 1818, 22, CONCAT('Return of the Alchemist III'), '2014-03-14', 'https://ebd.cda.pl/620x368/175511823');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32716, 1818, 23, CONCAT('Empire of the Dawn I'), '2014-03-21', 'https://ebd.cda.pl/620x368/1755121a8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32717, 1818, 24, CONCAT('Empire of the Dawn II'), '2014-03-28', 'https://ebd.cda.pl/620x368/17551242c');

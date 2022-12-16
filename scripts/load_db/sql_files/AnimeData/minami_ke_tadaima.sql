@@ -1,0 +1,23 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1260, CONCAT('Minami-ke Tadaima'), CONCAT('The everyday lives of the Minami sisters continue. Chiaki, the youngest, continues to call people idiots while worshipping her eldest sister. Kana, the middle, still can', CHAR(39), 't figure out that Fujioka', CHAR(39), 's feelings for her are a crush, not a grudge. Haruka, the eldest, still unknowingly avoids Hosaka', CHAR(39), 's advances to invite her to the volleyball team, and after a long day of excitement, the sisters enjoy sitting at the table at their home.<br>
+<br>(Source: ANN)'), 1, '2013-01-06', '2013-03-31', 'Winter 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/53133.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (880, 1260, '"Shiawase☆High Tension↑↑ (シアワセ☆ハイテンション↑↑)"', ' by Haruka Minami (CV: Rina Satou), Kana Minami (CV: Marina Inoue), Chiaki Minami (CV: Minori Chihara)', 'js-theme-songs', 'https://open.spotify.com/track/1IDJy6HibwAg6Ciq9P1A8I');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3090, 1260, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3091, 1260, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3092, 1260, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3093, 1260, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1362, 1260, 175);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1364, 1260, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1365, 1260, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21558, 1260, 1, CONCAT('Spring is Here, and So Are the Minamis'), '2013-01-06', 'https://drive.google.com/file/d/0Bx6T5oeTbAzAX1c5eGFGUm1RTGM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21559, 1260, 2, CONCAT('Let', CHAR(39), 's Be Ourselves'), '2013-01-13', 'https://drive.google.com/file/d/0Bx6T5oeTbAzAQThPelFUUVlGN3M/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21560, 1260, 3, CONCAT('Simply Put, It', CHAR(39), 's a Roundabout Confession'), '2013-01-20', 'https://drive.google.com/file/d/0Bx6T5oeTbAzAaWxBQkNyVDVZVkU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21561, 1260, 4, CONCAT('The Man Sweats Under the Blue Summer Sky'), '2013-01-27', 'https://drive.google.com/file/d/0Bx6T5oeTbAzASkg3ck9EUGtwR0U/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21562, 1260, 5, CONCAT('Making Chilled Noodles'), '2013-02-03', 'https://drive.google.com/file/d/0Bx6T5oeTbAzANjdIVk9tMnYtb0U/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21563, 1260, 6, CONCAT('A Girl Cannot Hide Her Sunburn, Nor Her Heart'), '2013-02-03', 'https://drive.google.com/file/d/0Bx6T5oeTbAzAWnp6MU1GN1l3TVk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21564, 1260, 7, CONCAT('Coming for a Late Summer Visit'), '2013-02-17', 'https://drive.google.com/file/d/0Bx6T5oeTbAzATlZVVHRoR2J6YkE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21565, 1260, 8, CONCAT('Vegetables with Your Merry Friends on Your Day Off'), '2013-02-24', 'https://drive.google.com/file/d/0Bx6T5oeTbAzAR3c4ZVp2TXNrelU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21566, 1260, 9, CONCAT('Love Begins Now'), '2013-03-03', 'https://drive.google.com/file/d/0Bx6T5oeTbAzALTB2MmN4R282WVk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21567, 1260, 10, CONCAT('We Started Living Green'), '2013-03-10', 'https://drive.google.com/file/d/0BwQbnu8M4LsBZldUemR1Wk9RbjA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21568, 1260, 11, CONCAT('The Goddess Descends on the Holy Night'), '2013-03-17', 'https://drive.google.com/file/d/0BwQbnu8M4LsBY0Zzdm1rZ3pzQnM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21569, 1260, 12, CONCAT('Start Planning Your Year from New Year', CHAR(39), 's Day'), '2013-03-24', 'https://drive.google.com/file/d/0BwQbnu8M4LsBbGxiQ1hJa0NqZFk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21570, 1260, 13, CONCAT('What', CHAR(39), 's Said Here, Stays Here'), '2013-03-31', 'https://drive.google.com/file/d/0BwQbnu8M4LsBRFhwYzJWby11dEk/preview');

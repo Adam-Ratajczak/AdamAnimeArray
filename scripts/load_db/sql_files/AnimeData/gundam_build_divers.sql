@@ -1,0 +1,32 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (657, CONCAT('Gundam Build Divers'), CONCAT('Gunpla Battle Nexus Online (GBN) is a new network game that lets people enjoy a variety of missions using Gunpla in a virtual cyberspace dimension. Middle-school students Riku Mikami and Yukio Hidaka recruit their classmate Momoka Yashiro and dive together into this vast world. Becoming "Divers," or inhabitants of GBN, they meet a mysterious girl named Sarah who has an amazing sensitivity to Gunpla. They begin playing alongside her, but...<br>
+<br>There are many other famous Divers, starting with Kyoya Kujo, the champion whom Riku admires. Multiple Divers can join to form a team called a "force." Meanwhile, the game is disrupted by Mass-Divers who use unofficial tools called break decals. Through many encounters and experiences, Riku and his friends will build not only Gunpla, but their own adventures as well!<br>
+<br>(Source: Official Website)'), 4, '2018-04-03', '2018-09-25', 'Spring 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1701/90388.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (467, 657, '"Diver's High"', ' by SKY-HI', 'js-theme-songs', 'https://open.spotify.com/track/1Y2wWhbLCHW0WfTczmuA2X')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1625, 657, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1626, 657, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (728, 657, 159);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11961, 657, 1, CONCAT('Welcome to GBD'), NULL, 'https://streamtape.com/e/2OeGRmo7KMTZ7ZO/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11962, 657, 2, CONCAT('Chaotic Ogre'), NULL, 'https://streamtape.com/e/PkbjJdRM82u01OV/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11963, 657, 3, CONCAT('The Protector'), NULL, 'https://streamtape.com/e/aPPV9DeJazhxxa3/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11964, 657, 4, CONCAT('Tigerwolf of the Sacred Mountain'), NULL, 'https://streamtape.com/e/dP9rjaw2BlFGOG/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11965, 657, 5, CONCAT('Holy Land of Perisia'), NULL, 'https://streamtape.com/e/1xjmv0dz10feeXJ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11966, 657, 6, CONCAT('Past and Future'), NULL, 'https://streamtape.com/e/r0BKe1D3GVSbBMQ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11967, 657, 7, CONCAT('Force Battle'), NULL, 'https://streamtape.com/e/6RbKMDJ3KbI9kvK/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11968, 657, 8, CONCAT('Festival!'), NULL, 'https://streamtape.com/e/2Kk9Xza2rZIZwzm/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11969, 657, 9, CONCAT('Return of the Ogre'), NULL, 'https://streamtape.com/e/09vZ6DMkdPHbRAM/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11970, 657, 10, CONCAT('Coalition of Volunteers'), NULL, 'https://streamtape.com/e/1xXPBpGJMXie4bQ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11971, 657, 11, CONCAT('Ayame', CHAR(39), 's Tears'), NULL, 'https://streamtape.com/e/KZB4qpYjP0F0MP0/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11972, 657, 12, CONCAT('Shining Wings'), NULL, 'https://streamtape.com/e/eGMOlwb0yxuYvao/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11973, 657, 13, CONCAT('Duel'), NULL, 'https://streamtape.com/e/djjgjeGmXGSbyX/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11974, 657, 14, CONCAT('A New Power'), NULL, 'https://streamtape.com/e/49LVx3w3wwCKlDy/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11975, 657, 15, CONCAT('Lotus Challenge'), NULL, 'https://streamtape.com/e/1zykOKDez6UegBJ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11976, 657, 16, CONCAT('Friends Reunited'), NULL, 'https://streamtape.com/e/JABmMGK74Ltj1yD/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11977, 657, 17, CONCAT('Joint Front'), NULL, 'https://streamtape.com/e/BY846MKRJjCGwD/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11978, 657, 18, CONCAT('A Man', CHAR(39), 's Will'), NULL, 'https://streamtape.com/e/AXkp6dmlOJHXMb3/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11979, 657, 19, CONCAT('Nadeshiko-athlon'), NULL, 'https://streamtape.com/e/7zwGv6xlMWSAjKl/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11980, 657, 20, CONCAT('The Truth'), NULL, 'https://streamtape.com/e/7bV8jDBbbLhJeZ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11981, 657, 21, CONCAT('Your Feelings'), NULL, 'https://streamtape.com/e/QPDemqVXMYt9bq/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11982, 657, 22, CONCAT('Devoted Heart'), NULL, 'https://streamtape.com/e/6x7o46O6qdt9YQz/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11983, 657, 23, CONCAT('The Fateful Two'), NULL, 'https://streamtape.com/e/864oJ3XqA3slZw/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11984, 657, 24, CONCAT('Decisive Battle'), NULL, 'https://streamtape.com/e/A0JpLj71OkhXdoZ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11985, 657, 25, CONCAT('A New World'), NULL, 'https://streamtape.com/e/rxO27MA6jbtb1g6/');

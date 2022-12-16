@@ -1,0 +1,36 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (936, CONCAT('Kaichou wa Maid-sama!'), CONCAT('Misaki Ayuzawa is a unique phenomenon within Seika High School. In a predominantly male institution, she became the first-ever female student council president through her honesty and diligence. Ever since Misaki got promoted to the position, she has been working tirelessly to ensure a better school life for all girls. Despite that, Misaki is very strict with the boys, which has earned her the title "Demon President." <br>
+<br>One day, after hearing a girl cry in the hallway, Misaki encounters Takumi Usui—the most popular boy in the school—as he rejects a love confession. Enraged at what she is seeing, Misaki reprimands him for making the girl cry. However, Usui is indifferent and brushes it off as nothing.<br>
+<br>Unexpectedly, Misaki soon runs into Usui again, but this time when she is working at a maid cafe! Embarrassed that someone has found out about her secret occupation, Misaki promises herself not to let Usui destroy her reputation. However, the mysterious boy now begins to visit the same cafe regularly to observe and tease Misaki. When push comes to shove, will Usui still be able to keep the president', CHAR(39), 's secret?<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2010-04-02', '2010-09-24', 'Spring 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/25254.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (665, 936, '"My Secret"', ' by Saaya Mizuno (水野佐彩)', 'js-theme-songs', 'https://open.spotify.com/track/2h9Pbowa85GYBxWiUZWoH4')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (411, 936, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2264, 936, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2265, 936, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2266, 936, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1020, 936, 55);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16428, 936, 1, CONCAT('Misaki Is a Maid-sama!'), '2010-04-02', 'https://ebd.cda.pl/620x395/5109480b9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16429, 936, 2, CONCAT('Maid-sama at the School Festival'), '2010-04-08', 'https://ebd.cda.pl/620x395/5109483b6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16430, 936, 3, CONCAT('What Color Is Misaki? Natural Color?'), '2010-04-16', 'https://ebd.cda.pl/620x395/5109486ec');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16431, 936, 4, CONCAT('Net Idol Aoi'), '2010-04-23', 'https://ebd.cda.pl/620x395/5109489e8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16432, 936, 5, CONCAT('First Time Minding the Shop'), '2010-04-30', 'https://ebd.cda.pl/620x395/51094955c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16433, 936, 6, CONCAT('Men & the Ayuzawa Cram School'), '2010-05-07', 'https://ebd.cda.pl/620x395/51094986d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16434, 936, 7, CONCAT('Enter the Student Council President of Miyabigaoka'), '2010-05-14', 'https://ebd.cda.pl/620x395/510950176');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16435, 936, 8, CONCAT('Misaki Goes to Miyabigaoka'), '2010-05-21', 'https://ebd.cda.pl/620x395/510950434');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16436, 936, 9, CONCAT('Maid-sama Does Momotaro'), '2010-05-28', 'https://ebd.cda.pl/620x395/510950771');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16437, 936, 10, CONCAT('Sakura', CHAR(39), 's Indie-Label Love'), '2010-06-04', 'https://ebd.cda.pl/620x395/5109513ab');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16438, 936, 11, CONCAT('The Secret of Takumi Usui Approaches!'), '2010-06-11', 'https://ebd.cda.pl/620x395/5109906b7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16439, 936, 12, CONCAT('Maid-sama & the Sports Festival'), '2010-06-18', 'https://ebd.cda.pl/620x395/510991209');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16440, 936, 13, CONCAT('Idiots, Juviniles & Heroes &...'), '2010-06-25', 'https://ebd.cda.pl/620x395/510991551');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16441, 936, 14, CONCAT('Soutarou Kano of Class 1-7'), '2010-07-02', 'https://ebd.cda.pl/620x395/5109918c3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16442, 936, 15, CONCAT('Bespectacled Rabbit at the Open Campus'), '2010-07-09', 'https://ebd.cda.pl/620x395/51099216e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16443, 936, 16, CONCAT('Maid Latte at the Beach House'), '2010-07-16', 'https://ebd.cda.pl/620x395/51099241f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16444, 936, 17, CONCAT('Usui Becomes the Enemy'), '2010-07-23', 'https://ebd.cda.pl/620x395/51099279d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16445, 936, 18, CONCAT('Maid-sama Is a Footman'), '2010-07-30', 'https://ebd.cda.pl/620x395/5109933bc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16446, 936, 19, CONCAT('Footmen Through a Change of Pairs'), '2010-08-06', 'https://ebd.cda.pl/620x395/5109936f0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16447, 936, 20, CONCAT('The Vice President Is a Prince?! Aoi & Her Fun Companions'), '2010-08-13', 'https://ebd.cda.pl/620x395/510993977');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16448, 936, 21, CONCAT('Usui', CHAR(39), 's Rival?! Hinata Shintani'), '2010-08-20', 'https://ebd.cda.pl/620x395/5110860b3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16449, 936, 22, CONCAT('Tag at the Forest School'), '2010-08-27', 'https://ebd.cda.pl/620x395/511086368');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16450, 936, 23, CONCAT('Maid Latte & a Whole Bunch of Sweets'), '2010-09-03', 'https://ebd.cda.pl/620x395/5110866b8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16451, 936, 24, CONCAT('Lovey-Dovey Through Latte Magic'), '2010-09-10', 'https://ebd.cda.pl/620x395/511086918');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16452, 936, 25, CONCAT('Hinata & Misaki & Usui'), '2010-09-17', 'https://ebd.cda.pl/620x395/511087258');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16453, 936, 26, CONCAT('Too Cruel Ayuzawa & Usui the Idiot!'), '2010-09-24', 'https://ebd.cda.pl/620x395/511087519');

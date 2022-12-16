@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1279, CONCAT('Momo Kyun Sword'), CONCAT('Momoko is a beautiful young sword fighter who was born inside a peach (momo in Japanese). She lives with her constant companions—the dog god Inugami, the monkey god Sarugami, and the pheasant god Kijigami—in a peaceful paradise. However, a demon army led by devil king invades the paradise and steals the precious treasure that protects Momoko', CHAR(39), 's land. To retrieve the treasure and save the people, Momoko embarks on a great adventure with her three companions.<br>
+<br>(Source: ANN)'), 1, '2014-07-09', '2014-09-24', 'Summer 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/64445.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (891, 1279, '"Momoiro Fantasy (桃色ファンタジー)"', ' by Haruka Chisuga', 'js-theme-songs', 'https://open.spotify.com/track/48eyQWstZ1o4q7TtdDUZDG')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3153, 1279, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3154, 1279, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3155, 1279, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3156, 1279, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1383, 1279, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1403, 1279, 22);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1404, 1279, 49);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21995, 1279, 1, CONCAT('Possession Fusion! Momokyun Sword!!'), NULL, 'https://www.mp4upload.com/embed-b3aaca7e4hgy.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21996, 1279, 2, CONCAT('Demon Combination!? Onihime is Here!'), NULL, 'https://tune.pk/video/4276094');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21997, 1279, 3, CONCAT('One for All and All for One: The Celestial Maiden Squad!?'), NULL, 'https://drive.google.com/file/d/0B9LAVlU15MBacy1jeTl3UFdiUjg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21998, 1279, 4, CONCAT('Mad Dance of the Giant Boobs!? The Pine Forest of Miho!'), NULL, 'https://vk.com/video250056004_169576851');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21999, 1279, 5, CONCAT('Suspicious!? The Trap in the Fog!'), NULL, 'https://vk.com/video260338899_169310359');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22000, 1279, 6, CONCAT('A Star is Born! We', CHAR(39), 're the Celestial Maiden Squad!'), NULL, 'https://vk.com/video250056004_169818162');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22001, 1279, 7, CONCAT('Lost!? Momoko', CHAR(39), 's Important Thing'), NULL, 'https://vk.com/video250056004_169818458');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22002, 1279, 8, CONCAT('Peach Plan The Underwear that Disappeared into the Steam!?'), NULL, 'https://vk.com/video250056004_169818813');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22003, 1279, 9, CONCAT('Big Developments!? The Secret of Momo!'), NULL, 'https://streamtape.com/e/8OK9xwKrvgcorvg/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22004, 1279, 10, CONCAT('Shocking! Onigashima', CHAR(39), 's Counterattack!!'), NULL, 'https://vk.com/video_ext.php?oid=250023721&id=170179241&hash=40f704e9a7a9e3a4&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22005, 1279, 11, CONCAT('The Last Battle! Momoko vs. Jakiou!!'), NULL, 'https://vk.com/video250056004_170099659');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22006, 1279, 12, CONCAT('Peach Fantasy! Momo Kyun Sword'), NULL, 'https://vk.com/video_ext.php?oid=250023721&id=170279060&hash=0842d226e3a70538');

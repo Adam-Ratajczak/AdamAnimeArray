@@ -1,0 +1,11 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (841, CONCAT('Ikkitousen: Xtreme Xecutor Specials'), CONCAT('Ikkitousen: Xtreme Xecutor Blu-ray and DVD specials.'), 1, '2010-06-25', '2010-11-25', '', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/22814.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (922, 841, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (945, 841, 24);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (946, 841, 13);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (947, 841, 29);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14985, 841, 1, CONCAT('A Surprise Rebellion!? Leader Chubo', CHAR(39), 's Peril!!'), '2010-06-25', 'https://mp4upload.com/embed-tbg44tihu49n.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14986, 841, 2, CONCAT('An Angel Descends!? True Love Put to the Test!!'), '2010-07-25', 'https://mp4upload.com/embed-ba3c811mqucx.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14987, 841, 3, CONCAT('A Huge Pinch!? The Dangerous Game of Tag!!'), '2010-08-25', 'https://mp4upload.com/embed-k7lokh2qm0py.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14988, 841, 4, CONCAT('Everyone Flunks!? Enter the Mightiest Teacher!!'), '2010-09-25', 'https://mp4upload.com/embed-d67g9fqz00v8.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14989, 841, 5, CONCAT('Clash!? High School vs Middle School!!'), '2010-10-25', 'https://mp4upload.com/embed-gz4rknx1ah4a.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14990, 841, 6, CONCAT('A Great Adventure!? Dragon Slaying in Hell', CHAR(39), 's Canyon!!'), '2010-11-25', 'https://mp4upload.com/embed-lgnwxggg6mwa.html');

@@ -1,0 +1,33 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (243, CONCAT('Boku no Hero Academia 2nd Season'), CONCAT('At UA Academy, not even a violent attack can disrupt their most prestigious event: the school sports festival. Renowned across Japan, this festival is an opportunity for aspiring heroes to showcase their abilities, both to the public and potential recruiters.<br>
+<br>However, the path to glory is never easy, especially for Izuku Midoriya—whose quirk possesses great raw power but is also cripplingly inefficient. Pitted against his talented classmates, such as the fire and ice wielding Shouto Todoroki, Izuku must utilize his sharp wits and master his surroundings to achieve victory and prove to the world his worth.<br>
+<br>[Written by MAL Rewrite]'), 1, '2017-04-01', '2017-09-30', 'Spring 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/85221.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (173, 243, '"Peace Sign (ピースサイン)"', ' by Kenshi Yonezu', 'js-theme-songs', 'https://open.spotify.com/track/364JzOajs76bJymjHm3sVY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (119, 243, 1);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (273, 243, 77);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (267, 243, 13);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (268, 243, 29);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3936, 243, 1, CONCAT('That', CHAR(39), 's the Idea, Ochako'), '2017-04-01', 'https://ebd.cda.pl/620x395/4766360ec');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3937, 243, 2, CONCAT('Roaring Sports Festival'), '2017-04-08', 'https://ebd.cda.pl/620x395/476636388');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3938, 243, 3, CONCAT('In Their Own Quirky Ways'), '2017-04-15', 'https://ebd.cda.pl/620x395/47663661e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3939, 243, 4, CONCAT('Strategy, Strategy, Strategy'), '2017-04-22', 'https://ebd.cda.pl/620x395/4766369e9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3940, 243, 5, CONCAT('Cavalry Battle Finale'), '2017-04-29', 'https://ebd.cda.pl/620x395/47663720e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3941, 243, 6, CONCAT('The Boy Born with Everything'), '2017-05-06', 'https://ebd.cda.pl/620x395/4766375d2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3942, 243, 7, CONCAT('Victory or Defeat'), '2017-05-13', 'https://ebd.cda.pl/620x395/47663788c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3943, 243, 8, CONCAT('Battle on, Challengers!'), '2017-05-20', 'https://ebd.cda.pl/620x395/4766381e5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3944, 243, 9, CONCAT('Bakugo VS Uraraka'), '2017-05-27', 'https://ebd.cda.pl/620x395/4766384ee');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3945, 243, 10, CONCAT('Shouto Todoroki: Origin'), '2017-06-03', 'https://ebd.cda.pl/620x395/4766387d2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3946, 243, 11, CONCAT('Fight on, Iida'), '2017-06-10', 'https://ebd.cda.pl/620x395/476639053');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3947, 243, 12, CONCAT('Todoroki VS Bakugou'), '2017-06-17', 'https://ebd.cda.pl/620x395/4766393e1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3948, 243, 13, CONCAT('Time to Pick Some Names'), '2017-06-24', 'https://ebd.cda.pl/620x395/4766396e5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3949, 243, 14, CONCAT('Bizarre! Grantorino Appears'), '2017-07-08', 'https://ebd.cda.pl/620x395/476742216');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3950, 243, 15, CONCAT('Midoriya and Shigaraki'), '2017-07-15', 'https://ebd.cda.pl/620x395/47674282c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3951, 243, 16, CONCAT('Hero Killer: Stain vs U.A. Students'), '2017-07-22', 'https://ebd.cda.pl/620x395/4767431f2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3952, 243, 17, CONCAT('Climax'), '2017-07-29', 'https://drive.google.com/file/d/0B7oEP7eXjZUoclU5SC1ZNTI5VTg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3953, 243, 18, CONCAT('The Aftermath of Hero Killer Stain'), '2017-08-05', 'https://ebd.cda.pl/620x395/47674370a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3954, 243, 19, CONCAT('Everyone', CHAR(39), 's Internships'), '2017-08-12', 'https://ebd.cda.pl/620x395/4767449b0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3955, 243, 20, CONCAT('Listen Up!! A Tale from the Past'), '2017-08-19', 'https://ebd.cda.pl/620x395/476745263');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3956, 243, 21, CONCAT('Gear up for Final Exams'), '2017-09-02', 'https://ebd.cda.pl/620x395/476745856');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3957, 243, 22, CONCAT('Yaoyorozu: Rising'), '2017-09-09', 'https://ebd.cda.pl/620x395/476746121');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3958, 243, 23, CONCAT('Stripping the Varnish'), '2017-09-16', 'https://ebd.cda.pl/620x395/47674676d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3959, 243, 24, CONCAT('Katsuki Bakugou: Origin'), '2017-09-23', 'https://ebd.cda.pl/620x395/4767470e5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3960, 243, 25, CONCAT('Encounter'), '2017-09-30', 'https://ebd.cda.pl/620x395/476747971');

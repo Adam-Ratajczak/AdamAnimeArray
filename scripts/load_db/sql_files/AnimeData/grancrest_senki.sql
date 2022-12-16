@@ -1,0 +1,33 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (641, CONCAT('Grancrest Senki'), CONCAT('The continent of Atlatan once again finds itself devoured by the flames of war after a horrific event known as the Great Hall Tragedy. What was supposed to be a joyful occasion that would establish peace between the Fantasia Union and the Factory Alliance, the marriage of Sir Alexis Douse and Lady Marrine Kreische, was instead a tragedy. As the bride and groom walked down the aisle, the ceremony was suddenly interrupted by a powerful convergence of "Chaos," a dark energy from another dimension that corrupts the land and brings forth monsters and demons into the world. From within that energy appeared the Demon Lord of Diabolos, an evil being who instantly murdered the archdukes of both factions, shattering any hope for peace between them.<br>
+<br>Having failed to prevent this disaster, Siluca Meletes, an Alliance mage, is traveling through the Chaos-infested countryside to study under a master magician. When she is intercepted by a group of soldiers working with the Federation, Siluca is rescued by Theo Cornaro, a young warrior carrying a mysterious "Crest," a magical symbol that gives its wielder the ability to banish Chaos. Bearing no allegiance to a specific domain, Theo hopes to attain the rank of Lord so that he can liberate his home town of Sistina from its tyrannical ruler and the Chaos spreading within it. Impressed by his noble goal, Siluca enters into a magical contract with Theo, and the two embark on a journey to restore balance to their war-torn land.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2018-01-06', '2018-06-23', 'Winter 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/89883.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (458, 641, '"starry"', ' by Mashiro Ayano', 'js-theme-songs', 'https://open.spotify.com/track/0bXCBPRQnjIUW1vG5WeGwT')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1584, 641, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1585, 641, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1586, 641, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1587, 641, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (713, 641, 6);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11640, 641, 1, CONCAT('Contract'), NULL, 'https://ebd.cda.pl/620x395/59500229c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11641, 641, 2, CONCAT('Ambition'), NULL, 'https://ebd.cda.pl/620x395/595002551');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11642, 641, 3, CONCAT('Battle Flag'), NULL, 'https://ebd.cda.pl/620x395/5950028e7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11643, 641, 4, CONCAT('Decision'), NULL, 'https://ebd.cda.pl/620x395/5950031ce');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11644, 641, 5, CONCAT('Forest of Eternal Darkness'), NULL, 'https://ebd.cda.pl/620x395/595003475');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11645, 641, 6, CONCAT('March'), NULL, 'https://ebd.cda.pl/620x395/5950634e5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11646, 641, 7, CONCAT('The White Prince'), NULL, 'https://ebd.cda.pl/620x395/59506371d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11647, 641, 8, CONCAT('The Congress Dances'), NULL, 'https://ebd.cda.pl/620x368/20395897c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11648, 641, 9, CONCAT('The Black Princess'), NULL, 'https://ebd.cda.pl/620x368/20604093f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11649, 641, 10, CONCAT('Blade of Betrayal'), NULL, 'https://ebd.cda.pl/620x368/207588603');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11650, 641, 11, CONCAT('The Fall of Castle Unicorn'), NULL, 'https://ebd.cda.pl/620x368/2081766a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11651, 641, 12, CONCAT('A Treaty Formed'), NULL, 'https://ebd.cda.pl/620x368/2148764a0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11652, 641, 13, CONCAT('To the Homeland'), NULL, 'https://ebd.cda.pl/620x368/217324983');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11653, 641, 14, CONCAT('The Liberator of Sistina'), NULL, 'https://ebd.cda.pl/620x368/2175358d1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11654, 641, 15, CONCAT('Return'), NULL, 'https://ebd.cda.pl/620x368/2241846a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11655, 641, 16, CONCAT('Outpost'), NULL, 'https://ebd.cda.pl/620x395/595066446');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11656, 641, 17, CONCAT('Two Heroes'), NULL, 'https://ebd.cda.pl/620x395/5950667ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11657, 641, 18, CONCAT('Leader'), NULL, 'https://ebd.cda.pl/620x395/5950670af');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11658, 641, 19, CONCAT('The Awakening of a Noble'), NULL, 'https://ebd.cda.pl/620x395/59506731d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11659, 641, 20, CONCAT('Pitched Battle of the Three Forces'), NULL, 'https://ebd.cda.pl/620x395/59506760b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11660, 641, 21, CONCAT('Purge'), NULL, 'https://ebd.cda.pl/620x395/595067903');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11661, 641, 22, CONCAT('The Holy Grail'), NULL, 'https://ebd.cda.pl/620x395/5950682a1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11662, 641, 23, CONCAT('Castle Walls'), NULL, 'https://ebd.cda.pl/620x395/5950685da');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11663, 641, 24, CONCAT('Grancrest'), NULL, 'https://ebd.cda.pl/620x395/5950886bf');

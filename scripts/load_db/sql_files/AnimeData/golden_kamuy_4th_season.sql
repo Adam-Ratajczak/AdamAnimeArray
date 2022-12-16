@@ -1,0 +1,11 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (636, CONCAT('Golden Kamuy 4th Season'), CONCAT('Fourth season of Golden Kamuy.'), 1, '2022-10-03', NULL, 'Fall 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1855/128059.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (288, 636, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1574, 636, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1575, 636, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (708, 636, 155);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (676, 636, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (677, 636, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (678, 636, 25);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11564, 636, 1, CONCAT('Rushin', CHAR(39), ' Outta Russia'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4904202');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11565, 636, 2, CONCAT('Cocoon'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4919589');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11566, 636, 3, CONCAT('The Smell of Sulfur'), NULL, 'https://ebd.cda.pl/620x368/122852767a');

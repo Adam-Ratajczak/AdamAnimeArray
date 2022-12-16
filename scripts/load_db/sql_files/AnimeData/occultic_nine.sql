@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1397, CONCAT('OcculticNine'), CONCAT('A blog disproving the supernatural, co-run by NEET teenager Yuuta Gamon and his enthusiastic best friend Ryouka Narusawa, becomes the catalyst that would bring together a group of people who supposedly have nothing to do with each other.<br>
+<br>These individuals include high school fortune teller Miyuu Aikawa, who joins Yuuta to work on the blog realist Sarai Hashigami, who is stunned when tragedy strikes his family doujin artist Ririka Nishizono, who has an uncanny ability to predict the future with her art black magic practitioner and local curse expert Aria Kurenaino and her ghostly friend Shun Moritsuka, a seemingly childish otaku detective and reporter Touko Sumikaze.<br>
+<br>As this unlikely group, bound only by the strings of fate, find their way to each other, they are confronted with murder and other events that are shrouded by the presence of the supernatural. They must band together to solve the mysteries interlacing the city and their lives.<br>
+<br>[Written by MAL Rewrite]'), 1, '2016-10-09', '2016-12-25', 'Fall 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/81186.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (982, 1397, '"Seisuu 3 no Nijou (聖数3の二乗)"', ' by Kanako Itou', 'js-theme-songs', 'https://open.spotify.com/track/03vZacOy8Ds4j3SzaS8Bo8')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3470, 1397, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3471, 1397, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1504, 1397, 6);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24382, 1397, 1, CONCAT('A Lot of People'), '2016-10-09', 'https://ebd.cda.pl/620x368/1051930e3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24383, 1397, 2, CONCAT('I Don', CHAR(39), 't Have a Power to Change the Destiny'), '2016-10-16', 'https://ebd.cda.pl/620x395/589217945');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24384, 1397, 3, CONCAT('That Was All a Delusion'), '2016-10-23', 'https://ebd.cda.pl/620x395/58921469b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24385, 1397, 4, CONCAT('Gamon Yuuta is the Curlprit'), '2016-10-30', 'https://ebd.cda.pl/620x395/5892161f0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24386, 1397, 5, CONCAT('Here Is a New World, Right?'), '2016-11-06', 'https://ebd.cda.pl/620x395/589215890');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24387, 1397, 6, CONCAT('That Was You, Right?'), '2016-11-13', 'https://ebd.cda.pl/620x395/5892152eb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24388, 1397, 7, CONCAT('Projection Start'), '2016-11-20', 'https://ebd.cda.pl/620x395/589215563');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24389, 1397, 8, CONCAT('This Is the Ultimate Treatement We Have Reached'), '2016-11-27', 'https://ebd.cda.pl/620x395/58921645d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24390, 1397, 9, CONCAT('Suerly the World Will End'), '2016-12-04', 'https://ebd.cda.pl/620x395/5892170a4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24391, 1397, 10, CONCAT('The Real Me'), '2016-12-11', 'https://ebd.cda.pl/620x395/58921673e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24392, 1397, 11, CONCAT('For Our Great Objective!'), '2016-12-18', 'https://ebd.cda.pl/620x395/58921730b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24393, 1397, 12, CONCAT('Occultic Nine'), '2016-12-25', 'https://ebd.cda.pl/620x395/5892176d9');

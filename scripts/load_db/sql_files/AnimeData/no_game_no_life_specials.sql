@@ -1,0 +1,11 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1365, CONCAT('No Game No Life Specials'), CONCAT('Picture drama specials included on the Blu-ray/DVD volumes.'), 5, '2014-06-25', '2014-11-26', '', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/71783.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3404, 1365, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3405, 1365, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3406, 1365, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1471, 1365, 21);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23933, 1365, 1, CONCAT('Wild Fancy'), '2014-06-25', 'https://ebd.cda.pl/620x368/176192513');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23934, 1365, 2, CONCAT('Director'), '2014-07-30', 'https://ebd.cda.pl/620x368/309608757');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23935, 1365, 3, CONCAT('Revenge'), '2014-08-27', 'https://ebd.cda.pl/620x368/30960999a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23936, 1365, 4, CONCAT('Dressup Doll'), '2014-09-24', 'https://ebd.cda.pl/620x368/350994413');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23937, 1365, 5, CONCAT('Growth'), '2014-10-29', 'https://ebd.cda.pl/620x368/310693937');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23938, 1365, 6, CONCAT('Appetite'), '2014-11-26', 'https://ebd.cda.pl/620x368/3509953c5');

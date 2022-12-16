@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (347, CONCAT('Clockwork Planet'), CONCAT('Legend tells that when the Earth was destroyed, the great clockmaker Y made a replacement from cogs and gears. Naoto Miura is a young boy who aspires to be a great clockmaker. However, despite his unique talent—sensitive hearing that can immediately understand clockwork mechanics from noise alone—he has made little progress. But this changes when a coffin falls from the sky into his apartment, revealing RyuZU, a female automaton forged by Y himself.<br>
+<br>News of RyuZU', CHAR(39), 's arrival brings Marie Bell Breguet, the gifted heir of a distinguished line of clockmakers, and her cyborg bodyguard Vainney Halter into Naoto', CHAR(39), 's life as well. When she and Naoto both become embroiled in an action-packed battle for their lives, they discover an uncomfortable truth: the clockwork planet that humanity has lived on for over a millennium is beginning to break down—a secret that many people will kill to protect.<br>
+<br>[Written by MAL Rewrite]'), 1, '2017-04-07', '2017-06-23', 'Spring 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/85989.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (246, 347, '"Clockwork Planet"', ' by fripSide', 'js-theme-songs', 'https://open.spotify.com/track/75TYi3oah58aUDGtiPPLXb');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (803, 347, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (804, 347, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (391, 347, 96);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5913, 347, 1, CONCAT('Gear of Destiny'), '2017-04-07', 'https://ebd.cda.pl/620x395/677274528');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5914, 347, 2, CONCAT('Purge'), '2017-04-14', 'https://ebd.cda.pl/620x395/67727609c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5915, 347, 3, CONCAT('Conflict'), '2017-04-21', 'https://ebd.cda.pl/620x395/67728323f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5916, 347, 4, CONCAT('Imaginary Gear'), '2017-04-28', 'https://ebd.cda.pl/620x395/677282359');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5917, 347, 5, CONCAT('Trishula'), '2017-05-05', 'https://ebd.cda.pl/620x395/67727573b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5918, 347, 6, CONCAT('Deep Underground'), '2017-05-12', 'https://ebd.cda.pl/620x395/677274884');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5919, 347, 7, CONCAT('Attack the Multiple Grid'), '2017-05-19', 'https://ebd.cda.pl/620x395/677276301');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5920, 347, 8, CONCAT('Yatsukahagi'), '2017-05-26', 'https://drive.google.com/file/d/0B6BWr4iAdBLkTXVEeGVCMmFtVmM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5921, 347, 9, CONCAT('Criminal Act'), '2017-06-02', 'https://drive.google.com/file/d/0B6BWr4iAdBLkX2diYmJrSU5GQzg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5922, 347, 10, CONCAT('Progressor'), '2017-06-09', 'https://ebd.cda.pl/620x395/67727811a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5923, 347, 11, CONCAT('Theory of Y'), '2017-06-16', 'https://ebd.cda.pl/620x395/677277503');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5924, 347, 12, CONCAT('Steel Weight'), '2017-06-23', 'https://ebd.cda.pl/620x395/6772778a9');

@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1960, CONCAT('Tsukumogami Kashimasu'), CONCAT('The series is set during the Edo period, in the Fukagawa ward of old Edo (present-day Tokyo). Because the area is prone to fire and flooding, residents rent everyday items like pots, futons, and clothing from shops instead of purchasing them, so as not to impede them when they flee. Obeni and Seiji, an older sister and younger brother, run one such rental shop called Izumoya. However, mixed in with their inventory are tsukumogami, objects that have turned into spirits after a hundred years of existence. The siblings sometimes lend these sentient items to customers. Both Obeni and Seiji can see and talk to these spirits, and other tsukumogami often come to the store after hearing of the famed siblings. <br>
+<br>(Source: ANN)'), 1, '2018-07-23', '2018-10-15', 'Summer 2018', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1373/107550.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1402, 1960, '"Get Into My Heart"', ' by Miyavi and Shishido Kafuka', 'js-theme-songs', 'https://open.spotify.com/track/40s6RnBGxprQ42ET12GKkb');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4891, 1960, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4892, 1960, 8);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4893, 1960, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2126, 1960, 101);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2179, 1960, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2180, 1960, 11);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34698, 1960, 1, CONCAT('Rikyu-Nezumi (Tea Leaf Gray)'), NULL, 'https://ebd.cda.pl/620x368/5277891e1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34699, 1960, 2, CONCAT('Kuchinashi (Gardenia)'), NULL, 'https://ebd.cda.pl/620x368/52971575d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34700, 1960, 3, CONCAT('Nadeshiko'), NULL, 'https://ebd.cda.pl/620x368/535386335');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34701, 1960, 4, CONCAT('Kogare-kou'), NULL, 'https://streamtape.com/e/L3J2MoLg9ziRz61/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34702, 1960, 5, CONCAT('Fukagawa-nezumi'), NULL, 'https://ebd.cda.pl/620x395/8147711fd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34703, 1960, 6, CONCAT('Heki-ruri'), NULL, 'https://ebd.cda.pl/620x395/8147720c1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34704, 1960, 7, CONCAT('Uraha-yanagi'), NULL, 'https://ebd.cda.pl/620x395/814771445');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34705, 1960, 8, CONCAT('Edo-murasaki'), NULL, 'https://ebd.cda.pl/620x395/814772302');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34706, 1960, 9, CONCAT('Hisoku'), NULL, 'https://ebd.cda.pl/620x395/8147717cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34707, 1960, 10, CONCAT('Binrouji-zome'), NULL, 'https://ebd.cda.pl/620x395/814778346');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34708, 1960, 11, CONCAT('Nise-murasaki'), NULL, 'https://ebd.cda.pl/620x395/8147726b0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34709, 1960, 12, CONCAT('Suou'), NULL, 'https://ebd.cda.pl/620x395/81477415a');

@@ -1,0 +1,16 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1831, CONCAT('Super Lovers 2'), CONCAT('Second season of Super Lovers.'), 1, '2017-01-12', '2017-03-16', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/83807.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (764, 1831, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1985, 1831, 44);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2027, 1831, 47);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2028, 1831, 13);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2029, 1831, 19);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32881, 1831, 1, CONCAT('In The Pink'), '2017-01-12', 'https://drive.google.com/file/d/1mm7DrTmOxQ0fwtr7WWwdNuVnOaVvH-Hf/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32882, 1831, 2, CONCAT('Gold Star'), '2017-01-19', 'https://drive.google.com/file/d/1WioynVxthEu4yRXtb3S-FhsKtJCVYaDV/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32883, 1831, 3, CONCAT('White Lie'), '2017-01-26', 'https://drive.google.com/file/d/1UOA7Di3g0zvrKdP75xCnot7daYtlQj5g/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32884, 1831, 4, CONCAT('See Red'), '2017-02-02', 'https://drive.google.com/file/d/1H8gi6TNE2Wt6VTb--wOYB_uK9pxO9sp6/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32885, 1831, 5, CONCAT('Black and White'), '2017-02-09', 'https://drive.google.com/file/d/167jmhkIbXb-sRaY5CqljFJXICY26lKVU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32886, 1831, 6, CONCAT('Marine Blue'), '2017-02-16', 'https://drive.google.com/file/d/1PLZ43qx3OgbbTzXfA4MxbGo5VSW5KF5V/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32887, 1831, 7, CONCAT('Sweet Peach'), '2017-02-23', 'https://drive.google.com/file/d/1UleSijGdLS1ny2S_mKh1OZnPHEu4OGDQ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32888, 1831, 8, CONCAT('Heavy Fog'), '2017-03-02', 'https://drive.google.com/file/d/1QYBiidN65IqJH1m5ZvEOZPZ6q3CU_PyD/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32889, 1831, 9, CONCAT('Silver Lining'), '2017-03-09', 'https://drive.google.com/file/d/18e5kDhEA269A0vTzYM-xC3lM3MSURFoK/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32890, 1831, 10, CONCAT('Happy Days'), '2017-03-16', 'https://ebd.cda.pl/800x450/4838207e3');

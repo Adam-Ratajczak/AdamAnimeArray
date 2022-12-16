@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1830, CONCAT('Super Cub'), CONCAT('Koguma, a reserved second-year high school student, has nothing—no parents, hobbies, friends, or goals. On her way home one afternoon, she visits a vehicle shop in hopes of acquiring a motor scooter. With only enough money to make ends meet, she is disheartened by the price tags and prepares to turn back. However, as she is about to leave, the shop', CHAR(39), 's owner offers her a pre-owned Honda Super Cub for ten thousand yen. Believing that the motorcycle will help brighten her monotonous world, she accepts the deal. As Koguma journeys through her town on small adventures with her Super Cub, she begins to build irreplaceable friendships and eagerly advances toward her new life.<br>
+<br>[Written by MAL Rewrite]'), 2, '2021-04-07', '2021-06-23', 'Spring 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1776/111172.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1303, 1830, '"Mahou no Kaze (まほうのかぜ)"', ' by Akane Kumada', 'js-theme-songs', 'https://open.spotify.com/track/6pmagdvWHvHMiy5HgXcP8x')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (763, 1830, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4529, 1830, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4530, 1830, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4531, 1830, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1984, 1830, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2025, 1830, 24);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2026, 1830, 29);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32869, 1830, 1, CONCAT('The Girl with Nothing'), '2021-04-07', 'https://ebd.cda.pl/620x368/72153852c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32870, 1830, 2, CONCAT('Reiko'), '2021-04-14', 'https://ebd.cda.pl/620x368/72614239e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32871, 1830, 3, CONCAT('Things Received'), '2021-04-21', 'https://ebd.cda.pl/620x368/7307389a3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32872, 1830, 4, CONCAT('Part-Time Job'), '2021-04-28', 'https://ebd.cda.pl/620x368/7365793dc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32873, 1830, 5, CONCAT('Reiko', CHAR(39), 's Summer'), '2021-05-05', 'https://video.sibnet.ru/shell.php?videoid=4309318');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32874, 1830, 6, CONCAT('My Cub'), '2021-05-12', 'https://video.sibnet.ru/shell.php?videoid=4314277');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32875, 1830, 7, CONCAT('The Girl of Summer-Sky Aqua'), '2021-05-19', 'https://video.sibnet.ru/shell.php?videoid=4318259');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32876, 1830, 8, CONCAT('Shii', CHAR(39), 's Place'), '2021-05-26', 'https://ebd.cda.pl/620x368/7561918b4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32877, 1830, 9, CONCAT('In Ice'), '2021-06-02', 'https://video.sibnet.ru/shell.php?videoid=4326869');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32878, 1830, 10, CONCAT('Snow'), '2021-06-09', 'https://video.sibnet.ru/shell.php?videoid=4331147');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32879, 1830, 11, CONCAT('A Distant Spring'), '2021-06-16', 'https://video.sibnet.ru/shell.php?videoid=4339038');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32880, 1830, 12, CONCAT('Super Cub'), '2021-06-23', 'https://ebd.cda.pl/620x368/7783443ad');

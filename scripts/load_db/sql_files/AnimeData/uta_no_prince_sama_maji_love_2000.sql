@@ -1,0 +1,24 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2003, CONCAT('Uta no☆Prince-sama♪ Maji Love 2000%'), CONCAT('Entering her Master', CHAR(39), 's course, Nanami Haruka is facing an even more difficult time. And she isn', CHAR(39), 't the only one. The main six members of Starish are assigned new seniors to watch over them! But the seniors aren', CHAR(39), 't having the best attitudes about it. <br>
+<br>Watch Uta no☆Prince-sama♪ Maji Love 2000% and find yourself completely engaged in a whole new adventure mixed in with comedy and romance!'), 1, '2013-04-04', '2013-06-27', 'Spring 2013', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/44019.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1431, 2003, '"Maji LOVE 2000% (マジLOVE2000%)"', ' by ST☆RISH (Takuma Terashima, Kenichi Suzumura, Kishou Taniyama, Mamoru Miyano, Junichi Suwabe, Hiro Shimono, Kousuke Toriumi)', 'js-theme-songs', 'https://open.spotify.com/track/6GoKkt41PNTnKNg5vMCw4S')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (835, 2003, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4994, 2003, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4995, 2003, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2175, 2003, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2220, 2003, 36);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2221, 2003, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2222, 2003, 47);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2223, 2003, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35325, 2003, 1, CONCAT('Poison KISS'), '2013-04-04', 'https://video.sibnet.ru/shell.php?videoid=1095351');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35326, 2003, 2, CONCAT('REINCARNATION of Love'), '2013-04-11', 'https://video.sibnet.ru/shell.php?videoid=1106566');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35327, 2003, 3, CONCAT('True Wing'), '2013-04-18', 'https://video.sibnet.ru/shell.php?videoid=1107809');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35328, 2003, 4, CONCAT('Koizakura'), '2013-04-25', 'https://video.sibnet.ru/shell.php?videoid=1117300');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35329, 2003, 5, CONCAT('Smile Magic'), '2013-05-02', 'https://vk.com/video_ext.php?oid=191050152&id=165209067&hash=66e028684f7ba238&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35330, 2003, 6, CONCAT('Orange Rhapsody'), '2013-05-09', 'https://vk.com/video_ext.php?oid=191050152&id=165251136&hash=0d382cc7965a7429&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35331, 2003, 7, CONCAT('Promise to Sirius'), '2013-05-09', 'https://video.sibnet.ru/shell.php?videoid=1143518');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35332, 2003, 8, CONCAT('Fantasia of the Stars'), '2013-05-23', 'https://vk.com/video_ext.php?oid=191050152&id=165351085&hash=04dccadeed23b5dc&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35333, 2003, 9, CONCAT('We are STARISH'), '2013-05-30', 'https://video.sibnet.ru/shell.php?videoid=1159504');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35334, 2003, 10, CONCAT('Crystal Time'), '2013-06-06', 'https://video.sibnet.ru/shell.php?videoid=1167312');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35335, 2003, 11, CONCAT('Dreamer', CHAR(39), 's Symphony'), '2013-06-13', 'https://vk.com/video_ext.php?oid=191050152&id=165532690&hash=f05295e3232cc769&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35336, 2003, 12, CONCAT('Heaven', CHAR(39), 's Gate'), '2013-06-20', 'https://video.sibnet.ru/shell.php?videoid=1179801');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35337, 2003, 13, CONCAT('Maji LOVE 2000%'), '2013-06-20', 'https://video.sibnet.ru/shell.php?videoid=1184943');

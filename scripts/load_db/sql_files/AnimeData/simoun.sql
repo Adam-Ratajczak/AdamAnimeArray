@@ -1,0 +1,35 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1758, CONCAT('Simoun'), CONCAT('In the peaceful theocracy of Simulicram, everyone is born female. At age 17, each maiden undergoes a special ceremony where she chooses her sex. However, only Pairs of maiden priestesses can synchronize with the ancient flying ships known as Simoun needed to defend Simulicram. These Pairs refrain from undergoing the ceremony as long as they wish to keep piloting their Simoun.<br>
+<br>Aer is recruited to be a Simoun pilot after a terrifying attack by an enemy nation decimates the squadron known as Chor Tempest. To earn her wings she needs to find her way into the heart of Neviril, Regina of Chor Tempest. But Neviril', CHAR(39), 's heart still belongs to her previous Pair, lost in the battle when she attempted a forbidden Simoun maneuver.<br>
+<br>(Source: Media Blasters) '), 1, '2006-04-03', '2006-09-25', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/29109.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1245, 1758, '"Utsukushi Kereba Sore de Ii"', ' by Chiaki Ishikawa', 'js-theme-songs', 'https://open.spotify.com/track/1tFWBP91HaTmdMFwmBNRD7');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4354, 1758, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4355, 1758, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4356, 1758, 16);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4357, 1758, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1900, 1758, 46);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31563, 1758, 1, CONCAT('Fallen Wings'), '2006-04-03', 'https://vk.com/video_ext.php?oid=165873799&id=163107722&hash=5f0c0b3d3143f1a4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31564, 1758, 2, CONCAT('The Blue Fountain'), '2006-04-10', 'https://vk.com/video_ext.php?oid=165873799&id=163107720&hash=d51ffba9f6cd7474');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31565, 1758, 3, CONCAT('Distant War'), '2006-04-17', 'https://vk.com/video_ext.php?oid=165873799&id=163112794&hash=a5b8922d4dbe4ba5&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31566, 1758, 4, CONCAT('Nearby War'), '2006-04-24', 'https://vk.com/video_ext.php?oid=165873799&id=163122533&hash=39a16e4691217e1c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31567, 1758, 5, CONCAT('White Solitude'), '2006-05-01', 'https://vk.com/video_ext.php?oid=165873799&id=163127980&hash=17137a1800cd7755');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31568, 1758, 6, CONCAT('Wounds and Pain'), '2006-05-08', 'https://video.sibnet.ru/shell.php?videoid=674184');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31569, 1758, 7, CONCAT('Over International Waters'), '2006-05-15', 'https://vk.com/video_ext.php?oid=165873799&id=163132672&hash=db58dba52d3d88ab');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31570, 1758, 8, CONCAT('Prayer'), '2006-05-22', 'https://vk.com/video_ext.php?oid=165873799&id=163132670&hash=c6eb1160645a99b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31571, 1758, 9, CONCAT('The Hearing'), '2006-05-29', 'https://video.sibnet.ru/shell.php?videoid=677179');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31572, 1758, 10, CONCAT('Birds in a Cage'), '2006-06-05', 'https://video.sibnet.ru/shell.php?videoid=677173');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31573, 1758, 11, CONCAT('United Front'), '2006-06-12', 'https://video.sibnet.ru/shell.php?videoid=677172');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31574, 1758, 12, CONCAT('Sisters'), '2006-06-19', 'https://video.sibnet.ru/shell.php?videoid=679590');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31575, 1758, 13, CONCAT('Reasons'), '2006-06-26', 'https://vk.com/video_ext.php?oid=165873799&id=163168509&hash=0e4c0b11d36fb999');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31576, 1758, 14, CONCAT('Sacrosanct'), '2006-07-03', 'https://video.sibnet.ru/shell.php?videoid=682013');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31577, 1758, 15, CONCAT('One by One'), '2006-07-08', 'https://video.sibnet.ru/shell.php?videoid=682014');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31578, 1758, 16, CONCAT('The Emerald Ri Maajon'), '2006-07-17', 'https://video.sibnet.ru/shell.php?videoid=682010');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31579, 1758, 17, CONCAT('The Ruins'), '2006-07-24', 'https://video.sibnet.ru/shell.php?videoid=682079');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31580, 1758, 18, CONCAT('Funeral Procession'), '2006-07-31', 'https://vk.com/video_ext.php?oid=165873799&id=163186430&hash=2efe86354a5fd91a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31581, 1758, 19, CONCAT('Sibylla'), '2006-08-07', 'https://video.sibnet.ru/shell.php?videoid=682081');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31582, 1758, 20, CONCAT('Lament'), '2006-08-14', 'https://vk.com/video_ext.php?oid=165873799&id=163213513&hash=c1f30e40e0fb5157');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31583, 1758, 21, CONCAT('The Door to a New World'), '2006-08-21', 'https://vk.com/video_ext.php?oid=165873799&id=163214757&hash=6cbae23f62d9906a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31584, 1758, 22, CONCAT('Sortie'), '2006-08-28', 'https://vk.com/video_ext.php?oid=165873799&id=163214755&hash=eb56392e447d3c3e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31585, 1758, 23, CONCAT('Eternal Maidens'), '2006-09-04', 'https://video.sibnet.ru/shell.php?videoid=692059');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31586, 1758, 24, CONCAT('Choices'), '2006-09-11', 'https://vk.com/video_ext.php?oid=165873799&id=163217256&hash=aae30c2ab130578c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31587, 1758, 25, CONCAT('Pair'), '2006-09-18', 'https://vk.com/video_ext.php?oid=165873799&id=163217254&hash=888aac56929a2140');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31588, 1758, 26, CONCAT('Their Portrait'), '2006-09-25', 'https://vk.com/video_ext.php?oid=165873799&id=163217252&hash=a83651a65fb55327');

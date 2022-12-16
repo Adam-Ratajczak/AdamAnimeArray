@@ -1,0 +1,10 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (808, CONCAT('Hyakka Ryouran: Samurai After'), CONCAT('OVA bundled with Niθ Art Works Vol. 2, featuring a new character named Kagekatsu Uesugi.'), 1, '2015-01-23', '2015-07-01', '', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/73391.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1982, 808, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1983, 808, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1984, 808, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (885, 808, 129);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (878, 808, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (879, 808, 32);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (880, 808, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14606, 808, 1, CONCAT('Samurai General Election'), '2015-01-23', 'https://ebd.cda.pl/800x450/359645270');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14607, 808, 2, CONCAT('Samurai Wedding'), '2015-07-01', 'https://ebd.cda.pl/800x450/359652119');

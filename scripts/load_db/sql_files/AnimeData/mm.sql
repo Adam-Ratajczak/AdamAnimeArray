@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1269, CONCAT('MM!'), CONCAT('Taro Sado is a high school student who lives his day to day life with a big secret—he', CHAR(39), 's a masochist! Encouraged by his cross-dressing best friend Tatsukichi Hayama, Taro asks the Second Voluntary Club for help with his problem and ends up joining the club after they vow to "fix" him.<br>
+<br>However, it turns out that all of the members of the club have some serious issues. The club leader Mio Isurugi is a self-designated god who is afraid of cats, Arashiko Yuuno has a severe fear of men, and the club advisor Michiru Onigawara is a sadist who enjoys making people cosplay. <br>
+<br>Together with other wacky characters such as Yumi Mamiya, a talented masseuse and Yuuno', CHAR(39), 's best friend, and Noa Hiiragi, the president of the invention club, they all learn about the importance of acceptance and kindness.<br>
+<br>[Written by MAL Rewrite]'), 1, '2010-10-02', '2010-12-18', 'Fall 2010', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/85871.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (886, 1269, '"More-more LOVERS!!"', ' by Natsuko Asou', 'js-theme-songs', 'https://open.spotify.com/track/1hFasgdMOMppEcQDNO3reL');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1372, 1269, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1373, 1269, 15);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21678, 1269, 1, CONCAT('Sharp Descending First Love!'), '2010-10-02', 'https://ebd.cda.pl/620x368/528400204');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21679, 1269, 2, CONCAT('The Distance Between Similar People'), '2010-10-09', 'https://ebd.cda.pl/620x368/528400555');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21680, 1269, 3, CONCAT('The Dog Fight for You'), '2010-10-16', 'https://ebd.cda.pl/800x450/1755163e2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21681, 1269, 4, CONCAT('This and That Silly Couple'), '2010-10-23', 'https://ebd.cda.pl/800x450/1755154db');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21682, 1269, 5, CONCAT('The Genius Girl', CHAR(39), 's Runaway Panic!'), '2010-10-30', 'https://ebd.cda.pl/800x450/175517838');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21683, 1269, 6, CONCAT('My Mayhem-Filled Home'), '2010-11-06', 'https://ebd.cda.pl/620x368/5284779db');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21684, 1269, 7, CONCAT('A Midsummer', CHAR(39), 's Love Triangle?'), '2010-11-13', 'https://ebd.cda.pl/620x368/5284827fe');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21685, 1269, 8, CONCAT('A ', CHAR(39), 'B and L', CHAR(39), ' Patterned Love'), '2010-11-20', 'https://ebd.cda.pl/800x450/175519073');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21686, 1269, 9, CONCAT('MFC', CHAR(39), 's Great Conspiracy'), '2010-11-27', 'https://ebd.cda.pl/800x450/175525610');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21687, 1269, 10, CONCAT('Miss Sadistic Arashiko'), '2010-12-04', 'https://ebd.cda.pl/800x450/1755259fc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21688, 1269, 11, CONCAT('The Lost Memory'), '2010-12-11', 'https://ebd.cda.pl/800x450/175526278');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21689, 1269, 12, CONCAT('A Christmas Wish'), '2010-12-18', 'https://ebd.cda.pl/800x450/175526855');

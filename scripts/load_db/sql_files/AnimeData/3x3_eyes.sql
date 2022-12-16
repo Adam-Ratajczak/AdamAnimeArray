@@ -1,0 +1,12 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (11, CONCAT('3x3 Eyes'), CONCAT('3X3 Eyes is the story of a young man named Yakumo Fuuji, who through a strange series of events becomes the immortal slave of the last of a race of 3 Eyed demons. The demon absorbs his soul to save his life, making him immortal in the process. Now, he begins a journey with the female demon in an attempt to find a way of becoming human. Of course, there are many complications along the way, not the least of which being that the demon is a female with a split personality, one achingly cute and the other being no-nonsense destructive power, and the romances that develop between.'), 3, '1991-07-25', '1992-03-19', '', '29 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/26940.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (21, 11, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (22, 11, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (23, 11, 11);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (24, 11, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (11, 11, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (10, 11, 10);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (11, 11, 11);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (145, 11, 1, CONCAT('Transmigration'), '1991-07-25', 'https://ebd.cda.pl/620x395/63970678f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (146, 11, 2, CONCAT('Yakumo'), '1991-09-26', 'https://ebd.cda.pl/620x395/639706104');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (147, 11, 3, CONCAT('Sacrifice'), '1992-01-23', 'https://ebd.cda.pl/620x395/63970550a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (148, 11, 4, CONCAT('Straying'), '1992-03-19', 'https://ebd.cda.pl/620x395/63970584f');

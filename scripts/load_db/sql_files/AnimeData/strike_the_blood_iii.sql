@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1819, CONCAT('Strike the Blood III'), CONCAT('It was announced at a Dengeki Game Festival stage event that the Strike the Blood light novel series will get a third OVA release. It will cover until the end of Seisen-hen.<br>
+<br>(Source: MAL news)'), 3, '2018-12-19', '2019-09-25', '', '26 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1768/111676.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1295, 1819, '"Blood and Emotion"', ' by Kishida Kyoudan & The Akeboshi Rockets', 'js-theme-songs', 'https://open.spotify.com/track/4bvj3I91wjnErvSUVrEtSr')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4500, 1819, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4501, 1819, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4502, 1819, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4503, 1819, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1970, 1819, 50);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1971, 1819, 51);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2021, 1819, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2022, 1819, 19);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32718, 1819, 1, CONCAT('Tartaros Roses I'), '2018-12-19', 'https://ebd.cda.pl/620x368/2948324c7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32719, 1819, 2, CONCAT('Tartaros Roses II'), '2018-12-19', 'https://drive.google.com/file/d/1l6eO_GOSafkFkeRxpNMxYck-iedh3o_4/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32720, 1819, 3, CONCAT('Tartaros Roses III'), '2019-03-27', 'https://drive.google.com/file/d/1hhwA_GtbIfBqH0h-oz4xUEJrkzCleiBB/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32721, 1819, 4, CONCAT('The Time of My Life I'), '2019-03-27', 'https://drive.google.com/file/d/1txgNLg_yxZ1tVWrNebIvTB15d96INDCG/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32722, 1819, 5, CONCAT('The Time of My Life II'), '2019-05-29', 'https://drive.google.com/file/d/1v_nAQyBXEGuHhksKa4LyRT4ivvQo6G1D/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32723, 1819, 6, CONCAT('The Time of My Life III'), '2019-05-29', 'https://drive.google.com/file/d/1m1jc-ivjgez43ptHHXr-A0D0VlQcAAcl/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32724, 1819, 7, CONCAT('The War Of Original Vampires I'), '2019-07-24', 'https://drive.google.com/file/d/1WC6Gwea6DlHyy-FlRV7pQAIb3yq4X81Y/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32725, 1819, 8, CONCAT('The War Of Original Vampires II'), '2019-07-24', 'https://drive.google.com/file/d/1f8ftCHq995ZtWi0iq6talSypsjCTGe2k/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32726, 1819, 9, CONCAT('The War Of Original Vampires III'), '2019-09-25', 'https://drive.google.com/file/d/1EjnktcsX7yE0AiCs5rMfUJ1BGkx0FCo-/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32727, 1819, 10, CONCAT('The War Of Original Vampires IV'), '2019-09-25', 'https://drive.google.com/file/d/1ZGU2VZyccoO-cUXZUDNSfG_Bo6pBxPXw/preview');

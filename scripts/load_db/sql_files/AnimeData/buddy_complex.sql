@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (266, CONCAT('Buddy Complex'), CONCAT('When ordinary high school student Aoba Watase is suddenly targeted by a giant robot known as a "Valiancer," he is saved by his mysterious classmate Hina Yumihara. After revealing that she and their robotic enemy are from the future, Hina suddenly propels Aoba 70 years forward in order to prevent his death.<br>
+<br>Upon arrival, Aoba finds himself in the cockpit of a Valiancer called "Luxon," stuck in the midst of a firefight between the military forces of the Free Pact Alliance (FPA) and Zogilia Republic. After he shows high compatibility with an FPA pilot named Dio Weinberg, the two perform a successful "coupling," allowing them to share experiences and subsequently increase their capabilities and skills. Although Aoba is able to survive this unexpected battle, he is taken into custody by the FPA ship Cygnus, who wishes to interrogate him. While the student', CHAR(39), 's main concern is whether he will ever be able to return home, what he doesn', CHAR(39), 't realize is that he is about to get caught up in a war to protect the world.<br>
+<br>[Written by MAL Rewrite]'), 1, '2014-01-06', '2014-03-31', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/57303.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (186, 266, '"UNISONIA"', ' by TRUE', 'js-theme-songs', 'https://open.spotify.com/track/5slxCEA0Ryu8gGlZbwNrTS')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (131, 266, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (616, 266, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (617, 266, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (301, 266, 1);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4241, 266, 1, CONCAT('Encounter'), '2014-01-06', 'https://ebd.cda.pl/620x395/787909561');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4242, 266, 2, CONCAT('Nice Coupling'), '2014-01-13', 'https://ebd.cda.pl/620x395/7879087d5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4243, 266, 3, CONCAT('Meeting Again'), '2014-01-20', 'https://ebd.cda.pl/620x395/7879091a3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4244, 266, 4, CONCAT('The Time for Resolve'), '2014-01-27', 'https://ebd.cda.pl/620x395/787913537');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4245, 266, 5, CONCAT('Scars'), '2014-02-03', 'https://ebd.cda.pl/620x395/78791194a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4246, 266, 6, CONCAT('The Other Coupler'), '2014-02-10', 'https://ebd.cda.pl/620x395/78791631d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4247, 266, 7, CONCAT('Buddy'), '2014-02-17', 'https://ebd.cda.pl/620x395/78791111e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4248, 266, 8, CONCAT('Stormy Night'), '2014-02-24', 'https://ebd.cda.pl/620x395/787915955');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4249, 266, 9, CONCAT('The Coupling System'), '2014-03-03', 'https://ebd.cda.pl/620x395/787920390');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4250, 266, 10, CONCAT('Father and Child'), '2014-03-10', 'https://ebd.cda.pl/620x395/7879123fd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4251, 266, 11, CONCAT('The Truth'), '2014-03-17', 'https://ebd.cda.pl/620x395/78791277a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4252, 266, 12, CONCAT('The Bond Between Them'), '2014-03-24', 'https://ebd.cda.pl/620x395/787913126');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4253, 266, 13, CONCAT('Acception'), '2014-03-31', 'https://ebd.cda.pl/620x395/787911553');

@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (861, CONCAT('Inu to Hasami wa Tsukaiyou'), CONCAT('A nonsense comical mystery. Harumi Kazuhito is a high school boy who loves books and is a fan of novelist Natsuno Kirihime. One day, he finds Kirihime writing at a cafe, about to be shot by a robber. He protects her from the attack but is killed instead. Through the supernatural power of a book-worm, he is reincarnated as a dachshund dog. Kazuhito (as a dog) writhes in a painful bookless life, when a sadistic woman carrying a pair of scissors offers him help. She is Kirihime herself.<br>
+<br>(Source: Dog and Scissors Wiki)'), 1, '2013-07-02', '2013-09-17', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/56313.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (608, 861, '"Wan Wan Wan Wan N_1!! (わんわんわんわんN_1!!)"', ' by Inu Musume Club (犬っ娘クラブ)', 'js-theme-songs', 'https://open.spotify.com/track/4RUdzZih9oOXg9UOvb8upc')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2062, 861, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2063, 861, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (943, 861, 5);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15218, 861, 1, CONCAT('Every Dog Has His Day'), '2013-07-02', 'https://ebd.cda.pl/620x395/6221456e4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15219, 861, 2, CONCAT('Strike While the Dog Is Hot'), '2013-07-09', 'https://ebd.cda.pl/620x395/62214597c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15220, 861, 3, CONCAT('The Winter Dog Flies into the Fire'), '2013-07-16', 'https://ebd.cda.pl/620x395/6221462ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15221, 861, 4, CONCAT('Drowning Men Clutch at Dogs'), '2013-07-23', 'https://ebd.cda.pl/620x395/62214686e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15222, 861, 5, CONCAT('Nothing Ventured, No Dog Gained'), '2013-07-30', 'https://ebd.cda.pl/620x395/62214927c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15223, 861, 6, CONCAT('Rain Settles the Dog'), '2013-08-06', 'https://ebd.cda.pl/620x395/62214652a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15224, 861, 7, CONCAT('The Dog Would Not Be Shot but for Its Cries'), '2013-08-13', 'https://ebd.cda.pl/620x395/62214741f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15225, 861, 8, CONCAT('Dogs in Moderation'), '2013-08-20', 'https://ebd.cda.pl/620x395/6221477db');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15226, 861, 9, CONCAT('There is no Smoke without Dog'), '2013-08-27', 'https://ebd.cda.pl/620x395/6221486ce');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15227, 861, 10, CONCAT('Time Flies like a Dog'), '2013-09-03', 'https://ebd.cda.pl/620x395/622148380');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15228, 861, 11, CONCAT('A Dog by Chance is Preordained'), '2013-09-10', 'https://ebd.cda.pl/620x395/622148947');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15229, 861, 12, CONCAT('Dogs and Scissors Require Good Handling'), '2013-09-17', 'https://ebd.cda.pl/620x395/62214806a');

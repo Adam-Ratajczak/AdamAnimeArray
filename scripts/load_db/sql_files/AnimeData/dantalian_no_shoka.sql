@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (386, CONCAT('Dantalian no Shoka'), CONCAT('Six months ago, Lord Hugh Anthony Disward, also known as Huey, lost his eccentric grandfather, Sir Wesley Disward, who was a renowned collector of rare books. His grandfather', CHAR(39), 's will states that, in order to inherit his manor and everything inside it, he must take guardianship over the Bibliotheca Mystica de Dantalian—an archive that contains forbidden knowledge—and also  take care of a mysterious girl called Dalian. <br>
+<br>As Huey settles into the manor, an old rival of his grandfather', CHAR(39), 's arranges a meeting with him. Dalian, knowing the rival to be Wesley', CHAR(39), 's killer, tags along and discovers that the murderer is in possession of a Phantom Book—a cursed tome that Wesley tried to seal away. When the book puts the two in danger, Huey discovers that the Bibliotheca Mystica de Dantalian and Dalian are one and the same, and she entrusts Huey with the key to unlocking the knowledge stored within her. Together, Dalian and Huey seal the book away, and thus begins an unlikely partnership as they solve mysteries caused by other Phantom Books.<br>
+<br>[Written by MAL Rewrite]'), 1, '2011-07-16', '2011-10-01', 'Summer 2011', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/52683.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (900, 386, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (901, 386, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (902, 386, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (430, 386, 20);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (411, 386, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (412, 386, 31);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6669, 386, 1, CONCAT('Turn-up Book'), '2011-07-16', 'https://ebd.cda.pl/620x395/80228369d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6670, 386, 2, CONCAT('Book of Fetus'), '2011-07-23', 'https://ebd.cda.pl/620x395/80227792b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6671, 386, 3, CONCAT('Book of Wisdom / Queen of the Night'), '2011-07-30', 'https://ebd.cda.pl/620x395/802274964');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6672, 386, 4, CONCAT('Book of Soul Exchange'), '2011-08-06', 'https://ebd.cda.pl/620x395/80227586e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6673, 386, 5, CONCAT('The Magician', CHAR(39), 's Daughter'), '2011-08-13', 'https://ebd.cda.pl/620x395/8022761f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6674, 386, 6, CONCAT('Libricide'), '2011-08-20', 'https://ebd.cda.pl/620x395/8022755d4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6675, 386, 7, CONCAT('The Perfumer'), '2011-08-27', 'https://ebd.cda.pl/620x395/8022746e8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6676, 386, 8, CONCAT('Book of Equivalence / Book of Connection'), '2011-09-03', 'https://ebd.cda.pl/620x395/8022767fe');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6677, 386, 9, CONCAT('Book of Twilight'), '2011-09-10', 'https://ebd.cda.pl/620x395/80227646b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6678, 386, 10, CONCAT('Phantom Score'), '2011-09-17', 'https://video.sibnet.ru/shell.php?videoid=622346');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6679, 386, 11, CONCAT('The Mystic Archives of Raziel'), '2011-09-24', 'https://drive.google.com/file/d/0B345T25zSN8qaEZGZFkxVlUxdVU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6680, 386, 12, CONCAT('Song of the Unseen Tomorrow'), '2011-10-01', 'https://drive.google.com/file/d/0B345T25zSN8qTUFuMjJ6M29nejg/preview');

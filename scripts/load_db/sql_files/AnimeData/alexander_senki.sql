@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (71, CONCAT('Alexander Senki'), CONCAT('In 356 BC, Alexander the Great arrives in Greece with the ominous destiny that he will become the "destroyer of the world." Inheriting the crown, he becomes king of the Macedonians and starts down a road of conquest with terrific speed. Alexander ultimately confronts his fated nemesis, Darius the Third, in a war with Persia which changes Alexander into the devil he was fated to become, assuring the destruction of all in his path, and possibly himself.<br>
+<br>(Source: TBS Global Business)'), 1, '1999-09-15', '1999-09-18', 'Summer 1999', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1108/95688.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (160, 71, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (161, 71, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (162, 71, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (163, 71, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (164, 71, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (83, 71, 21);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1090, 71, 1, CONCAT('A Prophecy Born This Day'), '1999-09-15', 'https://www.mp4upload.com/embed-mbguuib52qxg.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1091, 71, 2, CONCAT('The Thunder of Battle'), '1999-09-15', 'https://www.mp4upload.com/embed-ezjtzatj2j1h.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1092, 71, 3, CONCAT('A Failure of Diplomacy'), '1999-09-15', 'https://www.mp4upload.com/embed-n7qg0a4g869i.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1093, 71, 4, CONCAT('Ascension to the Throne'), '1999-09-15', 'https://www.mp4upload.com/embed-ixic9u7x6m68.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1094, 71, 5, CONCAT('God of Creation'), '1999-09-16', 'https://www.mp4upload.com/embed-vmayt83t0237.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1095, 71, 6, CONCAT('Secret of Samothrace'), '1999-09-16', 'https://www.mp4upload.com/embed-ssbgxf5g4qt2.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1096, 71, 7, CONCAT('The Gordian Knot'), '1999-09-16', 'https://www.mp4upload.com/embed-ro2xv6mpumyf.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1097, 71, 8, CONCAT('Here Shall Stand Alexandria'), '1999-09-17', 'https://www.mp4upload.com/embed-w0lj4k5e4y1n.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1098, 71, 9, CONCAT('The Oracle of Ammon'), '1999-09-17', 'https://www.mp4upload.com/embed-x4vcu32blc3x.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1099, 71, 10, CONCAT('Persia Shall Fall'), '1999-09-17', 'https://www.mp4upload.com/embed-ke03un4il394.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1100, 71, 11, CONCAT('Unification Before Division'), '1999-09-18', 'https://www.mp4upload.com/embed-14uevglmffyp.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1101, 71, 12, CONCAT('The Vanquished Arise'), '1999-09-18', 'https://www.mp4upload.com/embed-ufjfj82xvzip.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1102, 71, 13, CONCAT('The Prophecy Come to Pass'), '1999-09-18', 'https://www.mp4upload.com/embed-up8n302w1ggu.html');

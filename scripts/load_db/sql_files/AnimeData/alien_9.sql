@@ -1,0 +1,10 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (73, CONCAT('Alien 9'), CONCAT('Soon after entering middle school, Yuri Otani is coerced into joining the "Alien Party," a single-minded group with one goal: capture any alien attempting to enter school grounds. Terrified of aliens her entire life, Otani is anything but thrilled, and to make matters worse, her kit includes a "Borg"—an alien-like creature tasked with ensuring her safety. Despite this, she finds solace in her two partners: the independent and reliable Kumi Kawamura, and the smart and energetic Kasumi Tomine.<br>
+<br>As the Alien Party works to fend off extraterrestrial threats, will their roller blades and lacrosse sticks be enough to overcome the dire challenges ahead, or will they succumb to fear and suffer the grim consequences of defeat?<br>
+<br>[Written by MAL Rewrite]'), 1, '2001-06-25', '2002-02-25', '', '28 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/2607.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (167, 73, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (168, 73, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (85, 73, 2);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1115, 73, 1, CONCAT('9th Elementary Anti-Alien Squad'), '2001-06-25', 'https://ebd.cda.pl/800x450/615866002');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1116, 73, 2, CONCAT('Boredom, Spaceship and Overgrowth'), '2001-09-25', 'https://ebd.cda.pl/620x395/7871986fb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1117, 73, 3, CONCAT('Summer Vacation, Borg and Death'), '2001-11-25', 'https://ebd.cda.pl/620x395/78719907e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1118, 73, 4, CONCAT('The End of the Beginning'), '2002-02-25', 'https://ebd.cda.pl/620x395/78719985f');

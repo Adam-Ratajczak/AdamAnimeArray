@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1762, CONCAT('Slayers'), CONCAT('Powerful, avaricious sorceress Lina Inverse travels around the world, stealing treasures from bandits who cross her path. Her latest victims, a band of thieves, wait in ambush in a forest, thirsting for revenge. When Lina is about to effortlessly pummel her would-be attackers, the swordsman Gourry Gabriev suddenly announces his presence. Assuming Lina to be a damsel in distress, the foolish yet magnanimous man confronts the brigands in order to rescue her. After defeating them posthaste, the oblivious cavalier decides to escort Lina to Atlas City. Though not very keen on this idea, she ends up accepting his offer.<br>
+<br>However, without realizing it, Lina has chanced upon a mighty magical item among her most recent spoils. Now two mysterious men are hunting the young magician and her self-proclaimed guardian to obtain this powerful object for apparently nefarious purposes. This way they begin their adventure, one where the fate of the world itself may be at stake.<br>
+<br>[Written by MAL Rewrite]'), 1, '1995-04-07', '1995-09-29', 'Spring 1995', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/19870.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (736, 1762, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4364, 1762, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4365, 1762, 13);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4366, 1762, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1905, 1762, 4);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31779, 1762, 1, CONCAT('ANGRY? Lina', CHAR(39), 's Furious Dragon Slave!'), NULL, 'https://ebd.cda.pl/620x368/550564ab');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31780, 1762, 2, CONCAT('BAD! Mummy Men Aren', CHAR(39), 't My Type!'), NULL, 'https://ebd.cda.pl/620x368/55057091');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31781, 1762, 3, CONCAT('CRASH! Red and White and Suspicious All Over!'), NULL, 'https://ebd.cda.pl/620x368/550597fb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31782, 1762, 4, CONCAT('DASH! Run for It! My Magic Doesn', CHAR(39), 't Work?'), NULL, 'https://ebd.cda.pl/620x368/551731b6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31783, 1762, 5, CONCAT('ESCAPE! Noonsa, the Flaming Fish Man!'), NULL, 'https://ebd.cda.pl/620x368/551945d3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31784, 1762, 6, CONCAT('FOCUS! Rezo', CHAR(39), 's the Real Enemy?!'), NULL, 'https://ebd.cda.pl/620x368/5520835c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31785, 1762, 7, CONCAT('GIVE UP! But, Just Before We Do, The Sure Kill Sword Appears!'), NULL, 'https://ebd.cda.pl/620x368/55212896');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31786, 1762, 8, CONCAT('HELP! Shabranigdo Is Reborn!'), NULL, 'https://ebd.cda.pl/620x368/55219045');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31787, 1762, 9, CONCAT('IMPACT! The Eve of the Great Life or Death Gamble!'), NULL, 'https://ebd.cda.pl/620x368/5532431b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31788, 1762, 10, CONCAT('JACKPOT! The Great Life or Death Gamble!'), NULL, 'https://ebd.cda.pl/620x368/553279c7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31789, 1762, 11, CONCAT('KNOCKOUT! The Seyruun Family Feud!'), NULL, 'https://ebd.cda.pl/620x368/5533693f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31790, 1762, 12, CONCAT('LOVELY! Amelia', CHAR(39), 's Magic Training!'), NULL, 'https://ebd.cda.pl/620x368/553897d3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31791, 1762, 13, CONCAT('MONEY! Knock Out Those Bounty Hunters!'), NULL, 'https://ebd.cda.pl/620x368/55398933');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31792, 1762, 14, CONCAT('NAVIGATION! An Invitation to Sairaag!'), NULL, 'https://ebd.cda.pl/620x368/163766594');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31793, 1762, 15, CONCAT('OH NO! Lina', CHAR(39), 's Wedding Rhapsody?'), NULL, 'https://ebd.cda.pl/620x368/55669516');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31794, 1762, 16, CONCAT('PASSION! Shall We Give Our Lives for the Stage?'), NULL, 'https://ebd.cda.pl/620x368/55683742');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31795, 1762, 17, CONCAT('QUESTION? He', CHAR(39), 's Proposing to THAT Girl?'), NULL, 'https://ebd.cda.pl/620x368/561609bc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31796, 1762, 18, CONCAT('RETURN! The Red Priest Is Back!'), NULL, 'https://ebd.cda.pl/620x368/5616222f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31797, 1762, 19, CONCAT('SHOCK! Sairaag Falls!'), NULL, 'https://ebd.cda.pl/620x368/56164098');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31798, 1762, 20, CONCAT('TROUBLE! Rahanimu, the Furious Fish Man!'), NULL, 'https://ebd.cda.pl/620x368/5616566d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31799, 1762, 21, CONCAT('UPSET! Gourry vs. Zangulus'), NULL, 'https://ebd.cda.pl/620x368/56168103');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31800, 1762, 22, CONCAT('VICE! The One Who Was Left Behind!'), NULL, 'https://ebd.cda.pl/620x368/561814db');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31801, 1762, 23, CONCAT('WARNING! Eris', CHAR(39), ' Wrath!'), NULL, 'https://ebd.cda.pl/620x368/561843b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31802, 1762, 24, CONCAT('X-DAY! The Demon Beast Is Reborn!'), NULL, 'https://ebd.cda.pl/620x368/561848f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31803, 1762, 25, CONCAT('YES! A Final Hope: The Blessed Blade!'), NULL, 'https://ebd.cda.pl/620x368/163767144');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31804, 1762, 26, CONCAT('ZAP! Victory is Always Mine!'), NULL, 'https://ebd.cda.pl/620x368/5622420f');

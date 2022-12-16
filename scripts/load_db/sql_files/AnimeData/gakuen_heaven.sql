@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (567, CONCAT('Gakuen Heaven'), CONCAT('Itou Keita, an average guy, is shocked when he', CHAR(39), 's invited to attend the elite institution, "Bell Liberty Academy." Unnerved by the mystery, he', CHAR(39), 's further distracted by the school', CHAR(39), 's social dynamics. In a sea of amazing young men, Keita struggles to find out what makes him unique, and how he can possibly deserve to be treated as an equal by the boys of BL. Lacking any particular ability, just why has Itou been welcomed into the privileged world of the talented and the beautiful? <br>
+<br>Along the way, he develops intense relationships with the almost everyone at school but he is terribly drawn to the friendly, over-caring but very mysterious classmate, Kazuki Endou.'), 1, '2006-04-01', '2006-06-24', 'Spring 2006', '26 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/70143.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (257, 567, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1404, 567, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1405, 567, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1406, 567, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1407, 567, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1408, 567, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (633, 567, 142);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10439, 567, 1, CONCAT('Off-Season Transfer Student'), '2006-04-01', 'https://ebd.cda.pl/800x450/6183398ff');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10440, 567, 2, CONCAT('The Heaven That We Reached'), '2006-04-08', 'https://ebd.cda.pl/800x450/619094328');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10441, 567, 3, CONCAT('Circulating Memo, Vacillating Emotions'), '2006-04-15', 'https://ebd.cda.pl/800x450/6196163df');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10442, 567, 4, CONCAT('Steam! A Welcome Party Fraught with Drama'), '2006-04-22', 'https://ebd.cda.pl/800x450/620040518');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10443, 567, 5, CONCAT('Heaven', CHAR(39), 's Door'), '2006-04-29', 'https://ebd.cda.pl/800x450/620806461');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10444, 567, 6, CONCAT('Perfect Day for a Date'), '2006-05-06', 'https://ebd.cda.pl/800x450/6215354f0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10445, 567, 7, CONCAT('Where Uncertainty Lives'), '2006-05-13', 'https://ebd.cda.pl/800x450/622990403');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10446, 567, 8, CONCAT('The Night Before the MVP Battle'), '2006-05-20', 'https://ebd.cda.pl/800x450/62340448e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10447, 567, 9, CONCAT('Flowers of Steel'), '2006-05-27', 'https://ebd.cda.pl/800x450/624451112');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10448, 567, 10, CONCAT('The Key to Memories'), '2006-06-03', 'https://ebd.cda.pl/800x450/6256316bb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10449, 567, 11, CONCAT('The Truth is Revealed'), '2006-06-10', 'https://ebd.cda.pl/800x450/62628682d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10450, 567, 12, CONCAT('A Flower Unbending in the Wind'), '2006-06-17', 'https://ebd.cda.pl/800x450/62777900f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10451, 567, 13, CONCAT('The Promise'), '2006-06-24', 'https://ebd.cda.pl/800x450/6291509d5');

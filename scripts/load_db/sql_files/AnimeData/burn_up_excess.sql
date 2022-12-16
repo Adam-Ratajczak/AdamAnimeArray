@@ -1,0 +1,8 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (275, CONCAT('Burn Up Excess'), CONCAT('Follows the exploits of Team Warrior, a special anti-terror wing of the Neo-Tokyo Police force. Team Warrior is comprised of the habitually broke Rio, gun-crazy Maya, computer specialist Lillica, tech-expert Nanvel, piliot/voyeur Yuji, and is led by the enigmatic Maki. The team faces a number of missions, ranging from bodyguard duty, breaking up robbery and arms rackets, and providing security for a very powerful tank. Rio and company continually thwart the terrorist aims of Ruby, an operative for a shadowy cabal of powerful men. Before the final showdown, the circumstances behind the formation of Team Warrior, how the precocious Rio came to join it, and Maki', CHAR(39), 's painful past will be revealed.<br>
+<br>(Source: ANN)<br>'), 2, '1997-12-12', '1998-07-01', 'Winter 1998', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/75501.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (139, 275, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (636, 275, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (637, 275, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (311, 275, 68);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (312, 275, 69);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4332, 275, 1, CONCAT('Warrior Team Deploys!'), '1997-12-12', 'https://mp4upload.com/embed-lwej9qk2hpj9.html');

@@ -1,0 +1,35 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1725, CONCAT('Shirobako'), CONCAT('It all started in Kaminoyama High School, when five best friends—Aoi Miyamori, Ema Yasuhara, Midori Imai, Shizuka Sakaki, and Misa Toudou—discovered their collective love for all things anime and formed the animation club. After making their first amateur anime together and showcasing it at the culture festival, the group vows to pursue careers in the industry, aiming to one day work together and create their own mainstream show.<br>
+<br>Two and a half years later, Aoi and Ema have managed to land jobs at the illustrious Musashino Animation production company. The others, however, are finding it difficult to get their dream jobs. Shizuka is feeling the weight of not being recognized as a capable voice actor, Misa has a secure yet unsatisfying career designing 3D models for a car company, and Midori is a university student intent on pursuing her dream as a story writer. These five girls will learn that the path to success is one with many diversions, but dreams can still be achieved through perseverance and a touch of eccentric creativity.<br>
+<br>[Written by MAL Rewrite]'), 1, '2014-10-09', '2015-03-26', 'Fall 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1918/93511.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1219, 1725, '"COLORFUL BOX"', ' by Tracy (トレイシー) (Mai Nakahara, Shizuka Itou, Ai Kayano)', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4289, 1725, 13);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4290, 1725, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4291, 1725, 6);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1864, 1725, 52);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1918, 1725, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1919, 1725, 18);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1920, 1725, 17);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31047, 1725, 1, CONCAT('Exodus to Tomorrow!'), '2014-10-09', 'https://ebd.cda.pl/800x450/147232291');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31048, 1725, 2, CONCAT('Arupin is Here!'), '2014-10-16', 'https://ebd.cda.pl/800x450/14723327d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31049, 1725, 3, CONCAT('No More Recap Episodes'), '2014-10-23', 'https://drive.google.com/file/d/0BzP_5dQGK87PRHd4Q3NzaFRFNFk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31050, 1725, 4, CONCAT('I Totally Messed Up'), '2014-10-30', 'https://drive.google.com/file/d/0BzP_5dQGK87PS2NqemxnalhpX2c/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31051, 1725, 5, CONCAT('Those Who Blame Others Should Just Quit!'), '2014-11-06', 'https://ebd.cda.pl/800x450/147234424');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31052, 1725, 6, CONCAT('Idepon Miyamori: On the Move'), '2014-11-13', 'https://ebd.cda.pl/800x450/147234539');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31053, 1725, 7, CONCAT('Retake with the Cat'), '2014-11-20', 'https://ebd.cda.pl/800x450/1472972a1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31054, 1725, 8, CONCAT('I', CHAR(39), 'm Not Blaming You'), '2014-11-27', 'https://ebd.cda.pl/800x450/1472978ff');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31055, 1725, 9, CONCAT('What Do You Think I Was Trying to Say?'), '2014-12-04', 'https://ebd.cda.pl/800x450/147301903');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31056, 1725, 10, CONCAT('Just One More'), '2014-12-11', 'https://ebd.cda.pl/800x450/147299580');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31057, 1725, 11, CONCAT('The Little Key Frames Girl'), '2014-12-18', 'https://ebd.cda.pl/800x450/147300765');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31058, 1725, 12, CONCAT('Exodus Christmas'), '2014-12-25', 'https://drive.google.com/file/d/0B_h2WUhye35ZZG9oU0VPVkRRMFE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31059, 1725, 13, CONCAT('What Kind of Cloud Do You Like?'), '2015-01-08', 'https://ebd.cda.pl/800x450/14738998b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31060, 1725, 14, CONCAT('The Ruthless Audition Meeting'), '2015-01-15', 'https://drive.google.com/file/d/0B21A248sVfNvZEZZNmtZbjJXc0k/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31061, 1725, 15, CONCAT('Will These Drawings Work?'), '2015-01-22', 'https://drive.google.com/file/d/0B21A248sVfNvSnhiWlZDTUQtem8/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31062, 1725, 16, CONCAT('Table Flip'), '2015-01-29', 'https://ebd.cda.pl/800x450/147394231');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31063, 1725, 17, CONCAT('Where Am I...'), '2015-02-05', 'https://ebd.cda.pl/800x450/147628385');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31064, 1725, 18, CONCAT('You Set Me Up!'), '2015-02-12', 'https://drive.google.com/file/d/0B6Y1ygIbbK1pTHRvVl9OdGlkWnM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31065, 1725, 19, CONCAT('Did You Catch Any?'), '2015-02-19', 'https://drive.google.com/file/d/0B81hBlvyBDaDWV8zZ1hIdnhnbk0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31066, 1725, 20, CONCAT('I', CHAR(39), 'll Do My Best, Mustang!'), '2015-02-26', 'https://ebd.cda.pl/800x450/1477403bc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31067, 1725, 21, CONCAT('Don', CHAR(39), 't Hold the Quality Hostage'), '2015-03-05', 'https://drive.google.com/file/d/0B58tB8zy0BnaOTZ6eWJNQjA5Q0E/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31068, 1725, 22, CONCAT('Noa', CHAR(39), 's in Her Underwear'), '2015-03-12', 'https://drive.google.com/file/d/0B8PVpSQ0424wNDl3X1hIalAyRzA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31069, 1725, 23, CONCAT('Table Flip Continued'), '2015-03-19', 'https://drive.google.com/file/d/0B6bkVyFTxnchY185ODlDb05ZWXM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31070, 1725, 24, CONCAT('The Delivery That Was Too Far Off'), '2015-03-26', 'https://ebd.cda.pl/800x450/147928195');

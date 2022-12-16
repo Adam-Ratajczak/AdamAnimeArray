@@ -1,0 +1,14 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (16, CONCAT('** Kouhai'), CONCAT('A special governmental program has been introduced to counteract the declining birth rates of demi-human races suffering due to a lack of male members. Through a so-called "assistance system," randomly selected humans are required to mate with designated partners—be it elves, sirens, or even dragons.<br>
+<br>Iris Thea Eaderlindt, an elven princess known for her open-mindedness and friendly attitude towards humans, is transferred to the Ark Metropolitan Academy. Coincidentally, her new teacher has been selected as her mating partner. Anxious yet determined to fulfill her duty of securing the future of her race, she starts partaking in sexual activities with him. To her surprise, Iris discovers that her partner', CHAR(39), 's ancestors were orcs, well known for their extraordinary sexual prowess.<br>
+<br>As more demi-human students join the class and find out about their teacher', CHAR(39), 's "side job," it becomes increasingly difficult for Iris to keep her partner', CHAR(39), 's attention solely on her.<br>
+<br>[Written by MAL Rewrite]'), 1, '2020-01-31', '2023-01-27', '', '16 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1839/104009.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (17, 16, 13);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (19, 16, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (20, 16, 16);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (21, 16, 17);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (177, 16, 1, CONCAT('The Female Honor Student is an Elven Princess'), '2020-01-31', 'https://ebd.cda.pl/800x450/49949964f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (178, 16, 2, CONCAT('The Stubborn Girl is an Elven Bodyguard Knight'), '2020-02-28', 'https://ebd.cda.pl/800x450/499499940');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (179, 16, 3, CONCAT('The Haughty Girl is a Dragon Leader'), '2020-03-27', 'https://ebd.cda.pl/800x450/5029556b7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (180, 16, 4, CONCAT('These Naughty Girls are My Students'), '2020-04-24', 'https://ebd.cda.pl/800x450/5453040a6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (181, 16, 5, CONCAT('The Shy Girl is a Mermaid Songstress'), '2022-03-25', 'https://ebd.cda.pl/765x431/1131726754');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (182, 16, 6, CONCAT('The Serious Girl is a Princess of the Ogre Sanctuary'), '2022-05-27', 'https://ebd.cda.pl/765x431/113674196f');

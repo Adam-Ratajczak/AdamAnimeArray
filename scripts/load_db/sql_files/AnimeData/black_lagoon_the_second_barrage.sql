@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (225, CONCAT('Black Lagoon: The Second Barrage'), CONCAT('Rokurou "Rock" Okajima has joined the Lagoon Company, a pirate mercenary group which operates out of Roanapur, Thailand. Despite his initial protests, this filthy slum of depraved souls and merciless criminals now serves as the former salaryman', CHAR(39), 's home. Stranded, with nothing left of his past life but the clothes on his back and his inner morality, Rock is forced to perform jobs alongside the other members of the Lagoon crew. Berated for his lack of spine as he wades through the underbelly of society, he must decide whether to continue on amidst the gunfire and ruthlessness or risk everything he has in an attempt to be free. Whether he chooses the comfort of a familiar land or the freedom of being an outlaw, his decision will have lasting consequences on the crew who gave him a home.<br>
+<br>[Written by MAL Rewrite]'), 3, '2006-10-03', '2006-12-19', 'Fall 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/83748.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (158, 225, '"Red Fraction"', ' by MELL', 'js-theme-songs', 'https://open.spotify.com/track/7AfaErt9h8MViFyjdzO9JC');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (109, 225, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (251, 225, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (238, 225, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (239, 225, 40);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3288, 225, 1, CONCAT('The Vampire Twins Comen'), '2006-10-04', 'https://ebd.cda.pl/620x395/6282419ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3289, 225, 2, CONCAT('Bloodsport Fairytale'), '2006-10-11', 'https://ebd.cda.pl/620x395/62824226d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3290, 225, 3, CONCAT('Swan Song at Dawn'), '2006-10-18', 'https://ebd.cda.pl/620x395/6282425f0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3291, 225, 4, CONCAT('Greenback Jane'), '2006-10-25', 'https://ebd.cda.pl/620x395/628217991');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3292, 225, 5, CONCAT('The Roanapur Freakshow Circus'), '2006-11-01', 'https://ebd.cda.pl/620x395/628301695');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3293, 225, 6, CONCAT('Mr Benny', CHAR(39), 's Good Fortune'), '2006-11-08', 'https://ebd.cda.pl/620x395/6283019d8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3294, 225, 7, CONCAT('Fujiyama Gangsta Paradise'), '2006-11-15', 'https://ebd.cda.pl/620x395/628302268');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3295, 225, 8, CONCAT('The Succession'), '2006-11-22', 'https://ebd.cda.pl/620x395/628302501');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3296, 225, 9, CONCAT('Two Father', CHAR(39), 's Little Soldier Girls'), '2006-11-29', 'https://ebd.cda.pl/620x395/6283220e3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3297, 225, 10, CONCAT('The Dark Tower'), '2006-12-06', 'https://ebd.cda.pl/620x395/628322371');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3298, 225, 11, CONCAT('Snow White', CHAR(39), 's Payback'), '2006-12-13', 'https://ebd.cda.pl/620x395/6283229f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3299, 225, 12, CONCAT('The Gunslingers'), '2006-12-20', 'https://ebd.cda.pl/620x395/6283232d2');

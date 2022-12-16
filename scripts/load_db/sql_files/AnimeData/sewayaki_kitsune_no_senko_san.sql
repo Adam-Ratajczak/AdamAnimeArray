@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1680, CONCAT('Sewayaki Kitsune no Senko-san'), CONCAT('Like many hardworking members of the workforce, Kuroto Nakano is perpetually stressed out by his job. Still, since he lives alone, he must carry on to sustain himself. Little do humans like Kuroto know, this stress takes the form of darkness residing within a person', CHAR(39), 's body and will bring one', CHAR(39), 's life to ruin. <br>
+<br>Fox deities can see this darkness and have the duty to save people before it is too late. To help rid Kuroto of his stress,  Senko-san, an eight hundred-year-old foxgirl, volunteers to take care of him, and will do everything she can to ease the tension in his weary soul.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2019-04-10', '2019-06-26', 'Spring 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1814/99677.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4159, 1680, 8);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4160, 1680, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1814, 1680, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30451, 1680, 1, CONCAT('I', CHAR(39), 'm Going to Pamper Him to His Heart', CHAR(39), 's Content!'), '2019-04-10', 'https://ebd.cda.pl/620x368/336774125');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30452, 1680, 2, CONCAT('Don', CHAR(39), 't Be Shy, Now!'), '2019-04-17', 'https://ebd.cda.pl/620x368/3457528be');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30453, 1680, 3, CONCAT('As Long as You', CHAR(39), 're Happy'), '2019-04-24', 'https://ebd.cda.pl/620x368/34575737d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30454, 1680, 4, CONCAT('Why Must You Work on a Day Off!?'), '2019-05-01', 'https://ebd.cda.pl/620x368/345757631');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30455, 1680, 5, CONCAT('I', CHAR(39), 've got a tail, too, you know?'), '2019-05-08', 'https://ebd.cda.pl/620x368/34564631a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30456, 1680, 6, CONCAT('You just want to fluff more'), '2019-05-15', 'https://ebd.cda.pl/620x368/347341695');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30457, 1680, 7, CONCAT('You smell like another fox'), '2019-05-22', 'https://ebd.cda.pl/620x368/3502147c2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30458, 1680, 8, CONCAT('I', CHAR(39), 'll make you forget all about it'), '2019-05-29', 'https://ebd.cda.pl/620x368/352555676');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30459, 1680, 9, CONCAT('Is this less embarrassing for you?'), '2019-06-05', 'https://ebd.cda.pl/620x368/3553894fa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30460, 1680, 10, CONCAT('It', CHAR(39), 's Nice to Let Your Inner Child Out Now and Then, Isn', CHAR(39), 't It?'), '2019-06-12', 'https://ebd.cda.pl/620x368/357374505');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30461, 1680, 11, CONCAT('It', CHAR(39), 's Going to Be a Rough Night'), '2019-06-19', 'https://ebd.cda.pl/620x395/681709153');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30462, 1680, 12, CONCAT('Still...'), '2019-06-26', 'https://ebd.cda.pl/620x368/3617853a7');

@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (125, CONCAT('Aria the Origination'), CONCAT('In the 24th century on the planet Aqua, three girls—Akari Mizunashi, Alice Carroll, and Aika S. Granzchesta—continue to work hard toward achieving their goal of becoming Prima Undines: professional tour guide gondoliers. Luckily, the girls have the guidance of the three best Prima Undines in Neo-Venezia—Alicia Florence, Athena Glory, and Akira E. Ferrari—who are known as the "Water Fairies" in honor of their skill. With their help, the young apprentices train hard and work to overcome any situations that they find themselves in.<br><br>Aria The Origination follows the hardships and daily lives of these three young girls, who are doing their best to improve as tour gondoliers in Neo-Venezia, a terraformed replica of Venice.<br>
+<br>[Written by MAL Rewrite]'), 1, '2008-01-08', '2008-04-01', 'Winter 2008', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1394/129606.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (81, 125, '"Spirale (スピラーレ)"', ' by Yui Makino', 'js-theme-songs', 'https://open.spotify.com/track/5v7d2c9NlvYbP3vooHj4RZ');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (82, 125, '"Kin no Nami Sen no Nami (金の波 千の波)"', ' by Akino Arai', 'js-theme-songs', 'https://open.spotify.com/track/1kEwLs8sWZaW6Sl83Udnb2');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (61, 125, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (288, 125, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (289, 125, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (290, 125, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (139, 125, 65);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1836, 125, 1, CONCAT('That Imminent Spring Breeze...'), '2008-01-08', 'https://ebd.cda.pl/620x395/78738594f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1837, 125, 2, CONCAT('That Smiling Customer...'), '2008-01-15', 'https://ebd.cda.pl/620x395/7873855bb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1838, 125, 3, CONCAT('Those Feelings Within...'), '2008-01-22', 'https://ebd.cda.pl/620x395/7873843dc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1839, 125, 4, CONCAT('Those Who Aim for Tomorrow...'), '2008-01-29', 'https://ebd.cda.pl/620x395/78738514b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1840, 125, 5, CONCAT('That Keepsake Clover...'), '2008-02-06', 'https://ebd.cda.pl/620x395/78738919e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1841, 125, 6, CONCAT('That Wonderful Extracurricular Lesson...'), '2008-02-13', 'https://ebd.cda.pl/620x395/787383922');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1842, 125, 7, CONCAT('In That Gently Passing Time...'), '2008-02-20', 'https://ebd.cda.pl/620x395/7873875f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1843, 125, 8, CONCAT('The Memories of That Precious Person...'), '2008-02-26', 'https://ebd.cda.pl/620x395/787386317');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1844, 125, 9, CONCAT('Surrounded by That Orange Wind...'), '2008-03-04', 'https://ebd.cda.pl/620x395/787387906');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1845, 125, 10, CONCAT('The Excitement on That Moon-Gazing Night...'), '2008-03-11', 'https://ebd.cda.pl/800x450/578033999');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1846, 125, 11, CONCAT('Those Ever-Changing Days...'), '2008-03-18', 'https://ebd.cda.pl/620x395/7873871a1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1847, 125, 12, CONCAT('Embraced by That Blue Sea and Wind...'), '2008-03-25', 'https://ebd.cda.pl/620x395/787388797');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1848, 125, 13, CONCAT('To That New Beginning...'), '2008-04-01', 'https://ebd.cda.pl/800x450/5780333f5');

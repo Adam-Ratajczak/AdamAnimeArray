@@ -1,0 +1,24 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1708, CONCAT('Shingeki no Kyojin Season 3'), CONCAT('Still threatened by the "Titans" that rob them of their freedom, mankind remains caged inside the two remaining walls. Efforts to eradicate these monsters continue however, threats arise not only from the Titans beyond the walls, but from the humans within them as well.<br>
+<br>After being rescued from the Colossal and Armored Titans, Eren Yaeger devotes himself to improving his Titan form. Krista Lenz struggles to accept the loss of her friend, Captain Levi chooses Eren and his friends to form his new personal squad, and Commander Erwin Smith recovers from his injuries. All seems well for the soldiers, until the government suddenly demands custody of Eren and Krista. The Survey Corps', CHAR(39), ' recent successes have drawn attention, and a familiar face from Levi', CHAR(39), 's past is sent to collect the wanted soldiers. Sought after by the government, Levi and his new squad must evade their adversaries in hopes of keeping Eren and Krista safe.<br>
+<br>In Shingeki no Kyojin Season 3, Eren and his fellow soldiers are not only fighting for their survival against the terrifying Titans, but also against the terror of a far more conniving foe: humans.<br>
+<br>[Written by MAL Rewrite]'), 1, '2018-07-23', '2018-10-15', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1173/92110.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1208, 1708, '"Red Swan"', ' by YOSHIKI feat. HYDE', 'js-theme-songs', 'https://open.spotify.com/track/4GNMgGyZcgnE4nEdYFWJGn')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (716, 1708, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4238, 1708, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4239, 1708, 6);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1844, 1708, 73);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1904, 1708, 10);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1905, 1708, 25);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1906, 1708, 14);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30847, 1708, 1, CONCAT('Smoke Signal'), '2018-07-23', 'https://drive.google.com/file/d/1DxOyEFbB5OCeD7EUr8haFo6mKHvYMLoF/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30848, 1708, 2, CONCAT('Pain'), '2018-07-30', 'https://drive.google.com/file/d/1STBypg959i_swYCVP0f4nn43FRExXd5m/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30849, 1708, 3, CONCAT('Old Story'), '2018-08-06', 'https://drive.google.com/file/d/1hIxUWHC6zMUEDQBT_b7oVi1J1nGar1ae/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30850, 1708, 4, CONCAT('Trust'), '2018-08-13', 'https://drive.google.com/file/d/19ro-2e0oLf4zaeoB38rfUf0aGW_ZT3Nv/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30851, 1708, 5, CONCAT('Reply'), '2018-08-20', 'https://drive.google.com/file/d/17NtjSiAUvmKxdUMg62nBXyOihvwzNlwB/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30852, 1708, 6, CONCAT('Sin'), '2018-08-27', 'https://drive.google.com/file/d/1Ca9U2XogeUy64WpL7Db0BG_qI9bScyjg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30853, 1708, 7, CONCAT('Wish'), '2018-09-03', 'https://drive.google.com/file/d/10he-vMuvxtMN52Bkqpy-wILirr6P0Sxi/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30854, 1708, 8, CONCAT('Outside the Walls of Orvud District'), '2018-09-10', 'https://drive.google.com/file/d/16UjBWcf3OR9XLCjcT2Pficb1tn2zG5BX/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30855, 1708, 9, CONCAT('Ruler of the Walls'), '2018-09-17', 'https://drive.google.com/file/d/13ToqJvnYfTVD_7BiQnpK1ZYR-hVZMD2z/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30856, 1708, 10, CONCAT('Friends'), '2018-09-24', 'https://drive.google.com/file/d/1pTsejA3YazfolE__sBy_AyfsPTrwy-th/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30857, 1708, 11, CONCAT('Bystander'), '2018-10-08', 'https://drive.google.com/file/d/187B8j7NoKELEgLHurrv03IqpphkX1TvB/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30858, 1708, 12, CONCAT('Night of the Battle to Retake the Wall'), '2018-10-15', 'https://drive.google.com/file/d/16C_tZQ_2GPjpI6cdLLXcIttLpY8w1MJW/preview');

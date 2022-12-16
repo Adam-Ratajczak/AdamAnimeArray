@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (229, CONCAT('Blade Runner: Black Lotus'), CONCAT('Los Angeles 2032. A young woman wakes up with no memories and possessing deadly skills. The only clues to her mystery are a locked data device and a tattoo of a black lotus. Putting together the pieces, she must hunt down the people responsible for her brutal and bloody past to find the truth of her lost identity.<br>
+<br>(Source: Crunchyroll)'), 4, '2021-11-14', '2022-02-05', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1657/120783.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (531, 229, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (532, 229, 5);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (257, 229, 24);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3326, 229, 1, CONCAT('City of Angels'), NULL, 'https://drive.google.com/file/d/1OGiBcwwdL-TA4pb4CO5WeC3_B-SrUv4P/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3327, 229, 2, CONCAT('All We Are Not'), NULL, 'https://drive.google.com/file/d/1eddinDLzu3qvDZDoIdowJzhsgJ2JIuzW/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3328, 229, 3, CONCAT('The Human Condition'), NULL, 'https://drive.google.com/file/d/1x-kJVWQjknHygpiGwdk-G2PujILduLez/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3329, 229, 4, CONCAT('The Doll Hunt'), NULL, 'https://drive.google.com/file/d/1A37CaiVgDszF9QYuP5qu4v0_qH1hx6J8/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3330, 229, 5, CONCAT('Pressure'), NULL, 'https://drive.google.com/file/d/1-blizxuInyk4j_aeumIVimt2TK332xYh/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3331, 229, 6, CONCAT('The Persistence of Memory'), NULL, 'https://drive.google.com/file/d/1_aU0qzznkacWsJhnJ4JUA1Je4P7vF98T/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3332, 229, 7, CONCAT('Reality'), NULL, 'https://drive.google.com/file/d/1shFHa0VqaaFC7PPPyr_4gqkI9V89Ox_4/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3333, 229, 8, CONCAT('The Davis Report'), NULL, 'https://drive.google.com/file/d/1HDzS67QS85FIM3hyJ4FWCzZaSPkRFqXo/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3334, 229, 9, CONCAT('Free Will'), NULL, 'https://drive.google.com/file/d/1GQ66aYoI-BkIXa85ZtyzOTrJr8GhGIe5/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3335, 229, 10, CONCAT('Clair de Lune'), NULL, 'https://drive.google.com/file/d/1YuKdYNjWElQdXFzuGhNRipXByiXUraJ7/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3336, 229, 11, CONCAT('All The Best Memories'), NULL, 'https://drive.google.com/file/d/1FAIIreloSWOlY_TAvk10FrPQEOtqAOo8/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3337, 229, 12, CONCAT('ARTIFICIAL SOULS'), NULL, 'https://drive.google.com/file/d/1gh33PdnAj9MzfDjBmVNN-6pqnWBEANXn/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3338, 229, 13, CONCAT('Time to Die'), NULL, 'https://drive.google.com/file/d/1-i4ejivS5siK7TOUp_LTqIT4fH8F0axj/preview');

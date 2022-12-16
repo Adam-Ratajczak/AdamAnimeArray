@@ -1,0 +1,31 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (984, CONCAT('Kaze no Stigma'), CONCAT('Kazuma Yagami is a user of "Fuujutsu," the ability to control the wind. He returns to his old home, the noble Kannagi household, after being banished four years ago for his inability to control fire and his subsequent defeat in a duel at the hands of his younger cousin, Ayano Kannagi.<br>
+<br>Returning after such a brutal exile already gives rise to many conflicts, but to make matters worse, several Kannagi family members have recently been murdered with Fuujutsu. This leads the Kannagi family, including the hot-headed Ayano, to suspect Kazuma as the culprit. Now, Kazuma must not only clear his name, but also aid the family he shares a mutual hatred with, in order to discover the true identity of the killer.<br>
+<br>[Written by MAL Rewrite]'), 1, '2007-04-13', '2007-09-21', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/23136.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2382, 984, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2383, 984, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2384, 984, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1070, 984, 5);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17099, 984, 1, CONCAT('The Wind Returns'), '2007-04-13', 'https://ebd.cda.pl/620x395/6486245b9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17100, 984, 2, CONCAT('Confrontation with the Past'), '2007-04-20', 'https://ebd.cda.pl/620x395/648667443');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17101, 984, 3, CONCAT('The Head of the Kannagi Family'), '2007-04-27', 'https://ebd.cda.pl/620x395/64866715c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17102, 984, 4, CONCAT('The Contractor'), '2007-05-04', 'https://ebd.cda.pl/620x395/64866869b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17103, 984, 5, CONCAT('The One Who Casts Aside Doubt'), '2007-05-11', 'https://ebd.cda.pl/620x395/648667739');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17104, 984, 6, CONCAT('The Price of Power'), '2007-05-18', 'https://ebd.cda.pl/620x395/648666803');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17105, 984, 7, CONCAT('The Cost of a Soul'), '2007-05-25', 'https://ebd.cda.pl/620x395/6486680ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17106, 984, 8, CONCAT('Disaster'), '2007-06-01', 'https://ebd.cda.pl/620x395/6486689ad');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17107, 984, 9, CONCAT('Meeting Under the Moon'), '2007-06-08', 'https://ebd.cda.pl/620x395/64867377b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17108, 984, 10, CONCAT('The One to be Protected'), '2007-06-15', 'https://ebd.cda.pl/620x395/648669241');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17109, 984, 11, CONCAT('Each Decision'), '2007-06-22', 'https://ebd.cda.pl/620x395/648669816');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17110, 984, 12, CONCAT('Confession Under the Moon'), '2007-06-29', 'https://ebd.cda.pl/620x395/6486695eb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17111, 984, 13, CONCAT('Let', CHAR(39), 's Go to the Amusement Park!'), '2007-07-06', 'https://ebd.cda.pl/620x395/64867071b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17112, 984, 14, CONCAT('Another Ayano Disaster'), '2007-07-13', 'https://ebd.cda.pl/620x395/6486701b8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17113, 984, 15, CONCAT('Katherine Returns'), '2007-07-20', 'https://ebd.cda.pl/620x395/64867195c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17114, 984, 16, CONCAT('Father and Son'), '2007-07-27', 'https://ebd.cda.pl/620x395/6486722b7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17115, 984, 17, CONCAT('How to Defeat a Magic User'), '2007-08-03', 'https://ebd.cda.pl/620x395/6486710e8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17116, 984, 18, CONCAT('Tokyo RPG'), '2007-08-10', 'https://ebd.cda.pl/620x395/648670421');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17117, 984, 19, CONCAT('Pandemonium'), '2007-08-17', 'https://ebd.cda.pl/620x395/64867136d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17118, 984, 20, CONCAT('The Remnant of the Emerald'), '2007-08-24', 'https://ebd.cda.pl/620x395/648671666');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17119, 984, 21, CONCAT('The Raging Wind Mage'), '2007-08-31', 'https://ebd.cda.pl/620x395/648673425');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17120, 984, 22, CONCAT('Determination and Hesitation'), '2007-09-07', 'https://ebd.cda.pl/620x395/64867315d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17121, 984, 23, CONCAT('The Crimson Flame'), '2007-09-14', 'https://ebd.cda.pl/620x395/64867287a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17122, 984, 24, CONCAT('Protectors of the Wind'), '2007-09-21', 'https://ebd.cda.pl/620x395/64867250e');

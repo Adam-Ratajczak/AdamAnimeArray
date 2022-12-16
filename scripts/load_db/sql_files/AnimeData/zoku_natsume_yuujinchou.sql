@@ -1,0 +1,23 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2117, CONCAT('Zoku Natsume Yuujinchou'), CONCAT('As with its prequel, Zoku Natsume Yuujinchou is about Takashi Natsume, a boy who has had the ability to see youkai since he was young, and his bodyguard youkai Madara, nicknamed Nyanko-sensei. Natsume attempts to return names written in his "Book of Friends" (which he inherited from his grandmother Reiko) to youkai in his village. Throughout these adventures, he meets some youkai that are friendly, some that want to steal the Book, and some that want to kill him, as Natsume learns about himself and his relationship with these mysterious beings along the way.<br>
+<br>[Written by MAL Rewrite]'), 1, '2009-01-06', '2009-03-31', 'Winter 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/79738.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1514, 2117, '"Ano hi Time Machine (あの日タイムマシン)"', ' by LONG SHOT PARTY', 'js-theme-songs', 'https://open.spotify.com/track/0Jv1l6dGSTMauUTydi3hMu')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (874, 2117, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5271, 2117, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5272, 2117, 8);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5273, 2117, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2289, 2117, 35);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2345, 2117, 8);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2346, 2117, 11);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36960, 2117, 1, CONCAT('Stolen Book Of Friends'), '2009-01-06', 'https://drive.google.com/file/d/1MsE2M8uwzYJ54cfUcXGsnFyAtKdPBLIi/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36961, 2117, 2, CONCAT('Melting Into Spring'), '2009-01-13', 'https://drive.google.com/file/d/1cUwUwGnS9P1LbRpYCIM5z42-RcwmTdLe/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36962, 2117, 3, CONCAT('Youkai Exorcism Amid The Steaming Springs'), '2009-01-20', 'https://drive.google.com/file/d/1V_9iqAJ0-qA7XA9WsUhdckAuuS5k8cVu/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36963, 2117, 4, CONCAT('A Chick Hatches'), '2009-01-27', 'https://drive.google.com/file/d/13ASoFTQpBqDg5ddx0j4H4wZWiONqFJzn/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36964, 2117, 5, CONCAT('The Promised Tree'), '2009-02-03', 'https://drive.google.com/file/d/1jVbPcKtGU6rtcEpW9SfcOXG9zQjg39KK/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36965, 2117, 6, CONCAT('The Maiden', CHAR(39), 's Circle'), '2009-02-10', 'https://drive.google.com/file/d/1MgPYnL7EeS7fBfvIvNEdHqkhstEuUDEi/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36966, 2117, 7, CONCAT('That Which You Must Not Call'), '2009-02-17', 'https://drive.google.com/file/d/1boiE-3pgo3Eb8ORLBcKrf11yeISGnQvA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36967, 2117, 8, CONCAT('Emotions Undying'), '2009-02-24', 'https://drive.google.com/file/d/1l_m0jsvL1DQHC2w17ClJnrCtTS9Z_Mdc//preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36968, 2117, 9, CONCAT('He of the Row of Cherry Blossoms'), '2009-03-03', 'https://drive.google.com/file/d/1HjR1m7OTxSbL7F7v8E9gQWIrTZLgcqUg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36969, 2117, 10, CONCAT('Temporary House'), '2009-03-10', 'https://drive.google.com/file/d/1xaodNy6tl8fUqqDVhuf9Su1KBygkd23B/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36970, 2117, 11, CONCAT('Assembly of the Witch Doctors'), '2009-03-17', 'https://drive.google.com/file/d/1x3HebtZaGv9Mh2MKU4gluB89uEeBj2QB/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36971, 2117, 12, CONCAT('The Boy From The Empty House'), '2009-03-24', 'https://video.sibnet.ru/shell.php?videoid=677312');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36972, 2117, 13, CONCAT('Humans and Youkai'), '2009-03-31', 'https://video.sibnet.ru/shell.php?videoid=677311');

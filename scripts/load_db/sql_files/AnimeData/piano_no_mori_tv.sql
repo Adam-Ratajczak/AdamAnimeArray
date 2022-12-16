@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1470, CONCAT('Piano no Mori (TV)'), CONCAT('A tranquil tale about two boys from very different upbringings. On one hand you have Kai, born as the son of a prostitute, who', CHAR(39), 's been playing the abandoned piano in the forest near his home ever since he was young. And on the other you have Syuhei, practically breast-fed by the piano as the son of a family of prestigious pianists. Yet it is their common bond with the piano that eventually intertwines their paths in life.<br>
+<br>(Source: KEFI)'), 1, '2018-04-09', '2018-07-02', 'Spring 2018', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1501/91916.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1041, 1470, '"Umi e (海へ)"', ' by Kai Ichinose (Piano)', 'js-theme-songs', 'https://open.spotify.com/track/00BeIReyPWVPRw23FJYchF')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (630, 1470, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3648, 1470, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3649, 1470, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3650, 1470, 6);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1576, 1470, 199);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1614, 1470, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1615, 1470, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26341, 1470, 1, CONCAT('Chosen One'), '2018-04-09', 'https://ebd.cda.pl/620x395/6739799a9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26342, 1470, 2, CONCAT('To Play Chopin', CHAR(39), 's Pieces'), '2018-04-16', 'https://ebd.cda.pl/620x395/6739826a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26343, 1470, 3, CONCAT('What Mozart Has Left'), '2018-04-23', 'https://ebd.cda.pl/620x395/6739829e0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26344, 1470, 4, CONCAT('The Best Piano'), '2018-04-30', 'https://ebd.cda.pl/620x395/6739820f3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26345, 1470, 5, CONCAT('God of Competition'), '2018-05-07', 'https://ebd.cda.pl/620x395/6739832ea');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26346, 1470, 6, CONCAT('Forest of Piano'), '2018-05-14', 'https://ebd.cda.pl/620x395/6739808d2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26347, 1470, 7, CONCAT('Reunion'), '2018-05-21', 'https://ebd.cda.pl/620x395/67398176a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26348, 1470, 8, CONCAT('A Letter of Challenge'), '2018-05-28', 'https://ebd.cda.pl/620x395/6739838e9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26349, 1470, 9, CONCAT('New Signs at Warsaw'), '2018-06-04', 'https://ebd.cda.pl/620x395/673981160');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26350, 1470, 10, CONCAT('The Chopin Competition'), '2018-06-11', 'https://ebd.cda.pl/620x395/67398148d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26351, 1470, 11, CONCAT('New Wind from Poland'), '2018-06-25', 'https://ebd.cda.pl/620x395/673980524');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26352, 1470, 12, CONCAT('fff'), '2018-07-02', 'https://ebd.cda.pl/620x395/67398355c');

@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1855, CONCAT('Tanaka-kun wa Itsumo Kedaruge'), CONCAT('For high school student Tanaka, the act of being listless is a way of life. Known for his inattentiveness and ability to fall asleep anywhere, Tanaka prays that each day will be as uneventful as the last, seeking to preserve his lazy lifestyle however he can by avoiding situations that require him to exert himself. Along with his dependable friend Oota who helps him with tasks he is unable to accomplish, the lethargic teenager constantly deals with events that prevent him from experiencing the quiet and peaceful days he longs for.<br>
+<br>[Written by MAL Rewrite]'), 1, '2016-04-09', '2016-06-25', 'Spring 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1189/111994.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2009, 1855, 50);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2058, 1855, 8);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2059, 1855, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33201, 1855, 1, CONCAT('Tanaka-kun and Ohta-kun'), '2016-04-09', 'https://ebd.cda.pl/620x395/671272111');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33202, 1855, 2, CONCAT('Apprenticeship Application'), '2016-04-16', 'https://ebd.cda.pl/620x395/6712709cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33203, 1855, 3, CONCAT('Girl of Contrast, Echizen-san'), '2016-04-23', 'https://ebd.cda.pl/620x368/670936ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33204, 1855, 4, CONCAT('Shiraishi-san', CHAR(39), 's Secret'), '2016-04-30', 'https://ebd.cda.pl/620x395/6712715f4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33205, 1855, 5, CONCAT('Tanaka-kun', CHAR(39), 's Day'), '2016-05-07', 'https://ebd.cda.pl/620x395/6712751e0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33206, 1855, 6, CONCAT('The Sick Tanaka-kun'), '2016-05-14', 'https://ebd.cda.pl/620x395/671274576');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33207, 1855, 7, CONCAT('Tanaka-kun', CHAR(39), 's Valentine'), '2016-05-21', 'https://ebd.cda.pl/620x368/74064041');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33208, 1855, 8, CONCAT('Ohta-kun', CHAR(39), 's Ordeal'), '2016-05-28', 'https://ebd.cda.pl/620x395/6712736f3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33209, 1855, 9, CONCAT('Welcome to Wac'), '2016-06-04', 'https://ebd.cda.pl/620x395/6712727c3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33210, 1855, 10, CONCAT('Tanaka-kun', CHAR(39), 's Summer'), '2016-06-11', 'https://ebd.cda.pl/620x395/671273371');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33211, 1855, 11, CONCAT('Tanaka-kun', CHAR(39), 's Cultural Festival'), '2016-06-18', 'https://ebd.cda.pl/620x395/671273927');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33212, 1855, 12, CONCAT('Tanaka-kun', CHAR(39), 's Happiness'), '2016-06-25', 'https://ebd.cda.pl/620x395/671274258');

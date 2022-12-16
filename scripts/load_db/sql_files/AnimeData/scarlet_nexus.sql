@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1621, CONCAT('Scarlet Nexus'), CONCAT('In the year 2020, a nation faces the pervasive threat of the "Others"—mysterious monsters who fall from the sky and feed on human brains. At the same time, psionics, a hormone that gives certain people extrasensory abilities that are effective against the Others, is discovered in the human body. Subsequently, the nation', CHAR(39), 's founder establishes the Other Suppression Force (OSF) to combat these monsters and save humanity. Commonly referred to as the Scarlet Guardians, young individuals with psionics undergo intensive training to join this group.<br>
+<br>One day, the nation prepares an induction ceremony for the exceptional recruits who completed the grueling training to become Scarlet Guardians. Among these young elites is Yuito Sumeragi, the determined son of the nation', CHAR(39), 's founder at the age of five, he was rescued by a woman in the OSF. To repay this debt, he joins the organization, eager to put his training to good use. As he meets his new comrades, he faces a big problem—the woman who saved him years ago closely resembles one of his teammates. However, this should be the least of his worries—unbeknownst to him, a conspiracy is brewing, one with the capability to shake the entire country.<br>
+<br>[Written by MAL Rewrite]'), 1, '2021-07-01', '2021-12-23', 'Summer 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1314/116004.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1147, 1621, '"Red Criminal"', ' by THE ORAL CIGARETTES', 'js-theme-songs', '');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4034, 1621, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4035, 1621, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4036, 1621, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1744, 1621, 31);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29596, 1621, 1, CONCAT('Scarlet Psionics'), '2021-07-01', 'https://ebd.cda.pl/620x368/7818233a4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29597, 1621, 2, CONCAT('Scarlet Guardians'), '2021-07-08', 'https://ebd.cda.pl/620x368/78294838b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29598, 1621, 3, CONCAT('Conspiracy'), NULL, 'https://ebd.cda.pl/620x368/794878474');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29599, 1621, 4, CONCAT('Red Strings'), NULL, 'https://ebd.cda.pl/620x368/80082239f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29600, 1621, 5, CONCAT('Karen', CHAR(39), 's Revolt'), NULL, 'https://ebd.cda.pl/620x368/8056469ad');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29601, 1621, 6, CONCAT('A Doomed Tomorrow'), NULL, 'https://ebd.cda.pl/620x368/811312166');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29602, 1621, 7, CONCAT('The Hunt for Nagi'), NULL, 'https://ebd.cda.pl/620x368/81427282e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29603, 1621, 8, CONCAT('The Hospital', CHAR(39), 's Secrets'), NULL, 'https://ebd.cda.pl/620x368/81893873a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29604, 1621, 9, CONCAT('A Dubious Wonder Drug'), NULL, 'https://ebd.cda.pl/620x368/82330910f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29605, 1621, 10, CONCAT('The Rebel Yuito'), NULL, 'https://ebd.cda.pl/620x368/828529820');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29606, 1621, 11, CONCAT('Togetsu'), NULL, 'https://ebd.cda.pl/620x368/832719050');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29607, 1621, 12, CONCAT('The Moon', CHAR(39), 's Secrets'), NULL, 'https://ebd.cda.pl/620x368/841801207');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29608, 1621, 13, CONCAT('The Design Children'), NULL, 'https://ebd.cda.pl/620x368/848030740');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29609, 1621, 14, CONCAT('A 2,000-Year Ambition'), NULL, 'https://ebd.cda.pl/620x368/866520018');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29610, 1621, 15, CONCAT('Nagi Attacks'), NULL, 'https://ebd.cda.pl/620x368/875073050');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29611, 1621, 16, CONCAT('Naomi and Alice'), NULL, 'https://ebd.cda.pl/620x368/879819919');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29612, 1621, 17, CONCAT('Arahabaki', CHAR(39), 's Trap'), NULL, 'https://ebd.cda.pl/620x368/887299568');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29613, 1621, 18, CONCAT('Karen', CHAR(39), 's Wish'), NULL, 'https://ebd.cda.pl/620x368/895719948');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29614, 1621, 19, CONCAT('Kagero', CHAR(39), 's Confession'), NULL, 'https://ebd.cda.pl/620x368/9086337ae');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29615, 1621, 20, CONCAT('Together Again'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4502723');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29616, 1621, 21, CONCAT('Wakana', CHAR(39), 's Resolve'), NULL, 'https://drive.google.com/file/d/1RcKYlZFxL0n7ijl1YfFaZmoVosEdns9Q/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29617, 1621, 22, CONCAT('Brothers'), NULL, 'https://ebd.cda.pl/620x368/9483105eb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29618, 1621, 23, CONCAT('The Sumeragi Mausoleum'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4560266');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29619, 1621, 24, CONCAT('Slumbering Desire'), NULL, 'https://ebd.cda.pl/620x368/950071832');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29620, 1621, 25, CONCAT('Operation Destroy the Kunad Gate'), NULL, 'https://ebd.cda.pl/620x368/9501141d6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29621, 1621, 26, CONCAT('To Each Their Own Future'), NULL, 'https://ebd.cda.pl/620x368/95877901c');

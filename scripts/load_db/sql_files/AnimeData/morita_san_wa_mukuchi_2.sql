@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1289, CONCAT('Morita-san wa Mukuchi. 2'), CONCAT('The second season of Morita-san wa Mukuchi that directly follows the first.'), 1, '2011-10-05', '2011-12-28', 'Fall 2011', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/32933.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3185, 1289, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3186, 1289, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1393, 1289, 55);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22172, 1289, 1, CONCAT('Our Homeroom Teacher is Maki-sensei'), NULL, 'https://www.mp4upload.com/embed-wi3jfvso8e6s.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22173, 1289, 2, CONCAT('Baking is Serious Business'), NULL, 'https://www.mp4upload.com/embed-2a8uvzwix8kd.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22174, 1289, 3, CONCAT('Fall is the Season for Reading'), NULL, 'https://www.mp4upload.com/embed-ldl6xncrpsq8.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22175, 1289, 4, CONCAT('New Seats are the Luck of the Draw'), NULL, 'https://www.facebook.com/video/embed?video_id=283828058303967/ width=/800/ height=/450/ scr');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22176, 1289, 5, CONCAT('An Exciting Sleepover!'), NULL, 'https://www.facebook.com/video/embed?video_id=286930934660346/ width=/800/ height=/450/ scr');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22177, 1289, 6, CONCAT('Fall is the Season of Love?!'), NULL, 'https://www.mp4upload.com/embed-mf4jzkvl1gpv.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22178, 1289, 7, CONCAT('Hama-sensei is a Worrywart'), NULL, 'https://www.mp4upload.com/embed-2qfwleii8ys0.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22179, 1289, 8, CONCAT('Preparation is Everything at the Culture Festival'), NULL, 'https://www.facebook.com/video/embed?video_id=297751660244940/ width=/800/ height=/450/ scr');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22180, 1289, 9, CONCAT('Home Sick'), NULL, 'https://www.mp4upload.com/embed-xlx2bam3oclt.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22181, 1289, 10, CONCAT('Carelessness is Funny '), NULL, 'https://www.facebook.com/video/embed?video_id=305912436095529/ width=/800/ height=/450/ scr');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22182, 1289, 11, CONCAT('Mayu Never gets Mad?'), NULL, 'https://www.facebook.com/video/embed?video_id=319074368112669/ width=/800/ height=/450/ scr');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22183, 1289, 12, CONCAT('Christmas Jobs!'), NULL, 'https://www.facebook.com/video/embed?video_id=319068154779957/ width=/800/ height=/450/ scr');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22184, 1289, 13, CONCAT('Four Best Friends'), NULL, 'https://www.facebook.com/video/embed?video_id=319060984780674/ width=/800/ height=/450/ scr');

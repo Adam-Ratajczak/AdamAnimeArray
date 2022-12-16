@@ -1,0 +1,23 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1692, CONCAT('Shenmue the Animation'), CONCAT('1985, Yokosuka. Ryo Hazuki has trained to master the Hazuki Style Jujitsu under his strict father in the Hazuki Dojo from his childhood. However, one day a mysterious man named Lan Di murders his father and takes the “mirror” his father was protecting. Ryo is determined to find the truth behind his father’s murder, but soon finds himself getting stuck in a war between the underground organizations…. Traveling from Yokosuka to Hong Kong, Ryo’s long journey begins!<br>
+<br>(Source: Crunchyroll)'), 1, '2022-02-06', '2022-05-01', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1427/120586.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1195, 1692, '"UNDEAD-NOID"', ' by Kashitarou Itou', 'js-theme-songs', 'https://open.spotify.com/track/0N7UyeWFokieklvFJAOJ90');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4198, 1692, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4199, 1692, 11);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4200, 1692, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4201, 1692, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1825, 1692, 55);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1874, 1692, 10);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1875, 1692, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30661, 1692, 1, CONCAT('Thunderclap'), '2022-02-06', 'https://ebd.cda.pl/620x368/10191464a4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30662, 1692, 2, CONCAT('Daybreak'), '2022-02-13', 'https://ebd.cda.pl/620x368/101914677e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30663, 1692, 3, CONCAT('Yin-yang'), '2022-02-20', 'https://ebd.cda.pl/620x368/10157492c4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30664, 1692, 4, CONCAT('Shackles'), '2022-02-27', 'https://ebd.cda.pl/620x368/1022400219');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30665, 1692, 5, CONCAT('Equal'), '2022-03-06', 'https://ebd.cda.pl/620x368/102739190e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30666, 1692, 6, CONCAT('Dignified'), '2022-03-13', 'https://ebd.cda.pl/620x368/103537944c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30667, 1692, 7, CONCAT('Future'), '2022-03-20', 'https://ebd.cda.pl/620x368/10386734b8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30668, 1692, 8, CONCAT('Aspiration'), '2022-03-27', 'https://ebd.cda.pl/620x368/10462910fe');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30669, 1692, 9, CONCAT('Distinct'), '2022-04-03', 'https://ebd.cda.pl/620x368/104957960b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30670, 1692, 10, CONCAT('Comeback'), '2022-04-10', 'https://ebd.cda.pl/620x368/10622720b7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30671, 1692, 11, CONCAT('Entangled'), '2022-04-17', 'https://ebd.cda.pl/620x368/10631630fa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30672, 1692, 12, CONCAT('Guidepost'), '2022-04-24', 'https://ebd.cda.pl/620x368/106951092b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30673, 1692, 13, CONCAT('Shenmue'), '2022-05-01', 'https://ebd.cda.pl/620x368/1076609806');

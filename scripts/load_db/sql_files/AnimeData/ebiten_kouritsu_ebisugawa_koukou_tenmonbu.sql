@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (474, CONCAT('Ebiten: Kouritsu Ebisugawa Koukou Tenmonbu'), CONCAT('Noya Itsuki just transferred to Ebisugawa High School. Since he has always had a fascination with space, he decides to join the Astronomy Club however, he mistakenly walks into the Asstronomy Club—a club whose members are all female otaku. Itsuki notices that the members are really weird, but he has yet to realize that he joined the wrong club. His life becomes very strange very quickly.'), 4, '2012-07-14', '2012-09-15', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/75842.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (216, 474, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1158, 474, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1159, 474, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (528, 474, 126);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (506, 474, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (507, 474, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8572, 474, 1, CONCAT('The Legend of the Struggling Astronomy Club'), NULL, 'https://video.sibnet.ru/shell.php?videoid=983549');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8573, 474, 2, CONCAT('Crybaby Hakata', CHAR(39), 's Transformation of Splendor'), NULL, 'https://video.sibnet.ru/shell.php?videoid=983564');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8574, 474, 3, CONCAT('Put Love Into It, Not Konpeito'), NULL, 'https://video.sibnet.ru/shell.php?videoid=983575');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8575, 474, 4, CONCAT('Stamp 2012'), NULL, 'https://video.sibnet.ru/shell.php?videoid=983677');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8576, 474, 5, CONCAT('This is the Agonizing Astronomy Club of Miracles! A Maid has Landed!'), NULL, 'https://video.sibnet.ru/shell.php?videoid=983755');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8577, 474, 6, CONCAT('Aim for the Stars! The Girl that Dreams of Love'), NULL, 'https://vk.com/video_ext.php?oid=165763736&id=163919746&hash=b25fd76c3681b73a&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8578, 474, 7, CONCAT('Viva Astronomy'), NULL, 'https://video.sibnet.ru/shell.php?videoid=983776');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8579, 474, 8, CONCAT('The Agonizing Astronomy Club', CHAR(39), 's Special Endless Herb Pheromone'), NULL, 'https://vk.com/video_ext.php?oid=165763736&id=163919901&hash=94368e58b82b3bd5&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8580, 474, 9, CONCAT('The Astronomy Club', CHAR(39), 's Great Victory! Ready, Go Towards Tomorrow!!'), NULL, 'https://www.mp4upload.com/embed-aabmposkqcyr.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8581, 474, 10, CONCAT('Beautiful Dreamers'), NULL, 'https://video.sibnet.ru/shell.php?videoid=983844');

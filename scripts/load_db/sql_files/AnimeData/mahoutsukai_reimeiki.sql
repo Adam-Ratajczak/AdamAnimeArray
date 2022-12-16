@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1190, CONCAT('Mahoutsukai Reimeiki'), CONCAT('Although he attends the Royal Magic Academy in the Kingdom of Wenias, Sable has the worst grades in the entire school. As he has no memories of his time before attending the institution, when Headmaster Albus tasks him with a special training regimen in the south, Sable eagerly accepts it. Alongside the Dawn Witch, Roux Cristasse Holt, a human girl with antlers and Kudd, a lizard Beastfallen, Sable must establish a village of witches in a region where anti-witch sentiment remains strong.<br>
+<br>During their journey, the quartet avoids former members of the Dia Ignis Arbiters—a group of witch hunters notorious for murdering witches and civilians alike. Five years ago, their organization was disbanded and given amnesty with the end of the war between the Church and witches, but their members still linger and are ready to capture any mages they come across.<br>
+<br>Thankfully, with Roux', CHAR(39), 's Staff of Ludens, the "witch-eater," and Sable', CHAR(39), 's unlimited supply of magic, the group may be able to accomplish their mission for Albus. If not, Sable', CHAR(39), 's memories of magic and the academy will be taken away, and he will be left with nothing to guide him to the silver-haired mage who first rescued him.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2022-04-08', '2022-07-01', 'Spring 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1093/121114.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (840, 1190, '"dawn of infinity"', ' by fripSide', 'js-theme-songs', 'https://open.spotify.com/track/2OQNKCDRobcgG9C7dSvZOZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2894, 1190, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2895, 1190, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2896, 1190, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2897, 1190, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1288, 1190, 10);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20280, 1190, 1, CONCAT('The Remedial Student and the Witch of the Staff'), NULL, 'https://ebd.cda.pl/620x368/10537967a4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20281, 1190, 2, CONCAT('Don', CHAR(39), 't Call Me a Traitor'), NULL, 'https://ebd.cda.pl/620x368/10599095fb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20282, 1190, 3, CONCAT('Beyond the Steam'), NULL, 'https://ebd.cda.pl/620x368/10675351cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20283, 1190, 4, CONCAT('I', CHAR(39), 'm Not Afraid to Die'), NULL, 'https://ebd.cda.pl/620x368/107587636a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20284, 1190, 5, CONCAT('I Decide Who', CHAR(39), 's Worthy'), NULL, 'https://ebd.cda.pl/620x368/10819126dc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20285, 1190, 6, CONCAT('Knowledge of Ignorance'), NULL, 'https://ebd.cda.pl/620x368/1089009767');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20286, 1190, 7, CONCAT('I Can', CHAR(39), 't Save Anything'), NULL, 'https://ebd.cda.pl/620x368/1103191961');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20287, 1190, 8, CONCAT('Respective Costs'), NULL, 'https://ebd.cda.pl/620x368/11090719f4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20288, 1190, 9, CONCAT('A Stone Cast Into the Pond'), NULL, 'https://ebd.cda.pl/620x368/1114443789');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20289, 1190, 10, CONCAT('Snack Time'), NULL, 'https://ebd.cda.pl/620x368/11314678f4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20290, 1190, 11, CONCAT('Determination to Kill'), NULL, 'https://ebd.cda.pl/620x368/11319640d8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20291, 1190, 12, CONCAT('The Beginning of the Adventure'), NULL, 'https://ebd.cda.pl/620x368/11365064b8');

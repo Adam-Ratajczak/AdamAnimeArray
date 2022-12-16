@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (198, CONCAT('Beck'), CONCAT('Fourteen-year-old Yukio "Koyuki" Tanaka is a dispirited young boy with no goals in life. However, this all changes when Koyuki saves a strange-looking dog named Beck from being harassed by a group of local kids. The dog', CHAR(39), 's owner, 16-year-old Ryuusuke "Ray" Minami, is an emerging guitarist and the former member of a popular rock band. <br>
+<br>After Koyuki meets Ray again in a diner, the older boy leads him to his former band', CHAR(39), 's meeting place and dazzles Koyuki with his amazing guitar skills. Slowly becoming interested in the glamour of western rock culture, Koyuki decides to start playing the guitar while helping Ray achieve his dream of leading the ultimate rock band. Together with Ray', CHAR(39), 's younger sister Maho and a few other members, the two boys launch their career into the world of rock by forming a band called BECK. Beck follows the group', CHAR(39), 's struggles and successes as they spread their fame across Japan.<br>
+<br>[Written by MAL Rewrite]'), 1, '2004-10-07', '2005-03-31', 'Fall 2004', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/11636.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (92, 198, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (469, 198, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (470, 198, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (471, 198, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (221, 198, 21);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2784, 198, 1, CONCAT('The View at Fourteen'), '2004-10-07', 'https://ebd.cda.pl/620x395/7875815ac');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2785, 198, 2, CONCAT('Live House'), '2004-10-14', 'https://ebd.cda.pl/620x395/7875719f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2786, 198, 3, CONCAT('Moon on the Water'), '2004-10-21', 'https://ebd.cda.pl/620x395/7875723d0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2787, 198, 4, CONCAT('Strum the Guitar'), '2004-10-28', 'https://ebd.cda.pl/620x368/19801170e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2788, 198, 5, CONCAT('Beck'), '2004-11-04', 'https://ebd.cda.pl/620x368/19801206f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2789, 198, 6, CONCAT('Hyodo and the Jaguar'), '2004-11-11', 'https://ebd.cda.pl/620x368/198012350');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2790, 198, 7, CONCAT('Lucille'), '2004-11-18', 'https://ebd.cda.pl/620x368/198012679');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2791, 198, 8, CONCAT('Broadcast in the School'), '2004-11-25', 'https://ebd.cda.pl/620x368/198012916');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2792, 198, 9, CONCAT('The Night Before LIVE'), '2004-12-02', 'https://ebd.cda.pl/620x395/7875727b6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2793, 198, 10, CONCAT('FACE'), '2004-12-09', 'https://ebd.cda.pl/620x368/1980138b3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2794, 198, 11, CONCAT('Summer Holidays'), '2004-12-16', 'https://ebd.cda.pl/620x395/787573164');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2795, 198, 12, CONCAT('Secret Live'), '2004-12-23', 'https://ebd.cda.pl/620x368/19801448a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2796, 198, 13, CONCAT('Ciel Bleu'), '2004-12-30', 'https://ebd.cda.pl/620x368/198014784');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2797, 198, 14, CONCAT('Dream'), '2005-01-06', 'https://ebd.cda.pl/620x368/19801509a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2798, 198, 15, CONCAT('Back to School'), '2005-01-13', 'https://ebd.cda.pl/620x368/1980156a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2799, 198, 16, CONCAT('Indies'), '2005-01-20', 'https://ebd.cda.pl/620x368/198015966');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2800, 198, 17, CONCAT('Three Days'), '2005-01-27', 'https://ebd.cda.pl/620x368/198016519');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2801, 198, 18, CONCAT('Leon Sykes'), '2005-02-03', 'https://ebd.cda.pl/620x368/19801683e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2802, 198, 19, CONCAT('Blues'), '2005-02-10', 'https://ebd.cda.pl/620x368/1980171a9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2803, 198, 20, CONCAT('Greatful Sound'), '2005-02-17', 'https://ebd.cda.pl/620x368/1980174f8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2804, 198, 21, CONCAT('Write Music'), '2005-02-24', 'https://ebd.cda.pl/620x368/19801778f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2805, 198, 22, CONCAT('Performance Eve Festival'), '2005-03-03', 'https://ebd.cda.pl/620x368/198018030');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2806, 198, 23, CONCAT('Festival'), '2005-03-10', 'https://ebd.cda.pl/620x368/198018371');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2807, 198, 24, CONCAT('Third Stage'), '2005-03-17', 'https://ebd.cda.pl/620x395/7875771f9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2808, 198, 25, CONCAT('Slip Out'), '2005-03-24', 'https://ebd.cda.pl/620x368/19801897e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2809, 198, 26, CONCAT('America'), '2005-03-31', 'https://ebd.cda.pl/620x368/198019232');

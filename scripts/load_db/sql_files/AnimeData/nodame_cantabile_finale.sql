@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1374, CONCAT('Nodame Cantabile: Finale'), CONCAT('Shinichi Chiaki is quickly making a name for himself as the principal conductor of the revitalized Roux-Marlet Orchestra, and Megumi "Nodame" Noda has made leaps and bounds as a pianist at the Conservatoire de Paris. However, tensions mount between the two as Nodame feels left behind by Chiaki', CHAR(39), 's growing success and his close friendship with legendary piano prodigy Rui Son. Disregarding her teacher Professor Charles Auclair', CHAR(39), 's advice, Nodame enters another piano competition in an attempt to jumpstart her own performance career. <br>
+<br>Meanwhile, those around Chiaki and Nodame are at their own crossroads. Rui begins to doubt herself after hearing Nodame', CHAR(39), 's playing and being denied tutelage from Auclair Maestro Franz von Stresemann faces the reality of his mortality pianists Yunlong Li and Tatiana Vishneva feverishly prepare for a competition, while the latter also struggles with her growing feelings for oboist and fellow student Yasunori Kuroki. <br>
+<br>As Chiaki, Nodame, and their friends continue on their respective journeys, they must not only strive to stay true to themselves, but also remember where it all started.<br>
+<br>[Written by MAL Rewrite]'), 1, '2010-01-15', '2010-03-26', 'Winter 2010', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1084/119096.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (966, 1374, '"Manazashi ☆ Daydream (まなざし☆デイドリーム)"', ' by Yuu Sakai (さかいゆう)', 'js-theme-songs', 'https://open.spotify.com/track/7nXR9d3kbvjWtpNuPcAmhu');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (594, 1374, 5);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3418, 1374, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3419, 1374, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1481, 1374, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1510, 1374, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1511, 1374, 6);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24102, 1374, 1, CONCAT('Lesson 1'), '2010-01-15', 'https://drive.google.com/file/d/0B7mbXzqXmPoXbUx4azhsVjZyQ28/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24103, 1374, 2, CONCAT('Lesson 2'), '2010-01-22', 'https://drive.google.com/file/d/0B7mbXzqXmPoXUERwV19HSWFZUWc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24104, 1374, 3, CONCAT('Lesson 3'), '2010-01-29', 'https://drive.google.com/file/d/0B7mbXzqXmPoXLUxMLXZIM3NGaDQ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24105, 1374, 4, CONCAT('Lesson 4'), '2010-02-05', 'https://drive.google.com/file/d/0B7mbXzqXmPoXTFRuM09oVklGT0E/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24106, 1374, 5, CONCAT('Lesson 5'), '2010-02-12', 'https://drive.google.com/file/d/0B7mbXzqXmPoXVDZYaXMtZW5MeFk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24107, 1374, 6, CONCAT('Lesson 6'), '2010-02-19', 'https://drive.google.com/file/d/0B7mbXzqXmPoXckhUb2lDZVFreEE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24108, 1374, 7, CONCAT('Lesson 7'), '2010-02-26', 'https://www.mp4upload.com/embed-qq36gqone92b.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24109, 1374, 8, CONCAT('Lesson 8'), '2010-03-05', 'https://drive.google.com/file/d/0B7mbXzqXmPoXXzQ4bXQwcjZMdjQ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24110, 1374, 9, CONCAT('Lesson 9'), '2010-03-12', 'https://www.mp4upload.com/embed-nczsdfkindz0.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24111, 1374, 10, CONCAT('Lesson 10'), '2010-03-19', 'https://drive.google.com/file/d/0B7mbXzqXmPoXNmZZUGNWSlp1d28/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24112, 1374, 11, CONCAT('The Final Lesson'), '2010-03-26', 'https://drive.google.com/file/d/0B7mbXzqXmPoXelRhXzFuUXBKenM/preview');

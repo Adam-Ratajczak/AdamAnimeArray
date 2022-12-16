@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (618, CONCAT('Girls Bravo: First Season'), CONCAT('Small for his age, Yukinari has been bullied and abused by girls all his life. Now in high school, he has developed a rare condition: whenever girls touch him, or even come close, he breaks out in hives. Imagine his surprise, when he is suddenly transported to the city of Seiren on a mystic world invisibly orbiting the Earth, and populated with vast numbers of women and very few men. Fortunately, he has a new friend, Miharu-chan, whose touch inexplicably doesn', CHAR(39), 't affect him.<br>
+<br>(Source: ANN)'), 1, '2004-07-05', '2004-09-27', 'Summer 2004', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1/241.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (277, 618, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1523, 618, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1524, 618, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1525, 618, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1526, 618, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (688, 618, 33);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (650, 618, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (651, 618, 20);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (652, 618, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11297, 618, 1, CONCAT('Bravo From the Bathroom!'), '2004-07-06', 'https://myvi.ru/player/embed/html/oHJ7zCx-1B2Q-vPv3TG_0IVkopVZMHsHSM-xLcy6G6WY1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11298, 618, 2, CONCAT('Bravo at School!'), '2004-07-13', 'https://myvi.ru/player/embed/html/olXSjJJL4dy11EHcadTNhyIrhOg2QaQlXW4HxEChN1mc1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11299, 618, 3, CONCAT('Cooking Is Bravo!'), '2004-07-27', 'https://video.sibnet.ru/shell.php?videoid=1073341');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11300, 618, 4, CONCAT('Bravo in the Mansion!'), '2004-08-10', 'https://video.sibnet.ru/shell.php?videoid=1073355');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11301, 618, 5, CONCAT('Bravo on a Rainy Day! Part 1'), '2004-08-17', 'https://video.sibnet.ru/shell.php?videoid=1073923');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11302, 618, 6, CONCAT('Bravo on a Rainy Day! Part 2'), '2004-08-24', 'https://video.sibnet.ru/shell.php?videoid=1074216');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11303, 618, 7, CONCAT('Look for a Groom Bravo!'), '2004-08-31', 'https://video.sibnet.ru/shell.php?videoid=1074217');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11304, 618, 8, CONCAT('Lots of Bravo!'), '2004-09-09', 'https://myvi.ru/player/embed/html/oCY4eMWt9xqcbwGUvEXjo7lQ3LKJgu12BKXVzg6e6Hxe6fvq1eJv18g2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11305, 618, 9, CONCAT('Bravo at the Great Magic War!'), '2004-09-14', 'https://video.sibnet.ru/shell.php?videoid=1074248');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11306, 618, 10, CONCAT('Bravo at the Hot Springs!'), '2004-09-21', 'https://video.sibnet.ru/shell.php?videoid=1076025');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11307, 618, 11, CONCAT('Ping-Pong is Bravo!'), '2004-09-28', 'https://myvi.ru/player/embed/html/or9syfyqaWTPv4GcN4KKpwXIYp5A44IKXNwStAqv07_M1');

@@ -1,0 +1,12 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (111, CONCAT('Aozora Shoujo-tai'), CONCAT('When aviation mechanic (and anime fanboy) Takuya Isurugi is transferred to the 801st Tactical Training Squadron, he gets more than he bargained for. Moderated by hard-headed veteran ace Mitsuru Konishi, the "Airbats" are an all-female aerial acrobatic team consisting of loose cannons Miyuki Haneda and Arisa Mitaka, karaoke freak and gambling genius Sakura Saginomiya, and junk food lover Yoko Shimorenjaku. Both Haneda and Mitaka do not get along with each other, and their rivalry worsens when they both fall for Isurugi. But with the entire JASDF having doubts about the team, the Airbats must work as a team or face total disbandment. '), 1, '1994-10-21', '1996-08-21', '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1306/100405.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (55, 111, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (254, 111, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (255, 111, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (125, 111, 61);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1613, 111, 1, CONCAT('DEFCON I'), '1994-10-21', 'https://ebd.cda.pl/800x450/64893662e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1614, 111, 2, CONCAT('DEFCON II'), '1994-11-23', 'https://ebd.cda.pl/800x450/64709847b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1615, 111, 3, CONCAT('DEFCON III'), '1995-03-24', 'https://ebd.cda.pl/800x450/648321802');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1616, 111, 4, CONCAT('Yukiguni Shoujotai'), '1996-03-23', 'https://ebd.cda.pl/800x450/649517619');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1617, 111, 5, CONCAT('DEFCON IV'), '1996-05-22', 'https://ebd.cda.pl/800x450/65041702d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1618, 111, 6, CONCAT('DEFCON V'), '1996-07-24', 'https://ebd.cda.pl/800x450/652080859');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1619, 111, 7, CONCAT('DEFCON VI'), '1996-08-21', 'https://ebd.cda.pl/800x450/652793365');

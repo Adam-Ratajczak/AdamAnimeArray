@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1870, CONCAT('Teekyuu 4'), CONCAT('Fourth season of Teekyuu series.'), 1, '2015-04-07', '2015-06-23', 'Spring 2015', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/73472.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1331, 1870, '"Fattoshite Tougenkyou (ファッとして桃源郷)"', ' by Kanae Shinjou (Suzuko Mimori)', 'js-theme-songs', 'https://open.spotify.com/track/6PscdmhyvdmFl2puhQD5cM');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (778, 1870, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4633, 1870, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4634, 1870, 19);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2025, 1870, 73);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33413, 1870, 1, CONCAT('Men in Black with Senpai'), '2015-04-07', 'https://video.sibnet.ru/shell.php?videoid=1764031');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33414, 1870, 2, CONCAT('Romeo Must Die with Senpai'), '2015-04-14', 'https://video.sibnet.ru/shell.php?videoid=1768501');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33415, 1870, 3, CONCAT('Trainspotting with Senpai'), '2015-04-21', 'https://drive.google.com/file/d/0B0GZ07xOdkUWMG1JcXp6eDhKakE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33416, 1870, 4, CONCAT('Rambo with Senpai'), '2015-04-28', 'https://streamtape.com/e/Qe2PkR1oQLC0a8g/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33417, 1870, 5, CONCAT('Jaws with Senpai'), '2015-05-05', 'https://streamtape.com/e/AQayAmk4lOUX77d/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33418, 1870, 6, CONCAT('Castaway with Senpai'), '2015-05-12', 'https://streamtape.com/e/Ak1Yb0BkbVUG8o/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33419, 1870, 7, CONCAT('Enemy at the Gates With Senpai'), '2015-05-19', 'https://streamtape.com/e/zbK3zaVWZ9UYA3w/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33420, 1870, 8, CONCAT('The Mummy with Senpai'), '2015-05-26', 'https://streamtape.com/e/MAk3Og0j9Ztm4yx/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33421, 1870, 9, CONCAT('GOAL! with Senpai'), '2015-06-02', 'https://streamtape.com/e/6jbPyPXQ7wI9jV1/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33422, 1870, 10, CONCAT('Shaun of the Dead with Senpai'), '2015-06-09', 'https://streamtape.com/e/RQp2w2l780IdbmP/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33423, 1870, 11, CONCAT('A Bug', CHAR(39), 's Life with Senpai'), '2015-06-16', 'https://streamtape.com/e/OXyppzW3QQCZZ41/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33424, 1870, 12, CONCAT('Apocalypto with Senpai'), '2015-06-23', 'https://streamtape.com/e/1BOqwwbgjWSJbp/');

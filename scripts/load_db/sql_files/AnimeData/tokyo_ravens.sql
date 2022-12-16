@@ -1,0 +1,33 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1927, CONCAT('Tokyo Ravens'), CONCAT('Onmyoudou magic was once a powerful technique used by the Japanese during the second World War in order for them to gain the upper hand and establish their nation as a formidable force. But Japan was quickly defeated after the revered onmyouji Yakou Tsuchimikado caused the "Great Spiritual Disaster," an event which plagues Tokyo to this very day. As a result of this mishap, the Onmyou Agency was established in order to exorcise further spiritual disasters and combat the demons that would make their way into the world.<br>
+<br>Now, Onmyoudou has become far more modern, simplified, and refined for use in a wide variety of applications such as medicine and technology. However, not everyone is able to utilize the magic, as is the case with Harutora, a member of the Tsuchimikado', CHAR(39), 's branch family. Despite an old promise to protect Natsume, the heir of the Tsuchimikado', CHAR(39), 's main family and Yakou', CHAR(39), 's supposed reincarnation, as her familiar, Harutora has no talent and chooses to live a normal life instead. But when a prominent member of the Onmyou Agency attempts to recreate the same experiment which led to Japan', CHAR(39), 's downfall, he decides to make good on his word and fight by Natsume', CHAR(39), 's side.<br>
+<br>[Written by MAL Rewrite]'), 1, '2013-10-09', '2014-03-26', 'Fall 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/75094.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1372, 1927, '"X-encounter"', ' by Maon Kurosaki', 'js-theme-songs', 'https://open.spotify.com/track/0ZTW7mz6fqQKNeD9rJwTO5')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4789, 1927, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4790, 1927, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4791, 1927, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4792, 1927, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2090, 1927, 90);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34245, 1927, 1, CONCAT('Shaman Clan: Promise'), '2013-10-09', 'https://ebd.cda.pl/620x395/7879859a8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34246, 1927, 2, CONCAT('SHAMAN CLAN -Confession-'), NULL, 'https://ebd.cda.pl/620x395/7879863ec');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34247, 1927, 3, CONCAT('SHAMAN CLAN -Calling the Dead-'), NULL, 'https://ebd.cda.pl/620x395/787986722');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34248, 1927, 4, CONCAT('RAVEN', CHAR(39), 'S NEST -School-'), NULL, 'https://ebd.cda.pl/620x395/7879871a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34249, 1927, 5, CONCAT('RAVEN', CHAR(39), 'S NEST -Bonds-'), NULL, 'https://ebd.cda.pl/620x395/78798750e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34250, 1927, 6, CONCAT('days in nest -Holiday-'), NULL, 'https://ebd.cda.pl/620x395/787987989');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34251, 1927, 7, CONCAT('cHImAirA DanCE -Ogre Eater-'), NULL, 'https://ebd.cda.pl/620x395/7879883e9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34252, 1927, 8, CONCAT('cHImAirA DanCE -Half-Ogre-'), NULL, 'https://ebd.cda.pl/620x395/78798870e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34253, 1927, 9, CONCAT('cHImAirA DanCE -Purification-'), NULL, 'https://ebd.cda.pl/620x395/7879891a2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34254, 1927, 10, CONCAT('GIRL RETURN -Prodigy-'), NULL, 'https://ebd.cda.pl/620x395/78798995e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34255, 1927, 11, CONCAT('GIRL RETURN -Tiger-'), NULL, 'https://ebd.cda.pl/620x395/787990301');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34256, 1927, 12, CONCAT('GIRL RETURN -Love-'), NULL, 'https://ebd.cda.pl/620x395/7879907c2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34257, 1927, 13, CONCAT('Black Shaman ASSAULT -Priest-'), NULL, 'https://ebd.cda.pl/620x395/787991147');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34258, 1927, 14, CONCAT('Black Shaman ASSAULT -Face-Off-'), NULL, 'https://ebd.cda.pl/620x395/7879915a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34259, 1927, 15, CONCAT('_DARKNESS_EMERGE_ -Encounter-'), NULL, 'https://ebd.cda.pl/620x395/78799195d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34260, 1927, 16, CONCAT('_DARKNESS_EMERGE_ -Divine Fan-'), NULL, 'https://ebd.cda.pl/620x395/7879923c1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34261, 1927, 17, CONCAT('_DARKNESS_EMERGE_ -Razor-'), NULL, 'https://ebd.cda.pl/620x395/7879927cb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34262, 1927, 18, CONCAT('over-cry -Assault-'), NULL, 'https://ebd.cda.pl/620x395/7879931d4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34263, 1927, 19, CONCAT('over-cry -Princess-'), NULL, 'https://ebd.cda.pl/620x395/7879935df');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34264, 1927, 20, CONCAT('over-cry -Fireworks-'), NULL, 'https://ebd.cda.pl/620x395/787993909');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34265, 1927, 21, CONCAT('to The DarkSky -Dark Night-'), NULL, 'https://ebd.cda.pl/620x395/787994355');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34266, 1927, 22, CONCAT('to The DarkSky -Protector-'), NULL, 'https://ebd.cda.pl/620x395/78799472b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34267, 1927, 23, CONCAT('to The DarkSky -Onmyo-'), NULL, 'https://ebd.cda.pl/620x395/78799518a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34268, 1927, 24, CONCAT('to The DarkSky -Calling the Dead-'), NULL, 'https://ebd.cda.pl/620x395/7879955f9');

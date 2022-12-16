@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (722, CONCAT('Hataraku Saibou!!'), CONCAT('The cells of the human body never rest for too long there', CHAR(39), 's always something new to do and learn every day. At least, that', CHAR(39), 's what Hakkekkyuu U-1146 feels as he rushes to and fro, searching for any pathogens that could cause harm to the body. Despite his dangerous line of work, it', CHAR(39), 's all worth it to protect the happy smiles of Sekkekkyuu AE3803, the platelet crew, his fellow neutrophils, and the other cells he meets along the way. <br>
+<br>In his latest pathogen-hunting adventures, Hakkekkyuu U-1146 discovers how important cells can sometimes make mistakes, and that not all bacteria are actually bad. Everybody has their bad days, but everything eventually works out when their comrades have their backs. In the end, it', CHAR(39), 's just another normal day for these hardworking cells!<br>
+<br>[Written by MAL Rewrite]'), 1, '2021-01-09', '2021-02-27', 'Winter 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1726/114552.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (517, 722, '"Fight!!"', ' by ClariS', 'js-theme-songs', 'https://open.spotify.com/track/5Vqe6O1inyJuf54FsCm5SL');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (330, 722, 1);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (795, 722, 81);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (756, 722, 23);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (757, 722, 33);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (758, 722, 34);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13024, 722, 1, CONCAT('Bump'), '2021-01-09', 'https://drive.google.com/file/d/1BLXhs6fMNBmgkGMUkE6fNv45MJSZKddz/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13025, 722, 2, CONCAT('Acquired Immunity/Peyer', CHAR(39), 's Patch'), '2021-01-16', 'https://drive.google.com/file/d/1hRmvahm3efNTDgSCVDaeAPAjp41RTHsf/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13026, 722, 3, CONCAT('Dengue Fever/Acne'), '2021-01-23', 'https://ebd.cda.pl/620x368/781342451');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13027, 722, 4, CONCAT('H. Pylori/Antigenic Shift'), '2021-01-30', 'https://ebd.cda.pl/620x368/784806730');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13028, 722, 5, CONCAT('Cytokines'), '2021-02-06', 'https://ebd.cda.pl/620x368/868815999');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13029, 722, 6, CONCAT('Harmful Bacteria'), '2021-02-13', 'https://drive.google.com/file/d/11UMZX-OPL2Xf2kBbVxbI7sJffpXiGRBB/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13030, 722, 7, CONCAT('Cancer Cell II (Part I)'), '2021-02-20', 'https://drive.google.com/file/d/1ZWodjKhLD2NxBFMoRQdPlr6H2bty2iXF/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13031, 722, 8, CONCAT('Cancer Cell II (Part II)'), '2021-02-27', 'https://drive.google.com/file/d/1knhBHh69mS4IKaXa877eYu_gtbyzPwKw/preview');

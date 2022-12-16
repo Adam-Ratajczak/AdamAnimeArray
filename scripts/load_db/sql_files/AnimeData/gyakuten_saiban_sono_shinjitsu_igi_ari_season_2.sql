@@ -1,0 +1,33 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (673, CONCAT('Gyakuten Saiban: Sono "Shinjitsu", Igi Ari! Season 2'), CONCAT('Defense attorney Ryuuichi Naruhodou is still hard at work defending the falsely accused with his knack for last-minute turnabouts. With his trusty assistant and medium-in-training Mayoi Ayasato in tow, Ryuuichi', CHAR(39), 's fame as a champion for the innocent steadily grows. But this newfound success attracts the attention of the coffee-loving, masked Godot⁠—a mysterious rookie prosecutor who bears an inexplicable grudge against Ryuuichi.<br>
+<br>With the help of their allies, Ryuuichi and Mayoi take this new challenger head-on and search for the reason behind his appearance. But before long, the first two cases from the career of Mayoi', CHAR(39), 's late sister Chihiro Ayasato become critical to solving a fantastical murder mystery, continuing the bloody saga of the tumultuous Ayasato clan. Will Ryuuichi once again be able to overcome the odds and find the truths hidden within the web of lies?<br>
+<br>[Written by MAL Rewrite]'), 1, '2018-10-06', '2019-03-30', 'Fall 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1861/91089.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (476, 673, '"Starting Blue (スターティングブルー)"', ' by halca', 'js-theme-songs', 'https://open.spotify.com/track/5FgGjF78yyGNdLKsiEI8Sr');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1657, 673, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1658, 673, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1659, 673, 4);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (744, 673, 22);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (712, 673, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (713, 673, 17);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12206, 673, 1, CONCAT('The Lost Turnabout'), NULL, 'https://ebd.cda.pl/620x368/367328599');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12207, 673, 2, CONCAT('The Stolen Turnabout — 1st Trial'), NULL, 'https://ebd.cda.pl/620x368/367775568');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12208, 673, 3, CONCAT('The Stolen Turnabout — 2nd Trial'), NULL, 'https://ebd.cda.pl/620x368/3679711e6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12209, 673, 4, CONCAT('The Stolen Turnabout — 3rd Trial'), NULL, 'https://ebd.cda.pl/620x368/36897587a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12210, 673, 5, CONCAT('The Stolen Turnabout — Last Trial'), NULL, 'https://streamtape.com/e/W1Av4JrDg1fbv9P/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12211, 673, 6, CONCAT('Sound the Turnabout Melody'), NULL, 'https://streamtape.com/e/Q0kWy7O7ogF0b8m/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12212, 673, 7, CONCAT('Recipe for Turnabout — 1st Trial'), NULL, 'https://streamtape.com/e/apG79xmQYzhx8X9/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12213, 673, 8, CONCAT('Recipe for Turnabout — 2nd Trial'), NULL, 'https://streamtape.com/e/rog1V9ygORubj0Z/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12214, 673, 9, CONCAT('Recipe for Turnabout — Last Trial'), NULL, 'https://streamtape.com/e/AppLjJGojbhXJD4/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12215, 673, 10, CONCAT('Northward, Turnabout Express — 1st Trial'), NULL, 'https://streamtape.com/e/3OZboYWob7HXwo/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12216, 673, 11, CONCAT('Northward, Turnabout Express — 2nd Trial'), NULL, 'https://streamtape.com/e/Mq3293bWYltmb03/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12217, 673, 12, CONCAT('Northward, Turnabout Express — Last Trial'), NULL, 'https://streamtape.com/e/zx3aAe3ZJDCYj1K/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12218, 673, 13, CONCAT('Turnabout Memories'), NULL, 'https://streamtape.com/e/4POGJBXD8QHGOg/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12219, 673, 14, CONCAT('Hear the Waves of Turnabout'), NULL, 'https://streamtape.com/e/jAdBZ1qbozhzPbx/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12220, 673, 15, CONCAT('Turnabout Beginnings — 1st Trial'), NULL, 'https://streamtape.com/e/GwJ2exdYAzC13yy/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12221, 673, 16, CONCAT('Turnabout Beginnings — Last Trial'), NULL, 'https://streamtape.com/e/BJmVZVY21RtybqW/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12222, 673, 17, CONCAT('Bridge to the Turnabout — 1st Trial'), NULL, 'https://streamtape.com/e/Xx14k4Brjmu304/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12223, 673, 18, CONCAT('Bridge to the Turnabout — 2nd Trial'), NULL, 'https://streamtape.com/e/WXxm6eLxmpf0Xm/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12224, 673, 19, CONCAT('Bridge to the Turnabout — 3rd Trial'), NULL, 'https://streamtape.com/e/z6mJrqG4O1FYZD7/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12225, 673, 20, CONCAT('Bridge to the Turnabout — 4th Trial'), NULL, 'https://streamtape.com/e/0AxjXZO2RAsbGK7/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12226, 673, 21, CONCAT('Bridge to the Turnabout — 5th Trial'), NULL, 'https://streamtape.com/e/vDXBpXg6jvH4x9p/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12227, 673, 22, CONCAT('Bridge to the Turnabout — 6th Trial'), NULL, 'https://streamtape.com/e/D4o9zerqAdSkoM1/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12228, 673, 23, CONCAT('Bridge to the Turnabout — Last Trial'), NULL, 'https://streamtape.com/e/8109AxjbOVsoPYm/');

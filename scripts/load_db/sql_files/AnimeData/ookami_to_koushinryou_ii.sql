@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1415, CONCAT('Ookami to Koushinryou II'), CONCAT('Traveling merchant Kraft Lawrence continues his northward journey with wolf goddess Holo, in search of her lost home of Yoitsu. Lawrence and his sharp-witted partner continue to make some small profits along the way, while slowly uncovering more information about Holo', CHAR(39), 's hometown. However, the road to Yoitsu is a bumpy one filled with many troubles—Lawrence runs into a charming young fellow merchant who has his eyes set on the female wolf companion, and he begins to doubt if Holo will remain by his side he and the goddess will also have to consider precarious and risky business deals as Lawrence strives to achieve his dream of becoming a shopowner. All the while, with his determination tested at every turn during his journey, Lawrence must question his relationship with Holo, take on business ventures, and ask himself whether it is time for him and Holo to go their separate ways.<br>
+<br>[Written by MAL Rewrite]'), 1, '2009-07-09', '2009-09-24', 'Summer 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/59399.jpg');
+INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (997, 1415, '"Mitsu no Yoake (蜜の夜明け - Honey Dawn)"', ' by Akino Arai', 'js-theme-songs', 'https://open.spotify.com/track/0g4BYv9B1eQuluz8eB5MLc')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3502, 1415, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3503, 1415, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3504, 1415, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1523, 1415, 215);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1553, 1415, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1554, 1415, 31);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25622, 1415, 1, CONCAT('Wolf and an Inadvertent Rift'), '2009-07-09', 'https://ebd.cda.pl/800x450/278075546');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25623, 1415, 2, CONCAT('Wolf and the Calm Before the Storm'), '2009-07-16', 'https://ebd.cda.pl/620x395/8229652f2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25624, 1415, 3, CONCAT('Wolf and the Gap That Cannot Be Filled'), '2009-07-23', 'https://ebd.cda.pl/620x395/8229650a2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25625, 1415, 4, CONCAT('Wolf and the End of Shallow Thinking'), '2009-07-30', 'https://ebd.cda.pl/800x450/2780932cd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25626, 1415, 5, CONCAT('Wolf, Hope and Despair'), '2009-08-06', 'https://ebd.cda.pl/800x450/278095347');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25627, 1415, 6, CONCAT('Wolf and Trustworthy God'), '2009-08-13', 'https://ebd.cda.pl/620x395/822724766');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25628, 1415, 7, CONCAT('Wolf and Playful Days'), '2009-08-20', 'https://ebd.cda.pl/800x450/2780965c6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25629, 1415, 8, CONCAT('Wolf and an Enchanting Traveler'), '2009-08-27', 'https://ebd.cda.pl/620x395/82296544f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25630, 1415, 9, CONCAT('Wolf and Reckless Negotiation'), '2009-09-03', 'https://ebd.cda.pl/800x450/2780980f3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25631, 1415, 10, CONCAT('Wolf and Lonely Smile'), '2009-09-10', 'https://ebd.cda.pl/800x450/2780992f7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25632, 1415, 11, CONCAT('Wolf and the Decision to Part'), '2009-09-17', 'https://ebd.cda.pl/620x395/822965697');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25633, 1415, 12, CONCAT('Wolf and Endless Tears'), '2009-09-24', 'https://ebd.cda.pl/800x450/2781019ec');

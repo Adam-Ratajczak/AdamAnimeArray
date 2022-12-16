@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (550, CONCAT('Futakoi Alternative'), CONCAT('The Futaba Detective Agency, being run by Rentarou, who has taken over the family business, after his father', CHAR(39), 's death 3 weeks ago. Along w/ Sara & Souju, his live-in identical twin assistants. He ends up running afoul of the local Yakuza.<br>
+<br>(Source: ANN)'), 1, '2005-04-07', '2005-06-30', 'Spring 2005', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/16733.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1373, 550, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1374, 550, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1375, 550, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (613, 550, 18);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10164, 550, 1, CONCAT('Croquettes, Helicopters, Underground Boxing and I'), '2005-04-07', 'https://vk.com/video_ext.php?oid=191741003&id=164063770&hash=57731a23ea87f141&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10165, 550, 2, CONCAT('No-name Day'), '2005-04-14', 'https://vk.com/video_ext.php?oid=191741003&id=164063766&hash=55b293f6b0b8ebc2&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10166, 550, 3, CONCAT('Emerald Mountain Yeah!'), '2005-04-21', 'https://mp4upload.com/embed-qdh7w9t7l8tl.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10167, 550, 4, CONCAT('Nikopaku Rhapsody'), '2005-04-28', 'https://vk.com/video_ext.php?oid=172567157&id=456239106&hash=b1c5b3607cb833b8&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10168, 550, 5, CONCAT('7 Dayz (...and Happy Dayz)'), '2005-05-05', 'https://vk.com/video_ext.php?oid=172567157&id=456239107&hash=d48d686bf59bc219&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10169, 550, 6, CONCAT('Why Did You Separate, Even Though You Love Each Other?'), '2005-05-12', 'https://video.sibnet.ru/shell.php?videoid=983105');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10170, 550, 7, CONCAT('Futaba Rentarou', CHAR(39), 's First Case'), '2005-05-19', 'https://vk.com/video_ext.php?oid=172567157&id=456239112&hash=8d5651c9cb3691bc&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10171, 550, 8, CONCAT('Sa is for Sayonara'), '2005-05-26', 'https://video.sibnet.ru/shell.php?videoid=983749');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10172, 550, 9, CONCAT('Futakoi'), '2005-06-02', 'https://vk.com/video_ext.php?oid=172567157&id=456239114&hash=fe700ca9e882cc3a&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10173, 550, 10, CONCAT('Dance Like a Bear, Sting Like a Squid'), '2005-06-09', 'https://video.sibnet.ru/shell.php?videoid=984536');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10174, 550, 11, CONCAT('Futagotamagawa in Flames'), '2005-06-16', 'https://video.sibnet.ru/shell.php?videoid=985291');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10175, 550, 12, CONCAT('To the Place Where There is Light'), '2005-06-23', 'https://vk.com/video_ext.php?oid=191741003&id=164098139&hash=b8b3e15cdec6d27d&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10176, 550, 13, CONCAT('We Want to Be Three'), '2005-06-30', 'https://vk.com/video_ext.php?oid=172567157&id=456239122&hash=7657b8666f19bb2c');

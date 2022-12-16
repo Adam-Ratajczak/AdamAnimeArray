@@ -1,0 +1,16 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (834, CONCAT('Ikemen Sengoku: Toki wo Kakeru ga Koi wa Hajimaranai'), CONCAT('"Sasuke Sarutobi" is an average college student at Kyoto University studying time slips as a hobby until the day he falls into a time slip himself, transporting him to the Sengoku Period. Upon arrival, Sasuke encounters several warlords he could only ever dream of meeting: Toyotomi Hideyoshi, Tokugawa Ieyasu, and the famous "Demon King of the Sixth Heaven" Oda Nobunaga, who takes him in as a vassal. Introducing several modern concepts to the warlords varying from playing tennis to sending chain letters, Sasuke finds his place in an old but utterly new world. <br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2017-07-12', '2017-09-27', 'Summer 2017', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/86054.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (914, 834, 23);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (915, 834, 178);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14925, 834, 1, CONCAT('Ikemen Smash'), '2017-07-12', 'https://www.mp4upload.com/embed-nvtan3u6w9cz.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14926, 834, 2, CONCAT('Ikemen: Secret Sketch'), '2017-07-19', 'https://www.mp4upload.com/embed-b9yecoq3t2s4.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14927, 834, 3, CONCAT('Ikemen Hey Man'), '2017-07-26', 'https://www.mp4upload.com/embed-qmnwfxnylgmt.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14928, 834, 4, CONCAT('Ikemen Junk Mail'), '2017-08-02', 'https://www.mp4upload.com/embed-l8tuiss2fsjg.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14929, 834, 5, CONCAT('Ikemen Attic'), '2017-08-09', 'https://mp4upload.com/embed-mmjjvuc35fmi.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14930, 834, 6, CONCAT('Ikemen Are Furious'), NULL, 'https://www.mp4upload.com/embed-od9hscv4bvv3.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14931, 834, 7, CONCAT('Ikemen Beach'), NULL, 'https://dood.so/e/j8w1w8yrjsgsdzfq5uxfe08vvonkc9hl');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14932, 834, 8, CONCAT('Ikemen Party People'), NULL, 'https://dood.so/e/28uozkswzray');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14933, 834, 9, CONCAT('Ikemen Close Call!'), NULL, 'https://tune.pk/video/7548003');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14934, 834, 10, CONCAT('Ikemen Thunder'), NULL, 'https://tune.pk/video/7548004');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14935, 834, 11, CONCAT('Goodbye Ikemen'), NULL, 'https://tune.pk/video/e2b779sxr0g5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14936, 834, 12, CONCAT('The Story Won', CHAR(39), 't End By Crossing Through Time'), NULL, 'https://tune.pk/video/7548006');
