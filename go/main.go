@@ -3,7 +3,6 @@ package main
 import (
 	"database/sql"
 	"log"
-	"net/http"
 	"os"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -26,52 +25,25 @@ func main() {
 	defer db.Close()
 
 	e := echo.New()
-
-	e.GET("/tst", func(c echo.Context) error {
-		db.Query(`Select Anime`)
-
-		return nil
-	})
-
-	e.GET("/animes", func(c echo.Context) error {
-		var animes []anime
-		var rq animeRequest
-		err := c.Bind(&rq)
-		if err != nil {
-			c.NoContent(http.StatusBadRequest)
-			return nil
+	animes := e.Group("/animes")
+	{
+		animes.GET("/", all)
+		animes.GET("/filter", filter)
+		animes.GET("/song/:id", song)
+		animes.GET("/anime/:id", anime)
+		animes.GET("/anime/:id/songs", animeSongs)
+		filters := e.Group("/filters")
+		{
+			filters.GET("/types", filterGetAll("Types"))
+			filters.GET("/types/:id", filterGetByID("Types"))
+			filters.GET("/genres", filterGetAll("Genres"))
+			filters.GET("/genres/:id", filterGetByID("Genres"))
+			filters.GET("/producers", filterGetAll("Producers"))
+			filters.GET("/producers/:id", filterGetByID("Producers"))
+			filters.GET("/demographics", filterGetAll("Demographics"))
+			filters.GET("/demographics/:id", filterGetByID("Demographics"))
 		}
-		rows, err := db.Query(`
-		SELECT DISTINCT a.AnimeID, a.AnimeTitle, a.AnimeDesc, a.AiredBegin, a.AiredEnd, a.Premiered, a.Duration, a.PosterUrl FROM ((((
-			Animes a LEFT JOIN (
-				SELECT AnimeID FROM AnimeGenres WHERE GenreID IN((
-					SELECT GenreID FROM Genres WHERE ?
-				))
-			) ag ON a.AnimeID = ag.AnimeID) LEFT JOIN (
-				SELECT AnimeID FROM AnimeThemes WHERE ThemeID IN((
-					SELECT ThemeID FROM Themes WHERE ?
-				))
-			) ath ON a.AnimeID = ath.AnimeID) LEFT JOIN (
-				SELECT AnimeID FROM AnimeDemographics WHERE GroupID IN((
-					SELECT GroupID FROM Demographics WHERE ?
-				))
-			) ad ON a.AnimeID = ad.AnimeID) LEFT JOIN (
-				SELECT AnimeID FROM AnimeProducers WHERE ProducerID IN((
-					SELECT ProducerID FROM Producers WHERE ?
-				))
-			) ast ON a.AnimeID = ast.AnimeID) WHERE ? ORDER BY a.AnimeTitle ASC;`, rq.Genre, rq.Theme, rq.Age, rq.Studio, rq.Title)
-		if err != nil {
-			c.NoContent(http.StatusInternalServerError)
-			log.Println(err)
-			return nil
-		}
-		for rows.Next() {
-			var a anime
-			rows.Scan(&a.AnimeID, &a.AnimeTitle, &a.AnimeDesc, &a.AiredBegin, &a.AiredEnd, &a.Premiered, &a.Duration, &a.PosterUrl)
-			animes = append(animes, a)
-		}
-		return c.JSON(http.StatusOK, animes)
-	})
+	}
 	err = e.Start(":2137")
 	if err != nil {
 		log.Fatal(err)

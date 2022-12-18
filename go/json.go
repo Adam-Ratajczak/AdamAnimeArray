@@ -1,22 +1,19 @@
 package main
 
-import "time"
-
-type animeRequest struct {
-	Title  string
-	Genre  string
-	Theme  string
-	Age    string
-	Studio string
+type Anime struct {
+}
+type Song struct {
 }
 
-type anime struct {
-	AnimeID    int
-	AnimeTitle string
-	AnimeDesc  string
-	AiredBegin time.Time
-	AiredEnd   time.Time
-	Premiered  string
-	Duration   string
-	PosterUrl  string
+type Filter struct {
+	ID   int
+	name string
+}
+
+type FilterRequest struct {
+	Title        string
+	Types        []int
+	Genres       []int
+	Producers    []int
+	Demographics []int
 }
