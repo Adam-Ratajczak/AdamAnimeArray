@@ -32,7 +32,7 @@ func main() {
 		animes.GET("/song/:id", song)
 		animes.GET("/anime/:id", anime)
 		animes.GET("/anime/:id/songs", animeSongs)
-		filters := e.Group("/filters")
+		filters := animes.Group("/filters")
 		{
 			filters.GET("/types", filterGetAll("Types"))
 			filters.GET("/types/:id", filterGetByID("Types"))
