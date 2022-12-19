@@ -21,7 +21,9 @@ func all(c echo.Context) error {
 }
 
 func filter(c echo.Context) error {
-	return nil
+	filterSqlBuilder()
+	panic("TODO!!!!!")
+	// return nil
 }
 
 func filterSqlBuilder() {}

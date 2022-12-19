@@ -8,6 +8,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 var db *sql.DB
@@ -25,13 +26,21 @@ func main() {
 	defer db.Close()
 
 	e := echo.New()
+	e.Use(middleware.Recover(), middleware.Logger())
 	animes := e.Group("/animes")
 	{
 		animes.GET("/", all)
+
 		animes.GET("/filter", filter)
-		animes.GET("/song/:id", song)
-		animes.GET("/anime/:id", anime)
-		animes.GET("/anime/:id/songs", animeSongs)
+
+		animes.GET("/songs/:id", song)
+
+		animes.GET("/:id", anime)
+		animes.GET("/:id/songs", animeSongs)
+		animes.GET("/:id/genres", animeGenres)
+		animes.GET("/:id/producers", animeProducers)
+		animes.GET("/:id/demographics", animeDemographics)
+
 		filters := animes.Group("/filters")
 		{
 			filters.GET("/types", filterGetAll("Types"))
