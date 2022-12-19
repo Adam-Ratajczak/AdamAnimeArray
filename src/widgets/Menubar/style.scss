@@ -1,8 +1,4 @@
-$base-color: #00273B;
-$bottom-color: #444444;
-$btn-hover-color: #6666AA55;
-$cool-color: #A334E8;
-$white: #FFFFFF;
+@import 'src/styles/colors';
 
 #Content{
     display: flex;
@@ -57,7 +53,7 @@ $white: #FFFFFF;
 }
 
 .Button:hover{
-    color: $cool-color;
+    color: $btn-hover-text-color;
     background-color: $btn-hover-color;
 }
 
