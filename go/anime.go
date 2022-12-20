@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"log"
 	"net/http"
 	"strconv"
 
@@ -29,14 +30,14 @@ func animeSongs(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	rows, err := db.Query("SELECT * FROM Songs s JOIN Animes a on ?", id)
+	rows, err := db.Query("SELECT * FROM Songs Where AnimeID = ?", id)
 	songs := []Song{}
 	if err != nil {
 		return err
 	}
 	for rows.Next() {
 		song := Song{}
-		err := rows.Scan()
+		err := rows.Scan(&song.SongID, &song.AnimeID, &song.Title, &song.Artist, &song.Type, &song.SpotifyURL)
 		if err != nil {
 			return err
 		}
@@ -46,15 +47,66 @@ func animeSongs(c echo.Context) error {
 }
 
 func animeGenres(c echo.Context) error {
-	panic("TODO!!!!!")
-
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	genres := []int{}
+	rows, err := db.Query("SELECT GenreID FROM AnimeGenres WHERE AnimeID = ?", id)
+	if err != nil {
+		return err
+	}
+	for rows.Next() {
+		genre := 0
+		err := rows.Scan(&genre)
+		if err != nil {
+			return err
+		}
+		genres = append(genres, genre)
+	}
+	return c.JSON(http.StatusOK, genres)
 }
 
 func animeProducers(c echo.Context) error {
-	panic("TODO!!!!!")
-
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	producers := []int{}
+	rows, err := db.Query("SELECT ProducerID FROM AnimeProducers WHERE AnimeID = ?", id)
+	if err != nil {
+		return err
+	}
+	for rows.Next() {
+		producer := 0
+		err := rows.Scan(&producer)
+		if err != nil {
+			return err
+		}
+		producers = append(producers, producer)
+	}
+	return c.JSON(http.StatusOK, producers)
 }
 
 func animeDemographics(c echo.Context) error {
-	panic("TODO!!!!!")
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	demographics := []int{}
+	rows, err := db.Query("SELECT GroupID FROM AnimeDemographics WHERE AnimeID = ?", id)
+	if err != nil {
+		log.Println(err)
+		return err
+	}
+	for rows.Next() {
+		demographic := 0
+		err := rows.Scan(&demographic)
+		if err != nil {
+			log.Println(err)
+			return err
+		}
+		demographics = append(demographics, demographic)
+	}
+	return c.JSON(http.StatusOK, demographics)
 }
