@@ -1,5 +1,3 @@
-import axios from "axios";
-
 export async function fetch_to_server(url, body){
     const response = await fetch({
         method: 'get',
