@@ -1,45 +1,31 @@
-export async function fetch_to_server(url, body){
-    const response = await fetch({
-        method: 'get',
-        url: url,
-        headers: { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-         },
-        body: JSON.stringify(body)
-      });
-
-    return response.json();
-}
-
-export function get_type(id = -1){
+export function GetType(id = -1){
     if(id < 0){
-        return fetch_to_server("http://localhost:2137/animes/filters/types", {});
+        return fetch(`http://localhost:2137/animes/filters/types`, {});
     }else{
-        return fetch_to_server("http://localhost:2137/animes/filters/types/" + id.toString(), {});
+        return fetch(`http://localhost:2137/animes/filters/types/` + id.toString(), {});
     }
 }
 
-export function get_genre(id = -1){
+export function GetGenre(id = -1){
     if(id < 0){
-        return fetch_to_server("http://localhost:2137/animes/filters/genres", {});
+        return fetch(`http://localhost:2137/animes/filters/genres`, { mode: 'no-cors'});
     }else{
-        return fetch_to_server("http://localhost:2137/animes/filters/genres/" + id.toString(), {});
+        return fetch(`http://localhost:2137/animes/filters/genres/` + id.toString(), {});
     }
 }
 
-export function get_producer(id = -1){
+export function GetProducer(id = -1){
     if(id < 0){
-        return fetch_to_server("http://localhost:2137/animes/filters/producers", {});
+        return fetch(`http://localhost:2137/animes/filters/producers`, {});
     }else{
-        return fetch_to_server("http://localhost:2137/animes/filters/producers/" + id.toString(), {});
+        return fetch(`http://localhost:2137/animes/filters/producers/` + id.toString(), {});
     }
 }
 
-export function get_demographics(id = -1){
+export function GetDemographics(id = -1){
     if(id < 0){
-        return fetch_to_server("http://localhost:2137/animes/filters/demographics", {});
+        return fetch(`http://localhost:2137/animes/filters/demographics`, {});
     }else{
-        return fetch_to_server("http://localhost:2137/animes/filters/demographics/" + id.toString(), {});
+        return fetch(`http://localhost:2137/animes/filters/demographics/` + id.toString(), {});
     }
 }
