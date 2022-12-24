@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1539, CONCAT('Regalia: The Three Sacred Stars'), CONCAT('In the country of Rimguard, a mysterious event shook the country and its people just 12 years prior. As time passed, memory of the incident began to fade while peace reigned over the land. Sisters Yui and Rena live a quiet life in the Enastria Empire until a large mecha suddenly attacks their peaceful home, changing everything. The girls become caught in a vortex of destiny and godly revival.<br>
 <br>(Source: FUNimation)'), 1, '2016-07-07', '2016-11-24', 'Summer 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/82161.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1092, 1539, '"Divine Spell"', ' by TRUE', 'js-theme-songs', 'https://open.spotify.com/track/6RbOVtdej9IEAPY0k7CoUN')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3826, 1539, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3827, 1539, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1657, 1539, 78);

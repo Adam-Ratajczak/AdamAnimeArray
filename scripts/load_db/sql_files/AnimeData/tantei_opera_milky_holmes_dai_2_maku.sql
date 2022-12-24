@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1857, CONCAT('Tantei Opera Milky Holmes Dai 2 Maku'), CONCAT('Second season of Tantei Opera Milky Holmes.'), 1, '2012-01-05', '2012-03-22', 'Winter 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/35372.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1320, 1857, '"Nazo! Nazo? Happiness!! (ナゾ! ナゾ? Happiness!!)"', ' by Milky Holmes', 'js-theme-songs', 'https://open.spotify.com/track/3yBHtZWGox1qCsKesRN9rN')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4599, 1857, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4600, 1857, 4);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2011, 1857, 55);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Unofficially assigned to help the police arrest criminals, Tenka Kumou also serves as a ferryman to the Lake Biwa prison with the help of his two younger siblings: the ambitious Soramaru and the enthusiastic Chuutarou. Together with the former Fuma ninja Shirasu Kinjou, the Kumou brothers live a frugal and joyful life mostly dedicated to studying and training.<br>
 <br>However, behind this relatively uneventful daily routine, the specter of the "Orochi" curse is starting to spread its shadow over the city of Oumi. According to legend, every three hundred years, Orochi reincarnates in a human vessel—and it is believed that this is the harbinger of an imminent catastrophe. As various groups clash in search of Orochi', CHAR(39), 's vessel, some aim to seal the curse, while others have darker plans in motion.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2014-10-04', '2014-12-20', 'Fall 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1661/114954.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (315, 443, '"ATTITUDE TO LIFE"', ' by Galneryus', 'js-theme-songs', 'https://open.spotify.com/track/7c4uGDemdhwBgCNs0GdR1G');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (203, 443, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1067, 443, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1068, 443, 10);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1900, CONCAT('Time Bokan 24'), CONCAT('Tokio is a junior high student living in the present time who is recruited to be a member of the 24th century', CHAR(39), 's Space-Time Administration Bureau. Together with his partner Calen, their mission is to uncover the "True History", the part of history that the textbooks doesn', CHAR(39), 't tell. But in their way is the Akudama Trio that intends to prevent the True History from being revealed for their own personal gains.<br>
 <br>(Source: Wikipedia)'), 3, '2016-10-01', '2017-03-18', 'Fall 2016', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/82232.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1353, 1900, '"TRUE LOVE"', ' by Ai Shinozaki', 'js-theme-songs', 'https://open.spotify.com/track/3OrZIHyutPcYmJImJrsaMs');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4710, 1900, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4711, 1900, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4712, 1900, 3);

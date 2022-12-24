@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1610, CONCAT('Sankaku Mado no Sotogawa wa Yoru'), CONCAT('Kousuke Mikado has been able to see spirits for as long as he can remember. Extremely terrified of them, he tries to suppress his ability by wearing glasses. One day, while working at a bookstore, he catches the attention of Rihito Hiyakawa, an eccentric medium who is convinced that they were destined to meet each other.<br>
 <br>Thanks to Hiyakawa', CHAR(39), 's antics, Mikado is thrust into the world of the paranormal, with the former promising that he will shed his fears if Mikado stays with him. As they continue to work together, the two discover a series of malicious curses that all point to the same name—"Erika Hiura." What is this person', CHAR(39), 's goal, and how do they connect with Mikado and Hiyakawa?<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-10-03', '2021-12-19', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1869/118766.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1135, 1610, '"Saika (サイカ)"', ' by Frederic (フレデリック)', 'js-theme-songs', 'https://open.spotify.com/track/5KeBlrUAZVEh4A0TeUUfKl')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4007, 1610, 17);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4008, 1610, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4009, 1610, 11);

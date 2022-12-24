@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (758, CONCAT('High Score Girl: Extra Stage'), CONCAT('Four years after they first met, Haruo Yaguchi , Akira Oono, and Koharu Hidaka remain the best of friends. Tensions start to build up as Akira', CHAR(39), 's teacher, Gouda Moemi, becomes stricter than ever before, and Hidaka develops feelings for Haruo. Though he may not be the most composed and thoughtful person around, he has within him the one thing that started it all: his unconditional love for video games.<br>
 <br>[Written by MAL Rewrite]'), 3, '2019-03-20', NULL, '', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1057/111384.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (545, 758, '"New Stranger"', ' by sora tob sakana', 'js-theme-songs', 'https://open.spotify.com/track/62bGCrh41PEy1xoZ6U8t1n')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (346, 758, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (835, 758, 31);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (826, 758, 22);

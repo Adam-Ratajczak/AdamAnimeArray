@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1994, CONCAT('Urashimasakatasen no Nichijou'), CONCAT('The anime centers on the members of the real-world four-member male vocal unit Urashimasakatasen. Uratanuki, Shima, Tonari no Sakata, and Senra appear in the shorts as high school students.<br>
 <br>(Source: ANN)'), 1, '2019-10-02', '2019-12-18', 'Fall 2019', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1294/102367.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1426, 1994, '"Calendar Reminder"', ' by UraShimaSakataSen', 'js-theme-songs', 'https://open.spotify.com/track/5qFyhcArQLZ9vv3P1n19ZB');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2164, 1994, 241);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35235, 1994, 1, CONCAT('Untitled'), NULL, 'https://streamtape.com/e/mYpJjqgYk7Hbxm1/');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35236, 1994, 2, CONCAT('Untitled'), NULL, 'https://streamtape.com/e/KQo3Z9dzDAf0y1v/');

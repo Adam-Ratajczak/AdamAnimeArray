@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (809, CONCAT('Hyakka Ryouran: Samurai Bride'), CONCAT('Second season of Hyakka Ryoran: Samurai Girls. '), 1, '2013-04-05', '2013-06-21', 'Spring 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/45248.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (578, 809, '"AI DO."', ' by Miyuki Hashimoto', 'js-theme-songs', 'https://open.spotify.com/track/3KkkOz78wHYCdJJpCNYivl');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1985, 809, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1986, 809, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1987, 809, 14);

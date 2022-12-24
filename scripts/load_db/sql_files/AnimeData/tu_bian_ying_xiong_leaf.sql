@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>You is about to leave home when she suddenly enters an incredible world. Appearing in front of her is an eight-year-old naked boy, and before she could even grasp the situation, she', CHAR(39), 's attacked by assassins from a mafia group who were chasing the young boy. What was even more unrealistic for You was that the leader of this mafia was another assassin', CHAR(39), 's attack.<br>
 <br>Who are those naked kids, why did her shoe turn into a warrior and above all, what kind of world did eight-year-old boy come from? Just like the first one, he', CHAR(39), 's also almost naked! While trying to escape from the attackers, You loses one of her shoes and by a strange kind of magic, her shoe turned into a warrior who was able to save her by blocking the You enter?<br>
 <br>(Source: MAL News)'), 2, '2018-04-14', '2018-07-06', '', '21 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1655/116700.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1406, 1965, '"Ray"', ' by PassCode', 'js-theme-songs', 'https://open.spotify.com/track/4U26q0oBh53yYTDfiY9GXu')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4905, 1965, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4906, 1965, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4907, 1965, 10);

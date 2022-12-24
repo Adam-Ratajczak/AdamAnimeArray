@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2104, CONCAT('Z/X: Ignition'), CONCAT('The story is set in the not-so-distant future. Five "Black Points" suddenly appeared around the world as portals to parallel worlds. Immediately after, strange creatures began their invasion from these portals. These creatures are the inhabitants of five worlds—the same worlds in different timeframes. In order to ensure their own future timeframe survives, each of the five invasion forces battle to wipe the other future timeframes out. The key is one card-shaped device.<br>
 <br>(Source: ANN)'), 1, '2014-01-10', '2014-04-03', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/56797.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1505, 2104, '"EX:FUTURIZE"', ' by Yoko Hikasa', 'js-theme-songs', 'https://open.spotify.com/track/0I1oudipBN77vLdtZ2V9CY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5223, 2104, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5224, 2104, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5225, 2104, 3);

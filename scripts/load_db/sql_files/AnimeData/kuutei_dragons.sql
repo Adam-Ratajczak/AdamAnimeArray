@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, despite the thrill and excitement of hunting, the life of a draker is not easy. Ostracized by society, the drakers have no place to call home. Life in the air is not any easier either: maintaining an airship is dull and expensive—and dragons are even harder to catch, as each one is unique. <br>
 <br>One of the last remaining such airships is the Quin Zaza. Its courageous crew includes Takita, an eager newcomer trying to earn her place on the ship Mika, a reckless but highly skilled hunter and Jirou, an earnest young man chasing both the dragons and his past. United by the same goal, these hunters face arduous aerial battles that involve daring feats of skill, strategy, and more than their fair share of danger.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-09', '2020-03-26', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1211/116017.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (787, 1101, '"Gunjou (群青)"', ' by You Kamiyama (神山羊)', 'js-theme-songs', 'https://open.spotify.com/track/7kLi91K2tydkdrVwrK7KNd')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (494, 1101, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2678, 1101, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2679, 1101, 9);

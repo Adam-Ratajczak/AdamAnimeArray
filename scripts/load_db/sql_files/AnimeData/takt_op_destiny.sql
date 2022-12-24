@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Takt Asahina, an aloof piano prodigy, finds himself transformed into a Conductor following a spontaneous D2 attack. The same incident kills Anna Schneider', CHAR(39), 's younger sister, Cosette, and brings Takt into contact with his Musicart, Destiny. Searching for a means of stabilizing the pact between themselves, Takt and Destiny—alongside Anna—embark on a perilous journey to the Symphonica Headquarters in New York City.<br>
 <br>Takt is in a hurry to reach the city so that he can play the piano again, even though his passion attracts the creatures he has come to despise. Meanwhile, Destiny', CHAR(39), 's sense of duty drags the group into trouble along the way. With a D2-infested path and many more arduous obstacles ahead of them, will the trio make it to New York City in one piece?<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-10-06', '2021-12-22', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1449/117797.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1314, 1847, '"takt (タクト)"', ' by ryo (supercell) feat. Mafumafu, gaku', 'js-theme-songs', 'https://open.spotify.com/track/7vFsMU7BORCrf7tZ4oTxlV')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4583, 1847, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4584, 1847, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4585, 1847, 7);

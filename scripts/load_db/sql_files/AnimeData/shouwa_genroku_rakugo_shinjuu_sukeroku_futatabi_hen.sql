@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Meanwhile Yakumo, regarded by many as the last bastion of preserving the popularity of rakugo, struggles to cope with his elderly state. Even though his performances are still stellar, he fears that he is nearing his limits. His doubts grow stronger as an old friend creeps ever closer. Konatsu, for her part, attempts to raise her son as a single mother, which Yotarou is heavily opposed to. Instead, he seeks to persuade her to marry him and in turn raise her son as his own.<br>
 <br>In Shouwa Genroku Rakugo Shinjuu: Sukeroku Futatabi-hen, the curtains fall on Yotarou and Yakumo', CHAR(39), 's story, tasked with restoring the near-obsolete art form as well as overcoming their internal conflicts.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-01-07', '2017-03-25', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1493/124765.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1235, 1745, '"Imawa no Shinigami (今際の死神)"', ' by Megumi Hayashibara', 'js-theme-songs', 'https://open.spotify.com/track/7alJbWPbZG1Ue9rJpQTnZq');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (728, 1745, 5);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1884, 1745, 46);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1944, 1745, 31);

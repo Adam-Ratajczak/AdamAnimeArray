@@ -109,7 +109,6 @@ CREATE TABLE IF NOT EXISTS Songs(
     AnimeID int NOT NULL,
     Title VARCHAR(64) NOT NULL,
     Artist VARCHAR(64) NOT NULL,
-    Type VARCHAR(64) NOT NULL,
     SpotifyUrl VARCHAR(256),
     FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)
 );

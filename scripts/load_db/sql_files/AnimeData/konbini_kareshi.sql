@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1065, CONCAT('Konbini Kareshi'), CONCAT('The lives of high school freshmen Haruki Mishima and Towa Honda revolve around studying, clubs, and girls. Amid their hectic routines, romance is certainly budding for the two best friends. Since childhood, Haruki has been pining over Miharu Mashiki, and a chance encounter at the convenience store reignites his feelings. As for Towa, the class representative Mami Mihashi has caught his eye but unfortunately for him, his affections are not reciprocated.<br>
 <br>While Haruki', CHAR(39), 's more reserved approach to pursuing Miharu contrasts Towa', CHAR(39), 's persistence with Mami, love seems to be elusive for both. As the months fly by, only time will tell if romance is in the cards for the duo.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2017-07-07', '2017-09-29', 'Summer 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/86243.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (761, 1065, '"Stand Up Now"', ' by Cellchrome', 'js-theme-songs', 'https://open.spotify.com/track/0BekTeJGziUoZfIU0RhT6a');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2582, 1065, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2583, 1065, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1155, 1065, 42);

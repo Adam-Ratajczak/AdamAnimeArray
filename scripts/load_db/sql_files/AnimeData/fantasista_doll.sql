@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (508, CONCAT('Fantasista Doll'), CONCAT('Uzume Uno is a young student and former champion of a trading card game competition. She is trusted with a special device containing five powerful Fantasista Dolls. These dolls are sentient virtual beings who reside in cards which are now controlled by their new master, Uzume.<br>
 <br>(Source: ANN)'), 1, '2013-07-07', '2013-09-29', 'Summer 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/52529.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (368, 508, '"Ima yo! Fantasista Doll (今よ!ファンタジスタドール)"', ' by Fantasista Doll Cast', 'js-theme-songs', 'https://open.spotify.com/track/75Ua1Ibca2ZdqMaEJcOp0C')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1256, 508, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1257, 508, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (568, 508, 6);

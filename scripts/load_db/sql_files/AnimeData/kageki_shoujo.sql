@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The eccentric Sarasa Watanabe is the only person who wishes to become Ai', CHAR(39), 's friend. She enters Kouka with the goal of becoming a top "otokoyaku" performer—an actress that plays traditionally male roles. After seeing a Kouka performance of The Rose of Versailles when she was younger, Sarasa dreams of performing as Lady Oscar one day. Unfortunately, Sarasa', CHAR(39), 's inability to read a room causes friction between her and her classmates, including Ai, who reluctantly becomes her roommate and partner in many of their classes. <br>
 <br>Succeeding at Kouka will involve more than just raw talent for these young girls as jealousy, deceit, and the harsh realities of show business put their mental fortitude to the test. Will Sarasa and Ai be able to rise to the top and stand on the silver bridge?<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-07-04', '2021-09-26', 'Summer 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1944/114427.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (662, 931, '"Hoshi no Orchestra (星のオーケストラ)"', ' by saji', 'js-theme-songs', 'https://open.spotify.com/track/37DM3ByZXJKVJ8f6KzcMLF')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (408, 931, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2256, 931, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2257, 931, 7);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (190, CONCAT('Battle Spirits: Burning Soul'), CONCAT('In the near future, a battle card game called "Battle Spirits" has gained enormous popularity. Players of the game—known as "Battlers"—start duelings everywhere using their color-coded cards with different attributes, creating a "Sengoku (Warring States) period" for the game.<br>
 <br>(Source: ANN)'), 1, '2015-04-01', '2016-03-30', 'Spring 2015', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/74933.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (135, 190, '"RISE OF SOULS"', ' by Shuhei Kita', 'js-theme-songs', 'https://open.spotify.com/track/377IfuDa8E1c9bmTjTNeG1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (443, 190, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (444, 190, 19);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (213, 190, 23);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Ambitious participants who challenge the notorious exam carry their own reason. What drives 12-year-old Gon Freecss is finding Ging, his father and a Hunter himself. Believing that he will meet his father by becoming a Hunter, Gon takes the first step to walk the same path.<br>
 <br>During the Hunter Examination, Gon befriends the medical student Leorio Paladiknight, the vindictive Kurapika, and ex-assassin Killua Zoldyck. While their motives vastly differ from each other, they band together for a common goal and begin to venture into a perilous world.<br>
 <br>[Written by MAL Rewrite]<br><br>'), 1, '2011-10-02', '2014-09-24', 'Fall 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1337/99013.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (577, 805, '"departure!"', ' by Ono Masatoshi', 'js-theme-songs', 'https://open.spotify.com/track/5sjoJa0YmBCCPMrBPsBMge')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (367, 805, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1973, 805, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1974, 805, 2);

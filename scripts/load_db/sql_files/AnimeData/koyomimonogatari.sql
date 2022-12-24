@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1086, CONCAT('Koyomimonogatari'), CONCAT('Whether it is investigating stone shrines, tracking rumors, or simply playing hide and seek, Koyomi Araragi is always there to fulfill the requests of his friends from both the human and supernatural worlds. Koyomimonogatari tells a series of short stories involving Koyomi as he helps each of the girls in his cohort solve a mystery or kill some time, alongside previously unexplored problems in this essential prelude to his story', CHAR(39), 's last chapter.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-01-10', '2016-03-27', '', '14 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/77744.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (777, 1086, '"perfect slumbers"', ' by Yui Horie', 'js-theme-songs', 'https://open.spotify.com/track/53PjoywYL1EuvQRN28QsJo')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2641, 1086, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2642, 1086, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2643, 1086, 10);

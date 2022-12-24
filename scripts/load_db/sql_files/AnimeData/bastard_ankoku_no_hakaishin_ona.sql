@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (186, CONCAT('Bastard!! Ankoku no Hakaishin (ONA)'), CONCAT('The kingdom of Metallicana is under attack from the Four Lords of Havoc. This party of villains—ninja master Gara, deadly thunder empress Nei Arshes, cold and calculating Kall-Su, and enigmatic dark priest Abigail—will stop at nothing to get what they want, even if it leaves utter destruction in their wake.<br>
 <br>High Priest Geo is desperate to help save the kingdom and its people. He unleashes the mighty wizard Dark Schneider, a man who used to be an ally of the villains. Unfortunately, Dark Schneider has his own plans in mind. Will he stop the Four Lords of Havoc or join them in their conquest of the world?<br>
 <br>[Written by MAL Rewrite]'), 3, '2022-06-30', NULL, '', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1599/124228.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (132, 186, '"Bloody Power Fame"', ' by Coldrain', 'js-theme-songs', 'https://open.spotify.com/track/6oshufDccwvnIwKCvKayb6')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (88, 186, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (428, 186, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (429, 186, 2);

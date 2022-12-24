@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (158, CONCAT('Baka to Test to Shoukanjuu Ni!'), CONCAT('The blockheads of Class F return with more misadventures! Rather than desperately competing against the elite students in Class A for better facilities, they have other problems at hand. While the girls are constantly vying for the boys', CHAR(39), ' attention, Akihisa Yoshii and Yuuji Sakamoto are being blackmailed by a stalker who threatens to reveal their most embarrassing secrets to the whole school. Moreover,  everyone', CHAR(39), 's avatar starts to behave strangely. <br>
 <br>Filled with more nosebleeds and eye-pokes, the boys of Class F must work together to discover the stalker', CHAR(39), 's identity and deal with the misfortunes that come with love among fools.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-07-08', '2011-09-30', 'Summer 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/28992.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (105, 158, '"Eureka Baby (エウレカベイビー)"', ' by Natsuko Asou', 'js-theme-songs', 'https://open.spotify.com/track/71b4LW6k5jdVRCwANproHs');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (358, 158, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (359, 158, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (180, 158, 50);

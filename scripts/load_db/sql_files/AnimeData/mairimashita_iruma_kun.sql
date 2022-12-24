@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>At first, Iruma tries to keep a low profile in fear of his peers discovering that he is human. Unfortunately, this ends up being more difficult than he expected. It turns out that Sullivan himself is the chairman of the school, and everyone expects him to become the next Demon King!<br>
 <br>Iruma immediately finds himself in an outrageous situation when he has to chant a forbidden spell in front of the entire school. With this, Iruma instantly earns a reputation he does not want. Even so, he is bound to be roped into more bizarre circumstances.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-10-05', '2020-03-07', 'Fall 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1009/103187.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (841, 1196, '"Magical Babyrinth"', ' by DA PUMP', 'js-theme-songs', 'https://open.spotify.com/track/0TzZMUXzmY5lIbuX0Htl5E')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (527, 1196, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2913, 1196, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2914, 1196, 9);

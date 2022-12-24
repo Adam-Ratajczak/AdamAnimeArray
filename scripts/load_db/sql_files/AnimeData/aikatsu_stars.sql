@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>At the first-years', CHAR(39), ' opening performances, Yume performs stellarly but faints and is unable to remember being on stage at all. Struggling to find her talent, she meets Rola "Laura" Sakuraba and the two develop a friendly rivalry, working together to learn and improve.<br>
 <br>Though they have their differences, all the students share the same goal: to become the next S4 idol. But hard work and determination, along with teamwork, are needed if they want to join the elite S4.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-04-07', '2018-03-29', 'Spring 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/78658.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (29, 52, '"Start Line! (スタートライン!)"', ' by Sena and Rie from AIKATSU☆STARS!', 'js-theme-songs', 'https://open.spotify.com/track/76TX1Ln6NXmc5oWp4LhXag')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (123, 52, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (124, 52, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (125, 52, 3);

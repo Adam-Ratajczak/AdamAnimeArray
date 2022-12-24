@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (840, CONCAT('Ikkitousen: Xtreme Xecutor'), CONCAT('Life gets crazy for Hakufu when she takes on a pupil that acts just like her! A tournament between the school heads start, but due to Hakufu', CHAR(39), 's negligence, her pupil ends up taking her place. The tournament isn', CHAR(39), 't what it seems, and the girls find themselves in the middle of a plot to take over the clans.<br>
 <br>(Source: FUNimation)'), 1, '2010-03-26', '2010-06-11', 'Spring 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/18209.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (597, 840, '"Stargazer"', ' by Yuka Masuda', 'js-theme-songs', '');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (921, 840, 31);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (942, 840, 24);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (943, 840, 13);

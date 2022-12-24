@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (116, CONCAT('Arakawa Under the Bridge x Bridge'), CONCAT('On the beautiful banks of the Arakawa River, it is lively as ever. Now known as "Recruit," Kou Ichinomiya has adjusted to the troubles his unconventional neighbors brew daily. However, the atypical scene is about to get even rowdier when their community adds a couple of oddball enthusiasts: a tall, muscular woman calling herself Amazoness, followed by her loyal Tengu henchmen and Captain, self-proclaimed Commander of Earth', CHAR(39), 's Defense Force against Venusians. In spite of all the commotion, Recruit gradually learns more about his lover Nino and the story that shaped her.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2010-10-04', '2010-12-27', 'Fall 2010', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1851/98621.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (72, 116, '"Akai Coat (赤いコート)"', ' by Suneohair', 'js-theme-songs', 'https://open.spotify.com/track/46EDQgfTpT8iBpy2VH0uyc');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (58, 116, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (265, 116, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (266, 116, 7);

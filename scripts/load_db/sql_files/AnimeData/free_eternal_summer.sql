@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Meanwhile, with impending graduation, it is also time for the seniors to decide their plans for the future. Unlike their friend Rin Matsuoka, the new captain of Samezuka Academy Swim Club who is determined to fulfill his dream of being a professional swimmer, Haruka and Makoto are unsure about what career path they want to take.<br>
 <br>Further problems arise when an old friend of Rin', CHAR(39), 's, Sousuke Yamazaki, comes to the city to study at Samezuka Academy the recently scouted swimmer', CHAR(39), 's arrival causes tension in the relationship among him, Rin, and Haruka.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-07-03', '2014-09-25', 'Summer 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1719/108886.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (381, 525, '"Dried Up Youthful Fame"', ' by OLDCODEX', 'js-theme-songs', 'https://open.spotify.com/track/1NkUIKiwIH6u40JvHKOAEk');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (588, 525, 14);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (589, 525, 15);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (9646, 525, 1, CONCAT('Stormy Dive-Dash!'), '2014-07-03', 'https://ebd.cda.pl/620x395/32265780a');

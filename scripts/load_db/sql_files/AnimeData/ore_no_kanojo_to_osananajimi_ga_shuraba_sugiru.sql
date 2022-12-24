@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>It did not take long for the beautiful and popular Masuzu Natsukawa to notice Eita', CHAR(39), 's apathy. Tired of being the object of people', CHAR(39), 's affection, she asks him to pretend to be her boyfriend, as she too feels disgusted at the notion of love. Eita, however, refuses—yet Masuzu has one trick left up her sleeve: Eita’s journal and threatening to post the embarrassing content online if he does not comply.<br>
 <br>Now entangled in a fake romance with the most desired girl at school, Eita', CHAR(39), 's life is turned upside down. Whether envied by his peers or receiving a confession, he must cope with his newfound relationship and all the troubles that come along with it.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-01-06', '2013-03-31', 'Winter 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/44187.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1002, 1420, '"W:Wonder tale"', ' by Yukari Tamura', 'js-theme-songs', 'https://open.spotify.com/track/21YyyBmcsMvocTy8mMiuWa');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3519, 1420, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3520, 1420, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1527, 1420, 6);

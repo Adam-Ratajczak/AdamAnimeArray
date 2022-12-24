@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2036, CONCAT('White Album 2nd Season'), CONCAT('The second season of White Album, also known as episodes 14-26.'), 1, '2009-10-03', '2009-12-24', 'Fall 2009', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/43541.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1458, 2036, '"Mugen (夢幻)"', ' by Nana Mizuki', 'js-theme-songs', 'https://open.spotify.com/track/3CD4SeVdLPfRRQ0ACvMbWD')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5066, 2036, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5067, 2036, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2208, 2036, 12);

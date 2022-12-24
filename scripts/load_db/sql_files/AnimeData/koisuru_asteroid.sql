@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Years later, Mira is still fascinated with astronomy. Now in high school at Hoshizaki Academy, she tries to join the Astronomy Club. Unfortunately, she finds out that the club has been merged with the Geology Club to form a single Earth Sciences Club. She joins this new club and finds a pleasant surprise—she reunites with Ao after years of separation.<br>
 <br>Alongside their new clubmates, Mira and Ao begin their journey together to fulfill their promise. How hard could it possibly be to find an asteroid?<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-03', '2020-03-27', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1142/111693.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (756, 1058, '"Aruite Ikou! (歩いていこう！)"', ' by Nao Touyama', 'js-theme-songs', 'https://open.spotify.com/track/5iR0qKILvxtRPdkKCNTkJ0')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2562, 1058, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2563, 1058, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1148, 1058, 13);

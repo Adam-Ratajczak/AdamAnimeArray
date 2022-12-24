@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Deciding to quit her passion, Yomi starts her first year at Shin Koshigaya High School. Try as she might to avoid anything related to baseball, she meets the twins Yoshino and Ibuki Kawaguchi, both of whom are enthusiasts of the sport. Moreover, she stumbles upon Tamaki, and just like old times, they decide to play catch—reigniting Yomi’s desire to pitch.<br>
 <br>Reunited, Yomi and Tamaki set out to fulfill their childhood promise. Alongside Yoshino and Ibuki, they strive to revive their school’s baseball team which has been on hiatus. More members join until their group is complete, and now the new goal of Shin Koshigaya', CHAR(39), 's girls', CHAR(39), ' baseball team is nothing less than winning the national championships.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2020-04-01', '2020-06-17', 'Spring 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1108/119277.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1317, 1852, '"Never Let You Go!"', ' by Naho (七穂)', 'js-theme-songs', 'https://open.spotify.com/track/5cxnkH3kOL0F1dgqlfphMW')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2006, 1852, 195);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2052, 1852, 13);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2053, 1852, 27);

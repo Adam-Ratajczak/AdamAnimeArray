@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1295, CONCAT('Moyashimon Returns'), CONCAT('In the second season the story continues exactly where it left off previously. Professor Itsuki', CHAR(39), 's Fermentation Cellar and laboratory is ready for operation and with Sawaki Tadayasu', CHAR(39), 's unique gift to see and communicate with microbes to help, Itsuki', CHAR(39), 's motley group of students begin to process different fermented products like soy sauce and sake.<br>
 <br>(Source: ANN)'), 2, '2012-07-06', '2012-09-14', 'Summer 2012', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/39775.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (904, 1295, '"Wake Up"', ' by ClariS', 'js-theme-songs', 'https://open.spotify.com/track/2bQTmdOKGgqO2OT2jEVf1g')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3197, 1295, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3198, 1295, 13);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3199, 1295, 6);

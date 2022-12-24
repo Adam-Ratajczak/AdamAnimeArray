@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Soon after her arrival, Lucifer is found by aspiring Demon Lord and fangirl Leviathan. The two decide to overthrow the Seven Sins, the authorities of Hell under the leadership of Belial. But with their combined powers, the Seven Sins are able to repel Lucifer and contain her divine powers by placing a Garb of Punishment over her body, transforming Lucifer into a Demon Lord. <br>
 <br>Longing for revenge and accompanied by Leviathan, Lucifer makes her way back to Earth, where she forces Maria to become her immortal slave. Together with her new accomplices, Lucifer sets out on a mission to subdue the Seven Sins so she may be free of the curse brought upon by her Garb.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-15', '2017-07-29', 'Spring 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/86621.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1246, 1759, '"My Sweet Maiden"', ' by Mia REGINA', 'js-theme-songs', 'https://open.spotify.com/track/5UrFlWFW76LUlmjWgPuwGC')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4358, 1759, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4359, 1759, 14);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1901, 1759, 175);

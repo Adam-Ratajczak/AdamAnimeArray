@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1748, CONCAT('Show By Rock!! Short!!'), CONCAT('Happy-go-lucky short stories of daily lives of the band members of Plasmagica and ShinganCrimsonZ.'), 2, '2016-07-05', '2016-09-20', 'Summer 2016', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/78322.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1238, 1748, '"Heart wo Rock!! (ハートをRock!!)"', ' by Plasmagica', 'js-theme-songs', 'https://open.spotify.com/track/2JjpJpUd1Al6s2uO17dmow')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4330, 1748, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4331, 1748, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1888, 1748, 104);

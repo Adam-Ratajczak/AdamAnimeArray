@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1776, CONCAT('Sonny Boy'), CONCAT('Thirty-six students find themselves and their school building suddenly adrift in a void-like dimension. When supernatural powers awaken in some of them, a sense of detachment begins to divide the group. Despite the student council', CHAR(39), 's attempts to impose order, they clash with the students possessing special abilities, who rebel against their strict control.<br>
 <br>This conflict leads them to discover that this world has its own set of rules—and following them is necessary for survival. After one of the students decides to take a leap of faith, the school switches dimensions once again. While they deal with the unique challenges and circumstances that each world presents, the students must unravel the mysterious phenomenon and find a way back home.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-07-16', '2021-10-01', 'Summer 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1509/117149.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1257, 1776, '"Shounen Shoujo (少年少女)"', ' by GING NANG BOYZ (銀杏BOYZ)', 'js-theme-songs', 'https://open.spotify.com/track/1AwfJENb63nQKuIWiuh0cy');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4408, 1776, 13);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4409, 1776, 4);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1920, 1776, 21);

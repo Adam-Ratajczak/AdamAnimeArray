@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1517, CONCAT('Radiant 2nd Season'), CONCAT('After fleeing from Rumble Town, Seth, Doc and Melie are back at the Artemis Institute. Thanks to Alma, Seth learns more about Piodon, his mysterious brother. But the quest for the Nemeses mythical nest Radiant has already waited too long, so the Horned Boy and his friends head to the island-continent of the Wizard Knights.<br>
 <br>This location may be a new city for audiences, but it', CHAR(39), 's a decaying world that', CHAR(39), 's falling apart! Not only must Seth deal with these hardships, but he must also face a personal phenomenon where visions are invading his mind a little more each day.<br>
 <br>(Source: monstersandcritics)'), 1, '2019-10-02', '2020-02-26', 'Fall 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1974/108398.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1078, 1517, '"Naraku (ナラク)"', ' by Halo at Yojouhan (Halo at 四畳半)', 'js-theme-songs', 'https://open.spotify.com/track/4rnTSYMnTmfOkLw9s6ojhi')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3772, 1517, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3773, 1517, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3774, 1517, 9);

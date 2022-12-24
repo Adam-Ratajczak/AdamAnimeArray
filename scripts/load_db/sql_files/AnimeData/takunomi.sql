@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1848, CONCAT('Takunomi.'), CONCAT('20-year-old Michiru Amatsuki moved to Tokyo after a career change, and now finds herself living in a woman only share house, Stella House Haruno, with a few other women of varying age and occupation. Every night the girls settle down and have a drink or two (or more) as drama ensues.'), 1, '2018-01-12', '2018-03-30', 'Winter 2018', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1869/95731.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1315, 1848, '"aventure bleu"', ' by Maaya Uchida', 'js-theme-songs', 'https://open.spotify.com/track/6ULhPJmk7n7BWyreycdcBj')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4587, 1848, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4588, 1848, 15);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2002, 1848, 180);

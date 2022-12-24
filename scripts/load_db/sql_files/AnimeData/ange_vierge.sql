@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (85, CONCAT('Ange Vierge'), CONCAT('The story of the card game follows what happens when "Hairou" portals suddenly open, fusing five different worlds together. As a result, various mysterious "Exceed" powers are awakened in teenaged girls. An academy for these so-called "Progress" girls is built on the isolated Seiran Island in the Pacific.<br>
 <br>(Source: ANN)'), 1, '2016-07-10', '2016-09-25', 'Summer 2016', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/80684.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (51, 85, '"Love is MY RAIL"', ' by Konomi Suzuki', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (197, 85, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (198, 85, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (97, 85, 50);

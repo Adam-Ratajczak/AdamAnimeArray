@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While en route, Alvin is confronted by a magical bear and immediately finds himself in a pinch. As luck would have it, a dark elf healer named Karla approaches and asks if Alvin requires assistance—being seemingly oblivious to the situation before her eyes. After a discussion needlessly complicated by Karla', CHAR(39), 's absurdly eccentric personality, Alvin somehow convinces her to help him. Unfortunately, instead of healing him, she accidentally casts a curse: if Alvin strays too far from her, he shall die.<br>
 <br>Despite being forced to accompany Karla until the curse is broken, Alvin remains steadfast in his ambition to become a full-fledged adventurer. With a partner by his side, the journey toward his goal may grow easier—or harder—depending on Karla', CHAR(39), 's whims.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-10', '2022-06-26', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1565/121221.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (762, 1066, '"Jellyfish na Kimi e (ジェリーフィッシュな君へ)"', ' by Aguri Oonishi', 'js-theme-songs', 'https://open.spotify.com/track/5X1ODvG9NjA9IucmPXMoWV')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2584, 1066, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2585, 1066, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2586, 1066, 9);

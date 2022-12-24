@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (354, CONCAT('Concrete Revolutio: Choujin Gensou - The Last Song'), CONCAT('Titans from outer space, life forms from a mystical world, phantoms and goblins from ancient times, cyborgs created by scientists, relics that rose out of the ruins of ancient civilizations. In another Japan, it', CHAR(39), 's not just a question of "what if"—it', CHAR(39), 's a reality. Some of the superhumans choose to keep their identities a secret, while others bask in their superhuman fame. Jiro Hitoyoshi, member of the Superhuman Bureau, keeps track of their doings.<br>
 <br>(Source: ANN)'), 1, '2016-04-10', '2016-06-17', 'Spring 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/80050.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (252, 354, '"Wareru Doukoku (割レル慟哭)"', ' by ZAQ', 'js-theme-songs', 'https://open.spotify.com/track/5FwLzs9lipIwSs9Xj520ud');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (824, 354, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (825, 354, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (826, 354, 9);

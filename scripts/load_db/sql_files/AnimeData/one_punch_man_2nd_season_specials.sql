@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1407, CONCAT('One Punch Man 2nd Season Specials'), CONCAT('Short anime specials included in the One Punch Man 2nd Season BD & DVD.'), 5, '2019-10-25', '2020-03-27', '', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1618/103829.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (991, 1407, '"Chizu ga Nakutemo Modoru kara (地図が無くても戻るから)"', ' by Makoto Furukawa', 'js-theme-songs', 'https://open.spotify.com/track/68ywGAs951Fe4rrmqfMdH7');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (609, 1407, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3491, 1407, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3492, 1407, 12);

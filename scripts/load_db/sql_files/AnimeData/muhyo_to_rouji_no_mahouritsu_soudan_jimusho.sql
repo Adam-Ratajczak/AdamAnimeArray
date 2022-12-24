@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1300, CONCAT('Muhyo to Rouji no Mahouritsu Soudan Jimusho'), CONCAT('Are you a victim of unwanted spirit possession? Is there a ghost you need sent up and away...or down to burn for all eternity? If the answer is yes, then you need Muhyo and Roji, experts in magic law. Serving justice to evil spirits is their specialty.<br>
 <br>(Source: VIZ Media)'), 1, '2018-08-03', '2018-10-19', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1180/93407.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (907, 1300, '"Gifted"', ' by SCREEN mode', 'js-theme-songs', 'https://open.spotify.com/track/4jPEfCnaIaVeQCh6gx7LFu')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (560, 1300, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3209, 1300, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3210, 1300, 12);

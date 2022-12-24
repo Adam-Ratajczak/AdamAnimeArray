@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Hanabi has loved her childhood friend and neighbor Narumi Kanai for as long as she can remember, so she is elated to discover that he is her new homeroom teacher. However, Narumi is soon noticed by the music teacher, Akane Minagawa, and a relationship begins to blossom between them, much to Hanabi', CHAR(39), 's dismay. <br>
 <br>Mugi was tutored by Akane in middle school, and has been in love with her since then. Through a chance meeting in the hallway, he encounters Hanabi. As these two lonely souls spend more time together, they decide to use each other as a substitute for the one they truly love, sharing physical intimacy with one another in order to stave off their loneliness. <br>
 <br>[Written by MAL Rewrite]'), 1, '2017-01-13', '2017-03-31', 'Winter 2017', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/83937.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (788, 1102, '"Uso no Hibana (嘘の火花)"', ' by 96neko', 'js-theme-songs', 'https://open.spotify.com/track/2SrAPLLBpIzVv7y1Cng63K')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (495, 1102, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2680, 1102, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2681, 1102, 7);

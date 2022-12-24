@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While trying to fend off a Noise attack, Neku meets a girl named Shiki Misaki who asks him to form a partnership pact with her to fight against the monsters. Shiki explains that she and Neku have become "Players" participating in the "Reaper', CHAR(39), 's Game"—an event spanning over seven days, each featuring a different mission.<br>
 <br>As Neku and Shiki both strive to survive each day that passes, they begin to meet other Players and Reapers alike, battle stronger Noise, and learn the truth behind the mystery that this game is shrouded in.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-04-10', '2021-06-26', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1016/111566.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1299, 1824, '"Carpe Diem"', ' by ASCA', 'js-theme-songs', 'https://open.spotify.com/track/2twEDKgzKLoIsRPeFWlv7W');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4515, 1824, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4516, 1824, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1977, 1824, 56);

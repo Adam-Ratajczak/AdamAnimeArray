@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1888, CONCAT('Tensura Nikki: Tensei shitara Slime Datta Ken'), CONCAT('In between slaying monsters and negotiating with neighboring countries, Rimuru Tempest has his hands full attending to his kingdom alongside day-to-day matters. But whether it', CHAR(39), 's expanding the farms in the summer heat or shoveling snow in the chilly winter, no task is too big for Rimuru and his friends!<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2021-04-06', '2021-06-22', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1458/117607.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1344, 1888, '"Brand new diary"', ' by Akane Kumada', 'js-theme-songs', 'https://open.spotify.com/track/4aSzSvyXczlaKMxQs3rbGh')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (784, 1888, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4680, 1888, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4681, 1888, 9);

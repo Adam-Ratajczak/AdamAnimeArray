@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, the Demon Queen rebuts, arguing that the war has not only united humanity but has also brought them wealth and prosperity, providing evidence to support her claims. Furthermore, she explains that if the war were to end, the supplies sent by the Central Nations in aid to the Southern Nations would cease, leaving hundreds of thousands to starve. Fortunately, she offers the Hero a way to end the war while bringing hope not only to the Southern Nations, but also to the rest of the world, though she will need his assistance to make this a reality.<br>
 <br>Finally convinced, the Hero agrees to join his now former enemy in her quest. Vowing to stay together through sickness and health, they set off for the human world.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-01-05', '2013-03-30', 'Winter 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/46041.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (856, 1219, '"Mukai Kaze (向かい風)"', ' by YOHKO', 'js-theme-songs', 'https://open.spotify.com/track/6yDbZHl7116ZIYgz8NFJRz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2980, 1219, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2981, 1219, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2982, 1219, 7);

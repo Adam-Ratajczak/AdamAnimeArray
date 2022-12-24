@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Unbeknownst to his friends, Jouro', CHAR(39), 's friendly and obtuse image is all but a ruse designed to cast himself as the clueless protagonist of a textbook romantic comedy. A schemer under his cheery facade, he makes the best of this unexpected turn of events with a new plan: get Sun-chan to fall for either Cosmos or Himawari and take the other as his own prize. But Jouro', CHAR(39), 's last-ditch effort is threatened by the gloomy, four-eyed Sumireko "Pansy" Sanshokuin, who surprises Jouro with not only her knowledge of his secret personality but also a confession to the true self he hid for all this time.<br>
 <br>Stuck in this hilariously messy situation, each of the five students must navigate countless lies, traps, and misunderstandings to come out on top.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-10-03', '2019-12-26', 'Fall 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1348/102797.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1004, 1423, '"Papapa (パパパ)"', ' by Shuka Saitou', 'js-theme-songs', 'https://open.spotify.com/track/3kasuDrBA4cE2KqL0Qy49i');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3527, 1423, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3528, 1423, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1530, 1423, 51);

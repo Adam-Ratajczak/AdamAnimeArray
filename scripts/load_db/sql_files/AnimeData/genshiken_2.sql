@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (593, CONCAT('Genshiken 2'), CONCAT('The Society for the Study of Modern Visual Culture, otherwise known as Genshiken, is now under the charge of a more confident Sasahara. Things have changed in between semesters, and the otaku club now has a new otaku-hating member named Ogiue. Sasahara', CHAR(39), 's initial goal of starting a doujin circle and selling those fan-made magazines at the next Comic Festival becomes a reality, but reality is a cruel master... who apparently crossplays. Afterward, the club is abuzz with talk about Tanaka and Ohno', CHAR(39), 's relationship, which takes a hesitant step forward.<br>
 <br>(Source: Media Blasters)'), 1, '2007-10-10', '2007-12-26', 'Fall 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1958/94708.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (419, 593, '"disarm dreamer"', ' by Misato Aki', 'js-theme-songs', 'https://open.spotify.com/track/3zhARBRKZkbJ6ev1AJjY8Z');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1468, 593, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1469, 593, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (660, 593, 129);

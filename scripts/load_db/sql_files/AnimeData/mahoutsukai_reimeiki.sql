@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>During their journey, the quartet avoids former members of the Dia Ignis Arbiters—a group of witch hunters notorious for murdering witches and civilians alike. Five years ago, their organization was disbanded and given amnesty with the end of the war between the Church and witches, but their members still linger and are ready to capture any mages they come across.<br>
 <br>Thankfully, with Roux', CHAR(39), 's Staff of Ludens, the "witch-eater," and Sable', CHAR(39), 's unlimited supply of magic, the group may be able to accomplish their mission for Albus. If not, Sable', CHAR(39), 's memories of magic and the academy will be taken away, and he will be left with nothing to guide him to the silver-haired mage who first rescued him.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-08', '2022-07-01', 'Spring 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1093/121114.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (840, 1190, '"dawn of infinity"', ' by fripSide', 'js-theme-songs', 'https://open.spotify.com/track/2OQNKCDRobcgG9C7dSvZOZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2894, 1190, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2895, 1190, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2896, 1190, 12);

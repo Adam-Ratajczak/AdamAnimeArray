@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (376, CONCAT('Danball Senki'), CONCAT('In 2046, a revolutionary 80% shock-absorbing reinforced cardboard has been developed, rapidly transforming the world', CHAR(39), 's exports. The reinforced cardboard would soon become the battleground for a popular children', CHAR(39), 's hobby called "LBX" (Little Battler eXperience).<br>
 <br>Four years later, a boy named Yamano Ban who loves to play with LBX (although without a mecha himself) is given a case containing the model AX-00 by a mysterious woman. He is told that he now holds the hopes and despairs of mankind in his hands.'), 1, '2011-03-02', '2012-01-11', 'Spring 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1937/94703.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (268, 376, '"Boku no Chokinbako (僕の貯金箱)"', ' by Hiroki Maekawa (前川紘毅)', 'js-theme-songs', 'https://open.spotify.com/track/3aEVG4pJVXEqrR2aTAvY5a');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (875, 376, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (876, 376, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (420, 376, 111);

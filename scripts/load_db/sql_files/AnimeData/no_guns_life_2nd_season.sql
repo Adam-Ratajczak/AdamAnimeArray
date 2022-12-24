@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1366, CONCAT('No Guns Life 2nd Season'), CONCAT('Second half of No Guns Life.'), 1, '2020-07-10', '2020-09-25', 'Summer 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1477/106613.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (960, 1366, '"Chaos Drifters"', ' by SawanoHiroyuki[nZk]:Jean-Ken Johnny', 'js-theme-songs', 'https://open.spotify.com/track/1fMNl2mdBRthYDfXbWgfax')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (592, 1366, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3407, 1366, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3408, 1366, 6);

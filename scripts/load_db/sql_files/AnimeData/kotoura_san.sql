@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, everything starts to change when Haruka transfers to a new school. While most are off put by her as usual, she meets Yoshihisa Manabe, who finds her power astonishing. Yoshihisa then proceeds to befriend Haruka, promising to never leave her no matter what happens.<br>
 <br>Haruka', CHAR(39), 's new experiences of social belonging thus begin, meeting new friends and learning to open herself along the way.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2013-01-11', '2013-03-29', 'Winter 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/75585.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (772, 1078, '"Sonna Koto Ura no Mata Urabanashi Desho? (そんなこと裏のまた裏話でしょ?)"', ' by Megumi Nakajima', 'js-theme-songs', 'https://open.spotify.com/track/4FvFQLSodWtvOPUbQAUiPm')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2619, 1078, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2620, 1078, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2621, 1078, 7);

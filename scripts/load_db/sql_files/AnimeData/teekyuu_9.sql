@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1873, CONCAT('Teekyuu 9'), CONCAT('Ninth season of the Teekyuu anime series.'), 1, '2017-07-12', '2017-09-27', 'Summer 2017', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/86833.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1333, 1873, '"Kaiun! Soufuku! Entenka (開運！招福！炎天歌)"', ' by Earth Star Dream', 'js-theme-songs', 'https://open.spotify.com/track/1YfrejevZiPSJ04nZ3g8Vu');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (781, 1873, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4639, 1873, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4640, 1873, 19);

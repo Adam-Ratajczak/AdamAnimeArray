@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1794, CONCAT('Soul Link'), CONCAT('Aizawa Ryota was in the 3rd grade of the preparatory course of Central Military Academy. AD 2045, he went to a space station, Aries, for the training with his classmates including Nagase Saka and Nittak Kazuhiko. However, the station was attacked by a terrorist group, Hallarax.Now they must find a way back to earth. <br>
 <br>(Source: ANN)'), 1, '2006-04-02', '2006-06-25', 'Spring 2006', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1/854.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1272, 1794, '"screaming"', ' by Miyuki Hashimoto', 'js-theme-songs', 'https://open.spotify.com/track/2zafRC1zwQTdYXmDIxyIoX');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1273, 1794, '"dust trail"', ' by Miyuki Hashimoto', 'js-theme-songs', 'https://open.spotify.com/track/2p2A16VfYJFQV8MxRgEapo');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4454, 1794, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4455, 1794, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4456, 1794, 9);

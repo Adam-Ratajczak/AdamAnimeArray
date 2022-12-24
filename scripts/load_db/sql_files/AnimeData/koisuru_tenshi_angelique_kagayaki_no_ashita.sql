@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1060, CONCAT('Koisuru Tenshi Angelique: Kagayaki no Ashita'), CONCAT('Ange is now trapped in the Seijuu Universe, and cannot leave until she awakens Seijuu', CHAR(39), 's Queen. In order to do this, she must gather nine new guardians. It sounds like a fairly simple task, but how can she convince these men to tear away from their own lives and protect the life of another?'), 1, '2007-01-06', '2007-03-24', 'Winter 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/76296.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (757, 1060, '"Doukoku no Ame"', ' by GRANRODEO', 'js-theme-songs', 'https://open.spotify.com/track/2lQEPV1KQkJfJAiEkgzOSH');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (477, 1060, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2567, 1060, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2568, 1060, 9);

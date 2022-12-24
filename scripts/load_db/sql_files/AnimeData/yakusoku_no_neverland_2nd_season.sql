@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Despite venturing into the treacherous wilderness, the children remain optimistic due to their possession of books written by William Minerva. Coded within his books are messages detailing the world outside the farm—information that can help them survive with the limited resources they have. But when their pursuers draw near, the children soon encounter their most dreadful situation yet. <br>
 <br>In Yakusoku no Neverland 2nd Season, the children struggle to survive in the strange ruthless world, striving to find a sanctuary they can truly call home.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-01-08', '2021-03-26', 'Winter 2021', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1815/110626.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1476, 2063, '"Identity"', ' by Kiiro Akiyama (秋山黄色)', 'js-theme-songs', 'https://open.spotify.com/track/4cXlM7IelyGNnaOiROPZqn')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (855, 2063, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5126, 2063, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5127, 2063, 5);

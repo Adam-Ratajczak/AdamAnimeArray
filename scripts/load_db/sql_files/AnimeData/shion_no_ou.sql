@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Her talent attracts the attention of Satoru Hani, a successful businessman and brother of the current "Meijin"—the title given to the defending champion of Japan', CHAR(39), 's most prestigious shogi tournament. He decides to organize a tournament open to both men and women, including professional and amateur players, and urges Shion to participate in the competition. However, Satoru seems to know a lot about Shion', CHAR(39), 's troubled past, and his actions bring suspicion from Shion', CHAR(39), 's friend Ayumi Saitou and the police—who are still investigating the death of Shion', CHAR(39), 's loved ones.<br>
 <br>As the end of Satoru', CHAR(39), 's tournament approaches, Shion starts remembering events related to the night when she lost everything and will have to show her mental fortitude to defeat her opponents and foil the plans of the culprits who ruined her life.<br>
 <br>[Written by MAL Rewrite]'), 1, '2007-10-14', '2008-03-23', 'Fall 2007', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/74050.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1217, 1724, '"LADY LOVE"', ' by RIZE', 'js-theme-songs', 'https://open.spotify.com/track/3hR3aHO0fu5CAidsZ1JjEq');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1218, 1724, '"My dear friend"', ' by Teruma Aoyama', 'js-theme-songs', 'https://open.spotify.com/track/5hxtsvDZ6lOVVf9047DzPY');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (719, 1724, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4285, 1724, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4286, 1724, 2);

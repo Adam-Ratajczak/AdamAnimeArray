@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (401, CONCAT('Death Parade'), CONCAT('After death, either Heaven or Hell awaits most humans. But for a select few, death brings them to Quindecim—a bar where only pairs of people who die at the same time can enter. Attending the bar is an enigmatic figure known as Decim, who also acts as the arbiter. He passes judgment on those who wind up at Quindecim by challenging them to a life-threatening game. These games determine if the patron', CHAR(39), 's soul will reincarnate into a new life, or be sent into the void, never to be seen again.<br>
 <br>From darts and bowling to fighting games, the true nature of each patron slowly comes to light as they wager their souls. Though his methods remain unchanged, the sudden appearance of a black-haired amnesiac causes Decim to reevaluate his own rulings.<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-01-10', '2015-03-28', 'Winter 2015', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/71553.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (290, 401, '"Flyers"', ' by BRADIO', 'js-theme-songs', 'https://open.spotify.com/track/6VBQ4DF4fwPJNA96RbMQWT')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (940, 401, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (941, 401, 10);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (942, 401, 5);

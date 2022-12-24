@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1828, CONCAT('Suisei no Gargantia Specials'), CONCAT('Episodes 14 and 15, released with the first and third BD/DVD volumes. '), 1, '2013-08-28', '2013-10-25', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/51509.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1302, 1828, '"Kono Sekai wa Bokura wo Matteita (この世界は僕らを待っていた)"', ' by Minori Chihara', 'js-theme-songs', 'https://open.spotify.com/track/5SHMB3n71O1Mplu34X4M27')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4523, 1828, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4524, 1828, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4525, 1828, 3);

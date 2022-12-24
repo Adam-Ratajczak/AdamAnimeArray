@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>One day, a Japanese tourist accidentally witnesses Phantom', CHAR(39), 's latest murder. Desperate to escape, the tourist hides in a secluded building. However, Phantom, revealed to be a young woman named Ein, and the leader of Inferno "Scythe Master" captures the tourist and brainwashes him.<br>
 <br>Given the name "Zwei," this once peaceful tourist is now a puppet of Inferno with no memories. Drawn into a world of lies, deceit, and violence, Zwei must fight to survive, hopefully to one day regain his memories and escape from this world where he is constantly on the brink of death.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-04-03', '2009-09-25', 'Spring 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/22470.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1039, 1464, '"Senritsu no Kodomotachi (戦慄の子供たち)"', ' by KOKIA', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3633, 1464, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3634, 1464, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3635, 1464, 9);

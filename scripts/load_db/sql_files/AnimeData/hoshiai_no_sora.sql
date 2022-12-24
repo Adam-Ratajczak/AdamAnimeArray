@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As Maki joins the team, his incredible form and quick learning allow him to immediately outshine the rest of the team. Although this gives rise to conflict among the boys, Maki challenges and pushes his fellow team members to not only keep up with his seemingly natural talent, but also drive them to devote themselves to the game they once neglected. <br>
 <br>This story focuses on the potential of the boys', CHAR(39), ' soft tennis club and their discovery of their own capability, while also enduring personal hardships and dealing with the darker side of growing up in middle school.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-10-11', '2019-12-27', 'Fall 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1807/103081.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (570, 795, '"Suisou (水槽)"', ' by Megumi Nakajima', 'js-theme-songs', 'https://open.spotify.com/track/4BPegBTKIorWndePrVSCge')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1948, 795, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1949, 795, 19);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (871, 795, 90);

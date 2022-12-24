@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (824, CONCAT('Idol Memories'), CONCAT('The story of Idol Memories is set in the near future, where live idol music performances in virtual reality have become commonplace. Against this backdrop, a pair of rival idol groups compete for the coveted "tiara," which represents the number one spot in the "Idol League."<br>
 <br>(Source: Crunchyroll)'), 1, '2016-10-03', '2016-12-19', 'Fall 2016', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/80935.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (586, 824, '"Mainichi ga Good Day (毎日がGoodDay)"', ' by Project Frontier', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2018, 824, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2019, 824, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2020, 824, 7);

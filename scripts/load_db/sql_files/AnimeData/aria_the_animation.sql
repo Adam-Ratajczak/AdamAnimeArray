@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>To make sure that residents and tourists alike get the most from Neo Venezia', CHAR(39), 's many wonders, companies offering guided tours via gondola were formed, one of which is named Aria Company.<br>
 <br>This is the workplace of Akari Mizunashi, a free spirited teenager from Manhome who is now a novice Undine (the title given to tour guides). Join Akari as she becomes intimately acquainted with other Undine, tourists, Neo Venezia', CHAR(39), 's residents, and even the city itself, learning many valuable life lessons along the way, such as the wonderful truth that there are such things as manmade miracles.<br>
 <br>[Written by MAL Rewrite]'), 1, '2005-10-06', '2005-12-29', 'Fall 2005', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/77620.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (77, 123, '"Undine (ウンディーネ)"', ' by Yui Makino', 'js-theme-songs', 'https://open.spotify.com/track/41EFjyvs5g7Ga3ii1kE2aa');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (78, 123, '"Rainbow"', ' by ROUND TABLE feat. Nino', 'js-theme-songs', 'https://open.spotify.com/track/6OHNFIJm08mSUxmlLX3or2');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (282, 123, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (283, 123, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (284, 123, 4);

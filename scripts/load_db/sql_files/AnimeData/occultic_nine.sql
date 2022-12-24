@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>These individuals include high school fortune teller Miyuu Aikawa, who joins Yuuta to work on the blog realist Sarai Hashigami, who is stunned when tragedy strikes his family doujin artist Ririka Nishizono, who has an uncanny ability to predict the future with her art black magic practitioner and local curse expert Aria Kurenaino and her ghostly friend Shun Moritsuka, a seemingly childish otaku detective and reporter Touko Sumikaze.<br>
 <br>As this unlikely group, bound only by the strings of fate, find their way to each other, they are confronted with murder and other events that are shrouded by the presence of the supernatural. They must band together to solve the mysteries interlacing the city and their lives.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-10-09', '2016-12-25', 'Fall 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/81186.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (982, 1397, '"Seisuu 3 no Nijou (聖数3の二乗)"', ' by Kanako Itou', 'js-theme-songs', 'https://open.spotify.com/track/03vZacOy8Ds4j3SzaS8Bo8')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3470, 1397, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3471, 1397, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1504, 1397, 6);

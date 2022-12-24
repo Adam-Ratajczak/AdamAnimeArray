@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (911, CONCAT('Joshikausei'), CONCAT('Momoko Futo is an average high-school girl going about her everyday life. Though laid-back and cheerful, her life is anything but mundane as her eccentricity and clumsiness never fail to spice up her days. Her two best friends are always with her: the cute and innocent Mayumi Furui, and the calm and cool Shibumi Shibusawa. Without any spoken dialogue or narration, Joshikausei aims to recount the comedic shenanigans these girls get up to through the expressive sounds and gestures that they make.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2019-04-06', '2019-06-22', 'Spring 2019', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1660/98376.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (646, 911, '"silent days"', ' by Amatsuuni (あま津うに)', 'js-theme-songs', 'https://open.spotify.com/track/12AS2il16yJJ29ppDXe3QK');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2205, 911, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2206, 911, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (993, 911, 55);

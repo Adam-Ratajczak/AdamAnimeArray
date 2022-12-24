@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1555, CONCAT('Rinne no Lagrange Season 2'), CONCAT('Several months have passed since Lan and Muginami left Earth. Now in her final year of high school, Madoka spends most of her days thinking about her friends, when Lan suddenly returns to Kamogawa City.<br>
 <br>(Source: VIZ Media)'), 1, '2012-07-08', '2012-09-23', 'Summer 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/39321.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1102, 1555, '"Marble (マーブル)"', ' by Megumi Nakajima', 'js-theme-songs', 'https://open.spotify.com/track/60Xplh89VijKUL9tbGMb6F')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (659, 1555, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3863, 1555, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3864, 1555, 6);

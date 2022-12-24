@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (396, CONCAT('Days (TV)'), CONCAT('The series is about two boys named Tsukushi and Jin. Tsukushi is a boy with no special talent or traits while Jin is considered a soccer genius. On one stormy night, Jin meets Tsukushi, and they get dragged into the world of soccer.<br>
 <br>(Source: MAL News)'), 1, '2016-07-02', '2016-12-18', 'Summer 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/88507.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (286, 396, '"Wake We Up"', ' by HOWL BE QUIET', 'js-theme-songs', 'https://open.spotify.com/track/4vfYHDtCAQffxNGP0XSO11')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (931, 396, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (932, 396, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (933, 396, 9);

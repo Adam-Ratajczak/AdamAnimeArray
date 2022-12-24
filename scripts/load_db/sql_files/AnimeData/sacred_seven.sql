@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1583, CONCAT('Sacred Seven'), CONCAT('Alma Tandoji lives a lonely life. One day, Ruri Alba, a girl accompanied by her butler and maids, visits him. Knowing the power of Sacred Seven is latent within Alma, she asks him to lend her his powers. However, he refuses and drives her away since he injured many with his unusual strength in the past.<br>
 <br>Meanwhile, a fiendish Dark Stone creature suddenly appears in this peaceful town in the Kanto region. Only Alma', CHAR(39), 's power of Sacred Seven can fight against it. But Alma just lets his power run amuck and things begin to get worse. Ruri raised her gemstone in order to release his true abilities, My Soul I give to you.<br>
 <br>With Ruri', CHAR(39), 's wishes engraved in it, will Alma be able to defeat the Dark Stone?'), 1, '2011-07-03', '2011-09-16', 'Summer 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/30218.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1118, 1583, '"stone cold"', ' by FictionJunction', 'js-theme-songs', 'https://open.spotify.com/track/3mk3ZXt4GTyY1NWZw9X8lx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (676, 1583, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3941, 1583, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3942, 1583, 6);

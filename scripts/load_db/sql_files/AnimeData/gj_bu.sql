@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Besides Kyoro, there is Mao Amatsuka, the club president who has a tendency to bite Kyoro when she gets mad or bashful Megumi Amatsuka, Mao', CHAR(39), 's composed younger sister who always makes tea and desserts for the club', CHAR(39), 's members Shion Sumeragi, a demure chess prodigy and Kirara Bernstein, a meat lover with a strong feline personality. All four girls have some form of interest in Kyoro.<br>
 <br>With the girls', CHAR(39), ' idiosyncratic and cute personalities, Kyoro', CHAR(39), 's time in GJ-bu will never be a dull one, for better or for worse.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2013-01-10', '2013-03-28', 'Winter 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/45995.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (443, 622, '"Mousou★Koukan Nikki (もうそう★こうかんにっき)"', ' by Otome Shinto', 'js-theme-songs', 'https://open.spotify.com/track/580zotyYmreyDupZqhFDM5')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1535, 622, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1536, 622, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (692, 622, 13);

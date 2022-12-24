@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1345, CONCAT('Nekogami Yaoyorozu'), CONCAT('Koyama Yuzu is running an antique shop. Mayu, a cat god (nekogami), is living off Yuzu and leads an idle life playing games. Lots of other gods visit Mayu and enjoy merrymaking.<br>
 <br>(Source: ANN)'), 4, '2011-07-09', '2011-09-24', 'Summer 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/73476.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (944, 1345, '"Oh My God♥"', ' by Haruka Tomatsu', 'js-theme-songs', 'https://open.spotify.com/track/2soN46uU1zxCyXoEVApkhq');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (588, 1345, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3340, 1345, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3341, 1345, 8);

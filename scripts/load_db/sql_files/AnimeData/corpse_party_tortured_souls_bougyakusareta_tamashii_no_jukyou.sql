@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, the students do not realize that these charms are connected to Heavenly Host Academy—an elementary school that was destroyed years ago after a series of gruesome murders took place, a school that rests under the foundation of their very own Kisaragi Academy. Now, trapped in an alternate dimension with vengeful ghosts of the past, the students must work together to escape—or join the spirits of the damned forever.<br>
 <br>A feast for mystery fanatics, gore-hounds, and horror fans alike, Corpse Party: Tortured Souls - Bougyakusareta Tamashii no Jukyou shows a sobering look at redemption, sacrifice, and how the past is always right behind, sometimes a little too close for comfort.<br>
 <br>[Written by MAL Rewrite]'), 3, '2013-07-24', NULL, '', '29 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/78811.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (255, 358, '"Hoshikuzu no Ring (星屑のリング)"', ' by Asami Imai', 'js-theme-songs', 'https://open.spotify.com/track/56ExXQxdmHlR8rRqXHhwoa')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (835, 358, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (836, 358, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (837, 358, 10);

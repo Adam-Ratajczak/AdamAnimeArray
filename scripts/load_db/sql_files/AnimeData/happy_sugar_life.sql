@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (717, CONCAT('Happy Sugar Life'), CONCAT('Satou Matsuzaka is a beautiful high schooler who has a reputation for being permissive with men. However, a chance encounter with a young girl named Shio Koube makes Satou realize that this is her first and only true feeling of love.<br>
 <br>Telling others that she lives with her aunt, Satou secretly shares an apartment with Shio. Despite her innocent appearance, Satou is willing to do anything to protect her beloved, resorting to desperate measures to ensure that their "happy sugar life" remains intact.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-07-14', '2018-09-29', 'Summer 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1386/103920.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (512, 717, '"One Room Sugar Life (ワンルームシュガーライフ)"', ' by Akari Nanawo (ナナヲアカリ)', 'js-theme-songs', 'https://open.spotify.com/track/2jtI8cQPtIiV9u5OXESTPm')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (328, 717, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1755, 717, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1756, 717, 16);

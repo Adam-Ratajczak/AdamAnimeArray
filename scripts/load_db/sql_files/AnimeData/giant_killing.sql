@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The board of directors, under pressure from general manager Kousei Gotou, takes a gamble and hires a new coach—the slightly eccentric Takeshi Tatsumi. Though considered a great soccer player when he was younger, Tatsumi abandoned ETU years ago. However, since then, he has proven himself successful as the manager of one of England', CHAR(39), 's lower division amateur teams.<br>
 <br>Tatsumi', CHAR(39), 's task won', CHAR(39), 't be easy ETU fans call him a traitor, and the team is pitted against others with larger budgets and better players. Yet even the underdog can take down a goliath, and Tatsumi claims he is an expert at giant killing.<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-04-04', '2010-09-26', 'Spring 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/30191.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (423, 599, '"My Story ~Mada Minu Ashita e~""', ' by THE CHERRY COKES', 'js-theme-songs', 'https://open.spotify.com/track/2rs2g8RmzpIoGJ2QeWSeib');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (263, 599, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (666, 599, 56);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10993, 599, 1, CONCAT('Episode 1'), '2010-04-04', 'https://drive.google.com/file/d/1GwY3A8R37o6cRl4rOgdzIeKACLNUcmin/preview');

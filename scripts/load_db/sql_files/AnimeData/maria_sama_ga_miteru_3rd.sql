@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1223, CONCAT('Maria-sama ga Miteru 3rd'), CONCAT('Summer has arrived, and the students of Lillian Girls', CHAR(39), ' Academy are on break! Yumi and Sachiko head out to the Ogasawara family', CHAR(39), 's summer home, but what was supposed to be a relaxing vacation takes a turn for the worse when some of Sachiko', CHAR(39), 's old acquaintances drop by for tea. These rich and snobby debutantes don', CHAR(39), 't think Yumi is worthy of Sachiko', CHAR(39), 's affection and they', CHAR(39), 're out to make this summer one she', CHAR(39), 'll regret.<br>
 <br>(Source: RightStuf)'), 1, '2006-12-29', '2007-07-25', '', '50 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/75209.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (857, 1223, '"Chercher～シャルシェ～"', ' by KOTOKO', 'js-theme-songs', 'https://open.spotify.com/track/6CUpf9G23h3KW1eL8keuWX');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2991, 1223, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2992, 1223, 16);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1321, 1223, 46);

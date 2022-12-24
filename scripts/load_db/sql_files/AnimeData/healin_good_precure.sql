@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Moved by her determination, Rabbirin forms a pact with Nodoka, allowing her to transform into a hero known as a Precure. Assuming the persona of  "Cure Grace," the energized Nodoka fights off the Byogen and heals the earth, curing Latte.<br>
 <br>As the Byogen and their leaders continue their attacks, Penguitan and Nyatoran also find their partners in Chiyu and Hinata, giving them the powers of "Cure Fontaine" and "Cure Sparkle" respectively. Now, it', CHAR(39), 's up to the three Precure and their animal friends to stop the Byogen and protect the earth from their infections!<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-02-02', '2021-02-21', 'Winter 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1401/105084.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (523, 728, '"Healin' Good♥Precure Touch!!! (ヒーリングっど♥プリキュア Touch!)"', ' by Rie Kitagawa', 'js-theme-songs', 'https://open.spotify.com/track/5hdV3SdDnisJEd7rEhUZyD')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (335, 728, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1783, 728, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1784, 728, 9);

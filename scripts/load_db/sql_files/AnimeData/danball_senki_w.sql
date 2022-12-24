@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (377, CONCAT('Danball Senki W'), CONCAT('One year after the fight with the Innovators, a new terrorist organization called the Detectors threatens the world using LBXs. Ban joins up with new and old friends to stop the Detectors.<br><br>(Source: ANN)'), 1, '2012-01-18', '2013-03-20', 'Winter 2012', '20 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/56963.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (269, 377, '"Do Wak Parappa (Do Wak パラッパ)"', ' by Hiroki Maekawa', 'js-theme-songs', 'https://open.spotify.com/track/2Sae01UEQELpX0xB88upf5');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (877, 377, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (878, 377, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (421, 377, 111);

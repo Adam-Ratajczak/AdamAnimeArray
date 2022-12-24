@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1453, CONCAT('Pastel Memories'), CONCAT('The story takes place in the future, the city of Akihabara. It was once called a "Holy land of otaku" but now has become an office town. Otaku culture has declined, people are losing memories of anime and manga, and only a few specialty shops remain open. <br>
 <br>What supports the world of creative works are "memories" of manga and anime in people', CHAR(39), 's minds, but when the world of the creative work is destroyed by a virus, it disappears from everyone', CHAR(39), 's memory and is erased from the material world.<br>
 <br>12 girls working in a small shop in a corner of Akihabara are fighting the virus to protect everyone', CHAR(39), 's important memories about their favorite manga and anime, and return Akihabara to the way it was before!'), 1, '2019-01-08', '2019-03-26', 'Winter 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1563/95294.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1031, 1453, '"Believe in Sky"', ' by Asami Imai', 'js-theme-songs', 'https://open.spotify.com/track/5qOcS7tfi1OddZWss1d2Qn')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3603, 1453, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3604, 1453, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3605, 1453, 7);

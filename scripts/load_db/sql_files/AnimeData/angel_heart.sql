@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (88, CONCAT('Angel Heart'), CONCAT('A young Taiwanese assassin codenamed "Glass Heart" committed suicide by jumping off a building, and her heart was pierced by metal fence. Miraculously, her life was saved by heart transplantation. During her recovery she began to experience strange dreams, which lead her to Japan looking for the donor of her heart, who happens to be Kaori Makimura, former partner of City Hunter Ryo Saeba.<br>
 <br>The author mentioned in the first tankoubon volume that Angel Heart only shares the same characters of City Hunter but not its continuation. The events are all parallel universe, therefore it has nothing to do with City Hunter. (Source: Wikipedia)'), 1, '2005-10-04', '2006-09-26', 'Fall 2005', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1/282.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (52, 88, '"Finally"', ' by Sowelu', 'js-theme-songs', 'https://open.spotify.com/track/4Fh60btynRoCBw0CVxeMZ0');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (53, 88, '"Dare ka ga Kimi wo Omotteru (誰かが君を想ってる)"', ' by Skoop On Somebody', 'js-theme-songs', 'https://open.spotify.com/track/4gpuu0plZPvFldH0L9aoDm');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (204, 88, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (205, 88, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (206, 88, 5);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (296, CONCAT('Cardfight!! Vanguard G: Next'), CONCAT('Third season of Cardfight!! Vanguard G series.'), 1, '2016-10-02', '2017-10-01', 'Fall 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/82028.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (209, 296, '"Hello, Mr. Wonder land"', ' by Ayako Nakanomori', 'js-theme-songs', 'https://open.spotify.com/track/6fKZO0WsfG8pt7AFUs42J4')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (333, 296, 3);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5028, 296, 1, CONCAT('Welcome to the NEXT STAGE!!'), NULL, 'https://streamtape.com/e/dQOalePGkDt1Rb/');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5029, 296, 2, CONCAT('Dragon Awaiting Awakening'), NULL, 'https://streamtape.com/e/PGdKzybe0qs0Kkq/');

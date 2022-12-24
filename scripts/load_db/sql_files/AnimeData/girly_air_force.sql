@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Kei', CHAR(39), 's fascination with this aircraft leads him to meet his savior: a girl who is an "Anima"—the pilot of a unique type of airplane called a "Daughter." The girl goes by Gripen, an adorable JAS-39F fighter aircraft. Kei develops a bond with Gripen and is then recruited by the Japan Self-Defense Force to help Gripen overcome her troubles with flying.<br>
 <br>Later joined by Eagle, a carefree F-15J-ANM, and Phantom, a proud RF-4EJ-ANM, the squadron takes up arms, determined to protect humanity. Together, the five individuals battle against the invasive Zai, forming the last line of defense against the threatening alien force.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-01-10', '2019-03-28', 'Winter 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1046/97025.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (441, 620, '"Break the Blue!!"', ' by Run Girls, Run!', 'js-theme-songs', 'https://open.spotify.com/track/7MQDGjOEQ3Vvs5CJqub6Yd')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (279, 620, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1531, 620, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1532, 620, 10);

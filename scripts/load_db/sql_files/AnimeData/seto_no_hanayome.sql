@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>That night, Nagasumi is visited by his savior, a girl who introduces herself as Sun Seto—a mermaid from a yakuza family. As it turns out, under mermaid law, a mermaid whose identity is revealed to a human must be punished by execution. To avoid this harrowing outcome, the Seto family propose a solution: Nagasumi must marry Sun or die at the hands of Gouzaburou, Sun', CHAR(39), 's father and boss of the Seto clan. Faced with no other option, Nagasumi takes her hand in marriage.<br>
 <br>Now, the newlyweds face the difficult task of keeping their relationship secret. Between Gouzaburou', CHAR(39), 's unending attempts on Nagasumi', CHAR(39), 's life and the eccentric antics of a slew of antagonists, a genuine and innocent love blossoms between the pair as they adapt to their new life. <br>
 <br>[Written by MAL Rewrite]'), 3, '2007-04-02', '2007-10-01', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/58383.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1184, 1678, '"Romantic summer"', ' by SUN&LUNAR', 'js-theme-songs', 'https://open.spotify.com/track/4ms6k8hi8cppJfZovCJQmh');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1185, 1678, '"Dan Dan Dan"', ' by Asuka Hinoi', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (705, 1678, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4154, 1678, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4155, 1678, 7);

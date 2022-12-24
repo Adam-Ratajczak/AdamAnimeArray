@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (408, CONCAT('Denki-gai no Honya-san'), CONCAT('Umio is a shy kid who just started his part time job at a manga store smack dab in the middle of the city. But his lifestyle isn', CHAR(39), 't as glamorous as the neon lights that illuminate the city. Umio', CHAR(39), 's closest friends are his co-workers who are all unique characters, to say the least, and although they', CHAR(39), 're nice people, they have their quirks. They are a tight knit group of friends, have nicknames for each other and spend their weekends inside, sheltered from the extravagant scene happening on the outside.<br>
 <br>(Source: MU)'), 1, '2014-10-02', '2014-12-18', 'Fall 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/65339.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (298, 408, '"Kajirikake no Ringo (齧りかけの林檎)"', ' by Ayana Taketatsu', 'js-theme-songs', 'https://open.spotify.com/track/2EXWdKqm6ulgabcsxwEnSt')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (183, 408, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (956, 408, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (957, 408, 8);

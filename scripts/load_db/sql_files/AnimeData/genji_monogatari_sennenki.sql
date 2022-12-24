@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (590, CONCAT('Genji Monogatari Sennenki'), CONCAT('Born from a much loved, but lowly ranked concubine, Genji Hikaru is called the Shining Prince and is the beloved second son of the Emperor. Although he cannot be an heir to the throne of his father, Genji spends his life surrounded by every pleasure and love. And yet, his one longing in love is something that even the power of an Emperor can never give him.<br>
 <br>(Source: ANN)'), 1, '2009-01-16', '2009-03-27', 'Winter 2009', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/26659.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (417, 590, '"Hiyori Hime"', ' by PUFFY', 'js-theme-songs', 'https://open.spotify.com/track/4ZqwpMHbr0M0V0S6lVmhg7');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1459, 590, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1460, 590, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1461, 590, 10);

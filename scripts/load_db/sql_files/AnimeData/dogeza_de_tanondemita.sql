@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (439, CONCAT('Dogeza de Tanondemita'), CONCAT('"Grovel enough, and you', CHAR(39), 'll get what you want."<br>
 <br>This is the motto that Suwaru Doge firmly stands by, believing that kneeling and begging will grant him the majestic view of a woman', CHAR(39), 's naked body. After realizing the power of groveling in the dogeza stance, Doge wastes no time in exploiting it for lewd requests. Targeting the cutest and hottest girls in the school, he is one step closer to his goal of beholding their nude bodies, no matter what harm it may cause to his social standing.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-14', '2020-12-30', 'Fall 2020', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1634/109387.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (312, 439, '"DOGEZA! Do get that!"', ' by Dogeza Tai (Dogeza 隊) [Minori Gakesaka (Yui Ogura), Natsumi Yuuseki (Saika Kitamori), Sannose Kinose (Akane Kaida), Doge Suwaru (Tomokazu Sugita)]', 'js-theme-songs', 'https://open.spotify.com/track/1MXGAkhCIDRzu5c0Q7vw7K');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1055, 439, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1056, 439, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1057, 439, 14);

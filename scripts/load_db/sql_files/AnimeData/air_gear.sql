@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (54, CONCAT('Air Gear'), CONCAT('Air Trecks, also known as AT, are motorized and futuristic inline skates that are the new craze taking the nation by storm. Although each AT comes with a speed limiter, a community of daredevils known as the "Storm Riders" are brave enough to tamper with the device. Utilizing AT', CHAR(39), 's in underground battles, individual teams wager valuable AT parts or team emblems—their symbol of pride—to dominate the streets.<br>
 <br>Living in this era is Itsuki Minami, a middle school student notorious for engaging in street fights. Always wanting to reach heights no one else is able to, the reckless punk will break through any obstacle that stands in his way, alongside his best friends Kazuma Mikura and Onigiri. However, it is when he discovers a pair of Air Trecks in his house that the path to his true desire finally opens: to rule the skies.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-04-05', '2006-09-27', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/18227.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (30, 54, '"Chain"', ' by Back-on', 'js-theme-songs', 'https://open.spotify.com/track/4c54eOtyzV55BsLo2mUwyd');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (30, 54, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (129, 54, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (130, 54, 14);

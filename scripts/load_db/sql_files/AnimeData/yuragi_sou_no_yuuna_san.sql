@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Kogarashi prepares for a face-off against the ghost, only to find out it is not as malicious as the rumors made it out to be. Instead, it is the ghost of a beautiful, silver-haired girl whose only recollection of her life before death is her name: Yuuna. Even more baffling is that the other tenants of Yuragi-sou not only are able to see Yuuna as well, but each has their own supernatural ability.<br>
 <br>Amidst the chaos caused by his quirky fellow residents, Kogarashi attempts to uncover the regret that keeps Yuuna anchored to the world of the living, lest she become an evil spirit sentenced to spend her afterlife in hell.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-07-14', '2018-09-29', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1462/98802.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1493, 2087, '"Momoiro Typhoon (桃色タイフーン)"', ' by Luna Haruna', 'js-theme-songs', 'https://open.spotify.com/track/2br7poO3HJATmrzZkxJ3y7')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (864, 2087, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5182, 2087, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5183, 2087, 7);

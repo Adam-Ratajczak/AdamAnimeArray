@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1901, CONCAT('Time Bokan: Gyakushuu no San Akunin'), CONCAT('Second season of Time Bokan 24.'), 1, '2017-10-07', '2018-03-24', 'Fall 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/88224.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1354, 1901, '"WANTED GIRL"', ' by Kouichi Doumoto (Kinki Kids) (October)', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4713, 1901, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4714, 1901, 12);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2056, 1901, 98);

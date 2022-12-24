@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>This fateful leap transports Kyou into a war-torn world where humans pilot impressive humanoid robots known as Zegas to fight against malicious aliens known as Gards-Orm. To spearhead this endeavor, humans have formed Cerebrum, a rebel organization working to prevent the Gards-Orm from eradicating humankind.<br>
 <br>As Kyou participates in combat operations, meets his fellow Zega pilots, and witnesses countless deaths, he begins to question the true nature of this world as well as his own life.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-04-06', '2006-09-28', 'Spring 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/76949.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1508, 2107, '"Kimi e Mukau Hikari (キミヘ ムカウ ヒカリ)"', ' by Akino Arai', 'js-theme-songs', 'https://open.spotify.com/track/3yBtW8PrYTXTaTeclMdrXK');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1509, 2107, '"Little Goodbye (リトルグッバイ)"', ' by Rocky Chack', 'js-theme-songs', 'https://open.spotify.com/track/5wrrOvpskVxTIpMun1yuP4');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5231, 2107, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5232, 2107, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5233, 2107, 3);

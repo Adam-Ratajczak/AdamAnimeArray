@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Little does Dva know, this cute girl is Kate Hoshimiya, the leader of Zvezda, a secret organization bent on world conquest. However, he soon realizes the true weight of her words as peculiar happenings rope him deeper into Zvezda and its eccentric members—the samurai-like vanguard Itsuka Shikabane, tech-genius Natalia "Natasha" Vasylchenko, troublesome Yasubee "Yasu" Morozumi, ex-gangster Gorou Shikabane, and multi-purpose robot Roboko Tsujii. <br>
 <br>With "White Light," a powerful organization of justice, and the entire Japanese government against them, can Zvezda really dominate all humanity and let their light shine throughout the world?<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-01-12', '2014-03-30', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/56133.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1163, 1651, '"Be mine!"', ' by Maaya Sakamoto', 'js-theme-songs', 'https://open.spotify.com/track/6rbURb6Ha5y5p7qZU6mNqo')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4109, 1651, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4110, 1651, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4111, 1651, 9);

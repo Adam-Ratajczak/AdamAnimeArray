@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1991, CONCAT('Urahara'), CONCAT('Three high school girls are putting together a limited-time shop called "PARK" in Japan', CHAR(39), 's Harajuku. One day, aliens come to Earth with the intent to steal the famed district', CHAR(39), 's culture. At the same time, a mysterious girl appears. The three girls band together to defeat the alien threat and protect their beloved Harajuku.<br>
 <br>(Source: ANN)'), 1, '2017-10-04', '2017-12-20', 'Fall 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/88432.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1423, 1991, '"Antithese Escape (アンチテーゼ・エスケイプ)"', ' by Sumire Uesaka', 'js-theme-songs', 'https://open.spotify.com/track/15i5ctvwieHMcLYycOLDAR')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4970, 1991, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4971, 1991, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4972, 1991, 3);

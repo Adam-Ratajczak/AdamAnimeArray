@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2023, CONCAT('Wake Up, Girl Zoo!'), CONCAT('"Wake Up, Girl Zoo!" is a small zoo located in the outskirts of Sendai. On the verge of closure, its director Tange and breeding staff Matsuda must set out to find a new animal unit for the zoo. How will they revive the zoo with the seven newly gathered animals?<br>
 <br>(Source: Official website)'), 4, '2014-10-22', '2015-02-25', '', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/65537.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1447, 2023, '"WUG Zoo Zoo (ワグ・ズーズー)"', ' by Wake Up, Girls!', 'js-theme-songs', 'https://open.spotify.com/track/1cKud2mxdFia5PgD2fghXz');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2194, 2023, 87);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2195, 2023, 243);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35585, 2023, 1, CONCAT('Wake Up, Girls! ZOO'), NULL, 'https://drive.google.com/file/d/0B_wqRYJzCdS3SjR3Y1Z6Y3FSU00/preview');

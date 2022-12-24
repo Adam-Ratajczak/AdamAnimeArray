@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2084, CONCAT('Yowamushi Pedal: Grande Road'), CONCAT('Second season of the Yowamushi Pedal series.'), 1, '2014-10-07', '2015-03-31', 'Fall 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/67799.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1490, 2084, '"Determination"', ' by LASTGASP', 'js-theme-songs', 'https://open.spotify.com/track/2oOpV25aTqp9LHzr6NP7wn')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (862, 2084, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2257, 2084, 23);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36449, 2084, 1, CONCAT('Phase 49'), '2014-10-07', 'https://ebd.cda.pl/620x395/579575666');

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1032, CONCAT('Kiniro no Corda: Blue♪Sky'), CONCAT('Soon after transferring to Seisou Gakuin, Kanade finds the orchestra club in the middle of preparing for the National concur. Teaming up with the other members, she will improve her skills, meet new rivals and create memories for what will become an unforgettable summer...<br>
 <br>(Source: La Corda D', CHAR(39), 'oro Wikia)'), 1, '2014-04-06', '2014-06-22', 'Spring 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/59779.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (735, 1032, '"WINGS TO FLY"', ' by Maestro Fields [Kyouya Kisaragi (Jun Fukuyama), Ritsu Kisaragi (Konishi Katsuyuki), Yukihiro Yagisawa (Kentaro Ito), Chiaki Tougane (Kishou Taniyama), Reiji Myouga (Satoshi Hino)]', 'js-theme-songs', 'https://open.spotify.com/track/4WEawRhyLHhdk4D3a4pbBb')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (465, 1032, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2499, 1032, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2500, 1032, 6);

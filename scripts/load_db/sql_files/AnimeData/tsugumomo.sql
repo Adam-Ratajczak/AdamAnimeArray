@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Kazuya Kagami has never gone without his mother', CHAR(39), 's obi after her death. Be it at home or school, he keeps it safe with him at all times. One day, he nearly loses his life when a wig amasogi attacks him. When all seems to be over, his treasured obi defends him, transforming into a beautiful girl. She introduces herself as Kiriha, a tsugumomo owned by Kazuya', CHAR(39), 's mother. <br>
 <br>With Kiriha', CHAR(39), 's arrival, Kazuya enters a reality he has never seen before, a world with gods and tsukumogami.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-02', '2017-06-18', 'Spring 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/84461.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1395, 1953, '"METAMORISER"', ' by Band Ja Naimon!', 'js-theme-songs', 'https://open.spotify.com/track/3M7AeERmR4SrNcDSh09od4')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (817, 1953, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4870, 1953, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4871, 1953, 12);

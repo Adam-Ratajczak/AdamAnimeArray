@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1528, CONCAT('Re:␣Hamatora'), CONCAT('It has been three months since the incident at Yokohama. Things have been settling down at Cafe Nowhere. Murasaki and Hajime have teamed up and started investigating again. After an unforeseen reunion, Art holds Nice at gunpoint. What are his real intentions? What will become of the connection between Art and Hamatora?<br>
 <br>(Source: Crunchyroll)'), 1, '2014-07-08', '2014-09-23', 'Summer 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/75641.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1085, 1528, '"Brand New World"', ' by ayami', 'js-theme-songs', 'https://open.spotify.com/track/09gB1orIxjstLo8CHNFxIl');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3800, 1528, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3801, 1528, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3802, 1528, 4);

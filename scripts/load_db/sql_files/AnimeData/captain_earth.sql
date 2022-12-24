@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (286, CONCAT('Captain Earth'), CONCAT('One night, right before summer vacation, Manatsu Daichi, a second-year in high school, sees a weird round rainbow floating in the sky above Tanegashima and ventures there alone. He has seen this rainbow before. With the memories of his father', CHAR(39), 's mysterious death and an encounter of a strange boy and girl, Daiji arrives on the island while the alarm of a building labeled Earth Engine is going off. Someone asks him if he is a captain, just as robotic intruders from Uranus called Kill-T-Gang arrive. The battle around the shining stars is about to begin.<br>
 <br>(Source: ANN)'), 1, '2014-04-06', '2014-09-21', 'Spring 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/61051.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (203, 286, '"Believers High (ビリーバーズ・ハイ)"', ' by flumpool', 'js-theme-songs', 'https://open.spotify.com/track/59gAcuK44yiZCDFYGpH3uf')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (671, 286, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (672, 286, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (673, 286, 3);

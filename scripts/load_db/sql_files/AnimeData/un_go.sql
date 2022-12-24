@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1987, CONCAT('Un-Go'), CONCAT('In a dystopian future, detective Shinjuurou Yuuki—known by some as the "Defeated Detective"—solves mysteries throughout Tokyo. Aided by his odd associate Inga, Shinjuurou', CHAR(39), 's insight and ingenuity in cracking cases, particularly homicides, lead to numerous mysteries solved and culprits caught. However, his partner seems to have some other, more sinister intentions for the people they catch, and the truth of the assistant', CHAR(39), 's identity and motivation is shrouded in secrecy.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-10-14', '2011-12-23', 'Fall 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/33009.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1421, 1987, '"How to go"', ' by school food punishment', 'js-theme-songs', 'https://open.spotify.com/track/2fPC0geJLAQaKq4yhTA66Q')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4956, 1987, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4957, 1987, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2156, 1987, 77);

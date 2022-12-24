@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Nevertheless, Hotaru finds herself captivated by the countryside', CHAR(39), 's charm thanks to her four unique schoolmates with whom she quickly forms a genuine bond. The most colorful of them is Renge Miyauchi, a first-grader who is often perceptive despite her age. However, no less intriguing are the three Koshigaya siblings: the quiet oldest brother Suguru, the petite older sister Komari, and the prankish youngest sister Natsumi.<br>
 <br>Having someone from the city join their cheerful little group enlivens the ordinary days in Asahigaoka. Not only does Hotaru bring firsthand knowledge from the alluring outside world, but her fresh outlook on life welcomes a blossom of change to their usual routine.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2013-10-08', '2013-12-24', 'Fall 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/51581.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (970, 1379, '"Nanairo Biyori (なないろびより)"', ' by nano.RIPE', 'js-theme-songs', 'https://open.spotify.com/track/5uXbikVUQDFgBa6UJbnK1S')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (595, 1379, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1486, 1379, 50);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1512, 1379, 28);

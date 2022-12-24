@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2077, CONCAT('Yondemasu yo, Azazel-san. Z'), CONCAT('The second season of Yondemasu yo, Azazel-san.'), 1, '2013-04-07', '2013-06-30', 'Spring 2013', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/48957.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1484, 2077, '"Revival!! (りばいばる!!)"', ' by Namikawa Daisuke', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5159, 2077, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5160, 2077, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2250, 2077, 2);

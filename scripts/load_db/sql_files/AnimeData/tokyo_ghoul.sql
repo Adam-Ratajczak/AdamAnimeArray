@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While walking Rize home, Kaneki discovers she isn', CHAR(39), 't as kind as she first appeared, and she has led him on with sinister intent. After a tragic struggle, he later awakens in a hospital to learn his life was saved by transplanting the now deceased Rize', CHAR(39), 's organs into his own body. <br>
 <br>Kaneki', CHAR(39), 's body begins to change in horrifying ways, and he transforms into a human-ghoul hybrid. As he embarks on his new dreadful journey, Kaneki clings to his humanity in the evolving bloody conflict between society', CHAR(39), 's new monsters and the government agents who hunt them.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-07-04', '2014-09-19', 'Summer 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/64449.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1369, 1921, '"unravel"', ' by TK from Ling Tosite Sigure', 'js-theme-songs', 'https://open.spotify.com/track/1rN9QoVxw5U7TJkyaUR8C1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (796, 1921, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4769, 1921, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4770, 1921, 9);

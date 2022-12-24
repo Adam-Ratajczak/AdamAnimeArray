@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (68, CONCAT('Akudama Drive'), CONCAT('The bustling metropolis of Kansai, where cybernetic screens litter the neon landscape, may seem like a technological utopia at first glance. But in the dark alleys around the brightly-lit buildings, an unforgiving criminal underbelly still exists in the form of fugitives known as "Akudama." <br>
 <br>No stranger to these individuals, Kansai police begin the countdown to the public execution of an infamous Akudama "Cutthroat," guilty of killing 999 people. However, a mysterious message is sent to several elite Akudama, enlisting them to free Cutthroat for a substantial amount of money. An invisible hand seeks to gather these dangerous personas in one place, ensuring that the execution is well underway to becoming a full-blown bloodbath.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-08', '2020-12-24', 'Fall 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1468/109172.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (39, 68, '"STEAL!!"', ' by SPARK!!SOUND!!SHOW!!', 'js-theme-songs', 'https://open.spotify.com/track/1b7FQMI6JkithQfYddXOuA')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (154, 68, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (155, 68, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (79, 68, 42);

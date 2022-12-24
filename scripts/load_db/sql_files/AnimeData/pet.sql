@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1459, CONCAT('Pet'), CONCAT('Despite endless research, the human mind remains a mystery to this day. Unknown to the public, there exist special individuals who are able to dive deep into the minds of people and even manipulate their memories.<br>
 <br>Gifted with this ability, Hiroki, Tsukasa, and Satoru are among those who use their power to commit crime under the orders of their leader, Katsuragi. The three step into the dangerous territory of the human mind in order to destroy their assigned targets while striving to keep their own minds and memories safe.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-06', '2020-03-30', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1399/94794.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1035, 1459, '"Chou no Tobu Suisou (蝶の飛ぶ水槽)"', ' by TK from Ling Tosite Sigure', 'js-theme-songs', 'https://open.spotify.com/track/1mxoJgQtVN0suiuAsoJTME')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3619, 1459, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3620, 1459, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1566, 1459, 31);

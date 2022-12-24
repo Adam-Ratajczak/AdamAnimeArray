@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Normalcy, however, is hard to come by for young Rikuo. Complicating his goal are his youkai attendant, who under the name Tsurara Oikawa, goes to school alongside him the young onmyouji Yura Keikain and his close friend Kiyotsugu, who idolizes youkai and hopes to prove their existence. To make matters worse, rival youkai and other entities threaten to harm those Rikuo holds dear.<br>
 <br>If he wants to protect what', CHAR(39), 's important to him, Rikuo must acknowledge his ancestry—that he is the grandson of the legendary Nurarihyon—and transform at night into a youkai, becoming worthy of being the next leader of the Nura Clan.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2010-07-06', '2010-12-21', 'Summer 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/75631.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (976, 1389, '"Fast Forward"', ' by Monkey Majik', 'js-theme-songs', 'https://open.spotify.com/track/29ISYL7OevTODNWiLSyA7K')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (600, 1389, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3448, 1389, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3449, 1389, 10);

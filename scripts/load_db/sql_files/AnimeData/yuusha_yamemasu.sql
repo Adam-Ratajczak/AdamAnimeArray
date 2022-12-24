@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Banished from the kingdom he once called home, Leo wanders aimlessly throughout the land until, one day, he hears rumors of Echidna', CHAR(39), 's efforts to rebuild her army. Hoping that demonkind might accept him as an ally, he returns to the demon queen', CHAR(39), 's castle and offers Echidna his help.<br>
 <br>Naturally, Echidna immediately rejects him. Still, not all hope is lost, as Leo manages to convince Echidna', CHAR(39), 's four generals to let him secretly work under their supervision. Donning the identity of a masked dark knight named Onyx, Leo solves the demon army', CHAR(39), 's problems one by one—gradually improving the quality of life around the castle. Above all else, however, Leo wants to accomplish one goal: to learn why Echidna started the war in the first place.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-05', '2022-06-21', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1934/122301.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1503, 2102, '"BROKEN IDENTITY"', ' by Minori Suzuki', 'js-theme-songs', 'https://open.spotify.com/track/3gMEht2Xex0TCghLOl4ePe')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5219, 2102, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5220, 2102, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5221, 2102, 12);

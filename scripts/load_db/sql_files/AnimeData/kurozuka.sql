@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, driven by innate curiosity and perhaps a condemned love, Kurou peeks through the ajar door, only to find Kuromitsu feasting on the blood of fallen men. He soon learns Kuromitsu is an immortal vampire, and dedicates himself to her—even becoming a vampire himself in order to spend eternity with her. But the cryptic organization known as the Red Army has enlisted the help of Benkei, who betrays Kurou and severs his head. <br>
 <br>Awaking centuries into the future in an apocalyptic modern-day Japan, Kurou sets off to reunite with his lover and exact revenge on the Red Army.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2008-10-07', '2008-12-23', 'Fall 2008', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/21844.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (784, 1098, '"Hanarebanare (ハナレバナレ)"', ' by Shigi', 'js-theme-songs', 'https://open.spotify.com/track/15cPlujsSAuJ3e9sJpnpGf');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (493, 1098, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2670, 1098, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2671, 1098, 6);

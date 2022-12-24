@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (776, CONCAT('Hisone to Maso-tan'), CONCAT('Seeking to find purpose in her life, Hisone Amakasu enlists in the Japan Air Self-Defense Force (JASDF) and is stationed at Gifu Airbase. During a visit to a part of the base she did not know existed, she stumbles upon the JASDF', CHAR(39), 's largest secret: the Organic Transformed Flyer (OTF), 1, her commanding officers inform her that this encounter means that she has been chosen to be the next in a long line of Dragon Pilots.<br>
 <br>Together with her fellow pilot cadets and "Maso-tan," her own OTF, Hisone must overcome her insecurities in order to discover her true potential as a Dragon Pilot and unravel the secrets behind the OTFs.<br>
 <br>[Written by MAL Rewrite]'), 4, '2018-04-13', '2018-06-29', 'Spring 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1539/91169.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (556, 776, '"Soujo wa Ano Sora wo Wataru (少女はあの空を渡る)"', ' by Riko Fukumoto (福本莉子)', 'js-theme-songs', 'https://open.spotify.com/track/49n4ti9FtVafifotIv2h04')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1907, 776, 13);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1908, 776, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1909, 776, 6);

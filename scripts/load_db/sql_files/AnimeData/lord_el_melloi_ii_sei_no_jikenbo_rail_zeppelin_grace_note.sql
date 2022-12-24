@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1134, CONCAT('Lord El-Melloi II Sei no Jikenbo: Rail Zeppelin Grace Note'), CONCAT('Ten years after facing defeat in the Fourth Holy Grail War, Waver Velvet, now Lord El Melloi II, teaches classes at the Clock Tower—the center of education for mages. However, his new status as "Lord" comes with a caveat: obey the orders of Reines, the younger sister of the deceased Kayneth El Melloi, until she is old enough to rule the House of El Melloi.<br>
 <br>Waver, along with his mysterious apprentice Gray, takes on a series of cases assigned by Reines and the Mages Association. With each case proving to be more complex than the last, could there be more to the Clock Tower than meets the eye, and what secrets does Reines hide?<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-07-07', '2019-09-29', 'Summer 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1107/111530.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (808, 1134, '"starting the case: Rail Zeppelin"', ' by Yuki Kajiura', 'js-theme-songs', 'https://open.spotify.com/track/0aDUtNFbJ98bF5eDMDOK2u')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2767, 1134, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2768, 1134, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2769, 1134, 10);

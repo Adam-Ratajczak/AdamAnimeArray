@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Mentally exhausted from not knowing what to do, Ayumi collapses in class. A classmate comes to her rescue, carrying her princess-style to the infirmary. This makes Ayumi fall in love with the cute boy, only to realize he is none other than Misao', CHAR(39), 's younger brother, Mamoru.<br>
 <br>Feeling caught between a rock and a hard place, Ayumi must decide whether to stick to her idea of love or pursue what she truly desires. However, Ayumi is not alone in her struggles—all her friends are also taking on the challenges of first love, and for teenagers, it is never as easy as it seems.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-04-12', '2009-06-28', 'Spring 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/15520.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (518, 724, '"Future Stream"', ' by Sphere (スフィア)', 'js-theme-songs', 'https://open.spotify.com/track/25qkjyDiIupcIwsR1gxue6')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (332, 724, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1772, 724, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1773, 724, 7);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (754, CONCAT('High School DxD New'), CONCAT('The misadventures of Issei Hyoudou, high school pervert and aspiring Harem King, continue on in High School DxD New. As the members of the Occult Research Club carry out their regular activities, it becomes increasingly obvious that there is something wrong with their Knight, the usually composed and alert Yuuto Kiba. Soon, Issei learns of Kiba', CHAR(39), 's dark, bloody past and its connection to the mysterious Holy Swords. Once the subject of a cruel experiment, Kiba now seeks revenge on all those who wronged him.<br>
 <br>With the return of an old enemy, as well as the appearance of two new, Holy Sword-wielding beauties, it isn', CHAR(39), 't long before Issei and his Devil comrades are plunged into a twisted plot once more.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-07-07', '2013-09-22', 'Summer 2013', '26 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/47729.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (543, 754, '"Gekijouron (激情論)"', ' by Larval Stage Planning', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1848, 754, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1849, 754, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1850, 754, 7);

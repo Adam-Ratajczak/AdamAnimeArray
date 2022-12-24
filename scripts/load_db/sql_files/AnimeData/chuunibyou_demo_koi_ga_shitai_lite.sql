@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (331, CONCAT('Chuunibyou demo Koi ga Shitai! Lite'), CONCAT('Short episodes aired on KyoAni', CHAR(39), 's official YouTube channel.'), 2, '2012-09-27', '2012-10-31', '', '6 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/42655.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (237, 331, '"Kimi e (君へ)"', ' by ZAQ', 'js-theme-songs', 'https://open.spotify.com/track/0cPSLxpVd15ZcfmtB6BIKx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (758, 331, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (759, 331, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (760, 331, 7);

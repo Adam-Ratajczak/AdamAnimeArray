@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (247, CONCAT('Boku no Kanojo ga Majimesugiru Sho-bitch na Ken'), CONCAT('Haruka Shinozaki has been interested in the class representative, Akiho Kousaka, since his first year in high school. She is attractive, good at sports, and is an all-around model student. Since they are in the same class this year, Shinozaki decides to confess his feelings—and, to his shock, Kousaka agrees to be his girlfriend!<br>
 <br>However, he finds that Kousaka is a bit stranger than he first thought: this seemingly perfect girl has never been in a relationship. But even though she is inexperienced, she vows to please Shinozaki in every way she can... such as learning multiple sex positions or his fetishes. Shinozaki tries to assure her that her studies into such subjects aren', CHAR(39), 't necessary, but Kousaka devotes herself to making him happy in more ways than one.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-10-12', '2017-12-14', 'Fall 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/87623.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (176, 247, '"Eien Labyrinth (永遠ラビリンス)"', ' by Aoi Yuuki', 'js-theme-songs', 'https://open.spotify.com/track/6AfQUCC17nAB0JbkUf6BTG');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (563, 247, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (564, 247, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (565, 247, 14);

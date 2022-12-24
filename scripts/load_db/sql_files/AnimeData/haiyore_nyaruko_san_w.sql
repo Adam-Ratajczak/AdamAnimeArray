@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (685, CONCAT('Haiyore! Nyaruko-san W'), CONCAT('Nyaruko still wants Mahiro, as does Hasuta. Kūko wants Nyaruko, but believes both Nyaruko', CHAR(39), 's and Mahiro', CHAR(39), 's "first time" belongs to her. Yoriko puts up with all of it and cheerfully runs the house where they all live. Mahiro just wants some sanity. He doesn', CHAR(39), 't want to be the love toy of a Nyarlathotepan, Cthughan, or a shots-like Hasturan. He may or may not hold out.<br>
 <br>(Source: ANN)'), 1, '2013-04-08', '2013-07-01', 'Spring 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/47533.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (484, 685, '"Koi wa Chaos no Shimobenari (恋は渾沌の隷也)"', ' by Ushiro kara Haiyori-tai G (後ろから這いより隊G)', 'js-theme-songs', 'https://open.spotify.com/track/2iVvuxIx777uZup3BVw6UK')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1684, 685, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1685, 685, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (757, 685, 96);

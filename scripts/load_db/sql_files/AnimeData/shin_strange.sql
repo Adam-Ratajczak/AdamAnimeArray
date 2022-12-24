@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1702, CONCAT('Shin Strange+'), CONCAT('Second season of Strange+.'), 2, '2014-07-11', '2014-09-26', 'Summer 2014', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/75522.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1203, 1702, '"3'30" -Sanpunhan- (3’30”-サンブンハン-)"', ' by POARO (Takashi Ifukube and Takeshi Washizaki)', 'js-theme-songs', 'https://open.spotify.com/track/1HGXBpoCmu399eglU2I1I7');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4225, 1702, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4226, 1702, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1838, 1702, 77);

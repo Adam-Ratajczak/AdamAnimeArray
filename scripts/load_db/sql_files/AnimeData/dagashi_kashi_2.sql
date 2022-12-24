@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (370, CONCAT('Dagashi Kashi 2'), CONCAT('Second season of Dagashi Kashi.'), 1, '2018-01-12', '2018-03-30', 'Winter 2018', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1649/90141.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (265, 370, '"OH MY Sugar Feeling!! (OH MY シュガーフィーリング!!)"', ' by Ayana Taketatsu', 'js-theme-songs', 'https://open.spotify.com/track/3Ej4f44TxKlnCSVe8ooidj')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (170, 370, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (858, 370, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (859, 370, 15);

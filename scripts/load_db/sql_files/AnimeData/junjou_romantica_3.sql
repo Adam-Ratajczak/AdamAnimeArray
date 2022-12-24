@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As for Nowaki Kusama and Hiroki Kamijou, now that their careers are finally taking off, they hardly see each other anymore. With the time they spend together lessening, doubts and insecurities threaten to creep in between them. On the other hand, the 17-year age gap between Shinobu Takatsuki and You Miyagi has been a constant barrier in their relationship, but as they learn more about each other, their self-consciousness continues to fade.<br>
 <br>The beloved couples of Junjou Romantica, Junjou Egoist, and Junjou Terrorist are back again, this time with a new addition: Junjou Mistake!<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-07-09', '2015-09-24', 'Summer 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/74170.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (650, 916, '"Kawaranai Sora (変わらない空)"', ' by Luck Life (ラックライフ)', 'js-theme-songs', 'https://open.spotify.com/track/5OfH43FpOLcEJOojNITZuo');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2216, 916, 17);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2217, 916, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2218, 916, 6);

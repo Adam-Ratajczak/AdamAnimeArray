@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1400, CONCAT('Odd Taxi'), CONCAT('Eccentric and blunt, the walrus Hiroshi Odokawa lives a relatively normal life. He drives a taxi for a living, and there he meets several unique individuals: the jobless Taichi Kabasawa who is dead-set on going viral, the mysterious nurse Miho Shirakawa, the struggling comedic duo "Homo Sapiens," and Dobu, a well-known delinquent.<br>
 <br>But Odokawa', CHAR(39), 's simple way of life is about to be turned upside-down. The case of a missing girl the police have been tracking leads back to him, and now both the yakuza and a duo of corrupt cops are on his tail. Set in a strangely familiar city filled with unusual individuals, Odd Taxi is a bizarre story about a humble taxi driver and the mystery of a lost high schooler.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-04-06', '2021-06-29', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1981/113348.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (985, 1400, '"ODDTAXI"', ' by Skirt and PUNPEE', 'js-theme-songs', 'https://open.spotify.com/track/2V6096t85P3oWokkXqmANp')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3475, 1400, 13);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3476, 1400, 4);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1507, 1400, 3);

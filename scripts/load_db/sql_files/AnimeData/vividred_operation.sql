@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As they live peacefully alongside the powerful creation, it all seems like a dream until mysterious entities known as the "Alone" appear seeking to destroy it. With military forces failing to repel the invaders, Kenjirou grants Akane a special key containing the "Vivid System"—empowering her to fight the Alone.<br>
 <br>Joined by Aoi Futaba, Wakaba Saegusa, and Himawari Shinomiya, Akane and her friends stand together in the battle against the unforeseen enemy as the last hope for humanity.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2013-01-11', '2013-03-29', 'Winter 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/45935.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1444, 2019, '"ENERGY"', ' by earthmind', 'js-theme-songs', 'https://open.spotify.com/track/4yXpOw1DDfXooIdy6w4w9t')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5032, 2019, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5033, 2019, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5034, 2019, 14);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1861, CONCAT('Tatakau Shisho: The Book of Bantorra'), CONCAT('In a world where dead people turn into books and are stored in the Bantorra Library where anyone who reads a book can learn their past, Bantorra Library is maintained by Armed Librarians who wield psychic powers and their enemy is a religious society known as Sindeki Kyoudan. '), 1, '2009-10-02', '2010-04-02', 'Fall 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/22769.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1323, 1861, '"Datengoku Sensen (堕天國宣戦)"', ' by ALI PROJECT', 'js-theme-songs', 'https://open.spotify.com/track/4vIb5uThVFPgunNpIImCLg')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (772, 1861, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4613, 1861, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4614, 1861, 9);

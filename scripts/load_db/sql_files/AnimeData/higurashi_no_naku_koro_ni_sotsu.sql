@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Although Satoko is hesitant, she decides to walk this path with Rika. However, the realization of her dream forms a rift between them. This leaves the girls living in completely different worlds, with Rika enjoying her new life and making new friends while Satoko grows more and more isolated.<br>
 <br>Longing to return to the nostalgic days in Hinamizawa, Satoko despairs and wishes things could be changed. Just when she is at wits', CHAR(39), ' end, an encounter with a supernatural entity changes Satoko', CHAR(39), 's perception and imparts new revelations about her best friend Rika. This begins her journey to get the future she desires—by any means necessary.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-07-01', '2021-09-30', 'Summer 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1083/115046.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (550, 764, '"Analogy"', ' by Ayane', 'js-theme-songs', 'https://open.spotify.com/track/6ankkTxedHTDNGfIFnS1OR')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1880, 764, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1881, 764, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1882, 764, 10);

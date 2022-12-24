@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (903, CONCAT('Jigoku Shoujo'), CONCAT('It is said that if someone seeks revenge, they should dig two graves—and this is especially true of those who use the Hell Correspondence website. At the stroke of midnight, this ominous web domain becomes accessible, and whoever inputs the name of their grudge will get a visit from Ai Enma, the Hell Girl. Ai explains that she will send the target', CHAR(39), 's soul to hell, but the requester will also end up in hell when they die.<br>
 <br>For some, that price is far too steep for others, where they will spend their afterlife has no bearing on their current, day-to-day hell. But one thing is certain: the Hell Girl will always be available to those in need of revenge, while she stoically performs her duty of ferrying souls into the darkness.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2005-10-05', '2006-04-05', 'Fall 2005', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/86907.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (637, 903, '"Sakasama no Chou (逆さまの蝶)"', ' by SNoW', 'js-theme-songs', 'https://open.spotify.com/track/7gaaMd98dW4ssle6fc1fBh');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2186, 903, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2187, 903, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2188, 903, 10);

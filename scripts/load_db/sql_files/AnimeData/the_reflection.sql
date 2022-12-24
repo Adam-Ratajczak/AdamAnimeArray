@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1897, CONCAT('The Reflection'), CONCAT('After the Reflection, some of the people in all parts of the world are discovered with super powers. Some become heroes, and others villains. How did the Reflection happen? What was the cause of it? With many unsolved mysteries, the world is led into turmoil.'), 3, '2017-07-22', '2017-10-07', 'Summer 2017', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/83018.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1350, 1897, '"SunSunSunrise"', ' by 9nine', 'js-theme-songs', 'https://open.spotify.com/track/6FnAbuPTDrMxWovwRzDyvc');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (788, 1897, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4703, 1897, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4704, 1897, 7);

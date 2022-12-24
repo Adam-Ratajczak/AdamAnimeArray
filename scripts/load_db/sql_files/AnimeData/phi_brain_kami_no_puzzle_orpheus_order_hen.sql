@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1467, CONCAT('Phi Brain: Kami no Puzzle - Orpheus Order-hen'), CONCAT('The puzzles get tougher and even more deadly as Kaito Daimon continues his battle against the power hungry Givers of the POG. And with one team member already switching sides, will Kaito have what it takes to keep solving the deadly puzzle traps put before him and reach the fabled Puzzle of God? More importantly, will he be able to solve the puzzles AND maintain his sanity? <br>
 <br>(Source: Sentai Filmworks) '), 1, '2012-04-08', '2012-09-23', 'Spring 2012', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/39033.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1040, 1467, '"Now or Never"', ' by Nano', 'js-theme-songs', 'https://open.spotify.com/track/6NbZalytDfcR5HiuGV1Bii')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3641, 1467, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3642, 1467, 4);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1573, 1467, 27);

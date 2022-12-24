@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1540, CONCAT('Reikenzan: Eichi e no Shikaku'), CONCAT('After two years of studying within the Reiken clan, Ouriku and other inexperienced disciples are ordered to descend to the temporal world for further studies, and Ouriku embarks the journey back to his birthplace.<br>
 <br>(Source: ANN)'), 1, '2017-01-08', '2017-03-26', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/83499.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1093, 1540, '"Genkai Kentobashite"', ' by Merry★Go★Lands', 'js-theme-songs', 'https://open.spotify.com/track/6uQFKnpnmzlblIHta7D0r6')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3828, 1540, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3829, 1540, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1658, 1540, 46);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Taekwondo expert Jin Mo-Ri is invited to participate in the competition. There he befriends karate specialist Han Dae-Wi and swordswoman Yu Mi-Ra, who both have entered for their own personal reasons. Mo-Ri knows that no opponent will be the same and that the matches will be the most ruthless he has ever fought in his life. But instead of being worried, this prospect excites him beyond belief.<br>
 <br>A secret lies beneath the facade of a transparent test of combat prowess the tournament claims to be—one that has Korean political candidate Park Mu-Jin watching every fight with expectant, hungry eyes. Mo-Ri, Dae-Wi, and Mi-Ra are about to discover what it really means to become the God of High School.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-07-06', '2020-09-28', 'Summer 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1722/107269.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1349, 1896, '"Contradiction feat. Tyler Carter"', ' by KSUKE', 'js-theme-songs', 'https://open.spotify.com/track/2yuyPke3xjantGgapFPH3e')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4699, 1896, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4700, 1896, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4701, 1896, 3);

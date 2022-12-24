@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As a seasoned and experienced fighter, the "Grey Ghost" Enterprise shoulders Azur Lane', CHAR(39), 's hope for ending the war. But behind her stoic persona hides a frail girl, afraid of the ocean. Even so, she continues to fight as she believes that it', CHAR(39), 's the only purpose for her existence. Meanwhile, Javelin, Laffey, and Unicorn—three ships from the union—stumble upon Ayanami, a spy from the Red Axis. Strange as it may seem, they try to befriend her, but as enemies, their efforts are for naught. Still, they persevere in hopes of succeeding one day.<br>
 <br>Amidst the neverending conflict within humankind, the keys that could unite a fragmented race might exist: a soldier coming to terms with her mysterious personality and camaraderie between those with different ideals.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-10-03', '2020-03-20', 'Fall 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1106/111620.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (95, 145, '"graphite/diamond"', ' by May'n', 'js-theme-songs', 'https://open.spotify.com/track/7dHtm6v0oCuh9goDtWQiyP')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (330, 145, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (331, 145, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (332, 145, 8);

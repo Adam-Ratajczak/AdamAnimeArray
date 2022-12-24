@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>When Hiromichi Kojima, a legendary hitter for the Saikyou Saitama Lycaons, witnesses Tokuchi', CHAR(39), 's skills firsthand, he realizes that the man might be exactly what the team needs to get out of their slump. Determined to recruit Tokuchi no matter what, Kojima places his own career on the line and defeats Tokuchi at his own specialty—One Outs.<br>
 <br>Forced to become a Lycaon, Tokuchi soon finds himself at odds with the team', CHAR(39), 's owner, Tsuneo Saikawa. After Saikawa refuses to give him a reasonable salary, Tokuchi proposes a special contract: pitching an out will earn him five million yen, but giving up a run will cost him fifty million. With every game having the potential to either make or break him, will Tokuchi be able to outwit those who stand in his way?<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2008-10-08', '2009-04-01', 'Fall 2008', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/21065.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (987, 1404, '"Bury"', ' by Pay money To my pain', 'js-theme-songs', 'https://open.spotify.com/track/0YbgS4rAITV14V9ZhdA91W');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (606, 1404, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1512, 1404, 21);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1538, 1404, 1);

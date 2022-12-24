@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (464, CONCAT('Dream Festival! R'), CONCAT('No synopsis information has been added to this title. Help improve our database by adding a synopsis here.'), 4, '2017-08-23', '2017-11-08', '', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/86852.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (331, 464, '"Yume no Kodou (ユメノコドウ)"', ' by DearDream', 'js-theme-songs', 'https://open.spotify.com/track/1ICjjhyI3WYkuFHznUKYJK')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (517, 464, 86);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (500, 464, 36);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (501, 464, 6);

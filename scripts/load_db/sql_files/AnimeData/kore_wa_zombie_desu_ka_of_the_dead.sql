@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1074, CONCAT('Kore wa Zombie Desu ka? of the Dead'), CONCAT('Aikawa Ayumu was revived as a zombie by the cute necromancer Eucliwood Hellscythe. After the zany, madcap adventures in the first season of Is This a Zombie? ended, Ayumu thought his life might finally get back to normal, or as normal as it can be for a zombie. However, destiny has other plans for him. Some guys just can', CHAR(39), 't catch a break. <br>
 <br>(Source: FUNimation) '), 1, '2012-04-05', '2012-06-07', 'Spring 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/37451.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (768, 1074, '"*** Passionate (***パショナート)"', ' by Iori Nomizu', 'js-theme-songs', 'https://open.spotify.com/track/1KCDYZBpcevdeOSRPy0nkZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2609, 1074, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2610, 1074, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2611, 1074, 10);

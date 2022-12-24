@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>familiar face: Monokuma. Much to Naegi', CHAR(39), 's horror, the mechanical bear immediately announces the beginning of a new killing game, as moments later, the first victim appears as a signal for despair to resume its brutal conquest.<br>
 <br>In the conclusion to Danganronpa', CHAR(39), 's gripping tale of hope and despair, Naegi, the Super High School-Level Lucky Student, must once again unravel the mystery as his colleagues and friends begin falling around him. However, there are no more class trials among the 16 desperate participants, there is only one killer—and their death means the end of this infernal game.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-07-11', '2016-09-26', 'Summer 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/80931.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (272, 380, '"DEAD OR LIE"', ' by Maon Kurosaki and feat.TRUSTRICK', 'js-theme-songs', 'https://open.spotify.com/track/1WOxlIcQ9xt9hOKu87Peif')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (887, 380, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (888, 380, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (889, 380, 4);

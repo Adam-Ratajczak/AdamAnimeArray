@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Judith returns with 23-year-old Naoya Touhara, a single father who unfortunately leaves his daughter, Asuha, behind in the human realm. As the first member of Lotte', CHAR(39), 's harem, Naoya quickly adapts to this new environment, serving the princess to make her happy, rather than viewing her with sexual intent. Unfortunately, when his daughter is allowed to arrive in the magical realm, Naoya', CHAR(39), 's relationship quickly worsens with Lotte. Even so, he strives to patch up their relationship.<br>
 <br>It soon becomes clear, however, that Naoya', CHAR(39), 's presence in the magical realm is more than just mere coincidence. As he develops his bond with Lotte, fate begins to pull together the connections that tie him and everyone else within this enchanting world.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2011-04-11', '2011-06-26', 'Spring 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/75562.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (89, 138, '"Tenshi no CLOVER (天使のCLOVER)"', ' by Aimi', 'js-theme-songs', 'https://open.spotify.com/track/7AEfd8dCxlcxrJQop5cSlR')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (68, 138, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (313, 138, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (314, 138, 9);

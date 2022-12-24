@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1049, CONCAT('Kochouki: Wakaki Nobunaga'), CONCAT('The series is a historical drama aesthetically and boldly adapting the life of Oda Nobunaga in his teens up to his time as a warlord against his brother, Nobuyuki.<br>
 <br>(Source: MAL News)'), 1, '2019-07-08', '2019-09-23', 'Summer 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1934/111399.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (750, 1049, '"Shissou (疾走)"', ' by Rib (りぶ)', 'js-theme-songs', 'https://open.spotify.com/track/6BwDlMnMK69Je8In9M6lHo')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2535, 1049, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2536, 1049, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2537, 1049, 14);

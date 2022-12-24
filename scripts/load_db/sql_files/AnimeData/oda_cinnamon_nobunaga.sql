@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1399, CONCAT('Oda Cinnamon Nobunaga'), CONCAT('In the "one-of-a-kind samurai-general-reincarnated-as-a-canine comedy," Nobunaga perishes at Honnouji as in history, and reincarnates in modern-day Japan as a dog named Shinamon. Other Warring States era warlords such as Takeda Shingen eventually join him, also as dogs.<br>
 <br>(Source: ANN)'), 1, '2020-01-11', '2020-03-28', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1004/106819.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (984, 1399, '"Sunny Sunny Girl◎"', ' by Akane Kumada', 'js-theme-songs', 'https://open.spotify.com/track/5ilNkGeVY3Vot1dFgMMA9U')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3472, 1399, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3473, 1399, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3474, 1399, 14);

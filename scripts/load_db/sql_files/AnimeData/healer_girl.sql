@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Among the many healers in training is Kana Fujii, a naturally talented singer who was inspired to pursue the profession after a life-changing experience. Along with the driven Reimi Itsushiro and the easygoing Hibiki Morishima, Kana trains at Karasuma Phoniatric Clinic under the stern yet kind mentorship of Ria Karasuma.<br>
 <br>As they endeavor to achieve their dreams, Kana and her friends meet various colorful healers along the way, discovering that there is much more to vocal medicine than just diligent studying!<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-04', '2022-06-20', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1727/122415.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (522, 727, '"Feel You, Heal You"', ' by Healer Girls', 'js-theme-songs', 'https://open.spotify.com/track/5CXADh3BEkUrbJMq1Lz2hN')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1779, 727, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1780, 727, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1781, 727, 9);

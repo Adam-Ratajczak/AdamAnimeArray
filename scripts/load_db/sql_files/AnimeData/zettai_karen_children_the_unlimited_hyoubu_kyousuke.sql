@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2114, CONCAT('Zettai Karen Children: The Unlimited - Hyoubu Kyousuke'), CONCAT('Kyousuke Hyoubu, an ESPer who was betrayed many years ago, is now one of the most powerful ESPers—and also a fugitive. However, behind that glare lies a kind heart. His main mission is to save ESPers who are mistreated by humans, even if that be by force. Through his methods, he has saved many ESPer lives and gained the loyalty of those he has saved. The name of his group: P.A.N.D.R.A.<br>
 <br>(Source: ANN)'), 1, '2013-01-08', '2013-03-26', 'Winter 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/44522.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1512, 2114, '"LΛST RESOLUTION (English ver.)"', ' by  The Emblem of THE UNLIMITED', 'js-theme-songs', 'https://open.spotify.com/track/4sTRHvLfqOiNcln3Gzy3Uz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (871, 2114, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5261, 2114, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5262, 2114, 10);

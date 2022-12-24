@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Latina is sweet, innocent and compassionate, charming Dale beyond his expectations. He begins to enjoy the life of parenthood— experiencing the trials that come with raising a child and coping with the heartache he feels whenever his busy lifestyle as an adventurer parts him from her.<br>
 <br>Although work and life as a new parent become reassuring constants for Dale, the mysteries surrounding the girl remain. Why was Latina alone in the forest, and why does she harbor the symbol of a criminal? At the same time, Latina also begins to learn about the world and herself as she adjusts to her new life with Dale.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-07-04', '2019-09-19', 'Summer 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1568/101203.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1408, 1968, '"I'm with you"', ' by Latina (Kanon Takao)', 'js-theme-songs', 'https://open.spotify.com/track/6aupfGxUobFklJoqjpxH4f')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4908, 1968, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4909, 1968, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2134, 1968, 193);

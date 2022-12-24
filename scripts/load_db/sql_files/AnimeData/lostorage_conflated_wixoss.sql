@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1136, CONCAT('Lostorage Conflated WIXOSS'), CONCAT('Tensions from the Selector battles have seemingly vanished, and the remaining participants have quickly put the entire ordeal behind them. However, Kiyoi Mizushima feels that the conflict has yet to end. Despite Kou Satomi', CHAR(39), 's defeat, his supporters are already attempting to revive his plans in the background.<br>
 <br>It does not take long for Mizushima', CHAR(39), 's suspicions to be confirmed true. Not only does the Selector battle system reemerge, but also a new mechanic has been implemented. Players receive a special key card that will unlock with gold coins, releasing a hidden power. Aware of the formidable foes that lie ahead, Mizushima begins to seek out skilled allies in her endeavor to finally break the cycle of darkness.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-04-07', '2018-06-23', 'Spring 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1558/90899.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (810, 1136, '"I"', ' by Cyua', 'js-theme-songs', 'https://open.spotify.com/track/7v6ePOAsUXJg46eYfTOYiY');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1233, 1136, 31);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1240, 1136, 37);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1241, 1136, 4);

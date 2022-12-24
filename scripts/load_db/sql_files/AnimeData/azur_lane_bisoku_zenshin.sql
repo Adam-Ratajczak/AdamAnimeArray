@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (146, CONCAT('Azur Lane: Bisoku Zenshin!'), CONCAT('In a seemingly peaceful time without looming threats of Sirens or war, shipgirls from different nations live together in harmony. Some girls, such as the destroyers Ayanami, Javelin, Laffey, and Z23, attend school. Others immerse themselves into various other activities, including sports, foraging, training, going to formal parties, or even vying for the commander', CHAR(39), 's attention! But one thing is for certain: the girls will continue to deepen their friendship in the pleasant port of Azur Lane!<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-01-12', '2021-03-30', 'Winter 2021', '8 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1137/113872.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (96, 146, '"Longing for!"', ' by Emi Nitta', 'js-theme-songs', 'https://open.spotify.com/track/4xU2SAeIHKtVsx996WnSsy')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (333, 146, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (334, 146, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (335, 146, 8);

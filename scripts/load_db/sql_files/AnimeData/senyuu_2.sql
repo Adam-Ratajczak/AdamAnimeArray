@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Ross, trapped within a plane between two worlds due to Januar Ein', CHAR(39), 's magic, encounters the demon lord taking a nap and looking far too comfortable in his confinement. Simultaneously, Alba, once again in prison, has been sidelined in favor of his eccentric companion', CHAR(39), 's hijinks.<br>
 <br>Although separated, Ross and Alba continue their attempts to prevent the demon lord', CHAR(39), 's resurgence, but unbeknownst to them, a ghost from Ross', CHAR(39), ' past may just threaten their quest', CHAR(39), 's success.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-07-03', '2013-09-25', 'Summer 2013', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/51879.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1183, 1675, '"Canary (カナリヤ)"', ' by Granrodeo', 'js-theme-songs', 'https://open.spotify.com/track/4A6f2ysysi7zZeHzjwOqHh');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (703, 1675, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4142, 1675, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4143, 1675, 12);

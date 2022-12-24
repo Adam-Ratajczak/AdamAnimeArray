@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Deciding to make her wish, Koyuki learns the horrifying truth: the legend is a ruse for time demons called "Horologues" to steal humans', CHAR(39), ' time. As they are drawn to regrets, Victor uses Koyuki as bait to lure a demon there. Kiri and Victor explain that they are Chronos Rulers, warriors who fight against the Horologues using the "Oath of Time"—an item allowing them to speed up or slow down time.<br>
 <br>With the demon destroyed and the crisis averted, Koyuki is able to go on her way free from regrets. However, she is not the only human with sorrows. The two boys must continue to hunt down Horologues in order to keep humanity safe.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-07-08', '2017-09-30', 'Summer 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/86753.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (641, 906, '"Jikan wa Mado no Mukougawa (時間は窓の向こう側)"', ' by Nagi Yanagi', 'js-theme-songs', 'https://open.spotify.com/track/01KQV7K090zaRShY9VPgyI');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (398, 906, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (988, 906, 106);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16047, 906, 1, CONCAT('Being and Nothingness'), '2017-07-08', 'https://ebd.cda.pl/620x368/148264720');

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1749, CONCAT('Show by Rock!! Stars!!'), CONCAT('"All stars" season of Show by Rock!! featuring all the bands from previous seasons.'), 1, '2021-01-07', '2021-03-25', 'Winter 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1713/106712.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1239, 1749, '"Doremifa Stars!! (ドレミファSTARS!!)"', ' by Plasmagica & Mashumairesh!!', 'js-theme-songs', 'https://open.spotify.com/track/5muM0Dc30sKNtI0OOFHG3q')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4332, 1749, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4333, 1749, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4334, 1749, 3);

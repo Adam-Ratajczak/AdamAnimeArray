@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (839, CONCAT('Ikkitousen: Western Wolves'), CONCAT('No synopsis information has been added to this title. Help improve our database by adding a synopsis here.'), 3, '2019-01-03', '2019-02-27', '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1355/98146.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (596, 839, '"Kurenai no Kougyou (紅の光暁)"', ' by Yui Sakakibara', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (371, 839, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2027, 839, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2028, 839, 14);

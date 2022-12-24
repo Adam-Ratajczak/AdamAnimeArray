@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (715, CONCAT('Happiness!'), CONCAT('Kamizaka Haruhi having been rescued when she was young by a mage, longed to be a mage herself, so she enrolled into a special school that allows regular and magic classes into two different sections. Together with her rival/best friend, Hiiragi Anri, they study magic together while she is searching for the boy that saved her years ago, to give him a Valentines', CHAR(39), ' chocolate.<br>
 <br>(Source: ANN)'), 7, '2006-10-06', '2006-12-22', 'Fall 2006', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/75250.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (510, 715, '"Happiness!"', ' by Ayumi Murata', 'js-theme-songs', 'https://open.spotify.com/track/2b4b2hIUSCi5tFVO1iHqES');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (326, 715, 1);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (754, 715, 13);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (755, 715, 19);

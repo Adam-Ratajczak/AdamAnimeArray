@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (317, CONCAT('Chiruran: Nibun no Ichi'), CONCAT('Strong, intense, and cute! The most laid-back Shinsengumi in history arrives!! An official spinoff series by Hashimoto Eiji (manga) and Umemura Shinya (story) of Chiruran Shinsengumi Requiem. Here', CHAR(39), 's the laid-back everyday life of the Shinsengumi warriors.<br>
 <br>(Source: Crunchyroll)'), 1, '2017-01-10', '2017-03-28', 'Winter 2017', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/82948.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (225, 317, '"Boku no Te ni Fureru na (僕の手に触れるな)"', ' by Kamisama, Boku wa Kizuite Shimatta (神様、僕は気づいてしまった)', 'js-theme-songs', 'https://open.spotify.com/track/2fjNCBbbFWI2KZ96XEAeqE');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (728, 317, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (729, 317, 12);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (355, 317, 80);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1492, CONCAT('Pretty Rhythm: All Star Selection'), CONCAT('This is the fourth anime series of Pretty Rhythm. The story features a girl named Laala Manaka, who desires to become an Idol. To further her debut the best, the three main protagonists from the previous Pretty Rhythm series Aira, Mia, and Naru give her lessons about how to be the best Idol. In addition to the lessons she', CHAR(39), 's learning, the series also retells the events of the previous Pretty Rhythm series.<br>
 <br>(Source: Pretty Rhythm Wiki)'), 1, '2014-04-05', '2014-06-14', 'Spring 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/60581.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1056, 1492, '"You May Dream"', ' by LISP', 'js-theme-songs', 'https://open.spotify.com/track/36llL3QYp31zTQjBcuV12b')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1608, 1492, 31);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1623, 1492, 37);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1624, 1492, 4);

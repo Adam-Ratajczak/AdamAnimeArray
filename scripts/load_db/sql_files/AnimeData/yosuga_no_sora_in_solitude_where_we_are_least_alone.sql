@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2080, CONCAT('Yosuga no Sora: In Solitude, Where We Are Least Alone.'), CONCAT('Due to a sudden accident, twins Haruka and Sora Kasugano have lost both of their parents. Starting their lives anew, they return to their childhood home—living once again in the rural, quaint town like they did four years ago. <br>
 <br>However, revisiting such a nostalgic place also means recalling all the memories the two of them made together, be it those that gave them blissful joy or those that made them suffer painful sorrow. Meeting both old acquaintances and new companions alike, the story of Haruka and Sora only gets more convoluted as their lives are slowly influenced by different acts of love, friendship, envy—and perhaps even lust.<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-10-04', '2010-12-20', 'Fall 2010', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/76216.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1487, 2080, '"Hiyoku no Hane (比翼の羽根)"', ' by eufonius', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5168, 2080, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5169, 2080, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5170, 2080, 14);

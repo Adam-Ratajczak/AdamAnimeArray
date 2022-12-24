@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Patients should be wary of the seductive Mayumi, with her spellbinding looks and devilishly short pink nurse uniform. On the other hand, the doctor seems to have three separate personalities: a child with an oversized lab coat an intelligent, youthful man with feminine traits and a selfish, outgoing green bear. While curing his patients in questionable ways, Dr. Irabu often tries to gain something from them outside of his profession—and in doing so, occasionally forgets his role as a doctor.<br>
 <br>As each patient struggles to face the nature of their distress, an obvious yet invisible thread ties their paths together.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-10-15', '2009-12-24', 'Fall 2009', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/18386.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (785, 1099, '"Upside Down"', ' by Denki Groove (電気グルーヴ)', 'js-theme-songs', 'https://open.spotify.com/track/6I5ZT6xsafL2dC7U6FIVrX')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1193, 1099, 1);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1210, 1099, 34);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1211, 1099, 4);

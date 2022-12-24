@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Upon moving into his aunt', CHAR(39), 's house, he discovers the cousin he never knew about: Erio Touwa. Despite being Makoto', CHAR(39), 's age, she couldn', CHAR(39), 't be more different: Erio chooses to wrap herself in a futon all day rather than to go to school. She even claims to be an alien, and with a speech pattern and personality to back it up, any chance of Makoto', CHAR(39), 's dreamt-of normal life is instantly tossed out the window.<br>
 <br>As he meets a string of other eccentric girls in town, Makoto must face the possibility of seeing his youth points in the red. However, he might be surprised by how thrilling an abnormal youth can be.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-04-15', '2011-07-01', 'Spring 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1799/114806.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (301, 410, '"Os-Uchuujin (Os-宇宙人)"', ' by Erio wo Kamatte-chan (エリオをかまってちゃん) (Asuka Oogame)', 'js-theme-songs', 'https://open.spotify.com/track/7HsV5OfoVNXrGuut2ajhl7');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (964, 410, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (965, 410, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (966, 410, 8);

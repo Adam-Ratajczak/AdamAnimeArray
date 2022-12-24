@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Trapped in her own web of lies and desperately trying to avoid humiliation, Erika explains her predicament to Kyouya, hoping he will pretend to be her boyfriend. But Kyouya is not the angel he appears to be: he is actually a mean-spirited sadist who forces Erika to become his "dog" in exchange for keeping her secret.<br>
 <br>Begrudgingly accepting his deal, Erika soon begins to see glimpses of the real Kyouya beneath the multiple layers of his outer persona. As she finds herself falling for him, she can', CHAR(39), 't help but question if he will ever feel the same way about her. Will Kyouya finally make an honest woman out of Erika, or is she destined to be a "wolf girl" forever?<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-10-05', '2014-12-21', 'Fall 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/67805.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (996, 1414, '"LOVE GOOD TIME"', ' by SpecialThanks', 'js-theme-songs', 'https://open.spotify.com/track/6XYur2KmzwfpOJy23y8ZnO')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (612, 1414, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3500, 1414, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3501, 1414, 7);

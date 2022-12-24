@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1395, CONCAT('Obey Me!'), CONCAT('Brothers Lucifer, Mammon, Leviathan, Satan, Asmodeus, Beelzebub, and Belphegor are among the most powerful demons in the Devildom, serving as officers on the student council at the Royal Academy of Diavolo (RAD). However, being avatars of the seven deadly sins, their behaviors often tend toward the extreme. Their everyday antics belie their high status and fearsome reputations among others of their kind. When viewed behind the scenes, the members of this family are more lovable—and laughable—than they first seem!<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2021-07-16', '2021-12-24', '', '5 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1416/113986.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (981, 1395, '"It's My Party"', ' by Obey Me! Boys', 'js-theme-songs', 'https://open.spotify.com/track/24faaHjQ1iDp5Xg8zkGGFc');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (603, 1395, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3463, 1395, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3464, 1395, 12);

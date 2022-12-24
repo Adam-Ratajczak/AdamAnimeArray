@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Unfortunately, the character she was reincarnated into—Catarina Claes—is the game', CHAR(39), 's main antagonist, who faces utter doom in every ending. Using her extensive knowledge of the game, she takes it upon herself to escape from the chains of this accursed destiny.<br>
 <br>However, this will not be an easy feat, especially since she needs to be cautious as to not set off death flags that may speed up the impending doom she is trying to avoid. Even so, to make a change that will affect the lives of everyone around her, she strives—not as the heroine—but as the villainess.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2020-04-05', '2020-06-21', 'Spring 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1483/107061.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1010, 1431, '"Otome no Route wa Hitotsu janai! (乙女のルートはひとつじゃない！)"', ' by angela', 'js-theme-songs', 'https://open.spotify.com/track/36NAPq2B1USSfNTW9vtNKa');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (619, 1431, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3548, 1431, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3549, 1431, 6);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Nonetheless, Gorou remains adamant to join. He becomes a practice pitcher for the Japanese national team, hoping to demonstrate his incredible speed and skills to the team', CHAR(39), 's manager. Fortunately, Gorou is given the chance to prove his worth: he must show an impressive performance in the upcoming practice match involving the veteran Japanese team and the young players who hope to replace them. <br>
 <br>The World Cup will bring together some of the strongest players from around the globe. It will also set the stage for Gorou', CHAR(39), 's long-awaited showdown with his longtime rival, Joe Gibson.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-01-10', '2009-06-27', 'Winter 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/75218.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (850, 1205, '"Hey! Hey! Alright"', ' by SCHA DARA PARR feat. Kaela Kimura', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (534, 1205, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2940, 1205, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2941, 1205, 6);

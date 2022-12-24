@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (465, CONCAT('Drifters (OVA)'), CONCAT('Despite the Ends’ attack on Verlina being successfully repelled, the war has not yet ended. With the monster armies regrouping, the Black King tightens his grasp on the already conquered territory. New conflicts erupt all across Orte, as its remaining forces struggle to retain control over long-oppressed demi-human races.<br>
 <br>While Ends grow more potent each day, Toyohisa Shimazu remains unconscious after heavy injuries suffered during the Battle of Verlina. Facing enemies on every side, humanity’s fate is still on a knife', CHAR(39), 's edge.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-12-23', NULL, '', '26 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1027/97819.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (332, 465, '"Gospel Of The Throttle 狂奔REMIX ver."', ' by Minutes Til Midnight', 'js-theme-songs', 'https://open.spotify.com/track/5SwIC7gpzXVthVaQ6iy3Z3')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (214, 465, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1134, 465, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1135, 465, 2);

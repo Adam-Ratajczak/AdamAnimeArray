@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1201, CONCAT('Majo no Tabitabi'), CONCAT('Since childhood, Elaina has always been fascinated by the stories written within her favorite book, especially those about Nike, a renowned witch who had numerous great travels across the world. Wanting to experience the awe of adventure herself, Elaina strives to become a witch, and despite the numerous trials that come her way, she eventually succeeds.<br>
 <br>Now a full-fledged witch, Elaina finally embarks on her long-awaited journey, in which she meets many people along the way, learning their various stories. Through all of this, she explores the world at its fullest—experiencing both its bright and dark sides—starting her legendary tale.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-02', '2020-12-18', 'Fall 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1802/108501.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (845, 1201, '"Literature (リテラチュア)"', ' by Reina Ueda ', 'js-theme-songs', 'https://open.spotify.com/track/1Oc8AYDtd0Hcpz8Ijl4JaT')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2929, 1201, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2930, 1201, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1300, 1201, 167);

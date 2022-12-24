@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1784, CONCAT('Sora wo Miageru Shoujo no Hitomi ni Utsuru Sekai'), CONCAT('To save both the Magical Kingdom and the Heavens and restore the flow of akuto, the flow of energy of everything, the Magical King Munto must follow a vision and find the girl Yumemi in the normal world. Yumemi herself is just a normal girl except that she is the only one who can see the islands of the Heavens floating above. When Munto appears before her she starts thinking about hers and others responsibility to the world.<br>
 <br>(Source: ANN)'), 1, '2009-01-14', '2009-03-11', 'Winter 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1221/118907.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1264, 1784, '"Anemoi (アネモイ)"', ' by eufonius', 'js-theme-songs', 'https://open.spotify.com/track/67mdoooIA1vY06nVtDaWqm');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4432, 1784, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4433, 1784, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4434, 1784, 7);

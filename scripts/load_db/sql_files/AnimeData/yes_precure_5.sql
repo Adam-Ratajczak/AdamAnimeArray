@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2070, CONCAT('Yes! Precure 5'), CONCAT('Yumehara Nozomi, a regular student, finds a magical book called the Dream Collet in the library and meets Coco and Nuts, two creatures from the Palmier Kingdom. They plead with Nozomi to restore their world, which has been destroyed by an organization called the Nightmares, by completing the Dream Collet and finding the 55 Pinkies to make any wish come true. Meanwhile, the Nightmares are moving into the real world. Once Nozomi agrees to help, Coco and Nuts transform her into the magical girl Cure Dream and turn four fellow students into her Pretty Cure team.<br>
 <br>(Source: ANN)'), 1, '2007-02-04', '2008-01-27', 'Winter 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/7535.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1480, 2070, '"Kirakira Shichatte My True Love (キラキラしちゃってMy True Love!)"', ' by Kanako Miyamoto', 'js-theme-songs', 'https://open.spotify.com/track/1TohZQho6JsNn5SJX44LYD');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (857, 2070, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5145, 2070, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5146, 2070, 12);

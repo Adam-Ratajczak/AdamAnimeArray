@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (926, CONCAT('Juushinki Pandora'), CONCAT('The series is set in a near-future world where the boundary between human being and AI is vague. A rapid biological evolution, similar to "Cambrian Explosion," is caused by one incident. This incident turns into the genesis of a new jostle for supremacy, and the influence of the evolution goes beyond biological framework and spreads to various kinds of materials and technologies. The era of massive evolution involving diverse existences, such as human, machines, and biotechnologies, is coming. Characters fight an existential war in such a world.<br>
 <br>(Source: ANN)'), 1, '2018-03-29', '2018-09-20', 'Spring 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1897/95230.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (659, 926, '"Sirius (シリウス)"', ' by BUMP OF CHICKEN', 'js-theme-songs', 'https://open.spotify.com/track/3de6SQfvlnNPGa8eyrAZrY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2243, 926, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2244, 926, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2245, 926, 3);

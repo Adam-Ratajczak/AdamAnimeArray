@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1871, CONCAT('Teekyuu 7'), CONCAT('Seventh season of the Teekyuu series.'), 1, '2016-01-12', '2016-03-29', 'Winter 2016', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/77830.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1332, 1871, '"Tsuppari-kun vs Sekitori-man (ツッパリくんvs関取マン)"', ' by Yuri (Yui Watanabe), Kanae (Suzuko Mimori), Nasuno (Kyoko Narumi), Marimo (Kana Hanazawa)', 'js-theme-songs', 'https://open.spotify.com/track/1qhcxlbAy7xcTDieXgYtY3');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (779, 1871, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4635, 1871, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4636, 1871, 19);

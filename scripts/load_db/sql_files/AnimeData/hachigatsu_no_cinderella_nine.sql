@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (676, CONCAT('Hachigatsu no Cinderella Nine'), CONCAT('In the game, the player takes the role of an unnamed former little senior league baseball ace who lost his or her baseball career after suffering an unspecified injury. The character moves to his or her grandmother', CHAR(39), 's hometown and enrolls in the local high school, resolved never to enter the world of baseball again. When the character meets Tsubasa Arihara, he or she is persuaded to be the manager of the school', CHAR(39), 's baseball team, and to take the team to the high school nationals at Koshien. <br>
 <br>(Source: ANN)'), 1, '2019-04-08', '2019-07-08', 'Spring 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1824/100449.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (479, 676, '"Etude"', ' by Mewhan', 'js-theme-songs', 'https://open.spotify.com/track/1Dfy389Z2eV4JD2hBTkbFP')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (748, 676, 23);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (716, 676, 13);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (717, 676, 27);

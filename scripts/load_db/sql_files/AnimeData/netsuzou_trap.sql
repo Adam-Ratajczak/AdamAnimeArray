@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1350, CONCAT('Netsuzou TRap'), CONCAT('High school students Yuma Okazaki and Hotaru Mizushina are childhood friends. With their respective boyfriends, Takeda and Fujiwara, their lives couldn', CHAR(39), 't be more perfect. From playing in school to going on group dates, it seems nothing can break their bond. <br>
 <br>However, during one such group date, Hotaru makes an unexpected move. While Takeda and Fujiwara are distracted, she begins stroking Yuma', CHAR(39), 's thighs. Taken aback by this peculiar action, Yuma awkwardly retreats to the toilets, followed shortly by her aggressor. Now in private, Hotaru forces the innocent Yuma into a locked cubicle and whispers into her ear: "You', CHAR(39), 'll be more nervous with a boy I', CHAR(39), 'll help you practice."<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-07-05', '2017-09-20', 'Summer 2017', '9 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/86667.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (948, 1350, '"Blue Bud Blue"', ' by Haruka Toujou', 'js-theme-songs', 'https://open.spotify.com/track/4YhoiTsNDpIv0JrVwlRDWa')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3357, 1350, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3358, 1350, 16);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3359, 1350, 7);

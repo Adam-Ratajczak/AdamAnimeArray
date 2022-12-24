@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (82, CONCAT('Ame-iro Cocoa Series: Ame-con!!'), CONCAT('The series follows Nozomu Tokura as he tries to get more sales to the cafe he recently opened with the new helpers he met.'), 1, '2017-10-04', '2017-12-20', 'Fall 2017', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1165/111716.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (49, 82, '"Aratanaru Makuake no Tame no Makuake ni yoru Kyoushikyoku ~Kimi ga Ireba Oretachi mo Egao Mugendai~ (新たなる幕開けのための幕開けによる狂詩曲～キミがいればオレたちも笑顔∞（無限大）～)"', ' by Fudanjuku', 'js-theme-songs', 'https://open.spotify.com/track/7odvjNhC6TEJ8nW2ossXPb')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (188, 82, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (189, 82, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (190, 82, 8);

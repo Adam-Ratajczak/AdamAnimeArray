@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While a transfer so close to graduation is unusual for most, it is business as usual for Eita Izumi. Due to his father', CHAR(39), 's work, he has never been able to stay in one place for very long. But as luck would have it, their most recent relocation has returned Eita to his hometown for his final semester of high school. For better or worse, it also sparks the rekindling of old relationships left behind in the past.<br>
 <br>With graduation already causing its own share of anxieties, Eita', CHAR(39), 's sudden arrival brings these students', CHAR(39), ' carefree days to an abrupt end. Long-forgotten memories, deeply buried emotions, and inspiring new passions—everything is brought to light in their bittersweet final semester.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-10-05', '2017-12-28', 'Fall 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/88234.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (653, 919, '"over and over"', ' by Nagi Yanagi', 'js-theme-songs', 'https://open.spotify.com/track/2TH64R5hZPzYA6PniQ37Is')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2227, 919, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2228, 919, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1001, 919, 145);

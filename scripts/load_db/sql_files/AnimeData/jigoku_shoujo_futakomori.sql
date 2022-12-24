@@ -1,8 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (904, CONCAT('Jigoku Shoujo Futakomori'), CONCAT('Ai Enma and her companions continue to offer their service of revenge against those who have wronged others, and the price is as steep as ever—for damning the offender to hell, the person exacting vengeance is sent to the abyss as well. As they cast soul after soul into the darkness, a new sinister force is watching them: a little girl named Kikuri.<br>
 <br>While Ai continues her duties, she meets a boy named Takuma Kurebayashi, known as the "Devil', CHAR(39), 's Child" because of the horrific events that occur around him. Unfortunately, Takuma', CHAR(39), 's reputation leads the townspeople to use him as a scapegoat for those who have been ferried off to hell. When things quickly spiral out of control, Ai must find a way to bring an end to this senseless violence, as it poses a threat to her very existence.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-10-07', '2007-04-07', 'Fall 2006', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/86975.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (638, 904, '"NightmaRe"', ' by SNoW', 'js-theme-songs', 'https://open.spotify.com/track/4SF2dVmTpz31rA44xBkSKJ');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (639, 904, '"Aizome"', ' by Mamiko Noto', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2189, 904, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2190, 904, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2191, 904, 10);

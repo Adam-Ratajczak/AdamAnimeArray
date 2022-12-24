@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>One day the bold and beautiful Ayame Himuro outwardly declares that she is in love with Shinya Yukimura, her fellow logical and level-headed scientist. Acknowledging his own lack of experience with romance, Yukimura questions what factors constitute love in the first place and whether he is in love with Himuro or not. Both clueless in the dealings of love, the pair begin to conduct detailed experiments on one another to test the human characteristics that indicate love and discern whether they demonstrate these traits toward each other.<br>
 <br>As Himuro and Yukimura begin their intimate analysis, can the two scientists successfully apply scientific theory, with the help of their friends, to quantify the feelings they express for one another?<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-11', '2020-03-28', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1432/103533.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1100, 1553, '"PARADOX"', ' by Sora Amamiya', 'js-theme-songs', 'https://open.spotify.com/track/2uD1r8BGGqTxFkikwu6OIK')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3858, 1553, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3859, 1553, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1670, 1553, 122);

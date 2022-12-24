@@ -1,6 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (26, CONCAT('Aa! Megami-sama! (TV) Specials'), CONCAT('Due to the recent events that happened on the last episodes of the season, the Goddess have some stability problems with their body systems. The always adult looking Urd becomes a little girl and has a fateful encounter with a boy, whereas little Skuld becomes an adult and wants to experiment adulthood together with Keiichi.'), 1, '2005-04-01', '2005-12-23', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/17893.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (18, 26, '"Open Your Mind ~Chiisana Hane Hirogete~ (OPEN YOUR MIND 〜小さな羽根ひろげて〜)"', ' by Yoko Ishida', 'js-theme-songs', 'https://open.spotify.com/track/5HLKyImHedzMaEwCdxkvmE');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (19, 26, '"Negai (願い)"', ' by Yoko Ishida', 'js-theme-songs', 'https://open.spotify.com/track/4zJlpBihEuy6c0HBIQfYbW');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (55, 26, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (56, 26, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (28, 26, 19);

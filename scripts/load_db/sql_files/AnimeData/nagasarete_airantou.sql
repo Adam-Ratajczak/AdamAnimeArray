@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1317, CONCAT('Nagasarete Airantou'), CONCAT('Ikuto Touhohin just had a fight with his old man, one that led him to make a rash decision to run away from home. He boards a ship, deciding to take a vacation, but the ship is suddenly hit by a huge storm—one that sends Ikuto overboard! When he regains consciousness, he realizes he is still alive on some island. An isolated island. An isolated island with nothing but girls. Beautiful girls. Stranded on an island with only girls, no electricity, gas, radio, television, like he was back in the stone age.<br>
 <br>(Source: AniDB)'), 1, '2007-04-05', '2007-09-27', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/75254.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (917, 1317, '"Days"', ' by Yui Horie', 'js-theme-songs', 'https://open.spotify.com/track/5Cux0BYbtpJfnJypx3fnbO');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (918, 1317, '"Say Cheese!"', ' by Yui Horie', 'js-theme-songs', 'https://open.spotify.com/track/2qiIu31y2LufjCdmVJJWS3');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (570, 1317, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3261, 1317, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3262, 1317, 9);

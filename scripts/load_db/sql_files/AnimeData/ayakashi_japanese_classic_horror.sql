@@ -1,6 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (143, CONCAT('Ayakashi: Japanese Classic Horror'), CONCAT('A collection of three classic Japanese horror stories: "Yotsuya Kaidan", the story of a wife betrayed by her husband who seeks vengeance even in death. "Tenshu Monogatari", the story of forbidden love between a goddess and a human, and "Bakeneko", the story of a mysterious cat monster with a vendetta against a certain family. <br>'), 1, '2006-01-13', '2006-03-24', 'Winter 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/11746.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (93, 143, '"HEAT ISLAND"', ' by Rhymester', 'js-theme-songs', 'https://open.spotify.com/track/25uP85QWp2IklPAGdSYJo3');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (94, 143, '"Haru no Katami (Memento of Spring)"', ' by Chitose Hajime', 'js-theme-songs', 'https://open.spotify.com/track/0pUpl5RZ94zn5pZFsrObyi');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (325, 143, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (326, 143, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (327, 143, 4);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (712, CONCAT('Hangyakusei Million Arthur'), CONCAT('Tales of old speak of the legends of Excalibur, a sacred sword. The sword is wielded by those who are worthy of its power, bestowing them extraordinary strength and granting them the title of Arthur. However, a divine miracle results in the creation of multiple Excaliburs, thus distorting the fabric of time.<br>
 <br>Aiming to revert time to its original course, a group of six Arthurs composed of Danchou, Renkin, Kakka, Yamaneko, Tekken, and Rurou are sent back in time when the abnormal Excaliburs were spawned. They are assigned with one sole task: to destroy the Excaliburs of the past—all of which total up to one million.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2018-10-25', '2018-12-27', 'Fall 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1679/96158.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (507, 712, '"Highlight (ハイライト)"', ' by Ayaka Ohashi', 'js-theme-songs', 'https://open.spotify.com/track/52iWk1oHxDRPKdaAEHulTt');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1740, 712, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1741, 712, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1742, 712, 9);

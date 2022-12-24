@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (344, CONCAT('ClassicaLoid 2nd Season'), CONCAT('Second season of ClassicaLoid.'), 1, '2017-10-07', '2018-03-24', 'Fall 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/88678.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (242, 344, '"Shuppatsu Shinkou!! Densetsu e ~From the New World Chapter 4~ (出発進行!!伝説へ ～新世界から第4楽章より～)"', ' by Chisato feat. Miku', 'js-theme-songs', 'https://open.spotify.com/track/6FbjQb27ipOt02oEUkBdYR');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (388, 344, 27);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (350, 344, 23);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (351, 344, 6);

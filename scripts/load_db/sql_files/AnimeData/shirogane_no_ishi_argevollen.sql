@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>A new recruit, Susumu Tokimune, is waiting for his first battle. He takes the lead without thinking of the possibility of being trapped, and has a fatal encounter with engineer Jamie Hazaford and the Silver Trailkrieger, Argevollen.<br>
 <br>The encounter takes place in a corner of the world where fighting has become the norm. This small coincidence is going to change the future of Tokimune', CHAR(39), 's Independent 8th platoon, as well as the course of the war.<br>
 <br>(Source: Showgate)'), 1, '2014-07-03', '2014-12-18', 'Summer 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/64453.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1220, 1727, '"Tough Intention"', ' by KOTOKO', 'js-theme-songs', 'https://open.spotify.com/track/1e0lzqLIsXpxhhJZvGe2kA')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1866, 1727, 96);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31073, 1727, 1, CONCAT('Encounter'), NULL, 'https://drive.google.com/file/d/19_avcfCsGoWs26_hnfZfgDHTAM0U8UST/preview');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31074, 1727, 2, CONCAT('Awakening'), NULL, 'https://ebd.cda.pl/620x395/5319939dd');

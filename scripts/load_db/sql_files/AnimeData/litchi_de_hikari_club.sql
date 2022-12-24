@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1127, CONCAT('Litchi DE Hikari Club'), CONCAT('Litchi DE Hikari Club takes place in an alternate reality where the Hikari Club does not fall into disarray after the completion of Litchi, the intelligent humanlike robot the club invented to kidnap girls.<br>
 <br>The cult-like Hikari Club has had its ups and downs. Led by the enigmatic, beauty-obsessed Hiroyuki "Zera" Tsunekawa, the club has finally succeeded in using their fruit-powered robot, Litchi, to kidnap the beautiful Kanon. After accomplishing their goals, the Hikari Club has little to do other than delight in their newfound lives. From selling the technology that allows Litchi to run on lychee fruit, to modifying the robot to perform different tasks, there', CHAR(39), 's no telling what antics the Hikari Club will get up to next!<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2012-10-02', '2012-11-20', 'Fall 2012', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1083/116746.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (805, 1127, '"Haikyo no Teiou (廃墟の☆帝王)"', ' by Litchi ☆ Hikari Club', 'js-theme-songs', 'https://open.spotify.com/track/6kqiZbPHDGlpiR01Np4VCi');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2738, 1127, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2739, 1127, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2740, 1127, 11);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1868, CONCAT('Teekyuu 3'), CONCAT('Third season of Teekyuu series.'), 1, '2013-10-06', '2013-12-22', 'Fall 2013', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/73503.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1330, 1868, '"Nufutto Teekyuu Potlatch (ぬふっとてーきゅうポトラッチ)"', ' by Naive', 'js-theme-songs', 'https://open.spotify.com/track/4b97JiQwit48h8Vn2psTkL');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (776, 1868, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4629, 1868, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4630, 1868, 19);

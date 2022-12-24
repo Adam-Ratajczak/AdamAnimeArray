@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Hazakura Academy middle school student Hiro Amanokawa believes these sightings are merely an urban legend. However, as the incidents start to increase in frequency, he is reminded of the day his father suddenly vanished, with strange digital watches serving as the only relics of his disappearance. Much like the other sightings, what happened to Hiro', CHAR(39), 's father cannot be explained by conventional logic. <br>
 <br>One day, when a fellow student in the academy is attacked by a Hologram Ghost, Hiro and his friend Kiyoshirou Higashimitarai decide to look into the matter. Little does Hiro know that this investigation will be their first step toward discovering a dangerous world previously unknown to mankind.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2021-10-03', NULL, 'Fall 2021', '23 min.', 'https://cdn.myanimelist.net/images/anime/1907/118797.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (307, 427, '"FACTION "', ' by Wienners', 'js-theme-songs', 'https://open.spotify.com/track/31F8z6YwxaplOZsk2Dcxoo');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (193, 427, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1011, 427, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1012, 427, 12);

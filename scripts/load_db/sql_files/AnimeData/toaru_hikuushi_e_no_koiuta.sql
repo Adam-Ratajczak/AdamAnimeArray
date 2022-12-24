@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1910, CONCAT('Toaru Hikuushi e no Koiuta'), CONCAT('In order to uncover the "end of the sky," as spoken of in ancient mythology, Kal-el Albus is sent to Isla, an island in the sky. There he attends Cadoques High', CHAR(39), 's Aerial Division, where he enjoys a carefree life with his schoolmates. That is...until a surprise attack by the air tribe drags Isla into a bloody war.<br>
 <br>(Source: NIS America)'), 1, '2014-01-06', '2014-03-31', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/56939.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1361, 1910, '"azurite"', ' by petit milady', 'js-theme-songs', 'https://open.spotify.com/track/64r1iMOzm26wFBmpZ5lkya')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4742, 1910, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4743, 1910, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4744, 1910, 7);

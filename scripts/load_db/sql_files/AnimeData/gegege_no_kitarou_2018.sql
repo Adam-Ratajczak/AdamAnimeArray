@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (585, CONCAT('Gegege no Kitarou (2018)'), CONCAT('Nearly twenty years into the 21st century, people have forgotten the existence of youkai. When a number of unexplainable phenomena plague adults of the human world with confusion and chaos, thirteen-year-old Mana writes a letter to the Youkai Post in search of answers, only to be greeted by Gegege no Kitarou...<br>
 <br>(Source: Crunchyroll)'), 1, '2018-04-01', '2020-03-29', 'Spring 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1273/93610.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (413, 585, '"Gegege no Kitarou (ゲゲゲの鬼太郎)"', ' by Kiyoshi Hikawa', 'js-theme-songs', 'https://open.spotify.com/track/2YhDpZ2jehDKUNFSN69oOM')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (261, 585, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1448, 585, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1449, 585, 11);

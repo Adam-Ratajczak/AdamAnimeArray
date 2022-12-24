@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1258, CONCAT('Military!'), CONCAT('The story takes place during a conflict between the Krakozhia Dukedom and the Grania Republic. In the midst of the fighting, a savior appears to the Krakozhia Dukedom, and it is a high school student named Yano Souhei. Two female soldiers, First Lieutenant Ruto and Second Lieutenant Haruka, appear in tanks to intrude on Souhei', CHAR(39), 's everyday life, followed by the enemy soldier Shachirofu, all of whom use firearms without hesitation at his house.<br>
 <br>(Source: ANN)'), 1, '2015-01-07', '2015-03-25', 'Winter 2015', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/68837.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (879, 1258, '"Militarism! M870 ver. (みりたりずむ! M870ver.)"', ' by Rutgalnikov Chuui (Nao Touyama)', 'js-theme-songs', 'https://open.spotify.com/track/5OUwObZbZTAPa1T4Whj9Yc');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (550, 1258, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3085, 1258, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3086, 1258, 8);

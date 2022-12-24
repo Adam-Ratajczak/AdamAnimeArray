@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (941, CONCAT('Kaitou Joker 2nd Season'), CONCAT('Second season in the Kaitou Joker anime series.<br>
 <br>The thief Mysterious Joker doesn', CHAR(39), 't just steal things. An audacious and elusive miracle-maker, he travels the world searching for treasure with his partner and cook Hachi. As they circle the globe, they must avoid traps set by the police and compete in various competitions to reach their final goal, the Timeslip Treasure.<br>
 <br>(Source: ANN)'), 1, '2015-04-06', '2015-06-29', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/72812.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (668, 941, '"Kaitou Miracle Shounen Boy (怪盗ミラクル少年ボーイ)"', ' by Arukarider (アルカライダー)', 'js-theme-songs', 'https://open.spotify.com/track/7DL69MlVgFUVrIHTSnRreD')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (413, 941, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2278, 941, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2279, 941, 7);

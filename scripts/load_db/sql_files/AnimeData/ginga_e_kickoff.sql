@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (607, CONCAT('Ginga e Kickoff!!'), CONCAT('The story follows a boy who was in a soccer team, but it was disbanded due to not enough players. However, after the boy meets a female professional soccer player, he aims to bring his soccer team back.<br>
 <br>(Source: AniDB)'), 1, '2012-03-26', '2013-02-26', 'Spring 2012', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1525/120263.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (431, 607, '"Ame Tokidoki Hare Nochi Niji (雨ときどき晴れのち虹)"', ' by Fudanjuku ', 'js-theme-songs', 'https://open.spotify.com/track/1kLuJbHxSwcvOg15M4Yibj');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (266, 607, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (676, 607, 61);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11120, 607, 1, CONCAT('Encounter'), '2012-03-26', 'https://vk.com/video_ext.php?oid=168650746&id=162869608&hash=f9aa2c86246596f0&hd=2');

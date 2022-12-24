@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1429, CONCAT('Oshi ga Budoukan Ittekuretara Shinu'), CONCAT('A girl is obsessed with her favorite idol, a minor member of a less popular group, enough that she says she', CHAR(39), 'd die to see her play at Budoukan. '), 1, '2020-01-10', '2020-03-27', 'Winter 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1139/104708.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1009, 1429, '"Clover wish"', ' by ChamJam', 'js-theme-songs', 'https://open.spotify.com/track/6IdJ9lCeXEbjE3O7uVLzDr')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (618, 1429, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3544, 1429, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3545, 1429, 16);

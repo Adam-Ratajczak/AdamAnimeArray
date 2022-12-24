@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (243, CONCAT('Boku no Hero Academia 2nd Season'), CONCAT('At UA Academy, not even a violent attack can disrupt their most prestigious event: the school sports festival. Renowned across Japan, this festival is an opportunity for aspiring heroes to showcase their abilities, both to the public and potential recruiters.<br>
 <br>However, the path to glory is never easy, especially for Izuku Midoriya—whose quirk possesses great raw power but is also cripplingly inefficient. Pitted against his talented classmates, such as the fire and ice wielding Shouto Todoroki, Izuku must utilize his sharp wits and master his surroundings to achieve victory and prove to the world his worth.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-01', '2017-09-30', 'Spring 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/85221.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (173, 243, '"Peace Sign (ピースサイン)"', ' by Kenshi Yonezu', 'js-theme-songs', 'https://open.spotify.com/track/364JzOajs76bJymjHm3sVY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (119, 243, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (273, 243, 77);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (267, 243, 13);

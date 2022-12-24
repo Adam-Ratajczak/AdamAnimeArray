@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>His shenanigans are eventually stopped by Nao Tomori—the headstrong student council president from Hoshinoumi Academy—who sees through his deceit. Through coercion, Nao convinces Yuu to transfer to Hoshinoumi and join the student council. Hoshinoumi Academy is secretly an institution created for adolescents who possess supernatural abilities—with the student council serving as a means of locating those who abuse their powers.<br>
 <br>With Yuu begrudgingly assisting in council affairs, the group sets out to find and protect new ability users from harm. However, as they further investigate the abilities, their findings entangle them in far more complicated matters than they could ever imagine.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2015-07-05', '2015-09-27', 'Summer 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/74683.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (218, 306, '"Kimi no Moji (君の文字)"', ' by Aoi Tada', 'js-theme-songs', '');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (344, 306, 52);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (325, 306, 13);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (326, 306, 29);

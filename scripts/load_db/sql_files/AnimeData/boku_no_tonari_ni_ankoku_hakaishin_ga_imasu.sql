@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Their reunion should be a joyous moment, if not for the fact that these fantasied heroes are just products of Kabuto', CHAR(39), 's delusions. As the fictional "Gestöber," Seri finds himself in various embarrassing situations due to Kabuto', CHAR(39), 's antics that sometimes grow out of his control. Moreover, his classmate Utsugi Tsukimiya joins the fray with his absurdly accurate mind-reading abilities, slowly destroying Seri', CHAR(39), 's social life.<br>
 <br>Seri tries hard to stay away from them, refusing to acknowledge their shenanigans, however with Kabuto', CHAR(39), 's chuunibyou and Utsugi', CHAR(39), 's unpredictability, he is only bound to be swept by the craziness coming his way.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-11', '2020-03-28', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1848/103547.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (177, 248, '"Take mo' Chance"', ' by all at once', 'js-theme-songs', 'https://open.spotify.com/track/4H3wFEqxpE5uVLhMV5A50J')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (123, 248, 5);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (566, 248, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (567, 248, 8);

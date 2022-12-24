@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Usagi is appointed as a guardian of justice and is tasked with the search for the legendary Silver Crystal, a magical artifact that holds immense power, as well as finding the other Sailor Guardians and the lost princess of Luna', CHAR(39), 's home, the Moon Kingdom. Her mission isn', CHAR(39), 't without opposition, however Queen Beryl, ruler of the Dark Kingdom, wants to claim the Silver Crystal and take its power for her own.<br>
 <br>Though she still has to worry about her school, family, and love life, it is up to Sailor Moon and the other Sailor Guardians to save the day!<br>
 <br>[Written by MAL Rewrite]'), 4, '2014-07-05', '2015-07-18', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/60085.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (154, 215, '"MOON PRIDE"', ' by Momoiro Clover Z', 'js-theme-songs', 'https://open.spotify.com/track/2vKK2J9JLSHXwxz2njJvph')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (101, 215, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (510, 215, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (511, 215, 7);

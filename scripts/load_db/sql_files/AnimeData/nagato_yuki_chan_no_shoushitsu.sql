@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While walking back to her apartment on a cold December day, Yuki is coerced into drawing strange symbols on the ground by a girl supposedly attempting to capture Santa Claus. The girl introduces herself as Haruhi Suzumiya, an eccentric student from the prestigious Kouyouen Academy who is on the hunt for aliens, time travelers, and espers. When Haruhi and her friend Itsuki Koizumi make a sudden appearance in the clubroom, they declare themselves as official members of the Literary Club, with Haruhi taking up residence as the executive president.<br>
 <br>With the tranquil days of the Literary Club now behind them, Yuki and her friends get caught up in a series of misadventures under Haruhi', CHAR(39), 's leadership—with each incident bringing Yuki and Kyon closer than ever before.<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-04-04', '2015-07-18', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/73527.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (919, 1318, '"Fure Fure Mirai (フレ降レミライ)"', ' by Kitakou Bungei-bu Joshikai (北高文芸部女子会)', 'js-theme-songs', 'https://open.spotify.com/track/6xa3DBxm9e8CtS4kmZdn8L')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (571, 1318, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3265, 1318, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3266, 1318, 7);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (785, CONCAT('Honobono Log'), CONCAT('Some of us are fortunate enough to have a partner to confide in on our bad days. In even the most devastating times, we can depend on our comrades for support. Others are incredibly lucky to have a special someone that they can just randomly embrace. No matter the situation, there always tends to be a close ally to help us get by.<br><br>Honobono Log showcases the best and worst of couples and families, enticing romantic-comedy lovers with various relatable situations.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-06-07', '2016-06-18', 'Spring 2016', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1307/121781.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (562, 785, '"morning"', ' by Ame no Parade', 'js-theme-songs', 'https://open.spotify.com/track/3OhHzbk9y4ebI5EIy76n0k')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1934, 785, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1935, 785, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (862, 785, 28);

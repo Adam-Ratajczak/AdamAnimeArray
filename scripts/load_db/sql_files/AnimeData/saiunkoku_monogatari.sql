@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Shuurei is called to assist Ryuuki Shi, the new emperor who is known for slacking on his duties and preferring the company of men. Tempted by the generous compensation, she readily accepts the chance to become the young emperor', CHAR(39), 's consort for six months. Luckily, she is not alone as Seiran Shi, her trusty friend, joins her as Ryuuki', CHAR(39), 's bodyguard. While tasked with transforming the new emperor into a responsible ruler, court life and politics prove troublesome as Shuurei faces the challenges of her new life.<br>
 <br>Set in a fictional country, Saiunkoku Monogatari centers on the idea of meaningful leadership, its adversities and the rewards that come alongside a prospering nation.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-04-08', '2007-02-24', 'Spring 2006', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1/957.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1123, 1593, '"Hajimari no Kaze"', ' by Ayaka Hirahara', 'js-theme-songs', 'https://open.spotify.com/track/0SQ7iWDLhIuOewlmMaWkeL');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1124, 1593, '"Saikou no Kataomoi"', ' by Sachi Tainaka', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3966, 1593, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3967, 1593, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3968, 1593, 10);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Integra', CHAR(39), 's vast army, however, pales in comparison with her ultimate weapon: the vampire Alucard, who works against his own kind as an exterminator for Hellsing. With his new vampire servant, Seras Victoria, at his side, Alucard must battle not only monsters, but all those who stand to oppose Hellsing, be they in the guise of good or evil.<br>
 <br>In a battle for mankind', CHAR(39), 's survival, Hellsing Ultimate proves that appearances are not all they may seem, and sometimes the greatest weapon can come in the form of one', CHAR(39), 's worst nightmare.<br>
 <br>[Written by MAL Rewrite]'), 3, '2006-02-10', '2012-12-26', '', '49 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/7333.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (529, 736, '"SCARS"', ' by Hayato Matsuo, performed by the Warsaw Philharmonic Orchestra', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (341, 736, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1804, 736, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1805, 736, 11);

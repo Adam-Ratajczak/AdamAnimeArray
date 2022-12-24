@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>What if Beelzebub is not as evil as initially thought? What if he was obsessed with fluffy things? And what if Beelzebub is actually a woman? <br>
 <br>That is what new assistant Myurin discovers when he is hired to serve Her Majesty Beelzebub. She may know exactly what to do to keep Pandemonium running like clockwork, but whenever she leaves the professionalism of the office, the girl needs some assistance in order to function like a normal... devil. As much as Myurin can', CHAR(39), 't stand being unprofessional, he is secretly obsessed with her adorable antics, and his new job teaches him that everything is not exactly what it seems, especially with the other head devils of Pandemonium.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2018-10-11', '2018-12-27', 'Fall 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1827/95738.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (143, 200, '"Pink Lemonade (ピンクレモネード)"', ' by Sangatsu no Phantasia', 'js-theme-songs', 'https://open.spotify.com/track/23URlbR7WyCNCgfaFWEz6h');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (94, 200, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (475, 200, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (476, 200, 9);

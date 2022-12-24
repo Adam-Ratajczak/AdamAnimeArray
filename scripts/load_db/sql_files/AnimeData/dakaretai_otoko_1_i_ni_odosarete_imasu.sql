@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>All this animosity comes to a head, however, when Junta catches Takato in a rather vulnerable drunken state. Endangering his own public image, Takato confronts the junior actor with harsh words and angry comments—an opportunity Junta takes every advantage of. With the famous actor Takato Saijou now on video picking a fight with a co-star, Junta has the perfect means to blackmail him.<br>
 <br>Asking the price of his enemy', CHAR(39), 's silence, Takato is shocked to find that his motivation lies far from advancing his career instead, Junta', CHAR(39), 's terms are those that can only be realized in the bedroom!<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2018-10-06', '2018-12-29', 'Fall 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1402/95620.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (267, 374, '"Mukanzen Monochlogue (不完全モノクローグ)"', ' by Tomohisa Sako', 'js-theme-songs', 'https://open.spotify.com/track/5hcRd7sC8xfs0B1Ri8B1v4');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (868, 374, 17);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (869, 374, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (870, 374, 6);

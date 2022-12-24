@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (10, CONCAT('3D Kanojo: Real Girl 2nd Season'), CONCAT('Second season of 3D Kanojo: Real Girl.'), 1, '2019-01-09', '2019-03-27', 'Winter 2019', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1237/113435.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (8, 10, '"Futari nara (二人なら)"', ' by BiSH', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (7, 10, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (18, 10, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (19, 10, 7);

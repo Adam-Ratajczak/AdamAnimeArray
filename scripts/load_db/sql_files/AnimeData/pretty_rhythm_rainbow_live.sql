@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1495, CONCAT('Pretty Rhythm: Rainbow Live'), CONCAT('Naru Ayase is an 8th grader who can see the colors of music when she listens to it. For Naru, who is extremely good at decorating, becoming the owner of a shop like Dear Crown was her dream. One day, she finds out that the manager of a newly-opened shop is recruiting middle school girls who can do Prism Dance, and immediately applies. Naru begins to Prism Dance at the audition, and an aura she', CHAR(39), 's never experienced spreads out in front of her. At that moment, a mysterious girl named Rinne asks her if she can see "rainbow music."<br>
 <br>(Source: ANN)'), 1, '2013-04-06', '2014-03-29', 'Spring 2013', '21 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/73957.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1059, 1495, '"BOY MEETS GIRL"', ' by Prizmmy☆', 'js-theme-songs', 'https://open.spotify.com/track/0yTGATb9yTRDWK0iL3bo5D')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (648, 1495, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3725, 1495, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3726, 1495, 7);

@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Episode 2: The plot follows the player and Matoi as they try to unravel a dark conspiracy regarding the origin and purpose of ARKS.<br>
 <br>Episode 3: The discovery of the planet Harukotan brought a new quest into the fray, as the peace between the Shironian and Kuronites that dwell in the planet is disturbed by the Kuronites', CHAR(39), ' sudden attack. The newly-reformed ARKS is tasked to investigate the reason behind it all, and it seems like the truth is more complicated and horrifying than expected... <br>
 <br>(Source: phantasystar.fandom.com) '), 1, '2019-10-07', '2020-03-30', 'Fall 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1923/99744.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1037, 1462, '"Destiny"', ' by Aimee Blackschleger', 'js-theme-songs', 'https://open.spotify.com/track/4aVMWIssq6Pk8Aj4y7rRrr')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3629, 1462, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3630, 1462, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1568, 1462, 5);

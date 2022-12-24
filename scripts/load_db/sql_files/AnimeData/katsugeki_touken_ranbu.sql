@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (979, CONCAT('Katsugeki/Touken Ranbu'), CONCAT('In 1863, Izuminokami Kanesada and his partner, Horikawa Kunihiro, arrive in the streets of Edo from the future to investigate their master', CHAR(39), 's reports of an upcoming enemy invasion. As humanoid manifestations of the famous Toshizou Hijikata', CHAR(39), 's swords, they have been tasked with protecting history from the Retrograde Army that seeks to alter it. Soon enlisting the help of other sword warriors, they continuously battle the mysterious army throughout the Bakumatsu period.<br>
 <br>However, their journey will not be an easy one. Fraught with blood and betrayal in the chaotic era closest to their hearts, the duo will be forced to make difficult decisions with everything they care about on the line. <br>
 <br>[Written by MAL Rewrite]'), 1, '2017-07-02', '2017-09-24', 'Summer 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/87984.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (691, 979, '"Hikari Tatsu Ame (ヒカリ断ツ雨)"', ' by Soma Saito', 'js-theme-songs', 'https://open.spotify.com/track/7shV8uSYLKanWtdURRBf48')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2370, 979, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2371, 979, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1065, 979, 4);

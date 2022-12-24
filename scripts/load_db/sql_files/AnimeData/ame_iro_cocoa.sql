@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (81, CONCAT('Ame-iro Cocoa'), CONCAT('Aoi Tokura is a server at Rainy Color, a cozy and diverse cafe known for its hot cocoa. Along with barista Shion Koga, Aoi serves a small crowd of regulars who are attracted by his girlish good looks. When two handsome college students start frequenting the cafe as well, Aoi cannot help but be drawn into their lives.<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-04-05', '2015-06-21', 'Spring 2015', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1957/111714.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (48, 81, '"Rainy cocoa"', ' by Aoi Tokura (Hiro Shimono)', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (186, 81, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (187, 81, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (93, 81, 48);

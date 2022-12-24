@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The initial transfer is a success. However, Seiichi Hiiragi, who suffers from his classmates', CHAR(39), ' constant bullying due to his somewhat undesirable appearance, is left behind as no one is willing to be his teammate. Nevertheless, the self-proclaimed god decides to send Seiichi to the parallel world and lets him join his peers. Unfortunately, this fateful ordeal causes Seiichi to arrive at a location deep in the forest, far not only from his schoolmates but from human civilization as well.<br>
 <br>Desperately searching for a way to change his predicament, Seiichi', CHAR(39), 's miserable days only seem to continue to worsen. Yet when all hope seems lost, Seiichi discovers a strange fruit known as the "Fruit of Evolution"—which may be his first step toward a significantly better future.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-10-05', '2021-12-21', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1537/117590.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1213, 1715, '"EVOLUTiON"', ' by Yoshino Nanjo', 'js-theme-songs', 'https://open.spotify.com/track/7MCYLw2nHOgvA8cRbI1Cme')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4258, 1715, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4259, 1715, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4260, 1715, 7);

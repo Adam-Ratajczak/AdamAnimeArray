@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1463, CONCAT('Phantom in the Twilight'), CONCAT('Set in modern day London, the story takes place in a world where "Shadows" are born from human fear and anxiety. A young girl arrives to study abroad, only to be caught in a bizarre incident as she enters university. In a city with no acquaintances, the helpless girl wanders into "Café Forbidden," a mysterious café that exclusively opens at midnight. She meets an assortment of handsome men employed at the café, where guardians who protect the boundary between humans and shadow convene.<br>
 <br>(Source: MAL News)'), 1, '2018-07-10', '2018-09-25', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1156/93567.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1038, 1463, '"Flowery Song"', ' by Jiro Wang (汪東城)', 'js-theme-songs', 'https://open.spotify.com/track/6Wd8teVsyULyDMzihQLGcY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3631, 1463, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3632, 1463, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1569, 1463, 37);

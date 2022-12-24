@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1739, CONCAT('Shoumetsu Toshi'), CONCAT('One day, a city suddenly disappears. Takuya, a professional by-the-contract courier and lone wolf, meets Yuki, the only survivor from the city', CHAR(39), 's extinction. The two rely on a message from Yuki', CHAR(39), 's father, who was heard to be missing, and head toward the disappeared city, Lost. <br>
 <br>However, unexpected obstacles strike before the pair, with the reality especially shocking for Yuki. Before them are the feelings of those left behind, a mysterious group manipulating in the shadows, and unveiling the hidden conspiracy. Takuya and Yuki, who both were initially strangers, would deepen their bond during the journey and unravel the mystery of the Lost city. <br>
 <br>(Source: MAL News)'), 1, '2019-04-07', '2019-06-23', 'Spring 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1411/111363.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1231, 1739, '"Kotae (答)"', ' by Mao Abe', 'js-theme-songs', 'https://open.spotify.com/track/1u2PV267rBn3wAzqIQwcvf')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4320, 1739, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4321, 1739, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4322, 1739, 6);

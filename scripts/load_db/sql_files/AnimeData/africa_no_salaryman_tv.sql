@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (35, CONCAT('Africa no Salaryman (TV)'), CONCAT('Africa no Salaryman is a slapstick workplace comedy that follows the adventures of kind Lion, jaded Lizard, and perverted Toucan, as they trudge through office life while also becoming caught up in antics no regular office worker should. <br>
 <br>Of course, most of these are the fault of Toucan, whose selfish actions and lack of filter still haven', CHAR(39), 't gotten him fired. It', CHAR(39), 's up to Lizard and Lion to keep themselves out of trouble and hang on to their jobs at the office. But trouble is never too far away from these savannah-treading folk.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-10-07', '2019-12-23', 'Fall 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1937/102309.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (24, 35, '"Soul Flag"', ' by Hiro Shimono', 'js-theme-songs', 'https://open.spotify.com/track/1DvqDznMl6WKQuZXliI76f')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (82, 35, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (83, 35, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (39, 35, 26);

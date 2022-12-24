@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (295, CONCAT('Cardfight!! Vanguard G'), CONCAT('Taking place after a three-year time skip, the series will follow Shindou Kurono, Kiba Shion, and Anjou Tokoha as the new protagonists of G.<br>
 <br>Kurono uses the never-before-seen clan Gear Chronicle, which brings together the destinies of these three toward an "impossible future, an impossible self signifying ', CHAR(39), 'Generation.', CHAR(39), '"<br>
 <br>(Source: vanguardus.blogspot.com, edited)'), 1, '2014-10-26', '2015-10-04', 'Fall 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1330/125016.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (208, 295, '"BREAK IT!"', ' by Mamoru Miyano', 'js-theme-songs', 'https://open.spotify.com/track/0cQi2XrN8eULqULqXLK8LU')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (332, 295, 23);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4980, 295, 1, CONCAT('Chrono Shindou'), NULL, 'https://streamtape.com/e/RjeVdbkxZkhdwQX/');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4981, 295, 2, CONCAT('Kamui Katsuragi'), NULL, 'https://streamtape.com/e/DemaaG4VegFkPlQ/');

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The only two who dare rebel against Oda are the "One-eyed Dragon of Oshu" Masamune Date, and the distinguished but hot-blooded warrior of the Takeda clan, Yukimura Sanada. Though they share the goal of preventing Oda from unifying the domains, Masamune and Yukimura cannot see eye-to-eye. Equally skilled in combat, mutual admiration for one another causes these two feuding warriors to forge a fierce rivalry, thwarting any attempts to form a united front against the Demon King of Owari. <br>
 <br>With Oda', CHAR(39), 's forces closing in on their respective territories, Masamune and Yukimura reluctantly learn to put aside their differences and fight together against the threatening usurpator.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2009-04-02', '2009-06-18', 'Spring 2009', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/21849.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1167, 1656, '"JAP"', ' by abingdon boys school', 'js-theme-songs', 'https://open.spotify.com/track/0tI8OEkoaFGVF0tLcyoYYD')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1782, 1656, 2);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1823, 1656, 31);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1824, 1656, 24);

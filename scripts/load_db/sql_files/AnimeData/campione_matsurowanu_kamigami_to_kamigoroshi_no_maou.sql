@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Sixteen-year-old high school student Godou Kusanagi travels to Italy at the request of his grandfather to return a particular tablet to an acquaintance for safekeeping. Godou does not expect to get drawn into a battle between two Heretic Gods alongside Erica Blandelli, a self-proclaimed witch fighting to protect people. Fortunately, he manages to defeat the god of war in mortal combat and becomes a "Campione"—or "God Slayer"—whose duty is to fight Heretic Gods to save humanity.<br>
 <br>Godou', CHAR(39), 's new status as a Campione attracts a bevy of Gods who wish to challenge him and a band of devout followers—mostly women—who are willing to aid him in his battles. Campione!: Matsurowanu Kamigami to Kamigoroshi no Maou follows Godou as he tackles dueling deities in a conflict between Heaven and Earth.<br>
 <br>[Written by MAL Rewrite]'), 1, '2012-07-06', '2012-09-28', 'Summer 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/75662.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (201, 282, '"Raise"', ' by Yui Ogura', 'js-theme-songs', 'https://open.spotify.com/track/6YpiGHx39pjeEaaGXa8yda');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (657, 282, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (658, 282, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (659, 282, 7);

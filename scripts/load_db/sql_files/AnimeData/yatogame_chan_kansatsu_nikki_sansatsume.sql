@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2069, CONCAT('Yatogame-chan Kansatsu Nikki Sansatsume'), CONCAT('Third season of Yatogame-chan Kansatsu Nikki.'), 1, '2021-01-10', '2021-03-28', 'Winter 2021', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1389/111080.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1479, 2069, '"Zassou Tamashii Namen na yo! (雑草魂なめんなよ！)"', ' by Taiki', 'js-theme-songs', 'https://open.spotify.com/track/6ku5idNmzouPAo70P2Xvh1');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (856, 2069, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5143, 2069, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5144, 2069, 8);

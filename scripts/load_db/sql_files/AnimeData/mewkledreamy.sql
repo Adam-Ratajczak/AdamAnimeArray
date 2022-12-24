@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1250, CONCAT('Mewkledreamy'), CONCAT('The story begins when a middle school girl named Yume sees something fall from the sky, and meets a pale violet-colored kitten named Mew. It turns out that Mew has the power of "Yume Synchro" (Dream Synchro), 1, the girl and Mew collect Dream Stones. <br>
 <br>(Source: ANN)'), 2, '2020-04-05', '2021-04-04', 'Spring 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1806/105775.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (874, 1250, '"Mirai Kuru Kuru Yume Kururu (ミライくるくるユメくるる)"', ' by Maria Sawada (澤田真里愛)', 'js-theme-songs', 'https://open.spotify.com/track/2YOuEZ7vvlPwdrPzrFbZQM')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (547, 1250, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3058, 1250, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3059, 1250, 9);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (72, CONCAT('Alice to Zouroku'), CONCAT('Sana is not an ordinary little girl she possesses a special ability known as "Alice', CHAR(39), 's Dream." Due to her power, which allows her to create anything from her imagination, all that she knows is the laboratory where she is a test subject. Wishing to experience the outside world, she escapes and meets a stubborn old florist named Zouroku Kashimura in a convenience store. All too soon, her pursuers catch up and Zouroku is roped into Sana', CHAR(39), 's troubles.<br>
 <br>However, far from trying to distance himself, Zouroku extends a hand to help Sana. Following his values and sense of justice, he even gives the pursuers a piece of his mind! Zouroku then offers Sana a place to stay, beginning the daily life and struggles of the unlikely duo.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-02', '2017-06-25', 'Spring 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/84598.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (42, 72, '"Wonder Drive (ワンダードライブ)"', ' by ORESAMA', 'js-theme-songs', 'https://open.spotify.com/track/5Ee6EkttrTttwY5wiKkTrz');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (39, 72, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (165, 72, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (166, 72, 4);

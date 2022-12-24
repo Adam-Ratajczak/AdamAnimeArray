@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Several millennia later, Taiju awakens to find the modern world completely nonexistent, as nature has flourished in the years humanity stood still. Among a stone world of statues, Taiju encounters one other living human: his science-loving friend Senkuu, who has been active for a few months. Taiju learns that Senkuu has developed a grand scheme—to launch the complete revival of civilization with science. Taiju', CHAR(39), 's brawn and Senkuu', CHAR(39), 's brains combine to forge a formidable partnership, and they soon uncover a method to revive those petrified.<br>
 <br>However, Senkuu', CHAR(39), 's master plan is threatened when his ideologies are challenged by those who awaken. All the while, the reason for mankind', CHAR(39), 's petrification remains unknown.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-07-05', '2019-12-13', 'Summer 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1613/102576.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (322, 452, '"Good Morning World!"', ' by BURNOUT SYNDROMES', 'js-theme-songs', 'https://open.spotify.com/track/5p0T8499UG6lKHzXjLnckz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (206, 452, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1097, 452, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1098, 452, 12);

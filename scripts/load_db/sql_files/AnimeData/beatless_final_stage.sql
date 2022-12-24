@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As they descend into the holding facility to confront Higgins, Lacia', CHAR(39), 's AI creator, the pair must fend off enemies from all fronts. Among them are Snowdrop, a rampant hIE hellbent on devouring Higgins, and Methode, a hIE who seeks vengeance against Lacia. The world', CHAR(39), 's super-intelligent AIs unanimously decide to terminate Lacia, whom they deem a threat to humanity.<br>
 <br>With limited time and the odds stacked against them, will Arato and Lacia be able to truly join together in a society where humans and hIEs can coexist peacefully?<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2018-09-26', '2018-09-28', 'Summer 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1745/93307.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (141, 197, '"Truth."', ' by TrySail', 'js-theme-songs', 'https://open.spotify.com/track/2tZpMPYzE9XON8RD3auFWx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (465, 197, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (466, 197, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (467, 197, 7);

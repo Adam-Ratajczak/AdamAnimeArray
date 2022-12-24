@@ -1,6 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (23, CONCAT('Aa! Megami-sama! Sorezore no Tsubasa'), CONCAT('One year after goddess Belldandy emerged from Keiichi Morisato', CHAR(39), 's mirror and promised to stay with him forever, a new threat to their happiness emerges, one that could end the contract between Belldandy and Keiichi. <br>'), 1, '2006-04-07', '2006-09-15', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/78931.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (16, 23, '"Shiawase no Iro (幸せのいろ Color of Happiness)"', ' by Yoko Ishida', 'js-theme-songs', 'https://open.spotify.com/track/37pmyVztxe5WWaNFXKsdMh');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (17, 23, '"Bokura no Kiseki (僕らのキセキ Our Miracle)"', ' by Yoko Ishida', 'js-theme-songs', 'https://open.spotify.com/track/2DEnyM7sD9fJJyI6nG1B2d');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (15, 23, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (46, 23, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (47, 23, 7);

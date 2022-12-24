@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (297, CONCAT('Cardfight!! Vanguard G: Stride Gate-hen'), CONCAT('The second half of the second season of Cardfight!! Vanguard G series.'), 1, '2016-04-17', '2016-09-25', 'Spring 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/80198.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (210, 297, '"SHOUT!"', ' by Mamoru Miyano', 'js-theme-songs', 'https://open.spotify.com/track/5YYMn3dXY65rIMhkmdLeS7')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (334, 297, 23);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5080, 297, 1, CONCAT('Storm Ryuzu', CHAR(39), 's Lab!'), '2016-04-17', 'https://www.mp4upload.com/embed-28o7j0ixz11z.html');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5081, 297, 2, CONCAT('Ryuzu Myoujin'), '2016-04-24', 'https://www.mp4upload.com/embed-jegsms34i4dz.html');

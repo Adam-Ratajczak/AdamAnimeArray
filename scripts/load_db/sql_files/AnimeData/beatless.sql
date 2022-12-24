@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, his normal life is shattered when an ordinary run to the local grocery store goes horribly awry. Viciously assaulted by a hacked hIE, Arato is on the verge of death but luckily, he is saved by an abnormal hIE carrying a weaponized coffin. Her name is Lacia, one of five highly advanced hIEs that recently escaped the clutches of the mysterious MemeFrame Corporation.<br>
 <br>Faced with a hacked car threatening to run them over, Lacia offers Arato a deal: in exchange for saving his life, he must register as her new owner, thus taking full responsibility for her actions. With little choice, he decides to trust this artificial girl and allows her to live in his home. Though Lacia begins to adapt to her new, peaceful lifestyle, she warns the entranced Arato of one thing—she does not have a soul.<br>
 <br>[Written by MAL Rewrite]'), 5, '2018-01-13', '2018-06-30', 'Winter 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1986/90184.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (140, 196, '"Error"', ' by GARNiDELiA', 'js-theme-songs', 'https://open.spotify.com/track/00Ux7kv8wPsh8vbUxroXdP')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (461, 196, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (462, 196, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (463, 196, 7);

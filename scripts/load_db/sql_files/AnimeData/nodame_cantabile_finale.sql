@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Meanwhile, those around Chiaki and Nodame are at their own crossroads. Rui begins to doubt herself after hearing Nodame', CHAR(39), 's playing and being denied tutelage from Auclair Maestro Franz von Stresemann faces the reality of his mortality pianists Yunlong Li and Tatiana Vishneva feverishly prepare for a competition, while the latter also struggles with her growing feelings for oboist and fellow student Yasunori Kuroki. <br>
 <br>As Chiaki, Nodame, and their friends continue on their respective journeys, they must not only strive to stay true to themselves, but also remember where it all started.<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-01-15', '2010-03-26', 'Winter 2010', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1084/119096.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (966, 1374, '"Manazashi ☆ Daydream (まなざし☆デイドリーム)"', ' by Yuu Sakai (さかいゆう)', 'js-theme-songs', 'https://open.spotify.com/track/7nXR9d3kbvjWtpNuPcAmhu');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (594, 1374, 5);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3418, 1374, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3419, 1374, 7);

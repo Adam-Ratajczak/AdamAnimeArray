@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1523, CONCAT('Rance 01: Hikari wo Motomete The Animation'), CONCAT('The barbaric warrior Rance loves nothing more than the company of beautiful women. Traveling around the continent with his faithful slave Sill Plain, Rance takes on odd jobs for a chance to appease his insatiable libido. Although his perverted instincts often land him in hot water, people from far and wide nevertheless laud his heroic feats.<br>
 <br>While undertaking a request to locate a missing noble girl, Rance and Sill arrive in the majestic Kingdom of Leazas. As they split up to investigate several leads, Rance finds himself aiding the townsfolk with various problems, from rescuing a kidnapped barmaid to purging an undead outbreak. Amassing both fortune and females, the warrior eventually uncovers a dark secret within the kingdom that only he can stand against.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-12-26', '2016-06-24', '', '29 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/67287.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1082, 1523, '"Go, Midori Iro Go (ゴー緑色ゴー)"', ' by DC C++', 'js-theme-songs', 'https://open.spotify.com/track/2TGwwxTG3l5OnR0qGSRydE');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3786, 1523, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3787, 1523, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3788, 1523, 4);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Xin, now a three hundred man commander of the swiftly rising Fei Xin Unit, continues to seek out lofty achievements in order to garner recognition for himself and his soldiers, motivated by those previously lost in battle. In the preliminary battles ahead of Qin', CHAR(39), 's invasion of Wei, Xin finds competition in other young commanders who are of a higher social status than him. Back in Qin, the royal palace faces turmoil as opposing factions begin to make their move against Ying Zheng', CHAR(39), 's regime.<br>
 <br>With their hands full both abroad and at home, Zheng and Xin must lead the way in this era of unending war, resolved to etch their names in history by creating a unified China.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-06-08', '2014-03-02', 'Summer 2013', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/53589.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (731, 1027, '"21"', ' by The Sketchbook', 'js-theme-songs', 'https://open.spotify.com/track/0e2rXFOeeUm4DFebxcUuoX');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (461, 1027, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1116, 1027, 42);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1127, 1027, 31);

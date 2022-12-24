@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (237, CONCAT('Blue Dragon'), CONCAT('As Shu', CHAR(39), 's village was being attacked by an unknown enemy, he and his friends, Jiro and Kluke decide to defend their home. They soon meet warrior Zola and receive the powers of Shadow, an ability that let', CHAR(39), 's them transform their shadow into a powerful monster. Shu receives one of the most powerful monsters, Blue Dragon, and they all set out to defeat their enemy.<br>
 <br>(Source: ANN)'), 1, '2007-04-07', '2008-03-29', 'Spring 2007', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/20597.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (169, 237, '"FRIEND"', ' by Keita Tachibana', 'js-theme-songs', 'https://open.spotify.com/track/3Irnh6hDGJLfoVja5AFPdn');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (170, 237, '"Fly So High"', ' by Yu Yamada', 'js-theme-songs', 'https://open.spotify.com/track/52TAjQKWNIYPJJJPoD8uCR');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (115, 237, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (549, 237, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (550, 237, 2);

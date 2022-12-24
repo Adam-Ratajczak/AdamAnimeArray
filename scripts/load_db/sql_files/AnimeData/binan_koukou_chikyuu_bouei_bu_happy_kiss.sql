@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>All of them have now gathered at Kurotama Bath after school. When Ryouma pulls Kyoutarou Shuzenji by his arm out of water that he claims feels too good, together with his towel comes a pretty boy in strange clothing.<br>
 <br>These five boys are then dragged into a battle for the heir of the magical kingdom, Honila Land...<br>
 <br>(Source: KA)'), 1, '2018-04-09', '2018-07-02', 'Spring 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1259/91819.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (149, 208, '"Zettai Saikou ☆Happy Kiss☆ (絶対最幸☆HAPPY KISS☆)"', ' by Chikyuu Bouei-bu HK', 'js-theme-songs', 'https://open.spotify.com/track/5bIMVH9L1cSXuLY2EGzvV5')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (233, 208, 30);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (213, 208, 21);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (214, 208, 13);

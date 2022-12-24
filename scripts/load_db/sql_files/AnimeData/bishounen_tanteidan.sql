@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (220, CONCAT('Bishounen Tanteidan'), CONCAT('Mayumi Doujima promises her parents that she will give up on her dreams of becoming an astronaut on her 14th birthday if she cannot find a star she once saw long ago.  Overhearing her troubles, the eccentric Manabu Soutouin offers to help her search for the star alongside the rest of Yubiwa Academy', CHAR(39), 's mysterious Pretty Boy Detective Club, whose rules are as follows: "Be pretty, be a boy, and be a detective!"<br>
 <br>However, Mayumi is unique—she can see many things that ordinary people cannot. Her eyesight allows her to see the tiniest of details, from people approaching her at a distance to hidden traps that would otherwise go undetected. When the search for the lost star begins to sour, the Pretty Boy Detective Club end up entangled in something far beyond what they ever imagined. <br>
 <br>[Written by MAL Rewrite]'), 1, '2021-04-11', '2021-06-27', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1693/115133.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (155, 220, '"Shake & Shake"', ' by sumika', 'js-theme-songs', 'https://open.spotify.com/track/0idhExUjnjy7SKveejhupN');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (245, 220, 7);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (229, 220, 43);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (230, 220, 13);

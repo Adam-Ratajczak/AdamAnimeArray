@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1821, CONCAT('Strike Witches: 501 Butai Hasshin Shimasu!'), CONCAT('Yoshika Miyafuji joins the 501st Joint Fighter Wing, a defense unit specializing in taking down alien beings known as the Neuroi. However, in days of no invasion, she and the members of the unit are taking down day to day tasks like cooking and laundry.<br>
 <br>(Source: MAL News)'), 1, '2019-04-10', '2019-06-26', 'Spring 2019', '13 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1515/100453.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1297, 1821, '"Sora ga Yobu Hou e (空が呼ぶほうへ)"', ' by Yoko Ishida', 'js-theme-songs', 'https://open.spotify.com/track/5JcDh15Dmp54MJ7dJnTHTK')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (760, 1821, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4507, 1821, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4508, 1821, 3);

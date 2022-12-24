@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1972, CONCAT('Uchouten Kazoku'), CONCAT('Kyoto has been populated by groups of tanuki and tengu for years, living alongside humans who are oblivious to the existence of these creatures. Yasaburou Shimogamo is the third son of an influential tanuki family who spends his carefree days taking care of an old tengu, observing humans through his ability to shapeshift, and dealing with the mysterious woman named Benten.<br>
 <br>Behind the peace and tranquility, however, is a painful memory from long ago as Yasaburou', CHAR(39), 's father, head of the tanuki community, was killed and eaten by a group of humans known as the Friday Fellows. Uchouten Kazoku follows the trials and tribulations of the Shimogamo brothers as they struggle to avoid their own grisly demise while coming ever closer to unraveling the truth behind their father', CHAR(39), 's death.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-07-07', '2013-09-29', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/85433.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1410, 1972, '"Qué Será, Será (ケセラセラ)"', ' by fhána ', 'js-theme-songs', 'https://open.spotify.com/track/0oDP4C9hVqE3gloruo8pck');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4916, 1972, 13);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4917, 1972, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4918, 1972, 6);

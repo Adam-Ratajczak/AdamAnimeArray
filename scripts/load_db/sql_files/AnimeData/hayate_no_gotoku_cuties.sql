@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (726, CONCAT('Hayate no Gotoku! Cuties'), CONCAT('Taking place after the events that occurred in Hayate no Gotoku! Can', CHAR(39), 't Take My Eyes off You. Hayate, Nagi and Maria return to their daily lives at the Sanzenin Mansion and the Violet Mansion.<br><br>(Source: Hayate no Gotoku! Wikia)'), 1, '2013-04-09', '2013-07-02', 'Spring 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/48953.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (521, 726, '"Haru ULALA♥LOVE yo Koi!!! (春ULALA♥LOVEよ来い!!!)"', ' by Hinagiku Katsura (Shizuka Itou)', 'js-theme-songs', 'https://open.spotify.com/track/0OlkKuAZFswd0usVw1w389')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (334, 726, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1777, 726, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1778, 726, 7);

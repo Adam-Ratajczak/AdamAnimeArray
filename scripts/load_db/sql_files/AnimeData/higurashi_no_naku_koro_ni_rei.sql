@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (763, CONCAT('Higurashi no Naku Koro ni Rei'), CONCAT('The infamous series of unexplainable murders in Hinamizawa have been solved and the chains of fate have broken due to the efforts of Rika Furude and her friends. Rika believes she has finally obtained the normal and peaceful life she desired with her friends however, she is proven wrong when the wheels of fate begin turning once again after an unfortunate accident.<br>
 <br>Rika suddenly finds herself in a "perfect" world, the constant cycle of brutal killings having never taken place, where all of her friends are content and satisfied. Not wanting to abandon the world that she fought so hard for, she learns she must destroy an essential "key" to get back. But can Rika abandon the faultless world she is given the chance to live in, after all of her battles have brought her this far?<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-02-25', '2009-08-21', '', '30 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/14113.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (549, 763, '"Super Scription of Data"', ' by Shimamiya Eiko', 'js-theme-songs', 'https://open.spotify.com/track/1bJ2QX5ofwu5wIPIxhzEqv');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1876, 763, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1877, 763, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1878, 763, 10);

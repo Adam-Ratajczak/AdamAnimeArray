@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (393, CONCAT('Date A Live II'), CONCAT('Spirits are otherworldly entities with immense power, capable of creating spatial quakes whenever they appear. One way of dealing with them is through brute force and killing them... or making them fall in love and sealing their powers. <br>
 <br>Having sealed three Spirits, Shidou Itsuka continues his mission with Ratatoskr in locating more spirits and dating them, to ensure the world', CHAR(39), 's safety from further destruction. However, this time around, their problems will not be limited to Spirits as a more imposing threat seems to have noticed their activities.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2014-04-12', '2014-06-14', 'Spring 2014', '28 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/76003.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (283, 393, '"Trust in you"', ' by sweet ARMS', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (922, 393, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (923, 393, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (924, 393, 3);

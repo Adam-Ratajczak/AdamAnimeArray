@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1647, CONCAT('Seitokai Yakuindomo* OVA'), CONCAT('OVAs of Seitokai Yakuindomo* which were either bundled with the limited editions of the manga volumes or as standalone OVAs.'), 1, '2014-05-16', '2020-09-17', '', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/79008.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1160, 1647, '"Hanasaku☆Saikyou Legend Days (花咲く☆最強レジェンドDays)"', ' by Triple Booking', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (697, 1647, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1772, 1647, 108);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1811, 1647, 38);

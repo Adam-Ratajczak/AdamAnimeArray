@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>In this institution, students are placed into one of three ranks based on their test score: group Noir being the highest, followed by Rouge and Lapis. Tiara', CHAR(39), 's group is ranked Lapis, and if that wasn', CHAR(39), 't enough, those who fail while ranked Lapis face expulsion. Realizing their dire situation, Tiara urges everyone to start taking their activities more seriously.<br>
 <br>On top of this, Tiara has one more purpose for excelling at the academy: to become more like her elder sister, who is a very skilled singer. However, to reach the stage that she desires, she will have to overcome many challenges, along with her companions, as she continues her magical journey.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-07-04', '2020-09-19', 'Summer 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1880/107611.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (798, 1117, '"Watashitachi no STARTRAIL (私たちのSTARTRAIL)"', ' by Lapis Re:LiGHTs Stars', 'js-theme-songs', 'https://open.spotify.com/track/0Kgg73GQYWBvjSiqAMRewF')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1211, 1117, 200);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1234, 1117, 5);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1235, 1117, 6);

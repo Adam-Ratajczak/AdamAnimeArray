@@ -1,8 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (865, CONCAT('Inukami!'), CONCAT('Kawahira Keita is a descendant of a historic Inukami tamer family however, because he lacked in its ability, he was forsaken by the family. One day, an Inukami named Youko came. She looked graceful, obedient, above all, beautiful. Soon he contracted with her, and she paid homage to him. However, she was a problematic Inukami that no one had been able to control.<br>
 <br>This is a slap stick comedy of an Inukami Tamer, Keita and an Inukami, Youko. Keita is a man of worldly passions, and he likes money and girls very much. On the other hand, Youko likes to destroy things and is very jealous.<br>
 <br>(Source: AnimeNfo)'), 1, '2006-04-06', '2006-09-28', 'Spring 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1405/110246.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (612, 865, '"Hikari"', ' by Yui Horie', 'js-theme-songs', 'https://open.spotify.com/track/0GMlWLVwKqL8UW1MD44TER');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (613, 865, '"Yuujou Monogatari"', ' by Aice5', 'js-theme-songs', 'https://open.spotify.com/track/2jywkZN62VPKd7AkGVBXd8');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (385, 865, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2071, 865, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2072, 865, 7);

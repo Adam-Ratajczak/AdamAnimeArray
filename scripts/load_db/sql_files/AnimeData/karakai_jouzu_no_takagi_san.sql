@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (969, CONCAT('Karakai Jouzu no Takagi-san'), CONCAT('Having a friend that knows you inside out should be a good thing, but in Nishikata', CHAR(39), 's case, the opposite is true.<br>
 <br>His classmate Takagi loves to tease him on a daily basis, and she uses her extensive knowledge of his behavior to predict exactly how he will react to her teasing, making it nearly impossible for Nishikata to ever make a successful comeback. Despite this, Nishikata vows to someday give Takagi a taste of her own medicine by making her blush out of embarrassment from his teasing.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2018-01-08', '2018-03-26', 'Winter 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1591/95091.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (683, 969, '"Iwanai kedo ne. (言わないけどね.)"', ' by Yuiko Oohara', 'js-theme-songs', 'https://open.spotify.com/track/13saEo7ciOYh6nUGrC79cx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (428, 969, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1055, 969, 56);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1073, 969, 8);

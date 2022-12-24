@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As the group makes their way to the Sanctuary in search of answers, Subaru has an unexpected encounter with the Witch of Greed—Echidna. Subjected to her untamed rhythm, he is forced to dive into the spirals of the past and future. At the same time, several mysterious threats set their sights on the Sanctuary, heralding a horrific fate for the hapless people trapped within.<br>
 <br>Everlasting contracts, past sins, and unrequited love will clash and submerge into a river of blood in the second season of Re:Zero kara Hajimeru Isekai Seikatsu. Pushed to the brink of hopelessness, how long will Subaru', CHAR(39), 's resolve to save his loved ones last?<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-07-08', '2020-09-30', 'Summer 2020', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1444/108005.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1089, 1534, '"Fight!!"', ' by ClariS', 'js-theme-songs', 'https://open.spotify.com/track/5Vqe6O1inyJuf54FsCm5SL')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3814, 1534, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3815, 1534, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3816, 1534, 5);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1075, CONCAT('Kore wa Zombie Desu ka? OVA'), CONCAT('Two OVAs released with the 8th and 10th volumes of the original novel. They fall chronologically between the first and second seasons.'), 1, '2011-06-10', '2012-04-24', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/36243.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (769, 1075, '"Ma・Ka・Se・Te Tonight (魔・カ・セ・テ Tonight)"', ' by Iori Nomizu', 'js-theme-songs', 'https://open.spotify.com/track/1VtS7IOUC8ADU6MSD2nfnC')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2613, 1075, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2614, 1075, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2615, 1075, 10);

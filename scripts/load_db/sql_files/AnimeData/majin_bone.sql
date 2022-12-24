@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1200, CONCAT('Majin Bone'), CONCAT('Anime adaptation of Majin Bone, a digital card game project.<br>
 <br>Majin, the creator of the Universe, has been resurrected in the present day. Shougo Ryuujin, an ordinary high school student who transforms into the Bone Fighter Dragonbone with the Bone Card in order to save Earth. Together, with the other White Bone warriors take a stand against the Dark Bone, a foe that has appeared from darkness to devastate Earth. However, "could the true enemy be ourselves?"<br>
 <br>(Source: ANN)'), 1, '2014-04-01', '2015-03-31', 'Spring 2014', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1490/90396.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (844, 1200, '"Legend Is Born"', ' by Kazuki Katou (加藤和樹)', 'js-theme-songs', 'https://open.spotify.com/track/58J2ByjmJJ1WZOrkmEBeOV')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (530, 1200, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2925, 1200, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2926, 1200, 11);

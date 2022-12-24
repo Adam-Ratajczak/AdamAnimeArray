@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Meanwhile, a new threat in Europe is rising. A Neuroi nest of an unprecedented size and might has appeared over Venezia, wiping out local Witch forces and instantly swallowing the northern part of the country. To make matters worse, a newly spotted humanoid type of Neuroi is attempting to come into contact with humans.<br>
 <br>Yoshika, incapable of abandoning her friends on the front lines, must once again venture to the war-torn continent.<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-07-08', '2010-09-23', 'Summer 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/25477.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1296, 1820, '"STRIKE WITCHES 2 ~Egao no Mahou~ (STRIKE WITCHES 2 ～笑顔の魔法～)"', ' by Yoko Ishida', 'js-theme-songs', 'https://open.spotify.com/track/2p1tdrMFJYN7ROYo1cZVzi');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4504, 1820, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4505, 1820, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4506, 1820, 14);

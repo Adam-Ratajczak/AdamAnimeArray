@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, after losing consciousness inside, Naegi wakes up in a seemingly abandoned classroom. Failing to comprehend how he got there, Naegi begins to explore, and to his surprise, finds his classmates assembled in the gym. While everyone is trying to figure out what happened, they are confronted by the school principal—Monokuma, a robotic teddy bear. The mysterious toy explains that the freshmen are trapped inside the school with only one means of escape—kill a classmate without being discovered.<br>
 <br>Tension fills the air as Naegi and his classmates realize that they are faced with two choices: participate in Monokuma', CHAR(39), 's killing game, or reside together in the school for the rest of their lives.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2013-07-05', '2013-09-27', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/51463.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (274, 382, '"DANGANRONPA"', ' by Masafumi Takada', 'js-theme-songs', 'https://open.spotify.com/track/7nXjKsbdNPCWvsgrarb6md')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (893, 382, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (894, 382, 4);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (426, 382, 49);

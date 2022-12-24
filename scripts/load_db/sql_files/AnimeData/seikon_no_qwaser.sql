@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As Tomo and her sister Mafuyu Oribe head home after being tormented at school, Tomo trips over an injured silver-haired boy who abruptly vanishes while being tended to. Mafuyu goes to look for him, only to discover that the church holding the icon is burning down. When she tries to save the painting, the rumored serial killer suddenly attacks her with a mysterious ability to control magnesium. Appearing out of nowhere, the silver-haired boy, who can control iron, rescues Mafuyu.<br>
 <br>Mafuyu finds out that the boy, named Alexander Nikolaevich "Sasha" Hell, is a "qwaser"—a being who is capable of controlling an element through the power of "soma," received through the act of breastfeeding. Confused by the ordeal, Mafuyu attempts to move past it with little luck, as Sasha transfers to her class the next day. What will become of Tomo and Mafuyu', CHAR(39), 's normal school life with the danger of other qwasers looming close to them?<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-01-10', '2010-06-20', 'Winter 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1212/97589.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1153, 1639, '"Baptize"', ' by faylan', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (694, 1639, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4081, 1639, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4082, 1639, 10);

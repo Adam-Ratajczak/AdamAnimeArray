@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While they all enjoy going to the amusement park, playing games, celebrating birthdays, and challenging the "school festival"—a symbol of the school life normal people live—the relations amongst the members slowly begins to change...<br>
 <br>Let the next stage begin, on this unfortunate coming-of-age love comedy!!<br>
 <br>(Source: ANN)'), 1, '2013-01-11', '2013-03-29', 'Winter 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/44724.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (179, 250, '"Be My Friend"', ' by The Neighbor's Club (隣人部)', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (571, 250, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (572, 250, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (573, 250, 14);

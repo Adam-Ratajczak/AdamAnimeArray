@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (971, CONCAT('Karakai Jouzu no Takagi-san 3'), CONCAT('As summer break comes to an end, Nishikata is stoked to try out his newest pranks and finally outdo his classmate Takagi once and for all. Despite his losing streak, he is slowly getting to know the unrelenting workings of her crafty mind. However, he soon realizes that Takagi', CHAR(39), 's motivations behind her teasing may not be what he initially assumed. One thing is certain, though: each fun-filled day of strategizing and competing brings the two closer than ever.<br>
 <br>[Written by MAL Rewrite]'), 1, '2022-01-08', '2022-03-26', 'Winter 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1861/120361.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (685, 971, '"Massugu (まっすぐ)"', ' by Yuiko Oohara', 'js-theme-songs', 'https://open.spotify.com/track/38zG3Jxz9MfYVZ8W3RblXn');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (430, 971, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1057, 971, 56);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1079, 971, 8);

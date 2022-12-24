@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As a novelist with works getting adapted into anime, Elf Yamada holds an event to celebrate her success and to thank everyone who had supported her. With her mother attending, she becomes more excited. However, just as her mother arrives, she tells Elf to go back home so that she can find a suitable husband. Elf, who harbors feelings for Masamune Izumi, chooses to say no…<br><br>Cooked Meals of Pure Love<br>
 <br>Winter has come, and it', CHAR(39), 's freezing outside. With her brother Masamune catching a cold, Sagiri Izumi decides to nurse her brother into good health by stepping outside the comfort of her room and doing the housework herself. <br>
 <br>[Written by MAL Rewrite]'), 1, '2019-01-16', NULL, '', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1582/96343.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (356, 493, '"Hitorigoto (ヒトリゴト)"', ' by ClariS', 'js-theme-songs', 'https://open.spotify.com/track/3Un2d5mEp5yLqaITkb1mS8')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1215, 493, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1216, 493, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1217, 493, 7);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (183, CONCAT('Basilisk: Ouka Ninpouchou'), CONCAT('It has been 10 years since the war between the Iga and Kouga ninja clans came to an end. The two groups have since made peace, supposedly dispelling the animosity that once existed between them. Hachirou Kouga and Hibiki Iga, the successors of their respective bloodlines, seem to have the perfect conditions for their love to bloom, but not everyone is satisfied with the results of the age-old battle.<br>
 <br>Different tales of the final showdown between Gennosuke Kouga and Oboro Iga have spread, leaving Tadanaga Tokugawa—whom the Kouga represented—dissatisfied. As tension between the two clans rises once again, the brewing political climate threatens to keep the two fated lovers apart, just as it had in the previous generation. <br>
 <br>[Written by MAL Rewrite]'), 1, '2018-01-09', '2018-06-19', 'Winter 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/88384.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (130, 183, '"Ouka Ninpouchou (桜花忍法帖)"', ' by Onmyo-za', 'js-theme-songs', 'https://open.spotify.com/track/5OA5Ffl0SvRgDAytwSqVJq')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (86, 183, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (416, 183, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (417, 183, 2);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1558, CONCAT('Ro-Kyu-Bu! SS'), CONCAT('After their loss against Suzuridani Academy, the members of the Keishin Academy girls', CHAR(39), ' basketball team—Tomoka Minato, Maho Misawa, Airi Kashii, Hinata Hakamada, and Saki Nagatsuka, along with their coach, Subaru Hasegawa—exert more of their time and effort in improving in the sport day by day. However, this time around, new rivals with strengths possibly exceedings theirs and friends appear on their way to the top.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-07-05', '2013-09-27', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/50697.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1105, 1558, '"Get goal!"', ' by RO-KYU-BU! (Kana Hanazawa, Rina Hidaka, Yoko Hikasa, Yuka Iguchi, Yui Ogura)', 'js-theme-songs', 'https://open.spotify.com/track/3zi1OhjT1XQneLRKcEhmUw')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (662, 1558, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1675, 1558, 2);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1695, 1558, 13);

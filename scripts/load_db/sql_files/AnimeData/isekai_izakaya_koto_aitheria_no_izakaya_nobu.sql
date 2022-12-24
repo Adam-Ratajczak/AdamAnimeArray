@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (876, CONCAT('Isekai Izakaya: Koto Aitheria no Izakaya Nobu'), CONCAT('Experienced head chef Nobuyuki Yazawa and friendly waitress Shinobu Senke run a traditional Japanese izakaya called Nobu—a bar known for serving a tasty array of food and drink. Welcoming any and all customers, the pair strive to showcase Nobu', CHAR(39), 's exclusive menu and provide the best possible experience.<br>
 <br>However, despite its ordinary appearance, the establishment opens to the heart of Aitheria, a city from a parallel universe. As news of the restaurant', CHAR(39), 's exquisite dishes spreads throughout the lands, Aitherian citizens from various social backgrounds travel to Nobu in search of new and delicious cuisine, bringing with them an empty stomach and riveting stories to tell.<br>
 <br>[Written by MAL Rewrite]<br>'), 4, '2018-04-13', '2018-09-14', '', '14 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1303/90909.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (619, 876, '"Prosit!"', ' by Clammbon', 'js-theme-songs', 'https://open.spotify.com/track/1nEfiDO3W2tTy4fEyprZrO');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2112, 876, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2113, 876, 15);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (958, 876, 27);

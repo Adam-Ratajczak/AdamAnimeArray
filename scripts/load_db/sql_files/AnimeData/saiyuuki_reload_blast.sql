@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1595, CONCAT('Saiyuuki Reload Blast'), CONCAT('At last, the Sanzou Party has arrived in India. In this foreign land, where the anomaly', CHAR(39), 's influence runs rampant, their battles only heighten in their violence.<br>
 <br>And also awaiting them is their tragic fate from 500 years ago—<br>
 <br>What will they find at the end of their long and treacherous journey?'), 1, '2017-07-05', '2017-09-20', 'Summer 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/86675.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1125, 1595, '"move on! Ibaramichi (move on！イバラミチ)"', ' by GRANRODEO', 'js-theme-songs', 'https://open.spotify.com/track/7AzYqXOfA99OP5SQNxUtFn')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (683, 1595, 5);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3975, 1595, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3976, 1595, 2);

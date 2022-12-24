@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Seven years later, Avilio finally has his chance for revenge when he receives a mysterious letter prompting him to return to Lawless. Obliging, he soon encounters the Vanetti don', CHAR(39), 's son, Nero, and seeks to befriend him using the skills he has quietly honed for years.<br>
 <br>Set during the Prohibition era, 91 Days tells the story of Avilio', CHAR(39), 's dark, bloodstained path to vengeance, as he slowly ends each of the men involved in the killing of his family.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-07-09', '2016-10-01', 'Summer 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/80515.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (11, 15, '"Signal"', ' by TK from Ling Tosite Sigure', 'js-theme-songs', 'https://open.spotify.com/track/7mfK0QZL3lo6Fup1nF0qO7')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (37, 15, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (38, 15, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (39, 15, 9);

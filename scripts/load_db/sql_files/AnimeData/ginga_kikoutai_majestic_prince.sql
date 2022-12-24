@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (608, CONCAT('Ginga Kikoutai Majestic Prince'), CONCAT('In the latter half of 21st century, humans leave the Earth and begin to live in space. In order to adapt to the environment in space and deal with the hostile aliens in Jupiter, genetically engineered children called "Princes" are artificially raised and trained to be pilots of armed robots "AHSMB (Advanced High Standard Multipurpose Battle Device). This is a story about one of the teenage "Princes," Hitachi O Izuru, who studies in an academic city Grandzehle.<br>
 <br>(Source: MAL News)'), 1, '2013-04-04', '2013-09-19', 'Spring 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/44594.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (432, 608, '"Watashi wa Souzousuru (私は想像する)"', ' by Natsumi Kon', 'js-theme-songs', 'https://open.spotify.com/track/1MhMT5mkw73s3dYskE2ur4')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (267, 608, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1495, 608, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1496, 608, 3);

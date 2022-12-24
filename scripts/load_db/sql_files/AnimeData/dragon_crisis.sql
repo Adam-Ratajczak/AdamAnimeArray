@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (457, CONCAT('Dragon Crisis!'), CONCAT('A normal high school boy Kisaragi Ryuji', CHAR(39), 's peaceful life is turned into an adventure by the return of his second cousin Eriko. Ryuji and Eriko seize a relic box from a black broker. In the box, they find a red dragon girl Rose. In order to protect Rose from the black organization, Ryuji decides to fight using his power as a relic handler.'), 1, '2011-01-11', '2011-03-29', 'Winter 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/50311.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (326, 457, '"Immoralist (インモラリスト)"', ' by Yui Horie', 'js-theme-songs', 'https://open.spotify.com/track/7tr1dBlrKE0OdlfEeFJ63d')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (210, 457, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1115, 457, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1116, 457, 2);

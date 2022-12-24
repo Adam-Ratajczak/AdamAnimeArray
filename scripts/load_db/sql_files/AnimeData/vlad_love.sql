@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2020, CONCAT('Vlad Love'), CONCAT('Mitsugu Banba is a high school girl who finds meaning in donating blood. She frequently visits a blood bank to donate blood, despite being harshly treated by the nurse. One day, she encounters a beautiful girl who looks like she', CHAR(39), 's from overseas at the blood bank. The pale girl looks like she', CHAR(39), 's about to faint any minute, but then, she starts destroying the blood bank. The girl loses consciousness and Mitsugu takes her home... <br>
 <br>(Source: Official Website)'), 1, '2020-12-18', '2021-03-14', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1796/110394.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1445, 2020, '"Winds Of Transylvania"', ' by LOVEBITES', 'js-theme-songs', 'https://open.spotify.com/track/3i1PlNTJylVUXWAu5OZlbs')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (841, 2020, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5035, 2020, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5036, 2020, 7);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (671, CONCAT('Gurazeni Season 2'), CONCAT('Second season of Gurazeni.'), 1, '2018-10-05', '2018-12-21', 'Fall 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1496/95059.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (474, 671, '"Merigo"', ' by Cypress Ueno to Robert Yoshino ft. Sky-Hi', 'js-theme-songs', 'https://open.spotify.com/track/2e8jSwIBohe1q96fsc1Id9')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (302, 671, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1654, 671, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1655, 671, 6);

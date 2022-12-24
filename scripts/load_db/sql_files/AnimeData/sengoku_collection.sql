@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1660, CONCAT('Sengoku Collection'), CONCAT('Sengoku Collection revolves around many samurai who are accidentally removed from a parallel universe inhabited by well-known historic characters. Unlike the historical war period known to us, all inhabitants in this unique world look like high school girls. Coming from the medieval era and finding themselves totally amazed by everything they encounter in modern day Tokyo, the girls become best friends through their adventures. <br>
 <br>(Source: Crunchyroll) '), 1, '2012-04-06', '2012-09-28', 'Spring 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/35329.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1169, 1660, '"Me wo Tojite Gyuttoshiyo (目をとじてギュッしよ)"', ' by ABCHO', 'js-theme-songs', 'https://open.spotify.com/track/7Aa0zODCvo3SvZ5UVcUtvV')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1786, 1660, 35);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1838, 1660, 21);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1839, 1660, 32);

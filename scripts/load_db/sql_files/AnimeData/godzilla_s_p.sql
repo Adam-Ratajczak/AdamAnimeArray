@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (629, CONCAT('Godzilla: S.P'), CONCAT('This series features an original story, which depicts the young geniuses Mei Kamino, a female researcher, and Yun Arikawa, a male engineer, as they take on an unprecedented threat with their companions. When danger comes up from the depths, only young geniuses Mei, Yun, and their team can face the threat in Godzilla Singular Point! <br>
 <br>(Source: Netflix)'), 1, '2021-04-01', '2021-06-24', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1447/114837.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (450, 629, '"in case..."', ' by BiSH', 'js-theme-songs', 'https://open.spotify.com/track/0m6gd9kYPfF9hGlRQ1COeB')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1556, 629, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1557, 629, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1558, 629, 3);

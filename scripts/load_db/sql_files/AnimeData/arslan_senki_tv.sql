@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, the enemies that the prince faces are far from limited to just those occupying his kingdom. Armies of other kingdoms stand ready to conquer Ecbatana. Moreover, the mastermind behind Lusitania', CHAR(39), 's victory, an enigmatic man hiding behind a silver mask, poses a dangerous threat to Arslan and his company as he possesses a secret that could jeopardize Arslan', CHAR(39), 's right to succession.<br>
 <br>With the odds stacked against him, Arslan must find the strength and courage to overcome these obstacles, and allies who will help him fight in the journey that will help prepare him for the day he becomes king.<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-04-05', '2015-09-27', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/73588.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (85, 130, '"Boku no Kotoba de wa Nai, Kore wa Bokutachi no Kotoba" (僕の言葉ではない これは僕達の言葉)"', ' by UVERworld', 'js-theme-songs', 'https://open.spotify.com/track/0StkLk0MA1i4kcUozLLxKl')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (62, 130, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (299, 130, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (300, 130, 2);

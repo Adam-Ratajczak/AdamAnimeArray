@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Quickly convinced that Nobunaga is indeed the King of Salvation, Jeanne pledges allegiance to the Oda clan. Meanwhile, King Arthur, the ruler of the West Star, sends his ruthless general Gaius Julius Caesar and his combat machine army to conquer Nobunaga', CHAR(39), 's planet and seize the Holy Grail. Although Kaguya believes that Arthur is the King of Destruction, the reckless behavior of Nobunaga "The Fool"—who named his own combat suit after his nickname—on the battlefield sows doubt in his capability as a leader.<br>
 <br>With the help of Himiko, the Yamato Queen, Nobunaga and his clan must unify in order to overcome tragedies, recover from betrayals, and eventually save the world.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-01-06', '2014-06-23', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/57803.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (962, 1371, '"FOOL THE WORLD"', ' by Minori Chihara', 'js-theme-songs', 'https://open.spotify.com/track/69HoJJRk7ddDr4dWEou0pS')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3411, 1371, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3412, 1371, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3413, 1371, 14);

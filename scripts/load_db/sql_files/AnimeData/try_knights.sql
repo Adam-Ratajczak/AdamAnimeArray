@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1949, CONCAT('Try Knights'), CONCAT('Riku Haruma enters high school without a future in sight. He sees people playing like monsters on the ground, jumping higher than anyone else, running fast, deciding to try their best. There, he sees Akira Kariya playing rugby, a sport he was once passionate about but gave up due to his physique. While Akira is running roughly, Riku gives him a piece of advice without thinking. From that, Riku feels his dying passion for the sport set ablaze, and his future starts to brighten up...<br>
 <br>(Source: MAL News)'), 1, '2019-07-31', '2019-10-16', 'Summer 2019', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1803/102385.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1390, 1949, '"Mugen no Try (無限のトライ)"', ' by Shougo Sakamoto', 'js-theme-songs', 'https://open.spotify.com/track/7u3x773HWJwUqgJsYTt3xt')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (813, 1949, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4854, 1949, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4855, 1949, 3);

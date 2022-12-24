@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Feeling more confident than ever before, he finally confesses to Hagumi Hanamoto, the girl he has been in love with since their first encounter. However, Hagumi has been confused by her attempts to understand the mysterious Shinobu Morita. Hiding behind a playful demeanor, Morita may be the most burdened by his own potential. Meanwhile, Takumi Mayama has become a full-fledged working adult and has landed Ayumi Yamada several pottery orders through his company in an act of friendship.<br>
 <br>The five youths continue to face individual hardships in academics, work, love, and friendship as they push each other toward the paths that they are destined to walk.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-06-30', '2006-09-15', 'Summer 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/11040.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (482, 678, '"Fugainaiya (ふがいないや)"', ' by YUKI', 'js-theme-songs', 'https://open.spotify.com/track/0vT7G7KKdqYxA5s2PvDX7D');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (483, 678, '"Split (スプリット)"', ' by SuneoHair', 'js-theme-songs', 'https://open.spotify.com/track/4yCdTRl5Lsvs3NrB3qDaX9');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (305, 678, 5);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1669, 678, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1670, 678, 6);

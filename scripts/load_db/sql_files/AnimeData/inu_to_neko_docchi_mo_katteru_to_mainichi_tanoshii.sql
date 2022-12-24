@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (862, CONCAT('Inu to Neko Docchi mo Katteru to Mainichi Tanoshii'), CONCAT('Matsumoto-san owns an innocent dog and an adorably devious cat. Laughing and crying ensue as they all live daily life together.<br>
 <br>(Source: MAL News)'), 1, '2020-10-03', '2021-03-27', 'Fall 2020', '1 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1332/109356.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (609, 862, '"Nyander Wonder Days (にゃんだーわんだーデイズ)"', ' by Ayaka Ohashi', 'js-theme-songs', 'https://open.spotify.com/track/7x9DTCUVhKXBGXHA4VopHZ');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2064, 862, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2065, 862, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (944, 862, 183);

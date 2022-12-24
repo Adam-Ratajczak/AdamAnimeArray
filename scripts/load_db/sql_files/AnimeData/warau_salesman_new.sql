@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2028, CONCAT('Warau Salesman New'), CONCAT('Each episode follows Fukuzou Moguro, a traveling salesman, and his current customer. Moguro deals in things that give his customers their heart', CHAR(39), 's desire, and once his deals are made and their unhealthy desires are satisfied, Moguro', CHAR(39), 's customers are often left with terrible repercussions, especially if they break the rules of his deals...'), 1, '2017-04-03', '2017-06-19', 'Spring 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/85132.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1451, 2028, '"Don't"', ' by NakamuraEmi', 'js-theme-songs', 'https://open.spotify.com/track/0UoPHmJyD87kh3jAENCNd3')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (843, 2028, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5053, 2028, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5054, 2028, 6);

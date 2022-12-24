@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (321, CONCAT('Choboraunyopomi Gekijou Dai Ni Maku Ai Mai Mii: Mousou Catastrophe'), CONCAT('Second season of Ai Mai Mii.'), 1, '2014-07-08', '2014-09-23', 'Summer 2014', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/65753.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (228, 321, '"Zenryoku Sakuretsu Ai Mai Mii! (全力炸裂あいまいみー!!)"', ' by Aya Uchida, Maaya Uchida, Yuka Ootsubo', 'js-theme-songs', 'https://open.spotify.com/track/0jICNj2XhHQxRxLEGtoNXO');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (740, 321, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (741, 321, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (359, 321, 55);

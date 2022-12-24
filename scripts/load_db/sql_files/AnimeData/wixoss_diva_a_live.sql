@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2041, CONCAT('WIXOSS Diva(A)Live'), CONCAT('The story moves the "Wixoss" card game to the online virtual space of "Wixossland" as it continues to grow more popular. The game allows players to become the LRIG avatars themselves. The most popular format in the game is "Diva Battle," which allows three players to team up to compete against other units for the most "Selector" fans. Some units are idol-themed, while others are DJ- and band-themed.<br>
 <br>(Source: ANN)'), 1, '2021-01-09', '2021-03-27', 'Winter 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1779/110807.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1462, 2041, '"D-(A)LIVE!!"', ' by No Limit', 'js-theme-songs', 'https://open.spotify.com/track/5DH03m2kYstW4Ljp8mFtGw');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2213, 2041, 31);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2266, 2041, 37);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2267, 2041, 4);

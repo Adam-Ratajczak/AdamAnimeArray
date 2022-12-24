@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Summer is approaching and Tooru is invited to spend her days with the Soumas, mainly Kyou and Yuki. Tooru wishes for an easy-going vacation, but her close relationships with the two boys and the rest of the Soumas may prove to cause trouble. As they grow more intimate, their carefree time together is hindered by older hardships and feelings from the past that begin to resurface. The Eternal Banquet also dawns on the members of the zodiac, and they must tend to their duties alongside the unnerving head of the family, Akito Souma.<br>
 <br>With the banquet approaching and a plethora of feelings to be solved, will Tooru', CHAR(39), 's life with the Soumas remain peaceful, or will she find herself in a situation from which she cannot escape?<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-04-07', '2020-09-22', 'Spring 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1972/111635.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (386, 531, '"Prism"', ' by AmPm ft. Miyuna', 'js-theme-songs', 'https://open.spotify.com/track/12ZIRTS8x9RBgasDg3q27J')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (234, 531, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1319, 531, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1320, 531, 9);

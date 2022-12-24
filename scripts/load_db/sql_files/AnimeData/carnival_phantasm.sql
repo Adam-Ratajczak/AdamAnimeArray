@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (300, CONCAT('Carnival Phantasm'), CONCAT('The Carnival Moment is a time when several narratives from Type-Moon', CHAR(39), 's famous works intersect. It happens every decade in an entirely new dimension, and those who have never run into each other can meet. And what', CHAR(39), 's more, all individuals involved gain the opportunity to fulfill any of their wishes! However, they will have to come a long way, as they will need to partake in contests.<br>
 <br>In Carnival Phantasm, various characters are put into situations that ridicule their own worlds. Nevertheless, they all have the same objective: to win the contests by any means necessary!<br>
 <br>[Written by MAL Rewrite]'), 3, '2011-08-14', '2011-12-31', '', '14 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1018/92921.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (213, 300, '"Super☆Affection (すーぱー☆あふぇくしょん)"', ' by Minami Kuribayashi, Miyuki Hashimoto, Faylan, Aki Misato, yozuca*, rino', 'js-theme-songs', 'https://open.spotify.com/track/2CiHVrvqFtoySSKNJ96ttF')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (689, 300, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (690, 300, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (337, 300, 49);

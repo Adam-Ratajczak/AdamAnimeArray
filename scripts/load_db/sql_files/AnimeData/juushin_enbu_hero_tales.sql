@@ -1,8 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (925, CONCAT('Juushin Enbu: Hero Tales'), CONCAT('For citizens of the Ken Empire, justice is a myth. Lord Keiro, the deranged Shogun of the Imperial Army, blazes a trail of terror across the countryside in search of the sacred sword that will make him a god. Standing in his way is Taito, an omnipotent star reborn in human form—a young hero who vows to use his celestial strength to avenge those slaughtered by the villainous Shogun.<br>
 <br>Taito', CHAR(39), 's mystical powers steer him toward a violent showdown with Keiro, and if used recklessly, his newfound abilities could shred the very fabric of his being. To master the art of control and become a heroic martial artist, Taito must seek the guidance of others like him: the seven star-born warriors with the strength to shatter a corrupt empire.<br>
 <br>(Source: RightStuf)'), 1, '2007-10-08', '2008-03-31', 'Fall 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/75193.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (657, 925, '"WINTERLONG"', ' by BEAT CRUSADERS', 'js-theme-songs', 'https://open.spotify.com/track/58PofoGr6EqchMB5lbmeb4');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (658, 925, '"Kakegae no nai Hito e (かけがえのない人へ)"', ' by Mai Hoshimura', 'js-theme-songs', 'https://open.spotify.com/track/1VwsZPltx9tyGLBP3VdzZQ');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (406, 925, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2241, 925, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2242, 925, 9);

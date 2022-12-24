@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1244, CONCAT('Meganebu!'), CONCAT('At Himaraya Third Technical School, five bespectacled members of the Glasses club are crazy about eyewear. Their leader, Akira Souma, founded the club to develop the X-ray glasses of his dreams, but their research has been slow in between getting into quirky escapades and fighting off student body president William Satou', CHAR(39), 's attempts to further cut their tight club funding. With unbounded youthful passion, these friends set their minds on making their project a resounding success.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-10-07', '2013-12-23', 'Fall 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/56139.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (870, 1244, '"World's End"', ' by MUCC', 'js-theme-songs', 'https://open.spotify.com/track/75fuGl4zlfk6vzMfD4tkTM')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3042, 1244, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3043, 1244, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1345, 1244, 46);

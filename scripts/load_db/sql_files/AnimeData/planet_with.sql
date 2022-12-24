@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>His new life is turned upside down when the denizens of Saromisaka City are beset by a teddy bear-shaped UFO. When military power proves to be ineffective, seven mysterious people rise up to fight off the monstrosity. These heroes destroy the invader in a flurry of rainbow colored lights, the very same lights that Souya saw in his nightmare.<br>
 <br>With the alien threat repelled, these seven strangers find themselves facing a new adversary: Souya. Swearing vengeance upon the people who decimated his old life, he begins his crusade against these "heroes" and becomes embroiled in a struggle of galactic proportions.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-07-08', '2018-09-23', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1985/95103.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1044, 1474, '"One Unit"', ' by Minami', 'js-theme-songs', 'https://open.spotify.com/track/2Ohl4lIx66nWuXOOQxnZ6x')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (632, 1474, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3657, 1474, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3658, 1474, 2);

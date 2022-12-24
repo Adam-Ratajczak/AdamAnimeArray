@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>When he takes a look at the list of winning authors in the latest contest he joined, he notices that someone named Chikai Towano dominated the competition. He soon discovers that behind the pen name is his sister Suzuka—the last person he can imagine being an author. Suzuka cannot reveal to anyone that she is Chikai Towano and requests her brother to take her place.<br>
 <br>Yuu agrees with one condition: he will continue posing as Chikai Towano for his sister until he publishes his own book. Until that happens, Yuu uses his new identity as an opportunity to improve his writing skills and meet fellow authors and new acquaintances along the way.<br>
 <br>[Written by MAL Rewrite]'), 2, '2018-10-10', '2018-12-19', 'Fall 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1359/96152.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1000, 1418, '"Secret Story"', ' by Purely Monster', 'js-theme-songs', 'https://open.spotify.com/track/3TynaKuTGuQrcMzgUWfMJl')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (614, 1418, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3512, 1418, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3513, 1418, 2);

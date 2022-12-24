@@ -5,7 +5,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Their futures collide as their paths cross.<br>
 <br>Will both worlds ever find peace?<br>
 <br>(Source: Aniplex USA)'), 1, '2015-04-04', '2015-06-20', 'Spring 2015', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/73120.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (472, 666, '"vanilla sky"', ' by Mashiro Ayano', 'js-theme-songs', 'https://open.spotify.com/track/0FZw2RMTTdDAZiLrXAVRor')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1643, 666, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1644, 666, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (736, 666, 6);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1286, CONCAT('Monster Sonic! D', CHAR(39), 'Artagnan no Idol Sengen'), CONCAT('When D', CHAR(39), 'Artagnan went to Tokyo for a little fun, she spotted an unforgettable sight: Lucifer singing while basking in moonlight in a park. From that moment, no matter if she was asleep or awake, D', CHAR(39), 'Artagnan', CHAR(39), 's heart would not stop throbbing for some reason.<br>
 <br>One day, D', CHAR(39), 'Artagnan sees a concert by the popular idol act Angely Diva at her friend Izumo', CHAR(39), 's invitation. There, she resolved to follow her idol dreams, and the story of song and miracles begins.<br>
 <br>(Source: ANN)'), 4, '2017-06-14', '2017-07-19', '', '14 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/85906.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (898, 1286, '"Perfect Glory ~ Senritsu no Kanata e~ (Perfect Glory ～旋律の彼方へ～)"', ' by Lucifer (Yoko Hikasa)', 'js-theme-songs', 'https://open.spotify.com/track/1XZGR4Sxq1YxzlTURnm1Cq');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3178, 1286, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3179, 1286, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1390, 1286, 37);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Sonia crosses paths with three peculiar humanoid youkai—Bem, Bela and Belo—who seek to protect humans and fight against the evil youkai that terrorize them. Living as "Youkai-Ningen," they are excluded by other youkai for their human-like lifestyles, and rejected and hurt by humans when they reveal their true forms.<br>
 <br>Despite the hardships they face, these three Youkai-Ningen secretly live among humans, continuing to pursue their dreams of one day becoming human as well.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-07-15', '2019-10-14', 'Summer 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1127/99941.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (144, 201, '"Uchuu no Kioku (宇宙の記憶)"', ' by Maaya Sakamoto', 'js-theme-songs', 'https://open.spotify.com/track/3uaZprGpodif2hd4GPEZGA')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (478, 201, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (479, 201, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (224, 201, 2);

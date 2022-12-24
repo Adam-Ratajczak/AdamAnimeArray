@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Narita Hayato sees himself as a "hard-boiled" person. Back-breaking jobs are nothing to him. Hayato shuns normal human contact, but, during the nights, he would get together with delinquents and other denizens of the night. One such night, he meets the cheerful and oblivious Otori Naru.<br>
 <br>The relationships with these girls will greatly affect these 3 young men. But what, exactly, is the relationship these young men have with each other?<br>
 <br>(Source: AnimeNFO)'), 1, '2011-04-04', '2011-06-20', 'Spring 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/75449.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1006, 1425, '"Spread Wings"', ' by Aki Misato.', 'js-theme-songs', 'https://open.spotify.com/track/7ld5WakyiWDEqAuCk5N9lp')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3531, 1425, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3532, 1425, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3533, 1425, 7);

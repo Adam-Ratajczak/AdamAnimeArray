@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1747, CONCAT('Show By Rock!! Mashumairesh!!'), CONCAT('New Show by Rock!! TV Series featuring the new band Mashumairesh!!.'), 1, '2020-01-09', '2020-03-26', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1297/110719.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1237, 1747, '"Hiromenes (ヒロメネス)"', ' by Mashumairesh!!', 'js-theme-songs', 'https://open.spotify.com/track/2PvTBYiayFXs00POAkKqW2')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1887, 1747, 75);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31407, 1747, 1, CONCAT('White Startline'), '2020-01-09', 'https://drive.google.com/file/d/1250J93t7sLYymLbdJKqfa34ygRfgiCFC/preview');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31408, 1747, 2, CONCAT('Yell and Response'), '2020-01-16', 'https://ebd.cda.pl/620x368/458318082');

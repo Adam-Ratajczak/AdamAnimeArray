@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (92, CONCAT('Anime de Wakaru Shinryounaika'), CONCAT('The psychologist Ryou and his cheerful nurse Asuna explain many aspects of mental illness to the reader. They cover topics such as the validity, prevalence, and origins of mental disorders, in addition to addressing specific disorders. The information is imparted in a cheerful and comic manner, with various jokes, puns, and pop culture references.<br>
 <br>(Source: MU)'), 4, '2015-02-13', '2015-06-26', '', '5 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/69621.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (56, 92, '"Karappo Capsule (からっぽカプセル)"', ' by Maaya Uchida', 'js-theme-songs', 'https://open.spotify.com/track/6V4ySJsF3NvRfr0XymF8NQ');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (43, 92, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (106, 92, 56);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (92, 92, 33);

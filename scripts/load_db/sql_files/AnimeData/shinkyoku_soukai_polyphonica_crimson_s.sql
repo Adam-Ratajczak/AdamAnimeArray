@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1717, CONCAT('Shinkyoku Soukai Polyphonica Crimson S'), CONCAT('The new series will again focus on Corticarte, but it will tie into Ichiro Sakaki and Noboru Kannatsuki', CHAR(39), 's Shinkyoku Sōkai Polyphonica crimson S light novel adaptation, which are set during the Academy years of the storyline. <br>
 <br>(Source: ANN)'), 1, '2009-04-05', '2009-06-21', 'Spring 2009', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1550/95575.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1214, 1717, '"phosphorus"', ' by eufonius', 'js-theme-songs', 'https://open.spotify.com/track/06UJYXyxiGv6TjIOsR2no1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4265, 1717, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4266, 1717, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4267, 1717, 7);

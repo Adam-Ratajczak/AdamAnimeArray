@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Before long, other fictional characters appear in the world, carrying the hopes and scars of their home. A princely knight, a magical girl, a ruthless brawler, and many others now crowd the streets of Japan. However, the most mysterious one is a woman in full military regalia, dubbed "Gunpuku no Himegimi," who knows far more than she should about the creators', CHAR(39), ' world. Despite this, no one knows her true name or the world she is from.<br>
 <br>Meanwhile, Souta and Selesia work together with Meteora Österreich, a calm and composed librarian NPC, to uncover the meaning behind these unnatural events. With powerful forces at play, the once clear line between reality and imagination continues to blur, leading to a fateful meeting between creators and those they created.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-08', '2017-09-16', 'Spring 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/85469.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1084, 1527, '"gravityWall"', ' by SawanoHiroyuki[nZk]:Tielle & Gemie', 'js-theme-songs', 'https://open.spotify.com/track/0sZ4b9dCzwlCw6susRMO39')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3797, 1527, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3798, 1527, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3799, 1527, 3);

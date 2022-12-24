@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1126, CONCAT('Listeners'), CONCAT('Set in a world where the concept of music ceases to exist. The story begins when a boy encounters Myuu, a mysterious girl who possesses an audio input jack in her body. The two intermingle with the history of rock music and embark on an unforgettable journey.<br>
 <br>(Source: MAL News)'), 1, '2020-04-04', '2020-06-20', 'Spring 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1589/106391.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (804, 1126, '"Into the blue's"', ' by ACCAMER', 'js-theme-songs', 'https://open.spotify.com/track/3ATB5UCxOR0kUJ9PVB0QKk')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2735, 1126, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2736, 1126, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2737, 1126, 8);

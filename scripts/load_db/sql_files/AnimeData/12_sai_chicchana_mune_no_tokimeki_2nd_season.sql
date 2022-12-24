@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (4, CONCAT('12-sai.: Chicchana Mune no Tokimeki 2nd Season'), CONCAT('The story begins with Hanabi, a sixth-grade girl who is neither an adult nor a child. She deals with issues such as accidentally witnessing her homeroom teacher kissing, and worrying about experiencing physiological changes before her friends. The series depicts a 12-year-old girl', CHAR(39), 's innocent worries and first love.<br>
 <br>(Source: ANN)'), 1, '2016-10-03', '2016-12-19', 'Fall 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/80312.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (3, 4, '"Ano ne, Kimi dake ni (あのね、キミだけに)"', ' by AOP', 'js-theme-songs', 'https://open.spotify.com/track/2q4qieGtgpgEtcminmZ06a')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (4, 4, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (8, 4, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (9, 4, 7);

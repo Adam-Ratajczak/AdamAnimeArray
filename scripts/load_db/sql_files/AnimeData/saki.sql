@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As the club play a few rounds, Saki attempts to hide her talent. However, the club president, Hisa Takei, notices Saki', CHAR(39), 's unusual playstyle. Realizing her potential, she puts Saki', CHAR(39), 's real ability to the test—proving her to be more talented than expected. This revelation damages Nodoka', CHAR(39), 's pride, and their relationship gets off to a rocky start.<br>
 <br>Saki ends up joining the club, and after clearing up the misunderstandings between her and Nodoka, friendship blooms between them. As Saki slowly warms up to mahjong once again, she and the rest of her club only have one goal—to win nationals!<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-04-06', '2009-09-28', 'Spring 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/73933.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1128, 1599, '"Glossy:MMM"', ' by Miyuki Hashimoto', 'js-theme-songs', 'https://open.spotify.com/track/4jdvftDPguhZTWixCeHpQX')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1720, 1599, 16);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1746, 1599, 13);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1747, 1599, 9);

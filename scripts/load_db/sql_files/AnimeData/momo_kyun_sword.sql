@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1279, CONCAT('Momo Kyun Sword'), CONCAT('Momoko is a beautiful young sword fighter who was born inside a peach (momo in Japanese). She lives with her constant companions—the dog god Inugami, the monkey god Sarugami, and the pheasant god Kijigami—in a peaceful paradise. However, a demon army led by devil king invades the paradise and steals the precious treasure that protects Momoko', CHAR(39), 's land. To retrieve the treasure and save the people, Momoko embarks on a great adventure with her three companions.<br>
 <br>(Source: ANN)'), 1, '2014-07-09', '2014-09-24', 'Summer 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/64445.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (891, 1279, '"Momoiro Fantasy (桃色ファンタジー)"', ' by Haruka Chisuga', 'js-theme-songs', 'https://open.spotify.com/track/48eyQWstZ1o4q7TtdDUZDG')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3153, 1279, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3154, 1279, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3155, 1279, 9);

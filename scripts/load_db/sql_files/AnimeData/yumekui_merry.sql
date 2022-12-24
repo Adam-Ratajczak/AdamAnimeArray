@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>To his surprise, the nightmare continues in the middle of the day even before Yumeji has fallen asleep. The unexpected event was triggered by a dream demon—an inhabitant of the world of dreams who wants to use Yumeji', CHAR(39), 's body as a vessel to fully enter the real world. However, Yumeji is saved by the timely arrival of Merry Nightmare, another dream demon who can somehow physically manifest without a host and is instead trying to return to her own realm.<br>
 <br>As more dream demons continue to push into reality, it is up to Yumeji and Merry to fight back against the invasion before everyone', CHAR(39), 's nightmares materialize.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2011-01-07', '2011-04-08', 'Winter 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/30869.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1492, 2086, '"Daydream Syndrome"', ' by Marina Fujiwara (藤原鞠菜)', 'js-theme-songs', 'https://open.spotify.com/track/00ANxMHjANZ0GMeoKcNKVp')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5180, 2086, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5181, 2086, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2259, 2086, 31);

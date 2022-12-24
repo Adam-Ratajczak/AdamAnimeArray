@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1040, CONCAT('Kishin Taisen Gigantic Formula'), CONCAT('2035 A.D. The heads of ancient giant idols were excavated all over the world. Using those twelve stones statues, Humanity had barely overcome the threat of extinction called the "Equatorial Winter". But the stone statues had forced Humanity to construct colossal suits of armor as their bodies and demanded that the humans fight each other.<br>
 <br>(Source: ANN)'), 1, '2007-04-05', '2007-09-27', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/21716.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (742, 1040, '"United force"', ' by Minami Kuribayashi', 'js-theme-songs', 'https://open.spotify.com/track/1x86RUbNyoe9DTDza4Dzzo');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1130, 1040, 102);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1147, 1040, 10);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1148, 1040, 14);

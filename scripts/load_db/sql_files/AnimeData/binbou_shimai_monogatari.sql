@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (210, CONCAT('Binbou Shimai Monogatari'), CONCAT('Without the presence of both their deceased mother and their debt-ridden father, sisters Kyou and Asu Yamada are forced to fend for themselves. Thankfully, they at least have a roof over their heads: a small room in an old apartment spacious enough to fit both of them. However, to make ends meet, the older sister Kyou strives to juggle various part-time jobs—all while making sure that she and her younger sister can continue studying.<br>
 <br>Despite these hardships, they are not alone. Seemingly blessed with good and kind people around them, Kyou and Asu', CHAR(39), 's lives are far from miserable. Above all else, the two sisters share a precious bond that, no matter what pain, trials, or quarrels may come their way, will always remain unbreakable.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-06-30', '2006-09-15', 'Summer 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1959/108682.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (151, 210, '"Shinkokyuu"', ' by Splash Candy', 'js-theme-songs', 'https://open.spotify.com/track/46vGFtuyxtu0MWijQPGLpe');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (499, 210, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (500, 210, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (501, 210, 10);

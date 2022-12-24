@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Despite their interest in learning the sport, the older girls prefer messing around, while Yuri, being the only one who actually knows how to play and the most mature in spite of being younger, has to deal with her seniors', CHAR(39), ' out of control behavior. <br>
 <br>When these four girls come together, insanity ensues in this lightning-paced comedy about a tennis club that doesn', CHAR(39), 't really play tennis. <br>
 <br>[Written by MAL Rewrite]'), 1, '2012-10-07', '2012-12-23', 'Fall 2012', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1703/98658.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1327, 1865, '"Koyoi Festi-Bubble (今宵フェスティバブル)"', ' by Nasuno Takamiya (Kyoko Narumi)', 'js-theme-songs', 'https://open.spotify.com/track/3XtNhG6KBobBDaqCtdcqsY');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (773, 1865, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4623, 1865, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4624, 1865, 19);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (89, CONCAT('Angolmois: Genkou Kassenki'), CONCAT('The scary great king comes from the other side of the sea... The big incident "Genkou" that shook medieval Japan is being drawn in an original way in this historical anime, along with the beginning of the Samurai!<br>
 <br>(Source: Crunchyroll)'), 1, '2018-07-11', '2018-09-26', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1469/95052.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (54, 89, '"Braver"', ' by Straightener', 'js-theme-songs', 'https://open.spotify.com/track/612IaAUd4Wz612D40dEYm7')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (207, 89, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (208, 89, 6);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (102, 89, 53);

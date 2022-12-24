@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (18, CONCAT('A-Channel'), CONCAT('Tooru and Run have been best friends forever, so when Tooru learns that she', CHAR(39), 's managed to get into the same high school as Run, she runs to tell her... only to find Run in a compromising position with yet another girl, Yuko. Needless to say, that makes things a bit awkward at school, with Tooru fending off those who might be interested in Run while Yuko and their other girlfriend, Nagi, have to deal with Run', CHAR(39), 's own penchant for drama.<br>
 <br>(Source: Sentai Filmworks)'), 1, '2011-04-08', '2011-06-24', 'Spring 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1333/110595.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (13, 18, '"Morning Arch"', ' by Marina Kawano', 'js-theme-songs', 'https://open.spotify.com/track/0wD4ItThJ4p2KIa5BCbz1D');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (10, 18, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (20, 18, 16);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (22, 18, 8);

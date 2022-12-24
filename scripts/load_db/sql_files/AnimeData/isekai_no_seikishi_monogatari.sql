@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As her army fights them off, Lashara takes note of Kenshi', CHAR(39), 's abilities and demands that her attacker be captured alive, only to find out that the pilot is male which is extremely rare on Geminar. Believing it to be a waste to kill him, she makes Kenshi her attendant.<br>
 <br>As the empress', CHAR(39), ' new servant, Kenshi is required to accompany Lashara to the Holy Land, an academy where Sacred Mechanoid pilots hone their skills. His arrival attracts attention, but Kenshi is unaware that something sinister is brewing within the academy and it could plunge the entire world into war.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-05-22', '2010-05-26', '', '45 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/20345.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (621, 879, '"Follow Me"', ' by Seira Kagami ft. Sound Around', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2122, 879, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2123, 879, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2124, 879, 10);

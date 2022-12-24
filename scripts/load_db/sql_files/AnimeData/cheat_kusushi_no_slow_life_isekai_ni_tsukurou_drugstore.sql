@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (307, CONCAT('Cheat Kusushi no Slow Life: Isekai ni Tsukurou Drugstore'), CONCAT('Reiji Kirio, formerly a corporate slave, wakes up one day in another world. After discovering that he has gained superhuman pharmaceutical knowledge, he decides to open up a drugstore alongside the canine Noera and the ghostly Mina. There, he tends to the needs of all who visit the shop with potions and the like.<br><br>Cheat Kusushi no Slow Life: Isekai ni Tsukurou Drugstore follows the slow but often hectic days of Reiji', CHAR(39), 's drugstore.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-07-07', '2021-09-22', 'Summer 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1787/115817.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (219, 307, '"Kokoro Hayaru (ココロハヤル)"', ' by Akane Kumada', 'js-theme-songs', 'https://open.spotify.com/track/5wuqykH0KqXPvmdh3m5bXt')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (704, 307, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (705, 307, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (345, 307, 48);

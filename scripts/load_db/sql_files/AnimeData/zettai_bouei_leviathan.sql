@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2113, CONCAT('Zettai Bouei Leviathan'), CONCAT('The story is set in Aquafall, a fantasy world abound with water and greenery, and populated by dragons and fairies. Meteorites suddenly bring forth evil creatures that threaten all living things on the planet. The fairy Syrup assembles the Aquafall Defense Force, with three girls of the dragon clans as recruits. The story follows Syrup and the dragon girls Leviathan, Bahamut, and Jörmungandr as they work together to battle enemies and grow up.<br>
 <br>(Source: ANN)'), 1, '2013-04-06', '2013-07-06', 'Spring 2013', '20 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/47499.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1511, 2113, '"Truly"', ' by PASSPO☆', 'js-theme-songs', 'https://open.spotify.com/track/0zWGiYjhaovvWcBnxhHrJ9');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5259, 2113, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5260, 2113, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2286, 2113, 5);

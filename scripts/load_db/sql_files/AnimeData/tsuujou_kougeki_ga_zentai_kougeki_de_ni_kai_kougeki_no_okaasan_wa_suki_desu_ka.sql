@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1964, CONCAT('Tsuujou Kougeki ga Zentai Kougeki de Ni-kai Kougeki no Okaasan wa Suki Desu ka?'), CONCAT('Forming a party with one', CHAR(39), 's mother in an online game seems not only unlikely but also uncomfortable to most teenage gamers. <br>
 <br>Unfortunately, Masato Oosuki finds himself in that exact scenario. After completing a seemingly meaningless survey, he is thrown into the world of a fantasy MMORPG—and his mother Mamako actually tagged along with him! On top of all of that, Mamako turns out to be an overpowered swordswoman, possessing the power of two-hit multi-target attacks! After minor tension between the two, they search for party members, meeting the merchant Porta and the sage Wise, starting their journey to clear the game.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-07-13', '2019-09-28', 'Summer 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1225/102250.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1405, 1964, '"Iyayo Iyayo mo Suki no Uchi (イヤヨイヤヨモスキノウチ！)"', ' by Spira Spica (スピラ・スピカ)', 'js-theme-songs', 'https://open.spotify.com/track/3cS9L5kLfrhibzyHuowLh4');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4902, 1964, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4903, 1964, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4904, 1964, 9);

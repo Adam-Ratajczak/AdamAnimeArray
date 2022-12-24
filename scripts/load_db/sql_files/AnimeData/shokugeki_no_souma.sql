@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Rather than tagging along with his father, Souma finds himself enrolling at the prestigious Tootsuki Culinary Academy, where only 10 percent of its students end up graduating. The school is famous for its "Shokugeki"—intense cooking competitions between students often used to settle debates and arguments. Jouichirou tells Souma that to surpass him and survive the next three years at Tootsuki and graduate there.<br>
 <br>The academy', CHAR(39), 's brutal curriculum and fiercely competitive student body await the young chef, who must learn to navigate the treacherous environment if he wants to stand a chance at realizing his dreams. But is skill alone enough to let him rise to the top?<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-04-04', '2015-09-26', 'Spring 2015', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/72943.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1226, 1733, '"Kibou no Uta (希望の唄)"', ' by ULTRA TOWER', 'js-theme-songs', 'https://open.spotify.com/track/7cXNAMhM7GxXG3xuAGrDEs')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (721, 1733, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4307, 1733, 15);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4308, 1733, 14);

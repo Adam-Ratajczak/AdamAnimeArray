@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2103, CONCAT('Yuyushiki'), CONCAT('The story follows the school life of the three girls, Yuzuko, Yukari, and Yui, who join their high school', CHAR(39), 's Data Processing Club. The odd friendship between the three make for wacky humor in even the most mundane of events.'), 1, '2013-04-10', '2013-06-26', 'Spring 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/48747.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1504, 2103, '"Se-no! (せーのっ!)"', ' by Jouhoushori-bu (Rumi Ookubo, Risa Taneda, Minami Tsuda)', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2276, 2103, 75);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2327, 2103, 28);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2328, 2103, 38);

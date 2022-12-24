@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The next day at work, Minare is shocked to hear a recording of herself from the previous night playing over the radio. Flustered, she rushes to the radio station in a frenzy to stop the broadcast. As she confronts Matou, a chain of events leads to her giving an impromptu talk live on air, explaining her savage drunken speech. With her energetic voice, she delivers a smooth dialogue with no hesitation, which Matou recognizes as raw talent.<br>
 <br>Minare soon becomes a late-night talk show host under Matou', CHAR(39), 's direction, covering amusing narratives set in Sapporo, all while balancing her day job and personal life to make ends meet.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-04-04', '2020-06-20', 'Spring 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1913/112190.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (921, 1321, '"aranami"', ' by tacica', 'js-theme-songs', 'https://open.spotify.com/track/1N23CBPVb0ms0lf3acpfBv')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (572, 1321, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3274, 1321, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3275, 1321, 6);

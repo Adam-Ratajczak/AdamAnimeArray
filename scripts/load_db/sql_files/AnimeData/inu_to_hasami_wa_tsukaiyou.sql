@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (861, CONCAT('Inu to Hasami wa Tsukaiyou'), CONCAT('A nonsense comical mystery. Harumi Kazuhito is a high school boy who loves books and is a fan of novelist Natsuno Kirihime. One day, he finds Kirihime writing at a cafe, about to be shot by a robber. He protects her from the attack but is killed instead. Through the supernatural power of a book-worm, he is reincarnated as a dachshund dog. Kazuhito (as a dog) writhes in a painful bookless life, when a sadistic woman carrying a pair of scissors offers him help. She is Kirihime herself.<br>
 <br>(Source: Dog and Scissors Wiki)'), 1, '2013-07-02', '2013-09-17', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/56313.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (608, 861, '"Wan Wan Wan Wan N_1!! (わんわんわんわんN_1!!)"', ' by Inu Musume Club (犬っ娘クラブ)', 'js-theme-songs', 'https://open.spotify.com/track/4RUdzZih9oOXg9UOvb8upc')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2062, 861, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2063, 861, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (943, 861, 5);

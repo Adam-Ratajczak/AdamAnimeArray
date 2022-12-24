@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While watching her favorite show one day, Serinuma witnesses the death of her most beloved character. Utterly depressed, she can', CHAR(39), 't muster up the energy to eat her meals, let alone attend school. After an entire week, she finally recovers. But now there', CHAR(39), 's something unusual about her—during the time she refused to leave her room, she ended up losing a large amount of weight and has somehow become strikingly beautiful!<br>
 <br>Now catching the eye of everyone who sees her, she finds herself at the center of attention of four boys she has always known at her school. Though they all wish to spend time with her, Serinuma would much rather they spend time falling in love with one another. How will Serinuma deal with the four boys pursuing her BL-obsessed self?<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-10-07', '2016-12-23', 'Fall 2016', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/81953.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1453, 2030, '"Dokidoki no Kaze (ドキドキの風)"', ' by Rie Murakawa', 'js-theme-songs', 'https://open.spotify.com/track/6ZqxW0qNuKWi9hhvY3sno5');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (844, 2030, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5055, 2030, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5056, 2030, 7);

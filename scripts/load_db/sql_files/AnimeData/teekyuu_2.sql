@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1866, CONCAT('Teekyuu 2'), CONCAT('Second season of Teekyu series.'), 1, '2013-07-07', '2013-09-22', 'Summer 2013', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1432/98659.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1328, 1866, '"Menimeni Manimani (メニメニマニマニ)"', ' by Nasuno Takamiya (CV: Kyoko Narumi)', 'js-theme-songs', 'https://open.spotify.com/track/7EvzUhU6zpdJxAsjNQZ1gN');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (774, 1866, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4625, 1866, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4626, 1866, 19);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Unfortunately for Takeo, his appearance does not bode well for his love life. As if his looks were not already enough to scare the opposite sex away, Takeo', CHAR(39), 's cool, handsome best friend and constant companion Makoto Sunakawa easily, and unintentionally, steals the hearts of the female students—including every girl Takeo has ever liked.<br>
 <br>One day, when Takeo saves cute Rinko Yamato from being molested, he falls in love with her instantly. Unfortunately, he suspects that she might be interested in Sunakawa. Despite his romantic feelings for Yamato continuing to bloom, Takeo decides to act as her cupid, even as he yearns for his own love story.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2015-04-09', '2015-09-24', 'Spring 2015', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/69455.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1001, 1419, '"Miraikei Answer (未来形Answer)"', ' by TRUSTRICK', 'js-theme-songs', 'https://open.spotify.com/track/5HhCz8PsBYkDoIXppjcvcK')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3515, 1419, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3516, 1419, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3517, 1419, 10);

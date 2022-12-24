@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As the snow melts and spring approaches, Senkuu and his allies in Ishigami Village finish the preparations for their attack on the Tsukasa Empire. With a reinvented cell phone model now at their disposal, the Kingdom of Science is ready to launch its newest scheme to recruit the sizable numbers of Tsukasa', CHAR(39), 's army to their side. However, it is a race against time for every day the Kingdom of Science spends perfecting their inventions, the empire rapidly grows in number.<br>
 <br>Reuniting with old friends and gaining new allies, Senkuu and the Kingdom of Science must stop Tsukasa', CHAR(39), 's forces in order to fulfill their goal of restoring humanity and all its creations. With the two sides each in pursuit of their ideal world, the Stone Wars have now begun!<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-01-14', '2021-03-25', 'Winter 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1711/110614.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (323, 453, '"Rakuen (楽園)"', ' by Fujifabric', 'js-theme-songs', 'https://open.spotify.com/track/6X9m9JRk2ypGusClUBraII');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (207, 453, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1100, 453, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1101, 453, 12);

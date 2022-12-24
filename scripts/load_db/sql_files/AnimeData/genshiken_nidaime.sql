@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (594, CONCAT('Genshiken Nidaime'), CONCAT('Another college semester begins and the returning members of Genshiken attempt to recruit new club members. Three new members join the club, attracted by Ogiue', CHAR(39), 's BL drawings. She welcomes the new members but fears the club will become a "fujoshi" haven for yaoi fans and is getting a bit too far removed from its original purpose.<br>
 <br>(Source: ANN)'), 1, '2013-07-07', '2013-09-29', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/52935.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (420, 594, '"Genshi, Joshi wa, Taiyou Datta. (げんし、女子は、たいようだった。)"', ' by Sumire Uesaka', 'js-theme-songs', 'https://open.spotify.com/track/1MF4oU4pnpkXzVsmZYe2AY');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1470, 594, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1471, 594, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (661, 594, 129);

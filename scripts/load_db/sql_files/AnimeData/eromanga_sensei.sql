@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While caring for what', CHAR(39), 's left of his family, Masamune earns a living as a published light novel author with one small problem: he', CHAR(39), 's never actually met his acclaimed illustrator, Eromanga-sensei, infamous for drawing the most lewd erotica. Through an embarrassing chain of events, he learns that his very own little sister was his partner the whole time!<br>
 <br>As new characters and challenges appear, Masamune and Sagiri must now face the light novel industry together. Eromanga-Sensei follows the development of their relationship and their struggle to become successful and as Sagiri slowly grows out of her shell, just how long will she be able to hide her true persona from the rest of the world?<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-09', '2017-06-25', 'Spring 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/86468.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (355, 492, '"Hitorigoto (ヒトリゴト)"', ' by ClariS', 'js-theme-songs', 'https://open.spotify.com/track/6WMeDp0t2UJmy21PRKAOzx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1211, 492, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1212, 492, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1213, 492, 7);

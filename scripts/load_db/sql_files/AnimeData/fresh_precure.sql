@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (528, CONCAT('Fresh Precure!'), CONCAT('Love Momozono is a 14-year-old student at Yotsuba Junior Highschool that tends to care more for others than for herself. One day she visits a show of the famous dance unit "Trinity" and decides to become a dancer, too. On the same event, subordinates of the Labyrinth Kingdom show up who want to collect the unhappiness of the audience. Love gets the power to change into Cure Peach and fights them. Soon after, she is joined by her good friends Miki, who is Cure Berry, and Inori, who becomes Cure Pine.<br>
 <br>(Source: ANN)'), 1, '2009-02-01', '2010-01-30', 'Winter 2009', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/21267.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (384, 528, '"Let's! Fresh Precure!"', ' by Moie Mizuki', 'js-theme-songs', 'https://open.spotify.com/track/0DuEz5HcS7XLWBsVTFCXaf')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (231, 528, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1310, 528, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1311, 528, 12);

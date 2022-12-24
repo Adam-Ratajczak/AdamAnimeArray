@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (874, CONCAT('IS: Infinite Stratos 2'), CONCAT('Second season of Infinite Stratos.'), 1, '2013-10-04', '2013-12-20', 'Fall 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/49359.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (618, 874, '"True Blue Traveler"', ' by Kuribayashi Minami', 'js-theme-songs', 'https://open.spotify.com/track/4EFOQTUSSzOa0H5ippUd0U');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2105, 874, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2106, 874, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2107, 874, 3);

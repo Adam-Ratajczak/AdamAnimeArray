@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1985, CONCAT('Umayon'), CONCAT('It', CHAR(39), 's a "pop" and cute everyday anime based on the 4-koma manga featuring the characters from Uma Musume: Pretty Derby.'), 1, '2020-07-07', '2020-09-22', 'Summer 2020', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1032/111641.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1419, 1985, '"Pyoitto♪Halleluyah (ぴょいっと♪はれるや！)"', ' by Special Week (Azumi Waki), Grass Wonder (Rena Maeda), El Condor Pasa (Minami Takahashi), Seiun Sky (CAkari Kitou), King Halo (Iori Saeki) ', 'js-theme-songs', 'https://open.spotify.com/track/6CXatBHz9UNSDEQR789iMz');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2153, 1985, 161);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2154, 1985, 162);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35117, 1985, 1, CONCAT('40% And Below! Tracen Academy Special Make-up Exams'), NULL, 'https://drive.google.com/file/d/1fake_oW-Ybz_o_aN7ATL4bEHcpiNx8Ey/preview');

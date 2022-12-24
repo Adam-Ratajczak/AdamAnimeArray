@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1216, CONCAT('Mangirl!'), CONCAT('"We', CHAR(39), 're going to launch a manga magazine!" <br>
 <br>A team of girls with zero experience in manga editing are off and running toward their dream of creating the biggest manga magazine in Japan! They seem to do nothing but run into problems and failures... But still they', CHAR(39), 're working hard every day!<br>
 <br>(Source: Crunchyroll)'), 1, '2013-01-03', '2013-03-28', 'Winter 2013', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/45314.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (854, 1216, '"girl meets DEADLINE"', ' by M＠N☆GIRL! (Kanako Miyamoto, Yuri Komagata, Moemi Otaka, Ayaka Ohashi)', 'js-theme-songs', 'https://open.spotify.com/track/5bcv1xqNb5AONw2ehW4uSQ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2972, 1216, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2973, 1216, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1314, 1216, 13);

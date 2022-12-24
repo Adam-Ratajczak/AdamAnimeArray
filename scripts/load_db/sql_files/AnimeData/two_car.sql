@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1967, CONCAT('Two Car'), CONCAT('Two Car follows high schoolers Yuri Miyata and Megumi Meguro as they battle six other rival pairs in the sport of motorcycle sidecar racing.<br>
 <br>(Source: MAL News)'), 1, '2017-10-08', '2017-12-24', 'Fall 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/88291.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1407, 1967, '"Heart to Heart"', ' by Sphere', 'js-theme-songs', 'https://open.spotify.com/track/1roAY9vJsZlBtcviSJCaEz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2133, 1967, 50);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34790, 1967, 1, CONCAT('Exhibition'), '2017-10-08', 'https://cloudvideo.tv/embed-wolqowmmf4zg.html');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34791, 1967, 2, CONCAT('Shakedown'), '2017-10-15', 'https://cloudvideo.tv/embed-795gym9wnaig.html');

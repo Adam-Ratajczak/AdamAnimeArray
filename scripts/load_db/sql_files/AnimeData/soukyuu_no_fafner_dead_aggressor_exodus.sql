@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1792, CONCAT('Soukyuu no Fafner: Dead Aggressor - Exodus'), CONCAT('2150 AD. The battle against the silicon-based Festums from outer space reaches a new phase. Fragments of the North Pole Mir were scattered throughout the world. Eventually, they began to act on their own as independent Mirs. Most hated humanity and attacked them, but some chose to coexist with mankind. Some with the same way of thinking existed within the human race, as well: those who were both human and Festum. They added to the chaos of the battle and brought about even more hatred. <br>
 <br>(Source: Crunchyroll)'), 1, '2015-01-09', '2015-04-03', 'Winter 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/68565.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1270, 1792, '"Exist (イグジスト)"', ' by angela', 'js-theme-songs', 'https://open.spotify.com/track/5rnlTNVbe3g74ep89ar6K1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4447, 1792, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4448, 1792, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4449, 1792, 3);

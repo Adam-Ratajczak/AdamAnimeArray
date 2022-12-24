@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1538, CONCAT('Red Garden'), CONCAT('Strange suicides have been taking place in New York. One day, four girls from the same high school wake up in the morning feeling tired and dizzy and not being able to remember anything about the previous night. In school, they find out that one of their classmates has committed suicide. School is canceled for the rest of the day, but instead of going home, the girls are drawn to a park by butterflies only they can see. Suddenly a man and a woman approach the girls, telling them that they all died the previous night. <br>
 <br>(Source: ANN)'), 2, '2006-10-04', '2007-03-14', 'Fall 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/25411.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1090, 1538, '"Jolly Jolly"', ' by JiLL-Decoy association', 'js-theme-songs', 'https://open.spotify.com/track/78XSYLbXACA8mfDDbIlASm');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1091, 1538, '"Rock The LM.C"', ' by LM.C', 'js-theme-songs', 'https://open.spotify.com/track/2DJcIa1JBTxtWHBZLswHbI');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3823, 1538, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3824, 1538, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3825, 1538, 8);

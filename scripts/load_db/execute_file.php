@@ -23,10 +23,10 @@
         foreach($commands as $command){
             if(trim($command)){
                 if(mysqli_query($conn, $command)){
+                    fwrite($fp, $command . ";" . PHP_EOL);
                     $success++;
                 }else{
-                    fwrite($fp, $command);
-                    fwrite($fe, mysqli_error($conn) . '\n');
+                    fwrite($fe, $command . ";" . PHP_EOL);
                 }
                 $total += 1;
             }

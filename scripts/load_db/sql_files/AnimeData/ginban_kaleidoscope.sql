@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (605, CONCAT('Ginban Kaleidoscope'), CONCAT('Figure skater Tazusa Sakurano is on the fast track to the Olympics. As a top contender, her chances rest on a single competition in Canada. However, during her program, she falls and hits her head on the ice, knocking her unconscious. At the same time, Canadian stunt pilot Pete Pumps goes down in a fiery blaze.<br>
 <br>After her devastating failure, Tazusa returns home to Japan, but she starts hearing a voice in her head. In reality, when Pete had arrived at the gates of heaven, he was denied access for his sins. Instead, he was told to wait 100 days and is now trapped in Tazusa', CHAR(39), 's body! Unwilling to let this interrupt her life—even if her body is a bit crowded—Tazusa moves forward with skating, all while a pesky voice may just be able to help her achieve her dream.<br>
 <br>[Written by MAL Rewrite]'), 1, '2005-10-09', '2005-12-25', 'Fall 2005', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/19926.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (428, 605, '"Dual"', ' by YeLLOW Generation', 'js-theme-songs', 'https://open.spotify.com/track/3IxsFLjWE0lTUp64ltqQ0M');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1489, 605, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1490, 605, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1491, 605, 19);

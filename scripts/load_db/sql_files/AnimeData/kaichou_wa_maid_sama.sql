@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>One day, after hearing a girl cry in the hallway, Misaki encounters Takumi Usui—the most popular boy in the school—as he rejects a love confession. Enraged at what she is seeing, Misaki reprimands him for making the girl cry. However, Usui is indifferent and brushes it off as nothing.<br>
 <br>Unexpectedly, Misaki soon runs into Usui again, but this time when she is working at a maid cafe! Embarrassed that someone has found out about her secret occupation, Misaki promises herself not to let Usui destroy her reputation. However, the mysterious boy now begins to visit the same cafe regularly to observe and tease Misaki. When push comes to shove, will Usui still be able to keep the president', CHAR(39), 's secret?<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2010-04-02', '2010-09-24', 'Spring 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/25254.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (665, 936, '"My Secret"', ' by Saaya Mizuno (水野佐彩)', 'js-theme-songs', 'https://open.spotify.com/track/2h9Pbowa85GYBxWiUZWoH4')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (411, 936, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2264, 936, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2265, 936, 7);

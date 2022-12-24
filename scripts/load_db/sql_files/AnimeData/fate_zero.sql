@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Kiritsugu now stands at the center of a cutthroat game of survival, facing off against six other participants, each armed with an ancient familiar, and fueled by unique desires and ideals. Accompanied by his own familiar, Saber, the notorious mercenary soon finds his greatest opponent in Kirei Kotomine, a priest who seeks salvation from the emptiness within himself in pursuit of Kiritsugu.<br>
 <br>Based on the light novel written by Gen Urobuchi, Fate/Zero depicts the events of the Fourth Holy Grail War—10 years prior to Fate/stay night. Witness a battle royale in which no one is guaranteed to survive.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-10-02', '2011-12-25', 'Fall 2011', '28 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1887/117644.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (374, 515, '"oath sign"', ' by LiSA ', 'js-theme-songs', 'https://open.spotify.com/track/4WRoLfCYJ4sLMhXgQJnI2N')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1274, 515, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1275, 515, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1276, 515, 10);

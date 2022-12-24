@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (601, CONCAT('Gibiate'), CONCAT('The story takes place in Japan. The year is 2030 and Earth has been completely overrun by a viral disease named "Gibia" that turns infected people into various different monsters, based on their age, sex, and race.<br>
 <br>A samurai and a ninja from the early Edo period travel together through time and arrive in a ruined Japan to aid a professor working on a cure for the virus.<br>
 <br>Together, they fight countless Gibia monsters, outlaws, and other fierce foes on their journey to save mankind.'), 1, '2020-07-15', '2020-09-30', 'Summer 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1035/113446.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (424, 601, '"GIBIATE"', ' by Yoshida Brothers feat SUGIZO', 'js-theme-songs', 'https://open.spotify.com/track/1jJKptNrByFvupjHfLH5Gl')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1482, 601, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1483, 601, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1484, 601, 11);

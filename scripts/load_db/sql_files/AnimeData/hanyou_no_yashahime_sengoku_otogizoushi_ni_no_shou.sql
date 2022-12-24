@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (714, CONCAT('Hanyou no Yashahime: Sengoku Otogizoushi - Ni no Shou'), CONCAT('Second season of Hanyou no Yashahime: Sengoku Otogizoushi.'), 1, '2021-10-02', '2022-03-26', 'Fall 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1415/118635.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (509, 714, '"Toumei na Sekai (透明な世界) "', ' by Little Glee Monster', 'js-theme-songs', 'https://open.spotify.com/track/6MjG6j8Iuea6XL9cp1aUec');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1748, 714, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1749, 714, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1750, 714, 12);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (104, CONCAT('Ao no Exorcist: Kyoto Fujouou-hen OVA'), CONCAT('Bundled with the 19th and 20th volumes of the Ao no Exorcist manga.<br>
 <br>The first episode is based on the second chapter of the second Ao no Exorcist novel Home Sweet Home.<br>
 <br>The second episode is based on the title chapter from the Ao no Exorcist: Spy Game novel.'), 1, '2017-04-04', '2017-10-04', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1031/96313.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (64, 104, '"Itteki no Eikyou (一滴の影響)"', ' by UVERworld', 'js-theme-songs', 'https://open.spotify.com/track/6a8zOePRBenXtHq2AY49xB')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (50, 104, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (237, 104, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (238, 104, 9);

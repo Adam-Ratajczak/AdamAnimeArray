@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (181, CONCAT('Bartender'), CONCAT('Hidden in the backstreets of the Ginza district is Eden Hall, a lone bar operated by Ryuu Sasakura, the prodigy bartender who is said to mix the most incredible cocktails anyone has ever tasted. However, not just anyone can find Eden Hall rather, it is Eden Hall that must find you. Customers of varying backgrounds, each plagued with their own troubles, wander into this bar. Nevertheless, Ryuu always knows the ideal cocktail to console and guide each distraught soul.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-10-15', '2006-12-31', 'Fall 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/67397.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (126, 181, '"Bartender"', ' by Natural High', 'js-theme-songs', 'https://open.spotify.com/track/0aEuqNf2B3XXqCEYGvPLyB');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (127, 181, '"*~Hajimari no Hito"', ' by Natural High', 'js-theme-songs', 'https://open.spotify.com/track/2J3EicqRoMoxjBCCHghJSO');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (84, 181, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (408, 181, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (409, 181, 15);

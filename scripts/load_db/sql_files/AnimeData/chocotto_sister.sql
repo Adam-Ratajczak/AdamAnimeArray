@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (322, CONCAT('Chocotto Sister'), CONCAT('Haruma Kawagoe is an only child. A long time ago, at Christmas time, his mother miscarried the child that was to have been his baby sister. That night, young Haruma knelt down and offered up an earnest prayer: "Please make my mother well again, and please give me a little sister." Years have passed, and Haruma has nearly forgotten his prayer. But Santa hasn', CHAR(39), 't.... one Christmas, when Haruma is least expecting it, he gets an unusual present - his sister.<br>
 <br>(Source: ANN)'), 1, '2006-07-12', '2006-12-20', 'Summer 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/16825.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (229, 322, '"Doki! Doki! My Sister Soul"', ' by Harenchi Punch', 'js-theme-songs', 'https://open.spotify.com/track/2OO3NR4irFO0reCDChExZ3');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (742, 322, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (743, 322, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (744, 322, 14);

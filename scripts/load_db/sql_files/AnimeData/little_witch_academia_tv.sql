@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, when an excited Akko finally sets off to her new school, the trip there is anything but smooth. After her perilous journey, she befriends the shy Lotte Yansson and the sarcastic Sucy Manbavaran. To her utmost delight, she also discovers Chariot', CHAR(39), 's wand, the Shiny Rod, which she takes as her own. Unfortunately, her time at Luna Nova will prove to more challenging than Akko could ever believe. She absolutely refuses to stay inferior to the rest of her peers, especially to her self-proclaimed rival, the beautiful and gifted Diana Cavendish, so she relies on her determination to compensate for her reckless behavior and ineptitude in magic.<br>
 <br>In a time when wizardry is on the decline, Little Witch Academia follows the magical escapades of Akko and her friends as they learn the true meaning of being a witch. <br>
 <br>[Written by MAL Rewrite]'), 1, '2017-01-09', '2017-06-26', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/83934.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (806, 1131, '"Shiny Ray"', ' by YURiKA', 'js-theme-songs', 'https://open.spotify.com/track/5z6arQaEihjB69ElhYKulU')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2757, 1131, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2758, 1131, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2759, 1131, 9);

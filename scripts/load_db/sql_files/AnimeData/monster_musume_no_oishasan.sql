@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1285, CONCAT('Monster Musume no Oishasan'), CONCAT('After years of conflict, humans and monsters have settled their differences and are now at peace. This post-war era led to the foundation of Lindworm—a town which has since become the focal point of racial harmony.<br>
 <br>As a human doctor specializing in monster biology, Glenn Litbeit runs a small clinic alongside his partner, Saphentite Neikes, who is a half-snake monster known as a lamia. He uses his knowledge to tend to any monsters who seek his aid. Whatever affliction, concern, or injury it may be, he will always be there, ready to help.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-07-12', '2020-09-27', 'Summer 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1762/106598.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (897, 1285, '"Campanella Hibiku Sora de (カンパネラ響く空で)"', ' by ARCANA PROJECT', 'js-theme-songs', 'https://open.spotify.com/track/1wEV3pwzVxNnY470mLcu4d')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3174, 1285, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3175, 1285, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3176, 1285, 7);

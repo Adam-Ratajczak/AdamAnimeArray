@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>This doesn', CHAR(39), 't end badly for her, however. Due to her high defense, Maple acquires overpowered skills such as Total Defense, Poison Immunity, and Devour. These skills, along with the incredibly powerful items she obtains, allow her to obliterate most enemies in a single hit. After only a few days of playing the game, Maple claims third place in a server-wide event, gaining a reputation as a player who is both unkillable and absurdly powerful.<br>
 <br>Despite her overpowered character, Kaede has much to learn. As she progresses through the game, she meets new friends and acquaintances, helping her complete new levels and events. Through all of her adventures, she may even pick up some other crazy skills that exceed all expectations.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-08', '2020-03-25', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1579/113812.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (627, 890, '"Kyuukyoku Unbalance! (究極アンバランス！)"', ' by Junjou no Afilia', 'js-theme-songs', 'https://open.spotify.com/track/4UQPeoNdUx8fp5N8OdR9tK')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2157, 890, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2158, 890, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2159, 890, 12);

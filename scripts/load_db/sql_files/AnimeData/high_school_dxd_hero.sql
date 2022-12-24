@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While peacefully visiting a temple thanks to Rias', CHAR(39), ' spell, an attacking group of local youkai breaks the calm atmosphere. Once the altercation ends, the club learns that the mythical nine-tailed fox that protected the city was abducted and that someone has framed them for the act. Issei and his friends will now have to fight to protect the city and save their school trip from a planned disaster!<br>
 <br>In the meantime, Rias, who had to stay in Tokyo with Akeno Himejima and Koneko Toujou, grows increasingly restless to have left the perverted Issei alone with the other girls of the Occult Research Club. Beyond this vague anxiety, what is the exact nature of the feelings Rias has been struggling with for the past few months?<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-04-17', '2018-07-03', 'Spring 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1189/93528.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (542, 753, '"SWITCH"', ' by Minami', 'js-theme-songs', 'https://open.spotify.com/track/7eDyDKNZfTrf8lPf6m4ro6');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1844, 753, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1845, 753, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1846, 753, 7);

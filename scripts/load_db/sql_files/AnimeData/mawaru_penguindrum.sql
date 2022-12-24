@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>On the day Himari is given permission to temporarily leave the hospital, her brothers take her out to the aquarium to celebrate, where the family', CHAR(39), 's supposed fate is brought forth with her sudden collapse. However, when Himari is inexplicably revived by a penguin hat from the aquarium', CHAR(39), 's souvenir shop, the hand of fate continues to tick faithfully forward.<br>
 <br>With her miraculous recovery, though, comes a cost: there is a new entity within her body, whose condition for keeping her fate at bay sends the boys on a wild goose chase for the mysterious "Penguin Drum." In their search, the boys will have to follow the threads of fate leading from their own shocking past and into the lives of other wishmakers vying for the Penguin Drum, all hoping to land upon their chosen destiny.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-07-08', '2011-12-23', 'Summer 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/30238.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (863, 1233, '"Shounen yo Ware ni Kaere (少年よ我に帰れ)"', ' by Etsuko Yakushimaru Metro Orchestra', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3014, 1233, 20);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3015, 1233, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3016, 1233, 6);

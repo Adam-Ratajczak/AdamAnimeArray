@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>After being saved by a Lily two years ago while evacuating from a Huge attack, Riri Hitotsuyanagi vowed to become a Lily herself. She enrolls in the prestigious academy of Yurigaoka, a training ground for Lilies, and discovers that one of her classmates is Yuyu Shirai—the same Lily who rescued her. Much to her confusion, however, the person she thought to be cheerful turns out to be quite antisocial and prefers to fight alone. Even so, Riri still desires to get along with Yuyu and is willing to do anything she can to reach that goal. <br>
 <br>With Yuyu and the other Lilies by her side, Riri', CHAR(39), 's journey on becoming one of them has just bloomed!<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-02', '2020-12-25', 'Fall 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1024/108413.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (88, 137, '"Sacred world"', ' by RAISE A SUILEN', 'js-theme-songs', 'https://open.spotify.com/track/0j0UzZIX3D5NjvALPdG6Te')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (311, 137, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (312, 137, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (155, 137, 7);

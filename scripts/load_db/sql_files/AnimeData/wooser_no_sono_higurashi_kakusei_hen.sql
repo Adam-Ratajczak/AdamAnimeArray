@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2046, CONCAT('Wooser no Sono Higurashi: Kakusei-hen'), CONCAT('Second season of Wooser no Sono Higurashi.'), 1, '2014-01-08', '2014-03-26', 'Winter 2014', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1347/102594.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1465, 2046, '"NEW ORDER"', ' by Mamoru Miyano', 'js-theme-songs', 'https://open.spotify.com/track/3PLZB7SEMioW5kyLZBwhCa');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5088, 2046, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5089, 2046, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5090, 2046, 10);

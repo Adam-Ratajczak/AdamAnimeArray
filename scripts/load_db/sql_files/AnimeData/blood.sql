@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, Saya', CHAR(39), 's forgotten past quickly comes back to haunt her—one night, she is attacked at school by a creature that feeds on human blood. Just when all hope seems lost, a mysterious man named Haji appears and fends off the creature temporarily. But when her rescuer forces her to drink his blood, Saya suddenly enters a trance and slays the monster with ease, using her own blood as a catalyst. <br>
 <br>Saya then learns of an organization named Red Shield, founded for the sole purpose of defeating the hellish beasts. Now Saya and Haji must work together with Red Shield to fight these fearsome monsters and unlock the secrets to the girl', CHAR(39), 's past.<br>
 <br>[Written by MAL Rewrite]'), 3, '2005-10-08', '2006-09-23', 'Fall 2005', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/10183.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (164, 233, '"Aozora no Namida (青空のナミダ)"', ' by Hitomi Takahashi ', 'js-theme-songs', 'https://open.spotify.com/track/3YKWIX7Z3u58eq9aavhf2R');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (165, 233, '"Kataritsugu koto"', ' by Chitose Hajime', 'js-theme-songs', 'https://open.spotify.com/track/0E0TSCtEEVhNW8UTF488Dp');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (112, 233, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (538, 233, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (539, 233, 12);

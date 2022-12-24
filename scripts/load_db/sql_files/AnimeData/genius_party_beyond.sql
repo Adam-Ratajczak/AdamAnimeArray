@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (589, CONCAT('Genius Party Beyond'), CONCAT('Containing shorts that couldn', CHAR(39), 't be included in the original, Genius Party Beyond weaves stories that are both deep and insightful: the idea all life is relative in size, the consequences of an oppressive government, and how to deal with your darker desires, among others.<br>
 <br>From the directors and artists of works such as Samurai Champloo, Neon Genesis Evangelion, and Akira, come a multitude of thought-provoking tales, to create a collection equalling the original in storytelling genius.<br>
 <br>[Written by MAL Rewrite]'), 1, '2008-10-11', NULL, '', '16 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/18914.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (416, 589, '"Zero"', ' by Tamurapan', 'js-theme-songs', 'https://open.spotify.com/track/4CJqOcYUvfWUPCd7ULH0yr');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1456, 589, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1457, 589, 8);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1458, 589, 10);

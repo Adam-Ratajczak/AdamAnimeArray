@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1361, CONCAT('Nisekoi: OVA'), CONCAT('Bundled with the 21st volume of the Nisekoi manga.'), 1, '2016-01-04', NULL, '', '13 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1992/112119.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (957, 1361, '"Rally Go Round"', ' by LiSA', 'js-theme-songs', 'https://open.spotify.com/track/4tiiXvf3G6ujvyt8IdNHvR');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (591, 1361, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3390, 1361, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3391, 1361, 7);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1393, CONCAT('Nyanpire The Animation'), CONCAT('A heartwarming story about a stray black cat, who was given blood from a vampire. He was taken in by a girl called Misaki and started to live with her. Nyanpire', CHAR(39), 's favorite phrase is "Give me blood nya."'), 1, '2011-07-06', '2011-09-21', 'Summer 2011', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/46147.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (979, 1393, '"Nyanpire Taisou"', ' by Asou Nyatsuko & Nyadain', 'js-theme-songs', 'https://open.spotify.com/track/5Kju4yQyw8UDhfuBPpaUxl');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3456, 1393, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3457, 1393, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3458, 1393, 4);

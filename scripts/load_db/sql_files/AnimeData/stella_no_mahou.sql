@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1815, CONCAT('Stella no Mahou'), CONCAT('Upon enrolling in high school, Tamaki Honda joins a club for making doujin games known as the SNS Club. Joined by programmer Shiina, writer Ayame, and composer Kayo, Tamaki begins working as an illustrator for the club', CHAR(39), 's next game.<br>
 <br>(Source: Wikipedia)'), 1, '2016-10-03', '2016-12-19', 'Fall 2016', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/81471.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1290, 1815, '"God Save The Girls"', ' by Shino Shimoji', 'js-theme-songs', 'https://open.spotify.com/track/5IMdLrircJZnuvTuQSV632')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1965, 1815, 50);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2012, 1815, 28);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2013, 1815, 13);

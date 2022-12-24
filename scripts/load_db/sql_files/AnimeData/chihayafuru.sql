@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Based on the Ogura Hundred Poets anthology, this card game where poems are studied requires excellent memory, agility, and a tremendous endurance from the players. Full of hope, Chihaya joins the Shiranami Society together with the newly reconciled Arata and Taichi, embarking on an exciting journey for the title awarded to the top-ranked female player—Queen of Karuta.<br>
 <br>Since middle school, Chihaya grew distant from a dispassionate Taichi and separated from Arata. However, in order to improve her skills, Chihaya decides to create a karuta club in her high school. With the help of Taichi, another veteran player, and a few spirited newcomers, Chihaya', CHAR(39), 's new-founded Mizusawa Karuta Club aims for victory in the Omi Shrine', CHAR(39), 's national championship.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2011-10-05', '2012-03-28', 'Fall 2011', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/35749.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (222, 312, '"YOUTHFUL"', ' by 99RadioService', 'js-theme-songs', 'https://open.spotify.com/track/5wfvUZ7JfTtNLnOsmsgehN')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (150, 312, 5);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (716, 312, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (717, 312, 8);

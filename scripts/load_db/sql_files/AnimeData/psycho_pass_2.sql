@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>A mysterious figure has discovered a way to control the Crime Coefficient—a number compiled from mental scans that allows Sibyl to gauge psychological health and identify potential criminals. Through these means, he is able to murder an enforcer, leaving behind a cryptic clue: "WC?" scrawled in blood on a wall.<br>
 <br>Akane and the rest of Division 01 soon find themselves playing a deadly game against their new foe, coming face-to-face with a conspiracy threatening not only the authority of the Sibyl System, but the very foundation of Akane', CHAR(39), 's own convictions.<br>
 <br>[Written by MAL Rewrite]'), 2, '2014-10-10', '2014-12-19', 'Fall 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1197/100616.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1067, 1503, '"Enigmatic Feeling"', ' by Ling Tosite Sigure', 'js-theme-songs', 'https://open.spotify.com/track/0YHTrd78qCsMhzmgBHiZ28')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3748, 1503, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3749, 1503, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1620, 1503, 2);
