@@ -5,8 +5,8 @@ type Anime struct {
 	AnimeTitle string
 	AnimeDesc  string
 	TypeID     int
-	AiredBegin string
-	AiredEnd   string
+	AiredBegin interface{}
+	AiredEnd   interface{}
 	Premiered  string
 	Duration   string
 	PosterURL  string
@@ -18,6 +18,14 @@ type Song struct {
 	Artist     string
 	Type       string
 	SpotifyURL string
+}
+type Episode struct {
+	EpisodeID int
+	AnimeID   int
+	EpisodeNr int
+	Title     string
+	Aired     interface{}
+	PlayerUrl string
 }
 
 type Filter struct {

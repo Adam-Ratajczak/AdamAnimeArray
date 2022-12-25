@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-class NotFound extends Component {
+class AnimePlayer extends Component {
   render() {
     return (
       <div className="not-found">
@@ -11,4 +11,4 @@ class NotFound extends Component {
   }
 }
 
-export default NotFound
+export default AnimePlayer

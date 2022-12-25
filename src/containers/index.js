@@ -1,15 +1,15 @@
 import AnimeInfo from './AnimeInfo'
 import AnimePlayer from './AnimePlayer'
+import AnimeEpisodes from './AnimeEpisodes'
 import Home from './Home'
 import NotFound from './NotFound'
 import Search from './Search'
-import TypeList from './TypeList'
 
 export {
     AnimeInfo,
     AnimePlayer,
+    AnimeEpisodes,
     Home,
     NotFound,
-    Search,
-    TypeList
+    Search
 }

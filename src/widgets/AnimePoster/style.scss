@@ -1,0 +1,51 @@
+@import 'src/styles/colors';
+
+.AnimePoster{
+    background-color: $bottom-color;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+}
+
+.AnimePosterHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    color: whitesmoke;
+    background-color: $bottom-color-dark;
+    font-size: small;
+    margin-bottom: 10px;
+}
+.AnimePosterHover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.AnimePosterHover:hover{
+    background-color: $btn-hover-color;
+}
+
+.AnimePosterDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.AnimePosterImg{
+    width: 70%;
+    border: 2px solid $base-color;
+}
+
+.AnimePosterInfo{
+    color: white;
+    width: 80%;
+}
+
+.PropertyName{
+    font-weight: bold;
+}

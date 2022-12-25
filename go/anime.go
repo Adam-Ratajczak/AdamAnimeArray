@@ -25,6 +25,7 @@ func anime(c echo.Context) error {
 	}
 	return c.JSON(http.StatusOK, anime)
 }
+
 func animeSongs(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
@@ -44,6 +45,49 @@ func animeSongs(c echo.Context) error {
 		songs = append(songs, song)
 	}
 	return c.JSON(http.StatusOK, songs)
+}
+
+func animeEpisodes(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	rows, err := db.Query("SELECT * FROM Episodes Where AnimeID = ?", id)
+	episodes := []Episode{}
+	if err != nil {
+		return err
+	}
+	for rows.Next() {
+		episode := Episode{}
+		err := rows.Scan(&episode.EpisodeID, &episode.AnimeID, &episode.EpisodeNr, &episode.Title, &episode.Aired, &episode.PlayerUrl)
+		if err != nil {
+			return err
+		}
+		episodes = append(episodes, episode)
+	}
+	return c.JSON(http.StatusOK, episodes)
+}
+
+func animeEpisode(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	ep, err := strconv.Atoi(c.Param("ep"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	episode := Episode{}
+	row := db.QueryRow("SELECT * FROM Episodes WHERE AnimeID = ? AND EpisodeNr = ?", id, ep)
+	err = row.Scan(&episode.EpisodeID, &episode.AnimeID, &episode.EpisodeNr, &episode.Title, &episode.Aired, &episode.PlayerUrl)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return c.NoContent(http.StatusBadRequest)
+		}
+		return err
+	}
+	return c.JSON(http.StatusOK, episode)
 }
 
 func animeGenres(c echo.Context) error {
