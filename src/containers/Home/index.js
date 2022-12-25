@@ -4,7 +4,7 @@ import {GetAnime} from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
 
-const num_sample_animes = 20;
+const num_sample_animes = 21;
 
 function Home() {
   const siteType = window.location.href.split("/").at(-1);

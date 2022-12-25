@@ -1,14 +1,20 @@
-import React, {Component} from 'react'
+import React from 'react'
+import {Menubar} from '../../widgets'
+import {GetAnime} from "../../db_module"
+import redirect from '../../redirect'
+import {OverlayTrigger} from "react-bootstrap";
+import './style.scss';
 
-class AnimeInfo extends Component {
-  render() {
-    return (
-      <div className="not-found">
-        <h1>200</h1>
-        <h3>Ok</h3>
+var MappleToolTip = require('reactjs-mappletooltip');
+function AnimeInfo(){
+  return(
+
+    <div id="main">
+      <Menubar/>
+      <div id="contentAnime">
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default AnimeInfo

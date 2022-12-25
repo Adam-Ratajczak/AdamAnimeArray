@@ -25,16 +25,20 @@ class Menubar extends Component{
 
   componentDidMount(){
     document.getElementById("anime_top_ranked").addEventListener("click", (event) =>{
-      redirect("Popular")
+      redirect("/Popular")
+
     });
     document.getElementById("anime_newest").addEventListener("click", (event) =>{
-      redirect("Newest")
+      redirect("/Newest")
+
     });
     document.getElementById("anime_recomended").addEventListener("click", (event) =>{
-      redirect("Recomended")
+      redirect("/Recomended")
+
     });
     document.getElementById("anime_random").addEventListener("click", (event) =>{
-      redirect("Random")
+      redirect("/Random")
+
     });
     document.getElementById("Search").addEventListener("submit", (event) =>{
       let searchphraze = document.getElementById("SearchBar").innerText;
@@ -44,8 +48,7 @@ class Menubar extends Component{
       }
 
       redirect("/Search/Name?=" + searchphraze +"Genre?=*Type?=*Demographics?=*Producer?=*")
-      
-      event.preventDefault();
+      ;
     });
   }
 }

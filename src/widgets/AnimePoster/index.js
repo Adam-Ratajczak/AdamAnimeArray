@@ -1,7 +1,8 @@
-import React, {useEffect, useState, Component} from 'react'
+import React, {useEffect, useState, Tooltip} from 'react'
 import redirect from '../../redirect'
 import { GetAnime, GetEpisodes, GetType } from '../../db_module'
 import './style.scss';
+import ReactTooltip from "react-tooltip";
 
 function AnimePoster(props){
 
@@ -39,25 +40,24 @@ function AnimePoster(props){
   //   })
   // }, []);
 
-  let title = "";
+  let short_title = "";
 
   if(AnimeTitle.toString().length > 15){
-    title = AnimeTitle.toString().substring(0, 12) + "...";
+    short_title = AnimeTitle.toString().substring(0, 12) + "...";
   }else{
-    title = AnimeTitle;
+    short_title = AnimeTitle;
   }
 
-  document.addEventListener("click", (event)=>{
-    redirect("anime/" + props.AnimeID.toString())
-
-    event.preventDefault()
-  });
+  function redirection(){
+    redirect('/anime/' + props.AnimeID.toString())
+  }
 
   return (
-    <div class="AnimePoster">
+    <div class="AnimePoster" onClick={redirection}>
       <div class="AnimePosterHover">
-          <div  class="AnimePosterHeader">
-            <h1>{title}</h1>
+          <div class="AnimePosterHeader tooltip">
+          <span class="tooltiptext">{AnimeTitle}</span>
+            <h1>{short_title}</h1>
           </div>
           <div class="AnimePosterDiv">
             <img class="AnimePosterImg" src={AnimePoster.toString()}></img>

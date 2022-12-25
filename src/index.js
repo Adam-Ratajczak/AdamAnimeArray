@@ -9,8 +9,11 @@ export default function App() {
     <BrowserRouter>
       <Routes>
           <Route path="/Recomended" element={<Home />}></Route>
+          <Route path="*/Recomended" element={<Navigate to="/Recomended"/>}></Route>
           <Route path="/Popular" element={<Home />}></Route>
+          <Route path="*/Popular" element={<Navigate to="/Popular"/>}></Route>
           <Route path="/Newest" element={<Home />}></Route>
+          <Route path="*/Newest" element={<Navigate to="/Newest"/>}></Route>
           <Route path="/Random" element={<Home />}></Route>
           <Route path='/' element={<Navigate to="/Recomended"/>}></Route>
           <Route path="/Anime/:AnimeID" element={<AnimeInfo />}></Route>
