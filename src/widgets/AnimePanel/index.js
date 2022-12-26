@@ -1,6 +1,6 @@
 import React, {useEffect, useState, Tooltip} from 'react'
 import redirect from '../../redirect'
-import { GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetDemographics, GetEpisodes, GetFilterEntry, GetGenre, GetProducer, GetType } from '../../db_module'
+import { GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetDemographics, GetEpisodes, GetAnimeType } from '../../db_module'
 import './style.scss';
 
 function AnimePanel(props){
@@ -9,7 +9,6 @@ function AnimePanel(props){
   const [AnimePoster, SetAnimePoster] = useState(0)
   const [Premiered, SetPremiered] = useState(0)
   const [EpisodeNum, SetEpisodeNum] = useState(0)
-  const [AnimeTypeID, SetAnimeTypeID] = useState(0)
   const [AnimeType, SetAnimeType] = useState(0)
   const [AnimeGenres, SetAnimeGenres] = useState(0)
   const [AnimeThemes, SetAnimeThemes] = useState(0)
@@ -23,7 +22,6 @@ function AnimePanel(props){
       SetAnimeTitle(result.AnimeTitle);
       SetAnimePoster(result.PosterURL);
       SetPremiered(result.Premiered);
-      SetAnimeTypeID(result.TypeID);
     })
   }, []);
   
@@ -107,13 +105,13 @@ function AnimePanel(props){
     })
   }, []);
   
-  // useEffect(() =>{
-  //   GetType(AnimeTypeID)
-  //   .then((response) => response.json())
-  //   .then((result) =>{
-  //     SetAnimeType(result.Name)
-  //   })
-  // }, []);
+  useEffect(() =>{
+    GetAnimeType(props.AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      SetAnimeType(result.Name)
+    })
+  }, []);
 
   function redirection(){
     redirect('/anime/' + props.AnimeID.toString())

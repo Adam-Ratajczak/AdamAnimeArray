@@ -64,6 +64,10 @@ export function GetAnimeDemographics(id){
     return FetchToApiGet(`animes/` + id.toString() + "/demographics");
 }
 
+export function GetAnimeType(id){
+    return FetchToApiGet(`animes/` + id.toString() + "/type");
+}
+
 export function GetFilterEntry(id){
     return FetchToApiGet(`animes/` + id.toString() + "/filterentry");
 }

@@ -197,6 +197,23 @@ func animeDemographics(c echo.Context) error {
 	return c.JSON(http.StatusOK, demographics)
 }
 
+func animeType(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	res := Filter{}
+	row := db.QueryRow("SELECT t.TypeID, t.TypeName FROM Types t WHERE TypeID = (SELECT a.TypeID FROM Animes a WHERE AnimeID = ?);", id)
+	err = row.Scan(&res.ID, &res.Name)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return c.NoContent(http.StatusBadRequest)
+		}
+		return err
+	}
+	return c.JSON(http.StatusOK, res)
+}
+
 func animeGetFilterEntry(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {

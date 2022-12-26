@@ -1,6 +1,6 @@
 import React, {useEffect, useState, Tooltip} from 'react'
 import redirect from '../../redirect'
-import { GetAnime, GetEpisodes, GetType } from '../../db_module'
+import { GetAnime, GetEpisodes, GetAnimeType } from '../../db_module'
 import './style.scss';
 
 function AnimePoster(props){
@@ -9,7 +9,6 @@ function AnimePoster(props){
   const [AnimePoster, SetAnimePoster] = useState(0)
   const [Premiered, SetPremiered] = useState(0)
   const [EpisodeNum, SetEpisodeNum] = useState(0)
-  const [AnimeTypeID, SetAnimeTypeID] = useState(0)
   const [AnimeType, SetAnimeType] = useState(0)
   
   useEffect(() =>{
@@ -19,7 +18,6 @@ function AnimePoster(props){
       SetAnimeTitle(result.AnimeTitle);
       SetAnimePoster(result.PosterURL);
       SetPremiered(result.Premiered);
-      SetAnimeTypeID(result.TypeID);
     })
   }, []);
   
@@ -30,14 +28,14 @@ function AnimePoster(props){
       SetEpisodeNum(result.length);
     })
   }, []);
-  
-  // useEffect(() =>{
-  //   GetType(AnimeTypeID)
-  //   .then((response) => response.json())
-  //   .then((result) =>{
-  //     SetAnimeType(result.Name)
-  //   })
-  // }, []);
+
+  useEffect(() =>{
+    GetAnimeType(props.AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      SetAnimeType(result.Name)
+    })
+  }, []);
 
   let short_title = "";
 
