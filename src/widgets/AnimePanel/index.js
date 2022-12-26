@@ -2,7 +2,6 @@ import React, {useEffect, useState, Tooltip} from 'react'
 import redirect from '../../redirect'
 import { GetAnime, GetDemographics, GetEpisodes, GetFilterEntry, GetGenre, GetProducer, GetType } from '../../db_module'
 import './style.scss';
-import ReactTooltip from "react-tooltip";
 
 function AnimePanel(props){
 
@@ -36,56 +35,56 @@ function AnimePanel(props){
     })
   }, []);
 
-  useEffect(() =>{
-    GetFilterEntry(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      GetGenre()
-      .then((response) => response.json())
-      .then((genres) =>{
-        let GenreStr = "";
+  // useEffect(() =>{
+  //   GetFilterEntry(props.AnimeID)
+  //   .then((response) => response.json())
+  //   .then((result) =>{
+  //     GetGenre()
+  //     .then((response) => response.json())
+  //     .then((genres) =>{
+  //       let GenreStr = "";
 
-        for(let i of result.Genres){
-          GenreStr += genres[i].Name;
-        }
-        SetAnimeGenres(GenreStr);
-      })
+  //       for(let i of result.Genres){
+  //         GenreStr += genres[i].Name;
+  //       }
+  //       SetAnimeGenres(GenreStr);
+  //     })
 
-      GetTheme()
-      .then((response) => response.json())
-      .then((themes) =>{
-        let ThemeStr = "";
+  //     GetTheme()
+  //     .then((response) => response.json())
+  //     .then((themes) =>{
+  //       let ThemeStr = "";
 
-        for(let i of result.Themes){
-          ThemeStr += themes[i].Name;
-        }
-        SetAnimeThemes(ThemeStr);
-      })
+  //       for(let i of result.Themes){
+  //         ThemeStr += themes[i].Name;
+  //       }
+  //       SetAnimeThemes(ThemeStr);
+  //     })
 
-      GetProducer()
-      .then((response) => response.json())
-      .then((producers) =>{
-        let ProducerStr = "";
+  //     GetProducer()
+  //     .then((response) => response.json())
+  //     .then((producers) =>{
+  //       let ProducerStr = "";
 
-        for(let i of result.Producers){
-          ProducerStr += producers[i].Name;
-        }
-        SetAnimeProducers(ProducerStr);
-      })
+  //       for(let i of result.Producers){
+  //         ProducerStr += producers[i].Name;
+  //       }
+  //       SetAnimeProducers(ProducerStr);
+  //     })
 
-      GetDemographics()
-      .then((response) => response.json())
-      .then((demographics) =>{
-        let DemographicsStr = "";
+  //     GetDemographics()
+  //     .then((response) => response.json())
+  //     .then((demographics) =>{
+  //       let DemographicsStr = "";
 
-        for(let i of result.Demographics){
-          DemographicsStr += demographics[i].Name;
-        }
-        SetAnimeDemographics(DemographicsStr);
-      })
+  //       for(let i of result.Demographics){
+  //         DemographicsStr += demographics[i].Name;
+  //       }
+  //       SetAnimeDemographics(DemographicsStr);
+  //     })
 
-    })
-  }, []);
+  //   })
+  // }, []);
   
   // useEffect(() =>{
   //   GetType(AnimeTypeID)

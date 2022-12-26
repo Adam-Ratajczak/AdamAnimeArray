@@ -2,7 +2,6 @@ import React, {useEffect, useState, Tooltip} from 'react'
 import redirect from '../../redirect'
 import { GetAnime, GetEpisodes, GetType } from '../../db_module'
 import './style.scss';
-import ReactTooltip from "react-tooltip";
 
 function AnimePoster(props){
 
