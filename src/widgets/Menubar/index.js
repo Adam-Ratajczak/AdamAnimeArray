@@ -41,14 +41,15 @@ class Menubar extends Component{
 
     });
     document.getElementById("Search").addEventListener("submit", (event) =>{
-      let searchphraze = document.getElementById("SearchBar").innerText;
+      let searchphraze = document.getElementById("Searchbar").value;
 
       if(searchphraze.length == 0){
         searchphraze = "*";
       }
 
-      redirect("/Search/Name?=" + searchphraze +"Genre?=*Type?=*Demographics?=*Producer?=*")
-      ;
+      redirect("/Search/" + searchphraze)
+
+      event.preventDefault()
     });
   }
 }

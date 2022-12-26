@@ -48,36 +48,24 @@ export function GetAnime(id = -1){
     }
 }
 
-export function GetAnimeGenres(id = -1){
-    if(id < 0){
-        return FetchToApiGet(`animes`);
-    }else{
-        return FetchToApiGet(`animes/` + id.toString());
-    }
+export function GetAnimeGenres(id){
+    return FetchToApiGet(`animes/` + id.toString() + "/genres");
 }
 
-export function GetAnimeThemes(id = -1){
-    if(id < 0){
-        return FetchToApiGet(`animes`);
-    }else{
-        return FetchToApiGet(`animes/` + id.toString());
-    }
+export function GetAnimeThemes(id){
+    return FetchToApiGet(`animes/` + id.toString() + "/themes");
 }
 
-export function GetAnimeProducers(id = -1){
-    if(id < 0){
-        return FetchToApiGet(`animes`);
-    }else{
-        return FetchToApiGet(`animes/` + id.toString());
-    }
+export function GetAnimeProducers(id){
+    return FetchToApiGet(`animes/` + id.toString() + "/producers");
 }
 
-export function GetAnimeDemographics(id = -1){
-    if(id < 0){
-        return FetchToApiGet(`animes`);
-    }else{
-        return FetchToApiGet(`animes/` + id.toString());
-    }
+export function GetAnimeDemographics(id){
+    return FetchToApiGet(`animes/` + id.toString() + "/demographics");
+}
+
+export function GetFilterEntry(id){
+    return FetchToApiGet(`animes/` + id.toString() + "/filterentry");
 }
 
 export function GetEpisodes(AnimeID, id = -1){

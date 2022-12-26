@@ -90,6 +90,27 @@ func animeEpisode(c echo.Context) error {
 	return c.JSON(http.StatusOK, episode)
 }
 
+func getType(id int, column string, table string) []int {
+	result := []int{}
+
+	rows, err := db.Query("SELECT "+column+" FROM "+table+" WHERE AnimeID = ?", id)
+	if err != nil {
+		log.Println(err)
+		return result
+	}
+	for rows.Next() {
+		res := 0
+		err := rows.Scan(&res)
+		if err != nil {
+			log.Println(err)
+			return []int{}
+		}
+		result = append(result, res)
+	}
+
+	return result
+}
+
 func animeGenres(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
@@ -109,6 +130,27 @@ func animeGenres(c echo.Context) error {
 		genres = append(genres, genre)
 	}
 	return c.JSON(http.StatusOK, genres)
+}
+
+func animeThemes(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	themes := []int{}
+	rows, err := db.Query("SELECT ThemeID FROM AnimeThemes WHERE AnimeID = ?", id)
+	if err != nil {
+		return err
+	}
+	for rows.Next() {
+		theme := 0
+		err := rows.Scan(&theme)
+		if err != nil {
+			return err
+		}
+		themes = append(themes, theme)
+	}
+	return c.JSON(http.StatusOK, themes)
 }
 
 func animeProducers(c echo.Context) error {
@@ -153,4 +195,27 @@ func animeDemographics(c echo.Context) error {
 		demographics = append(demographics, demographic)
 	}
 	return c.JSON(http.StatusOK, demographics)
+}
+
+func animeGetFilterEntry(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	filter := FilterRequest{}
+	row := db.QueryRow("SELECT AnimeTitle FROM Animes WHERE AnimeID = ?", id)
+	err = row.Scan(&filter.Title)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return c.NoContent(http.StatusBadRequest)
+		}
+		return err
+	}
+
+	filter.Genres = getType(id, "GenreID", "AnimeGenres")
+	filter.Themes = getType(id, "ThemeID", "AnimeThemes")
+	filter.Producers = getType(id, "ProducerID", "AnimeProducers")
+	filter.Demographics = getType(id, "GroupID", "AnimeDemographics")
+
+	return c.JSON(http.StatusOK, filter)
 }

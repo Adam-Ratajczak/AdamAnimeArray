@@ -41,8 +41,10 @@ func main() {
 		animes.GET("/:id/episodes", animeEpisodes)
 		animes.GET("/:id/episodes/:ep", animeEpisode)
 		animes.GET("/:id/genres", animeGenres)
+		animes.GET("/:id/themes", animeThemes)
 		animes.GET("/:id/producers", animeProducers)
 		animes.GET("/:id/demographics", animeDemographics)
+		animes.GET("/:id/filterentry", animeGetFilterEntry)
 
 		filters := animes.Group("/filters")
 		{
