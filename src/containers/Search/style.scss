@@ -1,0 +1,31 @@
+@import 'src/styles/colors';
+
+#contentSearch{
+    display: flex;
+    flex-direction: row;
+}
+
+#SearchDiv{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#SearchBarDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+}
+
+#SearchResults{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#AnimeTypeDiv{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}

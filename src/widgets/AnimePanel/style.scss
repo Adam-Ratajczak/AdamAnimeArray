@@ -1,17 +1,16 @@
 @import 'src/styles/colors';
-@import 'src/styles/tooltips';
 
 .AnimePanel{
     background-color: $bottom-color;
     width: 100%;
-    height: 250px;
+    height: 200px;
     margin: 10px;
 }
 
 .AnimePanelHeader{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 40px;
     width: 100%;
     color: whitesmoke;
@@ -19,32 +18,49 @@
     font-size: small;
     margin-bottom: 10px;
 }
+
+.AnimePanelHeader > h1{
+    margin-left: 10px;
+}
+
 .AnimePanelHover{
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100%;
 }
-.AnimePosterHover:hover{
+.AnimePanelHover:hover{
     background-color: $btn-hover-color;
 }
 
-.AnimePosterDiv{
+.AnimePanelContent{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 60%;
-    margin-bottom: 10px;
+    justify-content: flex-start;
+    color: white;
 }
 
-.AnimePosterImg{
-    width: 70%;
+.AnimePanelPosterDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.AnimePanelImg{
+    height: 100%;
+    width: 60%;
     border: 2px solid $base-color;
 }
 
-.AnimePosterInfo{
-    color: white;
-    width: 80%;
+.AnimePanelInfo{
+    width: 30%;
+    height: 140px;
+}
+
+.AnimeTypePanel{
+    width: 50%;
+    height: 140px;
 }
 
 .PropertyName{

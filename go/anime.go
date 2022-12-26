@@ -116,14 +116,14 @@ func animeGenres(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	genres := []int{}
-	rows, err := db.Query("SELECT GenreID FROM AnimeGenres WHERE AnimeID = ?", id)
+	genres := []Filter{}
+	rows, err := db.Query("SELECT GenreID, (SELECT GenreName FROM Genres g WHERE g.GenreID = ag.GenreID) FROM AnimeGenres ag WHERE AnimeID = ?", id)
 	if err != nil {
 		return err
 	}
 	for rows.Next() {
-		genre := 0
-		err := rows.Scan(&genre)
+		genre := Filter{}
+		err := rows.Scan(&genre.ID, &genre.Name)
 		if err != nil {
 			return err
 		}
@@ -137,14 +137,14 @@ func animeThemes(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	themes := []int{}
-	rows, err := db.Query("SELECT ThemeID FROM AnimeThemes WHERE AnimeID = ?", id)
+	themes := []Filter{}
+	rows, err := db.Query("SELECT ThemeID, (SELECT ThemeName FROM Themes t WHERE t.ThemeID = at.ThemeID) FROM AnimeThemes at WHERE AnimeID = ?", id)
 	if err != nil {
 		return err
 	}
 	for rows.Next() {
-		theme := 0
-		err := rows.Scan(&theme)
+		theme := Filter{}
+		err := rows.Scan(&theme.ID, &theme.Name)
 		if err != nil {
 			return err
 		}
@@ -158,14 +158,14 @@ func animeProducers(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	producers := []int{}
-	rows, err := db.Query("SELECT ProducerID FROM AnimeProducers WHERE AnimeID = ?", id)
+	producers := []Filter{}
+	rows, err := db.Query("SELECT ProducerID, (SELECT ProducerName FROM Producers p WHERE p.ProducerID = ap.ProducerID) FROM AnimeProducers ap WHERE AnimeID = ?", id)
 	if err != nil {
 		return err
 	}
 	for rows.Next() {
-		producer := 0
-		err := rows.Scan(&producer)
+		producer := Filter{}
+		err := rows.Scan(&producer.ID, &producer.Name)
 		if err != nil {
 			return err
 		}
@@ -179,15 +179,15 @@ func animeDemographics(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	demographics := []int{}
-	rows, err := db.Query("SELECT GroupID FROM AnimeDemographics WHERE AnimeID = ?", id)
+	demographics := []Filter{}
+	rows, err := db.Query("SELECT GroupID, (SELECT GroupName FROM Demographics d WHERE d.GroupID = ad.GroupID) FROM AnimeDemographics ad WHERE AnimeID = ?", id)
 	if err != nil {
 		log.Println(err)
 		return err
 	}
 	for rows.Next() {
-		demographic := 0
-		err := rows.Scan(&demographic)
+		demographic := Filter{}
+		err := rows.Scan(&demographic.ID, &demographic.Name)
 		if err != nil {
 			log.Println(err)
 			return err
@@ -203,8 +203,8 @@ func animeGetFilterEntry(c echo.Context) error {
 		return c.NoContent(http.StatusBadRequest)
 	}
 	filter := FilterRequest{}
-	row := db.QueryRow("SELECT AnimeTitle FROM Animes WHERE AnimeID = ?", id)
-	err = row.Scan(&filter.Title)
+	row := db.QueryRow("SELECT AnimeTitle, TypeID FROM Animes WHERE AnimeID = ?", id)
+	err = row.Scan(&filter.Title, &filter.Type)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return c.NoContent(http.StatusBadRequest)

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
-import {Menubar} from '../../widgets'
+import {AnimePanel, Menubar} from '../../widgets'
 import {GetGenre} from '../../db_module';
+import './style.scss'
 
 function Search(){
   // useEffect(() => {
@@ -17,8 +18,20 @@ function Search(){
   return (
     <div id="main">
       <Menubar/>
-      <div id="content">
-        <h1 id="main_header"></h1>
+      <div id="contentSearch">
+        <div id="SearchDiv">
+          <div id="SearchBarDiv">
+            <input type="text" id="SearchbarLarge" placeholder="Search..."></input>
+            <input type="button" id="SearchbtnLarge" value="Find"></input>
+          </div>
+          <div id="SearchResults">
+            <AnimePanel AnimeID="305"/>
+            <AnimePanel AnimeID="2"/>
+          </div>
+        </div>
+        <div id="AnimeTypeDiv">
+
+        </div>
       </div>
     </div>
     )

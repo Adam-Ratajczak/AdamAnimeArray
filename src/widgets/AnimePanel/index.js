@@ -1,6 +1,6 @@
 import React, {useEffect, useState, Tooltip} from 'react'
 import redirect from '../../redirect'
-import { GetAnime, GetDemographics, GetEpisodes, GetFilterEntry, GetGenre, GetProducer, GetType } from '../../db_module'
+import { GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetDemographics, GetEpisodes, GetFilterEntry, GetGenre, GetProducer, GetType } from '../../db_module'
 import './style.scss';
 
 function AnimePanel(props){
@@ -35,56 +35,77 @@ function AnimePanel(props){
     })
   }, []);
 
-  // useEffect(() =>{
-  //   GetFilterEntry(props.AnimeID)
-  //   .then((response) => response.json())
-  //   .then((result) =>{
-  //     GetGenre()
-  //     .then((response) => response.json())
-  //     .then((genres) =>{
-  //       let GenreStr = "";
+  useEffect(() =>{
+    GetAnimeGenres(props.AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      let res = "";
 
-  //       for(let i of result.Genres){
-  //         GenreStr += genres[i].Name;
-  //       }
-  //       SetAnimeGenres(GenreStr);
-  //     })
+      for(let elem of result){
+        res += elem.Name + ", ";
+      }
 
-  //     GetTheme()
-  //     .then((response) => response.json())
-  //     .then((themes) =>{
-  //       let ThemeStr = "";
+      if(res.length == 0){
+        res = "None";
+      }
 
-  //       for(let i of result.Themes){
-  //         ThemeStr += themes[i].Name;
-  //       }
-  //       SetAnimeThemes(ThemeStr);
-  //     })
+      SetAnimeGenres(res);
+    })
+  }, []);
 
-  //     GetProducer()
-  //     .then((response) => response.json())
-  //     .then((producers) =>{
-  //       let ProducerStr = "";
+  useEffect(() =>{
+    GetAnimeThemes(props.AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      let res = "";
 
-  //       for(let i of result.Producers){
-  //         ProducerStr += producers[i].Name;
-  //       }
-  //       SetAnimeProducers(ProducerStr);
-  //     })
+      for(let elem of result){
+        res += elem.Name + ", ";
+      }
 
-  //     GetDemographics()
-  //     .then((response) => response.json())
-  //     .then((demographics) =>{
-  //       let DemographicsStr = "";
+      if(res.length == 0){
+        res = "None";
+      }
 
-  //       for(let i of result.Demographics){
-  //         DemographicsStr += demographics[i].Name;
-  //       }
-  //       SetAnimeDemographics(DemographicsStr);
-  //     })
+      SetAnimeThemes(res);
+    })
+  }, []);
 
-  //   })
-  // }, []);
+  useEffect(() =>{
+    GetAnimeProducers(props.AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      let res = "";
+
+      for(let elem of result){
+        res += elem.Name + ", ";
+      }
+
+      if(res.length == 0){
+        res = "None";
+      }
+
+      SetAnimeProducers(res);
+    })
+  }, []);
+
+  useEffect(() =>{
+    GetAnimeDemographics(props.AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      let res = "";
+
+      for(let elem of result){
+        res += elem.Name + ", ";
+      }
+
+      if(res.length == 0){
+        res = "None";
+      }
+
+      SetAnimeDemographics(res);
+    })
+  }, []);
   
   // useEffect(() =>{
   //   GetType(AnimeTypeID)
@@ -105,7 +126,7 @@ function AnimePanel(props){
             <h1>{AnimeTitle}</h1>
           </div>
           <div class="AnimePanelContent">
-            <div class="AnimePosterDiv">
+            <div class="AnimePanelPosterDiv">
               <img class="AnimePanelImg" src={AnimePoster.toString()}></img>
             </div>
             <table class="AnimePanelInfo">
@@ -127,19 +148,19 @@ function AnimePanel(props){
               <tbody>
                 <tr>
                   <td class="PropertyName">Genres: </td>
-                  <td>{(AnimeGenres) ? AnimeType.toString() : "none"}</td>
+                  <td>{(AnimeGenres) ? AnimeGenres : "None"}</td>
                 </tr>
                 <tr>
                   <td class="PropertyName">Themes: </td>
-                  <td>{(AnimeThemes) ? Premiered.toString() : "none"}</td>
+                  <td>{(AnimeThemes) ? AnimeThemes : "None"}</td>
                 </tr>
                 <tr>
                   <td class="PropertyName">Producers:</td>
-                  <td>{(AnimeProducers) ? EpisodeNum.toString() : "none"}</td>
+                  <td>{(AnimeProducers) ? AnimeProducers : "None"}</td>
                 </tr>
                 <tr>
                   <td class="PropertyName">Demographics:</td>
-                  <td>{(AnimeDemographics) ? EpisodeNum.toString() : "none"}</td>
+                  <td>{(AnimeDemographics) ? AnimeDemographics : "None"}</td>
                 </tr>
               </tbody>
             </table>
