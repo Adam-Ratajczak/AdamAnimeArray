@@ -16,7 +16,6 @@
     color: whitesmoke;
     background-color: $bottom-color-dark;
     font-size: small;
-    margin-bottom: 10px;
 }
 
 .AnimePanelHeader > h1{
@@ -42,19 +41,21 @@
 .AnimePanelPosterDiv{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 15%;
 }
 
 .AnimePanelImg{
-    height: 100%;
-    width: 60%;
+    height: 140px;
+    width: 100px;
     border: 2px solid $base-color;
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 .AnimePanelInfo{
-    width: 30%;
+    width: 35%;
     height: 140px;
 }
 
