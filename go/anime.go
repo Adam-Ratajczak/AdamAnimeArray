@@ -221,7 +221,9 @@ func animeGetFilterEntry(c echo.Context) error {
 	}
 	filter := FilterRequest{}
 	row := db.QueryRow("SELECT AnimeTitle, TypeID FROM Animes WHERE AnimeID = ?", id)
-	err = row.Scan(&filter.Title, &filter.Type)
+	anime_type := 0
+	err = row.Scan(&filter.Title, &anime_type)
+	filter.Types = append(filter.Types, anime_type)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return c.NoContent(http.StatusBadRequest)

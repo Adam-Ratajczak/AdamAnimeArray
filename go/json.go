@@ -35,7 +35,7 @@ type Filter struct {
 
 type FilterRequest struct {
 	Title        string
-	Type         int
+	Types        []int
 	Themes       []int
 	Genres       []int
 	Producers    []int

@@ -1,6 +1,14 @@
-function FetchToApiGet(url, con){
+function FetchToApiGet(url){
     return fetch('http://localhost:2138/' + url, { 
         method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json', 
+            "Access-Control-Allow-Origin": "*"
+        }});
+}
+function FetchToApiPost(url, con){
+    return fetch('http://localhost:2138/' + url, { 
+        method: 'POST', 
         body: JSON.stringify(con), 
         headers: {
             'Content-Type': 'application/json', 
@@ -86,4 +94,17 @@ export function GetEpisodes(AnimeID, id = -1){
     }else{
         return FetchToApiGet(`animes/` + AnimeID.toString() + `/episodes` + id.toString());
     }
+}
+
+export function FilterAnimes(name, types, genres, themes, producers, demographics){
+    let req = {
+        Title: name,
+        Types: types,
+        Genres: genres,
+        Themes: themes,
+        Producers: producers,
+        Demographics: demographics
+    };
+    
+    return FetchToApiPost("animes/filter", req);
 }
