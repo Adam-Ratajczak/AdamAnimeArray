@@ -24,6 +24,14 @@ export function GetGenre(id = -1){
     }
 }
 
+export function GetTheme(id = -1){
+    if(id < 0){
+        return FetchToApiGet(`animes/filters/themes`);
+    }else{
+        return FetchToApiGet(`animes/filters/themes/` + id.toString());
+    }
+}
+
 export function GetProducer(id = -1){
     if(id < 0){
         return FetchToApiGet(`animes/filters/producers`);

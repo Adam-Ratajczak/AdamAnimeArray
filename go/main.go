@@ -51,6 +51,8 @@ func main() {
 		{
 			filters.GET("/types", filterGetAll("Types"))
 			filters.GET("/types/:id", filterGetByID("Types"))
+			filters.GET("/themes", filterGetAll("Themes"))
+			filters.GET("/themes/:id", filterGetByID("Themes"))
 			filters.GET("/genres", filterGetAll("Genres"))
 			filters.GET("/genres/:id", filterGetByID("Genres"))
 			filters.GET("/producers", filterGetAll("Producers"))
