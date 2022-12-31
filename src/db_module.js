@@ -92,7 +92,7 @@ export function GetEpisodes(AnimeID, id = -1){
     if(id < 0){
         return FetchToApiGet(`animes/` + AnimeID.toString() + `/episodes`);
     }else{
-        return FetchToApiGet(`animes/` + AnimeID.toString() + `/episodes` + id.toString());
+        return FetchToApiGet(`animes/` + AnimeID.toString() + `/episodes/` + id.toString());
     }
 }
 

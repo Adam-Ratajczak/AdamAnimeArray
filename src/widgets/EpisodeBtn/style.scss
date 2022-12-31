@@ -28,3 +28,8 @@
     background-color: $bottom-color;
     border: 2px solid $bottom-color-dark;
 }
+
+.EpBtnRegular:hover{
+    background-color: $btn-hover-color;
+    border: 2px solid $bottom-color-dark;
+}
