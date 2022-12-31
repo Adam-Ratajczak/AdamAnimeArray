@@ -125,7 +125,7 @@ function AnimePanel(props){
           </div>
           <div class="AnimePanelContent">
             <div class="AnimePanelPosterDiv">
-              <img class="AnimePanelImg" src={AnimePoster.toString()}></img>
+              <img class="AnimePanelImg" src={AnimePoster}></img>
             </div>
             <table class="AnimePanelInfo">
               <tbody>

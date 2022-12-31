@@ -1,12 +1,16 @@
 package main
 
+import (
+	"github.com/go-sql-driver/mysql"
+)
+
 type Anime struct {
 	AnimeID    int
 	AnimeTitle string
 	AnimeDesc  string
 	TypeID     int
-	AiredBegin interface{}
-	AiredEnd   interface{}
+	AiredBegin mysql.NullTime
+	AiredEnd   mysql.NullTime
 	Premiered  string
 	Duration   string
 	PosterURL  string
@@ -24,7 +28,7 @@ type Episode struct {
 	AnimeID   int
 	EpisodeNr int
 	Title     string
-	Aired     interface{}
+	Aired     mysql.NullTime
 	PlayerUrl string
 }
 

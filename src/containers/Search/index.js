@@ -1,4 +1,4 @@
-import React, { Component, useCallback, useEffect, useState } from 'react'
+import React, { Component } from 'react'
 import { AnimePanel, Menubar } from '../../widgets'
 import { FilterAnimes, GetDemographics, GetGenre, GetProducer, GetTheme, GetType } from '../../db_module';
 import './style.scss'
@@ -20,152 +20,187 @@ class TypeButton extends Component {
   }
 }
 
-function Search() {
-  const [Genres, SetGenres] = useState(0);
-  const [Themes, SetThemes] = useState(0);
-  const [Producers, SetProducers] = useState(0);
-  const [Demographics, SetDemographics] = useState(0);
-  const [Types, SetTypes] = useState(0);
-  const [Animes, SetAnimes] = useState(0);
-
-  let [GenreList, SetGenreList] = useState([]);
-  let [ThemeList, SetThemeList] = useState([]);
-  let [ProducerList, SetProducerList] = useState([]);
-  let [DemographicsList, SetDemographicsList] = useState([]);
-  let [TypeList, SetTypeList] = useState([]);
-
-  function GetButtons(typename, result) {
-    result.sort((a, b) => {
-      return a.Name > b.Name;
-    });
-
-    let res = [];
-    for (let elem of result) {
-      function getArr(input_arr, input_elem) {
-        let arr = input_arr;
-
-        if (arr.indexOf(input_elem) == -1) {
-          arr.push(input_elem);
-        } else {
-          arr = arr.filter((value, index, array) => {
-            return value != input_elem;
-          })
-        }
-
-        return arr;
-      }
-
-      let callback;
-      if (typename == "genre") {
-        callback = () => {
-          const arr = getArr(GenreList, elem.ID);
-
-          GenreList = arr;
-        };
-      } else if (typename == "theme") {
-        callback = () => {
-          const arr = getArr(ThemeList, elem.ID);
-
-          ThemeList = arr;
-        };
-      } else if (typename == "producer") {
-        callback = () => {
-          const arr = getArr(ProducerList, elem.ID);
-
-          ProducerList = arr;
-        };
-      } else if (typename == "demographics") {
-        callback = () => {
-          const arr = getArr(DemographicsList, elem.ID);
-
-          DemographicsList = arr;
-        };
-      } else if (typename == "type") {
-        callback = () => {
-          const arr = getArr(TypeList, elem.ID);
-
-          TypeList = arr;
-        };
-      }
-
-      res.push((<TypeButton TypeName={typename} TypeID={elem.ID} AnimeName={elem.Name.toString()} onChange={callback} />))
+class Search extends Component {
+  constructor(){
+    super();
+  
+    this.state = {
+      Genres: [],
+      Themes: [],
+      Producers: [],
+      Demographics: [],
+      Types: [],
+      Animes: [],
+  
+      GenreList: [],
+      ThemeList: [],
+      ProducerList: [],
+      DemographicsList: [],
+      TypeList: []
     }
-
-    return res;
+  
+    this.GetButtons = this.GetButtons.bind(this);
   }
-
-  useEffect(() => GetGenre()
-    .then((response) => response.json())
-    .then((result) => {
-      const res = GetButtons("genre", result);
-
-      SetGenres(res);
-    }), []);
-
-  useEffect(() => GetTheme()
-    .then((response) => response.json())
-    .then((result) => {
-      const res = GetButtons("theme", result);
-
-      SetThemes(res);
-    }), []);
-
-  useEffect(() => GetProducer()
-    .then((response) => response.json())
-    .then((result) => {
-      const res = GetButtons("producer", result);
-
-      SetProducers(res);
-    }), []);
-
-  useEffect(() => GetDemographics()
-    .then((response) => response.json())
-    .then((result) => {
-      const res = GetButtons("demographics", result);
-
-      SetDemographics(res);
-    }), []);
-
-  useEffect(() => GetType()
-    .then((response) => response.json())
-    .then((result) => {
-      const res = GetButtons("type", result);
-
-      SetTypes(res);
-    }), []);
-
-  const useSearch = useCallback(() => {
-    const AnimeName = (document.getElementById("SearchbarLarge")) ? document.getElementById("SearchbarLarge").value : "";
-
-    FilterAnimes(AnimeName, TypeList, GenreList, ThemeList, ProducerList, DemographicsList)
+  
+  GetButtons(typename, result) {
+      result.sort((a, b) => {
+        return a.Name > b.Name;
+      });
+  
+      let res = [];
+      for (let elem of result) {
+        function getArr(input_arr, input_elem) {
+          let arr = input_arr;
+  
+          if (arr.indexOf(input_elem) == -1) {
+            arr.push(input_elem);
+          } else {
+            arr = arr.filter((value, index, array) => {
+              return value != input_elem;
+            })
+          }
+  
+          return arr;
+        }
+  
+        let callback;
+        if (typename == "genre") {
+          callback = () => {
+            const arr = getArr(this.state.GenreList, elem.ID);
+  
+            let newState = this.state;
+            newState.GenreList = arr;
+            this.setState(newState);
+          };
+        } else if (typename == "theme") {
+          callback = () => {
+            const arr = getArr(this.state.ThemeList, elem.ID);
+  
+            let newState = this.state;
+            newState.ThemeList = arr;
+            this.setState(newState);
+          };
+        } else if (typename == "producer") {
+          callback = () => {
+            const arr = getArr(this.state.ProducerList, elem.ID);
+  
+            let newState = this.state;
+            newState.ProducerList = arr;
+            this.setState(newState);
+          };
+        } else if (typename == "demographics") {
+          callback = () => {
+            const arr = getArr(this.state.DemographicsList, elem.ID);
+  
+            let newState = this.state;
+            newState.DemographicsList = arr;
+            this.setState(newState);
+          };
+        } else if (typename == "type") {
+          callback = () => {
+            const arr = getArr(this.state.TypeList, elem.ID);
+  
+            let newState = this.state;
+            newState.TypeList = arr;
+            this.setState(newState);
+          };
+        }
+  
+        res.push((<TypeButton TypeName={typename} TypeID={elem.ID} AnimeName={elem.Name.toString()} onChange={callback} />))
+      }
+  
+      return res;
+    }
+  
+  componentDidMount(){
+    GetGenre()
       .then((response) => response.json())
       .then((result) => {
-        let res = [];
-        let i = 0;
-        if (result == 0) {
-          SetAnimes((<h1>No results found!</h1>));
-        } else {
-          for (let elem of result) {
-            if (i == animeLimit) {
-              break;
-            }
-            res.push((<AnimePanel AnimeID={elem.AnimeID} />));
-            i++;
+        const res = this.GetButtons("genre", result);
+  
+        let newState = this.state;
+        newState.Genres = res;
+        this.setState(newState);
+      });
+  
+    GetTheme()
+      .then((response) => response.json())
+      .then((result) => {
+        const res = this.GetButtons("theme", result);
+  
+        let newState = this.state;
+        newState.Themes = res;
+        this.setState(newState);
+      });
+  
+    GetProducer()
+      .then((response) => response.json())
+      .then((result) => {
+        const res = this.GetButtons("producer", result);
+  
+        let newState = this.state;
+        newState.Producers = res;
+        this.setState(newState);
+      });
+  
+    GetDemographics()
+      .then((response) => response.json())
+      .then((result) => {
+        const res = this.GetButtons("demographics", result);
+  
+        let newState = this.state;
+        newState.Demographics = res;
+        this.setState(newState);
+      });
+  
+    GetType()
+      .then((response) => response.json())
+      .then((result) => {
+        const res = this.GetButtons("type", result);
+  
+        let newState = this.state;
+        newState.Types = res;
+        this.setState(newState);
+      });
+
+  const SearchFoo = () => {
+    const AnimeName = document.getElementById("SearchbarLarge").value;
+
+    FilterAnimes(AnimeName, this.state.TypeList, this.state.GenreList, this.state.ThemeList, this.state.ProducerList, this.state.DemographicsList)
+      .then((response) => response.json())
+      .then((result) => {
+          let res = [];
+
+          for(let i = 0; i < Math.min(animeLimit, result.length); i++){
+            res.push(result[i]);
           }
 
-          SetAnimes(res);
-        }
-      })
-  }, []);
+          let newState = this.state;
+          newState.Animes = res;
+          this.setState(newState);
+        })
+  }
 
-  // let searchPhraze = window.location.href.split("/").at(-1);
+  let searchPhraze = window.location.href.split("/").at(-1).replace("%20", " ");
 
-  // if(searchPhraze == "*"){
-  //   searchPhraze = "";
-  // }
+  if(searchPhraze == "*"){
+    searchPhraze = "";
+  }
 
-  useSearch();
+  document.getElementById("SearchbarLarge").value = searchPhraze;
 
+  SearchFoo();
+
+  document.getElementById("SearchbtnLarge").onclick = () => {
+    let newState = this.state;
+    newState.Animes = [];
+    this.setState(newState);
+
+    SearchFoo();
+  }
+}
+
+render(){
   return (
     <div id="main">
       <Menubar />
@@ -173,37 +208,40 @@ function Search() {
         <div id="SearchDiv">
           <div id="SearchBarDiv">
             <input type="text" id="SearchbarLarge" placeholder="Search..."></input>
-            <input type="button" id="SearchbtnLarge" value="Find" onClick={useSearch}></input>
+            <input type="button" id="SearchbtnLarge" value="Find"></input>
           </div>
           <div id="SearchResults">
-            {Animes}
+            {this.state.Animes.map(anime => {
+              return (<AnimePanel AnimeID={anime.AnimeID} />)
+            })}
           </div>
         </div>
         <div id="AnimeTypeDiv">
           <h3>Genres:</h3>
           <div class="AnimeTypeBtnDiv">
-            {Genres}
+            {this.state.Genres}
           </div>
           <h3>Themes:</h3>
           <div class="AnimeTypeBtnDiv">
-            {Themes}
+            {this.state.Themes}
           </div>
           <h3>Demographics:</h3>
           <div class="AnimeTypeBtnDiv">
-            {Demographics}
+            {this.state.Demographics}
           </div>
           <h3>Types:</h3>
           <div class="AnimeTypeBtnDiv">
-            {Types}
+            {this.state.Types}
           </div>
           <h3>Producers:</h3>
           <div class="AnimeTypeBtnDiv">
-            {Producers}
+            {this.state.Producers}
           </div>
         </div>
       </div>
     </div>
   )
+}
 }
 
 export default Search

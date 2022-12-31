@@ -1,0 +1,56 @@
+@import 'src/styles/colors';
+
+#AnimeInfoHeader{
+    background-color: #630f78;
+    color: white;
+    margin: 0px;
+    padding-left: 50px;
+}
+
+#AnimeInfoContent{
+    display: flex;
+    flex-direction: row;
+    background-color: $bottom-color-blue;
+    height: 100%;
+    color: white;
+}
+
+#AnimeInfoContainer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: $bottom-tilted-color;
+}
+
+#AnimeInfoContainer > h3{
+    margin-left: 20px;
+}
+
+#AnimeInfoContainer > table{
+    margin-left: 30px;
+}
+
+#AnimeDescContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 50px;
+}
+
+#AnimeInfoPosterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#AnimeInfoPoster{
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    border: 5px solid black;
+}

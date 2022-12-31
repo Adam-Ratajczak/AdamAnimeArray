@@ -105,6 +105,8 @@ export function FilterAnimes(name, types, genres, themes, producers, demographic
         Producers: producers,
         Demographics: demographics
     };
+
+    console.log(req);
     
     return FetchToApiPost("animes/filter", req);
 }
