@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import {Menubar} from '../../widgets'
-import {GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetAnimeType, GetEpisodes} from "../../db_module"
+import {Menubar, AnimePoster, EpisodeBtn} from '../../widgets'
+import {GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetAnimeType, GetEpisodes, GetFilterEntry, FilterAnimes} from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
 
@@ -11,7 +11,7 @@ function AnimeInfo(){
   const [AnimeDesc, SetAnimeDesc] = useState(0)
   const [AiredBegin, SetAiredBegin] = useState(0)
   const [AiredEnd, SetAiredEnd] = useState(0)
-  const [AnimePoster, SetAnimePoster] = useState(0)
+  const [PosterURL, SetPosterURL] = useState(0)
   const [Premiered, SetPremiered] = useState(0)
   const [EpisodeNum, SetEpisodeNum] = useState(0)
   const [AnimeType, SetAnimeType] = useState(0)
@@ -19,6 +19,17 @@ function AnimeInfo(){
   const [AnimeThemes, SetAnimeThemes] = useState(0)
   const [AnimeProducers, SetAnimeProducers] = useState(0)
   const [AnimeDemographics, SetAnimeDemographics] = useState(0)
+  
+  const [Animes, SetAnimes] = useState([])
+
+  useEffect(() =>{
+    GetFilterEntry(AnimeID)
+    .then((response) => {
+      if(response.status != 200){
+        redirect("/");
+      }
+    })
+  }, []);
   
   useEffect(() =>{
     GetAnime(AnimeID)
@@ -28,7 +39,7 @@ function AnimeInfo(){
       SetAnimeDesc(result.AnimeDesc);
       SetAiredBegin(result.AiredBegin);
       SetAiredEnd(result.AiredEnd);
-      SetAnimePoster(result.PosterURL);
+      SetPosterURL(result.PosterURL);
       SetPremiered(result.Premiered);
     })
   }, []);
@@ -51,10 +62,6 @@ function AnimeInfo(){
         res += elem.Name + ", ";
       }
 
-      if(res.length == 0){
-        res = "None";
-      }
-
       SetAnimeGenres(res);
     })
   }, []);
@@ -67,10 +74,6 @@ function AnimeInfo(){
 
       for(let elem of result){
         res += elem.Name + ", ";
-      }
-
-      if(res.length == 0){
-        res = "None";
       }
 
       SetAnimeThemes(res);
@@ -87,10 +90,6 @@ function AnimeInfo(){
         res += elem.Name + ", ";
       }
 
-      if(res.length == 0){
-        res = "None";
-      }
-
       SetAnimeProducers(res);
     })
   }, []);
@@ -105,10 +104,6 @@ function AnimeInfo(){
         res += elem.Name + ", ";
       }
 
-      if(res.length == 0){
-        res = "None";
-      }
-
       SetAnimeDemographics(res);
     })
   }, []);
@@ -120,7 +115,24 @@ function AnimeInfo(){
       SetAnimeType(result.Name)
     })
   }, []);
-  
+
+  useEffect(() => {
+    GetFilterEntry(AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      FilterAnimes("", result.Types, result.Genres, result.Themes, [], [])
+      .then((response) => response.json())
+      .then((AnimeList) =>{
+        let res = [];
+        for(let i = 0; i < Math.min(AnimeList.length - 1, Math.floor(window.screen.width / 270) * 2); i++){
+          let AnimeNum = Math.floor((Math.random() * AnimeList.length) % AnimeList.length);
+          let ID = AnimeList[AnimeNum].AnimeID;
+
+          res.push((<AnimePoster AnimeID={ID}/>));
+        }
+        SetAnimes(res);
+    })
+  })}, [])  
   const options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
 
   const ABegin = new Date(AiredBegin.Time);
@@ -163,31 +175,38 @@ function AnimeInfo(){
             <tbody>
               <tr>
                 <td class="PropertyName">Genres: </td>
-                <td>{(AnimeGenres != "") ? AnimeGenres.toString() : "None"}</td>
+                <td>{(AnimeGenres != "") ? AnimeGenres.toString().substring(0, AnimeGenres.toString().length - 2) : "None"}</td>
               </tr>
               <tr>
                 <td class="PropertyName">Themes: </td>
-                <td>{(AnimeThemes != "") ? AnimeThemes.toString() : "None"}</td>
+                <td>{(AnimeThemes != "") ? AnimeThemes.toString().substring(0, AnimeThemes.toString().length - 2) : "None"}</td>
               </tr>
               <tr>
                 <td class="PropertyName">Producers: </td>
-                <td>{(AnimeProducers != "") ? AnimeProducers.toString() : "None"}</td>
+                <td>{(AnimeProducers != "") ? AnimeProducers.toString().substring(0, AnimeProducers.toString().length - 2) : "None"}</td>
               </tr>
               <tr>
                 <td class="PropertyName">Demographics: </td>
-                <td>{(AnimeDemographics != "") ? AnimeDemographics.toString() : "None"}</td>
+                <td>{(AnimeDemographics != "") ? AnimeDemographics.toString().substring(0, AnimeDemographics.toString().length - 2) : "None"}</td>
               </tr>
             </tbody>
           </table>
+
+          <h2 class="InfoHeader">Episodes:</h2>
+          <EpisodeBtn AnimeID={AnimeID} EpisodeNum="0" EpisodeCount={EpisodeNum}/>
         </div>
         <div id="AnimeDescContainer">
           <div id="AnimeInfoPosterContainer">
-            <img src={AnimePoster} id="AnimeInfoPoster"/>
+            <img src={PosterURL} id="AnimeInfoPoster"/>
           </div>
           <div>
             {AnimeDesc.toString().split("<br>").map(line => {return <p>{line}</p>})}
           </div>
         </div>
+      </div>
+      <h1 id="SimilliarAnimeHeader">You may also like: </h1>
+      <div id="SimiliarAnimes">
+        {Animes}
       </div>
     </div>
   )

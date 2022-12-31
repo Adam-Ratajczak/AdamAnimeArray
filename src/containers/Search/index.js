@@ -181,7 +181,7 @@ class Search extends Component {
         })
   }
 
-  let searchPhraze = window.location.href.split("/").at(-1).replace("%20", " ");
+  let searchPhraze = window.location.href.split("/").at(-1).split("%20").join(" ");
 
   if(searchPhraze == "*"){
     searchPhraze = "";

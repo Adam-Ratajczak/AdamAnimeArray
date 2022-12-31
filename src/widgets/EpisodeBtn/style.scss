@@ -1,0 +1,30 @@
+@import 'src/styles/colors';
+
+.EpBtnContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.EpBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.EpBtnSelected{
+    background-color: $cool-color;
+    border: 2px solid $cool-color;
+}
+
+.EpBtnRegular{
+    background-color: $bottom-color;
+    border: 2px solid $bottom-color-dark;
+}

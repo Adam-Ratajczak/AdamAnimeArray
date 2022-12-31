@@ -18,8 +18,7 @@ class Home extends Component {
     }
   }
 
-  FillList(AnimeCountBegin){
-    console.log(AnimeCountBegin);
+  FillList(){
     console.log(this.state.AnimeCountBegin);
     GetAnime()
     .then((response) => response.json())
@@ -34,13 +33,13 @@ class Home extends Component {
       }else if(this.state.siteType == "Popular"){
         anime_header = "Top Ranked Animes";
 
-        for(let i = AnimeCountBegin; i < AnimeCountBegin + this.state.num_sample_animes; i++){
+        for(let i = this.state.AnimeCountBegin; i < this.state.AnimeCountBegin + this.state.num_sample_animes; i++){
           anime_id_arr.push(result[i].AnimeID);
         }
       }else if(this.state.siteType == "Recomended"){
         anime_header = "Recomended Animes";
 
-        for(let i = AnimeCountBegin; i < AnimeCountBegin + this.state.num_sample_animes; i++){
+        for(let i = this.state.AnimeCountBegin; i < this.state.AnimeCountBegin + this.state.num_sample_animes; i++){
           let AnimeNum = Math.floor((Math.random() * (result.length + 1)) % result.length);
           anime_id_arr.push(result[AnimeNum].AnimeID);
         }
@@ -55,7 +54,7 @@ class Home extends Component {
           return a.AiredBegin < b.AiredBegin;
         });
 
-        for(let i = AnimeCountBegin; i < AnimeCountBegin + this.state.num_sample_animes; i++){
+        for(let i = this.state.AnimeCountBegin; i < this.state.AnimeCountBegin + this.state.num_sample_animes; i++){
           anime_id_arr.push(to_sort[i].AnimeID);
         }
       }
@@ -70,7 +69,7 @@ class Home extends Component {
       this.setState({
         num_sample_animes: Math.floor(window.screen.width / 270) * 3,
         siteType: window.location.href.split("/").at(-1),
-        AnimeCountBegin: AnimeCountBegin,
+        AnimeCountBegin: this.state.AnimeCountBegin,
         AnimeHeader: anime_header,
         AnimeContainer: container,
         AnimeCount: result.length,
@@ -79,7 +78,7 @@ class Home extends Component {
   }
 
   componentDidMount(){
-    this.FillList(this.state.AnimeCountBegin);
+    this.FillList(0);
     this.forceUpdate();
   }
 
@@ -87,7 +86,9 @@ class Home extends Component {
     const tab_count = Math.ceil(this.state.AnimeCount / this.state.num_sample_animes);
 
     const foo = (event, index) => {
-      this.setState({AnimeCountBegin: (index - 1) * this.state.num_sample_animes});
+      let newState = this.state;
+      newState.AnimeCountBegin = (index - 1) * this.state.num_sample_animes;
+      this.setState(newState);
       this.FillList(this.state.AnimeCountBegin);
     }
 

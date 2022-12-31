@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {Home, NotFound, AnimeInfo, AnimePlayer, Search, AnimeEpisodes} from './containers'
+import {Home, NotFound, AnimeInfo, AnimePlayer, Search} from './containers'
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 
 export default function App() {
@@ -18,6 +18,7 @@ export default function App() {
           <Route path='/' element={<Navigate to="/Recomended"/>}></Route>
           <Route path="/Anime/:AnimeID" element={<AnimeInfo />}></Route>
           <Route path="/Anime/:AnimeID/Ep/:EpID" element={<AnimePlayer />}></Route>
+          <Route path="/Anime/:AnimeID/Ep" element={<Navigate to={"/Anime/" + window.location.href.split("/").at(-2)} />}></Route>
           <Route path='/Anime' element={<Navigate to="/Search"/>}></Route>
           <Route path="/Search/:searchrule" element={<Search />}></Route>
           <Route path='/Search' element={<Navigate to="/Search/*"/>}></Route>
