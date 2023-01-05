@@ -1,0 +1,9 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (26, CONCAT('Aa! Megami-sama! (TV) Specials'), CONCAT('Due to the recent events that happened on the last episodes of the season, the Goddess have some stability problems with their body systems. The always adult looking Urd becomes a little girl and has a fateful encounter with a boy, whereas little Skuld becomes an adult and wants to experiment adulthood together with Keiichi.'), 1, '2005-04-01', '2005-12-23', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/17893.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (55, 26, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (56, 26, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (28, 26, 19);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (34, 26, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (35, 26, 19);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (276, 26, 1, CONCAT('Ah! An Exchange Diary with the Goddess?'), '2005-04-01', 'https://myvi.ru/player/embed/html/oaLkGW5nSBG2Pz4X8ZpAFND_c7i2-DQe50QRjUIJ39vfIZS7-i17MhkovYqwk3GDC0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (277, 26, 2, CONCAT('Ah! Urd', CHAR(39), 's Little Romance'), '2005-12-23', 'https://myvi.ru/player/embed/html/olTysiCaZcFzZJwCIS3MKaclcFApzr0kLpUVIsP3mKqyLIT1jKX4HV7HKsJR4ac6f0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (278, 26, 3, CONCAT('Ah! Is My Heart Pounding Because I', CHAR(39), 'm a Grownup?'), '2005-12-23', 'https://myvi.ru/player/embed/html/oh9gpEKgG_pu5NETSVqIxhcn0OdE_rAJpKT9X7VHuUyapMi-BNj_nySQj8eCGNIu90');

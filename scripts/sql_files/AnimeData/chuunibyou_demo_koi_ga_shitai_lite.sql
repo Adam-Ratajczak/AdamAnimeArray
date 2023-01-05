@@ -1,0 +1,12 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (331, CONCAT('Chuunibyou demo Koi ga Shitai! Lite'), CONCAT('Short episodes aired on KyoAni', CHAR(39), 's official YouTube channel.'), 2, '2012-09-27', '2012-10-31', '', '6 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/42655.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (758, 331, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (759, 331, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (760, 331, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (761, 331, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (369, 331, 14);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5717, 331, 1, CONCAT('Volleyball'), '2012-09-27', 'https://ebd.cda.pl/620x368/19963805c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5718, 331, 2, CONCAT('Wicked Eye: Daybreak Chapter'), '2012-10-04', 'https://ebd.cda.pl/620x368/1996383ee');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5719, 331, 3, CONCAT('My Older Brother'), '2012-10-11', 'https://ebd.cda.pl/620x368/198318039');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5720, 331, 4, CONCAT('We', CHAR(39), 'll Make Meat and Potato Stew!'), '2012-10-17', 'https://ebd.cda.pl/620x368/19831833d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5721, 331, 5, CONCAT('The Sleeping After School Beauty'), '2012-10-24', 'https://ebd.cda.pl/620x368/19831867b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5722, 331, 6, CONCAT('Dekomori vs. Nibutani'), '2012-10-31', 'https://ebd.cda.pl/620x368/198318949');

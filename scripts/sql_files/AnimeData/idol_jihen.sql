@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (823, CONCAT('Idol Jihen'), CONCAT('Increasing income divide, creeping environmental pollution, unsolvable waste issues, childcare waiting lists being discussed without those concerned, repeated corruption… The government, smeared by vested interests, can', CHAR(39), 't do a thing against the many problems and sources of discontent. It', CHAR(39), 's in this situation, with Japan cornered with no way out, that idols rise up to save the day!<br>
+<br>The Heroine Party, Sunlight Party, Starlight Party, Bishoujo Party, Wakaba Party, Subculture New Party, and SOS Party. From these seven idol political parties, the idols who have become National Diet members and representatives for each prefecture will smash through the sense of stagnation covering Japan using the power of song and dance! They', CHAR(39), 'll bring back the smiling faces of the people, and wrap Japan in a glittering aura!!<br>
+<br>(Source: Honeyfeed)'), 1, '2017-01-08', '2017-03-26', 'Winter 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1137/117403.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (901, 823, 73);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (902, 823, 176);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (910, 823, 5);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (911, 823, 6);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14761, 823, 1, CONCAT('Why Become a Dietwoman?'), '2017-01-08', 'https://mp4upload.com/embed-9avetnu6tvv9.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14762, 823, 2, CONCAT('Girl S'), '2017-01-15', 'https://yourupload.com/embed/8j3KUb2D348K');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14763, 823, 3, CONCAT('Nyanway Generation'), '2017-01-22', 'https://yourupload.com/embed/Wb31W8u77S17');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14764, 823, 4, CONCAT('Shake It! Shounan Beach'), '2017-01-29', 'https://yourupload.com/embed/A32Fdw0Je756');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14765, 823, 5, CONCAT('Preschool Heaven'), '2017-02-05', 'https://mp4upload.com/embed-hfl26whjzub8.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14766, 823, 6, CONCAT('Too Shy Shy Girl!'), '2017-02-12', 'https://yourupload.com/embed/D5AEP17DmNUj');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14767, 823, 7, CONCAT('My Microphone Isn', CHAR(39), 't Just for Show'), '2017-02-19', 'https://yourupload.com/embed/M3YqyP87w8RU');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14768, 823, 8, CONCAT('A Miss and Loneliness'), '2017-02-26', 'https://yourupload.com/embed/Cf0V8juG058u');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14769, 823, 9, CONCAT('Diet Member Suit and Machine Gun'), '2017-03-05', 'https://mp4upload.com/embed-5wqopn38lxsw.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14770, 823, 10, CONCAT('Dancing Heroines'), '2017-03-12', 'https://mp4upload.com/embed-66hqpcx91wxu.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14771, 823, 11, CONCAT('Seriously Live in Five Seconds'), '2017-03-19', 'https://mp4upload.com/embed-3xoshnwu1q3k.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14772, 823, 12, CONCAT('It', CHAR(39), 's All About the Idol Dietwoman'), '2017-03-26', 'https://yourupload.com/embed/TYUjm7Kd81M3');

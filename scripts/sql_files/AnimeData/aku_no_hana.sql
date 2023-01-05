@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (67, CONCAT('Aku no Hana'), CONCAT('Takao Kasuga, a high school student fascinated by poetry, reveres Charles Baudelaire and even decorates his room with the poet', CHAR(39), 's portrait. On a normal day, Takao forgets his copy of The Flowers of Evil in the classroom. When returning to retrieve it, he steals the sports garments of Nanako Saeki—a model student who Takeo calls his muse and a femme fatale.<br>
+<br>Deeply ashamed of his act which he sees as a sin and what others see as a crime, Takao realizes with horror that Sawa Nakamura, his classmate and social outcast, knows about his theft. Blackmailed by her, Takao is now forced to partake in Sawa', CHAR(39), 's disturbing fantasies, lest she reveals his deeds to everyone. Caught in a negative spiral of increasingly traumatic experiences, will Takao be able to break free from Sawa', CHAR(39), 's thorns and atone for his sins?<br>
+<br>[Written by MAL Rewrite]'), 1, '2013-04-05', '2013-06-30', 'Spring 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/50559.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (38, 67, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (152, 67, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (153, 67, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (78, 67, 44);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (71, 67, 4);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (72, 67, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1041, 67, 1, CONCAT('Flowers of Evil 1 of 13'), '2013-03-20', 'https://drive.google.com/file/d/14B3n9TZifIpBqFXL_zi9jIkrzodePGqv/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1042, 67, 2, CONCAT('Flowers of Evil 2 of 13'), '2013-04-12', 'https://drive.google.com/file/d/13IVHp8zJkHH8L3mxdFmnyc-eL0W_4iXn/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1043, 67, 3, CONCAT('Flowers of Evil 3 of 13'), '2013-04-19', 'https://drive.google.com/file/d/1qklvCQIUWdcTGkCS1T5WWU7F-deDK6WJ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1044, 67, 4, CONCAT('Flowers of Evil 4 of 13'), '2013-04-26', 'https://drive.google.com/file/d/1kdpNX6CUSSwsxnoLLoV9pLv-PolrRL9v/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1045, 67, 5, CONCAT('Flowers of Evil 5 of 13'), '2013-05-05', 'https://drive.google.com/file/d/1OLbd0liLgyWWsgFxGF-8IA04Favbl5aV/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1046, 67, 6, CONCAT('Flowers of Evil 6 of 13'), '2013-05-12', 'https://drive.google.com/file/d/1Jl6ZyjyJKkBW592soMlSyUWFQwNpq3Tp/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1047, 67, 7, CONCAT('Flowers of Evil 7 of 13'), '2013-05-19', 'https://drive.google.com/file/d/1rrsAKeGuYAmAf-oXmuPpFGAZier7aIUr/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1048, 67, 8, CONCAT('Flowers of Evil 8 of 13'), '2013-05-26', 'https://drive.google.com/file/d/16f6caUsp78WS1nnVFtZ1usAXrUpX9wp5/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1049, 67, 9, CONCAT('Flowers of Evil 9 of 13'), '2013-06-02', 'https://drive.google.com/file/d/1ltXHDqMtK56_thVzyg_cJIOhJ0JfOep0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1050, 67, 10, CONCAT('Flowers of Evil 10 of 13'), '2013-06-09', 'https://drive.google.com/file/d/1ATsJ1HzSqlZ08wjXkM5-Ra2Cf5-3gLSQ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1051, 67, 11, CONCAT('Flowers of Evil 11 of 13'), '2013-06-16', 'https://drive.google.com/file/d/1Pcz2wrvyiznsDqq_Y-vt-6JpE-I0Qn5K/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1052, 67, 12, CONCAT('Flowers of Evil 12 of 13'), '2013-06-23', 'https://drive.google.com/file/d/1qPv8Bm_kYVF3dLQWfNEa-Alvf0dAxXnh/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1053, 67, 13, CONCAT('Flowers of Evil 13 of 13'), '2013-06-30', 'https://drive.google.com/file/d/1ipnAenVDoN9gCiKKzEvsp6a0KMXCpzVP/preview');

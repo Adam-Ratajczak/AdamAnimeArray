@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (475, CONCAT('Edens Zero'), CONCAT('All his life, Shiki has been surrounded by machines. At Granbell Kingdom, a long-abandoned amusement park, he is the only one of his kind around. That is, until Rebecca Bluegarden and her feline companion Happy arrive, unaware that they are Granbell', CHAR(39), 's first visitors in one hundred years. Their goal is to make fun videos for their B-Cube channel, but what they find instead is a friend in the socially awkward Shiki.<br>
+<br>When Granbell becomes too dangerous for the three of them, they set off on an adventure through the Sakura Cosmos. They hope to make more interesting videos and even find the elusive goddess Mother, while Shiki wants to make more friends, spurred on by the words of his late grandfather. Of course, the journey will not be easy, as no one has seen Mother before, but Shiki is determined to reach his goal and explore the boundless reaches of space together with his new friends.<br>
+<br>[Written by MAL Rewrite]'), 1, '2021-04-11', '2021-10-03', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1011/111811.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (217, 475, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1160, 475, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1161, 475, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1162, 475, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1163, 475, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (529, 475, 31);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8582, 475, 1, CONCAT('Into the Sky Where Cherry Blossoms Flutter'), '2021-04-11', 'https://ebd.cda.pl/620x368/72425957f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8583, 475, 2, CONCAT('A Girl and Her Blue Cat'), '2021-04-18', 'https://ebd.cda.pl/620x368/72803749b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8584, 475, 3, CONCAT('Adventurers'), '2021-04-25', 'https://ebd.cda.pl/620x368/741021170');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8585, 475, 4, CONCAT('A Man Named Weisz'), '2021-05-02', 'https://ebd.cda.pl/620x368/74092003e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8586, 475, 5, CONCAT('Clash!! The Sibir Family'), '2021-05-09', 'https://ebd.cda.pl/620x368/747152583');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8587, 475, 6, CONCAT('The Skull Fairy'), '2021-05-16', 'https://ebd.cda.pl/620x368/749967707');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8588, 475, 7, CONCAT('Warship of the Demon King'), '2021-05-23', 'https://ebd.cda.pl/620x368/7550989fd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8589, 475, 8, CONCAT('Wind Howls on the Highway'), '2021-05-30', 'https://ebd.cda.pl/620x368/7610633ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8590, 475, 9, CONCAT('Planet Guilst'), '2021-06-06', 'https://ebd.cda.pl/620x368/76741353b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8591, 475, 10, CONCAT('The Great Naked Escape'), '2021-06-13', 'https://ebd.cda.pl/620x368/77304315c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8592, 475, 11, CONCAT('Sister Ivry'), '2021-06-20', 'https://ebd.cda.pl/620x368/776713091');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8593, 475, 12, CONCAT('New Friends'), '2021-06-27', 'https://ebd.cda.pl/620x368/7821161c3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8594, 475, 13, CONCAT('The Super Virtual Planet'), '2021-06-04', 'https://ebd.cda.pl/620x368/78634529a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8595, 475, 14, CONCAT('The Girl on the Hill'), '2021-07-11', 'https://ebd.cda.pl/620x368/79185921e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8596, 475, 15, CONCAT('Great Kaiju Shiki'), '2021-07-18', 'https://ebd.cda.pl/620x368/7973840be');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8597, 475, 16, CONCAT('Fireworks'), '2021-07-25', 'https://ebd.cda.pl/620x368/805816419');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8598, 475, 17, CONCAT('The Temple of Knowledge'), '2021-08-01', 'https://ebd.cda.pl/620x368/808699458');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8599, 475, 18, CONCAT('Words Will Give You Strength'), '2021-08-08', 'https://ebd.cda.pl/620x368/8134685fa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8600, 475, 19, CONCAT('From the Planet of Eternity'), '2021-08-15', 'https://ebd.cda.pl/620x368/8198243ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8601, 475, 20, CONCAT('Stones'), '2021-08-29', 'https://ebd.cda.pl/620x368/8284375aa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8602, 475, 21, CONCAT('Reset'), '2021-09-05', 'https://ebd.cda.pl/620x368/83090107b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8603, 475, 22, CONCAT('My Mother, the Machine'), '2021-09-12', 'https://ebd.cda.pl/620x368/843992792');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8604, 475, 23, CONCAT('Until the Day It Turns to Strength'), '2021-09-19', 'https://ebd.cda.pl/620x368/8446992ec');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8605, 475, 24, CONCAT('Taking Up the Torch'), '2021-09-26', 'https://ebd.cda.pl/620x368/859144212');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8606, 475, 25, CONCAT('Someone to Love'), '2021-10-03', 'https://ebd.cda.pl/620x368/868831269');

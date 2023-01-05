@@ -1,0 +1,11 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (482, CONCAT('Element Hunters'), CONCAT('In 2029, a large scale ground sinkage occurred in the Mediterranean Sea. Chemical elements such as oxygen, carbon, gold, molybdenum, and cobalt disappeared from the earth', CHAR(39), 's crust suddenly. The human population was decreased by 90% in sixty years. Researchers found out that the disappeared elements were drained into a planet "Nega Earth", located in another dimension. To save the Earth, a special team called the "Element Hunters" is organized. All of the members are under 13 years old, because young and flexible brains are needed to access "Nega Earth".'), 1, '2009-07-04', '2010-03-27', 'Summer 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/21172.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1184, 482, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1185, 482, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1186, 482, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1187, 482, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1188, 482, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1189, 482, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (536, 482, 128);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (512, 482, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (513, 482, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8694, 482, 1, CONCAT('To a Different World!'), '2009-07-04', 'https://www.mp4upload.com/embed-0p4u5yng3tgq.html');

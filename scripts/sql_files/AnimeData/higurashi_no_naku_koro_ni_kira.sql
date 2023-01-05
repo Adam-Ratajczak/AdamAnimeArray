@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (762, CONCAT('Higurashi no Naku Koro ni Kira'), CONCAT('Batsukoishi-hen
+<br>Losing yet another club activity, Keiichi Maebara is forced to serve out a humiliating punishment game. Wanting to break his streak of misfortune, Keiichi makes a desperate cry for help, summoning the lustful yet dependable Soul Brothers. The four band together to devise their own merciless penalty games for the other female club members—all for the taste of victory.<br><br>Ayakashisenshi-hen
+<br>Finding themselves in a strange parallel world, Rika Furude and Satoko Houjou encounter bizarre monsters amid an ominous fog that shrouds Hinamizawa. The girls discover this to be the work of Tokyo Magica, a nefarious organization that seeks world domination using the ancient power of the Furude Shrine. With the help of her friends, Rika must retrieve a mystical wand and transform into a magical girl to save Hinamizawa from complete destruction.<br><br>Musubienishi-hen
+<br>After receiving compliments that the two appear to be an ideal couple, the true nature of the relationship between Keiichi and Mion Sonozaki grows uncertain. As Mion is too embarrassed to take the next step, her twin sister Shion resolves to decide on her behalf. However, Shion', CHAR(39), 's efforts prove surprisingly effective, causing an unexpected competition for Keiichi', CHAR(39), 's affection. <br><br>Yumeutsushi-hen
+<br>At a time of fading serenity, a young Rika and Hanyuu play a game of hide-and-seek. Entering an ancient shrine, Rika closes its doors thinking it to be the perfect hiding spot. <br>
+<br>In the present, Hanyuu takes a stroll through Hinamizawa to enjoy the scenery. Upon hearing a familiar voice, she finds the young Rika alone and confused. Hanyuu discovers that a time paradox has occurred, with Rika having been transported into the future. In turn, she and the rest of the Hinamizawa gang set out to find the now century-old shrine and help Rika return to the past. <br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2011-07-21', '2012-01-25', '', '29 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/29774.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1872, 762, 11);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1873, 762, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1874, 762, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1875, 762, 5);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (839, 762, 58);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (836, 762, 10);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (837, 762, 4);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13684, 762, 1, CONCAT('Love Penalty Arc: Joy'), '2011-07-21', 'https://drive.google.com/file/d/0B8dxS7-Bdpk8Wm1UVFotRTZNZkE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13685, 762, 2, CONCAT('Bewitching Battle Arc: Exert'), '2011-09-22', 'https://drive.google.com/file/d/0B8dxS7-Bdpk8czRYYnhyRHZQWU0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13686, 762, 3, CONCAT('Intertwined Destiny Chapter: Love'), '2011-11-23', 'https://drive.google.com/file/d/0B8dxS7-Bdpk8Z0d3RXU2cFJpTUU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13687, 762, 4, CONCAT('Daydreaming Chapter: Ease'), '2012-01-25', 'https://drive.google.com/file/d/0B8dxS7-Bdpk8TXlOUXZnWGZQdkU/preview');

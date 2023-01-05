@@ -1,0 +1,24 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (678, CONCAT('Hachimitsu to Clover II'), CONCAT('Back from his journey across Japan, Yuuta Takemoto reminisces about his college life so far. He has matured significantly since his second year and is motivated to move forward.<br>
+<br>Feeling more confident than ever before, he finally confesses to Hagumi Hanamoto, the girl he has been in love with since their first encounter. However, Hagumi has been confused by her attempts to understand the mysterious Shinobu Morita. Hiding behind a playful demeanor, Morita may be the most burdened by his own potential. Meanwhile, Takumi Mayama has become a full-fledged working adult and has landed Ayumi Yamada several pottery orders through his company in an act of friendship.<br>
+<br>The five youths continue to face individual hardships in academics, work, love, and friendship as they push each other toward the paths that they are destined to walk.<br>
+<br>[Written by MAL Rewrite]'), 1, '2006-06-30', '2006-09-15', 'Summer 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/11040.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (305, 678, 5);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1669, 678, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1670, 678, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1671, 678, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1672, 678, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (750, 678, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (720, 678, 22);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (721, 678, 42);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12289, 678, 1, CONCAT('And then, we start spinning once more'), '2006-06-30', 'https://www.dailymotion.com/embed/video/xncscl?hideInfos=1&forcedQuality=hd720&logo=1&animatedTitle=Dla%20Shinden.pl%7C%7C');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12290, 678, 2, CONCAT('Unable to say what you want'), '2006-07-07', 'https://www.dailymotion.com/embed/video/xnehoz?hideInfos=1&forcedQuality=hd720&logo=1&animatedTitle=Dla%20Shinden.pl%7C%7C');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12291, 678, 3, CONCAT('I don', CHAR(39), 't want to see your tears'), '2006-07-14', 'https://www.dailymotion.com/embed/video/xntn3v?hideInfos=1&forcedQuality=hd720&logo=1&animatedTitle=Dla%20Shinden.pl%7C%7C');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12292, 678, 4, CONCAT('I won', CHAR(39), 't let you go anywhere'), '2006-07-21', 'https://www.dailymotion.com/embed/video/xogcs2?hideInfos=1&forcedQuality=hd720&logo=1&animatedTitle=Dla%20Shinden.pl%7C%7C');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12293, 678, 5, CONCAT('Suffering even though I', CHAR(39), 'm happy'), '2006-07-28', 'https://www.dailymotion.com/embed/video/xothx7?hideInfos=1&forcedQuality=hd720&logo=1&animatedTitle=Dla%20Shinden.pl%7C%7C');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12294, 678, 6, CONCAT('We would never go to the beach'), '2006-08-04', 'https://video.sibnet.ru/shell.php?videoid=523436');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12295, 678, 7, CONCAT('Forward, in the direction of the light'), '2006-08-11', 'https://video.sibnet.ru/shell.php?videoid=540337');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12296, 678, 8, CONCAT('We didn', CHAR(39), 't know anything'), '2006-08-18', 'https://myvi.ru/player/embed/html/o2ofI_cFuWfrku5pmi-Rgt3rZHjQClh_r-wjWznr7wAJ14FnUsKiVPzWBMqrS0TkF0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12297, 678, 9, CONCAT('Pondering my inabilities'), '2006-08-25', 'https://kreskowki-online.pl/hachimitsu-to-clover-2/odcinek-9/1993');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12298, 678, 10, CONCAT('Once, when I was little, I saw God'), '2006-09-01', 'https://kreskowki-online.pl/hachimitsu-to-clover-2/odcinek-10/1503');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12299, 678, 11, CONCAT('Please give me your life'), '2006-09-08', 'https://myvi.ru/player/embed/html/osgpBKutuP5BSzs72BnHom94jhSEWpwVksEHpAkwZWtRhPsvSpllReRELMBwkAOpg0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12300, 678, 12, CONCAT('With honey and clover'), '2006-09-15', 'https://myvi.ru/player/embed/html/o9bIVQxiCfVpclGdGk0b-EQDq2Y7O_bXF4PVgckilVtmu_bDN2cdyG8_gKIySobT30');

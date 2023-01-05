@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1288, CONCAT('Morita-san wa Mukuchi.'), CONCAT('Morita Mayu, a high school girl. She is extremely reticent and her silence and habit of looking at people', CHAR(39), 's eyes straightly sometimes cause misunderstanding. The reason behind it is not because she doesn’t like to talk nor because she has nothing to say. The reason she rarely speaks is due to the fact she thinks too much before speaking, thus losing the timing to speak altogether. But she lives a happy school life with her classmates.'), 1, '2011-07-06', '2011-09-28', 'Summer 2011', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/30166.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3183, 1288, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3184, 1288, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1392, 1288, 55);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22159, 1288, 1, CONCAT('Morita-san is so Quiet'), NULL, 'https://www.dailymotion.com/embed/video/xkh3jj');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22160, 1288, 2, CONCAT('Miki never Shuts Up'), NULL, 'https://www.dailymotion.com/embed/video/xm4o7k');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22161, 1288, 3, CONCAT('Hana-chan is Really Shy'), NULL, 'https://www.dailymotion.com/embed/video/xm4one');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22162, 1288, 4, CONCAT('Girls can be Lazy too'), NULL, 'https://www.dailymotion.com/embed/video/xm4oq9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22163, 1288, 5, CONCAT('High School Girls Love Sweets'), NULL, 'https://www.dailymotion.com/embed/video/xm4orq');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22164, 1288, 6, CONCAT('Runaway Imaginations'), NULL, 'https://www.dailymotion.com/embed/video/xm4ozi');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22165, 1288, 7, CONCAT('The Ideal Man'), NULL, 'https://www.dailymotion.com/embed/video/xm4p0c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22166, 1288, 8, CONCAT('You', CHAR(39), 've Gotta wear Yukatas to the Summer Festival'), NULL, 'https://www.dailymotion.com/embed/video/xm4p1r');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22167, 1288, 9, CONCAT('The Pool Rules!'), NULL, 'https://www.dailymotion.com/embed/video/xm4p44');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22168, 1288, 10, CONCAT('Yamamoto-san is so Cool'), NULL, 'https://www.facebook.com/video/embed?video_id=261665887186851');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22169, 1288, 11, CONCAT('Every now and then I go on my own'), NULL, 'https://www.dailymotion.com/embed/video/xm4phm');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22170, 1288, 12, CONCAT('A Passionate Couple'), NULL, 'https://www.dailymotion.com/embed/video/xm4pk7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22171, 1288, 13, CONCAT('Spending Our Day off Together'), NULL, 'https://www.dailymotion.com/embed/video/xm4pm2');

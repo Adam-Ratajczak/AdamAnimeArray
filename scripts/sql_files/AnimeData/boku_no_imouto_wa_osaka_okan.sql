@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (246, CONCAT('Boku no Imouto wa "Osaka Okan"'), CONCAT('Kyousuke Ishihara is an average high school student residing in Tokyo. Recently, his younger sister, Namika, has moved back home after living in Osaka for 10 years. As Kyousuke tries to understand his sister', CHAR(39), 's peculiar behavior and dialect, the two bond over their differences and the difficulties that come with change.<br>
+<br>[Written by MAL Rewrite]'), 2, '2012-12-22', '2013-03-16', 'Winter 2013', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/45352.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (122, 246, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (560, 246, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (561, 246, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (562, 246, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (276, 246, 42);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4011, 246, 1, CONCAT('One Morning, I Got an Osaka Momma for a Sister.'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBNFpxWjRsN1JCYzQ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4012, 246, 2, CONCAT('Yes, My Sister is an Osaka Momma!'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBSHpud2FCcGVUMUE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4013, 246, 3, CONCAT('My Sister Can', CHAR(39), 't Be This Much of an Osaka Momma'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBcFBURXNoOTVzWkE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4014, 246, 4, CONCAT('I', CHAR(39), 'm an Osaka Momma, But What', CHAR(39), 's It Matter If We', CHAR(39), 've Got Love?'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBdmJaZUtWSVVwMzQ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4015, 246, 5, CONCAT('Osaka Momma', CHAR(39), 's Home'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBWk1NZ1RqZHQ4b1U/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4016, 246, 6, CONCAT('Recently, My Sister is a Bit Osaka Momma-ish'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBT1I4WWFCZy1XQVE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4017, 246, 7, CONCAT('One of These People is an Osaka Momma!'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBVnhLMWFvc2c0RVU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4018, 246, 8, CONCAT('Or it May Be a Present Progressive Osaka Momma'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBS2dRcmlBVEpqTjA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4019, 246, 9, CONCAT('The Osaka Momma Sister and the Suffering Me'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBaDJQYng1Zno5ZGc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4020, 246, 10, CONCAT('My Sister is the Osaka Momma Goddess'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBWHh4cXhLLWZLZDA/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4021, 246, 11, CONCAT('Seems the Recent Osaka Momma Craze is All Thanks to Me'), NULL, 'https://drive.google.com/file/d/0BxBHyQKqsSnOZFJYSlJ5SXpYQ0E/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4022, 246, 12, CONCAT('Namika-han@Unmotivated'), NULL, 'https://drive.google.com/file/d/0B31lV-ExJ9IBUWtlMmp5TmVaOFk/preview');

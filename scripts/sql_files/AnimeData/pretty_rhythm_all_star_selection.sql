@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1492, CONCAT('Pretty Rhythm: All Star Selection'), CONCAT('This is the fourth anime series of Pretty Rhythm. The story features a girl named Laala Manaka, who desires to become an Idol. To further her debut the best, the three main protagonists from the previous Pretty Rhythm series Aira, Mia, and Naru give her lessons about how to be the best Idol. In addition to the lessons she', CHAR(39), 's learning, the series also retells the events of the previous Pretty Rhythm series.<br>
+<br>(Source: Pretty Rhythm Wiki)'), 1, '2014-04-05', '2014-06-14', 'Spring 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/60581.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1608, 1492, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1623, 1492, 37);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1624, 1492, 4);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1625, 1492, 9);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27384, 1492, 1, CONCAT('A Star is Born!'), '2014-04-05', 'https://www.mp4upload.com/embed-xzk2weq1s0bi.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27385, 1492, 2, CONCAT('Hello, My Future'), '2014-04-12', 'https://www.mp4upload.com/embed-7p5xr7n8kzgz.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27386, 1492, 3, CONCAT('I', CHAR(39), 'm Naru! I', CHAR(39), 'll Become the Shop Manager!'), '2014-04-19', 'https://www.mp4upload.com/embed-g6r7e6yym1va.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27387, 1492, 4, CONCAT('Aim for the Center! Rivals Are Friends?'), '2014-04-26', 'https://www.mp4upload.com/embed-9u5h56solag8.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27388, 1492, 5, CONCAT('Storm of the Summer Queen Cup'), '2014-05-03', 'https://www.mp4upload.com/embed-yaehuv2lffko.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27389, 1492, 6, CONCAT('Soar! Feathers of Courage'), '2014-05-10', 'https://www.mp4upload.com/embed-lde6gt5s2nls.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27390, 1492, 7, CONCAT('Cheer! Yeah!x2, Let Your Dreams Blossom!'), '2014-05-17', 'https://www.mp4upload.com/embed-or8f0sftyhxk.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27391, 1492, 8, CONCAT('I', CHAR(39), 'm Bell! I', CHAR(39), 'll Become the Manager♪'), '2014-05-24', 'https://www.mp4upload.com/embed-28znj5e6vi4i.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27392, 1492, 9, CONCAT('New Prism Queen is Born!'), '2014-05-31', 'https://www.mp4upload.com/embed-jznylm0372bg.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27393, 1492, 10, CONCAT('My Future is Number One!'), '2014-06-07', 'https://www.mp4upload.com/embed-beqg0sk8x7mh.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27394, 1492, 11, CONCAT('The Sparkle is Right Next to You'), '2014-06-14', 'https://www.mp4upload.com/embed-o6js3vr2ga1o.html');

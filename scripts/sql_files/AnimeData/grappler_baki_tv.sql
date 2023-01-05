@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (644, CONCAT('Grappler Baki (TV)'), CONCAT('Ever since he was born, Baki Hanma has always known nothing but fighting—strengthening every single muscle and learning different techniques from various martial arts under the supervision of his mother, Emi Akezawa. He trains in order to prepare himself to face and eventually surpass his own father, Yuujirou Hanma, a man feared by the masses as the "Ogre" and deemed the strongest being in the world.<br>
+<br>However, when Baki realizes his mother', CHAR(39), 's techniques are no longer enough, he sets out to become stronger in his own way. Seeking out powerful opponents and forming unbreakable bonds with them, he continues to grow both body and his soul, as the clock continues to tick closer toward the inevitable showdown against his father...<br>
+<br>[Written by MAL Rewrite]'), 1, '2001-01-09', '2001-06-26', 'Winter 2001', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1782/128917.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (292, 644, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1590, 644, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1591, 644, 19);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (716, 644, 99);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (685, 644, 50);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (686, 644, 10);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (687, 644, 24);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11700, 644, 1, CONCAT('Moving Towards Destiny'), '2001-01-09', 'https://ebd.cda.pl/620x368/16084257d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11701, 644, 2, CONCAT('The Ones that Squirm'), '2001-01-16', 'https://ebd.cda.pl/620x368/160935069');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11702, 644, 3, CONCAT('The Monster of Yasha Cave'), '2001-01-23', 'https://ebd.cda.pl/620x368/16093604e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11703, 644, 4, CONCAT('The Fang and Tears'), '2001-01-30', 'https://ebd.cda.pl/620x368/1609374b5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11704, 644, 5, CONCAT('A Warrior', CHAR(39), 's Heart'), '2001-02-06', 'https://ebd.cda.pl/620x368/160969912');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11705, 644, 6, CONCAT('A Man', CHAR(39), 's Stand'), '2001-02-13', 'https://ebd.cda.pl/620x368/160970224');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11706, 644, 7, CONCAT('Gripping Attack!'), '2001-02-20', 'https://ebd.cda.pl/620x368/1609705ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11707, 644, 8, CONCAT('Demon'), '2001-02-27', 'https://ebd.cda.pl/620x368/16097063e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11708, 644, 9, CONCAT('Parting'), '2001-03-06', 'https://ebd.cda.pl/620x368/1609713be');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11709, 644, 10, CONCAT('Battlefield'), '2001-03-13', 'https://ebd.cda.pl/620x368/160971700');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11710, 644, 11, CONCAT('Gaia'), '2001-03-20', 'https://ebd.cda.pl/620x368/16135150f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11711, 644, 12, CONCAT('Bite Marks'), '2001-03-27', 'https://ebd.cda.pl/620x368/180245610');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11712, 644, 13, CONCAT('Challenge'), '2001-04-03', 'https://ebd.cda.pl/620x368/16135177f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11713, 644, 14, CONCAT('After Having a Dream'), '2001-04-10', 'https://ebd.cda.pl/620x368/161352783');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11714, 644, 15, CONCAT('Slave'), '2001-04-17', 'https://ebd.cda.pl/620x368/161373889');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11715, 644, 16, CONCAT('Road to the Sacred Land'), '2001-04-24', 'https://ebd.cda.pl/620x368/16137404b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11716, 644, 17, CONCAT('The Gathering'), '2001-05-01', 'https://ebd.cda.pl/620x368/161374238');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11717, 644, 18, CONCAT('The Chord-Cutter'), '2001-05-08', 'https://ebd.cda.pl/620x368/161377690');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11718, 644, 19, CONCAT('Opponent'), '2001-05-15', 'https://ebd.cda.pl/620x368/1613779f3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11719, 644, 20, CONCAT('An Honorable Loss'), '2001-05-22', 'https://ebd.cda.pl/620x368/16137830e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11720, 644, 21, CONCAT('Killer Instinct'), '2001-05-29', 'https://ebd.cda.pl/620x368/161382333');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11721, 644, 22, CONCAT('Head-On Collision'), '2001-06-12', 'https://ebd.cda.pl/620x368/16138248a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11722, 644, 23, CONCAT('Fighting God, Satan!'), '2001-06-19', 'https://ebd.cda.pl/620x368/1613829c4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11723, 644, 24, CONCAT('The Devil', CHAR(39), 's Payback'), '2001-06-26', 'https://ebd.cda.pl/620x368/1613830f7');

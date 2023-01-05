@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (264, CONCAT('Bubuki Buranki: Hoshi no Kyojin'), CONCAT('Sequel of Bubuki Buranki.'), 1, '2016-10-01', '2016-12-17', 'Fall 2016', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/82249.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (608, 264, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (609, 264, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (610, 264, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (299, 264, 60);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4217, 264, 1, CONCAT('Black Oubu'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336183');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4218, 264, 2, CONCAT('The False Heart'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336184');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4219, 264, 3, CONCAT('The Right Hand', CHAR(39), 's Scar'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336186');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4220, 264, 4, CONCAT('The Hunter', CHAR(39), 's Bullet'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336188');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4221, 264, 5, CONCAT('The Island Fortress'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336191');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4222, 264, 6, CONCAT('The Butterfly and the Gallows'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336194');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4223, 264, 7, CONCAT('Older Brother and Younger Sister'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336197');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4224, 264, 8, CONCAT('The Rebellious Limb'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336198');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4225, 264, 9, CONCAT('Swan Song'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336201');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4226, 264, 10, CONCAT('The Comet Opens Its Eyes'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336205');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4227, 264, 11, CONCAT('The Gentle Giants of the Galaxy'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336212');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4228, 264, 12, CONCAT('The Adventurers'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4336217');

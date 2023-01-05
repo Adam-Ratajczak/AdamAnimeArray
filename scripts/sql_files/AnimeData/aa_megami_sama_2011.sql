@@ -1,0 +1,11 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (22, CONCAT('Aa! Megami-sama! (2011)'), CONCAT('OVAs bundled with volumes 42, 43 & 46 of the Aa! Megami-sama! manga. '), 1, '2011-02-23', '2013-08-23', '', '28 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/28569.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (14, 22, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (43, 22, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (44, 22, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (45, 22, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (24, 22, 17);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (30, 22, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (31, 22, 18);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (225, 22, 1, CONCAT('Always Together'), '2011-02-23', 'https://www.youtube.com/embed/WsjN7vf93qk');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (226, 22, 2, CONCAT('Hunters & Hunters'), '2011-09-22', 'https://www.dailymotion.com/embed/video/kgEfusbRcXVBgO2vJoi?hideInfos=1&forcedQuality=hd720&logo=1&animatedTitle=Dla%20Shinden.p');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (227, 22, 3, CONCAT('Dive! Live! Love!'), '2013-08-23', 'https://www.youtube.com/embed/tNh5ZrYofSM');

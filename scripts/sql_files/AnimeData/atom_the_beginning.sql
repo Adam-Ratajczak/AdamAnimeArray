@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (141, CONCAT('Atom: The Beginning'), CONCAT('Japan in the near future suffers an unexplained major disaster. Five years later, reconstruction is well underway. Two young researchers at a university are pinning all their hopes on robot development. Now their new interpretation of the eternal hero Astro Boy up until his birth is just about to start!<br>
+<br>(Source: Showgate)'), 1, '2017-04-15', '2017-07-08', 'Spring 2017', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/86607.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (69, 141, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (321, 141, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (322, 141, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (159, 141, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (160, 141, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (161, 141, 70);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1990, 141, 1, CONCAT('Birth of the Mighty Atom'), '2017-04-15', 'https://drive.google.com/file/d/0BzPe0Wj3xolQdWJLZ2IyVEtIM0k/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1991, 141, 2, CONCAT('Bewusstsein'), '2017-04-22', 'https://drive.google.com/file/d/0B8SdDdL9ThdFMTdrWTBGYmoyYWc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1992, 141, 3, CONCAT('Pursuing the Respective Leads'), '2017-04-29', 'https://www.mp4upload.com/embed-90eudm05mn2g.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1993, 141, 4, CONCAT('Welcome to Nerima U Festival'), '2017-05-06', 'https://drive.google.com/file/d/0B3M_FvXDH183NG5vcUN2X0gtMHM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1994, 141, 5, CONCAT('Step On It! Maruhige Shipping'), '2017-05-13', 'https://mp4upload.com/embed-zj9u6s5uc0vc.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1995, 141, 6, CONCAT('Lab 7', CHAR(39), 's Annihilation!'), '2017-05-20', 'https://mp4upload.com/embed-4lkx4lofoxpg.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1996, 141, 7, CONCAT('Ran and Princess Teru'), '2017-05-27', 'https://mp4upload.com/embed-dv1kmos1nazl.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1997, 141, 8, CONCAT('Robot Wrestling'), '2017-06-10', 'https://mp4upload.com/embed-25z07okfgh00.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1998, 141, 9, CONCAT('Six is Unfit to Fight'), '2017-06-17', 'https://mp4upload.com/embed-0gv4h6uf5jar.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1999, 141, 10, CONCAT('Battle Royal'), '2017-06-24', 'https://mp4upload.com/embed-t6tw4x6bxefy.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2000, 141, 11, CONCAT('A Dialogue'), '2017-07-01', 'https://mp4upload.com/embed-warkvbg81wx6.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2001, 141, 12, CONCAT('Beginning'), '2017-07-08', 'https://mp4upload.com/embed-mgs63azgr3es.html');

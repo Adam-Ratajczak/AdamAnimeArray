@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1757, CONCAT('Sidonia no Kishi: Daikyuu Wakusei Seneki'), CONCAT('After barely escaping a collision with a gigantic Gauna at the cost of many human lives, Kobayashi—the captain of the spaceship Sidonia—is prompted to change her political paradigm. Once she seizes full power, Kobayashi aims to eradicate the Gaunas from the Lem system where former Sidonians have recently established a colony. Her ambition is justified by two breakthroughs: the development of highly effective, long-range anti-Gauna weapons, and the creation of Tsumugi Shiraui—the first human-Gauna chimera possessing great destructive power.<br>
+<br>Facing hostility toward chimeras and her uncertain large-scale military expedition, Kobayashi enlists the help of the new elite pilot Nagate Tanikaze. Due to his personal experiences with Shizuka Hoshijiro and Benisuzume', CHAR(39), 's placenta, Tanikaze soon develops a close bond with Tsumugi. As the final battle against humanity', CHAR(39), 's most formidable opponent approaches, Tanikaze tries to enjoy the last days of peace with his friend Izana Shinatose—all while Kobayashi secretly pursues the development of an experimental weapon that could very well lead to the complete destruction of Sidonia.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2015-04-11', '2015-06-27', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/72712.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (733, 1757, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4352, 1757, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4353, 1757, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1899, 1757, 171);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1959, 1757, 3);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1960, 1757, 26);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31551, 1757, 1, CONCAT('Conflict'), '2015-04-11', 'https://video.sibnet.ru/shell.php?videoid=1766342');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31552, 1757, 2, CONCAT('Ability'), '2015-04-18', 'https://video.sibnet.ru/shell.php?videoid=1769965');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31553, 1757, 3, CONCAT('Course'), '2015-04-25', 'https://drive.google.com/file/d/0B9SlP9nShNbsN2pQakgzalpNVEE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31554, 1757, 4, CONCAT('Incensed'), '2015-05-03', 'https://video.sibnet.ru/shell.php?videoid=1784629');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31555, 1757, 5, CONCAT('Desire'), '2015-05-10', 'https://video.sibnet.ru/shell.php?videoid=1784963');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31556, 1757, 6, CONCAT('Activation'), '2015-05-17', 'https://drive.google.com/file/d/0BwtVRkMiBtDmZWRMbEhoVGtWMGc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31557, 1757, 7, CONCAT('Rumbling'), '2015-05-22', 'https://video.sibnet.ru/shell.php?videoid=1798118');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31558, 1757, 8, CONCAT('Reunion'), '2015-05-30', 'https://drive.google.com/file/d/0ByKZYwtRxCf2WmxQZS1UdGRHSGc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31559, 1757, 9, CONCAT('Duty'), '2015-06-06', 'https://video.sibnet.ru/shell.php?videoid=1820700');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31560, 1757, 10, CONCAT('Entry'), '2015-06-13', 'https://video.sibnet.ru/shell.php?videoid=1844265');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31561, 1757, 11, CONCAT('Encounter'), '2015-06-20', 'https://video.sibnet.ru/shell.php?videoid=1844266');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31562, 1757, 12, CONCAT('Decisive Battle'), '2015-06-27', 'https://video.sibnet.ru/shell.php?videoid=1844268');

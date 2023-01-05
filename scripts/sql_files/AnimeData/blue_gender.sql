@@ -1,0 +1,38 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (238, CONCAT('Blue Gender'), CONCAT('Blue Gender takes place in the not too distant future in a world where things have gone terribly wrong for humanity. Humans have been replaced at the top of the food chain by the Blue, a race of bug-like aliens that have colonized Earth and pushed humans aside. A space station, Second Earth, has been constructed as a safe haven for humans, with the hope of one day reclaiming the Earth once more.<br>
+<br>Yuji Kaido was cryogenically frozen, having been suffering from a disease known as B-Cells. Once awakened, he joins a team of soldiers that have come to Earth to extract him. Unfortunately, nothing goes according to plan as they make their way back to Second Earth.<br>
+<br>Yuji will have to deal with the horrors of fighting a bloody war as he and the fighters from Second Earth look to survive. Will they be able to win back Earth without losing their humanity?'), 1, '1999-10-08', '2000-03-31', 'Fall 1999', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1/2023.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (553, 238, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (554, 238, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (555, 238, 11);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (556, 238, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (557, 238, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (268, 238, 18);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (258, 238, 3);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (259, 238, 25);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (260, 238, 26);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3864, 238, 1, CONCAT('One Day'), '1999-10-10', 'https://drive.google.com/file/d/1Qc4zbk1p7aF3BF-Z8sWKZNorKh_XW9L_/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3865, 238, 2, CONCAT('Cry'), '2003-08-05', 'https://drive.google.com/file/d/1elkpWLlPytcxBK9QT_iUB6arUmh72dGN/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3866, 238, 3, CONCAT('Trial'), '1999-10-22', 'https://drive.google.com/file/d/1CChh-1yGWXTxTqrDClQXsEu32HZSjVpf/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3867, 238, 4, CONCAT('Agony'), '1999-10-29', 'https://drive.google.com/file/d/1bbKkp6e1yjABPHbGKRxR0wV3hbMHMnt0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3868, 238, 5, CONCAT('Priority'), '1999-11-05', 'https://ebd.cda.pl/800x450/517508152');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3869, 238, 6, CONCAT('Relation'), '1999-11-12', 'https://ebd.cda.pl/800x450/5175087ab');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3870, 238, 7, CONCAT('Sympathy'), '1999-11-19', 'https://drive.google.com/file/d/1mXMB9tBD8-Y0rAQHwIoF7AMJ3ySvqmd7/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3871, 238, 8, CONCAT('Oasis'), '1999-11-26', 'https://drive.google.com/file/d/1pglhN8TvDsveg2I8bMy2WlsWJwXcMAmf/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3872, 238, 9, CONCAT('Confirm'), '1999-12-03', 'https://drive.google.com/file/d/1sRtRk1RU2REnIybEkaidkr1psVlhAPfM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3873, 238, 10, CONCAT('Tactics'), '1999-12-10', 'https://drive.google.com/file/d/1KiERxdvor5egNliHnSmyPUM6xYF4CWM2/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3874, 238, 11, CONCAT('Go Mad'), '1999-12-17', 'https://drive.google.com/file/d/18AaA4-3EKfRSyQCycgv-NA6f5Zj2he7N/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3875, 238, 12, CONCAT('Progress'), '1999-12-24', 'https://drive.google.com/file/d/10aY70qCKKthv2jOvyjGj4gO497L4wFJ-/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3876, 238, 13, CONCAT('Heresy'), '2000-01-14', 'https://drive.google.com/file/d/10zINhSFSAhZFRTlhN7y0JP_swmh8sBaN/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3877, 238, 14, CONCAT('Set'), '2000-01-21', 'https://video.sibnet.ru/shell.php?videoid=3948411');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3878, 238, 15, CONCAT('Calm'), '2000-01-28', 'https://drive.google.com/file/d/1BUMjMD4QdBu-0lpxyuE_GRhvCmPe7GVg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3879, 238, 16, CONCAT('A Sign'), '2000-02-04', 'https://drive.google.com/file/d/1nUJoK3zEJu_SgTFw1o-IOIt_3A-SC-I9/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3880, 238, 17, CONCAT('Eclosion'), '2000-02-11', 'https://drive.google.com/file/d/1XdBnAxUdXFaoU17dUOf8dvs1UAyfgXUY/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3881, 238, 18, CONCAT('Chaos'), '2000-02-18', 'https://drive.google.com/file/d/152zzfLe_VcACHiW6OjtsZunTXJxrr8xT/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3882, 238, 19, CONCAT('Collapse'), '2000-02-25', 'https://drive.google.com/file/d/1aulmx1JRR4mIAYYX2Saj2LmVTrDshPgs/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3883, 238, 20, CONCAT('Versus'), '2000-03-03', 'https://video.sibnet.ru/shell.php?videoid=3948355');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3884, 238, 21, CONCAT('Joker'), '2000-03-10', 'https://video.sibnet.ru/shell.php?videoid=3948356');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3885, 238, 22, CONCAT('Dogma'), '2000-03-17', 'https://video.sibnet.ru/shell.php?videoid=3948361');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3886, 238, 23, CONCAT('Soliste'), '2000-03-17', 'https://video.sibnet.ru/shell.php?videoid=3948364');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3887, 238, 24, CONCAT('Compass'), '2000-03-24', 'https://video.sibnet.ru/shell.php?videoid=3948368');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3888, 238, 25, CONCAT('Adagio'), '2000-03-24', 'https://video.sibnet.ru/shell.php?videoid=3948371');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3889, 238, 26, CONCAT('Let Me'), '2000-03-31', 'https://video.sibnet.ru/shell.php?videoid=3948374');

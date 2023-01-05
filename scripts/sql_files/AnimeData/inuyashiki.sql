@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (868, CONCAT('Inuyashiki'), CONCAT('Ichirou Inuyashiki is a 58-year-old family man who is going through a difficult time in his life. Though his frequent back problems are painful, nothing hurts quite as much as the indifference and distaste that his wife and children have for him. Despite this, Ichirou still manages to find solace in Hanako, an abandoned Shiba Inu that he adopts into his home. However, his life takes a turn for the worse when a follow-up physical examination reveals that Ichirou has stomach cancer and only three months to live though he tries to be strong, his family', CHAR(39), 's disinterest causes an emotional breakdown. Running off into a nearby field, Ichirou embraces his dog and weeps—until he notices a strange figure standing before him.<br>
+<br>Suddenly, a bright light appears and Ichirou is enveloped by smoke and dust. When he comes to, he discovers something is amiss—he has been reborn as a mechanized weapon wearing the skin of his former self. Though initially shocked, the compassionate Ichirou immediately uses his newfound powers to save a life, an act of kindness that fills him with happiness and newfound hope.<br>
+<br>However, the origins of these strange powers remain unclear. Who was the mysterious figure at the site of the explosion, and are they as kind as Ichirou when it comes to using this dangerous gift?<br>
+<br>[Written by MAL Rewrite]'), 1, '2017-10-13', '2017-12-22', 'Fall 2017', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/88471.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (388, 868, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2087, 868, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2088, 868, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2089, 868, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (950, 868, 73);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (965, 868, 10);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (966, 868, 4);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15497, 868, 1, CONCAT('Ichirou Inuyashiki'), '2017-10-13', 'https://ebd.cda.pl/620x368/2992716ad');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15498, 868, 2, CONCAT('Hiro Shishigami'), '2017-10-20', 'https://ebd.cda.pl/620x368/2992722b7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15499, 868, 3, CONCAT('Naoyuki Andou'), '2017-10-27', 'https://ebd.cda.pl/620x368/2992731b2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15500, 868, 4, CONCAT('Samejima'), '2017-11-03', 'https://drive.google.com/file/d/1_bbxcuGFH7kjQl9Y4qtikut641leYChR/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15501, 868, 5, CONCAT('Yuuko Shishigami'), '2017-11-10', 'https://drive.google.com/file/d/1jwZ2zM0bazdImptgg3Nzf1XhHCIZmP6G/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15502, 868, 6, CONCAT('People of 2chan'), '2017-11-17', 'https://drive.google.com/file/d/1veGVv0XxYZRvkjo3szYl_p9CEn5v3g3h/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15503, 868, 7, CONCAT('Shion Watanabe'), '2017-11-24', 'https://drive.google.com/file/d/1itoH_pjD4rpYeoKGbeZkOAZqywv_S2zH/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15504, 868, 8, CONCAT('Mari Inuyashiki'), '2017-12-01', 'https://drive.google.com/file/d/1X3vYN_YLvAzUUXqzYacCJoJwK1FX6_ZK/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15505, 868, 9, CONCAT('People of Shinjuku'), '2017-12-08', 'https://drive.google.com/file/d/1kjBnvXRo6YYWFvZ_k2MeB3HJfwowTHHE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15506, 868, 10, CONCAT('People of Tokyo'), '2017-12-15', 'https://drive.google.com/file/d/1kpQ6xXXqwojoa04iCnHfZtccx70SS31m/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15507, 868, 11, CONCAT('People of Earth'), '2017-12-22', 'https://drive.google.com/file/d/1AU0Mn3TsyjRJM6ZGhK97YDHbacS4TTTl/preview');

@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1949, CONCAT('Try Knights'), CONCAT('Riku Haruma enters high school without a future in sight. He sees people playing like monsters on the ground, jumping higher than anyone else, running fast, deciding to try their best. There, he sees Akira Kariya playing rugby, a sport he was once passionate about but gave up due to his physique. While Akira is running roughly, Riku gives him a piece of advice without thinking. From that, Riku feels his dying passion for the sport set ablaze, and his future starts to brighten up...<br>
+<br>(Source: MAL News)'), 1, '2019-07-31', '2019-10-16', 'Summer 2019', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1803/102385.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (813, 1949, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4854, 1949, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4855, 1949, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2115, 1949, 171);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2167, 1949, 3);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2168, 1949, 26);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34567, 1949, 1, CONCAT('The Moon and the Sun'), '2019-07-31', 'https://cloudvideo.tv/embed-sewggdplk8v6.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34568, 1949, 2, CONCAT('Athleticism and Tactics'), '2019-08-07', 'https://cloudvideo.tv/cw3442lw8wfj');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34569, 1949, 3, CONCAT('The Past and the Future'), '2019-08-14', 'https://cloudvideo.tv/bwe6nhlqn6zy');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34570, 1949, 4, CONCAT('Failing and Overcoming'), '2019-08-21', 'https://cloudvideo.tv/embed-yjmpv8tlcuoh.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34571, 1949, 5, CONCAT('Opposition and Oaths'), '2019-08-28', 'https://cloudvideo.tv/embed-jgi29drzlg63.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34572, 1949, 6, CONCAT('Cleansing and Conflict'), '2019-09-04', 'https://rapidvid.to/e/G6O3GOE2E3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34573, 1949, 7, CONCAT('Frenzy and Ambush'), '2019-09-11', 'https://cloudvideo.tv/embed-htecj32muaz1.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34574, 1949, 8, CONCAT('Rugby and Chess'), '2019-09-18', 'https://cloudvideo.tv/dinezw01htm8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34575, 1949, 9, CONCAT('Pawns and Teammates'), '2019-09-25', 'https://cloudvideo.tv/embed-hraxdafr017j.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34576, 1949, 10, CONCAT('Soran and Sekirei'), '2019-10-02', 'https://cloudvideo.tv/01bw4nfd92ie.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34577, 1949, 11, CONCAT('Confidence and Trust'), '2019-10-09', 'https://cloudvideo.tv/e3x97s09hrx7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34578, 1949, 12, CONCAT('Younger and Elder'), '2019-10-16', 'https://ebd.cda.pl/620x368/405131523');

@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2079, CONCAT('Yoru no Yatterman'), CONCAT('Several generations after the original Yatterman series, Leopard lives with her mother and guardians, Dorothy, Voltkatze, and Elephantus, just outside the prosperous Yatter Kingdom. She lives a happy if impoverished life, unaware of her ancestral ties to the infamous Doronbow Gang, until she discovers a mural of Doronjo, Boyacky, and Tonzura in a sealed off area of her home. It turns out that Dorothy, Voltkatze, and Elephantus are descendants of the villainous gangsters, which is why they have been forbidden from entering the hero Yatterman', CHAR(39), 's Kingdom!<br>
+<br>At first, Leopard vows to never engage in villainous actions like her ancestors, but new circumstances may mean that she must go back on her word, donning the identity of villain in search of true justice. '), 1, '2015-01-11', '2015-03-29', 'Winter 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/71773.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5164, 2079, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5165, 2079, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5166, 2079, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5167, 2079, 6);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2252, 2079, 98);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36386, 2079, 1, CONCAT('The World Is Pitch-Black'), NULL, 'https://drive.google.com/file/d/0B85PwG_7jyJraDYyZlZ0Y0gxNkE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36387, 2079, 2, CONCAT('We', CHAR(39), 'll Give Yatterman A Forehead Flicking'), NULL, 'https://myvi.ru/player/embed/html/69898e9bac46473cab96db835443ba39');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36388, 2079, 3, CONCAT('We’re Not Angels But We’ll Pretend to Be'), NULL, 'https://drive.google.com/file/d/0Bw_i3Ufb8hbUWWVWU1JCTUJVMGM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36389, 2079, 4, CONCAT('Steamy Outdoor Hot Spring Trip'), NULL, 'https://drive.google.com/file/d/0B6RvH7VtLjLJMkFnWkRqWE1ON1k/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36390, 2079, 5, CONCAT('The Hurricane Dedicated to His Mother'), NULL, 'https://streamtape.com/e/vwbLQ2vXg7u4Xva/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36391, 2079, 6, CONCAT('The Flower That Blooms in Winter'), NULL, 'https://streamtape.com/e/belmwmbYzZhPbA6/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36392, 2079, 7, CONCAT('Dream Sea'), NULL, 'https://streamtape.com/e/vz2GmxDj7dhYwo/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36393, 2079, 8, CONCAT('Kussie of Lake Kussharo-Dessharo'), NULL, 'https://streamtape.com/e/ol93m89mlYcxx6/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36394, 2079, 9, CONCAT('Abareshi Prison'), NULL, 'https://streamtape.com/e/7j67bV8jJxI4dD/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36395, 2079, 10, CONCAT('The Twelve Yatter Guardian Gods’ Encirclement'), NULL, 'https://streamtape.com/e/Xkgy6eM133UzXq/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36396, 2079, 11, CONCAT('The Truth About Yatter Metropolis'), NULL, 'https://streamtape.com/e/4wV73ABYGjCKDXZ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36397, 2079, 12, CONCAT('The Dawn'), NULL, 'https://streamtape.com/e/019xDozPrbSb7Kr/');

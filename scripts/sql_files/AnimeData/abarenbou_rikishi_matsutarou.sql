@@ -1,0 +1,27 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (27, CONCAT('Abarenbou Rikishi!! Matsutarou'), CONCAT('Matsutarou Sakaguchi is a giant roughneck man with strength far beyond ordinary people. He never uttered words like "work hard," "strive," and "dream" like the typical shounen manga protagonist. However, he is stronger than anyone and peerless in sumo wrestling. His greatest weakness is his own carefree personality. He grows into a full-fledged sumo wrestler.<br>
+<br>(Source: ANN)'), 1, '2014-04-06', '2014-09-28', 'Spring 2014', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/65897.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (18, 27, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (29, 27, 1);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (279, 27, 1, CONCAT('Rowdy Sumo Wrestler Matsutaro'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210300');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (280, 27, 2, CONCAT('Goodbye, Middle School'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210318');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (281, 27, 3, CONCAT('Matsutaro Struggles'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210346');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (282, 27, 4, CONCAT('My Throbbing Heart'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210353');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (283, 27, 5, CONCAT('Falling, Frustration, and Recovery'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210361');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (284, 27, 6, CONCAT('Tanaka', CHAR(39), 's Total Transformation'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210370');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (285, 27, 7, CONCAT('Wrestling Debut'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210377');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (286, 27, 8, CONCAT('A Self-indulgent Home Party'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210384');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (287, 27, 9, CONCAT('How Wrestlers Relax'), NULL, 'https://ebd.cda.pl/620x395/6512288c0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (288, 27, 10, CONCAT('Tanaka', CHAR(39), 's First Victory'), NULL, 'https://ebd.cda.pl/620x395/6512270c5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (289, 27, 11, CONCAT('Okogane'), NULL, 'https://ebd.cda.pl/620x395/65122735a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (290, 27, 12, CONCAT('The Cat-obsessed Wrestler'), NULL, 'https://ebd.cda.pl/620x395/6512264d3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (291, 27, 13, CONCAT('The Season', CHAR(39), 's End'), NULL, 'https://ebd.cda.pl/620x395/6512318af');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (292, 27, 14, CONCAT('Championship Parade'), NULL, 'https://ebd.cda.pl/620x395/65122944f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (293, 27, 15, CONCAT('Homecoming'), NULL, 'https://ebd.cda.pl/620x395/6512279d5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (294, 27, 16, CONCAT('Sumo Train'), NULL, 'https://ebd.cda.pl/620x395/6512312cc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (295, 27, 17, CONCAT('Osaka Rampage'), NULL, 'https://ebd.cda.pl/620x395/6512276d6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (296, 27, 18, CONCAT('Tanaka', CHAR(39), 's Chanko Training'), NULL, 'https://ebd.cda.pl/620x395/651230609');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (297, 27, 19, CONCAT('Wedding Rampage'), NULL, 'https://ebd.cda.pl/620x395/65123218a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (298, 27, 20, CONCAT('Matsutaro Confesses'), NULL, 'https://ebd.cda.pl/620x395/651230927');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (299, 27, 21, CONCAT('The Big Heartbreak'), NULL, 'https://ebd.cda.pl/620x395/6512291f8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (300, 27, 22, CONCAT('Matsutaro: A Man of Common Sense?'), NULL, 'https://ebd.cda.pl/620x395/65123278c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (301, 27, 23, CONCAT('Battle Against the Eternal Rival'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4210448');

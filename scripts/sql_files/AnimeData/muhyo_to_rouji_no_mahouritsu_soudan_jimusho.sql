@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1300, CONCAT('Muhyo to Rouji no Mahouritsu Soudan Jimusho'), CONCAT('Are you a victim of unwanted spirit possession? Is there a ghost you need sent up and away...or down to burn for all eternity? If the answer is yes, then you need Muhyo and Roji, experts in magic law. Serving justice to evil spirits is their specialty.<br>
+<br>(Source: VIZ Media)'), 1, '2018-08-03', '2018-10-19', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1180/93407.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (560, 1300, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3209, 1300, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3210, 1300, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3211, 1300, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3212, 1300, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3213, 1300, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1405, 1300, 46);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22329, 1300, 1, CONCAT('Rie and Taeko'), '2018-08-03', 'https://drive.google.com/file/d/1e0_WRTOW8U6cByCbQHcGXklGfVWeqJbZ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22330, 1300, 2, CONCAT('Kenji and Nana'), NULL, 'https://drive.google.com/file/d/1Or1WBvP0zauFNJJ1oJz345SFTQY_zEpo/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22331, 1300, 3, CONCAT('Talent'), NULL, 'https://drive.google.com/file/d/14a2preBCWoks1CWxxAunqqRc7R8HLo7U/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22332, 1300, 4, CONCAT('Omen'), NULL, 'https://ebd.cda.pl/800x450/36044417d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22333, 1300, 5, CONCAT('Insanity'), NULL, 'https://drive.google.com/file/d/1iXPkiH5Hqj4GVwT3nzSGnUWG9VWRernk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22334, 1300, 6, CONCAT('The Butterfly of the Night'), NULL, 'https://drive.google.com/file/d/1vAaG1yoKjDdWFegwJWMr9m01in4MaKQU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22335, 1300, 7, CONCAT('Magic Prison'), NULL, 'https://drive.google.com/file/d/1wkmio0skWtYNIXSYiWtJRJBqKidlzjOY/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22336, 1300, 8, CONCAT('Becoming Someone Else'), NULL, 'https://drive.google.com/file/d/1IGidZfJJ-d7r7x6fydYoPnyYSRH3kUUg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22337, 1300, 9, CONCAT('Sophie'), NULL, 'https://ebd.cda.pl/800x450/37345840d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22338, 1300, 10, CONCAT('Raspberries'), NULL, 'https://drive.google.com/file/d/12c8K_T2M8GD_k3VATRpPBZaiCDEDp6sh/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22339, 1300, 11, CONCAT('The Gamble'), NULL, 'https://drive.google.com/file/d/10GNK5mRZgoHBSTP2l9HYIOtHsSimZR_N/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22340, 1300, 12, CONCAT('Swallows in the Wind'), NULL, 'https://drive.google.com/file/d/12_NcCP4Keu6j4Z0vVdGPmnTXEpE77v76/preview');

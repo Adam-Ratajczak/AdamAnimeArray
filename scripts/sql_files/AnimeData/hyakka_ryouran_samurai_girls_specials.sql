@@ -1,0 +1,14 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (812, CONCAT('Hyakka Ryouran: Samurai Girls Specials'), CONCAT('Special episodes added to DVDs and Blu-rays.'), 1, '2010-11-25', '2011-04-27', '', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/25950.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1994, 812, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1995, 812, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1996, 812, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (889, 812, 129);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (890, 812, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (891, 812, 32);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (892, 812, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14638, 812, 1, CONCAT('The Picture Scroll Edition 1: The Throbbing Heart of Jubei'), '2010-11-25', 'https://drive.google.com/file/d/0B0_t9eLQ_MNpNzlfaW9IRU1SNVE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14639, 812, 2, CONCAT('The Picture Scroll Edition 2: Princess Sen', CHAR(39), 's Kissing Lesson'), '2010-12-22', 'https://drive.google.com/file/d/0B0_t9eLQ_MNpT2ZyUnBJOENEc0E/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14640, 812, 3, CONCAT('The Picture Scroll Edition 3: The Maiden', CHAR(39), 's Beach Stories'), '2011-01-26', 'https://drive.google.com/file/d/0B0_t9eLQ_MNpLTVwWnV2NEZmRjQ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14641, 812, 4, CONCAT('The Picture Scroll Edition 4: From Kanetsugu to Yukimura'), '2011-02-23', 'https://drive.google.com/file/d/0B0_t9eLQ_MNpbGQ3c2pwWEdQLVk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14642, 812, 5, CONCAT('The Picture Scroll Edition 5: Gisen', CHAR(39), 's Indecent Trap'), '2011-03-23', 'https://drive.google.com/file/d/0B0_t9eLQ_MNpTG85VDhDakNwODQ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14643, 812, 6, CONCAT('The Picture Scroll Edition 6: The Untold Story of the Girls', CHAR(39), ' Photos'), '2011-04-27', 'https://drive.google.com/file/d/0B0_t9eLQ_MNpM3dNR0RKRXFaTm8/preview');

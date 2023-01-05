@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1997, CONCAT('Usagi Drop'), CONCAT('Daikichi Kawachi is a 30-year-old bachelor working a respectable job but otherwise wandering aimlessly through life. When his grandfather suddenly passes away, he returns to the family home to pay his respects. Upon arriving at the house, he meets a mysterious young girl named Rin who, to Daikichi’s astonishment, is his grandfather', CHAR(39), 's illegitimate daughter!<br>
+<br>The shy and unapproachable girl is deemed an embarrassment to the family, and finds herself ostracized by her father', CHAR(39), 's relatives, all of them refusing to take care of her in the wake of his death. Daikichi, angered by their coldness toward Rin, announces that he will take her in—despite the fact that he is a young, single man with no prior childcare experience.<br><br>Usagi Drop is the story of Daikichi', CHAR(39), 's journey through fatherhood as he raises Rin with his gentle and affectionate nature, as well as an exploration of the warmth and interdependence that are at the heart of a happy, close-knit family.<br>
+<br>[Written by MAL Rewrite]'), 1, '2011-07-08', '2011-09-16', 'Summer 2011', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/29665.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (831, 1997, 5);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2168, 1997, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2208, 1997, 7);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2209, 1997, 8);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35263, 1997, 1, CONCAT('The Bellflower Girl'), '2011-07-08', 'https://ebd.cda.pl/620x395/539269804');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35264, 1997, 2, CONCAT('Pinky Promise'), '2011-07-15', 'https://ebd.cda.pl/620x395/5392743b9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35265, 1997, 3, CONCAT('Daikichi', CHAR(39), 's Decision'), '2011-07-22', 'https://ebd.cda.pl/620x395/53927105a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35266, 1997, 4, CONCAT('Letter'), '2011-07-29', 'https://ebd.cda.pl/620x395/539271626');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35267, 1997, 5, CONCAT('Daikichi Should Stay Daikichi'), '2011-08-05', 'https://drive.google.com/file/d/1skBPDQKJ2o5Gk6PMM8yQAUnmyOJ7PmVE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35268, 1997, 6, CONCAT('My Tree'), '2011-08-12', 'https://ebd.cda.pl/620x395/53927227b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35269, 1997, 7, CONCAT('Secretly Leaving Home'), '2011-08-19', 'https://ebd.cda.pl/620x395/539271339');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35270, 1997, 8, CONCAT('Grandpa', CHAR(39), 's Precious Thing'), '2011-08-26', 'https://ebd.cda.pl/620x395/5392725d1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35271, 1997, 9, CONCAT('A Typhoon Came'), '2011-09-02', 'https://ebd.cda.pl/620x395/53927340d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35272, 1997, 10, CONCAT('Stomach Flu'), '2011-09-09', 'https://ebd.cda.pl/620x395/539274053');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35273, 1997, 11, CONCAT('The First Step'), '2011-09-16', 'https://ebd.cda.pl/620x395/53927374d');

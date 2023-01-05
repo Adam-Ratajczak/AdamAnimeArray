@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1093, CONCAT('Kunoichi Tsubaki no Mune no Uchi'), CONCAT('Tsubaki hails from an all-female clan of ninjas hidden deep in the forest. While a strict code guides the many kunoichi in training, the most important rule the young women must adhere to is: never interact with men, for they are far too dangerous to be trusted.<br>
+<br>As the leader of Team Dog, Tsubaki has many duties she must handle. However, despite being a skilled trainee, she begins to react strangely whenever the topic of men surfaces. Unaware of what mysterious feelings are taking over her heart, Tsubaki', CHAR(39), 's growing curiosity soon interferes with her ability to keep up with her work.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2022-04-10', '2022-07-03', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1724/121343.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (490, 1093, 1);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1187, 1093, 22);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1200, 1093, 28);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1201, 1093, 24);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18745, 1093, 1, CONCAT('Men Are Dangerous'), '2022-04-10', 'https://ebd.cda.pl/620x368/105568222b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18746, 1093, 2, CONCAT('Effort and Giftedness / Escape Plan with Nee-sama'), '2022-04-17', 'https://ebd.cda.pl/620x368/106147108c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18747, 1093, 3, CONCAT('Friendly Showdown / Tag (The Man Is It)'), '2022-04-24', 'https://ebd.cda.pl/620x368/107080159c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18748, 1093, 4, CONCAT('Men and Women / Mokuren', CHAR(39), 's Medical Jutsu'), '2022-05-01', 'https://ebd.cda.pl/620x368/10789648bf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18749, 1093, 5, CONCAT('A Fight over Some Fruit / Independence and Indulgence'), '2022-05-08', 'https://ebd.cda.pl/620x368/10855702f0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18750, 1093, 6, CONCAT('The Transfer Student / Shy Around Strangers'), '2022-05-15', 'https://ebd.cda.pl/620x368/111190664e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18751, 1093, 7, CONCAT('Rindou', CHAR(39), 's Resolve / Late-Night Summons'), '2022-05-22', 'https://ebd.cda.pl/620x368/11129161f6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18752, 1093, 8, CONCAT('The Strongest Team / Nee-sama'), '2022-05-29', 'https://ebd.cda.pl/620x368/11131111cb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18753, 1093, 9, CONCAT('Of Snakes and Men / What Defines Results'), '2022-06-05', 'https://ebd.cda.pl/620x368/11188522cb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18754, 1093, 10, CONCAT('A Team Leader', CHAR(39), 's Troubles / Favors and Debts'), '2022-06-12', 'https://ebd.cda.pl/620x368/1126161737');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18755, 1093, 11, CONCAT('Attractiveness Jutsu / I Want to Be Attractive'), '2022-06-19', 'https://ebd.cda.pl/620x368/11387108c3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18756, 1093, 12, CONCAT('Rivals / Picture of a Man'), '2022-06-26', 'https://ebd.cda.pl/620x368/11387084a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18757, 1093, 13, CONCAT('Showdown! Akane Class vs. the Man!?'), '2022-07-03', 'https://ebd.cda.pl/620x368/11455894e2');

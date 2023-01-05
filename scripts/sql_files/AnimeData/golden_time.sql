@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (637, CONCAT('Golden Time'), CONCAT('Due to a tragic accident, Banri Tada is struck with amnesia, dissolving the memories of his hometown and past. However, after befriending Mitsuo Yanagisawa, he decides to move on and begin a new life at law school in Tokyo. But just as he is beginning to adjust to his college life, the beautiful Kouko Kaga dramatically barges into Banri', CHAR(39), 's life, and their chance meeting marks the beginning of an unforgettable year. <br>
+<br>After having a glimpse of college life, Banri learns that he is in a new place and a new world—a place where he can be reborn, have new friends, fall in love, make mistakes, and grow. And as he begins to discover who he was, the path he has chosen leads him towards a blindingly bright life that he will never want to forget.<br>
+<br>[Written by MAL Rewrite]'), 1, '2013-10-04', '2014-03-28', 'Fall 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/52091.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (289, 637, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1576, 637, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1577, 637, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (709, 637, 155);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (679, 637, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (680, 637, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (681, 637, 25);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11567, 637, 1, CONCAT('Spring Time'), '2013-10-04', 'https://drive.google.com/file/d/1pvac76wXZyZxsHJbkryzkxwEny-L-yvK/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11568, 637, 2, CONCAT('Lonely Girl'), '2013-10-11', 'https://drive.google.com/file/d/1i35vKht17KMkLKT84PQMXH_kmwdtguWk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11569, 637, 3, CONCAT('Night Escape'), '2013-10-18', 'https://drive.google.com/file/d/1oH6A35LA0Yc_5VpA14SMtOp5PNk2a_wF/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11570, 637, 4, CONCAT('Blackout'), '2013-10-25', 'https://drive.google.com/file/d/1kt1NG1wnxjI8FiitxX6GHyFFC7YxYhri/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11571, 637, 5, CONCAT('Body and Soul'), '2013-11-01', 'https://drive.google.com/file/d/13PYxcROLxKJmwb4s22rwmN74g-Pr9LrU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11572, 637, 6, CONCAT('Yes No'), '2013-11-08', 'https://drive.google.com/file/d/1gu6--OHdt-IJOYT-zCMLp7pxbJSzVcGZ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11573, 637, 7, CONCAT('Masquerade'), '2013-11-15', 'https://drive.google.com/file/d/1fcVhigcxKRxO_YFKLaaPmIKq_EJQ3KSd/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11574, 637, 8, CONCAT('Reset'), '2013-11-22', 'https://drive.google.com/file/d/1cUNi2nQzCRkVRrYghydduqFcmUsQblHr/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11575, 637, 9, CONCAT('With You Again'), '2013-11-29', 'https://drive.google.com/file/d/1aZaw7780xp26px00Okl8pXb95WS_1k04/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11576, 637, 10, CONCAT('In the Mirror'), '2013-12-06', 'https://drive.google.com/file/d/15tAP6lGl0AEx3t9LNM0zBxzi5v-f_YdF/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11577, 637, 11, CONCAT('Trouble Party'), '2013-12-13', 'https://drive.google.com/file/d/1BUqsXz-RKqmATNoQiUxnrJnulUGijqGw/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11578, 637, 12, CONCAT('Don', CHAR(39), 't Look Back'), '2013-12-20', 'https://drive.google.com/file/d/0B5-MnnU6QEhhWTNaODljR3BUWTg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11579, 637, 13, CONCAT('Summer Has Come'), '2014-01-10', 'https://drive.google.com/file/d/1Ms2zmH1EehtdVg6G8wBOIwIvyjPQcQND/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11580, 637, 14, CONCAT('Ladies Talk'), '2014-01-17', 'https://drive.google.com/file/d/1_TVxyocroIJYwj5uqpY39nr_3kHBkoxY/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11581, 637, 15, CONCAT('Accident Beach'), '2014-01-24', 'https://drive.google.com/file/d/1g4H154-ytW001RB85iMwFuLVqrDJkms2/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11582, 637, 16, CONCAT('Wake-up Call'), '2014-01-31', 'https://drive.google.com/file/d/1Vke6awEfU8Ty1UdaqpCby-oGLZUuox-n/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11583, 637, 17, CONCAT('Return to Yesterday'), '2014-02-07', 'https://drive.google.com/file/d/1gp5q7FRcJOHxvi-S5gPSoFhdlHX8Iyzj/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11584, 637, 18, CONCAT('My Hometown'), '2014-02-14', 'https://drive.google.com/file/d/12Wm7NZaaYEorGxjiCb36sId2vfESdwk_/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11585, 637, 19, CONCAT('Night in Paris'), '2014-02-21', 'https://drive.google.com/file/d/1mQJMUFU4RxCi1fBBxBDaGuQxzxpjBJ_x/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11586, 637, 20, CONCAT('His Chasm'), '2014-02-28', 'https://drive.google.com/file/d/0B05kNslDWqfwTkhVV0t4SkpMTmM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11587, 637, 21, CONCAT('I', CHAR(39), 'll Be Back'), '2014-03-07', 'https://drive.google.com/file/d/1afoe9F3b2U3CEBHqwybvBy5opJR7BlIG/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11588, 637, 22, CONCAT('Paradise Lost'), '2014-03-14', 'https://drive.google.com/file/d/1BFr1CMV2Z8mPUbLcFm4ZLggCBPiXliK5/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11589, 637, 23, CONCAT('Last Smile'), '2014-03-21', 'https://drive.google.com/file/d/18bKewLf6Hk8IofQygEoTOEW6aFnodSah/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11590, 637, 24, CONCAT('Golden Time'), '2014-03-28', 'https://drive.google.com/file/d/138xFmEm6lHpcP3qb2iYm8gjvGXyj2gYT/preview');

@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (389, CONCAT('Darker than Black: Ryuusei no Gemini'), CONCAT('One night, as meteors streak across the star-studded sky, Shion Pavlichenko becomes a Contractor. Despite her brother', CHAR(39), 's transformation, Shion', CHAR(39), 's twin sister Suou continues to live a fairly ordinary life, attending middle school with her friends and getting caught up in the awkwardness of growing up. However, everything changes when her home is invaded by a masked man cloaked in black, destroying any sense of normality she once had. Revealed to possess latent Contractor abilities of her own, Suou is caught between family, friends, and her own sense of purpose as she ventures into the ruthless world of cutthroats and espionage that Contractors call home.<br>
+<br>Meanwhile in Tokyo, investigation surrounding Hell', CHAR(39), 's Gate', CHAR(39), 's sudden collapse is underway, and prophetic signs of doom point in the direction of a silver-haired doll.<br>
+<br>[Written by MAL Rewrite]'), 1, '2009-10-09', '2009-12-25', 'Fall 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/50373.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (909, 389, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (910, 389, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (911, 389, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (433, 389, 77);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6710, 389, 1, CONCAT('Black Cats Do Not Dream of Stars'), NULL, 'https://ebd.cda.pl/800x450/1983234b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6711, 389, 2, CONCAT('Fallen Meteor'), NULL, 'https://ebd.cda.pl/800x450/198323703');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6712, 389, 3, CONCAT('Vanishing in a Sea of Ice'), NULL, 'https://ebd.cda.pl/800x450/1983240f8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6713, 389, 4, CONCAT('The Ark Adrift on the Lake'), NULL, 'https://ebd.cda.pl/800x450/19832431b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6714, 389, 5, CONCAT('Gunsmoke Blows, Life Flows'), NULL, 'https://drive.google.com/file/d/1InelOXOa0VcXpJxi7PFOiPK5j72ntiK8/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6715, 389, 6, CONCAT('An Aroma Sweet, a Heart Bitter'), NULL, 'https://ebd.cda.pl/800x450/198324920');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6716, 389, 7, CONCAT('The Doll Sings in the Winter Wind'), NULL, 'https://drive.google.com/file/d/1fyG8Jt9CHU8HknhvCpClT5VpZd4a7BU5/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6717, 389, 8, CONCAT('Twinkling Sun on a Summer Day'), NULL, 'https://ebd.cda.pl/800x450/198325513');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6718, 389, 9, CONCAT('They Met One Day, Unexpectedly'), NULL, 'https://ebd.cda.pl/800x450/198325842');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6719, 389, 10, CONCAT('Your Smile on a False Street Corner'), NULL, 'https://ebd.cda.pl/800x450/1983261b6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6720, 389, 11, CONCAT('The Sea Floor Dries Up, and the Moon Grows Full'), NULL, 'https://ebd.cda.pl/800x450/1983264e7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6721, 389, 12, CONCAT('Ark of Stars'), NULL, 'https://ebd.cda.pl/800x450/198326780');

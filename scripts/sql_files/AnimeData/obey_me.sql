@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1395, CONCAT('Obey Me!'), CONCAT('Brothers Lucifer, Mammon, Leviathan, Satan, Asmodeus, Beelzebub, and Belphegor are among the most powerful demons in the Devildom, serving as officers on the student council at the Royal Academy of Diavolo (RAD). However, being avatars of the seven deadly sins, their behaviors often tend toward the extreme. Their everyday antics belie their high status and fearsome reputations among others of their kind. When viewed behind the scenes, the members of this family are more lovable—and laughable—than they first seem!<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2021-07-16', '2021-12-24', '', '5 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1416/113986.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (603, 1395, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3463, 1395, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3464, 1395, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3465, 1395, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3466, 1395, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1502, 1395, 77);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1526, 1395, 29);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1527, 1395, 19);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24369, 1395, 1, CONCAT('Time to Up Our Average'), '2021-07-16', 'https://ebd.cda.pl/620x368/79526548c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24370, 1395, 2, CONCAT('Don', CHAR(39), 't Look!'), '2021-07-30', 'https://ebd.cda.pl/620x368/80705128c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24371, 1395, 3, CONCAT('Carrots, Please!'), '2021-08-13', 'https://ebd.cda.pl/620x368/819528560');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24372, 1395, 4, CONCAT('Lucifer the Beach Babe'), '2021-08-27', 'https://ebd.cda.pl/620x368/830302511');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24373, 1395, 5, CONCAT('Princess Asmodeus Is in Another Castle'), '2021-09-10', 'https://ebd.cda.pl/620x368/8445348e8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24374, 1395, 6, CONCAT('Detective Satan'), '2021-09-24', 'https://ebd.cda.pl/620x368/8673372aa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24375, 1395, 7, CONCAT('Audio Commentary'), '2021-10-15', 'https://ebd.cda.pl/620x368/8885529fd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24376, 1395, 8, CONCAT('A Dog by Any Other Name'), '2021-10-29', 'https://ebd.cda.pl/620x368/90015248a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24377, 1395, 9, CONCAT('The First Great Sibling Psychological War'), '2021-11-12', 'https://ebd.cda.pl/620x368/914519418');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24378, 1395, 10, CONCAT('A Trip for Seven — Part 1'), '2021-11-26', 'https://ebd.cda.pl/620x368/932379604');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24379, 1395, 11, CONCAT('A Trip for Seven — Part 2'), '2021-12-10', 'https://ebd.cda.pl/620x368/9399102a2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (24380, 1395, 12, CONCAT('A Brotherless New Year', CHAR(39), 's Eve Party'), '2021-12-24', 'https://ebd.cda.pl/620x368/9529476ff');

@@ -1,0 +1,14 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1409, CONCAT('One Room Third Season'), CONCAT('Third season of One Room. '), 1, '2020-10-06', '2020-12-22', 'Fall 2020', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1553/109101.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1517, 1409, 122);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25558, 1409, 1, CONCAT('Kotokawa Akira Is Clingy'), '2020-10-06', 'https://ebd.cda.pl/620x368/59091924d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25559, 1409, 2, CONCAT('Kotokawa Akira Is Worried About It'), NULL, 'https://ebd.cda.pl/620x368/59472293d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25560, 1409, 3, CONCAT('Kotokawa Akira Can', CHAR(39), 't Say It'), NULL, 'https://ebd.cda.pl/620x368/598811940');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25561, 1409, 4, CONCAT('Kotokawa Akira Can', CHAR(39), 't Say It'), NULL, 'https://ebd.cda.pl/620x368/602306014');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25562, 1409, 5, CONCAT('Momohara Natsuki Is Convincing'), NULL, 'https://ebd.cda.pl/620x368/6058094ef');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25563, 1409, 6, CONCAT('Nanahashi Minori Will Keep Walking'), NULL, 'https://ebd.cda.pl/620x368/609842310');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25564, 1409, 7, CONCAT('Orisaki Saya Apologizes'), NULL, 'https://ebd.cda.pl/620x368/613834477');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25565, 1409, 8, CONCAT('Orisaki Saya Is Cheering You On'), NULL, 'https://ebd.cda.pl/620x368/618000298');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25566, 1409, 9, CONCAT('Orisaki Saya Takes a Hint'), NULL, 'https://ebd.cda.pl/620x368/6227981d5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25567, 1409, 10, CONCAT('Orisaki Saya Comes Over'), NULL, 'https://ebd.cda.pl/620x368/626851727');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25568, 1409, 11, CONCAT('Hanasaka Yui Is Startled'), NULL, 'https://ebd.cda.pl/620x368/631621741');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25569, 1409, 12, CONCAT('Hanasaka Yui Is Next to Me'), NULL, 'https://ebd.cda.pl/620x368/63467961b');

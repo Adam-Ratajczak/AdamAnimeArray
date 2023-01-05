@@ -1,0 +1,11 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (95, CONCAT('Ano Hi no Kanojo-tachi'), CONCAT('Web shorts focusing on each of the 22/7 idols in normal everyday life.'), 1, '2018-03-24', '2018-11-12', '', '1 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1263/93685.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (44, 95, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (109, 95, 8);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1402, 95, 1, CONCAT('Miu Takigawa'), '2018-03-24', 'https://www.mp4upload.com/embed-qljpjnt4c38q.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1403, 95, 2, CONCAT('Miyako Kouno'), '2018-03-24', 'https://www.mp4upload.com/embed-nt4ym7dm17jx.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1404, 95, 3, CONCAT('Ayaka Tachikawa'), '2018-05-25', 'https://www.mp4upload.com/embed-x5pnbxudssqm.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1405, 95, 4, CONCAT('Reika Satou'), '2018-07-07', 'https://www.mp4upload.com/embed-8j4e2khirbax.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1406, 95, 5, CONCAT('Nicole Saitou'), '2018-09-16', 'https://www.mp4upload.com/embed-mgqzy4zrrav4.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1407, 95, 6, CONCAT('Akane Maruyama'), '2018-10-07', 'https://www.mp4upload.com/embed-36czmxgksbyl.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1408, 95, 7, CONCAT('Jun Toda'), '2018-10-07', 'https://www.mp4upload.com/embed-19wb4ohqlb8y.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1409, 95, 8, CONCAT('Sakura Fujima'), '2018-11-12', 'https://www.mp4upload.com/embed-5628p2pa52h4.html');

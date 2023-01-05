@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (857, CONCAT('Initial D First Stage'), CONCAT('Unlike his friends, Takumi Fujiwara is not particularly interested in cars, with little to no knowledge about the world of car enthusiasts and street racers. The son of a tofu shop owner, he is tasked to deliver tofu every morning without fail, driving along the mountain of Akina. Thus, conversations regarding cars or driving in general would only remind Takumi of the tiring daily routine forced upon him.<br>
+<br>One night, the Akagi Red Suns, an infamous team of street racers, visit the town of Akina to challenge the local mountain pass. Led by their two aces, Ryousuke and Keisuke Takahashi, the Red Suns plan to conquer every racing course in Kanto, establishing themselves as the fastest crew in the region. However, much to their disbelief, one of their aces is overtaken by an old Toyota AE86 during a drive back home from Akina. After the incident, the Takahashi brothers are cautious of a mysterious driver geared with remarkable technique and experience in the local roads—the AE86 of Mount Akina.<br>
+<br>[Written by MAL Rewrite]'), 1, '1998-04-19', '1998-12-06', 'Spring 1998', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1384/127972.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (381, 857, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2056, 857, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2057, 857, 6);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (938, 857, 182);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (939, 857, 132);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15152, 857, 1, CONCAT('The Ultimate Tofu Store Drift'), '1998-04-19', 'https://ebd.cda.pl/620x395/1131568010');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15153, 857, 2, CONCAT('Revenge! The Rumbling Turbo'), '1998-04-26', 'https://ebd.cda.pl/620x395/1131655066');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15154, 857, 3, CONCAT('Downhill Specialist Arrives'), '1998-05-03', 'https://ebd.cda.pl/620x395/11316553bf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15155, 857, 4, CONCAT('The Battle Begins'), '1998-05-10', 'https://ebd.cda.pl/620x395/11815964f7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15156, 857, 5, CONCAT('Dogfight!'), '1998-05-17', 'https://ebd.cda.pl/620x395/1181595519');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15157, 857, 6, CONCAT('A New Challenger'), '1998-05-24', 'https://ebd.cda.pl/800x400/373270391');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15158, 857, 7, CONCAT('Pride of a Racer'), '1998-06-14', 'https://ebd.cda.pl/800x400/37327062e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15159, 857, 8, CONCAT('Time', CHAR(39), 's Almost Up'), '1998-06-21', 'https://ebd.cda.pl/800x400/373270971');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15160, 857, 9, CONCAT('Battle to the Limit'), '1998-06-28', 'https://ebd.cda.pl/800x400/3732712ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15161, 857, 10, CONCAT('The Five Consecutive Hairpins'), '1998-07-05', 'https://ebd.cda.pl/800x400/373271845');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15162, 857, 11, CONCAT('Shingo Arrives'), '1998-07-12', 'https://ebd.cda.pl/800x400/373273040');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15163, 857, 12, CONCAT('The FR Killer'), '1998-08-02', 'https://ebd.cda.pl/800x400/37327574a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15164, 857, 13, CONCAT('First Date'), '1998-08-09', 'https://ebd.cda.pl/800x400/37327607c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15165, 857, 14, CONCAT('Evolving Drift'), '1998-08-16', 'https://ebd.cda.pl/800x400/373276601');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15166, 857, 15, CONCAT('Takumi', CHAR(39), 's Fury'), '1998-08-23', 'https://ebd.cda.pl/800x400/37327724b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15167, 857, 16, CONCAT('The Angel of Usui'), '1998-08-30', 'https://ebd.cda.pl/800x400/37327819b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15168, 857, 17, CONCAT('Sudden-Death Death Match'), '1998-09-13', 'https://ebd.cda.pl/800x400/37327870d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15169, 857, 18, CONCAT('Hot Winds and Furious Driving'), '1998-09-13', 'https://ebd.cda.pl/800x400/3732811c4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15170, 857, 19, CONCAT('Super Drift!'), '1998-09-27', 'https://ebd.cda.pl/800x400/37328261a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15171, 857, 20, CONCAT('The End of Summer'), '1998-10-02', 'https://ebd.cda.pl/800x400/37328416b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15172, 857, 21, CONCAT('Challenge From a Superstar'), '1998-10-18', 'https://ebd.cda.pl/800x400/373284432');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15173, 857, 22, CONCAT('Fierce Uphill Battle!'), '1998-10-25', 'https://ebd.cda.pl/800x400/373284791');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15174, 857, 23, CONCAT('The Rainy Downhill'), '1998-11-08', 'https://ebd.cda.pl/800x400/3732859cd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15175, 857, 24, CONCAT('Akagi', CHAR(39), 's White Comet'), '1998-11-15', 'https://ebd.cda.pl/800x400/37328629b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15176, 857, 25, CONCAT('Last Great Battle'), '1998-11-29', 'https://ebd.cda.pl/800x450/373286866');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15177, 857, 26, CONCAT('The New Downhill Legend'), '1998-12-06', 'https://ebd.cda.pl/800x450/60037583b');

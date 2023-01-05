@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2068, CONCAT('Yami to Boushi to Hon no Tabibito'), CONCAT('Hatsuki is a highschool student living with her sister, Hatsumi, who she has a huge crush on. On Hatsumi', CHAR(39), 's 16th birthday, she is suddenly surrounded by a green light and disappears in front of Hatsuki. She manages to follow Hatsumi with the help of a being resembling a fat baby chick (literally), 1, which is full of different worlds stored in books. Hatsumi wasn', CHAR(39), 't there, though, so the search for Hatsuki', CHAR(39), 's great love begins and involves traveling from book to book.<br><br>(Source: AniDB) '), 2, '2003-10-02', '2003-12-25', 'Fall 2003', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/23094.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5140, 2068, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5141, 2068, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5142, 2068, 5);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2240, 2068, 98);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36232, 2068, 1, CONCAT('Hazuki'), '2003-10-02', 'https://mp4upload.com/embed-rt9abuu9vreh.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36233, 2068, 2, CONCAT('Youko'), '2003-10-09', 'https://mp4upload.com/embed-zxp9kjd670oh.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36234, 2068, 3, CONCAT('Jill'), '2003-10-16', 'https://mp4upload.com/embed-m9fc9kjx2jom.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36235, 2068, 4, CONCAT('Mariel'), '2003-10-23', 'https://mp4upload.com/embed-lsphi3a4izol.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36236, 2068, 5, CONCAT('Quill'), '2003-10-30', 'https://mp4upload.com/embed-dyimvsjevqvo.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36237, 2068, 6, CONCAT('Milka'), '2003-11-07', 'https://mp4upload.com/embed-rj7359imojw7.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36238, 2068, 7, CONCAT('Hatsumi'), '2003-11-14', 'https://mp4upload.com/embed-t6vumef669zh.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36239, 2068, 8, CONCAT('Fujihime'), '2003-11-21', 'https://mp4upload.com/embed-h61c16m7zc2z.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36240, 2068, 9, CONCAT('Meirin'), '2003-11-28', 'https://mp4upload.com/embed-solyp9hjtml2.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36241, 2068, 10, CONCAT('Layla'), '2003-12-05', 'https://ebd.cda.pl/x/1777648ef');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36242, 2068, 11, CONCAT('Tamamo no Mae'), '2003-12-14', 'https://mp4upload.com/embed-xq1d2p9pej57.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36243, 2068, 12, CONCAT('Gargantua'), '2003-12-18', 'https://mp4upload.com/embed-p8d2wazn6syy.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36244, 2068, 13, CONCAT('Lilith'), '2003-12-25', 'https://mp4upload.com/embed-sysm6kzt3c9b.html');

@@ -1,0 +1,6 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (924, CONCAT('Juusen Battle Monsuno'), CONCAT('Chase Suno and his friends, Jinja and Bren, are on a search for Chase', CHAR(39), 's father, Jeredy Suno. However, they soon become involved in something else upon reaching their father', CHAR(39), 's lab and becoming involved with an organism known as Monsuno. Chase, choosing to side with his father', CHAR(39), 's work, denies S.T.O.R.M. access to the Monsuno and escapes. They are now on the run from the military organization, S.T.O.R.M., while still looking for Chase', CHAR(39), 's father. However, a mysterious organization also has his eyes set on Chase and the group', CHAR(39), 's Monsuno. <br>
+<br>(Source: Animeultima) '), 1, '2012-10-03', '2013-09-25', 'Fall 2012', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/40891.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2239, 924, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2240, 924, 2);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1006, 924, 187);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16288, 924, 1, CONCAT('Clash'), '2012-02-23', 'https://www.mp4upload.com/embed-3bpm32isxj9c.html');

@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1880, CONCAT('Tensai Ouji no Akaji Kokka Saisei Jutsu'), CONCAT('The king of Natra has fallen ill, leaving the only hope for his kingdom to his son, Prince Wein Salema Arbalest. Known to be capable and wise, he is the perfect candidate to become the prince regent. However, if the prince has anything to say about the matter, he would rather sell off the Kingdom of Natra to the highest bidder!<br>
+<br>Since he wields the authority of the throne, no one can stop Wein from auctioning off the country and using the profits to retire in comfort. All he needs to do is raise the value of the small kingdom to maximize his gains. But whether Wein', CHAR(39), 's grand plan will succeed remains to be seen, as his wit often surpasses even his own expectations—much to the benefit of the oblivious citizens of Natra.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2022-01-11', '2022-03-29', 'Winter 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1263/119511.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4657, 1880, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4658, 1880, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2035, 1880, 200);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33542, 1880, 1, CONCAT('Hey, How About Selling the Country?'), '2022-01-11', 'https://ebd.cda.pl/620x368/1034419775');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33543, 1880, 2, CONCAT('Wein Salema Arbalest on the Battlefield'), '2022-01-18', 'https://ebd.cda.pl/620x368/1034662129');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33544, 1880, 3, CONCAT('Hey, How About a Political Marriage?'), '2022-01-25', 'https://ebd.cda.pl/620x368/1021592957');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33545, 1880, 4, CONCAT('Two Intellect'), '2022-02-01', 'https://ebd.cda.pl/620x368/1022198091');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33546, 1880, 5, CONCAT('Hey, How About Covering the Crime'), '2022-02-08', 'https://ebd.cda.pl/620x368/100423988e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33547, 1880, 6, CONCAT('Hey, How About an International Conference?'), '2022-02-15', 'https://ebd.cda.pl/620x368/10128191de');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33548, 1880, 7, CONCAT('Yesterday', CHAR(39), 's Enemy is Today', CHAR(39), 's...'), '2022-02-22', 'https://ebd.cda.pl/620x368/102259915d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33549, 1880, 8, CONCAT('Hey, How About Letting Me Try?'), '2022-03-01', 'https://ebd.cda.pl/620x368/1024673397');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33550, 1880, 9, CONCAT('The Little Princess Who Could'), '2022-03-08', 'https://ebd.cda.pl/620x368/10331861be');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33551, 1880, 10, CONCAT('Hey, How About Getting on the Bubble'), '2022-03-15', 'https://ebd.cda.pl/620x368/10376753ef');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33552, 1880, 11, CONCAT('By Hook or Crook'), '2022-03-22', 'https://ebd.cda.pl/620x368/10449185df');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33553, 1880, 12, CONCAT('A Really Motivated Seller'), '2022-03-29', 'https://ebd.cda.pl/620x368/10464659c2');

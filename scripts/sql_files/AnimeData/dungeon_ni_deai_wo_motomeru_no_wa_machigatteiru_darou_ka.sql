@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (467, CONCAT('Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka'), CONCAT('Life in the bustling city of Orario is never dull, especially for Bell Cranel, a naïve young man who hopes to become the greatest adventurer in the land. After a chance encounter with the lonely goddess, Hestia, his dreams become a little closer to reality. With her support, Bell embarks on a fantastic quest as he ventures deep within the city', CHAR(39), 's monster-filled catacombs, known only as the "Dungeon." Death lurks around every corner in the cavernous depths of this terrifying labyrinth, and a mysterious power moves amidst the shadows.<br>
+<br>Even on the surface, survival is a hard-earned privilege. Indeed, nothing is ever certain in a world where gods and humans live and work together, especially when they often struggle to get along. One thing is for sure, though: a myriad of blunders, triumphs and friendships awaits the dauntlessly optimistic protagonist of this herculean tale.<br>
+<br>[Written by MAL Rewrite]'), 1, '2015-04-04', '2015-06-27', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/70187.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1140, 467, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1141, 467, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1142, 467, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (520, 467, 31);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8475, 467, 1, CONCAT('Bell Cranel: Adventurer'), '2015-04-04', 'https://ebd.cda.pl/620x395/484588718');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8476, 467, 2, CONCAT('Monsterphilia: Monster Festival'), '2015-04-11', 'https://ebd.cda.pl/620x368/2687655e8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8477, 467, 3, CONCAT('Hestia Knife: The Blade of a God'), '2015-04-18', 'https://ebd.cda.pl/620x395/484589668');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8478, 467, 4, CONCAT('Supporter: The Weak'), '2015-04-25', 'https://ebd.cda.pl/620x368/268766416');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8479, 467, 5, CONCAT('Grimoire: Magic Book'), '2015-05-02', 'https://ebd.cda.pl/620x368/2687667db');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8480, 467, 6, CONCAT('Liliruca Arde: Reason'), '2015-05-09', 'https://ebd.cda.pl/620x368/2687676ad');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8481, 467, 7, CONCAT('Aiz Wallenstein: Sword Princess'), '2015-05-16', 'https://ebd.cda.pl/620x368/268767985');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8482, 467, 8, CONCAT('Argonaut: Wanting To Be A Hero'), '2015-05-23', 'https://ebd.cda.pl/620x368/268769427');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8483, 467, 9, CONCAT('Welf Crozzo: Blacksmith'), '2015-05-30', 'https://ebd.cda.pl/620x395/4845914ac');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8484, 467, 10, CONCAT('Pass Parade: Procession of Monsters'), '2015-06-06', 'https://ebd.cda.pl/620x368/268770021');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8485, 467, 11, CONCAT('Under Resort: Labyrinth Utopia'), '2015-06-13', 'https://ebd.cda.pl/620x368/268770344');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8486, 467, 12, CONCAT('Show: Evil Intentions'), '2015-06-20', 'https://ebd.cda.pl/620x368/268770956');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8487, 467, 13, CONCAT('Familia Myth: The Story of a Familia'), '2015-06-27', 'https://drive.google.com/file/d/1yfFeN04bzQ53SYdkel7kC5scRCYEYggK/preview');

@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (236, CONCAT('Bloodivores'), CONCAT('60 years ago, a strange case of insomnia struck the population, forcing them to stay awake for more than a full week. The victims, completely sleep deprived, all went mad. To cure this illness, a new medicine was produced, but the side effects turned the patients into vampires. Humanity went to war against this new species and triumphed, but some of the vampires managed to survive. Born from a Human and a Vampire, the main character Mi Liu, "The Child of Hope," is to represent the new hope that will connect the two species. Ringleader of a bank robbery, Mi Liu is arrested and transferred to a special prison of the National Defense Agency that monitors Vampires. Trying to break free with Anji, Mi Liu is attacked by strange monsters and he finds out that the prison location corresponds to the birthplace of Vampires, the old capital "Blue Town." Why are Vampires trapped in Blue Town? What are those strange monsters attacking them? Our heroes must fight to solve those mysteries.<br>
+<br>(Source: Emon via ANN)'), 1, '2016-10-01', '2016-12-17', 'Fall 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/82233.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (547, 236, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (548, 236, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (265, 236, 82);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (266, 236, 89);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3801, 236, 1, CONCAT('Bloodivores'), '2016-10-01', 'https://ebd.cda.pl/800x450/590970598');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3802, 236, 2, CONCAT('Awakening'), '2016-10-08', 'https://ebd.cda.pl/800x450/590973524');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3803, 236, 3, CONCAT('Hemomancy'), '2016-10-15', 'https://ebd.cda.pl/800x450/59097475c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3804, 236, 4, CONCAT('Sacrifice'), '2016-10-22', 'https://ebd.cda.pl/800x450/5909699c0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3805, 236, 5, CONCAT('Sapphire'), '2016-10-29', 'https://ebd.cda.pl/800x450/5909738ed');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3806, 236, 6, CONCAT('Choices'), '2016-11-05', 'https://ebd.cda.pl/800x450/5909753f7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3807, 236, 7, CONCAT('Reunion'), '2016-11-12', 'https://ebd.cda.pl/800x450/59097260a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3808, 236, 8, CONCAT('Countdown'), '2016-11-19', 'https://ebd.cda.pl/800x450/590972348');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3809, 236, 9, CONCAT('Meeting'), '2016-11-26', 'https://ebd.cda.pl/800x450/5909729c1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3810, 236, 10, CONCAT('Plan'), '2016-12-03', 'https://ebd.cda.pl/800x450/5909720a7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3811, 236, 11, CONCAT('Boom'), '2016-12-10', 'https://ebd.cda.pl/800x450/59097329c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3812, 236, 12, CONCAT('Counterattack'), '2016-12-17', 'https://ebd.cda.pl/800x450/5909717fb');

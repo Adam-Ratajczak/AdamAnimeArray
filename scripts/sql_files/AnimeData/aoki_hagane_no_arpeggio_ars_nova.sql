@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (110, CONCAT('Aoki Hagane no Arpeggio: Ars Nova'), CONCAT('In the year 2039, the drastic effects of global warming have caused sea levels to rise, resulting in major loss of land. To ensure humanity learns its lesson, a fleet of powerful warships equipped with advanced weaponry emerges, causing overwhelming defeat for naval forces throughout the world. Calling themselves the Fleet of Fog, each ship has a "Mental Model," a humanoid avatar which represents the ship', CHAR(39), 's heart, its "Union Core." Each model has a different personality but all follow an unknown authority known as the Admiralty Code, who have implemented a blockade to prevent humans from traveling across the sea.<br>
+<br>Seventeen years after the blockade, Gunzou Chihaya, a National Marine Academy alumnus, stumbles upon I-401 and its Mental Model, Iona, who sides with mankind for unknown reasons. Utilizing this newfound hope of achieving peace for humanity, Gunzou and his friends form a group of privateers, known as the Blue Steel, as they set out on a dangerous journey.<br>
+<br>[Written by MAL Rewrite]'), 1, '2013-10-08', '2013-12-24', 'Fall 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/56143.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (54, 110, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (252, 110, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (253, 110, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (124, 110, 60);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1601, 110, 1, CONCAT('Those with Shipping Routes'), '2013-10-08', 'https://ebd.cda.pl/620x395/78728581d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1602, 110, 2, CONCAT('Into the Storm'), '2013-10-15', 'https://ebd.cda.pl/620x395/78728701b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1603, 110, 3, CONCAT('The Fortress Port of Yokosuka'), '2013-10-22', 'https://ebd.cda.pl/620x395/787285442');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1604, 110, 4, CONCAT('Assault on Yokosuka'), '2013-10-29', 'https://ebd.cda.pl/620x395/7872862a7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1605, 110, 5, CONCAT('Not Human'), '2013-11-05', 'https://ebd.cda.pl/620x395/7872902a6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1606, 110, 6, CONCAT('Friends'), '2013-11-12', 'https://ebd.cda.pl/620x395/7872866c7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1607, 110, 7, CONCAT('Iwo Jima'), '2013-11-19', 'https://ebd.cda.pl/620x395/7872878e0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1608, 110, 8, CONCAT('House of Dolls'), '2013-11-26', 'https://ebd.cda.pl/620x395/787290676');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1609, 110, 9, CONCAT('Desperate Escape'), '2013-12-03', 'https://ebd.cda.pl/620x395/787289092');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1610, 110, 10, CONCAT('Devotion of Self'), '2013-12-10', 'https://ebd.cda.pl/620x395/7872882f6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1611, 110, 11, CONCAT('Sisters'), '2013-12-17', 'https://ebd.cda.pl/620x395/787289470');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1612, 110, 12, CONCAT('The Power to Open a Path'), '2013-12-24', 'https://ebd.cda.pl/620x395/78728862b');

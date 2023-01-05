@@ -1,0 +1,31 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1502, CONCAT('Psycho-Pass'), CONCAT('Justice, and the enforcement of it, has changed. In the 22nd century, Japan enforces the Sibyl System, an objective means of determining the threat level of each citizen by examining their mental state for signs of criminal intent, known as their Psycho-Pass. Inspectors uphold the law by subjugating, often with lethal force, anyone harboring the slightest ill-will alongside them are Enforcers, jaded Inspectors that have become latent criminals, granted relative freedom in exchange for carrying out the Inspectors', CHAR(39), ' dirty work.<br>
+<br>Into this world steps Akane Tsunemori, a young woman with an honest desire to uphold justice. However, as she works alongside veteran Enforcer Shinya Kougami, she soon learns that the Sibyl System', CHAR(39), 's judgments are not as perfect as her fellow Inspectors assume. With everything she has known turned on its head, Akane wrestles with the question of what justice truly is, and whether it can be upheld through the use of a system that may already be corrupt.<br>
+<br>[Written by MAL Rewrite]'), 2, '2012-10-12', '2013-03-22', 'Fall 2012', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/43399.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3746, 1502, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3747, 1502, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1619, 1502, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1641, 1502, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1642, 1502, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1643, 1502, 25);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27740, 1502, 1, CONCAT('Crime Coefficient'), '2012-10-12', 'https://ebd.cda.pl/620x368/1985823d2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27741, 1502, 2, CONCAT('Those Capable'), '2012-10-19', 'https://ebd.cda.pl/620x368/1985826bb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27742, 1502, 3, CONCAT('Rearing Conventions'), '2012-10-26', 'https://ebd.cda.pl/620x368/198582932');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27743, 1502, 4, CONCAT('Nobody Knows Your Mask'), '2012-11-02', 'https://ebd.cda.pl/620x368/1985832d1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27744, 1502, 5, CONCAT('Nobody Knows Your Face'), '2012-11-09', 'https://ebd.cda.pl/620x368/1985835ae');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27745, 1502, 6, CONCAT('Return of the Psychotic Prince'), '2012-11-16', 'https://ebd.cda.pl/620x368/1985838e0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27746, 1502, 7, CONCAT('Symbolism of Bletilla Striata'), '2012-11-23', 'https://ebd.cda.pl/620x368/198584174');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27747, 1502, 8, CONCAT('And Then, Silence'), '2012-11-30', 'https://ebd.cda.pl/620x368/1985844e6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27748, 1502, 9, CONCAT('Fruit of Paradise'), '2012-12-07', 'https://ebd.cda.pl/620x368/19858471f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27749, 1502, 10, CONCAT('Methuselah', CHAR(39), 's Game'), '2012-12-14', 'https://ebd.cda.pl/620x368/1985850ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27750, 1502, 11, CONCAT('Saint', CHAR(39), 's Supper'), '2012-12-21', 'https://ebd.cda.pl/620x368/1985853e0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27751, 1502, 12, CONCAT('Devil', CHAR(39), 's Crossroad'), '2013-01-10', 'https://ebd.cda.pl/620x368/19858560b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27752, 1502, 13, CONCAT('Invitation from the Abyss'), '2013-01-17', 'https://ebd.cda.pl/620x368/19858592d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27753, 1502, 14, CONCAT('Sweet Poison'), '2013-01-24', 'https://ebd.cda.pl/620x368/198586241');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27754, 1502, 15, CONCAT('The Town Where Sulfur Falls'), '2013-01-31', 'https://ebd.cda.pl/620x368/1985868ff');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27755, 1502, 16, CONCAT('The Gate to Judgment'), '2013-02-07', 'https://ebd.cda.pl/620x368/198587128');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27756, 1502, 17, CONCAT('Iron Heart'), '2013-02-14', 'https://ebd.cda.pl/620x368/19858778c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27757, 1502, 18, CONCAT('A Promise Written on Water'), '2013-02-21', 'https://ebd.cda.pl/620x368/198588090');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27758, 1502, 19, CONCAT('Transparent Shadow'), '2013-02-28', 'https://ebd.cda.pl/620x368/198588340');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27759, 1502, 20, CONCAT('Where Justice Lies'), '2013-03-07', 'https://ebd.cda.pl/620x368/1985886b5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27760, 1502, 21, CONCAT('Blood-Stained Reward'), '2013-03-14', 'https://ebd.cda.pl/620x368/198588981');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27761, 1502, 22, CONCAT('Perfect World'), '2013-03-22', 'https://ebd.cda.pl/620x368/19858955a');

@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (852, CONCAT('Infinite Dendrogram'), CONCAT('In the year 2043, <Infinite Dendrogram>, the world', CHAR(39), 's first successful full-dive VRMMO was released. In addition to its ability to perfectly simulate the five senses, along with its many other amazing features, the game promised to offer players a world full of infinite possibilities. Nearly two years later, soon-to-be college freshman, Reiji Mukudori, is finally able to buy a copy of the game and start playing. With some help from his experienced older brother, Shuu, and his partner Embryo, Reiji embarks on an adventure into the world of <Infinite Dendrogram>. Just what will he discover and encounter in this game world known for its incredible realism and infinite possibilities?<br>
+<br>(Source: J-Novel Club)'), 1, '2020-01-09', '2020-04-16', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1854/114772.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2044, 852, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2045, 852, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (933, 852, 53);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15108, 852, 1, CONCAT('The Beginning of Possibility'), '2020-01-09', 'https://ebd.cda.pl/620x368/439065609');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15109, 852, 2, CONCAT('Tomb Labyrinth'), '2020-01-16', 'https://ebd.cda.pl/620x368/44178188b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15110, 852, 3, CONCAT('Superior'), '2020-01-23', 'https://ebd.cda.pl/620x368/44556141c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15111, 852, 4, CONCAT('Like a Flag Flying the Reversal'), '2020-01-30', 'https://ebd.cda.pl/620x368/4492319ac');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15112, 852, 5, CONCAT('La Porte de l', CHAR(39), 'Enfer'), '2020-02-06', 'https://ebd.cda.pl/620x368/453025199');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15113, 852, 6, CONCAT('Beyond the Radix Point'), '2020-02-13', 'https://ebd.cda.pl/620x368/4582775b4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15114, 852, 7, CONCAT('Showdown City'), '2020-02-27', 'https://ebd.cda.pl/620x368/4693070d1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15115, 852, 8, CONCAT('Clash of the Superiors'), '2020-03-05', 'https://ebd.cda.pl/620x368/475923571');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15116, 852, 9, CONCAT('The Beginning of Madness'), '2020-03-12', 'https://ebd.cda.pl/620x368/4804928b2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15117, 852, 10, CONCAT('The Movement on the Board'), '2020-03-19', 'https://ebd.cda.pl/620x368/4850981dd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15118, 852, 11, CONCAT('The Right Arm of the Victor'), '2020-03-26', 'https://ebd.cda.pl/620x368/49006061e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15119, 852, 12, CONCAT('King of Destruction'), '2020-04-02', 'https://ebd.cda.pl/620x368/493666370');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15120, 852, 13, CONCAT('Those Who Bind the Possibilities'), '2020-04-16', 'https://ebd.cda.pl/620x368/502601092');

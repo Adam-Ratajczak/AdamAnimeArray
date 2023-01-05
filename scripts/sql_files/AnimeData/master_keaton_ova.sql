@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1232, CONCAT('Master Keaton OVA'), CONCAT('Taichi Keaton is a man of many talents: father, historian, frequent traveler, negotiator, archaeologist, former survival instructor, and all while working as an insurance investigator for Lloyd', CHAR(39), 's of London. While his methods may seem a bit unorthodox, he gets the job done when needed, but not without a little something to learn or teach in the process. Through all of his adventures, some people call him a quack. Those who know him well call him a master of life...  <br>
+<br>(Source: ANN)'), 1, '1999-12-22', '2000-06-21', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/14522.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3011, 1232, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3012, 1232, 8);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3013, 1232, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1331, 1232, 20);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1332, 1232, 7);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21117, 1232, 1, CONCAT('Kalihman of the Desert'), '1999-06-21', 'https://ebd.cda.pl/800x450/7326595cd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21118, 1232, 2, CONCAT('Family'), '1999-07-23', 'https://ebd.cda.pl/800x450/73628359e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21119, 1232, 3, CONCAT('The Red Wind'), '1999-08-21', 'https://ebd.cda.pl/800x450/743995330');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21120, 1232, 4, CONCAT('A Message from Alexeyev'), '1999-09-22', 'https://ebd.cda.pl/800x450/7449157a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21121, 1232, 5, CONCAT('The Forbidden Fruit'), '1999-10-21', 'https://ebd.cda.pl/800x450/75153160e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21122, 1232, 6, CONCAT('The Highlands in Your Eyes'), '1999-11-21', 'https://ebd.cda.pl/800x450/753670064');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21123, 1232, 7, CONCAT('The Scent Is the Key'), '1999-12-22', 'https://ebd.cda.pl/800x450/7611045db');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21124, 1232, 8, CONCAT('The Back Street'), '2000-01-21', 'https://ebd.cda.pl/800x450/7639552b7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21125, 1232, 9, CONCAT('Devil Like an Angel'), '2000-02-21', 'https://ebd.cda.pl/800x450/7776198ad');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21126, 1232, 10, CONCAT('The Agate Color of Time'), '2000-03-23', 'https://ebd.cda.pl/800x450/781399475');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21127, 1232, 11, CONCAT('Love in May'), '2000-04-21', 'https://ebd.cda.pl/800x450/784777626');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21128, 1232, 12, CONCAT('Blue Friday'), '2000-05-24', 'https://ebd.cda.pl/800x450/788595148');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21129, 1232, 13, CONCAT('Interview Day'), '2000-05-24', 'https://ebd.cda.pl/800x450/7989704b3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21130, 1232, 14, CONCAT('Hunting Season: Part One'), '2000-06-21', 'https://ebd.cda.pl/800x450/8113652cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21131, 1232, 15, CONCAT('Hunting Season: Part Two'), '2000-06-21', 'https://ebd.cda.pl/800x450/812071404');

@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (485, CONCAT('Emiya-san Chi no Kyou no Gohan'), CONCAT('With the threat of the Holy Grail War no longer looming over Fuyuki City, its inhabitants can finally enjoy a time of peace. Now that all of the Masters and Servants have adjusted to their new mundane lives, Shirou has taken it upon himself to cook for his household and show Saber the wonders of modern cuisine. Every day, he ventures into the marketplace to see what kind of different meals he can cook up with unique ingredients and a limited budget. However, his legendary skills often attract uninvited guests from all over the city, so there is never a dull moment at dinner with the Emiya family.<br>
+<br>As his guests entertain themselves in the living room, Shirou walks through the step-by-step process of creating some of his favorite meals. With delicacies such as his savory New Year soba with shrimp tempura, steamy foil-baked salmon, and cheesy bamboo shoot gratin, everything is up for grabs on his menu. Itadakimasu!<br>
+<br>[Written by MAL Rewrite]'), 4, '2018-01-25', '2019-01-01', '', '13 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/89981.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1198, 485, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1199, 485, 15);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1200, 485, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (539, 485, 4);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8720, 485, 1, CONCAT('Toshikoshi Soba'), '2018-01-25', 'https://ebd.cda.pl/620x395/5144268dc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8721, 485, 2, CONCAT('Salmon, Mushroom and Butter Baked in Foil'), '2018-02-01', 'https://ebd.cda.pl/620x395/51442740c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8722, 485, 3, CONCAT('Spring Chirashizushi'), '2018-03-01', 'https://ebd.cda.pl/620x395/514427752');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8723, 485, 4, CONCAT('Spring Greens and Bacon Sandwich'), NULL, 'https://ebd.cda.pl/620x395/51442805e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8724, 485, 5, CONCAT('Bamboo Shoot Gratin'), '2018-05-01', 'https://ebd.cda.pl/620x395/514428607');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8725, 485, 6, CONCAT('First Hamburg Steak'), NULL, 'https://ebd.cda.pl/620x395/514429220');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8726, 485, 7, CONCAT('Refreshing and Easy to Eat Chilled Ochazuke'), '2018-07-01', 'https://ebd.cda.pl/620x395/51442959c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8727, 485, 8, CONCAT('Toosaka’s Gomoku Fried Rice'), '2018-08-01', 'https://ebd.cda.pl/620x395/514429800');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8728, 485, 9, CONCAT('Taste of Autumn - Caster’s Training in Japanese Dish Cooking -'), NULL, 'https://ebd.cda.pl/800x450/514430105');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8729, 485, 10, CONCAT('Fried Chicken: Yummy Even When It', CHAR(39), 's Cold'), NULL, 'https://ebd.cda.pl/800x450/51443040f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8730, 485, 11, CONCAT('Special Fluffy Gooey Omelet Rice'), NULL, 'https://ebd.cda.pl/800x450/514431024');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8731, 485, 12, CONCAT('One-Pan Roast Beef'), NULL, 'https://ebd.cda.pl/800x450/5162406a2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8732, 485, 13, CONCAT('Hot, Hot Hot Pot'), NULL, 'https://drive.google.com/file/d/1TmSFsnAXMDYiXgVqrEJEvbHcVT_fRGve/preview');

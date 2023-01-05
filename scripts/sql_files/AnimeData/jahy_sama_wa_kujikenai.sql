@@ -1,0 +1,27 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (897, CONCAT('Jahy-sama wa Kujikenai!'), CONCAT('The great Jahy will not be defeated! Simultaneously combating starvation, the lack of A/C, and the unavoidable weakness of turning child-sized, Jahy—previously the second strongest being in the Dark Realm—is under great stress. If it weren', CHAR(39), 't for the destruction of the mana crystal which used to power the Dark Realm, Jahy would still be living a life of power and luxury. <br>
+<br>And yet, at the moment, brawling with the landlady over rent is a recurring event for Jahy. Just to have a place to stay and food to eat, Jahy must work part-time. However, her immense pride will not allow her to live under such poor conditions for any longer than necessary. Vowing to reinstate the Dark Realm to its former glory, Jahy continues her journey to reassemble the mana crystal.<br>
+<br>[Written by MAL Rewrite]'), 1, '2021-08-01', '2021-12-19', 'Summer 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1154/115599.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (394, 897, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2178, 897, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2179, 897, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (979, 897, 50);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15824, 897, 1, CONCAT('The Great Jahy Can', CHAR(39), 't Go Back!'), '2021-08-01', 'https://ebd.cda.pl/620x368/807160192');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15825, 897, 2, CONCAT('Druj Asks No Questions!'), '2021-08-08', 'https://ebd.cda.pl/620x368/8112596cb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15826, 897, 3, CONCAT('The Great Jahy Can', CHAR(39), 't Brag...'), '2021-08-15', 'https://ebd.cda.pl/620x368/815949899');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15827, 897, 4, CONCAT('Saurva Never Slips Up?'), '2021-08-29', 'https://ebd.cda.pl/620x368/825163124');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15828, 897, 5, CONCAT('The Great Jahy Isn', CHAR(39), 't Suspicious?!'), '2021-09-05', 'https://ebd.cda.pl/620x368/8327259b5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15829, 897, 6, CONCAT('The Great Jahy Doesn', CHAR(39), 't Seem to Stand a Chance...'), '2021-09-12', 'https://ebd.cda.pl/620x368/8438214c6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15830, 897, 7, CONCAT('The Great Jahy Doesn', CHAR(39), 't Play!'), '2021-09-19', 'https://ebd.cda.pl/620x368/844831502');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15831, 897, 8, CONCAT('The Great Jahy Can', CHAR(39), 't Bathe!'), '2021-09-26', 'https://ebd.cda.pl/620x368/851529067');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15832, 897, 9, CONCAT('Saurva Can', CHAR(39), 't Catch a Break...'), '2021-10-03', 'https://ebd.cda.pl/620x368/869131863');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15833, 897, 10, CONCAT('The Magical Girl Will Not Lose!'), '2021-10-10', 'https://ebd.cda.pl/620x368/87508025b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15834, 897, 11, CONCAT('The Landlord Can', CHAR(39), 't Come Home..'), '2021-10-17', 'https://ebd.cda.pl/620x368/8835057d5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15835, 897, 12, CONCAT('Kokoro-chan Will Not Betray?'), '2021-10-24', 'https://ebd.cda.pl/620x368/88824995d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15836, 897, 13, CONCAT('Druj Is Not Happy!'), '2021-10-31', 'https://ebd.cda.pl/620x368/1065379476');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15837, 897, 14, CONCAT('The Magical Girl Will Not Fight'), '2021-11-07', 'https://ebd.cda.pl/620x368/92820244d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15838, 897, 15, CONCAT('The Boss Cannot Decide!'), '2021-11-14', 'https://ebd.cda.pl/620x368/908545518');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15839, 897, 16, CONCAT('The Dark Lord Doesn', CHAR(39), 't Hold Back!'), '2021-11-21', 'https://ebd.cda.pl/620x368/913434075');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15840, 897, 17, CONCAT('The Great Jahy Can', CHAR(39), 't Sleep...'), '2021-11-28', 'https://ebd.cda.pl/620x368/919197016');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15841, 897, 18, CONCAT('Saurva Will Not Lose!'), '2021-12-05', 'https://ebd.cda.pl/620x368/92494805b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15842, 897, 19, CONCAT('The Demon Lord Is Relentless?!'), '2021-12-12', 'https://ebd.cda.pl/620x368/93299942f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15843, 897, 20, CONCAT('The Great Jahy Will Not Be Defeated!'), '2021-12-19', 'https://ebd.cda.pl/620x368/93993330e');

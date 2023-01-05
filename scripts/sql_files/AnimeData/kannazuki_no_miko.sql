@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (960, CONCAT('Kannazuki no Miko'), CONCAT('Kannazuki no Miko begins in the village of Mahoroba, where time passes slowly for both man and nature. Two students from the village', CHAR(39), 's prestigious Ototachibana Academy might as well be night and day. Himeko is shy and unassertive, while Chikane is bold and elegant. Despite this, they love each other, and nothing can come between them, no matter how hard they try.<br>
+<br>On the two girls', CHAR(39), ' shared birthday, a sinister voice corrupts one of their friends into attacking them, and just when it seemed grimmest, the lunar and solar priestess powers that lay dormant in the two girls awaken, dispelling the evil. That was only the first hurdle, however. The two must now fend off the countless others who would threaten their well-being—even the people closest to them!'), 1, '2004-10-02', '2004-12-18', 'Fall 2004', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/73955.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (423, 960, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2331, 960, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2332, 960, 16);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2333, 960, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2334, 960, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1045, 960, 128);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16789, 960, 1, CONCAT('The Land of Eternity'), '2004-10-02', 'https://ebd.cda.pl/800x450/6112730f6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16790, 960, 2, CONCAT('Overlapping Sun and Moon'), '2004-10-09', 'https://ebd.cda.pl/800x450/610684109');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16791, 960, 3, CONCAT('Secret Love Shell'), '2004-10-16', 'https://ebd.cda.pl/800x450/61068680e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16792, 960, 4, CONCAT('Direction of Affection'), '2004-10-23', 'https://ebd.cda.pl/800x450/6106925ed');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16793, 960, 5, CONCAT('Over the Darkness of Night'), '2004-10-30', 'https://ebd.cda.pl/800x450/611005110');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16794, 960, 6, CONCAT('You Where the Sun Shines'), '2004-11-06', 'https://ebd.cda.pl/800x450/611012355');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16795, 960, 7, CONCAT('Rainfall in the Hell of Love'), '2004-11-13', 'https://ebd.cda.pl/800x450/6110213a1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16796, 960, 8, CONCAT('Storm of the Silver Moon'), '2004-11-20', 'https://ebd.cda.pl/800x450/6112751cd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16797, 960, 9, CONCAT('To the Edge of Hell'), '2004-11-27', 'https://ebd.cda.pl/800x450/611276659');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16798, 960, 10, CONCAT('Invitation of Love and Death'), '2004-12-04', 'https://ebd.cda.pl/800x450/6110240eb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16799, 960, 11, CONCAT('Dance of Swords'), '2004-12-11', 'https://ebd.cda.pl/800x450/611027610');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16800, 960, 12, CONCAT('Priestesses of the Godless Month'), '2004-12-18', 'https://ebd.cda.pl/800x450/611277893');

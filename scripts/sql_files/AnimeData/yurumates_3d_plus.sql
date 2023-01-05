@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2093, CONCAT('Yurumates 3D Plus'), CONCAT('The continuation of Yurumates 3D right after the first season.'), 1, '2012-07-03', '2012-09-25', 'Summer 2012', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/40001.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (865, 2093, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5195, 2093, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5196, 2093, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2266, 2093, 167);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36562, 2093, 1, CONCAT('The Birthday Playoff'), '2012-07-03', 'https://www.mp4upload.com/embed-qowehjqo0y0n.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36563, 2093, 2, CONCAT('Cardboard Box Jungle'), '2012-07-10', 'https://www.mp4upload.com/embed-xt16tij5338j.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36564, 2093, 3, CONCAT('Slow Holiday'), '2012-07-17', 'https://www.mp4upload.com/embed-5f9v3ia0ztib.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36565, 2093, 4, CONCAT('Next Generation Notice'), '2012-07-24', 'https://www.mp4upload.com/embed-0y51ydh74gfb.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36566, 2093, 5, CONCAT('Sleeping Combo'), '2012-07-31', 'https://www.mp4upload.com/embed-nlrasiyqsv8w.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36567, 2093, 6, CONCAT('Room, Heaven, and Hell'), '2012-08-07', 'https://www.mp4upload.com/embed-dyabzv2tbo7s.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36568, 2093, 7, CONCAT('Surprise Aquarium'), '2012-08-14', 'https://www.mp4upload.com/embed-8n9e81dmyafu.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36569, 2093, 8, CONCAT('Final Episode of Psychic Ronin Yurume'), '2012-08-21', 'https://www.mp4upload.com/embed-pqjuxb37g1tv.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36570, 2093, 9, CONCAT('Battle for the Last Sweet Dumpling'), '2012-08-28', 'https://www.mp4upload.com/embed-h6779rxvllh0.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36571, 2093, 10, CONCAT('Every New Year', CHAR(39), 's Sake Mood'), '2012-09-04', 'https://www.mp4upload.com/embed-r85a8uxqyxf4.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36572, 2093, 11, CONCAT('Number Six Assassin'), '2012-09-11', 'https://www.mp4upload.com/embed-xl4xtsg7fozn.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36573, 2093, 12, CONCAT('Yurumates Reverse'), '2012-09-18', 'https://www.mp4upload.com/embed-qpvvgb4pmkgo.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36574, 2093, 13, CONCAT('Everything Will Become a Dream'), '2012-09-25', 'https://www.mp4upload.com/embed-squdel5azzlb.html');

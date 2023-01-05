@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1811, CONCAT('Starmyu 2nd Season'), CONCAT('A new school year has begun at Ayanagi Academy for Yuuta Hoshitani and the members of Team Ootori. As the school', CHAR(39), 's annual graduation performance titled "Shadow and Lights" quickly approaches, the second years in the Musical Department must participate in the production as part of their curriculum. Out of the 25 students in the division, five of them will receive a training role and actively participate as an actor in the program alongside the graduating class. Attaining one of these coveted spots will not only increase a student', CHAR(39), 's academic standing within the department, but it will also put them in the running for a position on the elite Kao Council.<br>
+<br>While every student in the department strives to obtain one of the five training roles, Team Yuzuriha', CHAR(39), 's Riku Ageha is practically a front-runner for the role of Alexis', CHAR(39), ' Shadow. Having idolized an Ayanagi alumnus', CHAR(39), ' performance of Alexis, Ageha has spent a majority of his life perfecting the portrayal in hopes of being selected for the show. In contrast, Hoshitani', CHAR(39), 's lack of experience in show-biz puts him at a great disadvantage for any of the roles in the production. <br>
+<br>With specialized training from the "Ancients"—former Kao Council members and Ayanagi alumni—the second years give it their all as they aim for the stars and beyond.<br>
+<br>[Written by MAL Rewrite]'), 1, '2017-04-04', '2017-06-20', 'Spring 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/84655.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1961, 1811, 165);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2001, 1811, 36);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2002, 1811, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2003, 1811, 41);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2004, 1811, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32583, 1811, 1, CONCAT('Act 1'), NULL, 'https://www.mp4upload.com/embed-vh176fz5xq34.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32584, 1811, 2, CONCAT('Act 2'), NULL, 'https://www.mp4upload.com/embed-vhjuq1cp4zms.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32585, 1811, 3, CONCAT('Act 3'), NULL, 'https://tune.pk/video/7053997');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32586, 1811, 4, CONCAT('Act 4'), NULL, 'https://tune.pk/video/7065458');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32587, 1811, 5, CONCAT('Act 5'), NULL, 'https://www.mp4upload.com/embed-vw13og56a941.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32588, 1811, 6, CONCAT('Act 6'), NULL, 'https://www.mp4upload.com/embed-eauw7b3lozvj.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32589, 1811, 7, CONCAT('Act 7'), NULL, 'https://www.mp4upload.com/embed-7ylovbztmwbe.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32590, 1811, 8, CONCAT('Act 8'), NULL, 'https://www.mp4upload.com/embed-ew9ywvsbb4dx.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32591, 1811, 9, CONCAT('Act 9'), NULL, 'https://drive.google.com/file/d/0BzPe0Wj3xolQVkhEQWEwSk9kYjg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32592, 1811, 10, CONCAT('Act 10'), NULL, 'https://www.mp4upload.com/embed-m8esop9g5s10.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32593, 1811, 11, CONCAT('Act 11'), NULL, 'https://drive.google.com/file/d/0B8SdDdL9ThdFaXRSQllxT2stWE0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32594, 1811, 12, CONCAT('Act 12'), NULL, 'https://www.mp4upload.com/embed-d8uemkinq8a6.html');

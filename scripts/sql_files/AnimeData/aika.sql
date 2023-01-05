@@ -1,0 +1,14 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (46, CONCAT('AIKa'), CONCAT('A catastrophic earthquake has left Tokyo, and most of the Earth for that matter, under the sea. Aika is a salvager who retrieves various remains from the watery ruins. When Aika accepts the dangerous mission of locating and obtaining the mysterious Lagu, she discovers that she', CHAR(39), 's not the only one after it. '), 3, '1997-04-25', '1999-04-25', '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/61673.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (104, 46, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (105, 46, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (106, 46, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (107, 46, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (108, 46, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (50, 46, 32);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (646, 46, 1, CONCAT('Beautiful Agent'), '1997-04-25', 'https://mp4upload.com/embed-o2yh84ui1icq.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (647, 46, 2, CONCAT('Naked Mission'), '1997-06-25', 'https://mp4upload.com/embed-jijy44dgkdur.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (648, 46, 3, CONCAT('Takeoff Position'), '1997-09-25', 'https://mp4upload.com/embed-ze602ms666sz.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (649, 46, 4, CONCAT('A Flower Blooming in Space'), '1998-01-25', 'https://mp4upload.com/embed-08wmvr3z0hze.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (650, 46, 5, CONCAT('The Golden Delmo Operation'), '1998-08-25', 'https://mp4upload.com/embed-vkr2ox8idaqr.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (651, 46, 6, CONCAT('Delmo Operation: White Silver'), '1998-12-18', 'https://mp4upload.com/embed-8xtxjipwjybb.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (652, 46, 7, CONCAT('Break the Decisive Battle! Delmo Base!'), '1999-04-25', 'https://mp4upload.com/embed-ed5xkm4ij35x.html');

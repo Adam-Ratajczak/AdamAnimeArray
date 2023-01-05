@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1983, CONCAT('Ulysses: Jehanne Darc to Renkin no Kishi'), CONCAT('The story is set in the 15th century, during the Hundred Years', CHAR(39), ' War between France and England over the succession to the French throne. Montmorency, the son of a noble, immerses himself in the studies of magic and alchemy at a royal knight training school. However, following France', CHAR(39), 's crushing defeat at Agincourt, the school is dissolved. Having lost everything and now a wanted man, Montmorency, who had just become an alchemist, encounters a mysterious village girl named Jehanne.<br>
+<br>(Source: MAL News)'), 1, '2018-10-07', '2018-12-30', 'Fall 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1143/96156.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4949, 1983, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4950, 1983, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4951, 1983, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2151, 1983, 189);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2196, 1983, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2197, 1983, 31);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35092, 1983, 1, CONCAT('Alchemy and Fairies'), '2018-10-07', 'https://ebd.cda.pl/800x450/27300020e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35093, 1983, 2, CONCAT('The Girl Called Jeanne'), '2018-10-14', 'https://ebd.cda.pl/620x368/26756528e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35094, 1983, 3, CONCAT('To the Scheming Palace'), '2018-10-21', 'https://drive.google.com/file/d/1M00oMih82dH2OcWbO7wJp54jTS3iogGI/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35095, 1983, 4, CONCAT('Who Was the Promise For'), '2018-10-28', 'https://drive.google.com/file/d/1gJ0Okzu2Mm7eJTfpTfNdk11gJKWB08EG/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35096, 1983, 5, CONCAT('Proof of Purity'), '2018-11-04', 'https://drive.google.com/file/d/1LthAo1pZ3JRFcJWNHGUtIgjUUeAFT2qO/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35097, 1983, 6, CONCAT('Ashes to Ashes'), '2018-11-11', 'https://drive.google.com/file/d/1EgUBKUqtbwQIrw3LIPvS9KB_yhi-MqsL/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35098, 1983, 7, CONCAT('Rain and Memory in Brittany'), '2018-11-18', 'https://drive.google.com/file/d/1HcbAOiV2rSyO1VPBd6-EC0pKHAEKEWOc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35099, 1983, 8, CONCAT('Return of the Female Saint'), '2018-11-25', 'https://drive.google.com/file/d/1FngFfXeMD3mNEf4_4gkRLlvJgvIebfr8/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35100, 1983, 9, CONCAT('Dance Music of White and Black'), '2018-12-09', 'https://drive.google.com/file/d/1Xcj8uk7mmmI4rRE-yLvQ-JSsju0_Y7_Y/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35101, 1983, 10, CONCAT('Beast of the Apocalypse'), '2018-12-16', 'https://drive.google.com/file/d/1wnNQx81La00-cb3GBPaCsLFdHxGexYmI/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35102, 1983, 11, CONCAT('Utopia, Then...'), '2018-12-23', 'https://drive.google.com/file/d/1Kui5pjaytbdW7YhFE4BtD3vWO1gyo0Hz/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35103, 1983, 12, CONCAT('In This Wonderful World'), '2018-12-30', 'https://drive.google.com/file/d/1NWGkTGWoIKqrOZ34DZI6g3SOH8uOdBZW/preview');

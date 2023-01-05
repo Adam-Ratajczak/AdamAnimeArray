@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1701, CONCAT('Shin Sakura Taisen the Animation'), CONCAT('In 1941, one year after the defeat of Sotetsu Genan, captain Seijuurou Kamiyama of the Imperial Combat Revue', CHAR(39), 's Flower Division in Tokyo leaves on a secret mission, with Sakura Amamiya temporarily assuming command. Following an incident in Europe, Kamiyama takes a young Russian girl named Klara M. Ruzhkova and leaves her in the Flower Division', CHAR(39), 's care. However, Moscow Combat Revue captain Valery Kaminski is sent to Tokyo to retrieve Klara and the Flower Division must stop him.<br>
+<br>(Source: Wikipedia, edited)'), 1, '2020-04-03', '2020-06-19', 'Spring 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1341/105735.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4221, 1701, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4222, 1701, 11);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4223, 1701, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4224, 1701, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1837, 1701, 55);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1892, 1701, 10);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1893, 1701, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30782, 1701, 1, CONCAT('The Curtain Rises! The New Combat Revue'), NULL, 'https://ebd.cda.pl/620x368/4960523d5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30783, 1701, 2, CONCAT('Identity Unknown! A Mysterious Foe Appears'), NULL, 'https://ebd.cda.pl/620x368/4993169fd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30784, 1701, 3, CONCAT('Tokyo Trembles! The New Moscow Combat Revue!'), NULL, 'https://ebd.cda.pl/620x368/5035706a8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30785, 1701, 4, CONCAT('Friendship in Full Bloom! Thousand Year Cherry Blossoms!'), NULL, 'https://ebd.cda.pl/620x368/5071880c4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30786, 1701, 5, CONCAT('The Goofball Detective Combo! Find Klara', CHAR(39), 's Secret!'), NULL, 'https://drive.google.com/file/d/18G2B2KLRpNSAPyrl65QV-pv7AfLH5veP/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30787, 1701, 6, CONCAT('Strange and Bizarre! The True Identity of Black Cape!'), NULL, 'https://drive.google.com/file/d/1XszbtZfZWxaeLbbXKswMclwtPBUTYjy9/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30788, 1701, 7, CONCAT('Stealth Mission! Tail the Date!'), NULL, 'https://ebd.cda.pl/620x368/5206992b2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30789, 1701, 8, CONCAT('No End to the Chaos! The Combat Revue Challenge!'), NULL, 'https://drive.google.com/file/d/1Daa_REOUe0kwTE9K9iC9tGToAd0o9GJ-/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30790, 1701, 9, CONCAT('Unbelievable! The Truth About Klara!'), NULL, 'https://drive.google.com/file/d/1b5OyMqqKptzP0eB-QwofFpbec6GjREKf/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30791, 1701, 10, CONCAT('The Destruction of Tokyo? The Rage of Tunguska!'), NULL, 'https://drive.google.com/file/d/1dT0-5296HGCFtebfFRY_zzxZEdeCpX_O/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30792, 1701, 11, CONCAT('A Fantastic, Tragic Love! Leyla', CHAR(39), 's Heart!'), NULL, 'https://ebd.cda.pl/620x368/5338848c8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30793, 1701, 12, CONCAT('The Grand Finale! Hope for Tomorrow!'), NULL, 'https://ebd.cda.pl/620x368/53740117a');

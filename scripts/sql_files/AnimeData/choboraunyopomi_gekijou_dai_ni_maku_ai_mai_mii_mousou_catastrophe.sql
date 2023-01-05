@@ -1,0 +1,16 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (321, CONCAT('Choboraunyopomi Gekijou Dai Ni Maku Ai Mai Mii: Mousou Catastrophe'), CONCAT('Second season of Ai Mai Mii.'), 1, '2014-07-08', '2014-09-23', 'Summer 2014', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/65753.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (740, 321, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (741, 321, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (359, 321, 55);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5581, 321, 1, CONCAT('Untitled'), NULL, 'https://www.dailymotion.com/embed/video/x21atw5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5582, 321, 2, CONCAT('Untitled'), NULL, 'https://www.dailymotion.com/embed/video/x258sw3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5583, 321, 3, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-1b0zk6eyybh6.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5584, 321, 4, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-l4nxp6clz38c.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5585, 321, 5, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-nu65kg6cwcev.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5586, 321, 6, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-t8adjkmp6bm6.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5587, 321, 7, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-49a31t0a5238.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5588, 321, 8, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-98hzlytwr7v3.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5589, 321, 9, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-omxan8wihq5e.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5590, 321, 10, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-a8kj80figdhk.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5591, 321, 11, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-dd2asygws7ju.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5592, 321, 12, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-wr27as95m8ob.html');

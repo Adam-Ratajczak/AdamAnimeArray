@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (923, CONCAT('Juuou Mujin no Fafnir'), CONCAT('Midgar, all-girl academy, would have been notable just for the action of accepting its first and only male student, Yuu Mononobe. But Midgar stands out for much more than that: it', CHAR(39), 's a school exclusive to a group of girls known as D', CHAR(39), 's. Each of them have extremely powerful abilities in generating dark matter and manipulating it into powerful weaponry.<br>
+<br>The D', CHAR(39), 's didn', CHAR(39), 't exist twenty-five years ago, and only appeared after a number of mysterious, destructive monsters known as "Dragons" started appearing around the world. Strangely, just as suddenly as they appeared, they vanished. In their destructive wake, some girls started being born with symbols on their bodies and powers similar in nature to those wielded by the Dragons themselves.<br>
+<br>Now the D', CHAR(39), 's attend this school, hoping to harness and utilize their powers against the Dragons. Yuu is their latest member and is extraordinary for being the only known male D in existence. Now he must forge relationships with the girls around him, including his long separated sister who attends the school as well, and work with them to investigate and eliminate the threat of the powerful Dragons.'), 1, '2015-01-09', '2015-03-27', 'Winter 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/69085.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2237, 923, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2238, 923, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1005, 923, 30);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1030, 923, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1031, 923, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16276, 923, 1, CONCAT('Dragon Garden Midgar'), '2015-01-09', 'https://ebd.cda.pl/620x368/1308084b6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16277, 923, 2, CONCAT('White Leviathan'), '2015-01-16', 'https://ebd.cda.pl/620x368/130808734');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16278, 923, 3, CONCAT('Roaring Fafnir'), '2015-01-23', 'https://ebd.cda.pl/620x368/1308090a6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16279, 923, 4, CONCAT('Tear the Dragon Girl'), '2015-01-30', 'https://ebd.cda.pl/620x368/131099986');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16280, 923, 5, CONCAT('Blazing Muspelheim'), '2015-02-06', 'https://ebd.cda.pl/620x368/1311000cd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16281, 923, 6, CONCAT('Red-Winged Tiamat'), '2015-02-13', 'https://ebd.cda.pl/620x368/131100538');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16282, 923, 7, CONCAT('Scarlet Innocent'), '2015-02-20', 'https://ebd.cda.pl/620x368/131100858');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16283, 923, 8, CONCAT('Basilisk Attacks'), '2015-02-27', 'https://ebd.cda.pl/620x368/1311009a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16284, 923, 9, CONCAT('Front Line in Distant Waters'), '2015-03-06', 'https://ebd.cda.pl/620x368/13110567d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16285, 923, 10, CONCAT('Red Catastrophe'), '2015-03-13', 'https://ebd.cda.pl/620x368/13110579b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16286, 923, 11, CONCAT('Mistilteinn Falls'), '2015-03-20', 'https://ebd.cda.pl/620x368/131106298');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16287, 923, 12, CONCAT('Unlimited Fafnir'), '2015-03-27', 'https://ebd.cda.pl/620x368/131106502');

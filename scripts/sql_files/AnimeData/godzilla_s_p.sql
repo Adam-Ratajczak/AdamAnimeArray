@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (629, CONCAT('Godzilla: S.P'), CONCAT('This series features an original story, which depicts the young geniuses Mei Kamino, a female researcher, and Yun Arikawa, a male engineer, as they take on an unprecedented threat with their companions. When danger comes up from the depths, only young geniuses Mei, Yun, and their team can face the threat in Godzilla Singular Point! <br>
+<br>(Source: Netflix)'), 1, '2021-04-01', '2021-06-24', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1447/114837.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1556, 629, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1557, 629, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1558, 629, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (700, 629, 77);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (701, 629, 79);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11469, 629, 1, CONCAT('A Distant Road Home'), '2021-04-01', 'https://ebd.cda.pl/620x368/7136608f6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11470, 629, 2, CONCAT('Midsummer Oni Festival'), '2021-04-08', 'https://ebd.cda.pl/620x368/7174771b9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11471, 629, 3, CONCAT('Tigerish'), '2021-04-15', 'https://ebd.cda.pl/620x368/727242491');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11472, 629, 4, CONCAT('The Future Not Yet Seen'), '2021-04-22', 'https://ebd.cda.pl/620x368/73273632f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11473, 629, 5, CONCAT('Theorist / Early Wind'), '2021-04-29', 'https://ebd.cda.pl/620x368/73754505c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11474, 629, 6, CONCAT('Enfatico'), '2021-05-06', 'https://ebd.cda.pl/620x368/74376315e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11475, 629, 7, CONCAT('Omniarch'), '2021-05-13', 'https://ebd.cda.pl/620x368/7481836f2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11476, 629, 8, CONCAT('Graftage'), '2021-05-20', 'https://ebd.cda.pl/620x368/7490869df');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11477, 629, 9, CONCAT('Erumpent'), '2021-05-27', 'https://ebd.cda.pl/620x368/79826069e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11478, 629, 10, CONCAT('Encipher'), '2021-06-03', 'https://ebd.cda.pl/620x368/798260935');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11479, 629, 11, CONCAT('Relaunch'), '2021-06-10', 'https://ebd.cda.pl/620x368/79826151a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11480, 629, 12, CONCAT('Explorer'), '2021-06-17', 'https://ebd.cda.pl/620x368/798261267');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11481, 629, 13, CONCAT('Together'), '2021-06-24', 'https://ebd.cda.pl/620x368/798261883');

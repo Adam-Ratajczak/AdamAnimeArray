@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1367, CONCAT('Noblesse'), CONCAT('The "Noblesse" Cadis Etrama di Raizel, also known as "Rai," is enrolled in Ye Ran High School by his servant Frankenstein to stay hidden from the sights of the Union, a mysterious organization out for Rai', CHAR(39), 's blood. Rai commences his life as a student, making himself familiar with his classmates and the daily activities of humans. However, his new life is far from peaceful, and Rai is soon forced to save his new friends from the hands of the Union that had abducted them.<br>
+<br>Meanwhile, M-21—a Union agent gone rogue during Rai', CHAR(39), 's rescue operation—joins the Ye Ran High School security staff after a proposition by the school', CHAR(39), 's director, who happens to be none other than Frankenstein himself. On the surface, M-21 is a prim and proper employee, but in truth he is shackled by his former ties to the Union and the inevitable consequences of betraying the organization.<br>
+<br>To further complicate matters, Nobles Regis K. Landegre and Seira J. Loyard enroll in the same school to investigate the Noblesse. While the Union conducts a manhunt for M-21 to extract clues regarding their missing agents, Rai is forced to keep his identity hidden while protecting all that he holds dear.<br>
+<br>[Written by MAL Rewrite]'), 1, '2020-10-08', '2020-12-31', 'Fall 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1903/111646.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3409, 1367, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3410, 1367, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1473, 1367, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1501, 1367, 13);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1502, 1367, 19);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23951, 1367, 1, CONCAT('What Must Be Protected / Ordinary'), '2020-10-08', 'https://ebd.cda.pl/620x368/5915624ae');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23952, 1367, 2, CONCAT('A Reason to Fight/Nobility'), NULL, 'https://ebd.cda.pl/620x368/595364390');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23953, 1367, 3, CONCAT('Night', CHAR(39), 's Footsteps/Fall Out'), NULL, 'https://ebd.cda.pl/620x368/599603696');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23954, 1367, 4, CONCAT('Spiderweb/Long Fall'), NULL, 'https://ebd.cda.pl/620x368/6028985f1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23955, 1367, 5, CONCAT('A Friend', CHAR(39), 's Hand / Fight for...'), NULL, 'https://ebd.cda.pl/620x368/606560936');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23956, 1367, 6, CONCAT('Great Power / Raizel'), NULL, 'https://ebd.cda.pl/620x368/610971860');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23957, 1367, 7, CONCAT('The Girl I', CHAR(39), 'm Into Is a Noble / Unforgettable'), NULL, 'https://ebd.cda.pl/620x368/615000866');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23958, 1367, 8, CONCAT('Frankenstein / First Contact'), NULL, 'https://ebd.cda.pl/620x368/619385064');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23959, 1367, 9, CONCAT('Blood Pact / Devote'), '2020-12-03', 'https://ebd.cda.pl/620x368/623923171');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23960, 1367, 10, CONCAT('Dangerous Man / LOVEPARADE'), NULL, 'https://ebd.cda.pl/620x368/6290786ed');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23961, 1367, 11, CONCAT('Lord / Lost Child'), NULL, 'https://ebd.cda.pl/620x368/6332444e2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23962, 1367, 12, CONCAT('That All May Be as It Should Be / Execution'), NULL, 'https://ebd.cda.pl/620x368/6357386d4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (23963, 1367, 13, CONCAT('Noblesse / Take Her Hand'), NULL, 'https://ebd.cda.pl/620x368/64236472c');

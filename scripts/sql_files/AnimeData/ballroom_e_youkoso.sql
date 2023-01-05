@@ -1,0 +1,35 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (173, CONCAT('Ballroom e Youkoso'), CONCAT('Tatara Fujita is a shy middle schooler who has no particular plan for the future. He has gotten through life by avoiding any kind of confrontation and blending in with the crowd. But blending in isn', CHAR(39), 't enough to get out of trouble, as some bullies harass him for money. Luckily, he is saved by a man named Kaname Sengoku.<br>
+<br>Kaname invites Tatara to his dance studio. Although he would normally never set foot in such a place, Tatara is captivated by Sengoku', CHAR(39), 's commanding presence. Granted an opportunity to dance with fellow classmate Shizuku Hanaoka—who often practices at the studio—Tatara realizes there', CHAR(39), 's something about the idea of being put in the limelight and dancing where people will see him that keeps him coming back. With an earnest, passionate drive to improve, Tatara begins his journey into the world of competitive dance.<br>
+<br>[Written by MAL Rewrite]'), 1, '2017-07-09', '2017-12-17', 'Summer 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/86739.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (80, 173, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (396, 173, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (397, 173, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (398, 173, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (399, 173, 19);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (195, 173, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (182, 173, 41);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (183, 173, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2425, 173, 1, CONCAT('Welcome to Ogasawara Dance Studio'), '2017-07-09', 'https://ebd.cda.pl/620x368/147990696');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2426, 173, 2, CONCAT('Kiyoharu Hyodo'), '2017-07-16', 'https://ebd.cda.pl/620x368/149106545');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2427, 173, 3, CONCAT('Dance the Waltz'), '2017-07-23', 'https://ebd.cda.pl/620x368/1498800cc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2428, 173, 4, CONCAT('Dancer', CHAR(39), 's High'), '2017-07-30', 'https://ebd.cda.pl/620x368/15056080d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2429, 173, 5, CONCAT('Partners'), '2017-07-30', 'https://ebd.cda.pl/620x368/150737593');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2430, 173, 6, CONCAT('Line of Dance'), '2017-08-13', 'https://ebd.cda.pl/620x368/1523655a6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2431, 173, 7, CONCAT('The Tenpei Cup'), '2017-08-20', 'https://ebd.cda.pl/620x368/1529669ea');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2432, 173, 8, CONCAT('Reality'), '2017-08-27', 'https://ebd.cda.pl/620x368/1534397ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2433, 173, 9, CONCAT('Flower & Frame'), '2017-09-03', 'https://ebd.cda.pl/620x395/533836849');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2434, 173, 10, CONCAT('Voltage'), '2017-09-10', 'https://ebd.cda.pl/620x395/53383713e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2435, 173, 11, CONCAT('Final Evaluation'), '2017-09-17', 'https://ebd.cda.pl/620x395/53383296e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2436, 173, 12, CONCAT('Encounters'), '2017-09-24', 'https://ebd.cda.pl/620x395/5338326de');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2437, 173, 13, CONCAT('Matchmaking'), '2017-10-01', 'https://ebd.cda.pl/620x395/5338338b2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2438, 173, 14, CONCAT('Formation'), '2017-10-08', 'https://ebd.cda.pl/620x395/533833229');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2439, 173, 15, CONCAT('Taming a Wild Horse'), '2017-10-15', 'https://ebd.cda.pl/620x395/5338335dc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2440, 173, 16, CONCAT('Four Legs'), '2017-10-22', 'https://ebd.cda.pl/620x395/5338341e8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2441, 173, 17, CONCAT('Performer'), '2017-10-29', 'https://ebd.cda.pl/620x395/533834468');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2442, 173, 18, CONCAT('Entry #13'), '2017-11-05', 'https://ebd.cda.pl/620x395/533834770');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2443, 173, 19, CONCAT('Rivals'), '2017-11-12', 'https://ebd.cda.pl/620x395/5338350d9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2444, 173, 20, CONCAT('Friends'), '2017-11-19', 'https://ebd.cda.pl/620x395/5338365e9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2445, 173, 21, CONCAT('The Door'), '2017-11-26', 'https://ebd.cda.pl/620x395/53383569e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2446, 173, 22, CONCAT('Leader Partner'), '2017-12-03', 'https://ebd.cda.pl/620x395/533835350');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2447, 173, 23, CONCAT('Tradition and Evolution'), '2017-12-10', 'https://ebd.cda.pl/620x395/5338362ea');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2448, 173, 24, CONCAT('Welcome to the Ballroom'), '2017-12-17', 'https://ebd.cda.pl/620x395/533835960');

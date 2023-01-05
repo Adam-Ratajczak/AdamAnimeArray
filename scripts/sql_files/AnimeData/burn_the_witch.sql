@@ -1,0 +1,12 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (274, CONCAT('Burn the Witch'), CONCAT('Although citizens of London view dragons as a fairy-tale myth, statistics confirm that 72% of the city', CHAR(39), 's deaths are caused by these grotesque beings. Unable to see them, the public is oblivious to their existence. However, in a mirror dimension to "Front London," exists a place where dragons can be seen with the naked eye—"Reverse London."<br>
+<br>Ninny Spangcole is a member of a popular girl group. But in Reverse London, she works as a "Witch" at Wing Bind—an organization that dispatches agents to exterminate the beasts and protect the citizens of both Londons using magic. Ninny and her partner, Noel Niihashi, in addition to their jobs, safeguard Baldo Ywain Parks, a young man with an odd connection to the dragons.<br>
+<br>Thanks to the Wing Bind', CHAR(39), 's hard work, there were no fatal dragon attacks for almost a century. But the peace shatters when Baldo', CHAR(39), 's presence unexpectedly causes a Dark Dragon to wreak havoc in the city. The witches are further inconvenienced when Ninny', CHAR(39), 's troublesome former bandmate appears in Reverse London—in tandem with another powerful dragon.<br>
+<br>[Written by MAL Rewrite]<br>'), 2, '2020-10-02', NULL, '', '21 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1993/108967.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (138, 274, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (634, 274, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (635, 274, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (309, 274, 68);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (310, 274, 69);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4329, 274, 1, CONCAT('Witches Blow a New Pipe'), '2020-10-02', 'https://ebd.cda.pl/620x368/66815092e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4330, 274, 2, CONCAT('Ghillie Suit / She Makes Me Special'), '2020-10-02', 'https://ebd.cda.pl/620x368/6681479cd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4331, 274, 3, CONCAT('If a lion could speak, we couldn', CHAR(39), 't understand'), '2020-10-02', 'https://ebd.cda.pl/620x395/668150661');

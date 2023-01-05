@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1060, CONCAT('Koisuru Tenshi Angelique: Kagayaki no Ashita'), CONCAT('Ange is now trapped in the Seijuu Universe, and cannot leave until she awakens Seijuu', CHAR(39), 's Queen. In order to do this, she must gather nine new guardians. It sounds like a fairly simple task, but how can she convince these men to tear away from their own lives and protect the life of another?'), 1, '2007-01-06', '2007-03-24', 'Winter 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/76296.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (477, 1060, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2567, 1060, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2568, 1060, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2569, 1060, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1150, 1060, 43);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18353, 1060, 1, CONCAT('A New Mission'), '2007-01-06', 'https://www.youtube.com/embed/PsWATihwcNc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18354, 1060, 2, CONCAT('The Boy of Wind'), '2007-01-13', 'https://www.youtube.com/embed/oVIi0tZ2szw');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18355, 1060, 3, CONCAT('The Lightless Star'), '2007-01-20', 'https://www.youtube.com/embed/cl3YphpqZQw');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18356, 1060, 4, CONCAT('The Street Under the Hazy Moon'), '2007-01-27', 'https://www.youtube.com/embed/ht2FXE-5ge0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18357, 1060, 5, CONCAT('Reunion'), '2007-02-03', 'https://www.youtube.com/embed/JXlivAtf_mU');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18358, 1060, 6, CONCAT('The Bond Protecting the Cosmos'), '2007-02-10', 'https://www.youtube.com/embed/iPmR42ek43U');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18359, 1060, 7, CONCAT('Fate is Revolving'), '2007-02-17', 'https://www.youtube.com/embed/dSXlRnv31g0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18360, 1060, 8, CONCAT('Love and the Mission'), '2007-02-24', 'https://www.youtube.com/embed/yiWAFKoEWEg');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18361, 1060, 9, CONCAT('The Young King'), '2007-03-03', 'https://www.youtube.com/embed/ompoOJk6WqI');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18362, 1060, 10, CONCAT('The Ninth Guardian'), '2007-03-10', 'https://www.youtube.com/embed/uJfVVu6pk9o');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18363, 1060, 11, CONCAT('The Final Test'), '2007-03-17', 'https://www.youtube.com/embed/q_cQfjKQwDA');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18364, 1060, 12, CONCAT('Toward a Shining Tomorrow'), '2006-03-24', 'https://www.youtube.com/embed/sTnbzozm3CE');

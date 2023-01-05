@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1073, CONCAT('Kore wa Zombie Desu ka?'), CONCAT('Ayumu Aikawa is a 16-year-old high school student who is tragically murdered while investigating a suspicious house. However, he soon awakens next to a strange armored girl called Eucliwood Hellscythe. She reveals herself to be a necromancer who has revived Ayumu, consequently turning him into a zombie! <br>
+<br>Now immortal, Ayumu sets out to hunt down his killer. One day, while searching in a cemetery, he encounters a boisterous young girl named Haruna, who is fighting a bear with a chainsaw while dressed as a magical girl. After she kills the beast, Haruna attempts to erase Ayumu', CHAR(39), 's memories of her, but he instead absorbs her magic for himself. Stripped of her powers, Haruna now orders Ayumu to take up her role of hunting strange creatures known as "Megalo," monsters that roam the human world and terrorize the population.<br><br>Kore wa Zombie Desu ka? follows the daily antics of the human-turned-zombie Ayumu as he begins his new, ludicrous life where the supernatural becomes the norm.<br>
+<br>[Written by MAL Rewrite]'), 1, '2011-01-11', '2011-03-30', 'Winter 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/75521.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2605, 1073, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2606, 1073, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2607, 1073, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2608, 1073, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1164, 1073, 46);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18507, 1073, 1, CONCAT('Yes, I', CHAR(39), 'm a Magical Garment Girl'), '2011-01-11', 'https://ebd.cda.pl/620x368/180952190');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18508, 1073, 2, CONCAT('No, It', CHAR(39), 's a Vampire Ninja'), '2011-01-18', 'https://ebd.cda.pl/620x368/18096024e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18509, 1073, 3, CONCAT('Yes, Hair in Pigtails'), '2011-01-25', 'https://ebd.cda.pl/620x368/18096620c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18510, 1073, 4, CONCAT('Whoa, Am I Glowing?'), '2011-02-01', 'https://ebd.cda.pl/620x368/180967471');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18511, 1073, 5, CONCAT('Yeah, That', CHAR(39), 's Kyoto Tofu'), '2011-02-08', 'https://ebd.cda.pl/620x368/181081167');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18512, 1073, 6, CONCAT('Yes, I Summon Death'), '2011-02-15', 'https://ebd.cda.pl/620x368/181084418');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18513, 1073, 7, CONCAT('Hey, Which Middle School Are You At?'), '2011-02-22', 'https://ebd.cda.pl/620x368/247481074');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18514, 1073, 8, CONCAT('Heh, I', CHAR(39), 'm a Schoolyard Wife'), '2011-03-01', 'https://ebd.cda.pl/620x368/181086268');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18515, 1073, 9, CONCAT('Yes, When I Strip Down, You', CHAR(39), 'll be Amazed'), '2011-03-08', 'https://ebd.cda.pl/620x368/2476787fc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18516, 1073, 10, CONCAT('No, That Will Explode'), '2011-03-22', 'https://ebd.cda.pl/620x368/2476847a9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18517, 1073, 11, CONCAT('Yeah, You Stay With Me!'), '2011-03-29', 'https://ebd.cda.pl/620x368/18130671b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18518, 1073, 12, CONCAT('Yes, There', CHAR(39), 's Still More'), '2011-03-30', 'https://ebd.cda.pl/620x368/24769282d');

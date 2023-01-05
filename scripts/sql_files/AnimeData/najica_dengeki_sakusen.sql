@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1319, CONCAT('Najica Dengeki Sakusen'), CONCAT('Najica Hiiragi, perfumer and secret agent, is sent out on a number of recovery missions to round up rogue humaritts, androids with combat abilities. Najica is assigned a humaritt partner, Lila, whom Najica is to groom as an agent and receive assistance from along the way. As Najica grows to accept Lila, each new mission they embark on reveals more and more about the capabilities and mysterious origins of the humaritts.<br>
+<br>(Source: ANN)'), 1, '2001-10-05', '2001-12-27', 'Fall 2001', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/22210.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3268, 1319, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3269, 1319, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3270, 1319, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3271, 1319, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1424, 1319, 32);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22560, 1319, 1, CONCAT('A Magnificent Secret Agent with a Rose in her Hand'), '2001-10-05', 'https://mixdrop.co/e/yamw27yo6hp2/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22561, 1319, 2, CONCAT('A Pretty Partner with a Gun in her Hands'), '2001-10-12', 'https://www.mp4upload.com/embed-bjvornklzda4.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22562, 1319, 3, CONCAT('Ugly Relics in the Jet Black Darkness'), '2001-10-19', 'https://www.mp4upload.com/embed-zoelqksrk67w.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22563, 1319, 4, CONCAT('The Fictitious Star with a Sweet Trap-like Perfume'), '2001-10-26', 'https://www.mp4upload.com/embed-4c788uhcwx5r.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22564, 1319, 5, CONCAT('A Crimson Horizon Appears with an Empty Dream'), '2001-11-02', 'https://www.mp4upload.com/embed-vvfojl6iject.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22565, 1319, 6, CONCAT('The Beautiful Eye of the Wild Beast Appears with the Shadow of Loneliness'), '2001-11-09', 'https://www.mp4upload.com/embed-cklceh4uriiq.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22566, 1319, 7, CONCAT('The Bullet of Murderous Intent Appears with a Dry Smilee'), '2001-11-22', 'https://www.mp4upload.com/embed-6gzm4la2nqh5.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22567, 1319, 8, CONCAT('The Sky of the Desire Appears with the Flame by the Battle'), '2001-11-29', 'https://www.mp4upload.com/embed-yby9q79zvw3l.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22568, 1319, 9, CONCAT('A Brave Lion in the Desert Appears with the Goddess of the Destiny'), '2001-12-06', 'https://www.mp4upload.com/embed-9iwdnw0n0zca.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22569, 1319, 10, CONCAT('The Terminal Station of the Fight Appears with Dangerous Love'), '2001-12-13', 'https://www.mp4upload.com/embed-y15q11ukhyrb.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22570, 1319, 11, CONCAT('The Sad Parting Mission with Girl', CHAR(39), 's Sincerity'), '2001-12-20', 'https://www.mp4upload.com/embed-pzeiy7husjk9.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22571, 1319, 12, CONCAT('A Splendid Agent has the Rose of the Encounter in the Mind'), '2001-12-27', 'https://www.mp4upload.com/embed-o68cldzreo4e.html');

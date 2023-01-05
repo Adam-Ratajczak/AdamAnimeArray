@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2073, CONCAT('Yojouhan Shinwa Taikei'), CONCAT('One autumn evening at a mysterious ramen stand behind the Shimogamo Shrine, a lonely third-year college student bumps into a man with an eggplant-shaped head who calls himself a god of matrimony. Meeting this man causes the student to reflect upon his past two years at college—two years bitterly spent trying to break up couples on campus with his only friend Ozu, a ghoulish-looking man seemingly set on making his life as miserable as possible. Resolving to make the most out of the rest of his college life, the student attempts to ask out the unsociable but kind-hearted underclassman Akashi, yet fails to follow through, prompting him to regret not living out his college life differently. As soon as this thought passes through his head, however, he is hurtled through time and space to the beginning of his years at college and given another chance to live his life.<br>
+<br>Surreal, artistic, and mind-bending, Yojouhan Shinwa Taikei chronicles the misadventures of a young man on a journey to make friends, find love, and experience the rose-colored campus life he always dreamed of.<br>
+<br>[Written by MAL Rewrite]'), 1, '2010-04-23', '2010-07-02', 'Spring 2010', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1633/123689.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5153, 2073, 13);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5154, 2073, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5155, 2073, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5156, 2073, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2246, 2073, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2296, 2073, 4);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2297, 2073, 15);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36331, 2073, 1, CONCAT('Tennis Circle "Cupid"'), '2010-04-23', 'https://ebd.cda.pl/620x395/789191545');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36332, 2073, 2, CONCAT('Film Circle "Misogi"'), '2010-04-30', 'https://ebd.cda.pl/620x395/78918792a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36333, 2073, 3, CONCAT('Cycling Association "Soleil"'), '2010-05-07', 'https://ebd.cda.pl/620x395/789187173');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36334, 2073, 4, CONCAT('Disciples Wanted'), '2010-05-14', 'https://ebd.cda.pl/620x395/78918756a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36335, 2073, 5, CONCAT('Softball Circle "Honwaka"'), '2010-05-21', 'https://ebd.cda.pl/620x395/789186323');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36336, 2073, 6, CONCAT('English Conversation Circle'), '2010-05-28', 'https://ebd.cda.pl/800x450/5391846a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36337, 2073, 7, CONCAT('"Hero Show Association" Circle'), '2010-06-04', 'https://drive.google.com/file/d/0B__Sx4v7MfpeRFFhOXAtdVI4ZFE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36338, 2073, 8, CONCAT('Reading Circle "Sea"'), '2010-06-11', 'https://drive.google.com/file/d/0B__Sx4v7MfpebEFEd01URk5weWM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36339, 2073, 9, CONCAT('Secret Society "Lucky Cat Chinese Restaurant"'), '2010-06-18', 'https://drive.google.com/file/d/0B__Sx4v7MfpeamFaLUFmMWIzckk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36340, 2073, 10, CONCAT('The 4½ Tatami Ideologue'), '2010-06-25', 'https://drive.google.com/file/d/0B__Sx4v7MfpeNWlxeExXVGlfOEk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36341, 2073, 11, CONCAT('The End of the 4½ Tatami Age'), '2010-07-02', 'https://ebd.cda.pl/800x450/53918280a');

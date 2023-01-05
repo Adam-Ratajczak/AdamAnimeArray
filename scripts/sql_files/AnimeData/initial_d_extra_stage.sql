@@ -1,0 +1,10 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (854, CONCAT('Initial D Extra Stage'), CONCAT('Extra Stage - Act 1
+<br>The "Emperor"—a racing group consisting of several Mitsubishi Lancer EVO drivers—has defeated every racing team they have come across in Gunma Prefecture. Now, they set their eyes on conquering Mount Usui and the legendary Impact Blue racing duo, who hold the record for the Usui Pass. In her blue Nissan SilEighty, Mako Satou and her navigator Sayuki rise to the challenge to defend their title. However, Mako', CHAR(39), 's recent woes begin to affect her concentration. Sensing that her rhythm is off, Sayuki helps her out, but will she be able to resolve it before the decisive race?<br><br>Extra Stage - Act 2
+<br>Sayuki thinks Mako', CHAR(39), 's life could improve if she had a boyfriend and sets her up with her "perfect match"—Miyahara from the Myogi NightKids. Though the relationship starts smoothly, Mako', CHAR(39), 's past relationship haunts her once more. Faced with the possibility of giving up street racing entirely, Mako will have to choose between love and her dream of being a professional racer.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2001-03-22', NULL, '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/13169.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (378, 854, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2050, 854, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2051, 854, 6);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (935, 854, 147);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15132, 854, 1, CONCAT('Beyond Impact Blue...'), '2001-03-22', 'https://ebd.cda.pl/800x450/492582465');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15133, 854, 2, CONCAT('Sentimental White'), '2001-03-22', 'https://embed.tune.pk/play/6737301');

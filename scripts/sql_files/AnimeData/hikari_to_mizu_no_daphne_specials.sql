@@ -1,0 +1,11 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (767, CONCAT('Hikari to Mizu no Daphne Specials'), CONCAT('Two bonus episodes that take place during the course of the series, approximately halfway through it seems. They are entitled ', CHAR(39), 'Everything you always wanted to know about Nereids (but were afraid to ask)', CHAR(39), ' and ', CHAR(39), 'Heaven can wait for Maia Mizuki', CHAR(39), '. These stories are more lighthearted and comedic in tone, bordering on silly.'), 1, '2004-04-23', '2004-10-22', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/44073.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1892, 767, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1893, 767, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1894, 767, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1895, 767, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1896, 767, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (844, 767, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (844, 767, 2);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (845, 767, 4);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13745, 767, 1, CONCAT('Everything You Always Wanted To Know About Nereids (But Were Afraid To Ask)'), '2004-04-23', 'https://myvi.ru/player/embed/html/o2WUFyRfScgFs8DGfYbqQ5w73B1lBB2IpQE0jzoSrAWN4jzhL_BwkIVQsb9ilgOZv0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13746, 767, 2, CONCAT('Bonus Episode 2: Heaven Can Wait For Maia Mizuki'), '2004-10-22', 'https://myvi.ru/player/embed/html/okDLAuL_mChiznuQ70pBFW2qo1Gepz-g5Ljx7woc6vEApKxbiIDSfBuSlhATwzIdc0');

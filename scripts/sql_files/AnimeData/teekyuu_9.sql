@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1873, CONCAT('Teekyuu 9'), CONCAT('Ninth season of the Teekyuu anime series.'), 1, '2017-07-12', '2017-09-27', 'Summer 2017', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/86833.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (781, 1873, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4639, 1873, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4640, 1873, 19);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2028, 1873, 73);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33449, 1873, 1, CONCAT('Species with Senpai'), '2017-07-12', 'https://streamtape.com/e/V8M6x6w4Y6iKrGV/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33450, 1873, 2, CONCAT('Home Alone with Senpai'), '2017-07-19', 'https://streamtape.com/e/bQORyRmk2OHxdo/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33451, 1873, 3, CONCAT('Pitch Perfect with Senpai'), '2017-07-26', 'https://streamtape.com/e/pgqArjPGQRur8ok/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33452, 1873, 4, CONCAT('300 with Senpai'), '2017-08-02', 'https://streamtape.com/e/8wZLQMBg39tovJ0/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33453, 1873, 5, CONCAT('101 with Senpai'), '2017-08-09', 'https://streamtape.com/e/Bz9ZrWGGDOf9l0/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33454, 1873, 6, CONCAT('Nasu: Summer in Andalusia with Senpai'), '2017-08-16', 'https://www.mp4upload.com/embed-8ts99r2ribfn.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33455, 1873, 7, CONCAT('Sadako vs. Kayako with Senpai'), '2017-08-23', 'https://streamtape.com/e/8D977zoaDWsJzP/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33456, 1873, 8, CONCAT('Chef with Senpai'), '2017-08-30', 'https://streamtape.com/e/6PDkXDzoDbc9yW1/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33457, 1873, 9, CONCAT('Deadpool with Senpai'), '2017-09-06', 'https://streamtape.com/e/Dka688Q0jaIkgwA/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33458, 1873, 10, CONCAT('Battles Without Honor and Humanity with Senpai'), '2017-09-13', 'https://streamtape.com/e/GwmKgJqvKPc1GAe/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33459, 1873, 11, CONCAT('Dr. Dolittle with Senpai'), '2017-09-20', 'https://streamtape.com/e/6XyQr64BWrI991r/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33460, 1873, 12, CONCAT('The Sound of Music With Senpai'), '2017-09-27', 'https://streamtape.com/e/ZJgj9O7r6zhqeXk/');

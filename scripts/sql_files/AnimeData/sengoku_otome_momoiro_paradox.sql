@@ -1,0 +1,24 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1663, CONCAT('Sengoku Otome: Momoiro Paradox'), CONCAT('Yoshino Hide is an average girl who always seems to find trouble wherever she goes. One day Yoshino visits a local shrine to pray in order to pass her upcoming test. However, Yoshino sees a blue light coming from inside the Shrine and looks inside to find a mysterious person performing a magic spell. In a stroke of bad luck, Yoshino trips on a small bell and crashes into the shrine, prompting the stranger to catch her. Upon Yoshino', CHAR(39), 's capture, the magic spell spirals out of control and sends Yoshino back in time to the Sengoku Era.<br>
+<br>Yoshino then encounters Akechi Mitsuhide and Oda Nobunaga. But unlike what really happened during the era, Hideyoshino realizes that everyone in the world is female. She then decides to help Oda Nobunaga find the Crimson Armor which is said to allow the person wearing the armor to conquer all of Japan.'), 1, '2011-04-05', '2011-06-28', 'Spring 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/75231.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4117, 1663, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4118, 1663, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4119, 1663, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1789, 1663, 23);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1848, 1663, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1849, 1663, 20);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1850, 1663, 32);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1851, 1663, 29);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1852, 1663, 15);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30210, 1663, 1, CONCAT('A Maiden Teleported'), NULL, 'https://ebd.cda.pl/800x450/249736409');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30211, 1663, 2, CONCAT('A Confused Maiden'), NULL, 'https://ebd.cda.pl/800x450/249737929');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30212, 1663, 3, CONCAT('Sky Maiden'), NULL, 'https://ebd.cda.pl/800x450/24973947b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30213, 1663, 4, CONCAT('Confrontation Maiden'), NULL, 'https://ebd.cda.pl/800x450/2497415fd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30214, 1663, 5, CONCAT('Ghost Story Girl'), NULL, 'https://ebd.cda.pl/800x450/249743032');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30215, 1663, 6, CONCAT('Memory Maiden'), NULL, 'https://ebd.cda.pl/800x450/2497457af');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30216, 1663, 7, CONCAT('Drama Maiden'), NULL, 'https://ebd.cda.pl/800x450/249746692');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30217, 1663, 8, CONCAT('Fever Maiden'), NULL, 'https://ebd.cda.pl/800x450/2497478b9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30218, 1663, 9, CONCAT('Saigoku Maiden'), NULL, 'https://ebd.cda.pl/800x450/249748438');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30219, 1663, 10, CONCAT('Double Suicide Maiden'), NULL, 'https://ebd.cda.pl/800x450/24974930a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30220, 1663, 11, CONCAT('Thief Maiden'), NULL, 'https://ebd.cda.pl/800x450/2497499cd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30221, 1663, 12, CONCAT('Thief Maiden'), NULL, 'https://ebd.cda.pl/800x450/2497511b2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30222, 1663, 13, CONCAT('Sunlight Girls'), NULL, 'https://ebd.cda.pl/800x450/249752659');

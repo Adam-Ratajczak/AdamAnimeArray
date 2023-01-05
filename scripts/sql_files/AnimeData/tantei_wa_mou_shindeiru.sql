@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1858, CONCAT('Tantei wa Mou, Shindeiru.'), CONCAT('Kimihiko Kimizuka has found himself inadvertently entangled in various crimes more times than he can remember, referring to himself as a magnet for trouble. One day, as if it was nothing out of the ordinary, a group of unknown men kidnaps him, forcing him to board a flight—where he also encounters a hijacking. Amid the resulting chaos, however, Kimizuka meets a stunning silver-haired beauty, going by the codename Siesta, who then saves the day.<br>
+<br>Claiming to be a legendary detective, Siesta enlists Kimizuka to be her sidekick. Though Kimizuka refuses at first, with Siesta', CHAR(39), 's insistence, he eventually joins her—marking the start of a grand adventure spanning the entire world, preventing multiple threats that could spell doom for humanity along the way.<br>
+<br>Unfortunately, after three years of their unpredictable yet enjoyable time together, Siesta abruptly passes away. Distraught, Kimizuka tries to leave all memories of her behind, but as he begins to meet more people, it seems that Siesta', CHAR(39), 's influence will never truly die.<br>
+<br>[Written by MAL Rewrite]'), 1, '2021-07-04', '2021-09-19', 'Summer 2021', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1843/115815.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4601, 1858, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4602, 1858, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4603, 1858, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4604, 1858, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2012, 1858, 168);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33260, 1858, 1, CONCAT('Attention Passengers: Is There a Detective on Board?'), '2021-07-04', 'https://ebd.cda.pl/620x368/7863074fd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33261, 1858, 2, CONCAT('I Still Remember, After All This Time'), '2021-07-11', 'https://ebd.cda.pl/620x368/79280486f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33262, 1858, 3, CONCAT('That', CHAR(39), 's Yui-nya Quality'), '2021-07-18', 'https://ebd.cda.pl/620x368/798365928');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33263, 1858, 4, CONCAT('What I See in That Eye'), '2021-07-25', 'https://ebd.cda.pl/620x368/80397445a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33264, 1858, 5, CONCAT('That Was Directed at One Year in the Future'), '2021-08-01', 'https://ebd.cda.pl/620x368/80758613d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33265, 1858, 6, CONCAT('Crimson Devil, Ice Queen'), '2021-08-08', 'https://ebd.cda.pl/620x368/8121014a7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33266, 1858, 7, CONCAT('In Time, You', CHAR(39), 'll Recall This Day'), '2021-08-15', 'https://ebd.cda.pl/620x368/8163503b0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33267, 1858, 8, CONCAT('With That, We Set Out on a Journey Once Again'), '2021-08-22', 'https://ebd.cda.pl/620x368/821076816');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33268, 1858, 9, CONCAT('SPES'), '2021-08-29', 'https://ebd.cda.pl/620x368/826725860');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33269, 1858, 10, CONCAT('So I Can', CHAR(39), 't Become a Detective'), '2021-09-05', 'https://ebd.cda.pl/620x368/8311164e8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33270, 1858, 11, CONCAT('A Light in the Midst of Hope'), '2021-09-12', 'https://ebd.cda.pl/620x368/8388624e3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33271, 1858, 12, CONCAT('Those Dizzying Three Years I Spent with You'), '2021-09-19', 'https://ebd.cda.pl/620x368/8452398ac');

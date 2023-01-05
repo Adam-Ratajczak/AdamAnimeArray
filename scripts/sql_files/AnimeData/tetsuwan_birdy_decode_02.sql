@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1892, CONCAT('Tetsuwan Birdy Decode:02'), CONCAT('Following the Ryunka disaster, Tokyo is left in a period of social turmoil. To make matters worse, the group of aliens directly responsible for the catastrophic event have escaped from the Space Federation and are hiding on Earth.<br>
+<br>Still sharing a body, Space Federation officer Birdy Cephon Altera, and high schooler, Tsutomu Senkawa, are tasked with capturing the fugitives and bringing them to justice. However, an unexpected crisis develops when the outlaws become targets of an unknown assassin with a vendetta. Now Birdy must deal with the chaos of everyday life and also uncover the identity of the assassin before more escapees fall victim.<br>
+<br>[Written by MAL Rewrite]'), 1, '2009-01-10', '2009-03-28', 'Winter 2009', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/53907.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (787, 1892, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4689, 1892, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4690, 1892, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4691, 1892, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2047, 1892, 6);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33688, 1892, 1, CONCAT('After All'), '2009-01-10', 'https://www.facebook.com/video/embed?video_id=140918975983403');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33689, 1892, 2, CONCAT('Simple Twist of Fate'), '2009-01-17', 'https://www.facebook.com/video/embed?video_id=141027065972594');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33690, 1892, 3, CONCAT('Somewhere in Time'), '2009-01-24', 'https://vk.com/video_ext.php?oid=285102577&id=171402603&hash=7228dd2c16a6b384&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33691, 1892, 4, CONCAT('Tears Are Not Enough'), '2009-01-31', 'https://www.facebook.com/video/embed?video_id=141508675924433');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33692, 1892, 5, CONCAT('Before It', CHAR(39), 's Too Late'), '2009-02-07', 'https://vk.com/video_ext.php?oid=285102577&id=171401719&hash=0d52edd9d198572c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33693, 1892, 6, CONCAT('A Prisoner of the Past'), '2009-02-14', 'https://vk.com/video_ext.php?oid=285102577&id=171401724&hash=5aa79cc52fec21de');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33694, 1892, 7, CONCAT('We Will Meet Again'), '2009-02-21', 'https://vk.com/video_ext.php?oid=285102577&id=171401722&hash=89b7f9c143d5e673&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33695, 1892, 8, CONCAT('Falling in Love with Love'), '2009-02-28', 'https://vk.com/video_ext.php?oid=285102577&id=171401723&hash=0f1fcfc894910105');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33696, 1892, 9, CONCAT('Space, Time, and You'), '2009-03-07', 'https://vk.com/video_ext.php?oid=285102577&id=171401714&hash=9262180978e7a919');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33697, 1892, 10, CONCAT('It Never Entered My Mind'), '2009-03-14', 'https://vk.com/video_ext.php?oid=285102577&id=171401720&hash=4bac0c15f90aab9a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33698, 1892, 11, CONCAT('Both Sides Now'), '2009-03-21', 'https://vk.com/video_ext.php?oid=285102577&id=171401709&hash=f6012e0a1ca783ff&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33699, 1892, 12, CONCAT('Before Long'), '2009-03-28', 'https://vk.com/video_ext.php?oid=285102577&id=171401726&hash=1ac2922e9c90ea81');

@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (463, CONCAT('Dream Festival!'), CONCAT('Due to his cheerful personality and ability to smile even through a hard day', CHAR(39), 's work, Kanade Amamiya is suddenly scouted into the idol life by industry legend Haruto Mikami. He joins the agency D-4 Production where he meets fellow high schoolers Shin Oikawa, Junya Sasaki, Itsuki Katagiri, and Chizuru Sawamura, who all aspire to become idols. Inspired by their determination, Kanade embraces this new life. <br>
+<br>A perfect chance for his debut appears when they are grouped together to perform at the company', CHAR(39), 's Dream Festival. To rise to the top, they must collect Dorika—cards given by the audience that idols use to form their stage outfits—and gain the audience', CHAR(39), 's attention. However, the road to fame is a rocky one, and the boys must form a bond of friendship and trust before they can reach their goals.<br>
+<br>[Written by MAL Rewrite]'), 4, '2016-09-23', '2016-12-16', '', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/81713.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (516, 463, 86);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (498, 463, 36);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (499, 463, 6);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8437, 463, 1, CONCAT('The New Face That Plays Our Bonds!!'), NULL, 'https://embed.tune.pk/play/7741858');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8438, 463, 2, CONCAT('Shin Oikawa is an Amazing Guy!!'), NULL, 'https://embed.tune.pk/play/7744634');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8439, 463, 3, CONCAT('2032'), NULL, 'https://www.youtube.com/embed/6cON_Xd0Pkc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8440, 463, 4, CONCAT('A Unit of 3 is Born!!!'), NULL, 'https://www.youtube.com/embed/mT4rArL1bzc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8441, 463, 5, CONCAT('First Variety Show!!!'), NULL, 'https://www.youtube.com/embed/nMUhT4RaXJ4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8442, 463, 6, CONCAT('Chizuru and Yuzuru?!'), NULL, 'https://www.youtube.com/embed/4EuduOhWOzE');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8443, 463, 7, CONCAT('KUROFUNE Is Here!!'), NULL, 'https://www.youtube.com/embed/rK5j628eHQw');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8444, 463, 8, CONCAT('Itsuki', CHAR(39), 's Chosen Path'), NULL, 'https://www.youtube.com/embed/PDesTGXekj4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8445, 463, 9, CONCAT('DearDream', CHAR(39), 's Nationwide Tour!!!!!!'), NULL, 'https://ebd.cda.pl/620x368/430700665');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8446, 463, 10, CONCAT('A Journey of Dreams: Junya', CHAR(39), 's Decision'), NULL, 'https://vk.com/video363201967_456239027');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8447, 463, 11, CONCAT('The Feeling We Want to Hold High!!!!!'), NULL, 'https://vk.com/video363201967_456239029');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8448, 463, 12, CONCAT('The Door to Becoming Idols!!!!!'), NULL, 'https://vk.com/video363201967_456239034');

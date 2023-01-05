@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (300, CONCAT('Carnival Phantasm'), CONCAT('The Carnival Moment is a time when several narratives from Type-Moon', CHAR(39), 's famous works intersect. It happens every decade in an entirely new dimension, and those who have never run into each other can meet. And what', CHAR(39), 's more, all individuals involved gain the opportunity to fulfill any of their wishes! However, they will have to come a long way, as they will need to partake in contests.<br>
+<br>In Carnival Phantasm, various characters are put into situations that ridicule their own worlds. Nevertheless, they all have the same objective: to win the contests by any means necessary!<br>
+<br>[Written by MAL Rewrite]'), 3, '2011-08-14', '2011-12-31', '', '14 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1018/92921.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (689, 300, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (690, 300, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (337, 300, 49);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5187, 300, 1, CONCAT('The 5th Great Clash of the Magicians: The Holy Grail War'), '2011-08-12', 'https://drive.google.com/file/d/1J7Bbz8rkGesQZlGwoweootBhowojO73W/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5188, 300, 2, CONCAT('Badump! Melty Blood'), '2011-08-12', 'https://drive.google.com/file/d/1fowuJP_oRWQfdy4oPasyCj5LTP8uhw9W/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5189, 300, 3, CONCAT('It', CHAR(39), 's a Daydream Everywhere'), '2011-08-12', 'https://drive.google.com/file/d/1brksPeHG3xJGni3bY4CkRsg9BYGk_6Sm/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5190, 300, 4, CONCAT('Badump! Date Super Plan'), '2011-08-12', 'https://drive.google.com/file/d/1XzwazUyWOo58wKrJ43gIbBwatRm6_6M-/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5191, 300, 5, CONCAT('Berserker', CHAR(39), 's First Errand'), '2011-10-28', 'https://ebd.cda.pl/800x450/655631019');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5192, 300, 6, CONCAT('Type-Moon Serial TV Novel Sakura'), '2011-10-28', 'https://drive.google.com/file/d/1R_keguFs27FtzlL1M8CLr6lnIFl-12Ky/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5193, 300, 7, CONCAT('An Expert Gift'), '2011-10-28', 'https://drive.google.com/file/d/1Rjp-2zYbOZ6PhsFQR05eTIvYmqM5mSUB/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5194, 300, 8, CONCAT('Saber at Work'), '2011-10-28', 'https://ebd.cda.pl/800x450/655639763');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5195, 300, 9, CONCAT('Holy Grail Grand Prix'), '2011-12-31', 'https://ebd.cda.pl/800x450/6556466ee');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5196, 300, 10, CONCAT('Loli Reversion'), '2011-12-31', 'https://ebd.cda.pl/800x450/683818172');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5197, 300, 11, CONCAT('Final Dead Lancer'), '2011-12-31', 'https://ebd.cda.pl/800x450/683830113');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5198, 300, 12, CONCAT('Badump! Date Super Plan: Answer'), '2011-12-31', 'https://ebd.cda.pl/800x450/6838487e7');

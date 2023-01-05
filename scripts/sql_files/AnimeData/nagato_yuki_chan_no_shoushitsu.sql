@@ -1,0 +1,25 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1318, CONCAT('Nagato Yuki-chan no Shoushitsu'), CONCAT('In a familiar yet different universe, shy bookworm and gamer Yuki Nagato is the president of North High School', CHAR(39), 's Literary Club. Her friends, the overly-cautious Ryouko Asakura and completely average Kyon, are the only other members of the club. Nevertheless, Yuki enjoys the peace and quiet she shares with them, especially when she is with Kyon, whom she has a crush on. Added to the mix are Tsuruya and Mikuru Asahina, two friends with opposite personalities who frequently stop by the Literary Club.<br>
+<br>While walking back to her apartment on a cold December day, Yuki is coerced into drawing strange symbols on the ground by a girl supposedly attempting to capture Santa Claus. The girl introduces herself as Haruhi Suzumiya, an eccentric student from the prestigious Kouyouen Academy who is on the hunt for aliens, time travelers, and espers. When Haruhi and her friend Itsuki Koizumi make a sudden appearance in the clubroom, they declare themselves as official members of the Literary Club, with Haruhi taking up residence as the executive president.<br>
+<br>With the tranquil days of the Literary Club now behind them, Yuki and her friends get caught up in a series of misadventures under Haruhi', CHAR(39), 's leadership—with each incident bringing Yuki and Kyon closer than ever before.<br>
+<br>[Written by MAL Rewrite]'), 1, '2015-04-04', '2015-07-18', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/73527.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (571, 1318, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3265, 1318, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3266, 1318, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3267, 1318, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1423, 1318, 43);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22544, 1318, 1, CONCAT('Precious Place'), '2015-04-04', 'https://ebd.cda.pl/800x450/19869931c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22545, 1318, 2, CONCAT('Joy to the World'), '2015-04-11', 'https://ebd.cda.pl/800x450/1986996b4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22546, 1318, 3, CONCAT('Haruhi Suzumiya!!'), '2015-04-18', 'https://ebd.cda.pl/800x450/1987002b3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22547, 1318, 4, CONCAT('Be My Valentine'), '2015-04-25', 'https://ebd.cda.pl/800x450/198700575');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22548, 1318, 5, CONCAT('Her Melancholy'), '2015-05-02', 'https://ebd.cda.pl/800x450/19870080d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22549, 1318, 6, CONCAT('Over the Obento'), '2015-05-09', 'https://ebd.cda.pl/800x450/19870111d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22550, 1318, 7, CONCAT('Wish'), '2015-05-16', 'https://ebd.cda.pl/800x450/198701468');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22551, 1318, 8, CONCAT('The Plotting of Haruhi Suzumiya'), '2015-05-23', 'https://ebd.cda.pl/800x450/198701736');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22552, 1318, 9, CONCAT('Give Me Your Hand...'), '2015-05-30', 'https://ebd.cda.pl/800x450/1987023dd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22553, 1318, 10, CONCAT('Someday in the Rain'), '2015-06-06', 'https://ebd.cda.pl/800x450/198702648');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22554, 1318, 11, CONCAT('The Disappearance of Nagato Yuki-chan I'), '2015-06-13', 'https://ebd.cda.pl/800x450/1987029ab');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22555, 1318, 12, CONCAT('The Disappearance of Nagato Yuki-chan II'), '2015-06-20', 'https://ebd.cda.pl/800x450/198703265');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22556, 1318, 13, CONCAT('The Disappearance of Nagato Yuki-chan III'), '2015-06-27', 'https://ebd.cda.pl/800x450/198703512');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22557, 1318, 14, CONCAT('Her Confusion'), '2015-07-04', 'https://ebd.cda.pl/800x450/198703808');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22558, 1318, 15, CONCAT('His Uncertainty'), '2015-07-11', 'https://ebd.cda.pl/800x450/198704111');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22559, 1318, 16, CONCAT('Fireworks'), '2015-07-18', 'https://ebd.cda.pl/800x450/198704480');

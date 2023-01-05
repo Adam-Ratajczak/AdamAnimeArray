@@ -1,0 +1,45 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (400, CONCAT('Death Note'), CONCAT('Brutal murders, petty thefts, and senseless violence pollute the human world. In contrast, the realm of death gods is a humdrum, unchanging gambling den. The ingenious 17-year-old Japanese student Light Yagami and sadistic god of death Ryuk share one belief: their worlds are rotten.<br>
+<br>For his own amusement, Ryuk drops his "Death Note" into the human world. Light stumbles upon it, deeming the first of its rules ridiculous: the human whose name is written in this note shall die. However, the temptation is too great, and Light experiments by writing a felon', CHAR(39), 's name, which disturbingly enacts his first murder.<br>
+<br>Aware of the terrifying godlike power that has fallen into his hands, Light—under the alias "Kira"—follows his wicked sense of justice with the ultimate goal of cleansing the world of all evil-doers. The meticulous mastermind detective L is already on his trail, but as Light', CHAR(39), 's brilliance rivals L', CHAR(39), 's, the grand chase for Kira turns into an intense battle of wits that can only end when one of them is dead.<br>
+<br>[Written by MAL Rewrite]<br>'), 5, '2006-10-04', '2007-06-27', 'Fall 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/9453.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (179, 400, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (938, 400, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (939, 400, 5);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (448, 400, 21);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6856, 400, 1, CONCAT('Rebirth'), '2006-10-04', 'https://drive.google.com/file/d/1jTINGKhNMWT7fKs0p3JhC7bo5m0pTFEw/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6857, 400, 2, CONCAT('Confrontation'), '2006-10-11', 'https://drive.google.com/file/d/1G8HcAF3YrWGwxPHS-A7lVEXzyfRNEdl5/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6858, 400, 3, CONCAT('Dealings'), '2006-10-18', 'https://drive.google.com/file/d/1oy_iZkPAyaOAkLG-t5W8k274xWmtogxx/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6859, 400, 4, CONCAT('Pursuit'), '2006-10-25', 'https://drive.google.com/file/d/1ZwJwqaVkrRhNXReo4MjbEW90Gu-ExpFe/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6860, 400, 5, CONCAT('Tactics'), '2006-11-01', 'https://drive.google.com/file/d/1lOgmQP33n053gFqUoHob96fsZJfPH9h2/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6861, 400, 6, CONCAT('Unraveling'), '2006-11-08', 'https://drive.google.com/file/d/1zhxrxPi7Lfvy_NhNdcB3ExV3XN35ASI-/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6862, 400, 7, CONCAT('Overcast'), '2006-11-15', 'https://drive.google.com/file/d/1xhT64uR9KBXt1fjoX_MS8AmbDCK1Ocvb/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6863, 400, 8, CONCAT('Glare'), '2006-11-22', 'https://drive.google.com/file/d/1tApVHHlFOHh4KSsi3ECamGQot_o1ASyx/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6864, 400, 9, CONCAT('Encounter'), '2006-11-29', 'https://drive.google.com/file/d/1rxlkGotiH3a5XCWSGS2c6terCAn7CMaz/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6865, 400, 10, CONCAT('Doubt'), '2006-12-06', 'https://drive.google.com/file/d/1KmQ2Gu-qMk4jBDK2EiyuS5sKZppkB7Uo/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6866, 400, 11, CONCAT('Assault'), '2006-12-13', 'https://ebd.cda.pl/620x395/659703283');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6867, 400, 12, CONCAT('Love'), '2006-12-27', 'https://ebd.cda.pl/620x395/65970386d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6868, 400, 13, CONCAT('Confession'), '2007-01-10', 'https://ebd.cda.pl/620x395/6597041f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6869, 400, 14, CONCAT('Friend'), '2007-01-17', 'https://ebd.cda.pl/620x395/65970266a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6870, 400, 15, CONCAT('Wager'), '2007-01-24', 'https://ebd.cda.pl/620x395/65970473e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6871, 400, 16, CONCAT('Decision'), '2007-01-31', 'https://ebd.cda.pl/620x395/6597044bb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6872, 400, 17, CONCAT('Execution'), '2007-02-07', 'https://ebd.cda.pl/620x395/6597035fc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6873, 400, 18, CONCAT('Ally'), '2007-02-14', 'https://ebd.cda.pl/620x395/659705090');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6874, 400, 19, CONCAT('Matsuda'), '2007-02-21', 'https://ebd.cda.pl/620x395/6597053d9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6875, 400, 20, CONCAT('Makeshift'), '2007-02-28', 'https://ebd.cda.pl/620x395/6597056da');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6876, 400, 21, CONCAT('Performance'), '2007-03-07', 'https://ebd.cda.pl/620x395/65970656d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6877, 400, 22, CONCAT('Guidance'), '2007-03-14', 'https://ebd.cda.pl/620x395/6597059f8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6878, 400, 23, CONCAT('Frenzy'), '2007-03-21', 'https://ebd.cda.pl/620x395/6597071c9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6879, 400, 24, CONCAT('Revival'), '2007-03-28', 'https://ebd.cda.pl/620x395/6597110d6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6880, 400, 25, CONCAT('Silence'), '2007-04-04', 'https://ebd.cda.pl/620x395/6597074e2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6881, 400, 26, CONCAT('Renewal'), '2007-04-11', 'https://ebd.cda.pl/620x395/659706880');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6882, 400, 27, CONCAT('Abduction'), '2007-04-18', 'https://ebd.cda.pl/620x395/659707780');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6883, 400, 28, CONCAT('Impatience'), '2007-04-25', 'https://ebd.cda.pl/620x395/659711389');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6884, 400, 29, CONCAT('Father'), '2007-05-02', 'https://ebd.cda.pl/620x395/659708611');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6885, 400, 30, CONCAT('Justice'), '2007-05-09', 'https://ebd.cda.pl/620x395/659708056');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6886, 400, 31, CONCAT('Transfer'), '2007-05-16', 'https://ebd.cda.pl/620x395/6597089f2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6887, 400, 32, CONCAT('Selection'), '2007-05-23', 'https://ebd.cda.pl/620x395/659709284');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6888, 400, 33, CONCAT('Scorn'), '2007-05-30', 'https://ebd.cda.pl/620x395/65970986d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6889, 400, 34, CONCAT('Vigilance'), '2007-06-06', 'https://ebd.cda.pl/620x395/6597101ff');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6890, 400, 35, CONCAT('Malice'), '2007-06-13', 'https://ebd.cda.pl/620x395/6597116e2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6891, 400, 36, CONCAT('1.28 (January 28)'), '2007-06-20', 'https://ebd.cda.pl/620x395/65971049c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6892, 400, 37, CONCAT('New World'), '2007-06-27', 'https://ebd.cda.pl/620x395/659710778');

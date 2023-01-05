@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (146, CONCAT('Azur Lane: Bisoku Zenshin!'), CONCAT('In a seemingly peaceful time without looming threats of Sirens or war, shipgirls from different nations live together in harmony. Some girls, such as the destroyers Ayanami, Javelin, Laffey, and Z23, attend school. Others immerse themselves into various other activities, including sports, foraging, training, going to formal parties, or even vying for the commander', CHAR(39), 's attention! But one thing is for certain: the girls will continue to deepen their friendship in the pleasant port of Azur Lane!<br>
+<br>[Written by MAL Rewrite]'), 1, '2021-01-12', '2021-03-30', 'Winter 2021', '8 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1137/113872.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (333, 146, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (334, 146, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (335, 146, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (167, 146, 66);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (168, 146, 71);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (148, 146, 23);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (149, 146, 28);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (150, 146, 25);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2064, 146, 1, CONCAT('Port and Starboard, Slow Ahead!'), NULL, 'https://ebd.cda.pl/620x395/648842051');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2065, 146, 2, CONCAT('You Need Something Sweet After a Workout...'), NULL, 'https://ebd.cda.pl/620x395/6547145ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2066, 146, 3, CONCAT('Is Real Life a God Tier Game?'), NULL, 'https://drive.google.com/file/d/1GQExxiVv7tMN2CdiC1S87yAr5GtZT5tw/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2067, 146, 4, CONCAT('Beach Time Is Barbecue Time!'), NULL, 'https://ebd.cda.pl/620x395/6618803e4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2068, 146, 5, CONCAT('With Friends, With Someone Special'), NULL, 'https://ebd.cda.pl/620x395/6710900f6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2069, 146, 6, CONCAT('May I Have This Dance?'), NULL, 'https://ebd.cda.pl/620x395/682983543');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2070, 146, 7, CONCAT('Pay Close Attention to Keeping Things Neat and Tidy!'), NULL, 'https://ebd.cda.pl/620x395/686809314');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2071, 146, 8, CONCAT('Enjoying the Fair With Everyone!'), NULL, 'https://ebd.cda.pl/620x395/693498764');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2072, 146, 9, CONCAT('Maid, At Your Service!'), NULL, 'https://ebd.cda.pl/620x395/6954136db');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2073, 146, 10, CONCAT('Balmy, Hot, Dizzy...'), NULL, 'https://ebd.cda.pl/620x395/699904949');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2074, 146, 11, CONCAT('A Fun Amusement Park Outing?'), NULL, 'https://ebd.cda.pl/620x395/70605526b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2075, 146, 12, CONCAT('Friends Are Our Most Important Treasure'), NULL, 'https://ebd.cda.pl/620x395/7137952f8');

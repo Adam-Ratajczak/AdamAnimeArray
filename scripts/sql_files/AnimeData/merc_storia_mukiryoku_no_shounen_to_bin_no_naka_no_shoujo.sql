@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1249, CONCAT('Merc Storia: Mukiryoku no Shounen to Bin no Naka no Shoujo'), CONCAT('Merc Storia takes places in a world where humans and monsters coexist. The protagonist, Yuu, is a healer apprentice and possesses the ability to tame monsters. In a quest to regain the memories of Merc, a girl confined in a bottle, the pair embarks on a journey.<br>
+<br>(Source: MAL News)'), 1, '2018-10-11', '2018-12-27', 'Fall 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1394/95704.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3055, 1249, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3056, 1249, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3057, 1249, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1351, 1249, 114);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21397, 1249, 1, CONCAT('The Apathetic Boy and the Girl in a Bottle'), NULL, 'https://dood.watch/e/3qob0l10pcix');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21398, 1249, 2, CONCAT('The King of Dawn and the Imprisoned Bride'), NULL, 'https://www.yourupload.com/watch/24RiM3vT6v6y');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21399, 1249, 3, CONCAT('The Tomboy Fairy and the Spring-Eating Dragon (Part 1)'), NULL, 'https://vidstreaming.io/streaming.php?id=MTEwNzg2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21400, 1249, 4, CONCAT('The Tomboy Fairy and the Spring-Eating Dragon (Part 2)'), '2018-11-01', 'https://vidstreaming.io/streaming.php?id=MTEwOTEx');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21401, 1249, 5, CONCAT('The Red Star of Evil and the Brilliant Ruler of Superior Flame'), NULL, 'https://vidstreaming.io/streaming.php?id=MTExMDQ0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21402, 1249, 6, CONCAT('The Lord with You in Dreams and the Town of Oblivion (Part 1)'), NULL, 'https://vidstreaming.io/streaming.php?id=MTExMTYy');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21403, 1249, 7, CONCAT('The Lord with You in Dreams and the Town of Oblivion (Part 2)'), NULL, 'https://vidstreaming.io/streaming.php?id=MTExMjU2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21404, 1249, 8, CONCAT('The King of the Song Altar and the Diva in a Cage (Part 1)'), NULL, 'https://vidstreaming.io/streaming.php?id=MTExMzUx');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21405, 1249, 9, CONCAT('The King of the Song Altar and the Diva in a Cage (Part 2)'), NULL, 'https://vidstreaming.io/streaming.php?id=MTExNDYx');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21406, 1249, 10, CONCAT('The Angel Who Couldn', CHAR(39), 't Fly and the Holy Wings of Ten Thousand Prayers (Part 1)'), NULL, 'https://vidstreaming.io/streaming.php?id=MTExNjMy');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21407, 1249, 11, CONCAT('The Angel Who Couldn', CHAR(39), 't Fly and the Holy Wings of Ten Thousand Prayers (Part 2)'), NULL, 'https://vidstreaming.io/streaming.php?id=MTExODM3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21408, 1249, 12, CONCAT('The Healer and the Friend in the Bottle'), NULL, 'https://vidstreaming.io/streaming.php?id=MTEyMTE4');

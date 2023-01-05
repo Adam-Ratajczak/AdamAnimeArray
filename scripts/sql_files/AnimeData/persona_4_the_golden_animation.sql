@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1456, CONCAT('Persona 4 the Golden Animation'), CONCAT('Spring. Far from the city, time flows peacefully in this rural town. As the cherry blossoms scatter in the wind, a young man named Yu Narukami steps off the train at Yasoinaba Station. Yu has come to this town, where his uncle lives, for family reasons he will be transferring into the local high school, Yasogami High. And so begins his school life... The shopping mall after school. A series of murders taking place in town. The Midnight Channel, airing late at night.... What lies in store for Yu and his friends ‘this time around?<br>
+<br>(Source: Aniplex USA)'), 1, '2014-07-11', '2014-09-26', 'Summer 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/63251.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3609, 1456, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3610, 1456, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3611, 1456, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3612, 1456, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1563, 1456, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1604, 1456, 13);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1605, 1456, 29);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26168, 1456, 1, CONCAT('The Golden Days'), NULL, 'https://ebd.cda.pl/620x395/65991412c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26169, 1456, 2, CONCAT('The Perfect Plan'), NULL, 'https://ebd.cda.pl/800x450/659918068');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26170, 1456, 3, CONCAT('I have amnesia, is it so bad?'), NULL, 'https://ebd.cda.pl/800x450/6599183da');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26171, 1456, 4, CONCAT('The Mayonaka Ohdan Miracle Quiz!'), NULL, 'https://ebd.cda.pl/800x450/6599168c6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26172, 1456, 5, CONCAT('Let', CHAR(39), 's go get it! Get Pumped!'), NULL, 'https://ebd.cda.pl/620x395/659913234');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26173, 1456, 6, CONCAT('See? I told you Yu.'), NULL, 'https://ebd.cda.pl/800x450/6599177a3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26174, 1456, 7, CONCAT('It', CHAR(39), 's cliché, so what?'), NULL, 'https://ebd.cda.pl/800x450/659915099');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26175, 1456, 8, CONCAT('Not So Holy Christmas Eve'), NULL, 'https://ebd.cda.pl/800x450/659915394');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26176, 1456, 9, CONCAT('A missing piece'), NULL, 'https://ebd.cda.pl/800x450/659915616');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26177, 1456, 10, CONCAT('Not a friend anymore'), NULL, 'https://ebd.cda.pl/800x450/65991599e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26178, 1456, 11, CONCAT('Let it OUT! Let it GO!'), NULL, 'https://ebd.cda.pl/800x450/6599165df');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26179, 1456, 12, CONCAT('Welcome Home'), NULL, 'https://ebd.cda.pl/620x395/6599162de');

@@ -1,0 +1,28 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (741, CONCAT('Hetalia: The Beautiful World'), CONCAT('Few people wonder what occurs between warring nations when they are not fighting each other. In Hetalia, the countries find themselves outside of their usual setting: working together in a school newspaper club, reminiscing about former historical figures, and searching for Santa Claus? With the potential for comedic calamity always around the corner, there is no predicting what exactly these adventures entail!<br>
+<br>[Written by MAL Rewrite]'), 1, '2013-01-25', '2013-06-21', '', '5 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/46073.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1814, 741, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1815, 741, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1816, 741, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (818, 741, 137);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (792, 741, 8);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (793, 741, 4);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13409, 741, 1, CONCAT('Each Battlefield'), '2013-01-25', 'https://video.sibnet.ru/shell.php?videoid=1234149');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13410, 741, 2, CONCAT('Gakuen Hetalia: Go Forth! Newspaper Club!! First Half'), '2013-02-01', 'https://www.dailymotion.com/embed/video/x138t6y?hideInfos=1&forcedQuality=hd720&logo=1&animatedTitle=Dla%20Shinden.pl%7C%7C');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13411, 741, 3, CONCAT('Gakuen Hetalia: Go Forth! Newspaper Club!! Second Half'), '2013-02-08', 'https://www.dailymotion.com/embed/video/x6uo3co?hideInfos=1&forcedQuality=hd720&logo=1&animatedTitle=Dla%20Shinden.pl%7C%7C');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13412, 741, 4, CONCAT('Russia and Friends'), '2013-02-15', 'https://drive.google.com/file/d/0B0o7ms5GSTFtcVE0UzNveUhTZlE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13413, 741, 5, CONCAT('Though I May Depart, You Shall Remain'), '2013-02-22', 'https://www.youtube.com/embed/uVYEWS5nZD4&ab_channel=CannieUwU');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13414, 741, 6, CONCAT('Romano', CHAR(39), 's Diary'), '2013-03-01', 'https://www.youtube.com/embed/fpx2XsAG_cQ');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13415, 741, 7, CONCAT('Things that Often Happen When Rooming with an American'), '2013-03-08', 'https://www.youtube.com/embed/LneagiTSYfQ');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13416, 741, 8, CONCAT('The Gentle Fight Between Russia and I'), '2013-03-15', 'https://www.youtube.com/embed/DCMxT6gjx6Q');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13417, 741, 9, CONCAT('At Netherlands'), '2013-03-22', 'https://www.youtube.com/embed/TKM98ZfB5Hs');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13418, 741, 10, CONCAT('Turkey!'), '2013-03-29', 'https://www.youtube.com/embed/ZlE_7mprjXc&t=5s&ab_channel=CannieUwU');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13419, 741, 11, CONCAT('Our Failure'), '2013-04-05', 'https://www.youtube.com/embed/b_Keu8g30WY&ab_channel=CannieUwU');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13420, 741, 12, CONCAT('Merry Halloween!'), '2013-04-12', 'https://www.youtube.com/embed/RNLdSArJYzg&ab_channel=CannieUwU');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13421, 741, 13, CONCAT('Finding Santa'), '2013-04-19', 'https://www.youtube.com/embed/LNdMuJ1zizM');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13422, 741, 14, CONCAT('Brother, we are...!!'), '2013-05-10', 'https://www.youtube.com/embed/mhyc6-mhKR4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13423, 741, 15, CONCAT('A bientôt! Until We Meet Again!'), '2013-05-17', 'https://www.youtube.com/embed/g11IVS_bLG8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13424, 741, 16, CONCAT('What Italy Forgot'), '2013-05-24', 'https://www.youtube.com/embed/7NYmAduSTLk');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13425, 741, 17, CONCAT('Hetalia of the Dead: First Part'), '2013-05-31', 'https://www.youtube.com/embed/XkZVt9kqf9I');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13426, 741, 18, CONCAT('Hetalia of the Dead: Second Part'), '2013-06-07', 'https://www.youtube.com/embed/CaB-0-zWbSg');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13427, 741, 19, CONCAT('Keep on moving!! March Forward, Sealand!'), '2013-06-14', 'https://www.youtube.com/embed/v3ENqq4hWb8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13428, 741, 20, CONCAT('It', CHAR(39), 's the First Anniversary! The Tripartite Pact'), '2013-06-21', 'https://www.youtube.com/embed/j8Y_dB-9_QM');

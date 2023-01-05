@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1616, CONCAT('Sasameki Koto'), CONCAT('Murasame Sumika is popular in the high school for her excellence in the marks and sports. However, she has a secret: she is in love with her classmate Kazama Ushio. Ushio also has a liking to the love between girls, but she hasn', CHAR(39), 't noticed Sumika', CHAR(39), 's feelings and has always been refused by other girls.'), 1, '2009-10-08', '2009-12-31', 'Fall 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/75225.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4023, 1616, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4024, 1616, 16);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4025, 1616, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1739, 1616, 18);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29530, 1616, 1, CONCAT('Whispered Words'), '2009-10-08', 'https://ebd.cda.pl/800x450/4073644a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29531, 1616, 2, CONCAT('Cute People'), '2009-10-15', 'https://ebd.cda.pl/800x450/40738186d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29532, 1616, 3, CONCAT('First Kiss'), '2009-10-22', 'https://ebd.cda.pl/800x450/4076044e9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29533, 1616, 4, CONCAT('4+1'), '2009-10-29', 'https://ebd.cda.pl/800x450/407700728');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29534, 1616, 5, CONCAT('Friends'), '2009-11-05', 'https://ebd.cda.pl/800x450/407911965');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29535, 1616, 6, CONCAT('The Couple', CHAR(39), 's Night'), '2009-11-12', 'https://ebd.cda.pl/800x450/408736044');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29536, 1616, 7, CONCAT('Boys and Girls'), '2009-11-19', 'https://ebd.cda.pl/800x450/4088668c6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29537, 1616, 8, CONCAT('Ripple'), '2009-11-26', 'https://ebd.cda.pl/800x450/40894367d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29538, 1616, 9, CONCAT('Like a Sunflower'), '2009-12-03', 'https://ebd.cda.pl/800x450/6565166cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29539, 1616, 10, CONCAT('A Happening in Summer'), '2009-12-10', 'https://ebd.cda.pl/800x450/7277185ce');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29540, 1616, 11, CONCAT('It', CHAR(39), 's Nothing'), '2009-12-17', 'https://ebd.cda.pl/800x450/7610666f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29541, 1616, 12, CONCAT('Did You See the Rain?'), '2009-12-24', 'https://ebd.cda.pl/800x450/76324595b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29542, 1616, 13, CONCAT('Calling You'), '2009-12-31', 'https://ebd.cda.pl/800x450/763489854');

@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1779, CONCAT('Sora no Method'), CONCAT('A group of friends—Nonoka Komiya, Koharu Shiihara, Shione Togawa, and twins Yuzuki and Souta Mizusaka—once attempted to summon a flying saucer to grant their wishes. After thinking that they failed, they called it a day. However, soon afterward, Nonoka abruptly moved out of Kiriya City, breaking the bond of their circle. Little did the group know, they were successful and the saucer has been floating in the sky since then, waiting to fulfill its purpose.<br>
+<br>Seven years later, Nonoka returns to Kiriya, all but forgetting everything regarding her life there. She meets Noel, a little girl wearing strange clothes, and through her, Nonoka begins to remember the past and the friends she left behind. From there, she strives to reforge her severed relationship with the others as she uncovers the mysteries connecting Noel, the saucer, and the wishes they once cherished together.<br>
+<br>[Written by MAL Rewrite]'), 1, '2014-10-05', '2014-12-28', 'Fall 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/62485.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4414, 1779, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4415, 1779, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4416, 1779, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1923, 1779, 134);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32035, 1779, 1, CONCAT('Saucer City'), '2014-10-05', 'https://drive.google.com/file/d/1qLy-3EtCIinpjLh06xacFK9gU1NW4rqf/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32036, 1779, 2, CONCAT('Their Promise'), '2014-10-12', 'https://drive.google.com/file/d/1whRNtjMZNrgP89GYH3xoNg7_1-8zekcO/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32037, 1779, 3, CONCAT('Where Memories Live'), '2014-10-19', 'https://ebd.cda.pl/620x395/6177827fd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32038, 1779, 4, CONCAT('A Fragment of Emotions'), '2014-10-26', 'https://ebd.cda.pl/620x395/6177830d6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32039, 1779, 5, CONCAT('Flower of Light'), '2014-11-02', 'https://ebd.cda.pl/620x395/617783689');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32040, 1779, 6, CONCAT('True Friends'), '2014-11-09', 'https://ebd.cda.pl/620x395/61778125b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32041, 1779, 7, CONCAT('What I Lost'), '2014-11-16', 'https://ebd.cda.pl/620x395/617780959');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32042, 1779, 8, CONCAT('What She Believes'), '2014-11-23', 'https://ebd.cda.pl/620x395/61778032a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32043, 1779, 9, CONCAT('The Meaning of Goodbye'), '2014-11-30', 'https://ebd.cda.pl/620x395/617780691');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32044, 1779, 10, CONCAT('Where Wishes Go'), '2014-12-07', 'https://ebd.cda.pl/620x395/617780014');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32045, 1779, 11, CONCAT('Night of the Meteor Shower'), '2014-12-14', 'https://ebd.cda.pl/620x395/61778150e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32046, 1779, 12, CONCAT('Saucerless City'), '2014-12-21', 'https://ebd.cda.pl/620x395/617783312');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32047, 1779, 13, CONCAT('From the Starting Sky'), '2014-12-28', 'https://ebd.cda.pl/800x450/61778210d');

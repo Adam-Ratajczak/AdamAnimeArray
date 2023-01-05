@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (731, CONCAT('Heike Monogatari'), CONCAT('The Taira clan, also known as the Heike, holds immense authority over Japan. When a young girl, gifted with an odd eye that allows her to see the future, foolishly disrespects the clan, her father pays the price of her crime with his life. Soon after, as fate would have it, Taira no Shigemori—the eldest son of the clan leader—stumbles upon the same unfortunate girl, who now calls herself "Biwa." Biwa informs him that the downfall of the Heike is imminent. After learning of the great injustice Biwa suffered at the Heike', CHAR(39), 's hands, Shigemori vows to take her in and care for her rather than let her be killed.<br>
+<br>In an era of rising military tension, the Heike are in the midst of a cunning struggle for power, and bloodstained war is on the horizon. Shigemori, whose eyes allow him to see spirits of the dead, is both anxious and hopeful to prevent his clan', CHAR(39), 's demise. Biwa, however, is reluctant to reveal the future to him and must adapt to her new life filled with both happiness and sorrow in this pivotal chapter in Japanese history.<br>
+<br>[Written by MAL Rewrite]'), 1, '2021-09-16', '2021-11-25', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1282/119979.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1791, 731, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1792, 731, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1793, 731, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1794, 731, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (805, 731, 7);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13251, 731, 1, CONCAT('If You Don', CHAR(39), 't Belong to the Heike, You Won', CHAR(39), 't Be a Person'), '2021-09-16', 'https://ebd.cda.pl/620x368/8417799c4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13252, 731, 2, CONCAT('The Glory of the Corrupt World is a Dream in a Dream'), '2021-09-23', 'https://ebd.cda.pl/620x368/848515519');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13253, 731, 3, CONCAT('Shishigatani Incident'), '2021-09-30', 'https://ebd.cda.pl/620x368/8664741cc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13254, 731, 4, CONCAT('Unwritten Affair'), '2021-10-07', 'https://ebd.cda.pl/620x395/87345902f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13255, 731, 5, CONCAT('Bridge Battle'), '2021-10-14', 'https://ebd.cda.pl/620x395/8852466d1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13256, 731, 6, CONCAT('City Transition'), '2021-10-21', 'https://ebd.cda.pl/620x395/8858199a1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13257, 731, 7, CONCAT('Kiyomori, Dies'), '2021-10-28', 'https://ebd.cda.pl/620x368/8927679e4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13258, 731, 8, CONCAT('Leaving the Capital'), '2021-11-04', 'https://ebd.cda.pl/620x368/900137776');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13259, 731, 9, CONCAT('Heike Flowing'), '2021-11-11', 'https://ebd.cda.pl/620x368/90767192b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13260, 731, 10, CONCAT('Dan-no-ura'), '2021-11-18', 'https://ebd.cda.pl/620x368/9116586c8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13261, 731, 11, CONCAT('The Impermanence of Worldly Things'), '2021-11-25', 'https://ebd.cda.pl/800x450/917489139');

@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1995, CONCAT('Urawa no Usagi-chan'), CONCAT('An original anime advertising Urawa City in Saitama, Japan.'), 1, '2015-04-10', '2015-06-26', 'Spring 2015', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/86398.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2165, 1995, 75);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2166, 1995, 38);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2205, 1995, 28);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2206, 1995, 8);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2207, 1995, 17);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35247, 1995, 1, CONCAT('May Today Be Another Good Day'), NULL, 'https://drive.google.com/file/d/0BzfWf5_J7ivTZDY3WElQdjl5dUE/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35248, 1995, 2, CONCAT('Let', CHAR(39), 's go to Club!'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1769656');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35249, 1995, 3, CONCAT('Today, Around the Time the Wind Speaks'), NULL, 'https://drive.google.com/file/d/0B9x5eo1ro_r9SGU5WlU1MjUzTVk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35250, 1995, 4, CONCAT('Urawa', CHAR(39), 's Reckless Angel, Numakage Saiko Appears!'), NULL, 'https://drive.google.com/file/d/0B9x5eo1ro_r9X3pGUEQyNmkxS0k/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35251, 1995, 5, CONCAT('Life is a Cycle of Indecision'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1780292');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35252, 1995, 6, CONCAT('Ninja Girl Identity'), NULL, 'https://video.sibnet.ru/shell.php?videoid=1784631');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35253, 1995, 7, CONCAT('The Time for Formal Marriage Interviews Comes Suddenly'), NULL, 'https://drive.google.com/file/d/0B5y_EJCfl9Ixd3A3Q1RqNnhYTm8/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35254, 1995, 8, CONCAT('Battle! Student Council VS Railways Club Part One'), NULL, 'https://drive.google.com/file/d/0B42o78fjacd-ckNoV1FKUGFoVmc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35255, 1995, 9, CONCAT('Battle! Quiz Saitamania'), NULL, 'https://drive.google.com/file/d/0B42o78fjacd-OWYtQnh5c0Y1Y0k/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35256, 1995, 10, CONCAT('Let', CHAR(39), 's Use Our Lockers Carefully'), NULL, 'https://drive.google.com/file/d/0B42o78fjacd-S3JESUs4TU5GM2M/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35257, 1995, 11, CONCAT('If I Retort, I Lose!'), NULL, 'https://drive.google.com/file/d/0B42o78fjacd-YnJTYTNibVNXVFk/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35258, 1995, 12, CONCAT('May Tomorrow Be Another Good Day'), NULL, 'https://drive.google.com/file/d/0B42o78fjacd-UmRCaVhvd3J6d0E/preview');

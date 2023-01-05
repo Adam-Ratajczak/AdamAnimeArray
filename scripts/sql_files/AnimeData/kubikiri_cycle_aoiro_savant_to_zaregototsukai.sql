@@ -1,0 +1,15 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1087, CONCAT('Kubikiri Cycle: Aoiro Savant to Zaregototsukai'), CONCAT('Due to a mysterious disease, the genius Iria Akagami has been forced by her family to stay in a mansion on the isolated Wet Crow', CHAR(39), 's Feather Island with only a handful of maids. To keep herself entertained, Iria invites a variety of fellow geniuses to stay as guests in her home, including computer savant Tomo Kunagisa and her unnamed assistant, skilled fortune-teller Maki Himena, famous artist Kanami Ibuki, academic scholar Akane Sonoyama, and renowned cook Yayoi Sashirono.<br>
+<br>These visits progress as normal until one of the guests is found gruesomely murdered in the night without a single clue as to the identity of the killer or a possible motive. Tensions rise between those on the island as the killer remains at large, and Tomo', CHAR(39), 's assistant takes it upon himself to uncover the culprit', CHAR(39), 's identity before the murderous events progress any further.<br>
+<br>[Written by MAL Rewrite]'), 3, '2016-10-26', '2017-09-27', '', '30 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/81588.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2644, 1087, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2645, 1087, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2646, 1087, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1180, 1087, 7);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18676, 1087, 1, CONCAT('Day 3 (1) The Savant Gathering'), '2016-10-26', 'https://streamtape.com/e/BLV2yjrv61HyeQG/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18677, 1087, 2, CONCAT('Day 3 (2) Assembly and Arithmetic'), '2016-11-30', 'https://tune.pk/video/7032525');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18678, 1087, 3, CONCAT('Day 4 (1) Beheading 1'), '2017-01-25', 'https://streamtape.com/e/8BLlQ6Wr8VFopvJ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18679, 1087, 4, CONCAT('Day 4 (2) The 0.14 Tragedy'), '2017-02-22', 'https://streamtape.com/e/p4vPj8wLalIr8Lx/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18680, 1087, 5, CONCAT('Day 5 (1) Beheading 2'), '2017-03-29', 'https://streamtape.com/e/A2WYyOpZpzhXXqD/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18681, 1087, 6, CONCAT('Day 5 (2) Lies'), '2017-05-31', 'https://streamtape.com/e/YpykrJ0qDzIvloD/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18682, 1087, 7, CONCAT('Episode 7'), '2017-08-30', 'https://tune.pk/video/7356549');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18683, 1087, 8, CONCAT('Episode 8'), '2017-09-27', 'https://streamtape.com/e/ZK6bQQedAocRJj/');

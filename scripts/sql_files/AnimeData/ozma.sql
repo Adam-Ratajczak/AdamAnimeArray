@@ -1,0 +1,12 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1446, CONCAT('Ozma'), CONCAT('In the far future, the elevated irradiation from the sun has destroyed the environment of the earth and the birthrate of humans has drastically decreased. The government controls society with an army of cloned soldiers called "Ideal Children (IC)". Sam Coyne is a trader in a desert. One day, he saves a beautiful woman Maya, who has been chased by Theseus, a corps of IC. He shelters her in his trade ship, but the destroyers of Theseus surround Sam and Maya.'), 1, '2012-03-17', '2012-04-21', 'Spring 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/35573.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3585, 1446, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3586, 1446, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3587, 1446, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1553, 1446, 5);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1554, 1446, 80);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26027, 1446, 1, CONCAT('The Sand Whale'), '2012-03-17', 'https://ebd.cda.pl/620x395/6401192ec');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26028, 1446, 2, CONCAT('Diving Limit'), '2012-03-24', 'https://ebd.cda.pl/620x395/640119529');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26029, 1446, 3, CONCAT('A Thousand Years of Doubt'), '2012-03-31', 'https://ebd.cda.pl/620x395/64012371e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26030, 1446, 4, CONCAT('To the Ends of the Earth'), '2012-04-07', 'https://ebd.cda.pl/620x395/640133924');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26031, 1446, 5, CONCAT('The Masked Man'), '2012-04-14', 'https://ebd.cda.pl/620x395/64013692e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26032, 1446, 6, CONCAT('The Day of a New Life'), '2012-04-21', 'https://ebd.cda.pl/620x395/640139022');

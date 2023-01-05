@@ -1,0 +1,16 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1748, CONCAT('Show By Rock!! Short!!'), CONCAT('Happy-go-lucky short stories of daily lives of the band members of Plasmagica and ShinganCrimsonZ.'), 2, '2016-07-05', '2016-09-20', 'Summer 2016', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/78322.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4330, 1748, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4331, 1748, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1888, 1748, 104);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31419, 1748, 1, CONCAT('Tokiko', CHAR(39), 's R-R-R-Room (Plasmagica)'), '2016-07-05', 'https://www.mp4upload.com/embed-5jdnbnxhn5ee.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31420, 1748, 2, CONCAT('Fire Away! Putting Our Crimson Flame Into a White Ball... (etc.)'), '2016-07-12', 'https://embed.tune.pk/play/6619286');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31421, 1748, 3, CONCAT('Tokiko', CHAR(39), 's R-R-R-Room♡ (Criticrista)'), '2016-07-19', 'https://embed.tune.pk/play/6619287');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31422, 1748, 4, CONCAT('The Friends of Bamboo Island'), '2016-07-26', 'https://vidstreaming.io/streaming.php?id=NzMxMTg');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31423, 1748, 5, CONCAT('Tokiko', CHAR(39), 's R-R-R-Room♡ (Trichronika)'), '2016-08-02', 'https://mp4upload.com/embed-wcjaqnsqae7z.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31424, 1748, 6, CONCAT('A Fateful Encounter'), '2016-08-09', 'https://mp4upload.com/embed-bw9d9crqnnqt.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31425, 1748, 7, CONCAT('Tokiko', CHAR(39), 's R-R-R-Room (Shingan Crimsonz)'), '2016-08-16', 'https://vidstreaming.io/streaming.php?id=NzQwMDg');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31426, 1748, 8, CONCAT('Spa Resort Midicians Commercial Making-Of♥'), '2016-08-23', 'https://www.mp4upload.com/embed-6jz984upgm9v.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31427, 1748, 9, CONCAT('Shu☆zo', CHAR(39), 's Dream Galaxy ☆ Absoluteley ☆ Dance Studio'), '2016-08-30', 'https://vidstreaming.io/streaming.php?id=NzQ3ODk');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31428, 1748, 10, CONCAT('Tokiko', CHAR(39), 's R-R-R-Room (Tsurezurenaru Ayatsuri Mugenan)'), '2016-09-06', 'https://vidstreaming.io/streaming.php?id=NzUwMDE');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31429, 1748, 11, CONCAT('St. Midi Girls', CHAR(39), ' Academy Middle School', CHAR(39), 's Special Lecture on Coyness'), '2016-09-13', 'https://vidstreaming.io/streaming.php?id=NzU0ODY');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (31430, 1748, 12, CONCAT('MIDI-BOP Graffiti High School'), '2016-09-20', 'https://mp4upload.com/embed-k9ooxw9lwtf2.html');

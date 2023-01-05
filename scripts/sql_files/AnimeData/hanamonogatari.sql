@@ -1,0 +1,13 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (704, CONCAT('Hanamonogatari'), CONCAT('Now that Koyomi Araragi and Hitagi Senjougahara have graduated, very few familiar faces remain at Naoetsu Private High School. One of these is Suruga Kanbaru, holder of the Monkey', CHAR(39), 's Paw. When she begins to hear talk of a mysterious being known as the "Devil" who will magically solve any problem, Kanbaru immediately thinks these rumors are about her and decides to investigate.<br>
+<br>She discovers the Devil is actually Rouka Numachi, a former basketball rival from junior high who is no longer able to play due to a leg injury. Rouka provides free advice to those who seek her out. Acting as a collector of misfortune, she enjoys relieving the stress of her clients by providing them with the false hope of having their problems solved. Although Kanbaru sees no real harm being done, she reprimands Rouka for lying and heads home, relieved she is not the cause of the rumors. But she may have a reason to worry after all: she finds that her left hand has reverted back to its human form.<br>
+<br>[Written by MAL Rewrite]'), 1, '2014-08-16', NULL, 'Summer 2014', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/65755.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1729, 704, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1730, 704, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1731, 704, 10);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1732, 704, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (778, 704, 7);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12720, 704, 1, CONCAT('Suruga Devil, Part One'), '2014-08-16', 'https://ebd.cda.pl/620x395/628317836');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12721, 704, 2, CONCAT('Suruga Devil, Part Two'), '2014-08-16', 'https://ebd.cda.pl/620x395/6283187c6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12722, 704, 3, CONCAT('Suruga Devil, Part Three'), '2014-08-16', 'https://ebd.cda.pl/620x395/628317522');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12723, 704, 4, CONCAT('Suruga Devil, Part Four'), '2014-08-16', 'https://ebd.cda.pl/620x395/628318154');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (12724, 704, 5, CONCAT('Suruga Devil, Part Five'), '2014-08-16', 'https://ebd.cda.pl/620x395/628317284');

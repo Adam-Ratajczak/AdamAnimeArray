@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2025, CONCAT('Walkure Romanze'), CONCAT('Taking place at Winford Academy located in an old town called Helen', CHAR(39), 's Hill, the story is all about knights and the sport of jousting. At this school, students learn how to become knights, ride horses and joust properly. The main character is a young man named Takahiro Mizuno who was training to become a knight and jouster but after suffering an injury he dropped out of the knight program and joined the begleiter (assistant) program instead. Due to his animal handling skills and former experience as a jouster, this makes him a hot commodity. Multiple beautiful girls in the school want him to become their personal begleiter, though Takahiro always refuses their offers.<br>
+<br>One day a bizarre accident causes his friend, Mio Kisaski, to be challenged to a jousting duel despite her not actually being a knight. Takahiro agrees to become her temporary begleiter, but that ends up only being the beginning of their partnership as she enrolls in the annual tournament. '), 1, '2013-10-07', '2013-12-23', 'Fall 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/54969.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5045, 2025, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5046, 2025, 19);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5047, 2025, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2197, 2025, 90);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2247, 2025, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2248, 2025, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35607, 2025, 1, CONCAT('The Flower Garden'), NULL, 'https://drive.google.com/file/d/0B8dxS7-Bdpk8RDM4d2hBV0JUN2c/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35608, 2025, 2, CONCAT('Sakura', CHAR(39), 's Trial'), NULL, 'https://ebd.cda.pl/800x450/374419628');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35609, 2025, 3, CONCAT('The Morning of the Duel'), NULL, 'https://drive.google.com/file/d/0B_3kG9ENKEEaSVpMbG96UTlLdmc/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35610, 2025, 4, CONCAT('What It Takes to Be a Knight'), NULL, 'https://ebd.cda.pl/800x450/145308807');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35611, 2025, 5, CONCAT('Girls Without Their Armor'), NULL, 'https://ebd.cda.pl/800x450/3744208ab');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35612, 2025, 6, CONCAT('Time Off in Helen', CHAR(39), 's Hill'), NULL, 'https://ebd.cda.pl/800x450/14544394c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35613, 2025, 7, CONCAT('Under the Windmill'), NULL, 'https://ebd.cda.pl/800x450/146132791');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35614, 2025, 8, CONCAT('I Wish Upon a Shooting Star'), NULL, 'https://ebd.cda.pl/800x450/3744217d1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35615, 2025, 9, CONCAT('The Maidens', CHAR(39), ' Festival'), NULL, 'https://ebd.cda.pl/800x450/3744220ce');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35616, 2025, 10, CONCAT('Clash'), NULL, 'https://drive.google.com/file/d/0B_3kG9ENKEEaVmVSbDNLaFlYWms/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35617, 2025, 11, CONCAT('Where Victory Lies'), NULL, 'https://ebd.cda.pl/800x450/1469927a2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35618, 2025, 12, CONCAT('When Summer Ends'), NULL, 'https://ebd.cda.pl/800x450/37442387c');

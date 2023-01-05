@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1022, CONCAT('Kimi to Boku.'), CONCAT('Four childhood friends are in their second year at Homare High School: kind and cheerful Shun Matsuoka, hot-tempered Kaname Tsukahara, and the Asaba twins, gentle Yuuta and lazy Yuuki. When a dynamic transfer student, Chizuru Tachibana, joins their group, the friends get caught up in his creative yet troublesome ideas that end up bringing excitement to their everyday lives. With new encounters and experiences, they begin to learn more about each other and themselves.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2011-10-04', '2011-12-27', 'Fall 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/34949.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (459, 1022, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2484, 1022, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2485, 1022, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2486, 1022, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1111, 1022, 2);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17721, 1022, 1, CONCAT('In Our 17th Spring'), '2011-10-04', 'https://drive.google.com/file/d/1JqaIW9gEbT8NLuKcsfqvi4xDFMYeYBDd/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17722, 1022, 2, CONCAT('The Day the Tulips Bloomed'), '2011-10-11', 'https://ebd.cda.pl/620x395/58104445d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17723, 1022, 3, CONCAT('The Boy With The Straw-Colored Hair'), '2011-10-18', 'https://ebd.cda.pl/620x395/581045912');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17724, 1022, 4, CONCAT('Noisy Medicine'), NULL, 'https://ebd.cda.pl/620x395/5810450a4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17725, 1022, 5, CONCAT('One Summer'), NULL, 'https://ebd.cda.pl/620x395/5810456a0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17726, 1022, 6, CONCAT('Glasses and Et Cetera'), NULL, 'https://drive.google.com/file/d/1GXxlOXMmYwtwmP9kkNAPYytKLFZ7oWFr/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17727, 1022, 7, CONCAT('Next to an Apple'), NULL, 'https://ebd.cda.pl/620x395/58104477e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17728, 1022, 8, CONCAT('Daily Wage Hero/Senpai and Me'), NULL, 'https://ebd.cda.pl/620x395/5810462dc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17729, 1022, 9, CONCAT('Naked King'), NULL, 'https://ebd.cda.pl/620x395/5810465a3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17730, 1022, 10, CONCAT('On Your Mark'), NULL, 'https://ebd.cda.pl/620x395/5810468ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17731, 1022, 11, CONCAT('Crescent Moon Silhouette'), NULL, 'https://ebd.cda.pl/620x395/5810471a7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17732, 1022, 12, CONCAT('Middle School Diary'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4087325');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17733, 1022, 13, CONCAT('The Sunshine Song'), NULL, 'https://video.sibnet.ru/shell.php?videoid=4087334');

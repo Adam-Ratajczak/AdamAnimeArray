@@ -1,0 +1,33 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (876, CONCAT('Isekai Izakaya: Koto Aitheria no Izakaya Nobu'), CONCAT('Experienced head chef Nobuyuki Yazawa and friendly waitress Shinobu Senke run a traditional Japanese izakaya called Nobu—a bar known for serving a tasty array of food and drink. Welcoming any and all customers, the pair strive to showcase Nobu', CHAR(39), 's exclusive menu and provide the best possible experience.<br>
+<br>However, despite its ordinary appearance, the establishment opens to the heart of Aitheria, a city from a parallel universe. As news of the restaurant', CHAR(39), 's exquisite dishes spreads throughout the lands, Aitherian citizens from various social backgrounds travel to Nobu in search of new and delicious cuisine, bringing with them an empty stomach and riveting stories to tell.<br>
+<br>[Written by MAL Rewrite]<br>'), 4, '2018-04-13', '2018-09-14', '', '14 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1303/90909.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2112, 876, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2113, 876, 15);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (958, 876, 27);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (979, 876, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (980, 876, 8);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (981, 876, 17);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15581, 876, 1, CONCAT('Potatoes in Oden'), '2018-04-13', 'https://ebd.cda.pl/800x450/501745744');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15582, 876, 2, CONCAT('Juicy Kara-Age'), NULL, 'https://ebd.cda.pl/800x450/5017463f7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15583, 876, 3, CONCAT('The Rich Girl and the Impossible Order'), NULL, 'https://ebd.cda.pl/800x450/50174668c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15584, 876, 4, CONCAT('The First Kaisendon'), NULL, 'https://ebd.cda.pl/800x450/50174693c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15585, 876, 5, CONCAT('Shinobu’s Special Napolitan'), NULL, 'https://ebd.cda.pl/800x450/5017472bc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15586, 876, 6, CONCAT('Kiss Day'), NULL, 'https://ebd.cda.pl/800x450/501765593');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15587, 876, 7, CONCAT('The Burglar'), NULL, 'https://ebd.cda.pl/800x450/50176617b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15588, 876, 8, CONCAT('After Work Tonjiru'), NULL, 'https://ebd.cda.pl/800x450/5017664fe');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15589, 876, 9, CONCAT('The Company Commander’s Weakness'), NULL, 'https://ebd.cda.pl/800x450/5017670f8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15590, 876, 10, CONCAT('Uninvited Guests'), NULL, 'https://ebd.cda.pl/800x450/50176799b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15591, 876, 11, CONCAT('A Clash of Masters'), NULL, 'https://ebd.cda.pl/800x450/50178024c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15592, 876, 12, CONCAT('Beauty and the Abura-age'), NULL, 'https://ebd.cda.pl/800x450/5017805ce');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15593, 876, 13, CONCAT('Menchi-Katsu'), NULL, 'https://ebd.cda.pl/800x450/50178142a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15594, 876, 14, CONCAT('The Spy and the Salad'), NULL, 'https://ebd.cda.pl/800x450/50178207e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15595, 876, 15, CONCAT('Kabayaki Without Honor'), NULL, 'https://ebd.cda.pl/800x450/5017832fa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15596, 876, 16, CONCAT('The Company Commander', CHAR(39), 's Triumphant Return'), NULL, 'https://ebd.cda.pl/800x450/501793143');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15597, 876, 17, CONCAT('A Tempura Early Summer Mix'), NULL, 'https://ebd.cda.pl/800x450/501793468');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15598, 876, 18, CONCAT('The Great Drunken Kara-Age Debate'), NULL, 'https://ebd.cda.pl/800x450/501793790');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15599, 876, 19, CONCAT('The Female Merc'), NULL, 'https://ebd.cda.pl/800x450/50411866a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15600, 876, 20, CONCAT('The Secret of Whatsontap: Part 1'), NULL, 'https://ebd.cda.pl/800x450/50413407d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15601, 876, 21, CONCAT('The Secret of Whatsontap: Part 2'), NULL, 'https://ebd.cda.pl/800x450/5041397ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15602, 876, 22, CONCAT('The Old Man and Fish'), NULL, 'https://ebd.cda.pl/800x450/5041502da');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15603, 876, 23, CONCAT('The Tale of the Three Northern Territories Conference'), NULL, 'https://ebd.cda.pl/800x450/5041505f2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15604, 876, 24, CONCAT('Ale from the Ancient City'), NULL, 'https://ebd.cda.pl/800x450/504154432');

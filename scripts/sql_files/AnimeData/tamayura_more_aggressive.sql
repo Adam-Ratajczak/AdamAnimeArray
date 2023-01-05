@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1854, CONCAT('Tamayura: More Aggressive'), CONCAT('The second season of Tamayura: Hitotose.<br>
+<br>It', CHAR(39), 's the beginning of a new school year for Fuu and friends. With a new year comes new challenges as Fuu tries to open a photography club at her school.<br>
+<br>(Source: ANN)'), 4, '2013-07-03', '2013-09-18', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/53895.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2008, 1854, 28);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2056, 1854, 23);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2057, 1854, 17);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33189, 1854, 1, CONCAT('A Year Since I Was Welcomed Home'), '2013-07-03', 'https://myvi.ru/player/embed/html/oDM9KCzNucTs2L3aj-KFaZKp-flJJ3VjAiIHrxz1MBdE1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33190, 1854, 2, CONCAT('An Exciting New Step'), '2013-07-10', 'https://vk.com/video_ext.php?oid=201041148&id=165776820&hash=5bb6fc3b8125af3c&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33191, 1854, 3, CONCAT('The Photography Club Truly Starts'), '2013-07-17', 'https://video.sibnet.ru/shell.php?videoid=123692');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33192, 1854, 4, CONCAT('A Special Place with Special Memories'), '2013-07-24', 'https://vk.com/video_ext.php?oid=177359382&id=166224596&hash=b8724c6d5818ca2e&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33193, 1854, 5, CONCAT('For Tomorrow', CHAR(39), 's Sake, Let', CHAR(39), 's Photo!'), '2013-07-31', 'https://vk.com/video_ext.php?oid=177359382&id=166389808&hash=11d9739195839c10&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33194, 1854, 6, CONCAT('Looking for a Smile that Won', CHAR(39), 't Come Again'), '2013-08-07', 'https://vk.com/video_ext.php?oid=177359382&id=166389805&hash=056f2de1ab9d803d&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33195, 1854, 7, CONCAT('Finally, Everyone', CHAR(39), 's Together!'), '2013-08-14', 'https://vk.com/video_ext.php?oid=177359382&id=166412445&hash=bbd8a35d9a553a05&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33196, 1854, 8, CONCAT('The Distant Promise Made That Day'), '2013-08-21', 'https://vk.com/video_ext.php?oid=177359382&id=166412434&hash=ab69373ba4813016&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33197, 1854, 9, CONCAT('The Bamboo Lantern in my Heart'), '2013-08-28', 'https://vk.com/video_ext.php?oid=177359382&id=166813563&hash=0fedc376ae65a931&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33198, 1854, 10, CONCAT('Until That Day Comes'), '2013-09-04', 'https://vk.com/video_ext.php?oid=203821199&id=166182961&hash=20964bfd3beb0235&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33199, 1854, 11, CONCAT('Thank You For Another Year'), '2013-09-11', 'https://drive.google.com/file/d/0B5-MnnU6QEhhRi1aSHdXYld1eEU/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33200, 1854, 12, CONCAT('And Thus, the Season of Departures Has Come'), '2013-09-18', 'https://vk.com/video_ext.php?oid=245677523&id=169370621&hash=122b19609d27d72d&hd=2');

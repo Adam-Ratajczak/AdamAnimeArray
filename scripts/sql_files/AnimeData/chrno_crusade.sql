@@ -1,0 +1,34 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (326, CONCAT('Chrno Crusade'), CONCAT('The 1920s was a decade of great change and upheaval, with monstrous demons appearing across America. To combat this menace, the holy organization known as the Order of Magdalene was established. The organization', CHAR(39), 's New York branch is home to the young and reckless Sister Rosette Christopher, as well as her partner Chrno. Tasked with the extermination of demonic threats, the renowned team is excellent at their job, despite causing extensive collateral damage on their missions.<br>
+<br>However, both Rosette and Chrno are driven by their dark pasts. Through exterminating demons, Rosette hopes to find her lost brother Joshua who was taken by the sinner and demon, Aion, with whom Chrno also shares a bloody history. The two of them must fight off the increasingly dangerous demonic menace and discover its source, while continuing to search for the truth behind Joshua', CHAR(39), 's disappearance.<br>
+<br>[Written by MAL Rewrite]'), 1, '2003-11-25', '2004-06-10', 'Fall 2003', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/14141.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (157, 326, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (747, 326, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (748, 326, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (749, 326, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (364, 326, 5);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (343, 326, 31);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (344, 326, 11);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5654, 326, 1, CONCAT('Pilot: Sister Rosette'), '2003-11-25', 'https://ebd.cda.pl/620x395/80176704c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5655, 326, 2, CONCAT('The Covenant: Contractor'), '2003-12-02', 'https://ebd.cda.pl/620x395/8017679c6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5656, 326, 3, CONCAT('Apostles: The Servants'), '2003-12-09', 'https://ebd.cda.pl/620x395/801774268');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5657, 326, 4, CONCAT('Sinners: Sinner'), '2003-12-16', 'https://ebd.cda.pl/620x395/80176646a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5658, 326, 5, CONCAT('Militia'), '2003-12-23', 'https://video.sibnet.ru/shell.php?videoid=536680');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5659, 326, 6, CONCAT('Jewel Witch'), '2004-01-06', 'https://ebd.cda.pl/620x395/801767646');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5660, 326, 7, CONCAT('Devil'), '2004-01-13', 'https://ebd.cda.pl/620x395/8017685e2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5661, 326, 8, CONCAT('Puppets'), '2004-01-20', 'https://ebd.cda.pl/620x395/8017688e5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5662, 326, 9, CONCAT('Joshua'), '2004-01-27', 'https://ebd.cda.pl/620x395/8017697fa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5663, 326, 10, CONCAT('Horn'), '2004-02-03', 'https://ebd.cda.pl/620x395/80176824f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5664, 326, 11, CONCAT('Beast'), '2004-02-10', 'https://ebd.cda.pl/620x395/801769147');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5665, 326, 12, CONCAT('Holy Night'), '2004-02-17', 'https://ebd.cda.pl/620x395/80177035d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5666, 326, 13, CONCAT('Older Sister'), '2004-02-24', 'https://ebd.cda.pl/620x395/8017694e8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5667, 326, 14, CONCAT('Prayer'), '2004-03-02', 'https://ebd.cda.pl/620x395/801770003');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5668, 326, 15, CONCAT('Pursuer'), '2004-03-09', 'https://ebd.cda.pl/620x395/801770926');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5669, 326, 16, CONCAT('Believer'), '2004-03-16', 'https://ebd.cda.pl/620x395/8017718b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5670, 326, 17, CONCAT('Accomplices'), '2004-03-23', 'https://ebd.cda.pl/620x395/8017745f6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5671, 326, 18, CONCAT('Four People'), '2004-03-30', 'https://ebd.cda.pl/620x395/801772177');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5672, 326, 19, CONCAT('Head'), '2004-04-15', 'https://ebd.cda.pl/620x395/801770607');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5673, 326, 20, CONCAT('Poison'), '2004-04-22', 'https://ebd.cda.pl/620x395/8017727ae');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5674, 326, 21, CONCAT('Magdalene'), '2004-04-29', 'https://ebd.cda.pl/620x395/80177157e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5675, 326, 22, CONCAT('Goodbye'), '2004-05-20', 'https://ebd.cda.pl/620x395/8017730cf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5676, 326, 23, CONCAT('Noise'), '2004-06-03', 'https://ebd.cda.pl/620x395/80177245e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5677, 326, 24, CONCAT('Chrono'), '2004-06-10', 'https://ebd.cda.pl/620x395/80177369f');

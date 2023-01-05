@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (152, CONCAT('Babylon'), CONCAT('In the newly formed Shiniki district of Tokyo, Zen Seizaki is a diligent public prosecutor at the Tokyo District Public Prosecutors Office. Assigned to a case involving false advertisement, Zen—along with his assistant officer, Atsuhiko Fumio—investigate Japan Supiri, a pharmaceutical company that had provided fabricated clinical research on the company', CHAR(39), 's new drug. While investigating the file of Shin Inaba, an anesthesiologist connected to the crime, the case takes a dark turn when Zen finds a page stained with a mixture of blood, hair and skin, along with the letter "F" scribbled all across the sheet. As he investigates further, the case goes beyond Zen', CHAR(39), 's imagination and becomes vastly complex, challenging his sense of justice and his knowledge of the truth. <br>
+<br>Digging deeper into the investigation, Zen begins to uncover a concealed plot behind the ongoing mayoral election and ties to many people of interest involved in the election and those closer than he thinks. The case grows more severe and propels Zen into an unforeseen hurricane of corruption and deceit behind the election, the establishment of the Shiniki district, and the mysterious woman associated with it all. <br>
+<br>[Written by MAL Rewrite]'), 1, '2019-10-07', '2020-01-28', 'Fall 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1942/102707.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (345, 152, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (346, 152, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (347, 152, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (174, 152, 22);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2139, 152, 1, CONCAT('Suspicion'), '2019-10-07', 'https://ebd.cda.pl/620x368/40278160f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2140, 152, 2, CONCAT('Target'), '2019-10-07', 'https://ebd.cda.pl/620x368/4044169ef');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2141, 152, 3, CONCAT('Revolution'), '2019-10-07', 'https://ebd.cda.pl/620x395/66273447d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2142, 152, 4, CONCAT('Chase'), '2019-10-28', 'https://ebd.cda.pl/620x395/662739825');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2143, 152, 5, CONCAT('Confession'), '2019-11-04', 'https://ebd.cda.pl/800x450/66275123d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2144, 152, 6, CONCAT('Strategy'), '2019-11-11', 'https://ebd.cda.pl/800x450/66275155f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2145, 152, 7, CONCAT('The Most Evil'), '2019-11-18', 'https://ebd.cda.pl/800x450/6627668de');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2146, 152, 8, CONCAT('Hope'), '2019-12-30', 'https://ebd.cda.pl/800x450/66276711b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2147, 152, 9, CONCAT('Chain'), '2020-01-06', 'https://ebd.cda.pl/620x368/4375875d4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2148, 152, 10, CONCAT('Decision'), '2020-01-13', 'https://ebd.cda.pl/620x368/440675482');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2149, 152, 11, CONCAT('The Curtain Rises'), '2020-01-20', 'https://ebd.cda.pl/620x368/444019783');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2150, 152, 12, CONCAT('The End'), '2020-01-28', 'https://ebd.cda.pl/620x368/4481324c2');

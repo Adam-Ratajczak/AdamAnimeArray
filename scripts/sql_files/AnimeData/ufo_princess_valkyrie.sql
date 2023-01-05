@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1981, CONCAT('UFO Princess Valkyrie'), CONCAT('UFO Princess Warukyure, aka UFO Princess Walkyrie is about a princess from outer space who accidentally crashes on earth, where Kazuto desperately tries to maintain the public bath of his grandfather. Due to circumstances, Kazuto receives part of princess Walkyrie', CHAR(39), 's soul which forces her to stay there with him. But that', CHAR(39), 's not the only problem ... because her soul lost strength, the princess transforms both mentally and physically into a little kid!<br>
+<br>(Source: AniDB)'), 4, '2002-07-04', '2002-09-19', 'Summer 2002', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/22373.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (824, 1981, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4943, 1981, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4944, 1981, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4945, 1981, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2149, 1981, 102);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35068, 1981, 1, CONCAT('The Bathhouse with an Angel'), '2002-07-04', 'https://video.sibnet.ru/shell.php?videoid=895634');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35069, 1981, 2, CONCAT('The Transforming Princess Valkyrie'), '2002-07-11', 'https://video.sibnet.ru/shell.php?videoid=896310');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35070, 1981, 3, CONCAT('Head Catgirl Maid, Ms. Sanada'), '2002-07-18', 'https://vk.com/video_ext.php?oid=191741003&id=163933018&hash=b2a655cce78c5272&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35071, 1981, 4, CONCAT('What Your Wings Are For'), '2002-07-25', 'https://vk.com/video_ext.php?oid=191741003&id=163934523&hash=3a864ecea8ad124e&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35072, 1981, 5, CONCAT('Rika Acts Her Age'), '2002-08-01', 'https://vk.com/video_ext.php?oid=191741003&id=163939367&hash=d15671c712b15bd5&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35073, 1981, 6, CONCAT('Princess Memorial'), '2002-08-08', 'https://vk.com/video_ext.php?oid=191741003&id=163941113&hash=10becb715df437e5&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35074, 1981, 7, CONCAT('Runaway Princess Laine'), '2002-08-15', 'https://video.sibnet.ru/shell.php?videoid=931935');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35075, 1981, 8, CONCAT('A Vacation for the Cat-Girl Maids'), '2002-08-22', 'https://vk.com/video_ext.php?oid=191741003&id=163958713&hash=b48138e1dc65329c&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35076, 1981, 9, CONCAT('Akina', CHAR(39), 's Miniature Transformation'), '2002-08-29', 'https://vk.com/video_ext.php?oid=191741003&id=163965841&hash=3290567cfe587f78&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35077, 1981, 10, CONCAT('How I Bought an Asteroid Over the Internet'), '2002-09-05', 'https://video.sibnet.ru/shell.php?videoid=935355');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35078, 1981, 11, CONCAT('Tokino Bathhouse Space Annex'), '2002-09-12', 'https://vk.com/video_ext.php?oid=191741003&id=163977776&hash=6b0c5223a6bb0103&hd=2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35079, 1981, 12, CONCAT('A Ride into Fantasy for Valkyrie'), '2002-09-19', 'https://video.sibnet.ru/shell.php?videoid=936262');

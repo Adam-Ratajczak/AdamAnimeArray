@@ -1,0 +1,33 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1019, CONCAT('Kimi ni Todoke'), CONCAT('Known for her semblance to the Sadako character of The Ring series, Sawako Kuronuma is given the nickname "Sadako" and misunderstood to be frightening and malicious like her fictional counterpart, despite having a timid and sweet nature. Longing to make friends and live a normal life, Sawako is naturally drawn to the cheerful and friendly Shouta Kazehaya, the most popular boy in her class. From their first meeting, Sawako has admired Kazehaya', CHAR(39), 's ability to be the center of attention and aspires to be like him.<br>
+<br>When Kazehaya organizes a test of courage for the entire class and encourages her to attend, Sawako sees this as an opportunity to get along with her classmates, starting with Ayane Yano and Chizuru Yoshida. Through each new encounter and emotion she experiences, Sawako believes that meeting Kazehaya has changed her for the better. Little does Sawako know, her presence has also changed Kazehaya.<br>
+<br>[Written by MAL Rewrite]'), 1, '2009-10-07', '2010-03-31', 'Fall 2009', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1502/124384.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (457, 1019, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2475, 1019, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2476, 1019, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2477, 1019, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1108, 1019, 2);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17672, 1019, 1, CONCAT('Prologue'), '2009-10-07', 'https://ebd.cda.pl/800x450/34294721f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17673, 1019, 2, CONCAT('Seat Change'), '2009-10-14', 'https://ebd.cda.pl/800x450/34294759e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17674, 1019, 3, CONCAT('After School'), '2009-10-21', 'https://ebd.cda.pl/800x450/3429478e0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17675, 1019, 4, CONCAT('Rumors'), '2009-10-28', 'https://ebd.cda.pl/800x450/34294817c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17676, 1019, 5, CONCAT('Determination'), '2009-11-04', 'https://ebd.cda.pl/800x450/342948418');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17677, 1019, 6, CONCAT('Friends'), '2009-11-11', 'https://ebd.cda.pl/800x450/342949088');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17678, 1019, 7, CONCAT('Saturday Evening'), '2009-11-18', 'https://ebd.cda.pl/800x450/342949369');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17679, 1019, 8, CONCAT('Free Practice'), '2009-11-25', 'https://ebd.cda.pl/800x450/342949667');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17680, 1019, 9, CONCAT('New Friend'), '2009-12-02', 'https://ebd.cda.pl/800x450/342949901');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17681, 1019, 10, CONCAT('Collaboration'), '2009-12-09', 'https://ebd.cda.pl/800x450/3429502cb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17682, 1019, 11, CONCAT('Special?'), '2009-12-16', 'https://ebd.cda.pl/800x450/342950515');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17683, 1019, 12, CONCAT('Romantic Feelings'), '2009-12-23', 'https://ebd.cda.pl/800x450/342950893');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17684, 1019, 13, CONCAT('Love'), '2010-01-06', 'https://ebd.cda.pl/800x450/3429511f4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17685, 1019, 14, CONCAT('Kurumi'), '2010-01-13', 'https://ebd.cda.pl/800x450/342951440');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17686, 1019, 15, CONCAT('Rival'), '2010-01-23', 'https://ebd.cda.pl/800x450/3429517fe');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17687, 1019, 16, CONCAT('Night Story'), '2010-01-27', 'https://ebd.cda.pl/800x450/3429520f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17688, 1019, 17, CONCAT('Holiday'), '2010-02-03', 'https://ebd.cda.pl/800x450/34295232a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17689, 1019, 18, CONCAT('Chizuru`s Love'), '2010-02-10', 'https://ebd.cda.pl/800x450/3429526b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17690, 1019, 19, CONCAT('Dream'), '2010-02-17', 'https://ebd.cda.pl/800x450/342952941');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17691, 1019, 20, CONCAT('Present'), '2010-02-24', 'https://ebd.cda.pl/800x450/342953296');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17692, 1019, 21, CONCAT('First Snow'), '2010-03-03', 'https://ebd.cda.pl/800x450/342953571');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17693, 1019, 22, CONCAT('Christmas'), '2010-03-10', 'https://ebd.cda.pl/800x450/263367632');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17694, 1019, 23, CONCAT('The Two'), '2010-03-17', 'https://ebd.cda.pl/800x450/34295414b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17695, 1019, 24, CONCAT('Birthday'), '2010-03-24', 'https://ebd.cda.pl/800x450/3429544c6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17696, 1019, 25, CONCAT('New Year'), '2010-03-31', 'https://ebd.cda.pl/800x450/3429547dc');

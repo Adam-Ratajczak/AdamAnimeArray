@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1871, CONCAT('Teekyuu 7'), CONCAT('Seventh season of the Teekyuu series.'), 1, '2016-01-12', '2016-03-29', 'Winter 2016', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/77830.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (779, 1871, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4635, 1871, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4636, 1871, 19);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2026, 1871, 73);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33425, 1871, 1, CONCAT('Ju-On with Senpai'), '2016-01-12', 'https://video.sibnet.ru/shell.php?videoid=2052294');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33426, 1871, 2, CONCAT('Ironclad with Senpai'), '2016-01-19', 'https://www.mp4upload.com/embed-smyb6av2lcn3.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33427, 1871, 3, CONCAT('Brokeback Mountain with Senpai'), '2016-01-26', 'https://streamtape.com/e/96e79x3PX0HYAJ/');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33428, 1871, 4, CONCAT('Miss Congeniality with Senpai'), '2016-02-02', 'https://www.mp4upload.com/embed-52wzvaklrn26.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33429, 1871, 5, CONCAT('Ted with Senpai'), '2016-02-09', 'https://www.mp4upload.com/embed-1xke3wcrvr5i.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33430, 1871, 6, CONCAT('Fury with Senpai'), '2016-02-16', 'https://www.mp4upload.com/embed-6vesnuoes49z.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33431, 1871, 7, CONCAT('The Grand Budapest Hotel with Senpai'), '2016-02-23', 'https://embed.tune.pk/play/6531482');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33432, 1871, 8, CONCAT('Nurse Betty with Senpai'), '2016-03-01', 'https://embed.tune.pk/play/6532538');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33433, 1871, 9, CONCAT('The Exorcist with Senpai'), '2016-03-08', 'https://www.mp4upload.com/embed-m2wvq2p7usux.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33434, 1871, 10, CONCAT('The Kirishima Thing with Senpai'), '2016-03-15', 'https://www.mp4upload.com/embed-nhy4nss5cjpc.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33435, 1871, 11, CONCAT('The Straight Story with Senpai'), '2016-03-22', 'https://embed.tune.pk/play/6540884');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33436, 1871, 12, CONCAT('Saving Private Ryan with Senpai'), '2016-03-29', 'https://www.mp4upload.com/embed-cxcltk0s1mah.html');

@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1063, CONCAT('Kokkoku'), CONCAT('After presumably failing 19 job interviews in one day, Juri Yukawa', CHAR(39), 's dreams of moving out of her parents', CHAR(39), ' home are utterly dashed. Stuck living with her working mother Nobuko, NEET brother Tsubasa, laid-off father Takafumi, and single-parent sister Sanae, the only hope for this family to raise a decent adult is her little nephew Makoto. However, this struggling family', CHAR(39), 's life takes a turn for the worse when Makoto and Tsubasa are violently kidnapped by a mysterious organization and held for ransom. With only 30 minutes to deliver five million yen to the criminals, Juri', CHAR(39), 's grandfather reveals a dangerously powerful secret to her and Takafumi.<br>
+<br>By offering blood to her grandfather', CHAR(39), 's mystical stone, the three enter the world of "Stasis," a version of their world where time stops for everyone but the users. Having arrived at their destination, their rescue efforts go awry when they are assailed by a surprising group of people who are somehow able to move around within Stasis. While all hope seems lost, a monstrous giant known as the Herald appears amidst the chaos, its intent and motivations as cryptic as the very nature of this timeless world.<br>
+<br>[Written by MAL Rewrite]'), 1, '2018-01-08', '2018-03-26', 'Winter 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/89987.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (479, 1063, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2576, 1063, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2577, 1063, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2578, 1063, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1153, 1063, 155);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18382, 1063, 1, CONCAT('The First Moment'), '2018-01-08', 'https://ebd.cda.pl/620x395/67035953c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18383, 1063, 2, CONCAT('The Second Moment'), '2018-01-15', 'https://ebd.cda.pl/620x395/6703523b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18384, 1063, 3, CONCAT('The Third Moment'), '2018-01-22', 'https://ebd.cda.pl/620x395/67035655d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18385, 1063, 4, CONCAT('The Fourth Moment'), '2018-01-29', 'https://ebd.cda.pl/620x395/670357470');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18386, 1063, 5, CONCAT('The Fifth Moment'), '2018-02-05', 'https://ebd.cda.pl/620x395/670358933');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18387, 1063, 6, CONCAT('The Sixth Moment'), '2018-02-12', 'https://ebd.cda.pl/620x395/6703532dd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18388, 1063, 7, CONCAT('The Seventh Moment'), '2018-02-19', 'https://ebd.cda.pl/620x395/6703553b3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18389, 1063, 8, CONCAT('The Eighth Moment'), '2018-02-26', 'https://ebd.cda.pl/620x395/670354186');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18390, 1063, 9, CONCAT('The Ninth Moment'), '2018-03-05', 'https://ebd.cda.pl/620x395/6703544ab');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18391, 1063, 10, CONCAT('The Tenth Moment'), '2018-03-12', 'https://ebd.cda.pl/620x395/67035565d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18392, 1063, 11, CONCAT('The Eleventh Moment'), '2018-03-19', 'https://ebd.cda.pl/620x395/670355037');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18393, 1063, 12, CONCAT('The Twelfth Moment'), '2018-03-26', 'https://ebd.cda.pl/620x395/670354769');

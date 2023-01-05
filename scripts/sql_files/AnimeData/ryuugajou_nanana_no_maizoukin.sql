@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1577, CONCAT('Ryuugajou Nanana no Maizoukin'), CONCAT('Nanae Island is a man-made island in the Pacific Ocean that holds everything necessary for the proper education and training of children. It was created by the Great Seven, a group of adventurers headed by Nanana Ryuugajou, as a place for the young to chase their dreams.<br>
+<br>After being disowned and exiled by his family, high school student Juugo Yama arrives on this island, happy to finally be free of his father. Upon moving into his new room, he discovers the ghost of Nanana Ryuugajou, bound to the island after her unsolved murder 10 years ago. Nanana tells Juugo that, just before her death, she hid items with unique and mysterious powers all across the island—items known as the Nanana Collection. Hoping to uncover clues that will help him find the culprit behind her death, Juugo, with the help of self-proclaimed "Master Detective" Tensai Ikkyuu and her cross-dressing maid Daruku Hoshino, sets out on his search.<br>
+<br>[Written by MAL Rewrite]'), 1, '2014-04-11', '2014-06-20', 'Spring 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/60475.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3916, 1577, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3917, 1577, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3918, 1577, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3919, 1577, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1696, 1577, 6);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28741, 1577, 1, CONCAT('Disowned and Exiled'), '2014-04-11', 'https://vk.com/video245677523_168705465');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28742, 1577, 2, CONCAT('The Nanae Island Third High School Adventure Club'), '2014-04-18', 'https://vk.com/video170257946_168618299');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28743, 1577, 3, CONCAT('The Ruins 1,000 Meters Above Ground'), '2014-04-25', 'https://vk.com/video170257946_168618499');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28744, 1577, 4, CONCAT('Dreams and Ambitions and Denialnd Attraction'), '2014-05-02', 'https://vk.com/video170257946_168620691');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28745, 1577, 5, CONCAT('Mission Impossible'), '2014-05-09', 'https://vk.com/video170257946_168621095');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28746, 1577, 6, CONCAT('To the Hot Springs Town'), NULL, 'https://vk.com/video170257946_168687141');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28747, 1577, 7, CONCAT('Counseling for Bad Guys'), NULL, 'https://vk.com/video170257946_168998761');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28748, 1577, 8, CONCAT('A Strange Visitor'), NULL, 'https://vk.com/video170257946_169000555');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28749, 1577, 9, CONCAT('A Study of Ikusaba Hiiyo and Yoshino Saki'), NULL, 'https://vk.com/video170257946_169062931');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28750, 1577, 10, CONCAT('Showdown'), NULL, 'https://drive.google.com/file/d/0BxuxFhTBN_SvaEZWZ2NYcGpTZDg/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (28751, 1577, 11, CONCAT('The Resolve of Yama Juugo'), NULL, 'https://vk.com/video_ext.php?oid=250055088&id=169205551&hash=cacc4ca644d311d4');

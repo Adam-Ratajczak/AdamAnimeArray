@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1179, CONCAT('Mahou Shoujo Lyrical Nanoha ViVid'), CONCAT('The series takes place four years after the events of Mahou Shoujo Lyrical Nanoha StrikerS, during which, magical girl Nanoha Takamachi rescued and adopted a young girl named Vivio, who is the reincarnation of the Sankt Kaiser, Olivie Segbrecht. After entering her fourth year of elementary school, Vivio is given her own intelligence device, Sacred Heart, and gains the power to transform using her adult Sankt Kaiser mode. She soon comes across a girl named Einhart Stratos who, similar to Vivio, is the descendant of another Sankt Kaiser ruler, Claus G.S. Ingvalt. As Einhart becomes determined to prove her fighting style is the strongest, Vivio befriends her and together with her friends, enters a martial arts tournament where they fight against various magical opponents and learn more about their past lives.<br>
+<br>(Source: Wikipedia)'), 1, '2015-04-03', '2015-06-19', 'Spring 2015', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/72718.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2877, 1179, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2878, 1179, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2879, 1179, 6);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1277, 1179, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1307, 1179, 30);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1308, 1179, 29);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20126, 1179, 1, CONCAT('Sacred Heart'), '2015-04-03', 'https://video.sibnet.ru/shell.php?videoid=1772869');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20127, 1179, 2, CONCAT('Einhart Stratos'), '2015-04-10', 'https://video.sibnet.ru/shell.php?videoid=1777406');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20128, 1179, 3, CONCAT('True Feelings'), '2015-04-17', 'https://www.mp4upload.com/embed-en5jgih7t950.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20129, 1179, 4, CONCAT('Brand New Heart'), '2015-04-24', 'https://www.mp4upload.com/embed-bszukbqegaj7.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20130, 1179, 5, CONCAT('Surprise Attack'), '2015-05-01', 'https://www.mp4upload.com/embed-z4nybq4j73d5.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20131, 1179, 6, CONCAT('Matchup Duel'), '2015-05-08', 'https://www.mp4upload.com/embed-1wzj2jarhuyt.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20132, 1179, 7, CONCAT('New Stage!'), '2015-05-15', 'https://www.mp4upload.com/embed-1rnhfila86h5.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20133, 1179, 8, CONCAT('Rival!'), '2015-05-22', 'https://www.mp4upload.com/embed-95jqhucryb0s.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20134, 1179, 9, CONCAT('Intermiddle Championship'), '2015-05-29', 'https://www.mp4upload.com/embed-cbbwp6i3t2cj.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20135, 1179, 10, CONCAT('For Victory!'), '2015-06-05', 'https://www.mp4upload.com/embed-c69cbk71jzr6.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20136, 1179, 11, CONCAT('Hegemon', CHAR(39), 's Fist, Creator', CHAR(39), 's Desire'), '2015-06-12', 'https://www.mp4upload.com/embed-s7t2l7r1vpbd.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (20137, 1179, 12, CONCAT('Meaning of Ending a Match'), '2015-06-19', 'https://www.mp4upload.com/embed-imo224dzbye0.html');

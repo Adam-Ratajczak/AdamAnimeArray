@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (283, CONCAT('Canaan'), CONCAT('Oosawa Maria is a Japanese photographer currently working in Shanghai, China. Along with her partner Mino, she searches for potential newsworthy stories throughout the city. When strange events occur at a local festival, Maria and Mino immediately investigate. Quickly, the two are immersed in a battle between unknown masked men and a strange, white-haired woman. Just when Maria is about to be caught in the crossfire, an old friend by the name of Canaan appears and helps Maria escape. But a sinister plot over a deadly virus soon develops, and Canaan learns she must confront her past if she wants any chance at stopping the perpetrator and saving her friends.<br>
+<br>[Written by MAL Rewrite]'), 1, '2009-07-04', '2009-09-26', 'Summer 2009', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/75789.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (141, 283, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (661, 283, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (662, 283, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (663, 283, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (320, 283, 52);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4411, 283, 1, CONCAT('Evil, Flood-Colored City'), '2009-07-04', 'https://ebd.cda.pl/620x395/801678590');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4412, 283, 2, CONCAT('Worthless Games'), '2009-07-11', 'https://ebd.cda.pl/620x395/801685174');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4413, 283, 3, CONCAT('Trivialities'), '2009-07-18', 'https://ebd.cda.pl/620x395/80167882d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4414, 283, 4, CONCAT('Lingering Sunset'), '2009-07-25', 'https://ebd.cda.pl/620x395/801680679');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4415, 283, 5, CONCAT('Friends'), '2009-08-01', 'https://ebd.cda.pl/620x395/80167971a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4416, 283, 6, CONCAT('Love & Piece'), '2009-08-08', 'https://ebd.cda.pl/620x395/801684500');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4417, 283, 7, CONCAT('Gravestones'), '2009-08-15', 'https://ebd.cda.pl/620x395/80168275a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4418, 283, 8, CONCAT('Voice'), '2009-08-22', 'https://ebd.cda.pl/620x395/801680327');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4419, 283, 9, CONCAT('Flowers of the Past'), '2009-08-29', 'https://ebd.cda.pl/620x395/801682150');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4420, 283, 10, CONCAT('Loss'), '2009-09-05', 'https://ebd.cda.pl/800x450/4193707c4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4421, 283, 11, CONCAT('See-Saw'), '2009-09-12', 'https://ebd.cda.pl/800x450/419372228');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4422, 283, 12, CONCAT('The Seasonal Train'), '2009-09-19', 'https://ebd.cda.pl/800x450/419373460');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4423, 283, 13, CONCAT('The Promised Land'), '2009-09-26', 'https://ebd.cda.pl/620x395/8016818b9');

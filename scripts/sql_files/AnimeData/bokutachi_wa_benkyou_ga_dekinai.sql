@@ -1,0 +1,23 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (255, CONCAT('Bokutachi wa Benkyou ga Dekinai'), CONCAT('Nariyuki Yuiga, an impoverished third-year high school student, works tirelessly to receive the VIP nomination, a scholarship that would cover all of his college tuition fees. In recognition of his hard work, the headmaster awards him the renowned scholarship.<br>
+<br>However, this scholarship is given under one condition: he must tutor the school', CHAR(39), 's geniuses in their weakest subjects! Joining his new brigade of pupils are the math maestro Rizu Ogata, who wants to study humanities the literature legend Fumino Furuhashi, who wants to study science and Yuiga', CHAR(39), 's sports-savvy childhood friend, Uruka Takemoto, who is hopeless at everything else.<br><br>Bokutachi wa Benkyou ga Dekinai follows Yuiga as he tries to teach his three eccentric tutees in a series of strange and comedic antics. But as Ogata', CHAR(39), 's and Furuhashi', CHAR(39), 's ambitions conflict with their talents, will Yuiga be able to help his students achieve their dreams?<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2019-04-07', '2019-06-30', 'Spring 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1602/100510.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (125, 255, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (583, 255, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (584, 255, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (288, 255, 94);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (289, 255, 95);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (288, 255, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (289, 255, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4113, 255, 1, CONCAT('Genius and [X] Are Two Sides of the Same Coin'), '2019-04-07', 'https://ebd.cda.pl/800x450/4009564a4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4114, 255, 2, CONCAT('A Fish Is to Water as a Genius Is to [X]'), '2019-04-14', 'https://ebd.cda.pl/800x450/4032469ba');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4115, 255, 3, CONCAT('A Genius Resonates Emotionally with [X]'), '2019-04-21', 'https://ebd.cda.pl/800x450/4060192e6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4116, 255, 4, CONCAT('What She Wants from a Genius Is [X]'), '2019-04-28', 'https://ebd.cda.pl/800x450/408310605');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4117, 255, 5, CONCAT('A Genius in the Forest Is Strayed by [X]'), '2019-05-05', 'https://drive.google.com/file/d/1BKAgsUHUieCHMitcV1JOxplXSjkrxhaM/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4118, 255, 6, CONCAT('Thus, [X] Geniuses Never Learn'), '2019-05-12', 'https://ebd.cda.pl/800x450/4139830a8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4119, 255, 7, CONCAT('A Former Tutor', CHAR(39), 's Secret Spot is [X]'), '2019-05-19', 'https://ebd.cda.pl/800x450/41795839d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4120, 255, 8, CONCAT('Sometimes a Genius', CHAR(39), 's Every Action Is at the Mercy of [X]'), '2019-05-26', 'https://ebd.cda.pl/800x450/4205485d5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4121, 255, 9, CONCAT('He Struggles with [X] in a Forbidden Zone'), '2019-06-02', 'https://ebd.cda.pl/800x450/42198779f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4122, 255, 10, CONCAT('A Lost Lamb in New Territory Encounters [X]'), '2019-06-09', 'https://ebd.cda.pl/800x450/42425571b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4123, 255, 11, CONCAT('An Illustrious Veteran Sometimes Serves X'), '2019-06-16', 'https://ebd.cda.pl/800x450/42983667b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4124, 255, 12, CONCAT('Sometimes a Genius Travels Down Memory Lane with [X]'), '2019-06-23', 'https://ebd.cda.pl/800x450/4328363d5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (4125, 255, 13, CONCAT('The Light in a Genius', CHAR(39), 's Eye Is All [X]'), '2019-06-30', 'https://ebd.cda.pl/800x450/4449611df');

@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1163, CONCAT('Made in Abyss'), CONCAT('The Abyss—a gaping chasm stretching down into the depths of the earth, filled with mysterious creatures and relics from a time long past. How did it come to be? What lies at the bottom? Countless brave individuals, known as Divers, have sought to solve these mysteries of the Abyss, fearlessly descending into its darkest realms. The best and bravest of the Divers, the White Whistles, are hailed as legends by those who remain on the surface.<br>
+<br>Riko, daughter of the missing White Whistle Lyza the Annihilator, aspires to become like her mother and explore the furthest reaches of the Abyss. However, just a novice Red Whistle herself, she is only permitted to roam its most upper layer. Even so, Riko has a chance encounter with a mysterious robot with the appearance of an ordinary young boy. She comes to name him Reg, and he has no recollection of the events preceding his discovery. Certain that the technology to create Reg must come from deep within the Abyss, the two decide to venture forth into the chasm to recover his memories and see the bottom of the great pit with their own eyes. However, they know not of the harsh reality that is the true existence of the Abyss.<br>
+<br>[Written by MAL Rewrite]'), 2, '2017-07-07', '2017-09-29', 'Summer 2017', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/86733.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2827, 1163, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2828, 1163, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2829, 1163, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2830, 1163, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2831, 1163, 3);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1260, 1163, 75);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19860, 1163, 1, CONCAT('The City of the Great Pit'), '2017-07-07', 'https://ebd.cda.pl/620x368/1480266eb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19861, 1163, 2, CONCAT('Resurrection Festival'), '2017-07-14', 'https://ebd.cda.pl/620x368/1495777b9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19862, 1163, 3, CONCAT('Departure'), '2017-07-21', 'https://ebd.cda.pl/620x368/150190469');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19863, 1163, 4, CONCAT('The Edge of the Abyss'), '2017-07-28', 'https://ebd.cda.pl/620x368/150650861');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19864, 1163, 5, CONCAT('Incinerator'), '2017-08-04', 'https://ebd.cda.pl/620x368/1521532b2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19865, 1163, 6, CONCAT('Seeker Camp'), '2017-08-11', 'https://ebd.cda.pl/620x368/1528285d8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19866, 1163, 7, CONCAT('The Unmovable Sovereign'), '2017-08-18', 'https://ebd.cda.pl/620x368/153203325');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19867, 1163, 8, CONCAT('Survival Training'), '2017-08-25', 'https://ebd.cda.pl/620x368/15379539a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19868, 1163, 9, CONCAT('The Great Fault'), '2017-09-01', 'https://drive.google.com/file/d/1VkFgw_mun-LMfjqgs8NkBQVtsK8yaCXo/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19869, 1163, 10, CONCAT('Poison and the Curse'), '2017-09-08', 'https://drive.google.com/file/d/102UHmYox0b-_sadsSFcUFeySfZxevp4H/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19870, 1163, 11, CONCAT('Nanachi'), '2017-09-15', 'https://ebd.cda.pl/620x368/30399215f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19871, 1163, 12, CONCAT('The True Nature of the Curse'), '2017-09-22', 'https://drive.google.com/file/d/1M7tDOwYnLBAAerUuHk-etnUdmPBy5lFw/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (19872, 1163, 13, CONCAT('The Challengers'), '2017-09-29', 'https://drive.google.com/file/d/1bzw2-w1KAIqVCPHwWJTzzkLufh486Xr7/preview');

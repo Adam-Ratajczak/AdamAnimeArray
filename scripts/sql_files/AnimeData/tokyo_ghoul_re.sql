@@ -1,0 +1,23 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1923, CONCAT('Tokyo Ghoul:re'), CONCAT('Two years have passed since the CCG', CHAR(39), 's raid on Anteiku. Although the atmosphere in Tokyo has changed drastically due to the increased influence of the CCG, ghouls continue to pose a problem as they have begun taking caution, especially the terrorist organization Aogiri Tree, who acknowledge the CCG', CHAR(39), 's growing threat to their existence.<br>
+<br>The creation of a special team, known as the Quinx Squad, may provide the CCG with the push they need to exterminate Tokyo', CHAR(39), 's unwanted residents. As humans who have undergone surgery in order to make use of the special abilities of ghouls, they participate in operations to eradicate the dangerous creatures. The leader of this group, Haise Sasaki, is a half-ghoul, half-human who has been trained by famed special class investigator, Kishou Arima. However, there', CHAR(39), 's more to this young man than meets the eye, as unknown memories claw at his mind, slowly reminding him of the person he used to be.<br>
+<br>[Written by MAL Rewrite]'), 1, '2018-04-03', '2018-06-19', 'Spring 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1063/95086.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (798, 1923, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4775, 1923, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4776, 1923, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4777, 1923, 11);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2082, 1923, 42);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2083, 1923, 125);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2133, 1923, 10);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2134, 1923, 4);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34157, 1923, 1, CONCAT('Start: Those Who Hunt'), '2018-04-03', 'https://drive.google.com/file/d/1Y4efrHEbYrHPu6RKjIyIZDtROHYUQ4i8/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34158, 1923, 2, CONCAT('Member: Fragments'), '2018-04-10', 'https://drive.google.com/file/d/1vOb_W8A6xBlao_vt50CqZfMs00Ukynvs/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34159, 1923, 3, CONCAT('Fresh: Eve'), '2018-04-17', 'https://drive.google.com/file/d/1iZriYJVz36akTWw76ZlSyfPwfxvxO3vO/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34160, 1923, 4, CONCAT('Main: Auction'), '2018-04-24', 'https://drive.google.com/file/d/1aBa2dD6_WpMSUuAFcJp-_S9kIBzEh-5i/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34161, 1923, 5, CONCAT('Press: Night of Scattering'), '2018-05-01', 'https://drive.google.com/file/d/1hf_yAlXJCppvnQycZdO7yZ58evLP51An/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34162, 1923, 6, CONCAT('Turn: In the End'), '2018-05-08', 'https://drive.google.com/file/d/1QGnRy9c5QOhV6sHJMD5qp0gJcDhSDjov/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34163, 1923, 7, CONCAT('Mind: Days of Recollections'), '2018-05-15', 'https://drive.google.com/file/d/1M34-rGX5b4in2-mhh3TimjrL1xvnGBc2/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34164, 1923, 8, CONCAT('TAKe: One Who Writhes'), '2018-05-22', 'https://drive.google.com/file/d/1mzxFPsk4PiY_nSGNk_WXy5WWIanrFYPX/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34165, 1923, 9, CONCAT('Play: Ghost'), '2018-05-29', 'https://drive.google.com/file/d/1tF2FDLa64kbLLHNXdS_eRJX82Cm7pf5k/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34166, 1923, 10, CONCAT('Think: Sway'), '2018-06-05', 'https://drive.google.com/file/d/1WOaqlCpuwkOJjlmUe8AQFRuLLQTchVwJ/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34167, 1923, 11, CONCAT('WritE: The Absent One'), '2018-06-12', 'https://drive.google.com/file/d/1gi0rbSUksqZlu8dPxB85bUQsP3RJxTIt/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (34168, 1923, 12, CONCAT('Beautiful Dream: Dawn'), '2018-06-19', 'https://drive.google.com/file/d/1r_7JKX2HoAvT3s-XwOqqNQ6hxaSaJroa/preview');

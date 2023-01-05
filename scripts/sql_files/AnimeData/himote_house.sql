@@ -1,0 +1,15 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (771, CONCAT('Himote House'), CONCAT('The comedy anime centers on five girls and one cat all living as housemates in Nakano, Tokyo: the three Himote sisters (Tokiyo, Kinami, and Kokoro) whose family manages the "Himote House," Kokoro', CHAR(39), 's classmates Tae and Minamo, and the cat Enishi. The girls live their daily lives trying to figure out ways to be popular, and they (and the cat) all possess a mysterious secret power...<br>
+<br>(Source: ANN)'), 1, '2018-10-08', '2018-12-24', 'Fall 2018', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1790/94342.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (847, 771, 105);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13886, 771, 1, CONCAT('I', CHAR(39), 'll Give You Romance'), NULL, 'https://ebd.cda.pl/800x450/662390059');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13887, 771, 2, CONCAT('A Girl', CHAR(39), 's Policy'), NULL, 'https://fcdn.stream/v/2w9mxz0mlo6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13888, 771, 3, CONCAT('I', CHAR(39), 'm Not Scared of Getting Hurt'), NULL, 'https://fcdn.stream/v/-zmqkhp08-z2e6l');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13889, 771, 4, CONCAT('Tomorrow, For Sure'), NULL, 'https://fcdn.stream/v/809e2mn079j');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13890, 771, 5, CONCAT('My Favorite People are Far Away'), NULL, 'https://fcdn.stream/v/1x9q47m2xo4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13891, 771, 6, CONCAT('Let', CHAR(39), 's Go Home'), NULL, 'https://fcdn.stream/v/6mo24lrddvr');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13892, 771, 7, CONCAT('A Journey Like a Prayer'), NULL, 'https://fcdn.stream/v/mz9ky0gl1oq');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13893, 771, 8, CONCAT('What Doesn', CHAR(39), 't Change'), NULL, 'https://fcdn.stream/v/pmv5dx8489l');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13894, 771, 9, CONCAT('The Story You Don', CHAR(39), 't Know'), NULL, 'https://fcdn.stream/v/7z9-zkxw2ox');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13895, 771, 10, CONCAT('Knowing No Limits'), NULL, 'https://fcdn.stream/v/7qv77wkjwvg');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13896, 771, 11, CONCAT('Knowing No Limits'), NULL, 'https://fcdn.stream/v/mz9kyj-21oq');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (13897, 771, 12, CONCAT('Special episode! A high-profile cast reflects on three months of Himote House'), NULL, 'https://fcdn.stream/v/yx936ge4q9l');

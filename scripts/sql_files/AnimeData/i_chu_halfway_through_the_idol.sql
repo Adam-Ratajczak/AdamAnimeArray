@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (816, CONCAT('I★Chu: Halfway Through the Idol'), CONCAT('School begins at Étoile Vio School, where idol-hopeful students known as "I-Chu" will undergo training to become full-fledged idols. However, things are off to a strange start when the new students are given a speech from their bear principal?! The I-Chu work steadily toward their goals and ask, "What is an idol?" Each boy will learn to shine as they struggle to find their answer.<br>
+<br>(Source: MAL News)'), 1, '2021-01-06', '2021-03-24', 'Winter 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1212/113946.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2001, 816, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2002, 816, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (893, 816, 62);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (895, 816, 36);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (896, 816, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (897, 816, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14691, 816, 1, CONCAT('The Colors of Songs'), NULL, 'https://ebd.cda.pl/620x368/6457190dd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14692, 816, 2, CONCAT('That Which Is Engraved'), NULL, 'https://ebd.cda.pl/620x368/6504890e7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14693, 816, 3, CONCAT('In the Case of an Otokonoko'), NULL, 'https://ebd.cda.pl/620x368/6548606fa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14694, 816, 4, CONCAT('Just as You Are'), NULL, 'https://ebd.cda.pl/620x368/688868238');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14695, 816, 5, CONCAT('That Which We Wish to Convey'), NULL, 'https://ebd.cda.pl/620x368/6888703b4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14696, 816, 6, CONCAT('Where I Belong'), NULL, 'https://ebd.cda.pl/620x368/6888712ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14697, 816, 7, CONCAT('Judgment ~For a Smile~'), NULL, 'https://ebd.cda.pl/620x368/680511206');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14698, 816, 8, CONCAT('Bonds'), NULL, 'https://ebd.cda.pl/620x368/6869164f4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14699, 816, 9, CONCAT('The Lost Color'), NULL, 'https://ebd.cda.pl/620x368/6932989d0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14700, 816, 10, CONCAT('Back to Life'), NULL, 'https://ebd.cda.pl/620x368/70492211e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14701, 816, 11, CONCAT('Infini ~The Decisive Battle~'), NULL, 'https://www.youtube.com/embed/5GvrFp_SYiE');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14702, 816, 12, CONCAT('Harmonie ~ Ichu~'), NULL, 'https://mixdrop.co/e/knxvrx4vt7o3qk/');

@@ -1,0 +1,13 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1299, CONCAT('Mugyutto! Black Clover'), CONCAT('SD Black Clover short comedy specials released exclusively on dTV.'), 4, '2019-07-01', '2019-08-19', '', '7 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1066/101736.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (559, 1299, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3207, 1299, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3208, 1299, 9);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1404, 1299, 141);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22321, 1299, 1, CONCAT('Tell us, Wizard King! How Can We Become the Wizard King?!'), '2019-07-01', 'https://ebd.cda.pl/800x450/4376748ed');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22322, 1299, 2, CONCAT('The Star on the Shooting Star'), '2019-07-08', 'https://ebd.cda.pl/800x450/43869906c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22323, 1299, 3, CONCAT('We Need to Stack Up Merit Like a Mille-feuille, La... Falalalala, Lalalala!'), '2019-07-15', 'https://ebd.cda.pl/800x450/440823369');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22324, 1299, 4, CONCAT('The Flirty Magic Knight Sees a Nightmare While Next to the Fiercely Drunken Witch'), '2019-07-22', 'https://ebd.cda.pl/800x450/4408236bd');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22325, 1299, 5, CONCAT('Marie, My Love Subtitled'), '2019-07-29', 'https://ebd.cda.pl/800x450/441217309');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22326, 1299, 6, CONCAT('Super-Excited Noelle, "Because I', CHAR(39), 'm Royalty"'), '2019-08-05', 'https://ebd.cda.pl/800x450/4412176d1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22327, 1299, 7, CONCAT('A Sudden Battle with the Demon (Lies)'), '2019-08-12', 'https://ebd.cda.pl/800x450/4441451ad');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (22328, 1299, 8, CONCAT('Asta, Forever...'), '2019-08-19', 'https://ebd.cda.pl/800x450/4495643cd');

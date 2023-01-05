@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (967, CONCAT('Kantai Collection: KanColle'), CONCAT('With the seas under constant threat from the hostile "Abyssal Fleet," a specialized naval base is established to counter them. Rather than standard naval weaponry, however, the base is armed with "Kanmusu"—girls who harbor the spirits of Japanese warships—possessing the ability to don weaponized gear that allows them to harness the powerful souls within themselves. Fubuki, a young Destroyer-type Kanmusu, joins the base as a new recruit unfortunately for her, despite her inexperience and timid nature, she is assigned to the famous Third Torpedo Squadron and quickly thrust into the heat of battle. When she is rescued from near annihilation, the rookie warship resolves to become as strong as the one who saved her.<br>
+<br>[Written by MAL Rewrite]'), 1, '2015-01-08', '2015-03-26', 'Winter 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/73954.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2345, 967, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2346, 967, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2347, 967, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1053, 967, 30);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1071, 967, 25);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1072, 967, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16868, 967, 1, CONCAT('Hello! Commander!'), '2015-01-08', 'https://ebd.cda.pl/620x395/6783680eb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16869, 967, 2, CONCAT('Without Dissent, Without Shame, Without Resentment!'), '2015-01-15', 'https://ebd.cda.pl/800x450/678370153');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16870, 967, 3, CONCAT('The Operation to Capture W Island!'), '2015-01-22', 'https://ebd.cda.pl/800x450/678371345');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16871, 967, 4, CONCAT('Now It', CHAR(39), 's Our Turn! Follow me!'), '2015-01-29', 'https://ebd.cda.pl/800x450/6783728e6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16872, 967, 5, CONCAT('Don', CHAR(39), 't Compare Me to the Girls in Carrier Group Five!'), '2015-02-05', 'https://ebd.cda.pl/800x450/6783746b7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16873, 967, 6, CONCAT('Destroyer Division Six and the Battle of Curry Seas!'), '2015-02-12', 'https://video.sibnet.ru/shell.php?videoid=1739088');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16874, 967, 7, CONCAT('I Hate Carrier Group One!'), '2015-02-19', 'https://video.sibnet.ru/shell.php?videoid=1742979');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16875, 967, 8, CONCAT('I', CHAR(39), 'm Not a Hotel!'), '2015-02-26', 'https://video.sibnet.ru/shell.php?videoid=1742983');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16876, 967, 9, CONCAT('Second Remodel-poi?!'), '2015-03-05', 'https://video.sibnet.ru/shell.php?videoid=1747639');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16877, 967, 10, CONCAT('Let', CHAR(39), 's Do Our Best!'), '2015-03-12', 'https://video.sibnet.ru/shell.php?videoid=1747643');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16878, 967, 11, CONCAT('Operation MI Begins!'), '2015-03-19', 'https://video.sibnet.ru/shell.php?videoid=1755132');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16879, 967, 12, CONCAT('Enemy Planes Dive-Bombing From Above!'), '2015-03-26', 'https://video.sibnet.ru/shell.php?videoid=1758991');

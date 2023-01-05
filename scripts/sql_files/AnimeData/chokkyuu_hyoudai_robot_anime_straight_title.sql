@@ -1,0 +1,14 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (323, CONCAT('Chokkyuu Hyoudai Robot Anime: Straight Title'), CONCAT('The story of the anime is set in the year Mobile Century 8013. It has been over seven millennia since humanity was wiped out on Earth, but the surviving military robots continue to wage war with no end in sight. The war has embroiled the Rebellion Federation that controls Europe and the Principality of Shin centered in Asia. Three young robots stand up to put an end to this futile war.<br><br>(Source: ANN)'), 1, '2013-02-06', '2013-04-24', 'Winter 2013', '15 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/46763.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (361, 323, 105);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5617, 323, 1, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-uttt1pueggd1.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5618, 323, 2, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-198x1vttb1ke.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5619, 323, 3, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-86nha53r9dcq.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5620, 323, 4, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-kv1la45h8hc4.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5621, 323, 5, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-9kyutox52e4c.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5622, 323, 6, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-rr3cqh0qgm56.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5623, 323, 7, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-a1v80xyy3has.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5624, 323, 8, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-oj09puu5852l.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5625, 323, 9, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-oj0yqwhb1qq1.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5626, 323, 10, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-kuicm1ihsnya.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5627, 323, 11, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-9r9besivcmiu.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5628, 323, 12, CONCAT('Untitled'), NULL, 'https://www.mp4upload.com/embed-inp7uhm4v7n9.html');

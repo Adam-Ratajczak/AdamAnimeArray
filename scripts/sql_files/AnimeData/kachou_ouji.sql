@@ -1,0 +1,23 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (929, CONCAT('Kachou Ouji'), CONCAT('Oji Tanaka has a wife, a child and a mundane job as a salary man in Tokyo', CHAR(39), 's modern society. But life wasn', CHAR(39), 't dull for him to begin with 15 years ago, he was known as "Gabriel", leader of a short-lived heavy metal band called Black Heaven. Oji', CHAR(39), 's life gets a sudden change in direction when he is invited by a mysterious blonde woman named Layla to pick up his Gibson Flying V and once again display his "legendary" guitar skills, not knowing that his music generates power for a massive weapon in an intergalactic war. <br>
+<br>(Source: ANN)'), 1, '1999-07-08', '1999-10-07', 'Summer 1999', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1957/106044.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2249, 929, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2250, 929, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2251, 929, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2252, 929, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1012, 929, 18);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1013, 929, 190);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1034, 929, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1035, 929, 26);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16348, 929, 1, CONCAT('Stairway to Heaven'), NULL, 'https://yourupload.com/embed/iQ4nuHHH10C3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16349, 929, 2, CONCAT('All Night Long'), NULL, 'https://www.facebook.com/video/embed?video_id=206906626021387');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16350, 929, 3, CONCAT('Hot House'), NULL, 'https://www.facebook.com/video/embed?video_id=206695506042499');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16351, 929, 4, CONCAT('Space Child'), NULL, 'https://mp4upload.com/embed-oxobo66ll5uz.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16352, 929, 5, CONCAT('These Are the Days'), NULL, 'https://www.facebook.com/video/embed?video_id=206452682733448');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16353, 929, 6, CONCAT('Walk Away'), NULL, 'https://www.facebook.com/video/embed?video_id=206347456077304');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16354, 929, 7, CONCAT('In Need'), NULL, 'https://www.facebook.com/video/embed?video_id=206149632763753');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16355, 929, 8, CONCAT('All Right Now'), NULL, 'https://www.facebook.com/video/embed?video_id=205898656122184');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16356, 929, 9, CONCAT('Get Off of My Cloud'), NULL, 'https://mp4upload.com/embed-scla685rkp3y.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16357, 929, 10, CONCAT('Ten Years Ago'), NULL, 'https://www.facebook.com/video/embed?video_id=205619859483397');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16358, 929, 11, CONCAT('Sweet Emotion'), NULL, 'https://www.facebook.com/video/embed?video_id=205560236156026');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16359, 929, 12, CONCAT('Into the Arena'), NULL, 'https://www.facebook.com/video/embed?video_id=205377752840941');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16360, 929, 13, CONCAT('The End'), NULL, 'https://mp4upload.com/embed-4qgj3py3odbh.html');

@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (833, CONCAT('Ikebukuro West Gate Park'), CONCAT('Ikebukuro is home to many different businesses and gangs. This includes Makoto Majima: the infamous "troubleshooter" who mediates between warring factions. Makoto knows all of the ins and outs of the bustling Tokyo district and strives to maintain peace alongside the G-Boys, who assist Makoto in his troubleshooting endeavors. Led by the charismatic and ruthless Takashi Andou, the G-Boys is the most influential gang in all of Ikebukuro. <br>
+<br>However, when the new faction "Red Angels" begins to move in on the G-Boys', CHAR(39), ' turf, immediate tensions rise between them. With numerous enemies scattered around and within the G-Boys, navigating through the streets becomes more difficult for Makoto. While continuing to troubleshoot problems, he slowly unravels a plot that may trigger an all-out war and threaten the entirety of Ikebukuro.<br>
+<br>[Written by MAL Rewrite]'), 1, '2020-10-06', '2020-12-22', 'Fall 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1277/108376.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2021, 833, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2022, 833, 4);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (913, 833, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14913, 833, 1, CONCAT('North Gate Smoke Tower'), '2020-10-06', 'https://ebd.cda.pl/620x368/59116014d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14914, 833, 2, CONCAT('Nishi Ichibangai Shady Job'), '2020-10-13', 'https://ebd.cda.pl/620x368/5949266ac');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14915, 833, 3, CONCAT('ZettaMovier @ Metropolitan Theater'), '2020-10-20', 'https://ebd.cda.pl/620x368/59939788e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14916, 833, 4, CONCAT('Waltz for Baby'), '2020-10-27', 'https://ebd.cda.pl/620x368/60239875d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14917, 833, 5, CONCAT('Dragon Tears'), '2020-11-03', 'https://ebd.cda.pl/620x368/60602394a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14918, 833, 6, CONCAT('G-Boys Winter War, Part 1'), '2020-11-10', 'https://ebd.cda.pl/620x368/609865724');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14919, 833, 7, CONCAT('G-Boys Winter War, Part 2'), '2020-11-17', 'https://ebd.cda.pl/620x368/61438704c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14920, 833, 8, CONCAT('Senkawa Fall Out Mother'), '2020-11-24', 'https://ebd.cda.pl/620x368/618740339');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14921, 833, 9, CONCAT('Hatred on Parade'), '2020-12-01', 'https://ebd.cda.pl/620x368/6237785a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14922, 833, 10, CONCAT('Beastly Reunion'), '2020-12-08', 'https://ebd.cda.pl/620x368/6275696eb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14923, 833, 11, CONCAT('Sunshine Street Civil War, Part 1'), '2020-12-15', 'https://ebd.cda.pl/620x368/63175677d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (14924, 833, 12, CONCAT('Sunshine Street Civil War, Part 2'), '2020-12-22', 'https://ebd.cda.pl/620x368/635277569');

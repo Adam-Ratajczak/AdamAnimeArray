@@ -1,0 +1,14 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2096, CONCAT('Yuuki Yuuna wa Yuusha de Aru: Washio Sumi no Shou'), CONCAT('Three girls have been chosen by the great Shinju-sama to be heroes and fight against the destructive beings known as Vertexes—enemies that threaten the harmony and safety of the world.<br>
+<br>Unsure of when they would be called to duty, Sumi Washio, Sonoko Nogi, and Gin Minowa spent their time idly. However, with the sudden appearance of a Vertex, they realize they have no idea how to fight together as magical girls when they are nearly bested. They manage to defeat their enemy by sheer determination, but in the aftermath of the battle, the three decide to fix their teamwork issues and improve their combat capabilities.<br>
+<br>But as more enemies appear—and requiring even more power to defeat their nemeses—the girls may find themselves irreversibly changed by the use of their magic. What price will they have to pay to ensure victory, and is it one worth paying if humanity will be saved?<br>
+<br>[Written by MAL Rewrite]'), 1, '2017-10-07', '2017-11-11', 'Fall 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/83012.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5203, 2096, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5204, 2096, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5205, 2096, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2269, 2096, 16);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36699, 2096, 1, CONCAT('Sumi Washio'), '2017-10-07', 'https://drive.google.com/file/d/1T_2Yw4APSvDTXUtma6YCkZ9EOQlODYxI/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36700, 2096, 2, CONCAT('Friends'), '2017-10-14', 'https://drive.google.com/file/d/11a0AGhaXhVjcYp_P23n3KOZb0CfBeOKW/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36701, 2096, 3, CONCAT('Everyday Life'), '2017-10-21', 'https://drive.google.com/file/d/1F77TXXAI7i7wtIv5LDXya5SbzVORzIGF/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36702, 2096, 4, CONCAT('Soul'), '2017-10-28', 'https://drive.google.com/file/d/1OcypDPmWoz1MBnp0g6Wm4XKK3YIP8dyG/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36703, 2096, 5, CONCAT('Goodbye'), '2017-11-04', 'https://drive.google.com/file/d/102g3fRcxkvJ_7CJvACcSTP4Sq9ENkBtu/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (36704, 2096, 6, CONCAT('Promise'), '2017-11-11', 'https://drive.google.com/file/d/1DZH63l117rtUZYPG7zyizAN3nBdDlaky/preview');

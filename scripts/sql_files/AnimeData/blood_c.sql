@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (234, CONCAT('Blood-C'), CONCAT('Peaceful schoolgirl by day, fearsome monster slayer by night, Saya Kisaragi is leading a split life. Equipped with a ceremonial sword given to her by her father for sacred tasks, she vanquishes every monster who dares threaten her quiet little village. But all too soon, Saya', CHAR(39), 's reality and everything she believes to be true is tested, when she overhears the monsters speak of a broken covenant—something she knows nothing about. And then, unexpectedly, a strange dog appears it asks her to whom she promised to protect the village, curious as to what would happen if she were to break that promise. Tormented by unexplainable visions and her world unraveling around her, we travel with Saya through her struggle to find a way to the truth in a village where nothing is as it seems.<br>
+<br>[Written by MAL Rewrite]'), 3, '2011-07-08', '2011-09-30', 'Summer 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/31649.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (113, 234, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (541, 234, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (542, 234, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (543, 234, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (263, 234, 35);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (250, 234, 44);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (251, 234, 11);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (252, 234, 19);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3779, 234, 1, CONCAT('O Ye Winds of Heaven'), '2011-07-08', 'https://ebd.cda.pl/620x395/787647975');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3780, 234, 2, CONCAT('It Is for Thy Sake'), '2011-07-15', 'https://ebd.cda.pl/620x395/78764759b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3781, 234, 3, CONCAT('As for Man'), '2011-07-22', 'https://ebd.cda.pl/620x395/7876487c7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3782, 234, 4, CONCAT('That Has Made Me Sad'), '2011-07-29', 'https://ebd.cda.pl/620x395/78765192e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3783, 234, 5, CONCAT('Meeting in the Way'), '2011-08-05', 'https://ebd.cda.pl/620x395/787649119');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3784, 234, 6, CONCAT('Dashed by Fierce Winds'), '2011-08-19', 'https://ebd.cda.pl/620x395/787647115');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3785, 234, 7, CONCAT('As Pitiless as the Storms'), '2011-04-26', 'https://ebd.cda.pl/620x395/787650368');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3786, 234, 8, CONCAT('Within the World'), '2011-09-02', 'https://ebd.cda.pl/620x395/7876495ca');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3787, 234, 9, CONCAT('Against My Wish'), '2011-09-09', 'https://ebd.cda.pl/620x395/7876511bf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3788, 234, 10, CONCAT('Since ', CHAR(39), 'Tis by Its Breath'), '2011-09-16', 'https://ebd.cda.pl/620x395/7876515ae');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3789, 234, 11, CONCAT('Whom Then Are There Now'), '2011-09-23', 'https://ebd.cda.pl/620x395/7876507a7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (3790, 234, 12, CONCAT('If Remembering Me'), '2011-09-30', 'https://ebd.cda.pl/620x395/78765233e');

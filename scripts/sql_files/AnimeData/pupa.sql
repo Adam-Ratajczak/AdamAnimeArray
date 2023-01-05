@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1508, CONCAT('Pupa'), CONCAT('Abandoned by their abusive parents and with only each other to depend on, siblings Utsutsu and Yume Hasegawa find themselves led astray by beautiful red butterflies that have appeared in their world. Unbeknownst to them, these crimson winged heralds trumpet the beginning of a cannibalistic nightmare—a mysterious virus known as Pupa is about to hatch.<br>
+<br>After succumbing to the full effects of Pupa, Yume undergoes a grotesque metamorphosis into a monstrous creature with an insatiable desire for flesh Utsutsu, on the other hand, is only partially affected, gaining remarkable regenerative powers instead. Reaffirming the resolve to keep the promise he made to himself years ago, Utsutsu is willing to sacrifice everything in order to always be there for his precious little sister.<br><br>Pupa tells the story of a loving brother', CHAR(39), 's desperate struggles to save his sister while protecting the world from her uncontrollable hunger.<br>
+<br>[Written by MAL Rewrite]'), 1, '2014-01-10', '2014-03-28', 'Winter 2014', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1117/121859.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3759, 1508, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3760, 1508, 11);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1625, 1508, 46);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27820, 1508, 1, CONCAT('Emergence'), '2014-01-10', 'https://ebd.cda.pl/620x395/557204178');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27821, 1508, 2, CONCAT('Sting'), '2014-01-17', 'https://ebd.cda.pl/620x395/55720447d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27822, 1508, 3, CONCAT('Tiger Beetle'), '2014-01-24', 'https://ebd.cda.pl/620x395/557205316');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27823, 1508, 4, CONCAT('Squirm'), '2014-01-31', 'https://ebd.cda.pl/620x395/557205018');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27824, 1508, 5, CONCAT('Tadpole'), '2014-02-07', 'https://ebd.cda.pl/620x395/557205655');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27825, 1508, 6, CONCAT('Encroach'), '2014-02-14', 'https://ebd.cda.pl/620x395/557204732');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27826, 1508, 7, CONCAT('Incubation'), '2014-02-21', 'https://ebd.cda.pl/620x395/5572059a3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27827, 1508, 8, CONCAT('Caterpillar'), '2014-02-28', 'https://ebd.cda.pl/620x395/5572062b5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27828, 1508, 9, CONCAT('Specimen'), '2014-03-07', 'https://ebd.cda.pl/620x395/5572065f7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27829, 1508, 10, CONCAT('Poison Curse'), '2014-03-14', 'https://ebd.cda.pl/620x395/557207473');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27830, 1508, 11, CONCAT('Pupation'), '2014-03-21', 'https://ebd.cda.pl/620x395/5572071cc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27831, 1508, 12, CONCAT('Larva'), '2014-03-28', 'https://ebd.cda.pl/620x395/5572068e0');

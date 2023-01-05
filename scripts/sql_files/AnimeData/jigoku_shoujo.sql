@@ -1,0 +1,33 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (903, CONCAT('Jigoku Shoujo'), CONCAT('It is said that if someone seeks revenge, they should dig two graves—and this is especially true of those who use the Hell Correspondence website. At the stroke of midnight, this ominous web domain becomes accessible, and whoever inputs the name of their grudge will get a visit from Ai Enma, the Hell Girl. Ai explains that she will send the target', CHAR(39), 's soul to hell, but the requester will also end up in hell when they die.<br>
+<br>For some, that price is far too steep for others, where they will spend their afterlife has no bearing on their current, day-to-day hell. But one thing is certain: the Hell Girl will always be available to those in need of revenge, while she stoically performs her duty of ferrying souls into the darkness.<br>
+<br>[Written by MAL Rewrite]<br>'), 1, '2005-10-05', '2006-04-05', 'Fall 2005', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/86907.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2186, 903, 11);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2187, 903, 4);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2188, 903, 10);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (985, 903, 46);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15983, 903, 1, CONCAT('From Beyond the Twlight'), '2005-10-05', 'https://ebd.cda.pl/620x395/868902951');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15984, 903, 2, CONCAT('The Possessed Girl'), '2005-10-12', 'https://ebd.cda.pl/620x395/86890171b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15985, 903, 3, CONCAT('The Tarnished Mound'), '2005-10-19', 'https://ebd.cda.pl/620x395/868902031');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15986, 903, 4, CONCAT('Silent Cries'), '2005-10-26', 'https://ebd.cda.pl/620x395/8689026f8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15987, 903, 5, CONCAT('The Woman in the High Tower'), '2005-11-02', 'https://ebd.cda.pl/620x395/868902302');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15988, 903, 6, CONCAT('Early Afternoon Window'), '2005-11-09', 'https://ebd.cda.pl/620x395/868895130');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15989, 903, 7, CONCAT('Cracked Mask'), '2005-11-16', 'https://ebd.cda.pl/620x395/868895445');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15990, 903, 8, CONCAT('Silent Acquaintances'), '2005-11-23', 'https://ebd.cda.pl/620x395/86889604d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15991, 903, 9, CONCAT('Sweet Trap'), '2005-11-30', 'https://ebd.cda.pl/620x395/86889579b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15992, 903, 10, CONCAT('Friends'), '2005-12-07', 'https://ebd.cda.pl/620x395/8688966c9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15993, 903, 11, CONCAT('Broken Threads'), '2005-12-14', 'https://ebd.cda.pl/620x395/868896355');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15994, 903, 12, CONCAT('Spilled Bits'), '2005-12-21', 'https://ebd.cda.pl/620x395/8688969a0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15995, 903, 13, CONCAT('Purgatory Girl'), '2005-12-28', 'https://ebd.cda.pl/620x395/86889780d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15996, 903, 14, CONCAT('Beyond the Dead Alley'), '2006-01-04', 'https://ebd.cda.pl/620x395/868897559');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15997, 903, 15, CONCAT('Island Woman'), '2006-01-18', 'https://ebd.cda.pl/620x395/868897264');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15998, 903, 16, CONCAT('A Night Among Traveling Entertainers'), '2006-01-25', 'https://ebd.cda.pl/620x395/868898167');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15999, 903, 17, CONCAT('Glass Scenery'), '2006-02-01', 'https://ebd.cda.pl/620x395/86889848f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16000, 903, 18, CONCAT('Bound Girl'), '2006-02-08', 'https://ebd.cda.pl/620x395/8688990f8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16001, 903, 19, CONCAT('The Puppet Bride'), '2006-02-15', 'https://ebd.cda.pl/620x395/868898768');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16002, 903, 20, CONCAT('Hell Girl vs. Hell Boy'), '2006-02-22', 'https://ebd.cda.pl/620x395/8688996b0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16003, 903, 21, CONCAT('Kind Neighbor'), '2006-03-01', 'https://ebd.cda.pl/620x395/86889936b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16004, 903, 22, CONCAT('Rain of Regret'), '2006-03-08', 'https://ebd.cda.pl/620x395/868900513');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16005, 903, 23, CONCAT('The Light of a Ward'), '2006-03-15', 'https://ebd.cda.pl/620x395/868899911');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16006, 903, 24, CONCAT('The Twilight Village'), '2006-03-22', 'https://ebd.cda.pl/620x395/8689014f0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16007, 903, 25, CONCAT('Hell Girl'), '2006-03-29', 'https://ebd.cda.pl/620x395/868900215');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16008, 903, 26, CONCAT('Basting'), '2006-04-05', 'https://ebd.cda.pl/620x395/8689011f3');

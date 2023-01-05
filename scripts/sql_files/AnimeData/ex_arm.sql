@@ -1,0 +1,19 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (499, CONCAT('Ex-Arm'), CONCAT('After being hit by a truck in the year 2014, Akira Natsume awakes to find himself inside a machine following a 16-year-long coma. As he adjusts to the new interface, he is greeted by police officer Minami Uezono and her android partner Alma. The pair shows Akira that his brain is contained inside a device called an EX-ARM—a weapon of mass destruction. Aboard an enemy smuggler ship, the three must escape using nothing but their ingenuity and combat skills.<br>
+<br>While initially reluctant to fight, Akira soon recalls his brother', CHAR(39), 's words from before the accident. The memory inspires him to take action, possessing Alma', CHAR(39), 's body to fight his opponents using martial arts. Once Alma plugs him into one of the ship', CHAR(39), 's ports, he discovers the devastating potential of his EX-ARM by effortlessly hacking and assuming control of the vessel.<br>
+<br>Upon safely arriving back on land, Akira meets the other members of the EX-ARM Countermeasure Prevention Team, a police division working to mitigate the effects of EX-ARMs. Witnessing the atrocities committed by those who seek the power of EX-ARMs, he resolves to join the team and put an end to the terror caused by these weapons.<br>
+<br>[Written by MAL Rewrite]'), 2, '2021-01-11', '2021-03-29', 'Winter 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1847/113935.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (555, 499, 85);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (521, 499, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (522, 499, 4);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8931, 499, 1, CONCAT('Forbidden Weapon'), '2021-01-11', 'https://ebd.cda.pl/620x368/649624131');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8932, 499, 2, CONCAT('Day of Judgment'), '2020-01-18', 'https://ebd.cda.pl/620x368/6542492a5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8933, 499, 3, CONCAT('Angel of Murder'), '2021-01-25', 'https://ebd.cda.pl/620x368/6999694b5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8934, 499, 4, CONCAT('Inheritor of Courage'), '2021-02-01', 'https://ebd.cda.pl/620x395/755631715');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8935, 499, 5, CONCAT('Red-Hot Daydream!'), '2021-02-08', 'https://ebd.cda.pl/800x450/755633281');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8936, 499, 6, CONCAT('EX-ARM Auction'), '2021-02-15', 'https://ebd.cda.pl/800x450/7556338be');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8937, 499, 7, CONCAT('Banquet of Fire'), '2021-02-22', 'https://ebd.cda.pl/800x450/755634105');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8938, 499, 8, CONCAT('Beta'), '2021-03-01', 'https://ebd.cda.pl/800x450/755634477');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8939, 499, 9, CONCAT('Fallen Messiah'), '2021-03-08', 'https://ebd.cda.pl/800x450/75563475c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8940, 499, 10, CONCAT('Genes of the Original Sin'), '2021-03-15', 'https://ebd.cda.pl/800x450/755635029');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8941, 499, 11, CONCAT('Proof of Humanity'), '2021-03-22', 'https://ebd.cda.pl/800x450/7556353ce');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (8942, 499, 12, CONCAT('A Giant Leap'), '2021-03-29', 'https://video.sibnet.ru/shell.php?videoid=4316423');

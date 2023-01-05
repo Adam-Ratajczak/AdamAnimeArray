@@ -1,0 +1,23 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2004, CONCAT('Uta no☆Prince-sama♪ Maji Love Revolutions'), CONCAT('The third anime adaptation of the otome game Uta no☆Prince-sama♪.<br>
+<br>Starish are given new assignments in newly divided teams, and they do their best in order to try and impress Shining Saotome into allowing their entry to SSS, a top level music contest. Meanwhile, Haruka works with the Quartet Night. '), 1, '2015-04-05', '2015-06-28', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/73328.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (836, 2004, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4996, 2004, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4997, 2004, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2176, 2004, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2224, 2004, 36);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2225, 2004, 6);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2226, 2004, 47);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2227, 2004, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35338, 2004, 1, CONCAT('The dice are cast'), '2015-04-05', 'https://video.sibnet.ru/shell.php?videoid=1764035');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35339, 2004, 2, CONCAT('GOLDEN☆STAR'), '2015-04-12', 'https://video.sibnet.ru/shell.php?videoid=1766347');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35340, 2004, 3, CONCAT('EMOTIONAL LIFE'), '2015-04-19', 'https://drive.google.com/file/d/0B9x5eo1ro_r9cHFEZGVVb1JnR00/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35341, 2004, 4, CONCAT('Innocent Wind'), '2015-04-26', 'https://drive.google.com/file/d/0B6CzYyD7en76MUpMNmhiRmYtQ28/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35342, 2004, 5, CONCAT('Code: T.V.U'), '2015-05-03', 'https://video.sibnet.ru/shell.php?videoid=1780670');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35343, 2004, 6, CONCAT('Saintly Territory'), '2015-05-10', 'https://video.sibnet.ru/shell.php?videoid=1786201');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35344, 2004, 7, CONCAT('Only One'), '2015-05-17', 'https://video.sibnet.ru/shell.php?videoid=1786203');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35345, 2004, 8, CONCAT('Original Resonance'), '2015-05-24', 'https://video.sibnet.ru/shell.php?videoid=1794802');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35346, 2004, 9, CONCAT('Never...'), '2015-05-31', 'https://video.sibnet.ru/shell.php?videoid=1798799');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35347, 2004, 10, CONCAT('Answer'), '2015-06-07', 'https://video.sibnet.ru/shell.php?videoid=1820061');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35348, 2004, 11, CONCAT('Thank You'), '2015-06-14', 'https://video.sibnet.ru/shell.php?videoid=1820064');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35349, 2004, 12, CONCAT('Evolution Eve'), '2015-06-21', 'https://video.sibnet.ru/shell.php?videoid=1824035');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35350, 2004, 13, CONCAT('Maji Love Revolutions'), '2015-06-28', 'https://video.sibnet.ru/shell.php?videoid=1833894');

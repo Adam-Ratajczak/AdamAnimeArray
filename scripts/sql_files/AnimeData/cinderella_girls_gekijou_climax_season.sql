@@ -1,0 +1,18 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (336, CONCAT('Cinderella Girls Gekijou: Climax Season'), CONCAT('Fourth season of Cinderella Girls Gekijou. '), 1, '2019-04-02', '2019-06-25', 'Spring 2019', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1105/111610.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (776, 336, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (777, 336, 8);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (375, 336, 74);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (376, 336, 107);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5761, 336, 1, CONCAT('On the Rooftop'), NULL, 'https://ebd.cda.pl/620x395/591611630');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5762, 336, 2, CONCAT('Thank You for Your Hard Work | I Need to Draw This! | Win-win'), NULL, 'https://ebd.cda.pl/620x395/5916110f5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5763, 336, 3, CONCAT('Let Me Show You an Example | I', CHAR(39), 'm Used to Heavy Things | I Need to Borrow!'), NULL, 'https://ebd.cda.pl/620x395/5916113da');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5764, 336, 4, CONCAT('Who', CHAR(39), 'll Be the Silly One? | Dear Glamorous Mountain | Straight Man Challenge!?'), NULL, 'https://ebd.cda.pl/620x395/5916104a0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5765, 336, 5, CONCAT('I', CHAR(39), 'll Do It for You ☆ | Forced Purging! | Going With the Trend ♪'), NULL, 'https://ebd.cda.pl/620x395/59161196e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5766, 336, 6, CONCAT('Munakator'), NULL, 'https://ebd.cda.pl/620x395/591612816');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5767, 336, 7, CONCAT('Petting Miria | Don', CHAR(39), 't They Look Alike? | It Looks Good on You!'), NULL, 'https://ebd.cda.pl/620x395/5916125b3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5768, 336, 8, CONCAT('Teach Us, Sachiko-sensei! | Greece Highlights Preparations | Then I Can Do That, Too!'), NULL, 'https://ebd.cda.pl/620x395/591613769');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5769, 336, 9, CONCAT('Fure Fure Mayu | Honest Feelings | A Moment of Happiness'), NULL, 'https://ebd.cda.pl/620x395/5916140aa');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5770, 336, 10, CONCAT('Out Of Control!? Spacey Maid | How to Use Roses | The Quintessence of a Maid'), NULL, 'https://ebd.cda.pl/620x395/5916149f9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5771, 336, 11, CONCAT('Beyond the Wind | Like the Stars in the Universe | Grand Master', CHAR(39), 's Battle'), NULL, 'https://ebd.cda.pl/620x395/59161348c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5772, 336, 12, CONCAT('Playfulness At Its Peak | A Guaranteed Surprise! | If I Take It Off...'), NULL, 'https://ebd.cda.pl/620x395/591614383');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5773, 336, 13, CONCAT('Untitled'), NULL, 'https://ebd.cda.pl/620x395/59162759a');

@@ -1,0 +1,20 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1433, CONCAT('Otome wa Boku ni Koishiteru'), CONCAT('Mizuho can', CHAR(39), 't believe his ears when Grandpa', CHAR(39), 's will is read out. Grandpa', CHAR(39), 's final wish is for Mizuho to attend the same academy as Mizuho', CHAR(39), 's mother. The catch is it', CHAR(39), 's an all-girls school. With the help of friend Mariya however, he gets a makeover good enough to fool everyone at the academy. <br>
+<br>(Source: ANN)'), 1, '2006-10-08', '2006-12-24', 'Fall 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/75483.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3552, 1433, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3553, 1433, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3554, 1433, 7);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1540, 1433, 63);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1578, 1433, 43);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1579, 1433, 13);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25840, 1433, 1, CONCAT('The Prince with Lipstick'), '2006-10-08', 'https://mp4upload.com/embed-et89wq9f9j1r.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25841, 1433, 2, CONCAT('The Eraser That Doesn', CHAR(39), 't Erase'), '2006-10-15', 'https://mp4upload.com/embed-b9r9ql1j8hqm.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25842, 1433, 3, CONCAT('When Maidens Choose a Maiden'), '2006-10-22', 'https://mp4upload.com/embed-wyj3nvwcgyd5.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25843, 1433, 4, CONCAT('Sleeping Beauty Behind the Door That Won', CHAR(39), 't Open'), '2006-10-29', 'https://www.mp4upload.com/embed-x0sf4ffpq3pk.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25844, 1433, 5, CONCAT('The Midnight Chapel'), '2006-11-05', 'https://www.mp4upload.com/embed-9v7yjcoqbv65.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25845, 1433, 6, CONCAT('Capriccio of a Summer', CHAR(39), 's Day'), '2006-11-12', 'https://www.mp4upload.com/embed-z28pl92igvuw.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25846, 1433, 7, CONCAT('Little Kana and a Big Ribbon'), '2006-11-19', 'https://www.mp4upload.com/embed-8hyxra559bli.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25847, 1433, 8, CONCAT('Time That Won', CHAR(39), 't Shrink'), '2006-11-26', 'https://www.mp4upload.com/embed-s32yg2t21635.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25848, 1433, 9, CONCAT('Mariya in Love'), '2006-12-03', 'https://www.mp4upload.com/embed-129146gg90lf.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25849, 1433, 10, CONCAT('The Two Juliets'), '2006-12-10', 'https://www.mp4upload.com/embed-tf6feyr37qxf.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25850, 1433, 11, CONCAT('An Etude of Confusion'), '2006-12-17', 'https://www.mp4upload.com/embed-ajn1mz4ztsoi.html');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25851, 1433, 12, CONCAT('The Last Dance Forever'), '2006-12-24', 'https://www.mp4upload.com/embed-knnhv4hbkfom.html');

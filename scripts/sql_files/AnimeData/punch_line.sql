@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1507, CONCAT('Punch Line'), CONCAT('After escaping a bus hijacking with the help of masked superhero Strange Juice, Yuuta Iridatsu finds his soul separated from his body and in the care of a perverse cat spirit, Chiranosuke. As a spirit, Yuuta wanders around his residence, the Korai House, aiming to regain his body and observe the other residents: Meika Daihatsu, a genius inventor Mikatan Narugino, a cheerful idol Ito Hikiotani, a shut-in NEET and Rabura Chichibu, a spiritual medium. After catching a glimpse of Narugino', CHAR(39), 's undergarments, Chiranosuke reveals to Yuuta that he becomes exponentially stronger upon seeing panties. However, if he sees another pair while he is still a spirit, his power will cause an asteroid to crash into the earth, ending the world and killing his friends.<br><br>Punch Line follows Yuuta as he unravels the mysteries surrounding Korai House, its residents, and a villainous organization attempting to end the world. Will Yuuta be able to save everyone, or will the ever-present threat of panties result in their doom?<br>
+<br>[Written by MAL Rewrite]'), 5, '2015-04-10', '2015-06-26', 'Spring 2015', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/73121.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (650, 1507, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3757, 1507, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3758, 1507, 12);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1624, 1507, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1653, 1507, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1654, 1507, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1655, 1507, 29);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27808, 1507, 1, CONCAT('Panty Panic'), '2015-04-10', 'https://ebd.cda.pl/800x450/3824080b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27809, 1507, 2, CONCAT('The Lace of Compassion'), '2015-04-17', 'https://ebd.cda.pl/800x450/3824065d8');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27810, 1507, 3, CONCAT('Martians Attack!'), '2015-04-24', 'https://ebd.cda.pl/800x450/382404742');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27811, 1507, 4, CONCAT('Possessed by the Stripes'), '2015-05-01', 'https://ebd.cda.pl/800x450/38240621d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27812, 1507, 5, CONCAT('Ito Dies'), '2015-05-08', 'https://ebd.cda.pl/800x450/382411330');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27813, 1507, 6, CONCAT('It', CHAR(39), 's New Year', CHAR(39), 's Eve, Meikaemon'), '2015-05-15', 'https://ebd.cda.pl/800x450/382405975');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27814, 1507, 7, CONCAT('Panty Panic Returns'), '2015-05-22', 'https://ebd.cda.pl/800x450/38240718a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27815, 1507, 8, CONCAT('Panty Party!'), '2015-05-29', 'https://ebd.cda.pl/800x450/3824134d6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27816, 1507, 9, CONCAT('Brazilian High Kick'), '2015-06-05', 'https://ebd.cda.pl/800x450/382406828');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27817, 1507, 10, CONCAT('The Fall'), '2015-06-12', 'https://ebd.cda.pl/800x450/382412204');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27818, 1507, 11, CONCAT('Justice Punch!'), '2015-06-19', 'https://ebd.cda.pl/800x450/38240741b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27819, 1507, 12, CONCAT('Punch Line'), '2015-06-26', 'https://ebd.cda.pl/800x450/382408314');

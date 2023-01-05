@@ -1,0 +1,22 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (30, CONCAT('ACCA: 13-ku Kansatsu-ka'), CONCAT('ACCA—a national body of the kingdom of Dowa that provides public services to the citizens of the country—was established as part of the peace settlement between the king of Dowa and the 13 states of the country during a revolt. One hundred years later, Dowa is in a period of unprecedented peace, due in part to the ACCA system. However, rumors of a coup d', CHAR(39), 'état start to surface. Jean Otus, the second-in-command of the inspection department of ACCA, is charged with inspecting all 13 state branches. What will he discover as he performs his audit?<br>
+<br>Intriguing and mysterious, ACCA: 13-ku Kansatsu-ka is a politically-themed mystery that reveals a world of diverse cultures and lifestyles, with intricate connections between its characters, as the truth of the coup d', CHAR(39), 'état slowly unfolds.<br>
+<br>[Written by MAL Rewrite]'), 1, '2017-01-10', '2017-03-28', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/83776.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (19, 30, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (64, 30, 6);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (65, 30, 9);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (66, 30, 4);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (33, 30, 21);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (38, 30, 1);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (39, 30, 2);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (327, 30, 1, CONCAT('Jean the Cigarette-Peddler'), '2017-01-10', 'https://ebd.cda.pl/620x368/466451018');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (328, 30, 2, CONCAT('The Partner in Crime`s Name Is Nino'), '2017-01-17', 'https://ebd.cda.pl/620x368/466451359');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (329, 30, 3, CONCAT('The Swirling Smoke of Rumors in the Castle'), '2017-01-24', 'https://drive.google.com/file/d/1je-Bu1ILRzt3Y8e5nfzV2Ezz0ptGqjGY/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (330, 30, 4, CONCAT('Smoldering Embers in an Isolated Nation'), '2017-01-31', 'https://drive.google.com/file/d/1D2CZmfQl9X0H73Mdu8UkT9OjORv5jeND/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (331, 30, 5, CONCAT('Overlapping Footprints in the Distance.'), '2017-02-07', 'https://drive.google.com/file/d/1QokgtzYLF6IgSPL73QbnaD9pq9BEe74p/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (332, 30, 6, CONCAT('Where Pride and Train Tracks Lead'), '2017-02-14', 'https://drive.google.com/file/d/1C9rE1xoq0lXTgxS0Y__dXkuckKjdw7q5/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (333, 30, 7, CONCAT('The Truth Emerges in the Night Mists'), '2017-02-21', 'https://drive.google.com/file/d/1hmSarz0uS30FiAoea96YonqNWaZpvkI6/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (334, 30, 8, CONCAT('The Princess Who Spread Her Wings and the Friend Who Had a Duty'), '2017-02-28', 'https://drive.google.com/file/d/1tX7rLDkkp53tshCb0coVSsVVSMQlJg-2/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (335, 30, 9, CONCAT('A Graceful Black Adder Bears Its Fangs'), '2017-03-07', 'https://drive.google.com/file/d/1_5-rDYYjFXEv7VE08bEwpAsk6SZEwRV5/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (336, 30, 10, CONCAT('Starfall in a City Without a Sky'), '2017-03-14', 'https://drive.google.com/file/d/1-4bn8-sgxlQR6VNF9cDaOrTuXf54PT_0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (337, 30, 11, CONCAT('Furawau', CHAR(39), 's Flowers Smell of Malice'), '2017-03-21', 'https://drive.google.com/file/d/1_c5VLdGeWYfWaefv1mxm1whABYe-_yaX/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (338, 30, 12, CONCAT('Where the Bird Flies'), '2017-03-28', 'https://video.sibnet.ru/shell.php?videoid=3881845');

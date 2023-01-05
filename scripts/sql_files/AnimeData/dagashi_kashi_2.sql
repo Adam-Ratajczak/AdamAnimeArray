@@ -1,0 +1,17 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (370, CONCAT('Dagashi Kashi 2'), CONCAT('Second season of Dagashi Kashi.'), 1, '2018-01-12', '2018-03-30', 'Winter 2018', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1649/90141.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (170, 370, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (858, 370, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (859, 370, 15);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (413, 370, 10);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6424, 370, 1, CONCAT('Big Katsu, Peperoncino, and...'), '2018-01-12', 'https://ebd.cda.pl/620x368/19633715e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6425, 370, 2, CONCAT('Baseball Board Game Gum, Pop Pop Boat, and...'), '2018-01-19', 'https://ebd.cda.pl/800x450/9521094a6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6426, 370, 3, CONCAT('Beigoma, Reminiscence, and...'), '2018-01-26', 'https://ebd.cda.pl/800x450/9521271ac?a=1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6427, 370, 4, CONCAT('Homerun Bar, Fireworks Festival, and...'), '2018-02-02', 'https://ebd.cda.pl/800x450/9521274e7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6428, 370, 5, CONCAT('Ambulance, Get a Move On, You Cod!, and...'), '2018-02-09', 'https://ebd.cda.pl/800x450/9524103c1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6429, 370, 6, CONCAT('Convenience Store, Job Magazine, and...'), '2018-02-16', 'https://ebd.cda.pl/800x450/952128091');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6430, 370, 7, CONCAT('Hajime Owari, Chocoball, and...'), '2018-02-23', 'https://ebd.cda.pl/800x450/9521295a1?a=1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6431, 370, 8, CONCAT('Roll Candy, High Eight Chocolate, and...'), '2018-03-02', 'https://ebd.cda.pl/800x450/952129846');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6432, 370, 9, CONCAT('Internets, Super Ball, and...'), '2018-03-09', 'https://ebd.cda.pl/800x450/9521340de');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6433, 370, 10, CONCAT('Monjiro Squid, Manga Manuscript, and...'), '2018-03-16', 'https://ebd.cda.pl/800x450/9521343a0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6434, 370, 11, CONCAT('Homerun Bar Winning Stick, Snow, and...'), '2018-03-23', 'https://ebd.cda.pl/800x450/9521355e9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (6435, 370, 12, CONCAT('I', CHAR(39), 'm Back, Welcome Back, and...'), '2018-03-30', 'https://ebd.cda.pl/800x450/952135840?a=1');

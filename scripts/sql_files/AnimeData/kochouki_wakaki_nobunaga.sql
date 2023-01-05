@@ -1,0 +1,21 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1049, CONCAT('Kochouki: Wakaki Nobunaga'), CONCAT('The series is a historical drama aesthetically and boldly adapting the life of Oda Nobunaga in his teens up to his time as a warlord against his brother, Nobuyuki.<br>
+<br>(Source: MAL News)'), 1, '2019-07-08', '2019-09-23', 'Summer 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1934/111399.jpg');
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2535, 1049, 12);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2536, 1049, 7);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2537, 1049, 14);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1139, 1049, 55);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1152, 1049, 12);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1153, 1049, 13);
+INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1154, 1049, 15);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18243, 1049, 1, CONCAT('Coming of Age'), '2019-07-08', 'https://ebd.cda.pl/620x368/3660385b2');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18244, 1049, 2, CONCAT('Marriage'), '2019-07-15', 'https://ebd.cda.pl/620x368/36986114f');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18245, 1049, 3, CONCAT('Father and Child'), '2019-07-22', 'https://ebd.cda.pl/620x368/3711103f7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18246, 1049, 4, CONCAT('An Old Man', CHAR(39), 's Wish'), '2019-07-29', 'https://ebd.cda.pl/620x368/3737386d9');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18247, 1049, 5, CONCAT('A Meeting'), '2019-08-05', 'https://ebd.cda.pl/620x368/3769672e5');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18248, 1049, 6, CONCAT('Kiyosu'), '2019-08-12', 'https://ebd.cda.pl/620x368/3792442be');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18249, 1049, 7, CONCAT('Love and Death'), '2019-08-19', 'https://ebd.cda.pl/620x368/381648719');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18250, 1049, 8, CONCAT('Nobukatsu'), '2019-08-26', 'https://ebd.cda.pl/620x368/384579714');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18251, 1049, 9, CONCAT('Parting'), '2019-09-02', 'https://ebd.cda.pl/620x368/3878101c4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18252, 1049, 10, CONCAT('Elder Brother and Younger Brother'), '2019-09-09', 'https://ebd.cda.pl/620x368/3920416bb');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18253, 1049, 11, CONCAT('Advancing Toward the Capital'), '2019-09-16', 'https://ebd.cda.pl/620x368/39774164a');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18254, 1049, 12, CONCAT('Okehazama'), '2019-09-23', 'https://ebd.cda.pl/620x368/397742257');

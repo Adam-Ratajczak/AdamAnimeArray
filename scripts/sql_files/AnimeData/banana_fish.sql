@@ -1,0 +1,32 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (174, CONCAT('Banana Fish'), CONCAT('Aslan Jade Callenreese, known as Ash Lynx, was a runaway picked off the streets of New York City and raised by the infamous godfather of the mafia, Dino Golzine. Now 17 years old and the boss of his own gang, Ash begins investigating the mysterious "Banana Fish"—the same two words his older brother, Griffin, has muttered since his return from the Iraq War. However, his inquiries are hindered when Dino sends his men after Ash at an underground bar he uses as a hideout.<br>
+<br>At the bar, Skip, Ash', CHAR(39), 's friend, introduces him to Shunichi Ibe and his assistant, Eiji Okumura, who are Japanese photographers reporting on American street gangs. However, their conversation is interrupted when Shorter Wong, one of Ash', CHAR(39), 's allies, calls to warn him about Dino. Soon, Dino', CHAR(39), 's men storm the bar, and in the ensuing chaos kidnap Skip and Eiji. Now, Ash must find a way to rescue them and continue his investigation into Banana Fish, but will his history with the mafia prevent him from succeeding?<br>
+<br>[Written by MAL Rewrite]'), 1, '2018-07-06', '2018-12-21', 'Summer 2018', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1190/93472.jpg');
+INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (81, 174, 3);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (400, 174, 1);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (401, 174, 2);
+INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (402, 174, 6);
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (196, 174, 73);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2449, 174, 1, CONCAT('A Perfect Day for Bananafish'), '2018-07-06', 'https://ebd.cda.pl/800x450/2708144a3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2450, 174, 2, CONCAT('In Another Country'), '2018-07-13', 'https://ebd.cda.pl/620x395/622745686');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2451, 174, 3, CONCAT('Across the River and into the Trees'), '2018-07-20', 'https://ebd.cda.pl/620x395/62274205d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2452, 174, 4, CONCAT('This Side of Paradise'), '2018-07-27', 'https://ebd.cda.pl/620x395/62273879d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2453, 174, 5, CONCAT('From Death to Morning'), '2018-08-03', 'https://ebd.cda.pl/620x395/622739080');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2454, 174, 6, CONCAT('My Lost City'), '2018-08-10', 'https://ebd.cda.pl/620x395/622738422');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2455, 174, 7, CONCAT('The Rich Boy'), '2018-08-17', 'https://ebd.cda.pl/620x395/6227399f0');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2456, 174, 8, CONCAT('Banal Story'), '2018-08-24', 'https://ebd.cda.pl/620x395/622739379');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2457, 174, 9, CONCAT('Save Me The Waltz'), '2018-08-31', 'https://ebd.cda.pl/620x395/62274057d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2458, 174, 10, CONCAT('Babylon Revisited'), '2018-09-07', 'https://ebd.cda.pl/620x395/622745958');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2459, 174, 11, CONCAT('The Beautiful and Damned'), '2018-09-14', 'https://ebd.cda.pl/620x395/622740838');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2460, 174, 12, CONCAT('To Have and Have Not'), '2018-09-21', 'https://ebd.cda.pl/620x395/6227414f4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2461, 174, 13, CONCAT('The Snows of Kilimanjaro'), '2018-10-05', 'https://ebd.cda.pl/620x395/622741769');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2462, 174, 14, CONCAT('Tender is the Night'), '2018-10-12', 'https://drive.google.com/file/d/1EGTxRImz0QdiDidwhvFP5e2_Dzk-TkA0/preview');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2463, 174, 15, CONCAT('The Garden of Eden'), '2018-10-19', 'https://ebd.cda.pl/620x395/6227426ab');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2464, 174, 16, CONCAT('Lo, the Poor Peacock'), '2018-10-26', 'https://ebd.cda.pl/620x395/6227441f6');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2465, 174, 17, CONCAT('The Killers'), '2018-11-02', 'https://ebd.cda.pl/620x395/622742984');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2466, 174, 18, CONCAT('Islands in the Stream'), '2018-11-09', 'https://ebd.cda.pl/620x395/622743816');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2467, 174, 19, CONCAT('Ice Palace'), '2018-11-16', 'https://ebd.cda.pl/620x395/6227432b1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2468, 174, 20, CONCAT('The Unvanquished'), '2018-11-23', 'https://ebd.cda.pl/620x395/622743566');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2469, 174, 21, CONCAT('The Undefeated'), '2018-11-30', 'https://ebd.cda.pl/620x395/622744473');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2470, 174, 22, CONCAT('As I Lay Dying'), '2018-12-07', 'https://ebd.cda.pl/620x395/62274501d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2471, 174, 23, CONCAT('For Whom the Bell Tolls'), '2018-12-14', 'https://ebd.cda.pl/620x395/6227453bf');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2472, 174, 24, CONCAT('The Catcher in the Rye'), '2018-12-21', 'https://ebd.cda.pl/620x395/622744790');

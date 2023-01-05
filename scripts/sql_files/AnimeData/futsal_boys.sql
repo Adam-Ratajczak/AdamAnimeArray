@@ -1,0 +1,16 @@
+INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (553, CONCAT('Futsal Boys!!!!!'), CONCAT('Haru Yamato was never interested in futsal ever since the sport gained international fame 10 years ago. However, a chance to watch Japanese futsal player Tokinari Tennoji compete at the U-18 World Cup completely changed his perspective. When given the opportunity on his first day at Koyo Gakuen High School, Haru enthusiastically joins the futsal club.<br>
+<br>There, he meets a variety of talented players including captain Toi Tsukioka, who was a part of the same U-18 team as Tennoji. Despite having a dynamic roster, the Koyo Futsal Club has a long way ahead when it comes to assembling a team that can stand up to powerhouse opponents—especially for Haru, who is a total beginner to the sport!<br>
+<br>[Written by MAL Rewrite]'), 1, '2022-01-09', '2022-03-27', 'Winter 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1475/120394.jpg');
+INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (616, 553, 30);
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10231, 553, 1, CONCAT('A Dream', CHAR(39), 's Kickoff!'), NULL, 'https://ebd.cda.pl/620x368/9621435dc');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10232, 553, 2, CONCAT('Play-Caller Sakaki?'), NULL, 'https://ebd.cda.pl/620x368/1030330482');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10233, 553, 3, CONCAT('First Match! Adalbert'), NULL, 'https://ebd.cda.pl/620x368/103034665e');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10234, 553, 4, CONCAT('Taiga and Ryu'), NULL, 'https://ebd.cda.pl/620x368/10303565f7');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10235, 553, 5, CONCAT('The Unforgettable Past'), NULL, 'https://ebd.cda.pl/620x368/100133586b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10236, 553, 6, CONCAT('Surpass!'), NULL, 'https://ebd.cda.pl/620x368/101027077b');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10237, 553, 7, CONCAT('Sparkling Stars! Amanogawa Gakuen!'), NULL, 'https://ebd.cda.pl/620x368/101625777c');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10238, 553, 8, CONCAT('WE ARE FUN-TASISTA'), NULL, 'https://ebd.cda.pl/620x368/10240397b4');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10239, 553, 9, CONCAT('Team Play'), NULL, 'https://ebd.cda.pl/620x368/103113713d');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10240, 553, 10, CONCAT('What I Don', CHAR(39), 't Want to Lose'), NULL, 'https://ebd.cda.pl/620x368/10346303e3');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10241, 553, 11, CONCAT('Unerasable Memories'), NULL, 'https://ebd.cda.pl/620x368/10465973e1');
+INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (10242, 553, 12, CONCAT('Unconcedable Dream (Goal)'), NULL, 'https://ebd.cda.pl/620x368/1063151952');
