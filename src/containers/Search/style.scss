@@ -43,10 +43,11 @@ body{
 
 #SearchbarLarge{
     background-color: $bottom-color;
-    border: 2px solid black;
-    height: 30px;
+    border: 2px solid transparent;
+    height: 24px;
     width: 60%;
     color: white;
+    font-size: medium;
 }
 
 #SearchbtnLarge{
@@ -90,4 +91,8 @@ body{
     background-color: $bottom-tilted-color;
     padding: 10px;
     color: lightblue;
+}
+
+.GenreHeader{
+    color: white;
 }

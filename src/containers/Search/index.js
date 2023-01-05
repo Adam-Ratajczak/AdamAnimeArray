@@ -237,23 +237,23 @@ render(){
           </div>
         </div>
         <div id="AnimeTypeDiv">
-          <h3>Genres:</h3>
+          <h3 class="GenreHeader">Genres:</h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Genres}
           </div>
-          <h3>Themes:</h3>
+          <h3 class="GenreHeader">Themes:</h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Themes}
           </div>
-          <h3>Demographics:</h3>
+          <h3 class="GenreHeader">Demographics:</h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Demographics}
           </div>
-          <h3>Types:</h3>
+          <h3 class="GenreHeader">Types:</h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Types}
           </div>
-          <h3>Producers:</h3>
+          <h3 class="GenreHeader">Producers:</h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Producers}
           </div>

@@ -18,6 +18,7 @@
     background-color: $bottom-color-dark;
     font-size: small;
     margin-bottom: 10px;
+    font-size: 0.7em;
 }
 .AnimePosterHover{
     display: flex;
@@ -39,7 +40,6 @@
 
 .AnimePosterImg{
     width: 70%;
-    border: 2px solid $base-color;
 }
 
 .AnimePosterInfo{

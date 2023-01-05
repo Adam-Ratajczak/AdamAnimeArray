@@ -13,6 +13,22 @@ function AnimePanel(props){
   const [AnimeThemes, SetAnimeThemes] = useState(0)
   const [AnimeProducers, SetAnimeProducers] = useState(0)
   const [AnimeDemographics, SetAnimeDemographics] = useState(0)
+
+  function get_genre_str(arr){
+    let res = "";
+
+    for(let elem of arr){
+      res += elem.Name + ", ";
+    }
+
+    if(res.length == 0){
+      res = "None";
+    }else if(res.length > 30){
+      res = res.substring(0, 17) + "...";
+    }
+
+    return res;
+  }
   
   useEffect(() =>{
     GetAnime(props.AnimeID)
@@ -36,17 +52,7 @@ function AnimePanel(props){
     GetAnimeGenres(props.AnimeID)
     .then((response) => response.json())
     .then((result) =>{
-      let res = "";
-
-      for(let elem of result){
-        res += elem.Name + ", ";
-      }
-
-      if(res.length == 0){
-        res = "None";
-      }
-
-      SetAnimeGenres(res);
+      SetAnimeGenres(get_genre_str(result));
     })
   }, []);
 
@@ -54,17 +60,7 @@ function AnimePanel(props){
     GetAnimeThemes(props.AnimeID)
     .then((response) => response.json())
     .then((result) =>{
-      let res = "";
-
-      for(let elem of result){
-        res += elem.Name + ", ";
-      }
-
-      if(res.length == 0){
-        res = "None";
-      }
-
-      SetAnimeThemes(res);
+      SetAnimeThemes(get_genre_str(result));
     })
   }, []);
 
@@ -72,17 +68,7 @@ function AnimePanel(props){
     GetAnimeProducers(props.AnimeID)
     .then((response) => response.json())
     .then((result) =>{
-      let res = "";
-
-      for(let elem of result){
-        res += elem.Name + ", ";
-      }
-
-      if(res.length == 0){
-        res = "None";
-      }
-
-      SetAnimeProducers(res);
+      SetAnimeProducers(get_genre_str(result));
     })
   }, []);
 
@@ -90,17 +76,7 @@ function AnimePanel(props){
     GetAnimeDemographics(props.AnimeID)
     .then((response) => response.json())
     .then((result) =>{
-      let res = "";
-
-      for(let elem of result){
-        res += elem.Name + ", ";
-      }
-
-      if(res.length == 0){
-        res = "None";
-      }
-
-      SetAnimeDemographics(res);
+      SetAnimeDemographics(get_genre_str(result));
     })
   }, []);
   
@@ -138,7 +114,8 @@ function AnimePanel(props){
                   <td>{(EpisodeNum) ? EpisodeNum.toString() : "Unknown"}</td>
                 </tr>
               </tbody>
-            </table><table class="AnimeTypePanel">
+            </table>
+            <table class="AnimeTypePanel">
               <tbody>
                 <tr>
                   <td class="PropertyName">Genres: </td>

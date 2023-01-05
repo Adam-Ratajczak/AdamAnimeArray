@@ -42,32 +42,39 @@
     text-align: justify;
     text-justify: inter-word;
     padding: 50px;
+    font-size: 0.85em;
 }
 
 #AnimeInfoPosterContainer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: space-around;
     height: 400px;
 }
 
 #AnimeInfoPoster{
-    max-width: 90%;
+    max-width: 100%;
     max-height: 90%;
     width: auto;
-    height: auto;
-    border: 5px solid black;
+    height: 90%;
+    margin-right: 50px;
 }
 
 #SimiliarAnimes{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
 #SimilliarAnimeHeader{
     color: white;
+}
+
+.AnimePropertyName{
+    color: white;
+    font-weight: bold;
+    width: 200px;
 }

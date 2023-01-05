@@ -141,30 +141,33 @@ function AnimeInfo(){
   return (
     <div id="main">
       <Menubar/>
+      <h1 id="AnimeInfoHeader">{AnimeTitle}</h1>
       <div id="AnimeInfoContent">
-        <div id="AnimeInfoContainer">
-        <h1 id="AnimeInfoHeader">{AnimeTitle}</h1>
+        <div id="AnimeDescContainer">
+          <div id="AnimeInfoPosterContainer">
+            <img src={PosterURL} id="AnimeInfoPoster"/>
+            <div>
           <h3 class="InfoHeader">General information:</h3>
           <table>
             <tbody>
               <tr>
-                <td class="PropertyName">Type: </td>
+                <td class="AnimePropertyName">Type: </td>
                 <td>{(AnimeType) ? AnimeType.toString() : "Unknown"}</td>
               </tr>
               <tr>
-                <td class="PropertyName">Episodes: </td>
+                <td class="AnimePropertyName">Episodes: </td>
                 <td>{(EpisodeNum) ? EpisodeNum.toString() : "Unknown"}</td>
               </tr>
               <tr>
-                <td class="PropertyName">Premiered: </td>
+                <td class="AnimePropertyName">Premiered: </td>
                 <td>{(Premiered) ? Premiered.toString() : "Unknown"}</td>
               </tr>
               <tr>
-                <td class="PropertyName">Aired: </td>
+                <td class="AnimePropertyName">Aired: </td>
                 <td>{(AiredBegin.Valid) ? ABegin.toLocaleDateString("en-EN", options) : "Unknown"}</td>
               </tr>
               <tr>
-                <td class="PropertyName">Finished: </td>
+                <td class="AnimePropertyName">Finished: </td>
                 <td>{(AiredEnd.Valid) ? AEnd.toLocaleDateString("en-EN", options) : "Unknown"}</td>
               </tr>
             </tbody>
@@ -174,34 +177,33 @@ function AnimeInfo(){
           <table>
             <tbody>
               <tr>
-                <td class="PropertyName">Genres: </td>
+                <td class="AnimePropertyName">Genres: </td>
                 <td>{(AnimeGenres != "") ? AnimeGenres.toString().substring(0, AnimeGenres.toString().length - 2) : "None"}</td>
               </tr>
               <tr>
-                <td class="PropertyName">Themes: </td>
+                <td class="AnimePropertyName">Themes: </td>
                 <td>{(AnimeThemes != "") ? AnimeThemes.toString().substring(0, AnimeThemes.toString().length - 2) : "None"}</td>
               </tr>
               <tr>
-                <td class="PropertyName">Producers: </td>
+                <td class="AnimePropertyName">Producers: </td>
                 <td>{(AnimeProducers != "") ? AnimeProducers.toString().substring(0, AnimeProducers.toString().length - 2) : "None"}</td>
               </tr>
               <tr>
-                <td class="PropertyName">Demographics: </td>
+                <td class="AnimePropertyName">Demographics: </td>
                 <td>{(AnimeDemographics != "") ? AnimeDemographics.toString().substring(0, AnimeDemographics.toString().length - 2) : "None"}</td>
               </tr>
             </tbody>
           </table>
-
-          <h2 class="InfoHeader">Episodes:</h2>
-          <EpisodeBtn AnimeID={AnimeID} EpisodeNum="0" EpisodeCount={EpisodeNum}/>
         </div>
-        <div id="AnimeDescContainer">
-          <div id="AnimeInfoPosterContainer">
-            <img src={PosterURL} id="AnimeInfoPoster"/>
           </div>
           <div>
             {AnimeDesc.toString().split("<br>").map(line => {return <p>{line}</p>})}
+       
           </div>
+        </div>
+        <div id="AnimeInfoContainer">
+          <h2 class="InfoHeader">Episodes:</h2>
+          <EpisodeBtn AnimeID={AnimeID} EpisodeNum="0" EpisodeCount={EpisodeNum}/>
         </div>
       </div>
       <h1 id="SimilliarAnimeHeader">You may also like: </h1>
