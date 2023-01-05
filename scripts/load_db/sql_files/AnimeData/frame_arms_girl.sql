@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (522, CONCAT('Frame Arms Girl'), CONCAT('Ao Gennai is a completely average first-year high school student—that is, until a mysterious package is delivered to her home one day. Inside she finds Gourai, a tiny humanoid robot capable of movement and combat known as a Frame Arms Girl. Gourai is the first of her kind, possessing an extremely advanced AI that allows her to form a personality, learn, and grow, much like the human mind.<br>
 <br>Following Gourai', CHAR(39), 's activation, Ao is thrust headfirst into the world of Frame Arms Girls as more and more of the intelligent robots are delivered straight to her front door. With a rather hefty cash incentive pushing her forward, Ao is committed to collecting as much data about the Frame Arms Girls and their combat as possible, all while they learn what it means to be human.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-04', '2017-06-20', 'Spring 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/86625.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (378, 522, '"Tiny Tiny"', ' by Rie Murakawa', 'js-theme-songs', 'https://open.spotify.com/track/1dy1h8G080m7AboVF8ZXle');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (227, 522, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1293, 522, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1294, 522, 9);

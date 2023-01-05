@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1679, CONCAT('Seven Knights Revolution: Eiyuu no Keishousha'), CONCAT('Seven Knights Revolution: Eiyuu no Keishousha is set in a world where eons ago valiant heroes fought against the forces of "Destruction." While their deeds passed into legend, the power of these heroes was later inherited by "successors" who fought to protect the world. One day, Faria, a successor of the Seven Knights, saves an ordinary boy named Nemo from the forces of Destruction.<br>
 <br>During the ensuing battle, Nemo summons the power of a hero and becomes a successor as well. However, Nemo', CHAR(39), 's hero is a stranger that is unknown to history, and so an epic journey where the past and present collide begins. <br>
 <br>(Source: Crunchyroll, edited)'), 1, '2021-04-05', '2021-06-21', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1079/114017.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1186, 1679, '"Freeze (フリーズ)"', ' by flumpool', 'js-theme-songs', 'https://open.spotify.com/track/4mo6p1gcnsQKWs41hAs0Cc')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4156, 1679, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4157, 1679, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4158, 1679, 9);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1253, CONCAT('Midara na Ao-chan wa Benkyou ga Dekinai'), CONCAT('"Show them your A-O face!" As an innocent child, Ao Horie would unhesitantly proclaim the origins of her name. Now that she is in high school, she is determined to study hard in order to one day escape the influence of her lascivious father, a famous erotic author. However, when the amiable Takumi Kijima confesses to Horie, her mind runs wild with scandalous thoughts.<br>
 <br>Moans eager to escape, legs crossing, and a warmth spreading through her body, Horie cannot help but misconstrue Kijima', CHAR(39), 's rather pure motivations. To make things worse, no matter how hard she tries to ward off Kijima, his advances do not stop. Now, if only she could just study!<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-04-06', '2019-06-22', 'Spring 2019', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1718/98214.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (875, 1253, '"WONDERFUL WONDER"', ' by EDOGA-SULLIVAN (エドガー・サリヴァン)', 'js-theme-songs', 'https://open.spotify.com/track/7sOAnQaV1bOORiuUhknM4v')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (548, 1253, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3070, 1253, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3071, 1253, 7);

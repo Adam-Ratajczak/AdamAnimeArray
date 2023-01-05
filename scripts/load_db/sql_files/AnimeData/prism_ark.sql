@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1500, CONCAT('Prism Ark'), CONCAT('The Sablum Empire has been attempting to take over the kingdom of Windland for many years, and are now plotting with the mercenaries Sister Hell and Darkness Knight to start a new offensive using powerful magical beings called Angels. <br>
 <br>Hyaweh, a carefree yet talented swordsman, and Priecia, who just might be the lost princess of Windland, are enrolled at the Knight', CHAR(39), 's Academy in Windland to hone their skill at swords and sorcery. There they meet many friends and allies who can help them protect their homeland from the impending invasion. '), 1, '2007-10-08', '2007-12-24', 'Fall 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/23155.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1063, 1500, '"Soshite Boku wa... (そして僕は…)"', ' by Yui Sakakibara', 'js-theme-songs', 'https://open.spotify.com/track/5O8qNE9gxql77w7H8SAD1B');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1064, 1500, '"Soshite Boku wa... (そして僕は…)"', ' by Yui Sakakibara', 'js-theme-songs', 'https://open.spotify.com/track/5O8qNE9gxql77w7H8SAD1B');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3743, 1500, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3744, 1500, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3745, 1500, 9);

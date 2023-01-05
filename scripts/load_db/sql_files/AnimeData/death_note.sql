@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>For his own amusement, Ryuk drops his "Death Note" into the human world. Light stumbles upon it, deeming the first of its rules ridiculous: the human whose name is written in this note shall die. However, the temptation is too great, and Light experiments by writing a felon', CHAR(39), 's name, which disturbingly enacts his first murder.<br>
 <br>Aware of the terrifying godlike power that has fallen into his hands, Light—under the alias "Kira"—follows his wicked sense of justice with the ultimate goal of cleansing the world of all evil-doers. The meticulous mastermind detective L is already on his trail, but as Light', CHAR(39), 's brilliance rivals L', CHAR(39), 's, the grand chase for Kira turns into an intense battle of wits that can only end when one of them is dead.<br>
 <br>[Written by MAL Rewrite]<br>'), 5, '2006-10-04', '2007-06-27', 'Fall 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/9453.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (288, 400, '"the WORLD"', ' by Nightmare', 'js-theme-songs', 'https://open.spotify.com/track/1g0SlTCGN9j3OicWHfSKEn');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (289, 400, '"Alumina"', ' by Nightmare', 'js-theme-songs', 'https://open.spotify.com/track/1rIe54Dy1FYOZl3bQ0FQeN');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (179, 400, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (938, 400, 10);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (939, 400, 5);

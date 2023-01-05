@@ -9,23 +9,23 @@
 
     $result = mysqli_query($conn, "
     SELECT DISTINCT a.AnimeID FROM ((((
-        animes a LEFT JOIN (
-            SELECT AnimeID FROM animegenres WHERE GenreID IN((
-                SELECT GenreID FROM genres WHERE $genre
+        Animes a LEFT JOIN (
+            SELECT AnimeID FROM AnimeGenres WHERE GenreID IN((
+                SELECT GenreID FROM Genres WHERE $genre
             ))
         ) ag ON a.AnimeID = ag.AnimeID) LEFT JOIN (
-            SELECT AnimeID FROM animethemes WHERE ThemeID IN((
-                SELECT ThemeID FROM themes WHERE $theme
+            SELECT AnimeID FROM AnimeThemes WHERE ThemeID IN((
+                SELECT ThemeID FROM Themes WHERE $theme
             ))
         ) ath ON a.AnimeID = ath.AnimeID) LEFT JOIN (
-            SELECT AnimeID FROM animedemographics WHERE GroupID IN((
-                SELECT GroupID FROM demographics WHERE $age
+            SELECT AnimeID FROM AnimeDemographics WHERE GroupID IN((
+                SELECT GroupID FROM Demographics WHERE $age
             ))
         ) ad ON a.AnimeID = ad.AnimeID) LEFT JOIN (
-            SELECT AnimeID FROM animeproducers WHERE ProducerID IN((
-                SELECT ProducerID FROM producers WHERE $studio
+            SELECT AnimeID FROM AnimeProducers WHERE ProducerID IN((
+                SELECT ProducerID FROM Producers WHERE $studio
             ))
-        ) ast ON a.AnimeID = ast.AnimeID) WHERE $title;
+        ) ast ON a.AnimeID = ast.AnimeID) WHERE $title ORDER BY a.AnimeTitle ASC;
     ");
 
     if(!$result){

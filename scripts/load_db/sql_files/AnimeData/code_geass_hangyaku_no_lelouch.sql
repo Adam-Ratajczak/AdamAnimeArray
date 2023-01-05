@@ -1,8 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (349, CONCAT('Code Geass: Hangyaku no Lelouch'), CONCAT('In the year 2010, the Holy Empire of Britannia is establishing itself as a dominant military nation, starting with the conquest of Japan. Renamed to Area 11 after its swift defeat, Japan has seen significant resistance against these tyrants in an attempt to regain independence.<br>
 <br>Lelouch Lamperouge, a Britannian student, unfortunately finds himself caught in a crossfire between the Britannian and the Area 11 rebel armed forces. He is able to escape, however, thanks to the timely appearance of a mysterious girl named C.C., who bestows upon him Geass, the "Power of Kings." Realizing the vast potential of his newfound "power of absolute obedience," Lelouch embarks upon a perilous journey as the masked vigilante known as Zero, leading a merciless onslaught against Britannia in order to get revenge once and for all.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-10-06', '2007-07-29', 'Fall 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/50331.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (248, 349, '"COLORS"', ' by FLOW', 'js-theme-songs', '');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (249, 349, '"Yuukyou Seishunka (勇侠青春謳)"', ' by Ali Project', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (809, 349, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (810, 349, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (811, 349, 3);

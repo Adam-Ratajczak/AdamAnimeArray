@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, on one snowy night, Tamahiko', CHAR(39), 's insomnia is interrupted by someone knocking at the door. He then meets the 14-year-old Yuzuki Tachibana, who announces that she has come to be his future wife! Suddenly, Tamahiko remembers his father promising to send him a bride to assist him with impediments to his daily life.<br>
 <br>Although she was sold as a bride to repay her family', CHAR(39), 's debts, Yuzuki proves to be thoughtful, diligent, and dedicated to Tamahiko. Will the world-weary teenager prove insensitive to the rare breeze of kindness her presence brings to his monotonous existence?<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-10-09', '2021-12-25', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1662/118849.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1312, 1844, '"Otome no Kokoroe (オトメの心得) "', ' by GARNiDELiA', 'js-theme-songs', 'https://open.spotify.com/track/3VlVicSANh9Rg1GPvcuPHM')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (767, 1844, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4573, 1844, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4574, 1844, 7);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Instead of choosing business school like he originally had, Kyouya decides to pursue his passions and attends the Oonaka University of Art. There, he meets classmate Eiko Kawasegawa, the woman who had hired him as an intern in the present, alongside his new housemates and future Platinum Generation members: underachieving artist Aki Shino, aspiring singer and actress Nanako Kogure, and naturally-gifted writer Tsurayuki Rokuonji.<br>
 <br>With each project they complete together, Kyouya and his friends venture closer to discovering their true potential as creators and remaking their lives into the ideal versions they desire.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-07-03', '2021-09-25', 'Summer 2021', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1871/118309.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (181, 254, '"Koko kara Saki wa Uta ni Naranai (ここから先は歌にならない)"', ' by Poppin'Party', 'js-theme-songs', 'https://open.spotify.com/track/3zrDR47uavNOm3f4i53n2l')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (580, 254, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (581, 254, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (582, 254, 8);

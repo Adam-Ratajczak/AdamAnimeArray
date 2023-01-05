@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The former has a cheerful and friendly nature, but her naivety has steered her romantic life astray until she meets her dependable boyfriend—Shouji Endo. Without letting herself be dismayed by Shouji', CHAR(39), 's decision to study in Tokyo, Nana works hard to earn enough money and follow him there. Meanwhile, her namesake is a solitary punk vocalist whose impassioned romance with her band', CHAR(39), 's bassist, Ren Honjou, comes to a sudden end. Though heartbroken, Nana bravely looks forward and travels to the capital with the ambition of becoming a recognized artist.<br>
 <br>Shortly after they arrive in Tokyo, the girls cross paths again due to an unexpected coincidence that ultimately leads them to live under the same roof. As they grow closer, the two strive to support one another amid their struggles to forge a future for themselves.<br>
 <br>[Written by MAL Rewrite]'), 7, '2006-04-05', '2007-03-28', 'Spring 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/11232.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (924, 1324, '"Rose"', ' by Anna inspi' Nana ~Black Stones~', 'js-theme-songs', 'https://open.spotify.com/track/5KwnKE3KmFnBgO0xNtl6Id');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (925, 1324, '"Rose"', ' by Olivia inspi' Reira ~Trapnest~', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (574, 1324, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3280, 1324, 13);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3281, 1324, 6);

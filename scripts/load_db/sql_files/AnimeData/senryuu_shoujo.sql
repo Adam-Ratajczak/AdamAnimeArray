@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Sixteen-year-old Eiji Busujima used to be delinquent in his middle school years. However, he has since turned over a new leaf due to his newfound love of senryuu. Despite his menacing looks, Eiji gets along well with Nanako as a fellow member of the Literature Club.<br>
 <br>Even though Nanako is mute, the adorable pair have no problem communicating with each other. Senryuu Shoujo is a light and relaxing story of two teenagers', CHAR(39), ' daily lives.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2019-04-06', '2019-06-22', 'Spring 2019', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1751/98216.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1179, 1671, '"Kotonoha no Omoi (コトノハノオモイ)"', ' by Sonoko Inoue (井上苑子)', 'js-theme-songs', 'https://open.spotify.com/track/1YwThf3ztT3mA5zwGkhsml')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (701, 1671, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4134, 1671, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4135, 1671, 8);

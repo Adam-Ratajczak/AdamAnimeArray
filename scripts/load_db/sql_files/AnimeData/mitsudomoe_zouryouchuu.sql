@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1267, CONCAT('Mitsudomoe Zouryouchuu!'), CONCAT('Second season of Mitsudomoe.'), 1, '2011-01-09', '2011-02-27', 'Winter 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/71554.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (884, 1267, '"Honki Sentai Gachi Ranger (本気戦隊ガチレンジャー)"', ' by Masaaki Endou', 'js-theme-songs', 'https://open.spotify.com/track/7aYn99sOPZQAVowg6x2H3R')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3108, 1267, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3109, 1267, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1370, 1267, 36);

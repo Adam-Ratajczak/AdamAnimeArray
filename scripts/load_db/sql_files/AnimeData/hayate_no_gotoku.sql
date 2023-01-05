@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Unfortunately, due to his kind-hearted nature and a string of misunderstandings, Nagi believes Hayate to be confessing his love to her. After saving her from real kidnappers, Hayate is hired as Nagi', CHAR(39), 's personal butler, upon which she is revealed to be a member of one of the wealthiest families in Japan.<br>
 <br>Highly skilled but cursed with the world', CHAR(39), 's worst luck, Hayate gets straight to work serving his employer all the while trying to deal with the many misfortunes that befall him. From taking care of a mansion to fending off dangerous foes, and even unintentionally wooing the hearts of the women around him, Hayate is in over his head in the butler comedy Hayate no Gotoku!<br>
 <br>[Written by MAL Rewrite]'), 1, '2007-04-01', '2008-03-30', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/73932.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (519, 725, '"Hayate no Gotoku! (ハヤテのごとく！)"', ' by KOTOKO', 'js-theme-songs', 'https://open.spotify.com/track/7M9qS7xp4gQa6ukOIBeY4g');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (520, 725, '"Proof"', ' by MELL', 'js-theme-songs', 'https://open.spotify.com/track/61K1Nu16SncBhu6BcvZkxF');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (333, 725, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1774, 725, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1775, 725, 12);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While making his escape, he runs into the tourist once again, who turns out to be a fellow con man named Laurent Thierry, and ends up following him to Los Angeles. In an attempt to defend his self-proclaimed title of "Japan', CHAR(39), 's Greatest Swindler," Makoto challenges his rival to determine the better scammer. Accepting the competition, Laurent drops them off outside a huge mansion and claims that their target will be the biggest mafia boss on the West Coast.<br>
 <br>Jumping from city to city, Great Pretender follows the endeavors of Makoto alongside the cunning Laurent and his colorful associates in the world of international high-stakes fraud. Soon, Makoto realizes that he got more than what he bargained for as his self-declared skills are continually put to the test.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-07-09', '2020-12-17', 'Summer 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1418/107954.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (460, 648, '"G.P."', ' by Yutaka Yamada', 'js-theme-songs', 'https://open.spotify.com/track/0QUW4OREPB09dHwGRGfiGF')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1598, 648, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1599, 648, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1600, 648, 4);

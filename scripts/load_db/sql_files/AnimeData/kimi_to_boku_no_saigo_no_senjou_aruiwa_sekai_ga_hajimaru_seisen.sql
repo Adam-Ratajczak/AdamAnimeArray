@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>After committing the great crime of freeing an imprisoned witch, the talented knight Iska is sentenced to prison. A year later, the Empire leadership suddenly decides to set him free, with the condition that he hunts down a fearsome mage known as the "Ice Calamity Witch." Hoping to end the war, Iska agrees. Coincidentally, the Ice Calamity Witch herself, Aliceliese "Alice" Lou Nebulis XI, also wishes for peace and is willing to do everything she can to bring down the Empire.<br>
 <br>As Iska and Alice both yearn for a crusade that will turn the world into one without struggle, woe, or pain, the strings of fate tie them ever closer together, creating a bond that goes beyond something fabricated by mere coincidence.<br>
 <br>[Written by MAL Rewrite] '), 1, '2020-10-07', '2020-12-23', 'Fall 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1100/109044.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (727, 1023, '"Against."', ' by Kaori Ishihara', 'js-theme-songs', 'https://open.spotify.com/track/1sh8op2xwpx2OXeWW71AlO')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2487, 1023, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2488, 1023, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2489, 1023, 7);

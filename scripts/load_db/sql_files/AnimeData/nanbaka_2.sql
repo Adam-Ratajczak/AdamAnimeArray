@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1328, CONCAT('Nanbaka 2'), CONCAT('The second part of Nanbaka. The prisoners and their guards continue their comfortable lives at Nanba Prison. However, from the shadows emerges a new threat: Enki Gokuu, a person from Samon', CHAR(39), 's past, who has mysterious goals of his own.'), 4, '2017-01-04', '2017-03-22', '', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1294/127370.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (929, 1328, '"Rin! Rin! Hi! Hi!"', ' by Hashiguchikanaderiya (ハシグチカナデリヤ)', 'js-theme-songs', 'https://open.spotify.com/track/4ZgMwzLbDM4NwsH8uMUfhr')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3291, 1328, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3292, 1328, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3293, 1328, 6);

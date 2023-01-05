@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1692, CONCAT('Shenmue the Animation'), CONCAT('1985, Yokosuka. Ryo Hazuki has trained to master the Hazuki Style Jujitsu under his strict father in the Hazuki Dojo from his childhood. However, one day a mysterious man named Lan Di murders his father and takes the “mirror” his father was protecting. Ryo is determined to find the truth behind his father’s murder, but soon finds himself getting stuck in a war between the underground organizations…. Traveling from Yokosuka to Hong Kong, Ryo’s long journey begins!<br>
 <br>(Source: Crunchyroll)'), 1, '2022-02-06', '2022-05-01', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1427/120586.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1195, 1692, '"UNDEAD-NOID"', ' by Kashitarou Itou', 'js-theme-songs', 'https://open.spotify.com/track/0N7UyeWFokieklvFJAOJ90');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4198, 1692, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4199, 1692, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4200, 1692, 4);

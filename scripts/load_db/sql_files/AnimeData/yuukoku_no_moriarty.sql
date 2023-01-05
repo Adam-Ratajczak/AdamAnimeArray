@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>William James Moriarty, the second son of the Moriarty household, lives as a regular noble while also being a consultant for the common folk to give them a hand and solve their problems. However, deep inside him lies a desire to destroy the current structure that dominates British society and those who benefit from it. <br>
 <br>Alongside his brothers Albert and Louis, William will do anything it takes to change the filthy world he lives in—even if blood must be spilled.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-11', '2020-12-20', 'Fall 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1464/108330.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1501, 2098, '"DYING WISH"', ' by Tasuku Hatanaka ', 'js-theme-songs', 'https://open.spotify.com/track/0nm0bdksXzUJwJaB4pbCa9')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (867, 2098, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5209, 2098, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5210, 2098, 5);

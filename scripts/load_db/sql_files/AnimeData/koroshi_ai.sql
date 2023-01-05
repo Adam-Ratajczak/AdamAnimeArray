@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Chateau', CHAR(39), 's company is soon tasked with eliminating Song Ryang-ha—an expert assassin and a former member of a powerful Asian organization. Coincidentally, Ryang-ha is the man that has been pursuing her. Despite his background, Chateau reluctantly agrees to meet with Ryang-ha as part of a deal: in exchange for going out with him, he will provide her with the locations of current targets, dead or alive.<br>
 <br>But when the past begins to haunt both killers, their arrangement may need to come to an end, as their entanglement puts their lives at grave risk.<br>
 <br>[Written by MAL Rewrite]'), 1, '2022-01-13', '2022-03-30', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1485/119329.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (771, 1077, '"Midnight Dancer"', ' by Toshiki Masuda', 'js-theme-songs', 'https://open.spotify.com/track/13uO9ybQF9TpUoXznKDKGy');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (484, 1077, 5);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2617, 1077, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2618, 1077, 7);

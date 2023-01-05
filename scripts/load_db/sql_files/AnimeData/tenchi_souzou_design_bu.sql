@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1875, CONCAT('Tenchi Souzou Design-bu'), CONCAT('In the beginning, God created the heavens and the earth. He also sought after a wide variety of animals to populate the planet. However, he felt that it was too tiresome to think of new ideas within his criteria. To address this problem, God appointed an organization—the Heaven', CHAR(39), 's Design Team—to do the work instead!<br>
 <br>Shimoda is a newly-hired angel who serves as the mediator between God and the design team. As he steps into his role, he witnesses his coworkers conceive interesting ideas for many unique life forms according to God', CHAR(39), 's desires. From giraffes and snakes to birds, anteaters, and everything in between, the possibilities for different animal species are endless!<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-01-07', '2021-03-25', 'Winter 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1339/113938.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1335, 1875, '"Give It Up?"', ' by 96neko (96猫)', 'js-theme-songs', 'https://open.spotify.com/track/6dJqNfKmEz64garAEuZBtp')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (783, 1875, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4643, 1875, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4644, 1875, 9);

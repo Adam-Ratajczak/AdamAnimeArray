@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1839, CONCAT('Tachibanakan Triangle'), CONCAT('As Hanabi Natsuno returns home after six years in Tokyo, memories flood into her. As she prepares to start high school, she moves to Tachibanakan, the local dormitory for female students. Upon her arrival, Hanabi stumbles upon a bare naked beauty, and instantly falls head over heels for her. She also reencounters Konomi Fujiwara, her childhood friend who she barely remembers.<br>
 <br>Hanabi is introduced to the other residence of the dorm and quickly becomes the center of attention. As the girls instantly take to the newcomer and begin shooting for her affection—subtly or obtrusively—Hanabi realizes that it is certainly going to be an interesting school year.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-04-04', '2018-06-20', 'Spring 2018', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1594/108629.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1309, 1839, '"Motto, Nee Motto (もっと、ねぇもっと)"', ' by Erabareshi', 'js-theme-songs', 'https://open.spotify.com/track/0eDnYCiIZb3LstY6JhqP2T');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4559, 1839, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4560, 1839, 16);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4561, 1839, 14);

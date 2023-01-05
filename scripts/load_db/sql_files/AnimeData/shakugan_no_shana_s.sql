@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1687, CONCAT('Shakugan no Shana S'), CONCAT('Find out what happens when Yuji accidentally triggers a found Treasure Tool while it', CHAR(39), 's pointed at Shana! Then, Yuji teams up with Wilhelmina to stalk their fiery friend—whose secrecy has become unsettling. Finally, in a two-part special, Shana tracks a Denizen', CHAR(39), 's trail by sorting through a Torch', CHAR(39), 's memories for clues. Her sleuth skills reveal a teenage girl', CHAR(39), 's heartwarming last days and a predator with a serious identity crisis!<br>
 <br>(Source: FUNimation)'), 1, '2009-10-23', '2010-09-29', '', '28 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/17680.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1192, 1687, '"Prophecy"', ' by Mami Kawada', 'js-theme-songs', 'https://open.spotify.com/track/4sivv3boBcqzFArR6qO3kG')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4183, 1687, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4184, 1687, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4185, 1687, 9);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Powerless in a world without magic, Satan assumes the guise of a human named Sadao Maou and begins working at MgRonald', CHAR(39), 's—a local fast-food restaurant—to make ends meet. He soon realizes that his goal of conquering Ente Isla is just not enough as he grows determined to climb the corporate ladder and become the ruler of Earth, one satisfied customer at a time!<br>
 <br>Whether it', CHAR(39), 's part-time work, household chores, or simply trying to pay the rent on time, Hataraku Maou-sama! presents a hilarious view of the most mundane aspects of everyday life, all through the eyes of a hapless demon lord.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-04-04', '2013-06-27', 'Spring 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/50177.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (516, 721, '"ZERO!!"', ' by Minami Kuribayashi ', 'js-theme-songs', 'https://open.spotify.com/track/7l8CkFFxcbH09wwBzq4XWi')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1766, 721, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1767, 721, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1768, 721, 7);

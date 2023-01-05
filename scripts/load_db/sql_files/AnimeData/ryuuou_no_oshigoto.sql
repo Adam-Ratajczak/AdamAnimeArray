@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Yaichi Kuzuryuu has just become the youngest Ryuuou after winning the grand championship. However, the shogi community is unwelcoming to his victory, some even calling him the worst Ryuuou in history. Moreover, he forgets about the agreement he made with Ai Hinatsuru, a little girl he promised to coach if he won. After she shows up at his doorstep, he reluctantly agrees to uphold his promise and makes Ai his disciple.<br>
 <br>Together, they aim to improve and exceed the limits of their shogi prowess: Ai, to unlock her hidden talents Yaichi, to prove to the world that he deserves his accomplishments.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-01-08', '2018-03-26', 'Winter 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/89979.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1115, 1578, '"Korekara (コレカラ)"', ' by Machico', 'js-theme-songs', 'https://open.spotify.com/track/2j1OAlRPPgrTa9sNRHhh3g')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3920, 1578, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3921, 1578, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1697, 1578, 106);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (816, CONCAT('I★Chu: Halfway Through the Idol'), CONCAT('School begins at Étoile Vio School, where idol-hopeful students known as "I-Chu" will undergo training to become full-fledged idols. However, things are off to a strange start when the new students are given a speech from their bear principal?! The I-Chu work steadily toward their goals and ask, "What is an idol?" Each boy will learn to shine as they struggle to find their answer.<br>
 <br>(Source: MAL News)'), 1, '2021-01-06', '2021-03-24', 'Winter 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1212/113946.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (582, 816, '"Ichiban Boshi no Uta ~Mirai no Legend Densetsu~ (一番星の歌～未来のレジェンド伝説～)" "', ' by I★Chu', 'js-theme-songs', 'https://open.spotify.com/track/2j6hZ8DjXY22FItG2pc1qH')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2001, 816, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2002, 816, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (893, 816, 62);

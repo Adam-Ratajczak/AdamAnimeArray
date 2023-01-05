@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Centuries later, memory of the Shadow Lord has become faded and almost forgotten, and the people of Deltora see their monarchy as detached and uncaring. Much to their dismay, the Shadow Lord strikes once more, breaking the Belt of Deltora by scattering the seven gems across the continent. Jarred, a close friend of the young king Endon, assists him and his wife in escaping from the castle as the Shadow Lord takes over, and they part ways to go into hiding.<br>
 <br>The Shadow Lord now reigns over Deltora and many years pass under his tyrannical rule. However, there is a glimmer of hope in Jarred', CHAR(39), 's son Lief, whom he has lovingly raised and trained to find the scattered gemstones and reassemble the Belt of Deltora. Along with his companions Barda and Jasmine, Lief must face devious enemies and dangerous beasts to oust the Shadow Lord and return peace to Deltora.<br>
 <br>[Written by MAL Rewrite]'), 1, '2007-01-06', '2008-03-29', 'Winter 2007', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/88164.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (294, 405, '"HEART☆BEAT"', ' by MARIA ', 'js-theme-songs', 'https://open.spotify.com/track/1sIlrJ5rokYFd4MxbZ5M30');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (295, 405, '"Sakura Uta (桜唄)"', ' by Rythem', 'js-theme-songs', 'https://open.spotify.com/track/0lnnXwqF8UbcODHlZwbBoh');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (181, 405, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (948, 405, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (949, 405, 9);

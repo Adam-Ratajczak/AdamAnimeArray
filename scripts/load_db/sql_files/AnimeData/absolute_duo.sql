@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (29, CONCAT('Absolute Duo'), CONCAT('Individuals who can materialize weapons from their soul are called "Blazers," and they attend Kouryou Academy High School in order to harness their abilities. Each student is required to partner with another, in the hopes that one day, the pair can attain the power of Absolute Duo.<br>
 <br>Tooru Kokonoe hopes to attend this academy in order to gain power after his sister and friends were slain by a mysterious man. However, at the opening ceremony, he is forced to duel against the person sitting next to him, with the loser being expelled. As Tooru prepares to give the match his all, it is not a weapon that manifests from his soul, but a shield, an irregularity which catches the attention of a foreign student named Julie Sigtuna.<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-01-04', '2015-03-22', 'Winter 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/68839.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (20, 29, '"Absolute Soul"', ' by Konomi Suzuki', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (61, 29, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (62, 29, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (63, 29, 10);

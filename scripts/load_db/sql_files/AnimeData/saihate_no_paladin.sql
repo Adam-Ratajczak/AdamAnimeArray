@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As Will grows up and learns about the world he was born into, he prepares for the day when he must finally set out on his own. For Will, this journey includes a lifelong promise. At their coming-of-age, every adult is required to swear an oath to the god of their choice, with the strength of the pledge affecting the degree of their sworn god', CHAR(39), 's blessing.<br>
 <br>With his departure approaching, Will must prepare to accept the truth of his undead guardians and embark into a world that even they don', CHAR(39), 't know the state of. Will discovers, however, that every oath must be fulfilled, one way or another.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-10-09', '2022-01-03', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1176/118382.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1120, 1585, '"The Sacred Torch"', ' by H-el-ical//', 'js-theme-songs', 'https://open.spotify.com/track/68PCKZzXMOXAFMOHWHVpuB')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3947, 1585, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3948, 1585, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3949, 1585, 9);

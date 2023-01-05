@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Their lives collide when Momiji lives up to her title and delivers some unfortunate news to Ichiko: her large amount of luck is due to her subconsciously draining the luck from those around her! Momiji has been tasked with stealing back Ichiko', CHAR(39), 's fortune before she leaves everyone without enough luck to even survive. But Ichiko, with the help of the wandering monk Bobby Statice, manages to fight off the poverty goddess. This defeat forces the goddess to enlist reinforcements in the form of Kumagai, her teddy bear familiar, and the masochistic dog god, Momoo Inugami.<br>
 <br>Insanity ensues as Ichiko', CHAR(39), 's quiet life is replaced with daily battles for her fortune. To survive the chaos, Ichiko will need all the luck she can get in Binbougami ga!!<br>
 <br>[Written by MAL Rewrite]'), 1, '2012-07-05', '2012-09-27', 'Summer 2012', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/39333.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (152, 211, '"Make My Day!"', ' by Piko', 'js-theme-songs', 'https://open.spotify.com/track/7zGC67LF3oPHTdZWssYx05')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (98, 211, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (503, 211, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (504, 211, 10);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2012, CONCAT('Vatican Kiseki Chousakan'), CONCAT('Fathers Josef Kou Hiraga and Roberto Nicholas are Vatican Miracle Examiners who investigate the authenticity of miraculous phenomena reported from all over the world. In every seemingly sacred event lies horrors of hidden conspiracies, mysterious murders, and devil worship. In this battle of good and evil, Hiraga, a scientific and mathematical genius, and Roberto, a polymath in linguistics and classics, must work together to bring the truth to light. Will their friendship and faith endure the evils in their journey to find a true miracle?<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2017-07-07', '2017-09-22', 'Summer 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/86746.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1439, 2012, '"MYSTERIUM"', ' by SCREEN mode', 'js-theme-songs', 'https://open.spotify.com/track/5FQzwgHgbK3RbcyQD7b3Ky')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5012, 2012, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5013, 2012, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5014, 2012, 10);

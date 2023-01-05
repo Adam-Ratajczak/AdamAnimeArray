@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (893, CONCAT('Itsuka Tenma no Kuro Usagi'), CONCAT('Taito has been really sleepy lately, and keeps dreaming of a female vampire who says she has given him her "poison." Sometimes he even thinks he hears her voice when he', CHAR(39), 's awake. But after surviving an accident that should have killed him, Taito', CHAR(39), 's world changes drastically and he realizes that his dreams are more real than he thought.'), 1, '2011-07-09', '2011-09-24', 'Summer 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/75197.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (629, 893, '"Once"', ' by Hitomi Harada', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2169, 893, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2170, 893, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2171, 893, 10);

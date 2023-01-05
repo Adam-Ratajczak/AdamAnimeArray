@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>At a local hospital, Kotoko approaches Kurou Sakuragawa, a university student whose long-term relationship ended with an unfortunate breakup. Kotoko harbors feelings for him and suspects that something supernatural lurks within his harmless appearance, so she asks Kurou for his assistance in helping out youkai.<br>
 <br>Two years later, news of an idol who was accidentally crushed to death by steel beams flooded the press. However, months later, sightings begin to tell of a faceless woman who wields a steel beam. As is the case for any supernatural problem, Kotoko and her partner set out to stop this spirit from wreaking havoc—but this case may prove to be far more sinister and personal than they could have ever thought.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2020-01-12', '2020-03-29', 'Winter 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1310/117188.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (789, 1103, '"Mononoke in the Fiction (モノノケ・イン・ザ・フィクション)"', ' by Uso to Chameleon (嘘とカメレオン)', 'js-theme-songs', 'https://open.spotify.com/track/1Anj7Elbw8hBiBGnA2Pgvx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (496, 1103, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2682, 1103, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2683, 1103, 7);

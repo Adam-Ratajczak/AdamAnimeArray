@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Kureha Tsubaki and Sumika Izumino are two lovers attending Arashigaoka Academy, who, upon the arrival of two bears that have sneaked through the Wall of Severance and infiltrated the academy, find their relationship under a grave threat. The hungering yet affectionate bears, Ginko Yurishiro and Lulu Yurigasaki, seem to see the bear-hating Kureha as more than just another meal, and in getting closer to her, trigger an unraveling of secrets that Kureha may not be able to bear.<br>
 <br>When their relationships provoke the Invisible Storm, a group that keeps order within the ideological school, the girls must stand on trial with their love, embarking on a journey of self-discovery en route to attaining true love', CHAR(39), 's "promised kiss."<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-01-06', '2015-03-31', 'Winter 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/69203.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1494, 2088, '"Ano Mori de Matteru (あの森で待ってる)"', ' by Bonjour Suzuki (ボンジュール鈴木)', 'js-theme-songs', 'https://open.spotify.com/track/1cAOx1GoYfFXOtmETbzqlC')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5186, 2088, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5187, 2088, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5188, 2088, 10);

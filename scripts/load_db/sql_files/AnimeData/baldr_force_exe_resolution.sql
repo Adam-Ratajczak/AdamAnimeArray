@@ -4,7 +4,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The three-way fights of the terrorist group, the security enterprise, and the army, continue every day. The various events occurred during the fight seem to be independent of each other at the first glance, but they', CHAR(39), 're converging on one event as if they were attracted by something. <br>
 <br>Based on the game by GIGA.<br>
 <br>(Source: ANN)'), 1, '2006-11-10', '2007-04-04', '', '29 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/76295.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (118, 172, '"undelete"', ' by Mami Kawada', 'js-theme-songs', 'https://open.spotify.com/track/1T5xYYNCubOtQVYaL0jx4u');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (392, 172, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (393, 172, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (394, 172, 9);

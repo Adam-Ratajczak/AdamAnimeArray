@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Due to circumstances out of his control, he is partnered with Chuuya Nakahara, the gifted yet impulsive leader of a rival clan known as the ', CHAR(39), '', CHAR(39), 'Sheep,', CHAR(39), '', CHAR(39), ' to uncover the truth behind the case and shine a light on the myth of Arahabaki—the god of fire who might just lead Dazai to the case', CHAR(39), 's solution.<br>
 <br>Meanwhile, in the present day, it is business as usual once again for the Armed Detective Agency. Their peaceful break will not last for long, however, as enemies old and new gather their strength and prepare for another face-off.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-04-12', '2019-06-28', 'Spring 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1037/100463.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (191, 271, '"Setsuna no Ai (セツナの愛)"', ' by GRANRODEO', 'js-theme-songs', 'https://open.spotify.com/track/6GppTDfQGwYVT8N9mtUQA8')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (135, 271, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (624, 271, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (625, 271, 4);

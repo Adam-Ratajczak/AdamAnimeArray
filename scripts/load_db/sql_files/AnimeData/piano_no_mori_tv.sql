@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1470, CONCAT('Piano no Mori (TV)'), CONCAT('A tranquil tale about two boys from very different upbringings. On one hand you have Kai, born as the son of a prostitute, who', CHAR(39), 's been playing the abandoned piano in the forest near his home ever since he was young. And on the other you have Syuhei, practically breast-fed by the piano as the son of a family of prestigious pianists. Yet it is their common bond with the piano that eventually intertwines their paths in life.<br>
 <br>(Source: KEFI)'), 1, '2018-04-09', '2018-07-02', 'Spring 2018', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1501/91916.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1041, 1470, '"Umi e (海へ)"', ' by Kai Ichinose (Piano)', 'js-theme-songs', 'https://open.spotify.com/track/00BeIReyPWVPRw23FJYchF')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (630, 1470, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3648, 1470, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3649, 1470, 12);

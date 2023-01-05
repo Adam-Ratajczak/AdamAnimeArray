@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2003, CONCAT('Uta no☆Prince-sama♪ Maji Love 2000%'), CONCAT('Entering her Master', CHAR(39), 's course, Nanami Haruka is facing an even more difficult time. And she isn', CHAR(39), 't the only one. The main six members of Starish are assigned new seniors to watch over them! But the seniors aren', CHAR(39), 't having the best attitudes about it. <br>
 <br>Watch Uta no☆Prince-sama♪ Maji Love 2000% and find yourself completely engaged in a whole new adventure mixed in with comedy and romance!'), 1, '2013-04-04', '2013-06-27', 'Spring 2013', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/44019.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1431, 2003, '"Maji LOVE 2000% (マジLOVE2000%)"', ' by ST☆RISH (Takuma Terashima, Kenichi Suzumura, Kishou Taniyama, Mamoru Miyano, Junichi Suwabe, Hiro Shimono, Kousuke Toriumi)', 'js-theme-songs', 'https://open.spotify.com/track/6GoKkt41PNTnKNg5vMCw4S')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (835, 2003, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4994, 2003, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4995, 2003, 7);

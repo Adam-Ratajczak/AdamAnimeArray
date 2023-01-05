@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Mega-baa also hosts an unofficial detective agency called "Coil," a group of children around Yasako', CHAR(39), 's age who find and handle corruption of the virtual world. Yasako gets involved with the group when Fumie Hashimoto, a playful member of Coil, helps rescue her cyberdog Densuke after getting trapped in virtual space while chasing a mysterious virus. Also investigating these corruptions and viruses is an abrasive hacker named Yuuko Amasawa, who the others take to calling Isako.<br>
 <br>Can Coil discover the truths behind the mysterious viruses and corruption, and if they can, at what cost?<br>
 <br>[Written by MAL Rewrite]'), 1, '2007-05-12', '2007-12-01', 'Spring 2007', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/12844.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (299, 409, '"Prism (プリズム)"', ' by Ayako Ikeda', 'js-theme-songs', 'https://open.spotify.com/track/7IMoiKwhGgECXyV9DvHImQ');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (300, 409, '"Sora no Kakera (空の欠片 A Fragment of the Sky)"', ' by Ayako Ikeda', 'js-theme-songs', 'https://open.spotify.com/track/6YhjPYBmunzwKKQKCudrby');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (958, 409, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (959, 409, 13);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (960, 409, 12);

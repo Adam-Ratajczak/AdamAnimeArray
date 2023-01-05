@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1299, CONCAT('Mugyutto! Black Clover'), CONCAT('SD Black Clover short comedy specials released exclusively on dTV.'), 4, '2019-07-01', '2019-08-19', '', '7 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1066/101736.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (906, 1299, '"POSSIBLE"', ' by Clover×Clover (Gakuto Kajiwara & Nobunaga Shimazaki)', 'js-theme-songs', 'https://open.spotify.com/track/7bBynD5zaziUBMKiXzSytI');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (559, 1299, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3207, 1299, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3208, 1299, 9);

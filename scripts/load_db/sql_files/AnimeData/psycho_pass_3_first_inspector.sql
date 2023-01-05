@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Now, Bifrost agent Kouichi Azusawa launches a direct assault upon the Criminal Investigation Department by occupying its headquarters and taking Inspector Shindou and everyone with him hostage. CID Unit 1 supervisor, along with Chief Mika Shimotsuki and former unit members Shinya Kougami and Nobuchika Ginoza, face the task of reclaiming the building and saving everyone inside.<br>
 <br>Alongside the hostage situation and Azusawa’s demands for Tokyo governor Karina Komiya’s resignation, there is a sinister plot hatching in the background—a secret plan that will force Inspector Shindou to confront not only Azusawa but also his own past. These events slowly bring him closer to unshrouding the mystery that has eluded him and his best friend, Ignatov, for many years.<br>
 <br>[Written by MAL Rewrite]'), 4, '2020-03-27', NULL, '', '46 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1085/110722.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1069, 1505, '"Synthetic Sympathy"', ' by Who-ya Extended', 'js-theme-songs', 'https://open.spotify.com/track/14YkayZQGmbxQpGApfxpUZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3752, 1505, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3753, 1505, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3754, 1505, 3);

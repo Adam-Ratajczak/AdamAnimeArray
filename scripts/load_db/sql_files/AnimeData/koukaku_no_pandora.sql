@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Working together, the two unlikely companions go on various missions—from saving children in shopping mall fires to fighting reckless thieves—all in the name of world peace. But to achieve this goal is not easy. B.U.E.R, a sentient laser in the form of a misshapen teddy bear, threatens to wreck their happy lives with his perverted nature and uncontrollable power. And to make matters worse, Nene', CHAR(39), 's guardian, as well as genius inventor, Takumi Korobase has an undying interest in B.U.E.R.<br>
 <br>Burdened with saving the world and keeping B.U.E.R from the hands of evil, Nene and Clarion', CHAR(39), 's desire for world peace seems like a pipe dream. With this monumental goal, could the weight of it all destroy the pair', CHAR(39), 's friendship completely? <br>
 <br>[Written by MAL Rewrite]'), 1, '2016-01-08', '2016-03-25', 'Winter 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/78805.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (774, 1082, '"hopeness"', ' by ZAQ', 'js-theme-songs', 'https://open.spotify.com/track/2J4lP4dZIV0CNDzbNa52cs');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2631, 1082, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2632, 1082, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2633, 1082, 3);

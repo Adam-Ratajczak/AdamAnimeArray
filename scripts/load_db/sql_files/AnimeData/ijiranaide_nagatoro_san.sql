@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (831, CONCAT('Ijiranaide, Nagatoro-san'), CONCAT('Every day, Naoto Hachiouji is teased relentlessly by Hayase Nagatoro, a first year student he meets one day in the library while working on his manga. After reading his story and seeing his awkward demeanor, she decides from that moment on to toy with him, even calling him "Senpai" in lieu of using his real name.<br>
 <br>At first, Nagatoro', CHAR(39), 's relentless antics are more bothersome than anything and leave him feeling embarrassed, as he is forced to cater to her whims. However, as they spend more time together, a strange sort of friendship develops between them, and Naoto finds that life with Nagatoro can even be fun. But one thing', CHAR(39), 's for sure: his days will never be dull again.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-04-11', '2021-06-27', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1900/110097.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (592, 831, '"EASY LOVE"', ' by Sumire Uesaka (上坂 すみれ)', 'js-theme-songs', 'https://open.spotify.com/track/6mdiePjszuYWOJuhBIYnIt')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (911, 831, 101);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (925, 831, 16);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (926, 831, 13);

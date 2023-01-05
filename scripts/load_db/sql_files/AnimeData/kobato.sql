@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1047, CONCAT('Kobato.'), CONCAT('The friendly and sincere Kobato Hanato has a wish to go to a particular place no matter what. To fulfill this desire, she is tasked with helping people in their times of distress. For each mended broken heart, a small candy-like fragment is produced and fills a special bottle. Once the bottle is full, her wish will be granted.<br>
 <br>As Kobato carries out her mission alongside her stuffed toy companion, Ioryogi, she encounters various people troubled by their different situations. From a child struggling with his parents, a high school girl troubled about romance, and everything in between, Kobato', CHAR(39), 's naturally sweet smile and outgoing personality are ready to brighten their day!<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-10-06', '2010-03-23', 'Fall 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/79838.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (748, 1047, '"Magic Number (マジックナンバー)"', ' by Maaya Sakamoto', 'js-theme-songs', 'https://open.spotify.com/track/1GcAsatYciWxttl5OBNpSU')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2529, 1047, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2530, 1047, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2531, 1047, 9);

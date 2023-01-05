@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (742, CONCAT('Heya Camp△'), CONCAT('During an Outdoor Activities Club meeting, Nadeshiko Kagamihara, Aoi Inuyama, and Chiaki Oogaki debate what it means to be a real Yamanashi native. Somewhere along the line, Chiaki brings up the Yamanashi Kids', CHAR(39), ' Stamp Rally, which Nadeshiko has never heard of. The rally encourages one to visit famous places in the prefecture and collect stamps those who complete the rally will win a year', CHAR(39), 's worth of Minobu steamed buns. Enticed by the humongous food prize, Nadeshiko is set on participating.<br>
 <br>Follow the Outdoor Activities Club as they travel around the Yamanashi prefecture to collect stamps and explore what the region has to offer!<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-06', '2020-03-23', 'Winter 2020', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1228/104364.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (533, 742, '"The Sunshower"', ' by Asaka', 'js-theme-songs', 'https://open.spotify.com/track/49qxg2ltT02IeGg242ajro')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (819, 742, 165);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (794, 742, 28);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (795, 742, 8);

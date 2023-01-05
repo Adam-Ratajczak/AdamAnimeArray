@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Despite having forgotten the murder of her entire family, Juliet now secretly protects the oppressed citizens of Neo Verona as a vigilante called the Red Whirlwind. During one of her escapades she meets Romeo Candorebanto Montague, the kind and selfless son of the tyrannical Prince Laertes Montague, and without knowledge of each other', CHAR(39), 's background, they both fall in love at first sight. <br>
 <br>Unfortunately, however, their destiny is a cursed one: not only does each of the two families wish to obliterate the other, but an ancient secret hidden beneath Neo Verona also threatens their undying love for each other. Will they be able to defy the stars, or is this truly a love that can never be?<br>
 <br>[Written by MAL Rewrite]'), 1, '2007-04-05', '2007-09-26', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/75159.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1111, 1566, '"サイクロン" ("Cyclone")"', ' by 12012', 'js-theme-songs', 'https://open.spotify.com/track/7CDaQXoQN6aN7xMHXp3OER');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (665, 1566, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3892, 1566, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3893, 1566, 12);

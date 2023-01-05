@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (885, CONCAT('Isekai wa Smartphone to Tomo ni.'), CONCAT('In a thoughtless blunder, God accidentally strikes down Touya Mochizuki with a stray bolt of lightning! As an apology, God offers him one wish and the chance to live again in a magical fantasy world. Touya happily accepts the offer and, for his one wish, asks only to keep his smartphone with him as he begins his journey into this mysterious world.<br>
 <br>Starting over in this new world, Touya finds it is filled with magic—which he has an affinity for—and cute girls vying for his attention. These girls—the twins Linze and Elze Silhoueska, Yumina Urnea Belfast, Leen, and Yae Kokonoe—provide Touya with no end of romantic frustrations, but also companionship as he discovers the secrets of this new world.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-07-11', '2017-09-26', 'Summer 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/86794.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (624, 885, '"Another World"', ' by AOP', 'js-theme-songs', 'https://open.spotify.com/track/34zUGANqKWpDwVfAIC572Q')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2138, 885, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2139, 885, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2140, 885, 9);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Kamome Academy has its own version of Hanako-san', CHAR(39), 's legend. Rumors claim that if one successfully manages to summon Hanako-san, she will grant her summoner any wish. Lured by the gossip, many people have tried to call upon her, yet every attempt has failed. However, when Nene Yashiro, a girl hoping for romantic fortune, dares to summon Hanako-san, she discovers that the rumored "girl" is actually a boy!<br>
 <br>After a series of unfortunate events involving Nene', CHAR(39), 's romantic desires, she is unwillingly entangled in the world of the supernatural, becoming Hanako-kun', CHAR(39), 's assistant. Soon, she finds out about Hanako-kun', CHAR(39), 's lesser-known duty: maintaining the fragile balance between mortals and apparitions.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-10', '2020-03-27', 'Winter 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1050/111687.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (636, 902, '"No.7"', ' by Jibaku Shounen Band (Youji Ikuta from PENGUIN RESEARCH x Masayoshi Ooishi x ZiNG)', 'js-theme-songs', 'https://open.spotify.com/track/6g1IlfKEVO17PO26AHIW0r')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (397, 902, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2184, 902, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2185, 902, 10);

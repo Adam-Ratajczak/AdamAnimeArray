@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (544, CONCAT('Fumikiri Jikan'), CONCAT('Every day, all kinds of different people stop at railroad crossings on their way to work or school, resulting in all sorts of different conversations. Friends, enemies, acquaintances, and complete strangers—there', CHAR(39), 's always a new encounter to be had.<br><br>Fumikiri Jikan documents the discussions that take place at these locations. Whether these are funny or depressing, expected or completely unexpected, they certainly have the potential to be quite interesting.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-04-10', '2018-06-26', 'Spring 2018', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1598/91857.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (392, 544, '"Tomare no Susume (トマレのススメ)"', ' by Yuri Komagata', 'js-theme-songs', 'https://open.spotify.com/track/2NlAKu2wA6haFQtb04nfoS');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1351, 544, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1352, 544, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (607, 544, 138);

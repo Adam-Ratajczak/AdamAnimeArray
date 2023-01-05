@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (51, CONCAT('Aikatsu on Parade!'), CONCAT('Raki Kiseki is a second-year middle school student who transfers to Star Harmony Academy to become an idol. However, when she uses an Aikatsu Pass she received from her big sister (an Aikatsu engineer), 2, and when she opens them, she meets Aikatsu idols she never knew before, such as Yume Nijino (Aikatsu Stars!). Raki vows to design her own premium dress and perform in it on stage. <br>
 <br>(Source: Anime News Network)'), 2, '2019-10-05', '2020-03-28', 'Fall 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1712/102652.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (28, 51, '"Kimi no Entrance (君のEntrance)"', ' by Raki Kiseki (Rin Aira), Aine Yuuki (Akane Matsunaga), Mio Minato (Ibuki Kido) from BEST FRIENDS!', 'js-theme-songs', 'https://open.spotify.com/track/17ISS2pp2y1GtAEXQBofST')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (119, 51, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (120, 51, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (121, 51, 3);

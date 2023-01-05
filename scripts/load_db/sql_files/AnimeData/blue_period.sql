@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While mulling over his predicament, Yatora finds himself staring at a vibrant landscape of Shibuya. Unable to express how he feels about the unusually breathtaking sight, he picks up a paintbrush, hoping his thoughts will be conveyed on canvas. After receiving praise for his work, the joy he feels sends him on a journey to enter the extremely competitive Tokyo University of the Arts—a school that only accepts one in every two hundred applicants.<br>
 <br>Facing talented peers, a lack of understanding of the fine arts, and struggles to obtain his parents’ approval, Yatora is confronted by much adversity. In the hopes of securing one of the five prestigious spots in his program of choice, Yatora must show that his inexperience does not define him. <br>
 <br>[Written by MAL Rewrite]'), 1, '2021-10-02', '2021-12-18', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1757/116931.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (171, 240, '"EVERBLUE"', ' by Omoinotake', 'js-theme-songs', 'https://open.spotify.com/track/5RmtuRIe8FJg9FRegwCqzW')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (117, 240, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (270, 240, 12);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (261, 240, 13);

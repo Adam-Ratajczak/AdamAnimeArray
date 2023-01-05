@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Ninny Spangcole is a member of a popular girl group. But in Reverse London, she works as a "Witch" at Wing Bind—an organization that dispatches agents to exterminate the beasts and protect the citizens of both Londons using magic. Ninny and her partner, Noel Niihashi, in addition to their jobs, safeguard Baldo Ywain Parks, a young man with an odd connection to the dragons.<br>
 <br>Thanks to the Wing Bind', CHAR(39), 's hard work, there were no fatal dragon attacks for almost a century. But the peace shatters when Baldo', CHAR(39), 's presence unexpectedly causes a Dark Dragon to wreak havoc in the city. The witches are further inconvenienced when Ninny', CHAR(39), 's troublesome former bandmate appears in Reverse London—in tandem with another powerful dragon.<br>
 <br>[Written by MAL Rewrite]<br>'), 2, '2020-10-02', NULL, '', '21 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1993/108967.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (194, 274, '"Blowing"', ' by NiL', 'js-theme-songs', 'https://open.spotify.com/track/26Jsd08ArcT3PkNe6yBPNT');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (138, 274, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (634, 274, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (635, 274, 9);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (737, CONCAT('Hentai Ouji to Warawanai Neko.'), CONCAT('Youto Yokodera wants to be seen in a way different from most men: as a pervert. However, his lewd actions are often misinterpreted as good intentions, and people cannot see his true nature. Upon hearing rumors of a cat statue that can banish an unwanted trait, he searches for it and prays for his façade to be removed. But each wish comes at a price: those unwelcomed traits are transferred to someone else who desires them!<br>
 <br>After realizing that vocalizing his dirty thoughts is not the best thing, Youto decides to regain his lost traits by seeking out the person who received them. Unfortunately, he was not alone in praying to the cat statue, and now he must not only fix his life, but the lives of others as well.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-04-13', '2013-06-29', 'Spring 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/75788.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (530, 737, '"Fantastic future"', ' by Yukari Tamura', 'js-theme-songs', 'https://open.spotify.com/track/0jSBfTVN3YKcevLdFQ4fmP')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1807, 737, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1808, 737, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1809, 737, 10);

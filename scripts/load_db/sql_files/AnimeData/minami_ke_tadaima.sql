@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1260, CONCAT('Minami-ke Tadaima'), CONCAT('The everyday lives of the Minami sisters continue. Chiaki, the youngest, continues to call people idiots while worshipping her eldest sister. Kana, the middle, still can', CHAR(39), 't figure out that Fujioka', CHAR(39), 's feelings for her are a crush, not a grudge. Haruka, the eldest, still unknowingly avoids Hosaka', CHAR(39), 's advances to invite her to the volleyball team, and after a long day of excitement, the sisters enjoy sitting at the table at their home.<br>
 <br>(Source: ANN)'), 1, '2013-01-06', '2013-03-31', 'Winter 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/53133.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (880, 1260, '"Shiawase☆High Tension↑↑ (シアワセ☆ハイテンション↑↑)"', ' by Haruka Minami (CV: Rina Satou), Kana Minami (CV: Marina Inoue), Chiaki Minami (CV: Minori Chihara)', 'js-theme-songs', 'https://open.spotify.com/track/1IDJy6HibwAg6Ciq9P1A8I');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3090, 1260, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3091, 1260, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3092, 1260, 9);

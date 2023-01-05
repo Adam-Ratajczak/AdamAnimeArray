@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1786, CONCAT('Sore dake ga Neck'), CONCAT('Set in a convenience store that seems to be everywhere, through the appearance of a convenience store clerk who does not talk properly, while raising problems with the way of modern communication, we will approach the secret of the mysterious hero Mutou.<br>
 <br>(Source: MAL News)'), 1, '2020-10-13', '2021-01-05', 'Fall 2020', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1768/109666.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1266, 1786, '"Sore dake ga Neck (それだけがネック)"', ' by Uchikubi Gokumon Doukoukai (打首獄門同好会)', 'js-theme-songs', 'https://open.spotify.com/track/7syGbz3ncZFIbMQLnlOvZ7');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1930, 1786, 229);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32133, 1786, 1, CONCAT('Untitled '), NULL, 'https://ebd.cda.pl/620x368/6031274eb');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (32134, 1786, 2, CONCAT('Untitled'), NULL, 'https://ebd.cda.pl/620x368/603389009');

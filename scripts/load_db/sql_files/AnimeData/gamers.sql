@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>This girl, Karen Tendou, is an exemplary student who is proclaimed to be the school', CHAR(39), 's idol. She discovers that Amano is a gamer, and this newfound knowledge incites a passionate desire within her to recruit him into the game club. Upon visiting the club, Amano is forcefully made aware of a side to gaming wildly different than the one he loves so dearly. <br>
 <br>Tendou', CHAR(39), 's interest in Amano begins shaking up what was once an uneventful life, filling it with spontaneity, awkwardness, and a little bit of mayhem. As a result, every day becomes a comical battle for Amano', CHAR(39), 's sanity as he tries to adapt to these wild, unexpected changes.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-07-13', '2017-09-28', 'Summer 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/86828.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (404, 571, '"GAMERS!"', ' by Karen Tendou (Hisako Kanemoto), Chiaki Hoshinomori (Manaka Iwami), Aguri (Rumi Ookubo)', 'js-theme-songs', 'https://open.spotify.com/track/32jmUPib1d2M5ctebwTrm1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1414, 571, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1415, 571, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (639, 571, 145);

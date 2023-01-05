@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>In the kingdom of Qin, Xin, a war-orphaned slave, trains vigorously with fellow slave and best friend, Piao, who shares his proud dream of one day becoming a Great General of the Heavens. However, the two are suddenly forced to part ways when Piao is recruited to work in the royal palace by a retainer of the King.<br>
 <br>After a fierce coup d', CHAR(39), 'état unfolds, Piao returns to Xin, half dead, with a mission that will lead him to a meeting with China', CHAR(39), 's young King, Ying Zheng, who bears a striking resemblance to Piao. Kingdom follows Xin as he takes his first steps into the great blood-soaked pages of China', CHAR(39), 's history. He must carve his own path to glory on his long quest to become a Great General of the historic Seven Warring States.<br>
 <br>[Written by MAL Rewrite]'), 1, '2012-06-04', '2013-02-25', 'Summer 2012', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/39511.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (730, 1026, '"Pride"', ' by Nothing's Carved In Stone', 'js-theme-songs', 'https://open.spotify.com/track/0lgcscrJFjRQgcMkAXUu1q')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2493, 1026, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2494, 1026, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2495, 1026, 9);

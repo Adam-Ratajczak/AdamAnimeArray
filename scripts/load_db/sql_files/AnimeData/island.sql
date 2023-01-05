@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Knowing another "Setsuna" herself, Rinne takes him to her household as a servant, hoping that he is the same one she remembers. On the other hand, Setsuna continues to learn more about Urashima, desiring to identify his lost past. He comes to know about the island', CHAR(39), 's folklore, its three great families, and the endemic disease that prevents anyone afflicted from stepping out into the daylight. <br>
 <br>As the mysteries of his missing memories and Urashima itself unfold, Setsuna must remember his purpose and fulfill his mission as soon as possible. But, as he witnesses the myriad of troubles plaguing the island, Setsuna begins to question—is his temporal displacement merely an effort to change a single girl', CHAR(39), 's fate?<br>
 <br>[Written by MAL Rewrite]'), 2, '2018-07-01', '2018-09-16', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1951/95080.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (625, 888, '"Eternal Star"', ' by Yukari Tamura', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (390, 888, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2145, 888, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2146, 888, 2);

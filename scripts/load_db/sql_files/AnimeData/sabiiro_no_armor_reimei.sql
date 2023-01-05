@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1581, CONCAT('Sabiiro no Armor: Reimei'), CONCAT('The era is a turbulent Warring States period in Hinomoto. Kinokuni, the unexplored region of the mountains and the sea. In the depths of this deep forest, there is a group using "Yatagarasu" as their flag symbol and using guns as weapons. Their name is "Saikashu". It is "Magoichi" who arrived from a foreign country that inherited the name as the head of Saikashu. On the other hand, "Saburo" quickly senses the signs of aggression from the European powers and struggles to protect Hinomoto.<br>
 <br>The fate of the two who would not meet originally will be crossed by the fight against the invaders who came from a foreign country ─!<br>
 <br>(Source: YTV)'), 2, '2022-01-09', '2022-03-27', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1263/120362.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1116, 1581, '"Faith"', ' by Magoichi (CV: Taiki Satou), Saburou Nobunaga Oda (CV: Toshiki Masuda), Lucio (CV: Ryuuji Satou)', 'js-theme-songs', 'https://open.spotify.com/track/442mdu95guiWqJtXuUQmsm')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (675, 1581, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3934, 1581, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3935, 1581, 2);

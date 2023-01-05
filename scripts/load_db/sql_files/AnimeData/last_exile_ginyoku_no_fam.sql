@@ -5,7 +5,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The Vespa continues to weave through the barrage of bombs, while the fleets of the Federation close in on Turan.<br>
 <br>What are the motives of Luscinia, the man leading the Ades Federation into the war? And what is the secret behind "Exile"?<br>
 <br>(Source: Animax, edited)'), 1, '2011-10-15', '2012-03-24', 'Fall 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/33541.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (799, 1119, '"Buddy"', ' by Maaya Sakamoto', 'js-theme-songs', 'https://open.spotify.com/track/09OqbWvRn5durseVKdRnga')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2718, 1119, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2719, 1119, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2720, 1119, 3);

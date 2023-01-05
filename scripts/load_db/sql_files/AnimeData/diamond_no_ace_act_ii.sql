@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br> With the third-year players due to retire after the summer tournament, the team has to integrate the experience of the seniors and the potential of the newcomers to overcome familiar and new opponents alike and win the coveted national title. <br>
 <br>Meanwhile, pitcher Eijun Sawamura is as determined as ever to earn jersey No. 1  and seize the position of "ace" from his persistent rival, Satoru Furuya.  As the team prepares for their greatest challenge yet, Sawamura and Furuya carry on their struggle to lead their team to glory and become the star of the game: the true "Ace of the Diamond." <br>
 <br>[Written by MAL Rewrite]'), 1, '2019-04-02', '2020-03-31', 'Spring 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1153/100511.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (306, 422, '"Hajimari no Uta (はじまりのうた)"', ' by GLAY', 'js-theme-songs', 'https://open.spotify.com/track/2unAcJcDXtwB74bGM4p18F')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (191, 422, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (473, 422, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (474, 422, 21);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (22, CONCAT('Aa! Megami-sama! (2011)'), CONCAT('OVAs bundled with volumes 42, 43 & 46 of the Aa! Megami-sama! manga. '), 1, '2011-02-23', '2013-08-23', '', '28 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/28569.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (15, 22, '"everlasting"', ' by fripside', 'js-theme-songs', 'https://open.spotify.com/track/0bY7WP2V9ExsanZpPEot2B');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (14, 22, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (43, 22, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (44, 22, 7);

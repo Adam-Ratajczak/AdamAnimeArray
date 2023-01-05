@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>After beginning to work as a waitress in return for room and board, Kokoa also befriends another part-timer, Rize Tedeza, who has unusual behavior and significant physical capabilities due to her military upbringing Chiya Ujimatsu, a waitress from a rival cafe who does everything at her own pace and Sharo Kirima, another waitress at a different cafe who has the air of a noblewoman despite being impoverished.<br>
 <br>With fluffy silliness and caffeinated fun, Gochuumon wa Usagi Desu ka? is a heartwarming comedy about five young waitresses and their amusing adventures in the town they call home.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-04-10', '2014-06-26', 'Spring 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/79600.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (448, 627, '"Daydream café"', ' by Petit Rabbit's (Ayane Sakura, Inori Minase, Risa Taneda, Satomi Sato, Maaya Uchida)', 'js-theme-songs', 'https://open.spotify.com/track/4lFGExZoEArB7jzulnWtfl')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (697, 627, 75);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (698, 627, 38);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (660, 627, 28);

@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
+import redirect from '../../redirect.js'
 import './style.scss';
 
-class Menubar extends Component {
-  render() {
+class Menubar extends Component{
+  render(){
     return (
       <div id="content">
         <div id="HeaderContent">
@@ -20,6 +21,36 @@ class Menubar extends Component {
         </div>
       </div>
     )
+  }
+
+  componentDidMount(){
+    document.getElementById("anime_top_ranked").addEventListener("click", (event) =>{
+      redirect("/Popular")
+
+    });
+    document.getElementById("anime_newest").addEventListener("click", (event) =>{
+      redirect("/Newest")
+
+    });
+    document.getElementById("anime_recomended").addEventListener("click", (event) =>{
+      redirect("/Recomended")
+
+    });
+    document.getElementById("anime_random").addEventListener("click", (event) =>{
+      redirect("/Random")
+
+    });
+    document.getElementById("Search").addEventListener("submit", (event) =>{
+      let searchphraze = document.getElementById("Searchbar").value;
+
+      if(searchphraze.length == 0){
+        searchphraze = "*";
+      }
+
+      redirect("/Search/" + searchphraze)
+
+      event.preventDefault()
+    });
   }
 }
 

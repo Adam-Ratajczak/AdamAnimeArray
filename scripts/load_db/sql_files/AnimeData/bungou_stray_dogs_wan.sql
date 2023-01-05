@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (272, CONCAT('Bungou Stray Dogs Wan!'), CONCAT('Atsushi Nakajima has finally grown accustomed to the crazy lifestyle that comes with being part of the Armed Detective Agency. But even during peaceful periods of time, there is bound to be chaos! As Atsushi, his friends, and the agency', CHAR(39), 's rival group—the Port Mafia—go about their days roaming the streets of Yokohama, there are no limits to the strange situations they are unwillingly thrown into. <br>
 <br>A new take on its original work, Bungou Stray Dogs Wan! shows the more mundane yet hilarious aspects of the characters', CHAR(39), ' lives.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-01-13', '2021-03-31', 'Winter 2021', '11 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1293/111430.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (192, 272, '"Namae wo Yobu yo (名前を呼ぶよ)"', ' by Atsushi Nakajima (CV: Yuuto Uemura)', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (136, 272, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (627, 272, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (628, 272, 4);

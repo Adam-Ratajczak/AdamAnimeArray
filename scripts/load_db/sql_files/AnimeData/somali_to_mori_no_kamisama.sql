@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1775, CONCAT('Somali to Mori no Kamisama'), CONCAT('In a world inhabited by demons, cyclopes, and other fantastic creatures, humans stand apart as the outcasts. Quick to anger, the human race engaged in a war that all but wiped them out. The few humans that remain are seen as a delicacy, serving no purpose but to be hunted down and eaten.<br>
 <br>One day, Golem, a wandering protector of nature, encounters a lone human child while patrolling. Inspired by her enthusiasm, he takes the girl, named Somali, under his wing. Together, the duo embarks on a journey to find Somali', CHAR(39), 's parents and bring her home.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-10', '2020-03-27', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1938/102796.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1256, 1775, '"Arigatou wa Kocchi no Kotoba (ありがとうはこっちの言葉)"', ' by Naotarou Moriyama (森山直太朗)', 'js-theme-songs', 'https://open.spotify.com/track/4eN3aVT6RhsL0ZLwjDbAak')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4404, 1775, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4405, 1775, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4406, 1775, 9);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1310, CONCAT('Mushibugyou OVA'), CONCAT('OVAs bundled with the 15-17th volumes of the Mushibugyou manga.'), 1, '2014-07-18', '2015-01-16', '', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/67127.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (912, 1310, '"Ichizu (イチズ)"', ' by i☆Ris', 'js-theme-songs', 'https://open.spotify.com/track/6DMRiB5xO7CNtekitB8mMZ');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (564, 1310, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3235, 1310, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3236, 1310, 9);

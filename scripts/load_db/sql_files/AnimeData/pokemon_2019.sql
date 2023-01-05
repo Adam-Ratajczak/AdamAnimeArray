@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Noticing the other trainers', CHAR(39), ' tactics, Satoshi has his partner, Pikachu, strike Lugia with a Thunderbolt attack. Unfazed, Lugia flees, but not before Satoshi determinedly leaps onto its back. To Satoshi', CHAR(39), 's surprise, he meets another boy, Gou, who leapt onto Lugia', CHAR(39), 's back as well. The two ride on Lugia', CHAR(39), 's back as it brings them along on a bizarre adventure across the seas. As it lets the two back on the ground, Satoshi and Gou bid their farewells to Lugia and return to Sakuragi Institute.<br>
 <br>Impressed by Gou', CHAR(39), 's findings and Satoshi', CHAR(39), 's insight taken during their encounter, Sakuragi requests for the duo to be his new research partners. And so the duo', CHAR(39), 's journey begins, traveling across multiple regions to meet many new Pokémon—including ones that have the ability to Gigantamax!<br>
 <br>[Written by MAL Rewrite]'), 5, '2019-11-17', NULL, 'Fall 2019', '23 min.', 'https://cdn.myanimelist.net/images/anime/1689/105554.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1048, 1481, '"1・2・3"', ' by After the Rain', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (637, 1481, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3680, 1481, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3681, 1481, 2);

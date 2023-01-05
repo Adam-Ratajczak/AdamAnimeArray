@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>One day, Oga is by a riverbed when he encounters a man floating down the river. After being retrieved by Oga, the man splits down the middle to reveal a baby, which crawls onto Oga', CHAR(39), 's back and immediately forms an attachment to him. Though he doesn', CHAR(39), 't know it yet, this baby is named Kaiser de Emperana Beelzebub IV, or "Baby Beel" for short—the son of the Demon Lord!<br>
 <br>As if finding the future Lord of the Underworld isn', CHAR(39), 't enough, Oga is also confronted by Hildegard, Beel', CHAR(39), 's demon maid. Together they attempt to raise Baby Beel—although surrounded by juvenile delinquents and demonic powers, the two of them may be in for more of a challenge than they can imagine.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-01-09', '2012-03-25', 'Winter 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/28013.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (142, 199, '"Dadada"', ' by GROUP Tamashii', 'js-theme-songs', 'https://open.spotify.com/track/7DKcxBRiNfR0jlhZxtgM6o')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (93, 199, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (472, 199, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (473, 199, 9);

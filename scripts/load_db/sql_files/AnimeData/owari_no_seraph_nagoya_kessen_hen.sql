@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Kureto Hiiragi receives information that a large group of vampires will be gathering in Nagoya, preparing for their assault on the Imperial Demon Army', CHAR(39), 's main forces in Tokyo. Led by Guren Ichinose, Yuuichirou', CHAR(39), 's team is one of many selected to intercept and eliminate the vampire nobles.<br>
 <br>With the Nagoya mission quickly approaching, the members of Shinoa squad continue to work towards fully mastering their weapons, while learning how to improve their teamwork. Yuuichirou must gain the power he needs to slay the nobles and save his best friend, before he succumbs to the demon of the Cursed Gear.<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-10-10', '2015-12-26', 'Fall 2015', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/76632.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1022, 1445, '"Two souls -toward the truth-"', ' by fripSide', 'js-theme-songs', 'https://open.spotify.com/track/19zeq3lFYOFgKASBCsWsEY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (624, 1445, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3582, 1445, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3583, 1445, 6);

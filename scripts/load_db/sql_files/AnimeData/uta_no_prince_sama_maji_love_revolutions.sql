@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2004, CONCAT('Uta no☆Prince-sama♪ Maji Love Revolutions'), CONCAT('The third anime adaptation of the otome game Uta no☆Prince-sama♪.<br>
 <br>Starish are given new assignments in newly divided teams, and they do their best in order to try and impress Shining Saotome into allowing their entry to SSS, a top level music contest. Meanwhile, Haruka works with the Quartet Night. '), 1, '2015-04-05', '2015-06-28', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/73328.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1432, 2004, '"The dice are cast"', ' by Quartet Night', 'js-theme-songs', 'https://open.spotify.com/track/6KnYpTMGbzjpYWpKPHE4NT')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (836, 2004, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4996, 2004, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4997, 2004, 7);

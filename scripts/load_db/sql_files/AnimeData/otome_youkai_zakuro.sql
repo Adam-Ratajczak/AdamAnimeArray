@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1434, CONCAT('Otome Youkai Zakuro'), CONCAT('Second Lieutenant Kei Agemaki, the son of a famous general, has hidden his extreme fear of paranormal beings all his life. However, when he and two others are reassigned to live and work with youkai in the Ministry of Spirit Affairs, he is brought face-to-face with his worst nightmare. Now with the help of the fox spirit Kushimatsu, he and his fellow officers must learn to work alongside youkai maidens—Zakuro, Susukihotaru, Hoozuki, and Bonbori—to solve paranormal cases.<br>
 <br>Set in the midst of an alternate version of Japanese Westernization, Otome Youkai Zakuro explores the clashes and unions that can occur when east meets west, local meets foreign, and women meet men. The unusual alliance of the youkai maidens and human officers must learn to work together in a world that is changing around them.<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-10-05', '2010-12-28', 'Fall 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/85430.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1013, 1434, '"Moon Signal"', ' by Sphere', 'js-theme-songs', 'https://open.spotify.com/track/4t4Z6FxJ4ovmscVrpJxHFv');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (620, 1434, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3555, 1434, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3556, 1434, 10);

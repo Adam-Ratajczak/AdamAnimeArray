@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2118, CONCAT('Zoku Touken Ranbu: Hanamaru'), CONCAT('Sequel of Touken Ranbu: Hanamaru.'), 1, '2018-01-08', '2018-03-26', 'Winter 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/89579.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1515, 2118, '"Hanamaru Shirushi no Hi no Moto de (花丸印の日のもとで)"', ' by Yamatonokami Yasusada (Mitsuhiro Ichiki) & Kashuu Kiyomitsu (Toshiki Masuda)', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5274, 2118, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5275, 2118, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5276, 2118, 6);

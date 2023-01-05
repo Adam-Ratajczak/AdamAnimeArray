@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Whilst interacting with these men, she discovers she is a Tamayori - someone who can see ghosts - a skill that is highly valued in the Meiji Period. Due to these powers, her relationship with the men begins to change… As she gets to know these handsome men in a new era she just can’t get used to, a love begins to grow within her.<br>
 <br>Will Mei be able to return to her time? What will become of her love - a love that crosses the boundaries of time and space? <br>
 <br>(Source: Honey', CHAR(39), 's Anime)'), 1, '2019-01-09', '2019-03-27', 'Winter 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1205/96175.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (871, 1245, '"Tsuki Akari no Rhapsodia (月灯りの狂詩曲)"', ' by KENN', 'js-theme-songs', 'https://open.spotify.com/track/5LQYmjEZVsziMYiN44s8dA')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (546, 1245, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3044, 1245, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3045, 1245, 9);

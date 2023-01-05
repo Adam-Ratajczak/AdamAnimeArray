@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (720, CONCAT('Hataraki Man'), CONCAT('Hiroko Matsukata is a woman who works for a magazine company. She puts all she has into her work, and is known as a strong, straight-forward working girl, who can at will turn herself into Hataraki man (working man) mode. Despite Hiroko', CHAR(39), 's success at work, her life lacks romance. Even though a hard worker, she', CHAR(39), 'd leave early anytime to go on a date. Too bad her boyfriend is an even bigger workaholic than Hiroko.<br>
 <br>(Source: ANN)'), 1, '2006-10-13', '2006-12-22', 'Fall 2006', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/73869.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (514, 720, '"Hataraku Otoko"', ' by PUFFY', 'js-theme-songs', 'https://open.spotify.com/track/0WIFWe52n0L3Yf2HpBFX88');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (515, 720, '"Shangri-La"', ' by chatmonchy', 'js-theme-songs', 'https://open.spotify.com/track/5OAQpdkxSJtdxpBft95aMl');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1762, 720, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1763, 720, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1764, 720, 7);

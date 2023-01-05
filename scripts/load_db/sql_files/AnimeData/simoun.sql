@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1758, CONCAT('Simoun'), CONCAT('In the peaceful theocracy of Simulicram, everyone is born female. At age 17, each maiden undergoes a special ceremony where she chooses her sex. However, only Pairs of maiden priestesses can synchronize with the ancient flying ships known as Simoun needed to defend Simulicram. These Pairs refrain from undergoing the ceremony as long as they wish to keep piloting their Simoun.<br>
 <br>Aer is recruited to be a Simoun pilot after a terrifying attack by an enemy nation decimates the squadron known as Chor Tempest. To earn her wings she needs to find her way into the heart of Neviril, Regina of Chor Tempest. But Neviril', CHAR(39), 's heart still belongs to her previous Pair, lost in the battle when she attempted a forbidden Simoun maneuver.<br>
 <br>(Source: Media Blasters) '), 1, '2006-04-03', '2006-09-25', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/29109.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1245, 1758, '"Utsukushi Kereba Sore de Ii"', ' by Chiaki Ishikawa', 'js-theme-songs', 'https://open.spotify.com/track/1tFWBP91HaTmdMFwmBNRD7');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4354, 1758, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4355, 1758, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4356, 1758, 16);

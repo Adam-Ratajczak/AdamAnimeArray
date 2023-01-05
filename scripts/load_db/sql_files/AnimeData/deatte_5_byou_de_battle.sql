@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Akira Shiroyanagi, a high schooler who loves games and Konpeito (Japanese sweets), 1, involved in an experiment, and gained certain powers."<br>
 <br>Akira is determined to win the game with his newfound powers and destroy the organization. Armed with a power no one expects and his "brain" skills, the new period of intelligence battle begins! <br>
 <br>(Source: MU, edited)'), 2, '2021-07-13', '2021-09-28', 'Summer 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1145/115565.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (291, 402, '"No Continue"', ' by Akari Kitou', 'js-theme-songs', 'https://open.spotify.com/track/661WsL3EKQDINo3JeLbWbC')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (450, 402, 116);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (451, 402, 117);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (436, 402, 10);

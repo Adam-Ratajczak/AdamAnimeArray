@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (700, CONCAT('Hakyuu Houshin Engi'), CONCAT('When his clan is wiped out by a beautiful demon, young Taikobo finds himself in charge of the mysterious Houshin Project. Its mission: find all immortals living in the human world and seal them away forever. But who do you trust—and whose side are you really on—when you', CHAR(39), 've been trained to hunt demons by a demon?<br>
 <br>(Source: VIZ Media)'), 1, '2018-01-12', '2018-06-29', 'Winter 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/88796.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (496, 700, '"Keep the Heat and Fire Yourself Up"', ' by Fear, and Loathing in Las Vegas', 'js-theme-songs', 'https://open.spotify.com/track/21r12uOC50biHkbEyrnc3N')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (321, 700, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1718, 700, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1719, 700, 9);

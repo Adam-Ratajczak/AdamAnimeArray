@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1617, CONCAT('Satsuriku no Tenshi'), CONCAT('With dead and lifeless eyes, Rachel Gardner wishes only to die. Waking up in the basement of a building, she has no idea how or why she', CHAR(39), 's there. She stumbles across a bandaged murderer named Zack, who is trying to escape. After promising to kill her as soon as he is free, Rachel and Zack set out to ascend through the building floor by floor until they escape.<br>
 <br>However, as they progress upward, they meet more twisted people, and all of them seem familiar with Rachel. What is her connection to the building, and why was she placed in it? Facing a new boss on each floor, can Rachel and Zack both achieve their wishes?<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-07-06', '2018-10-26', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1862/95624.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1142, 1617, '"Vital"', ' by Masaaki Endoh', 'js-theme-songs', 'https://open.spotify.com/track/74IJMPBHA27f9Zsko2fOpe');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4026, 1617, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4027, 1617, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4028, 1617, 5);

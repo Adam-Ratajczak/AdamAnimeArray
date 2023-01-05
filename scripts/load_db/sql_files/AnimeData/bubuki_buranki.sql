@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (263, CONCAT('Bubuki Buranki'), CONCAT('Away from home for 10 years, Azuma Kazuki had no idea what was awaiting him upon his return. He certainly did not expect to be attacked by dozens of heavily armed people and taken as their prisoner. Fortunately, Azuma', CHAR(39), 's stay in captivity is short. Wielding a strange sentient weapon—known as "Bubuki"—upon her right arm, his childhood friend, Kogane Asabuki, rescues him.<br>
 <br>After escaping, Azuma learns that he too has the power to control Bubuki. Together with his new companions, he must revive the Buranki titan named Oubu, that sleeps somewhere deep underground. With this knowledge and purpose, a new path to unearth the truths behind the Buranki opens before Azuma.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-01-09', '2016-03-26', 'Winter 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/79758.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (185, 263, '"ANGER/ANGER"', ' by Konomi Suzuki', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (605, 263, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (606, 263, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (607, 263, 3);

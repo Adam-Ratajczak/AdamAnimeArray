@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1714, CONCAT('Shining Tears X Wind'), CONCAT('Mysterious disappearances are occurring one after the other in Tatsumi Town. Kiriya has a vision from a mysterious beautiful girl with pointy ears. A book talking for an alternative world is found. And Mao searching for her long lost friend, Zero, comes to our world. But what she didn’t expect is to find Souma and Kureha, and even less, to accidentally take them to her world. Now, Souma and Kureha have to find a way to come back. But other forces are playing their part in the darkness and Souma with Kureha will find that going back is harder than they first anticipated.<br>
 <br>(Source: ANN) '), 1, '2007-04-07', '2007-06-30', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/2298.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1211, 1714, '"Shining Tears"', ' by Souichiro Hoshi.', 'js-theme-songs', 'https://open.spotify.com/track/1YTRygaMHaDbRjAcH7XZbf');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1212, 1714, '"光のシルエット (Hikari no SILHOUETTE)"', ' by Souichiro Hoshi.', 'js-theme-songs', 'https://open.spotify.com/track/6TxcuKpDR3yIKmkt2uGXCW');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4255, 1714, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4256, 1714, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4257, 1714, 9);

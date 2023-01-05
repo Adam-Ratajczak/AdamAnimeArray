@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1085, CONCAT('Kouya no Kotobuki Hikoutai'), CONCAT('Across the desolate wilderness, resources are scant and survival is the utmost priority. Essential supplies are delivered through the network of zeppelins, relying on protection from mercenary crews piloting single-engine fighter planes. At odds with pirates and political conflict, these brave aviators provide the strongest guard to stability in such dismal lands.<br>
 <br>Kylie—a talented, hotshot pilot—serves with one such crew: the Kotobuki Squadron. Recruited to the group by her childhood friend Emma, her natural aptitude for flight makes her a key member. Armed with their Hayabusa fighter planes, the six-member squadron is hired to protect people, goods, and society as they continue to engage hardships in their complex world.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2019-01-13', '2019-03-31', 'Winter 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1252/96179.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (776, 1085, '"Soranone (ソラノネ)"', ' by ZAQ', 'js-theme-songs', 'https://open.spotify.com/track/6BHjjmiPHOkFwDEO1rTcmA');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2639, 1085, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2640, 1085, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1177, 1085, 57);

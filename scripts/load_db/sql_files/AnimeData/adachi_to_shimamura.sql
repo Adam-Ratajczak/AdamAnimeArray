@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As if by fate, two students—Sakura Adachi and Hougetsu Shimamura—stumble upon each other on the second floor of the school gymnasium. As they gradually foster a budding friendship, their feelings for one another only become more ambiguous. Growing closer by the day, the two must learn to navigate their contrasting personalities as well as determine the depth of their affection for each other.<br>
 <br>The nature of this relationship gradually shifts when one of them starts to develop feelings beyond the boundaries of a platonic relationship. Even so, Adachi and Shimamura must realize if forming a bond stronger than friendship will bring them closer or tear them apart.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-09', '2020-12-25', 'Fall 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1649/109056.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (23, 34, '"Gotoubun no Katachi (五等分のカタチ)"', ' by Nakanoke no Itsuzugo (中野家の五つ子) (Kana Hanazawa, Ayana Taketatsu, Miku Itou, Ayane Sakura, Inori Minase)', 'js-theme-songs', 'https://open.spotify.com/track/0c0SnAvk6flplPQWkb0oIO')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (79, 34, 16);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (80, 34, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (81, 34, 8);

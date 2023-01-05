@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (982, CONCAT('Kawaikereba Hentai demo Suki ni Natte Kuremasu ka?'), CONCAT('As far as it goes, many boys, especially in their teenage years, want to have a girlfriend. Keiki Kiryuu is no exception. One eventful afternoon, his days of yearning for a lover seem to come to an end when he receives a love letter from an anonymous sender—along with a pair of white panties. <br>
 <br>To determine the identity of his secret admirer, referred to as Cinderella, he proceeds to investigate several possible candidates including his senior Sayuki Tokihara, his underclassman Yuika Koga, and his classmate Mao Nanjou. However, as Keiki seeks to uncover who this mystery girl might be, he comes to know about the perverted fetishes hidden behind each candidate', CHAR(39), 's innocent exteriors...<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2019-07-08', '2019-09-23', 'Summer 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1430/102439.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (694, 982, '"Daisuki. (ダイスキ。)"', ' by Ayaka Ohashi', 'js-theme-songs', 'https://open.spotify.com/track/4AF3lYccV7ysnwdLZAbyFY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2377, 982, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2378, 982, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2379, 982, 14);

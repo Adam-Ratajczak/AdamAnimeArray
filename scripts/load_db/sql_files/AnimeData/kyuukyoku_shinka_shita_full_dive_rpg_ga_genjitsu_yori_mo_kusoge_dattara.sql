@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>At present, due to an accident a few years prior, the high school student Hiroshi Yuuki now immerses himself in full-dive RPGs as a form of escapism. After failing to acquire the latest version of his favorite game, Hiroshi stumbles upon a game shop and meets its beautiful clerk Reona Kisaragi who convinces him to buy a copy of Kiwame Quest so that they can play together. <br>
 <br>The first time Hiroshi plays the game, he marvels at the realism it offers. However, his astonishment is short-lived as he sets off a series of misfortunes, quickly realizing that the game is even worse than his already stressful life. Nevertheless, Hiroshi still finds himself logging on again despite his growing contempt for the game. With no do-overs in his current disadvantageous situation, Hiroshi only has one goal—clearing the game!<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-04-07', '2021-06-23', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1357/113277.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (796, 1113, '"ANSWER"', ' by Mayu Maeshima', 'js-theme-songs', 'https://open.spotify.com/track/7urK9cyTl4Qx1WsRoVXzNG')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2707, 1113, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2708, 1113, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2709, 1113, 9);

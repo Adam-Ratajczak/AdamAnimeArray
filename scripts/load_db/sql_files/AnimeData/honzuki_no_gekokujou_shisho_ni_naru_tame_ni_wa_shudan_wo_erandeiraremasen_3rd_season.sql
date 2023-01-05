@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>To keep her safe, the Head Priest assigns Myne a bodyguard and advises her to be adopted by a noble, a decision that will force her to leave her family behind. As Myne is opposed to the idea, the Head Priest gives her an ultimatum: she can be with her family until she turns 10, but if she is deemed too unstable, she will immediately be dealt with.<br>
 <br>Placed in a tough position, Myne is uncertain about her future. Despite the twists that may lie ahead, she will do whatever she can to protect those that she loves—even if it means giving up on her dream.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-12', '2022-06-14', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1976/122302.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (565, 788, '"Ano Hi no Kotoba (あの日のことば)"', ' by Nao Touyama', 'js-theme-songs', 'https://open.spotify.com/track/2bFuloLzFQ6wkBZq2P9gOF')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (865, 788, 172);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (864, 788, 20);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (865, 788, 45);

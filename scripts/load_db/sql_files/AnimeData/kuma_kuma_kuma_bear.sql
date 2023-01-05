@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Confused and unable to log out, Yuna sets out to explore this new environment. She rescues a girl named Fina from wild wolves, who then guides her to the city of Crimonia. With her eccentric bear attire, however, Yuna stands out wherever she goes, and alongside her boosted fighting prowess, her reputation quickly rises—to the point that people give her the nickname "Bloody Bear."<br>
 <br>Undeterred by this change in her life, Yuna decides to take on the role of an adventurer and fully enjoy herself in her new world.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-07', '2020-12-23', 'Fall 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1413/110712.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (779, 1089, '"Itsuka no Kioku (イツカノキオク)"', ' by Azumi Waki', 'js-theme-songs', 'https://open.spotify.com/track/6H89asd35YNQJ3Ga0B41Je')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2650, 1089, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2651, 1089, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2652, 1089, 9);

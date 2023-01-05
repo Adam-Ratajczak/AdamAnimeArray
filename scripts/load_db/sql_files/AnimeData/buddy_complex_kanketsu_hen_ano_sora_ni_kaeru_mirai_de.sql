@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (267, CONCAT('Buddy Complex: Kanketsu-hen - Ano Sora ni Kaeru Mirai de'), CONCAT('The two part finale of Buddy Complex television series deals with the final battle between the Free Treaty Alliance and the space division of Zogiria, lead by an elderly Bizon, as Earth and time itself hang in the balance.'), 1, '2014-09-30', '2014-10-01', '', '26 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/67521.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (187, 267, '"UNISONIA"', ' by TRUE', 'js-theme-songs', 'https://open.spotify.com/track/5slxCEA0Ryu8gGlZbwNrTS')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (132, 267, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (618, 267, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (619, 267, 13);

@@ -1,8 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1331, CONCAT('Naruto'), CONCAT('Moments prior to Naruto Uzumaki', CHAR(39), 's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi', CHAR(39), 's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto.<br>
 <br>Now, Naruto is a hyperactive and knuckle-headed ninja still living in Konohagakure. Shunned because of the Kyuubi inside him, Naruto struggles to find his place in the village, while his burning desire to become the Hokage of Konohagakure leads him not only to some great new friends, but also some deadly foes.<br>
 <br>[Written by MAL Rewrite]'), 2, '2002-10-03', '2007-02-08', 'Fall 2002', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/17405.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (931, 1331, '"Haruka Kanata (遥か彼方)"', ' by Hound Dog', 'js-theme-songs', '');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (932, 1331, '"Wind"', ' by Akeboshi', 'js-theme-songs', 'https://open.spotify.com/track/5BqKtuCFLfZyzfZOwlgW1f');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (577, 1331, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3302, 1331, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3303, 1331, 2);

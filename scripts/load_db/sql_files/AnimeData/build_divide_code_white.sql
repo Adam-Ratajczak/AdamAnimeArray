@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (269, CONCAT('Build Divide: Code White'), CONCAT('Second season of Build Divide.'), 2, '2022-04-03', '2022-06-26', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1194/121459.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (189, 269, '"Gold"', ' by EGOIST', 'js-theme-songs', 'https://open.spotify.com/track/2tpiDrtRmRq5ZdQLQVaDmz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (304, 269, 27);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (306, 269, 3);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (307, 269, 25);

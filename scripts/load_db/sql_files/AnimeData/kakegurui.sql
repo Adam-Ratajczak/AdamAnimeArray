@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (943, CONCAT('Kakegurui××'), CONCAT('As Yumeko Jabami', CHAR(39), 's fame grows and the reputation of the student council dwindles, Kirari Momobami decides to revolutionize the group. To this end, she announces an election for its next president. The rules are simple: each student in the school receives one chip. Whoever has the most chips by the end of thirty days becomes both the new president and the head of the Momobami clan.<br>
 <br>Upon receiving news of this development, the Momobami branch families spring into action. Eleven transfer students arrive at Hyakkao Private Academy, each aiming to lead both the school and the Momobami clan. Equipped with unique talents, they will compete to get as many chips as possible—but their chips are not the only things on the line.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2019-01-09', '2019-03-27', 'Winter 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1496/96519.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (669, 943, '"Kono Yubi Tomare (コノユビトマレ)"', ' by JUNNA', 'js-theme-songs', 'https://open.spotify.com/track/47ltbGJTejvcljxYfzAlUZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (414, 943, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2284, 943, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2285, 943, 4);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1625, CONCAT('Schoolgirl Strikers: Animation Channel'), CONCAT('It', CHAR(39), 's the near future. The newly established girls', CHAR(39), ' private school Goryoukan Academy has another face. This school has a special unit, Fifth force, who is assembled and selected from the school', CHAR(39), 's student body in order to fight an enemy called O', CHAR(39), 'bli.<br>
 <br>This is a story about love, courage and friendship about the girls called Strikers.'), 1, '2017-01-07', '2017-04-01', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/82560.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1149, 1625, '"Mirai-kei Strikers (未来系ストライカーズ)"', ' by Altair Torte (アルタイル・トルテ)', 'js-theme-songs', 'https://open.spotify.com/track/5sPqOBd6oqDomyX8ZrMeJI')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4045, 1625, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4046, 1625, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1748, 1625, 31);

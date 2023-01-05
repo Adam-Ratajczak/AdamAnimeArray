@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Despite wanting to socialize with people around her, transfer student Ruka Hanari', CHAR(39), 's shy and introverted personality always gets in her way. In a chance encounter, however, she bumps into a woman who happens to drop a blue ring as she hurries away. Unable to return it, Ruka brings it back with her to her dorm. There, she meets the outgoing Hiori Hirahara, who also has a blue ring. They find themselves in several conflicts against red Reflectors, slowly realizing the true power of the rings that they hold.<br>
 <br>Now striving to become Reflectors themselves, Ruka and Hiori must learn to work together and become stronger so that they can save not only the people around them, but also themselves from the emotions that hold them back.<br>
 <br>[Written by MAL Rewrite]'), 3, '2021-04-10', '2021-09-25', 'Spring 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1634/114551.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (172, 241, '"DiViNE"', ' by EXiNA', 'js-theme-songs', 'https://open.spotify.com/track/6gjkal8BbkbHQst6XUvNsr')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (118, 241, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (558, 241, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (559, 241, 7);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Their combined antics gain the attention of the mousy Mikine Nezu, a classmate of Inugami, and soon they join the "biology" club. There, they meet Ushikawa Ukiji, a passive, cow-like upperclassmen. Nezu and Nekoyama soon begin to build upon their relationship and a game of cat and mouse soon begins.<br>
 <br>Wild, explosive, and vibrant, Inugami-san to Nekoyama-san tells the comedic tale of two high school girls and their less-than-normal relationship.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-04-11', '2014-06-27', 'Spring 2014', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/61921.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (611, 864, '"Zettai♡Fukujuu Sengen (絶対♡服従宣言)"', ' by Yachiyo Inugami (CV: Sumire Uesaka) x Suzu Nekoyama (CV: Nao Touyama)', 'js-theme-songs', 'https://open.spotify.com/track/4AsO6QPIO9HJrpF1K8mLFR');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2069, 864, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2070, 864, 16);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (946, 864, 55);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, it turns out that all of the members of the club have some serious issues. The club leader Mio Isurugi is a self-designated god who is afraid of cats, Arashiko Yuuno has a severe fear of men, and the club advisor Michiru Onigawara is a sadist who enjoys making people cosplay. <br>
 <br>Together with other wacky characters such as Yumi Mamiya, a talented masseuse and Yuuno', CHAR(39), 's best friend, and Noa Hiiragi, the president of the invention club, they all learn about the importance of acceptance and kindness.<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-10-02', '2010-12-18', 'Fall 2010', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/85871.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (886, 1269, '"More-more LOVERS!!"', ' by Natsuko Asou', 'js-theme-songs', 'https://open.spotify.com/track/1hFasgdMOMppEcQDNO3reL');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1372, 1269, 14);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1373, 1269, 15);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (21678, 1269, 1, CONCAT('Sharp Descending First Love!'), '2010-10-02', 'https://ebd.cda.pl/620x368/528400204');

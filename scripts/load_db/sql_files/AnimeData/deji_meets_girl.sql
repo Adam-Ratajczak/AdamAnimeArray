@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (404, CONCAT('Deji Meets Girl'), CONCAT('Sixteen-year-old Maise Higa spends her summer days working part-time at her family', CHAR(39), 's hotel, with absolutely nothing interesting to do. That is, until she meets Ichirou Suzuki—a mysterious boy who is seemingly haunted by strange supernatural occurrences. Upon interacting with him, Maise unexpectedly enters a different reality, where hotel rooms can transform into the deep ocean and banyan trees can spawn indoors out of nowhere. Intrigued, Maise accompanies Ichirou in his quest to uncover the secrets behind the inexplicable enigmas surrounding him.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2021-10-02', '2021-12-18', 'Fall 2021', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1411/116829.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (293, 404, '"Otogibanashi no Youna Kiseki (お伽話のような奇跡) "', ' by Aoi Kubo', 'js-theme-songs', 'https://open.spotify.com/track/6Y9sETGgWi84jrILz2QjVF');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (180, 404, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (946, 404, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (947, 404, 8);

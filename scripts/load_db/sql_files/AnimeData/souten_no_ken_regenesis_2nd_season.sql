@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1801, CONCAT('Souten no Ken: Regenesis 2nd Season'), CONCAT('Second season of Souten no Ken: Regenesis.'), 1, '2018-10-09', '2018-12-25', 'Fall 2018', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1002/93814.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1280, 1801, '"Soul Seeker"', ' by Crossfaith', 'js-theme-songs', 'https://open.spotify.com/track/3S1kHdoDARJQAv2O0OBzh2')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4466, 1801, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4467, 1801, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4468, 1801, 9);

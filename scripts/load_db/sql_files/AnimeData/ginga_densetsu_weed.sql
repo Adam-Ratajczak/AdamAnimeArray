@@ -1,6 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (606, CONCAT('Ginga Densetsu Weed'), CONCAT('A dog named Weed happens to hear that he is the son of Gin, the great leader of Ohu who lead the dogs of Ohu to victory in a fight against monsterous bear, Akakabuto. Weed wants to find his father no matter what. On a journey to find his father Weed meets many friends and enemies. <br><br>(Source: ANN)'), 3, '2005-11-03', '2006-05-11', 'Fall 2005', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/74037.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (429, 606, '"Ginga Densetsu WEED"', ' by Dohatsuten', 'js-theme-songs', 'https://open.spotify.com/track/1F0HCnr43WsZldwxBD1QhD');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (430, 606, '"Tsuki Akari"', ' by Dohatsuten', 'js-theme-songs', 'https://open.spotify.com/track/6ZQ7Ci0hXKw4tqTJH6stNl');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1493, 606, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1494, 606, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (674, 606, 153);

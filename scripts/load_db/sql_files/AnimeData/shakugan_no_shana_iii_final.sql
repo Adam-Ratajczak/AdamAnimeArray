@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1686, CONCAT('Shakugan no Shana III (Final)'), CONCAT('Yuji disappeared the fateful night he was supposed to choose between a life combating evil by Shana', CHAR(39), 's side or as a normal teenager. He returns from near-death to lead the Crimson Denizens in a dubious plot to bring peace to the universe, but Shana isn', CHAR(39), 't fooled. In an explosive reunion, the fiery warrior faces her unlikeliest of foes while Flame Hazes from across the world join forces to ignite a war that will determine the fate of all supernatural kind.<br>
 <br>(Source: FUNimation)'), 1, '2011-10-08', '2012-03-24', 'Fall 2011', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/32539.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1191, 1686, '"Light My Fire"', ' by KOTOKO ', 'js-theme-songs', 'https://open.spotify.com/track/3L5ZFD91sui2GavhIsreJE')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4178, 1686, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4179, 1686, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4180, 1686, 9);

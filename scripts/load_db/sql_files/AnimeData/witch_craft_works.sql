@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Everything seemed perfectly normal until, one day, Honoka is attacked out of the blue by a mysterious witch. To his surprise, Ayaka saves his life, revealing herself to be a fire witch on a covert mission to protect Honoka.<br>
 <br>From that fateful day, the ordinary life of Honoka is turned upside down as he is thrown into the war between the Workshop Witches, who strive to protect the citizens, and the Tower Witches, who desire to steal a power hidden within him.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-01-05', '2014-03-23', 'Winter 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1949/112982.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1459, 2038, '"divine intervention"', ' by fhána', 'js-theme-songs', 'https://open.spotify.com/track/682V68gKiLGEnzmyt6mBDa')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (846, 2038, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5072, 2038, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5073, 2038, 9);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Trying to put some sense into her head, Yamada', CHAR(39), 's best friend, Miharu Takeshita, points out a major flaw in that plan—she is completely inexperienced with men. However, the reason behind this is that Yamada thinks her lady parts look strange and believes others will judge her for it. As a result, Yamada decides that her first time must be with a fellow virgin, since they will not hurt or scare her. After a fateful encounter, she sets her sights on the shy and average Takashi Kosuda, an aspiring photographer with a heart of gold. <br>
 <br>With contending rivals for his affection and her own raging hormones, Yamada must find ways to seduce Kosuda and take his cherry. However, as she gets closer to Kosuda, she finds herself increasingly enjoying their time spent together.<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-04-02', '2010-06-18', 'Spring 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1687/123304.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (97, 147, '"Oshiete A to Z (おしえて A to Z)"', ' by Yukari Tamura', 'js-theme-songs', 'https://open.spotify.com/track/58jAyDEAMK8Zhll4aGFhgL')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (71, 147, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (336, 147, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (337, 147, 7);

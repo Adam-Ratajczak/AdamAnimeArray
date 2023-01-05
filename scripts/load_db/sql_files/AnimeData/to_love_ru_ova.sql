@@ -12,7 +12,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Yami and Yui confront with a senior, causing Yui to lose her panties.<br>
 <br>Mikan finds Peke taking snapshots of new clothing while shopping. Suddenly, a stranger steals her bag.<br>
 <br>As Rito tries to explore Lala', CHAR(39), 's cleaned-up bedroom, he accidentally activates one of Lala', CHAR(39), 's invention, fusing his hand to Lala', CHAR(39), 's tail. '), 3, '2009-04-03', '2010-04-02', '', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/17923.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1360, 1909, '"Lucky tune (ラッキーチューン)"', ' by Haruka Tomatsu and Sayuri Yahagi', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (793, 1909, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4739, 1909, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4740, 1909, 3);

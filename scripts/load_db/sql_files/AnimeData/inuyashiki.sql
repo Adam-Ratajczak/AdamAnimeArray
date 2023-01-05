@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Suddenly, a bright light appears and Ichirou is enveloped by smoke and dust. When he comes to, he discovers something is amiss—he has been reborn as a mechanized weapon wearing the skin of his former self. Though initially shocked, the compassionate Ichirou immediately uses his newfound powers to save a life, an act of kindness that fills him with happiness and newfound hope.<br>
 <br>However, the origins of these strange powers remain unclear. Who was the mysterious figure at the site of the explosion, and are they as kind as Ichirou when it comes to using this dangerous gift?<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-10-13', '2017-12-22', 'Fall 2017', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/88471.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (615, 868, '"My Hero"', ' by MAN WITH A MISSION', 'js-theme-songs', 'https://open.spotify.com/track/6MmSnjDWLT5GsvlO65rhk1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (388, 868, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2087, 868, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2088, 868, 6);

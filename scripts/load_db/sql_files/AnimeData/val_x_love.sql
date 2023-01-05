@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2008, CONCAT('Val x Love'), CONCAT('Valkyries—legendary female warriors from the land of gods, Asgard—are sent by Odin to protect Earth against the growing threat of demons. To overcome these threats, nine valkyries under the guise of the Saotome sisters will have to level up by performing a variety of romantic acts with their official lover, Einherjar.<br>
 <br>Meanwhile, the socially anxious Takuma Akutsu learns that Odin has chosen him as the valkyries', CHAR(39), ' lover. Despite his utter horror, however, he agrees to let the sisters stay in his big yet empty house to help them in their war against demons. With nine beautiful women sharing his roof, will Takuma manage to prevail over his fear of society and become someone worthy of saving the world?<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-10-05', '2019-12-21', 'Fall 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1577/111404.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1436, 2008, '"for..."', ' by Rikako Aida', 'js-theme-songs', 'https://open.spotify.com/track/1VF7SGJTafH27FNW2WJcJB');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (837, 2008, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5004, 2008, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5005, 2008, 7);

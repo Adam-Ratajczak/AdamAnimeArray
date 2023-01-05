@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (318, CONCAT('Chitose Get You!!'), CONCAT('Chitose is an 11-year-old girl who is madly in love with an older guy named Hiroshi. He works at the town hall right next to the school and Chitose spends every day relentlessly pursuing him. Can Chitose ever convince Hiroshi to go out with her? '), 1, '2012-07-02', '2012-12-24', 'Summer 2012', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/50537.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (226, 318, '"Chitose Get You!! no Uta (ちとせげっちゅ!!の歌)"', ' by Sayaka Nakaya, Sora Tokui & MAKO', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (154, 318, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (730, 318, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (731, 318, 7);

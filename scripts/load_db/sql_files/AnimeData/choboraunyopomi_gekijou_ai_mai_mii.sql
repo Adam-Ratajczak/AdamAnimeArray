@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (320, CONCAT('Choboraunyopomi Gekijou Ai Mai Mii'), CONCAT('The anime adaptation of the four-panel manga "Ai Mai Mii".<br>
 <br>The story follows girls in a manga club—Ai, Mai, Mii, and Ponoka-senpai—who might be fighting evil invaders threatening Earth, facing off against rivals in tournaments, and dealing with other absurd situations when they are not drawing manga.<br>
 <br>(Source: ANN)'), 1, '2013-01-03', '2013-03-27', 'Winter 2013', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/45306.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (227, 320, '"Giri Giri Saikyou Ai Mai Mii! (ギリギリ最強あいまいみー!)"', ' by Ai (CV Yuka Ootsubo), Mai (CV Aya Uchida), Mii (CV Maaya Uchida)', 'js-theme-songs', 'https://open.spotify.com/track/6fBwcjqDHumd4OG5lAceNR');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (738, 320, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (739, 320, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (358, 320, 55);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1484, CONCAT('Pokemon Best Wishes! Season 2: Decolora Adventure'), CONCAT('After their encounter with Team Plasma, Satoshi, Iris and Dent start a new journey in the Decolora Islands.'), 1, '2013-04-25', '2013-09-26', 'Spring 2013', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/49285.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1051, 1484, '"Natsumeku Sakamichi (夏めく坂道)"', ' by Daisuke', 'js-theme-songs', 'https://open.spotify.com/track/4Eg0DosxJKFXfz2AeEDMxf')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (640, 1484, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3692, 1484, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3693, 1484, 2);

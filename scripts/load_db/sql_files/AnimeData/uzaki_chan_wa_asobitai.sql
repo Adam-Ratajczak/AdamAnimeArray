@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Uzaki does whatever she can to keep Sakurai from being "alone," from convincing him to go to the movies to going to his part-time workplace. While Sakurai finds her irritating and tiresome, he still goes along with Uzaki', CHAR(39), 's hijinks and shenanigans, even if he knows that her perky personality will only lead the two of them into various comical situations.<br>
 <br>Even so, as the days pass by, their relationship only gets better, to the point where people around them misinterpret them to be a couple. At any rate, whenever Uzaki wants to hang out with her upperclassman, fun and adorable wackiness is sure to follow!<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-07-10', '2020-09-25', 'Summer 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1540/108292.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1435, 2007, '"Nadame Sukashi Negotiation (なだめスかし Negotiation)"', ' by Kano and Uzaki-chan (Naomi Oozora)', 'js-theme-songs', 'https://open.spotify.com/track/25srtzJVP8BkFjHe643Nym')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2179, 2007, 168);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2228, 2007, 1);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2229, 2007, 16);

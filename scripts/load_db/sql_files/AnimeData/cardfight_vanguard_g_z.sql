@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (298, CONCAT('Cardfight!! Vanguard G: Z'), CONCAT('Fourth season of Cardfight!! Vanguard G series.'), 1, '2017-10-08', '2018-04-01', 'Fall 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1335/125017.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (211, 298, '"Jou no Hana (情ノ華)"', ' by Kiryuu', 'js-theme-songs', 'https://open.spotify.com/track/7DyjkJ6QeqoLEaPTM25NUv')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (335, 298, 23);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5104, 298, 1, CONCAT('Chrono Taken'), NULL, 'https://streamtape.com/e/YBOVzD79dyF3Jx/');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (5105, 298, 2, CONCAT('Challenge from the Apostles'), NULL, 'https://streamtape.com/e/kzrBZbmoZ4SO7ld/');

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1412, CONCAT('Onigiri'), CONCAT('Ancient Japan is under attack by powerful beings called "Kamikui," and it is up to the "Oni" and his band of eight beautiful female warriors to stop them. Each of these girls have unique skills, abilities, and personalities. They partner themselves with the Oni, Jin, to stop the miasma of darkness sweeping across Japan. Onigiri follows the escapades of Jin and his merry companions as they strengthen their bonds and fend off the demonic invasion.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-04-07', '2016-06-30', 'Spring 2016', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/79260.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (994, 1412, '"Hime wa Rankiryuu☆Goikkousama (姫は乱気流☆御一行様)"', ' by STARMARIE', 'js-theme-songs', 'https://open.spotify.com/track/0cPKHr3EAUDmY6zN6f3kzl');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3497, 1412, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3498, 1412, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3499, 1412, 10);

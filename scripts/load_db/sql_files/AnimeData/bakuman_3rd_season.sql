@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (164, CONCAT('Bakuman. 3rd Season'), CONCAT('Onto their third serialization, manga duo Moritaka Mashiro and Akito Takagi—also known by their pen name, Muto Ashirogi—are ever closer to their dream of an anime adaption. However, the real challenge is only just beginning: if they are unable to compete with the artist Eiji Niizuma in the rankings within the span of six months, they will be canceled. To top it off, numerous rivals are close behind and declaring war. They don', CHAR(39), 't even have enough time to spare thinking about an anime!<br>
 <br>In Bakuman. 3rd Season, Muto Ashirogi must find a way to stay atop the colossal mountain known as the Shounen Jack rankings. With new problems and new assistants, the pair continue to strive for their dream.<br>
 <br>[Written by MAL Rewrite]'), 1, '2012-10-06', '2013-03-30', 'Fall 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/41845.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (110, 164, '"Moshimo no Hanashi (もしもの話)"', ' by nano.RIPE', 'js-theme-songs', 'https://open.spotify.com/track/4aWE0B5yMA9GjrLL3YgCcH')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (78, 164, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (375, 164, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (376, 164, 6);

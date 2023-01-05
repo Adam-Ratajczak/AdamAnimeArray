@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1456, CONCAT('Persona 4 the Golden Animation'), CONCAT('Spring. Far from the city, time flows peacefully in this rural town. As the cherry blossoms scatter in the wind, a young man named Yu Narukami steps off the train at Yasoinaba Station. Yu has come to this town, where his uncle lives, for family reasons he will be transferring into the local high school, Yasogami High. And so begins his school life... The shopping mall after school. A series of murders taking place in town. The Midnight Channel, airing late at night.... What lies in store for Yu and his friends ‘this time around?<br>
 <br>(Source: Aniplex USA)'), 1, '2014-07-11', '2014-09-26', 'Summer 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/63251.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1034, 1456, '"Shadow World"', ' by Shihoko Hirata', 'js-theme-songs', 'https://open.spotify.com/track/77hIAEdXtfdJKfuoqdaWfP')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3609, 1456, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3610, 1456, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3611, 1456, 3);

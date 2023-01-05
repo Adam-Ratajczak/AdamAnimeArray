@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Wishing to give her father space, she moves into the Sunrise Residence where her brothers live. As she settles in, Ema realizes she may not experience the loving kinship of a family that she has always longed for, as many of her new brothers exhibit feelings toward Ema that aren', CHAR(39), 't just familial.<br>
 <br>With each brother desiring Ema', CHAR(39), 's attention in his own way, will she be able to work toward a happy ending for all, or will she choose one brother that has stolen her heart?<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-07-02', '2013-09-17', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/51409.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (183, 260, '"BELOVED×SURVIVAL"', ' by Gero', 'js-theme-songs', 'https://open.spotify.com/track/2JHaLhD9twCy1LYzHKRla5')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (127, 260, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (598, 260, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (599, 260, 3);

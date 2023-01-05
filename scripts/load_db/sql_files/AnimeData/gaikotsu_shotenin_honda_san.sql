@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Alongside his equally eccentric coworkers, Honda constantly deals with the stressful requirements of the bookselling industry. From the drama of receiving new titles without their bonus material to the struggle of providing quality service to customers who speak a different language, the work of a skeleton bookseller never ends.<br>
 <br>Nevertheless, despite the hardships he faces, Honda thoroughly enjoys his job and strives to bring the best book selections and service to his customers.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-10-08', '2018-12-24', 'Fall 2018', '11 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1555/93865.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (399, 564, '"ISBN ~Inner Sound & Book's Narrative~"', ' by TECHNOBOYS PULCRAFT GREEN-FUND feat. Honda (Souma Saitou)', 'js-theme-songs', 'https://open.spotify.com/track/45LbuCWdQJbotBQZDa5LAv')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (630, 564, 141);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (577, 564, 1);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (578, 564, 18);

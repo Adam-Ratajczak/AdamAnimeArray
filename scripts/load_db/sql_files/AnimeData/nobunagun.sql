@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1372, CONCAT('Nobunagun'), CONCAT('Shio Ogura is a Japanese high school student, who is visiting Taiwan on a school trip when she is suddenly attacked by monsters. Agents known as "E-Gene Holders" from the government agency DOGOO also arrive, who wield weapons infused with the spirits of historical figures. Shio is revealed to also be an E-Gene Holder when the soul of Oda Nobunaga awakens after she tries to rescue a friend.<br>
 <br>(Source: Wikipedia)'), 1, '2014-01-05', '2014-03-30', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/58141.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (963, 1372, '"Respect for the dead man"', ' by Pay money To my Pain (featuring Ken & Teru from Crossfaith)', 'js-theme-songs', 'https://open.spotify.com/track/7lUJKsXRl9D38QDoRvEvvr')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3414, 1372, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3415, 1372, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1478, 1372, 21);

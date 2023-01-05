@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Souichirou and Touma are second years in Meisei Academy Middle School. Both boys are talented baseball players. Souichirou has shown excellent skill as a catcher and batter. Though having an extraordinary skill as a pitcher, Touma no longer pitches due to a certain reason.<br>
 <br>Once the two enter high school, they pair as a battery and aim to enter the National High School Baseball Championship!<br>
 <br>(Source: YTV, edited)'), 1, '2019-04-06', '2019-09-28', 'Spring 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1353/104238.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (885, 1268, '"Equal (イコール)"', ' by sumika', 'js-theme-songs', 'https://open.spotify.com/track/4xPYa6eJi3Qty2jB7O1O2O')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (553, 1268, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3110, 1268, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3111, 1268, 7);

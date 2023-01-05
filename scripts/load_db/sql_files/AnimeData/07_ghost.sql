@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Teito Klein, a student at the academy, is one of the most promising soldiers produced. Although ridiculed by everyone for being a sklave (German for slave) with no memories of his past, he is befriended by a fellow student called Mikage. While preparing for the final exam, Teito uncovers a dark secret related to his past. When an attempt to assassinate Ayanami, a high-ranking official who killed his father, fails, Teito is locked away awaiting punishment.<br>
 <br>Only wanting the best for Teito, Mikage helps him escape. Teito ends up at the 7th District Church where he is taken in by the bishops. It is here that Teito attempts to evade the grasp of Ayanami and the Military, so he can rediscover his memories and learn why he is the person that can change the fate of the world.<br>
 <br>[Written by MAL Rewrite]'), 2, '2009-04-07', '2009-09-22', 'Spring 2009', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/22605.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1, 2, '"Aka no Kakera (緋色のカケラ)"', ' by Suzuki Yuki', 'js-theme-songs', 'https://open.spotify.com/track/3GmN2UFru2DSK2pTzuxT9q')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (2, 2, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4, 2, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5, 2, 4);

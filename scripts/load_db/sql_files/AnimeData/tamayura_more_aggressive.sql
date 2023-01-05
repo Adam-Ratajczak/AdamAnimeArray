@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1854, CONCAT('Tamayura: More Aggressive'), CONCAT('The second season of Tamayura: Hitotose.<br>
 <br>It', CHAR(39), 's the beginning of a new school year for Fuu and friends. With a new year comes new challenges as Fuu tries to open a photography club at her school.<br>
 <br>(Source: ANN)'), 4, '2013-07-03', '2013-09-18', 'Summer 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/53895.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1319, 1854, '"Hajimari no Umi (はじまりの海)"', ' by Maaya Sakamoto', 'js-theme-songs', 'https://open.spotify.com/track/3A8GGRmb8YO85wEnO6sU3Z')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2008, 1854, 28);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2056, 1854, 23);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2057, 1854, 17);

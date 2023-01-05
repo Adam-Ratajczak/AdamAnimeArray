@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (346, CONCAT('Clione no Akari'), CONCAT('The story centers around an illness-stricken, constantly bullied orphan girl named Minori. After one rainy day, she doesn', CHAR(39), 't turn up at school, having been admitted into a hospital in a distant town. Two months pass, and the girl', CHAR(39), 's two school friends, Takashi and Kyouko, receive a mysterious email with no sender listed. The email reveals a summer festival taking place at a nearby town...<br>
 <br>(Source: ANN)'), 2, '2017-07-12', '2017-09-27', 'Summer 2017', '9 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/84706.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (245, 346, '"Clione no Akari (クリオネの灯り)"', ' by aki', 'js-theme-songs', 'https://open.spotify.com/track/28cpJcblgpSf6f7HgjjPJ1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (161, 346, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (800, 346, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (801, 346, 2);

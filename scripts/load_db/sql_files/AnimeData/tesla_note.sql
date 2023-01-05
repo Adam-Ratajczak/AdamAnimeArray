@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1891, CONCAT('Tesla Note'), CONCAT('Mission T is a secret operation to save the world from destruction. Trained as a ninja from a young age, Botan Negoro, raised to become the ultimate spy, teams up with another excellent spy, Kuruma. Their aim is to recover the legacy of the genius inventor Nikola Tesla, the "Shards of Tesla." Can the two outwit the agents of other countries who are also pursuing these fragments? A super-original spy thriller begins. <br>
 <br>(Source: Kodansha, translated)'), 1, '2021-10-03', '2021-12-26', 'Fall 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1511/116890.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1347, 1891, '"PUPPET'S"', ' by TOKYO MONSTERS', 'js-theme-songs', 'https://open.spotify.com/track/0miO0TfAYiIJVaL7Fj7Uao')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (786, 1891, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4687, 1891, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4688, 1891, 5);

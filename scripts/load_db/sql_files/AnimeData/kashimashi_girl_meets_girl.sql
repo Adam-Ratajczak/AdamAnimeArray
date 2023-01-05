@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Depressed, he wandered up Mt. Kashimayama, the place where they first met, to reconsider his feelings. After getting lost, he wished upon a shooting star and received a bizarre twist of fate. <br>
 <br>Now he is a she, and she stumbles headfirst back into social life and relationships only to find that the entire landscape has changed!<br>
 <br>(Source: Media Blasters)'), 1, '2006-01-12', '2006-03-30', 'Winter 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/19498.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (688, 977, '"Koi suru kokoro"', ' by eufonius', 'js-theme-songs', 'https://open.spotify.com/track/3hQjbQzrIzeRaH9HRL7m3N');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (689, 977, '"Koi suru kokoro"', ' by eufonius', 'js-theme-songs', 'https://open.spotify.com/track/3hQjbQzrIzeRaH9HRL7m3N');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2363, 977, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2364, 977, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2365, 977, 7);

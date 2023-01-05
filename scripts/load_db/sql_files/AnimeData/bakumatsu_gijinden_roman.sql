@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (167, CONCAT('Bakumatsu Gijinden Roman'), CONCAT('The stage is the close of the Edo period, an age when, not unlike our own time, both natural and man-made disasters left chaos in their wake. Manjiro makes a living helping the people of the troubled capital city, but behind the scenes, he also works in secret to take back precious belongings stolen from the people by unjust political powers and conspiratorial menaces. The people call him "Get-backer Roman."<br>
 <br>(Source: Crunchyroll)'), 1, '2013-01-08', '2013-03-26', 'Winter 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/43673.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (113, 167, '"RanTiKi"', ' by Yukino', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (79, 167, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (382, 167, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (383, 167, 6);

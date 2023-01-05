@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (946, CONCAT('Kakumeiki Valvrave 2nd Season'), CONCAT('Haruto and his comrades continue to fight against the forces of Dorssia. However, many things remain unanswered in the midst of battle, including the past of L-Elf and his fellow soldier', CHAR(39), 's past, the destiny of the mysterious girl Liselotte, and the feelings of Haruto, Shouko, and Saki. The relationships and loyalty of each and every member of each army will be tested as the clash of ideals and power reaches its climax.<br>
 <br>(Source: ANN)'), 1, '2013-10-10', '2013-12-27', 'Fall 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/56573.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (672, 946, '"Kakumei Dualism (革命デュアリズム)"', ' by Nana Mizuki x T.M.Revolution', 'js-theme-songs', 'https://open.spotify.com/track/3xIGFgJm8Pzn24dbhcd9vD')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2290, 946, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2291, 946, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1031, 946, 27);

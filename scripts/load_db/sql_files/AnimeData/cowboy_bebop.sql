@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Spike Spiegel and Jet Black pursue criminals throughout space to make a humble living. Beneath his goofy and aloof demeanor, Spike is haunted by the weight of his violent past. Meanwhile, Jet manages his own troubled memories while taking care of Spike and the Bebop, their ship. The duo is joined by the beautiful con artist Faye Valentine, odd child Edward Wong Hau Pepelu Tivrusky IV, and Ein, a bioengineered Welsh Corgi.<br>
 <br>While developing bonds and working to catch a colorful cast of criminals, the Bebop crew', CHAR(39), 's lives are disrupted by a menace from Spike', CHAR(39), 's past. As a rival', CHAR(39), 's maniacal plot continues to unravel, Spike must choose between life with his newfound family or revenge for his old wounds.<br>
 <br>[Written by MAL Rewrite]<br>'), 2, '1998-04-03', '1999-04-24', 'Spring 1998', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/19644.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (256, 359, '"Tank!"', ' by The Seatbelts', 'js-theme-songs', 'https://open.spotify.com/track/2VqRxxZFbC0uZaTJcZY36c')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (838, 359, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (839, 359, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (402, 359, 77);

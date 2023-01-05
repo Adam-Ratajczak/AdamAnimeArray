@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While hanging out together after school, the group fills Yuu in on the urban legend known as the "Midnight Channel"—a mysterious TV channel that only appears at midnight on rainy days while the viewer is alone. Curious about the claim, Yuu decides to tune in that night, only to see the next victim of the serial murders appear on the screen instead. He also finds himself being drawn into the TV, which intrigues his newfound friends enough to want to investigate.<br>
 <br>Yuu ends up falling into the world within the TV, which is blanketed by a thick fog and swarming with hostile creatures known as "Shadows." Realizing that this world is somehow connected to the murders, the Investigation Team forms with the goal of uncovering the mystery behind the incidents.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2011-10-07', '2012-03-30', 'Fall 2011', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/29107.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1033, 1455, '"Pursuing My True Self"', ' by Shihoko Hirata', 'js-theme-songs', 'https://open.spotify.com/track/40WAytHunOWPs6MomRYf3V')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3606, 1455, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3607, 1455, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3608, 1455, 10);

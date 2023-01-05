@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1734, CONCAT('Shokugeki no Souma: Ni no Sara'), CONCAT('The qualifiers of the Autumn Elections are now over, and only eight talented chefs remain. Now, they face off in one-on-one food wars, each with their own unique themes. Met with both new judges and new opponents all with their own specialties, Souma must stay on his toes if he hopes to make it to the top of both the Autumn Elections and Tootsuki Culinary Academy.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-07-02', '2016-09-24', 'Summer 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/79353.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1227, 1734, '"ROUGH DIAMONDS"', ' by SCREEN mode', 'js-theme-songs', 'https://open.spotify.com/track/6iEbIaa3iMVTenC7iqS0Ck')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (722, 1734, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4309, 1734, 15);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4310, 1734, 14);

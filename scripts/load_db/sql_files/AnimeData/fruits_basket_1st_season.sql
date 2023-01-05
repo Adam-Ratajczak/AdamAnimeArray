@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Things start to look up for Tooru as they kindly offer to take her in after hearing about her situation. But soon after, she is caught up in a fight between Yuki and his hot-tempered cousin, Kyou. While trying to stop them, she learns that the Souma family has a well-kept secret of their own: whenever they are hugged by a member of the opposite sex, they transform into the animals of the Chinese Zodiac.<br>
 <br>With this new revelation, Tooru will find that living with the Soumas is an unexpected adventure filled with laughter and romance.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-04-06', '2019-09-21', 'Spring 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1447/99827.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (385, 530, '"Again"', ' by Beverly', 'js-theme-songs', 'https://open.spotify.com/track/12ad0oPQaR6X6Jcoqz8rcz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (233, 530, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1316, 530, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1317, 530, 9);

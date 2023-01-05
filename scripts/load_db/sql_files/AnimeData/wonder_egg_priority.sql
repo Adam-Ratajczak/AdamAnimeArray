@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Upon breaking the egg in a world that materializes during her sleep, Ai is tasked with saving people from the adversities that come their way. In doing so, she believes that she has moved one step closer to saving her best friend. With this dangerous yet tempting opportunity in the palms of her hands, Ai enters a place where she must recognize the relationship between other people', CHAR(39), 's demons and her own.<br>
 <br>As past trauma, unforgettable regrets, and innate fears hatch in the bizarre world of Wonder Egg Priority, a young girl discovers the different inner struggles tormenting humankind and rescues them from their worst fears.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-01-13', '2021-03-31', 'Winter 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1079/110751.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1464, 2044, '"Sudachi no Uta (巣立ちの歌)"', ' by Anemoneria (アネモネリア)', 'js-theme-songs', 'https://open.spotify.com/track/4o8ZA7sEHawMmnBtW34B8W')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5082, 2044, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5083, 2044, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2216, 2044, 22);

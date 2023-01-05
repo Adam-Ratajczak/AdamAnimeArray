@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Thousands of years later, Gaius is reborn as Mathias Hildesheimer, successfully obtaining his long-coveted crest. However, he is surprised to learn that in these times, magic has vastly waned, and the techniques that were once widely used are now nothing more than just a speck of legend. Moreover, the crest that he painstakingly strived to attain is now considered the weakest—merely dubbed the "Crest of Failure."<br>
 <br>Nevertheless, Mathias naturally exceeds all expectations. He enrolls into the royal capital', CHAR(39), 's Second Academy, acing every trial that comes his way. But soon after, Mathias discovers the dark truth behind humanity', CHAR(39), 's downfall into magical mediocrity—demons—and endeavors to remedy the consequence of his millennia-long absence once and for all.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-01-08', '2022-03-26', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1132/120388.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1200, 1698, '"Leap of faith"', ' by fripSide', 'js-theme-songs', 'https://open.spotify.com/track/6dTvqSf0DjwOGurqp7QbqR')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4215, 1698, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4216, 1698, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4217, 1698, 9);

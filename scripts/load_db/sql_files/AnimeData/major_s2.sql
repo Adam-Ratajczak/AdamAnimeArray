@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, things do not go as planned, as Gorou is reminded of the harsh realities of baseball as he copes with an injury he sustained while playing baseball at Hitaka Little. Between new rivals, old friends, and mending broken relationships, Gorou must overcome challenges he has never faced before. <br>
 <br>His goal of attending elite baseball high school Kaido may not be far from his reach, but complicated circumstances may stop him in his tracks once again. How will he deal with the immense pressures of the game? And will he ever be able to find the type of baseball he loves most?<br>
 <br>[Written by MAL Rewrite]'), 1, '2005-12-10', '2006-06-10', 'Winter 2006', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/73972.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (846, 1203, '"Saraba Aoki Omakage"', ' by Road of Major', 'js-theme-songs', 'https://open.spotify.com/track/2nV0MhpbJQU7JoL0GtMbmM');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (847, 1203, '"Shoboi Kao Sunna yo Baby"', ' by May', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (532, 1203, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2934, 1203, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2935, 1203, 6);

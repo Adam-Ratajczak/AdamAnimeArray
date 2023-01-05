@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1522, CONCAT('Ramen Daisuki Koizumi-san'), CONCAT('From standing in the sun for hours to traveling miles away from home, gorgeous high school student Koizumi stops at nothing to fulfill her desire for ramen. But these previously solo trips soon change when Koizumi', CHAR(39), 's classmate Yuu Oosawa develops an infatuation with her, and begins to join Koizumi uninvitedly on her adventures. As Yuu continues to be shocked by Koizumi', CHAR(39), 's enormous appetite, she learns about the endless variety of ramen from, arguably, its greatest connoisseur ever!<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-01-04', '2018-03-22', 'Winter 2018', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/89876.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1081, 1522, '"FEELING AROUND"', ' by Minori Suzuki', 'js-theme-songs', 'https://open.spotify.com/track/0PSF03MhGSNg8VKhlF3nZ2')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3783, 1522, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3784, 1522, 15);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3785, 1522, 8);

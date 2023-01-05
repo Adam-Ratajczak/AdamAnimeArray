@@ -1,8 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2119, CONCAT('Zombie-Loan'), CONCAT('Do you know when you are going to die? Michiru Kita does, as she has the ability to see a "ring of death" on the necks of those around her—and the darker the ring, the closer one is to death. <br>
 <br>One day, she notices that two boys in her class, Chika Akatsuki and Shito Tachibana, have completely black rings. Seeking to warn them of their impending demise, she stumbles onto their secret: they are already dead, but are kept alive due to a contract with Zombie-Loan, a mysterious loan office. Of course, nothing comes without a price, as the boys must hunt down and kill zombies in order to pay off their debt. And once they learn about Michiru', CHAR(39), 's "Shinigami Eyes," they drag her into their crazy world.<br>
 <br>[Written by MAL Rewrite]'), 1, '2007-07-04', '2007-09-12', 'Summer 2007', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/21539.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1516, 2119, '"OOKAMI no NODO"', ' by The Birthday', 'js-theme-songs', 'https://open.spotify.com/track/6Ntrk96YOy5s1XOx3aUsc1');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1517, 2119, '"Chain Ring"', ' by MUCC', 'js-theme-songs', 'https://open.spotify.com/track/4tR4wvY3qnGVdbaKBkmwvk');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5279, 2119, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5280, 2119, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5281, 2119, 10);

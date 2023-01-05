@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Ryner Lute, a talented mage and also an Alpha Stigma bearer, was once a student of the Roland Empire', CHAR(39), 's Magician Academy, an elite school dedicated to training magicians for military purposes. However, after many of his classmates died in a war, he makes an oath to make the nation a more orderly and peaceful place, with fellow survivor and best friend, Sion Astal.<br>
 <br>Now that Sion is the the king of Roland, he orders Ryner to search for useful relics that will aid the nation. Together with Ferris Eris, a beautiful and highly skilled swordswoman, Ryner goes on a journey to search for relics of legendary heroes from the past, and also uncover the secrets behind his cursed eyes.<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-07-02', '2010-12-17', 'Summer 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/73651.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (302, 413, '"LAMENT: Yagate Yorokobi wo (LAMENT~やがて喜びを~)"', ' by Aira Yuki', 'js-theme-songs', 'https://open.spotify.com/track/6AKE5TJ5A0YxeGqV5PmCYZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (970, 413, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (971, 413, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (972, 413, 9);

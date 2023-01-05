@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Emilico is a cheerful, newly created Doll who serves a rather soft-spoken master named Kate. Despite their difference in personalities, Emilico does what she can to carry out the needs of her master. As she learns more about her role and duty, Emilico begins to meet her fellow Dolls and their respective masters and comes to know more about the purpose of her existence.<br>
 <br>"Do not fret over trivial matters," says one of the rules by which all Dolls must abide. But how could the ever-curious Emilico do so in the face of the deep secrets that the Shadows House holds?<br>
 <br>[Written by MAL Rewrite]'), 7, '2021-04-11', '2021-07-04', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1424/113342.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1188, 1683, '"Nai Nai (ないない)"', ' by ReoNa', 'js-theme-songs', 'https://open.spotify.com/track/2lD8rPegYoYC1WucU3vU1W');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (706, 1683, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4171, 1683, 8);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4172, 1683, 10);

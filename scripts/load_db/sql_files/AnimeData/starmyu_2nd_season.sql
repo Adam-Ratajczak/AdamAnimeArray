@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While every student in the department strives to obtain one of the five training roles, Team Yuzuriha', CHAR(39), 's Riku Ageha is practically a front-runner for the role of Alexis', CHAR(39), ' Shadow. Having idolized an Ayanagi alumnus', CHAR(39), ' performance of Alexis, Ageha has spent a majority of his life perfecting the portrayal in hopes of being selected for the show. In contrast, Hoshitani', CHAR(39), 's lack of experience in show-biz puts him at a great disadvantage for any of the roles in the production. <br>
 <br>With specialized training from the "Ancients"—former Kao Council members and Ayanagi alumni—the second years give it their all as they aim for the stars and beyond.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-04', '2017-06-20', 'Spring 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/84655.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1287, 1811, '"SHOW MUST GO ON!!"', ' by Fourpe (Urashimasakatasen (浦島坂田船))', 'js-theme-songs', 'https://open.spotify.com/track/333URWoyOyKtnXhRKs8cHm')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1961, 1811, 165);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2001, 1811, 36);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2002, 1811, 6);

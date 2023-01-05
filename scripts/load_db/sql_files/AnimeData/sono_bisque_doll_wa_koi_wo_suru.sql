@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Enter Marin Kitagawa, an extraordinarily pretty girl whose confidence and poise are in stark contrast to Gojou', CHAR(39), 's meekness. It would defy common sense for the friendless Gojou to mix with the likes of Kitagawa, who is always surrounded by her peers. However, the unimaginable happens when Kitagawa discovers Gojou', CHAR(39), 's prowess with a sewing machine and brightly confesses to him about her own hobby: cosplay. Because her sewing skills are pitiable, she decides to enlist his help.<br>
 <br>As Gojou and Kitagawa work together on one cosplay outfit after another, they cannot help but grow close—even though their lives are worlds apart.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-01-09', '2022-03-27', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1179/119897.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1258, 1777, '"San San Days (燦々デイズ)"', ' by Spira Spica', 'js-theme-songs', 'https://open.spotify.com/track/4CebKGVZUJw18tnDzsjv2d')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (743, 1777, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4410, 1777, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4411, 1777, 8);

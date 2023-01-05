@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Now a member of the group, Rokurou must adjust to his new residence in the dissolute hellscape known as Roanapur, a city where corruption and crime run rampant, and even the smallest slipup could cost him his life. If not for one of the many crime syndicates on the island, Rokurou also constantly finds himself at odds with his brash, gunslinging colleague, Revy. <br>
 <br>As Rokurou struggles to abandon his past—and with more than just the profits from the Lagoon Company', CHAR(39), 's illegal trading on the line—he must quickly find the resolve to make tough decisions in high-stress situations while keeping his humanity intact.<br>
 <br>[Written by MAL Rewrite]<br>'), 3, '2006-04-09', '2006-06-25', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1906/121592.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (157, 223, '"Red Fraction"', ' by MELL', 'js-theme-songs', 'https://open.spotify.com/track/2hqpcsqOnPHxWDIRGPJAXC');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (107, 223, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (249, 223, 21);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (234, 223, 1);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (301, CONCAT('Carole & Tuesday'), CONCAT('It has been 50 years since mankind began its migration to the terraformed Mars, where they live in comfort due to advancements in AI. Carole lives in the metropolis of Alba City, working part-time by day and playing keyboard by night. Tuesday has run away from her home in Hershell City to escape the grip of her wealthy family, and instead hopes to pursue music with her acoustic guitar.<br>
 <br>After a fateful encounter, the two decide to perform music together. Up against the AI singers that dominate the music world, the two of them believe that together they can convey their feelings through their songs. Will hard work and luck be enough for the duo to create the biggest miracle that Mars has ever seen?<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-04-11', '2019-10-03', 'Spring 2019', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1611/96157.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (214, 301, '"Kiss Me"', ' by Carole & Tuesday (Nai Br.XX & Celeina Ann)', 'js-theme-songs', 'https://open.spotify.com/track/2QcjNoNPdkYy0RqPFoRKrk')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (691, 301, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (692, 301, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (338, 301, 77);

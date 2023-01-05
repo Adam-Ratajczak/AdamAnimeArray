@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As the village prepares for its annual festival, Keiichi learns about the local legends surrounding it. To his horror, he discovers that there have been several murders and disappearances in the village in the recent years, and that they all seem to be connected to the festival and the village', CHAR(39), 's patron god, Oyashiro. Keiichi tries to ask his new friends about these incidents, but they are suspiciously silent and refuse to give him the answers he needs. As more and more bizarre events occur, he wonders just what else his friends might be keeping from him, and if he can even trust them at all.<br>
 <br>When madness and paranoia begin taking root in Keiichi', CHAR(39), 's heart, he will stumble straight into the mysteries at work in Higurashi no Naku Koro ni, a story that is told across multiple arcs.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-04-05', '2006-09-27', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/19634.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (546, 759, '"Higurashi no Naku Koro ni"', ' by Eiko Shimamiya', 'js-theme-songs', 'https://open.spotify.com/track/1VXr3GvEjW4lF2q65ooQcf');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1860, 759, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1861, 759, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1862, 759, 10);

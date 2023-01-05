@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1394, CONCAT('Oban Star-Racers'), CONCAT('Eva', CHAR(39), 's birthday has just passed, and she hasn', CHAR(39), 't heard from her father. Despising the Boarding School she attends, she escapes using her Rocket Bike that she just completed. Taking on the alias "Molly," Eva sneaks with the Earth team to Alwas for the Great Race because the winner of the race gets any one wish granted. Little does the Earth Team know what danger awaits them...'), 1, '2006-09-23', '2007-03-25', 'Fall 2006', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/3702.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (980, 1394, '"A Chance to Shine"', ' by AKINO (International broadcast)', 'js-theme-songs', 'https://open.spotify.com/track/4X5GKBvSgQ1wRPQQJJQWjP');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (602, 1394, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3460, 1394, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3461, 1394, 2);

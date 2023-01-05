@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1264, CONCAT('Miss Monochrome The Animation'), CONCAT('Miss Monochrome is an android powered by a single AA battery. She lives with her only friend, a robot vacuum named Ruu-chan. With hopes of one day meeting the idol Kikuko, whom she has bizarre recurring dreams about, Miss Monochrome sets foot on the path to stardom. However, she experiences difficulties and struggles to make her own debut as an idol. Though Miss Monochrome', CHAR(39), 's methods seem bizarre, such as recruiting her manager from a convenience store, somehow her dedication always results in her standing out from the crowd and shining in the spotlight.<br>
 <br>[Written by MAL Rewrite]'), 1, '2013-10-02', '2013-12-25', 'Fall 2013', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/56165.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (882, 1264, '"Poker Face (ポーカーフェイス)"', ' by Miss Monochrome (CV: Yui Horie)', 'js-theme-songs', 'https://open.spotify.com/track/3CrLuexWHKF1cYYPX4MXQA');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3102, 1264, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3103, 1264, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1366, 1264, 60);

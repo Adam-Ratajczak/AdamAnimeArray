@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1908, CONCAT('To LOVE-Ru Darkness OVA'), CONCAT('Bundled with the 5th, 6th, 8th, 9th, 12th and 13th limited-edition volumes of the manga.'), 1, '2012-08-17', '2015-04-03', '', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/41251.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1359, 1908, '"RAKUEN PROJECT (楽園PROJECT)"', ' by Ray', 'js-theme-songs', 'https://open.spotify.com/track/06xV6DYi7Y9FLF4gmT97gz');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (792, 1908, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4735, 1908, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4736, 1908, 7);

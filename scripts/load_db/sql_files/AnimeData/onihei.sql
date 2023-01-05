@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1413, CONCAT('Onihei'), CONCAT('The blade arts of the "Devil" tasked with striking down evils threatening a peaceful Edo! Heizou Hasegawa, upholding the role of chief officer protecting against crime and arson! In 1783, the heart of the Tenmei era, Hasegawa held the office of chief director of the department charged with sustaining safety in the region, suppressing the most vile of thieves and criminals, an individual largely feared, renowned as Devil Heizou...<br>
 <br>(Source: MAL News)'), 1, '2017-01-10', '2017-04-04', 'Winter 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/83758.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (995, 1413, '"Soshite.. Ikinasai (そして・・生きなさい)"', ' by Saori Yuki (由紀さおり)', 'js-theme-songs', 'https://open.spotify.com/track/6lufdO1d1srnRR3zlgNiO1');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1521, 1413, 214);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1551, 1413, 31);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1552, 1413, 32);

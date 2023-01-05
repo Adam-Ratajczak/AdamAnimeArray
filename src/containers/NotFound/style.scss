@@ -1,0 +1,23 @@
+@import 'src/styles/colors';
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#main404{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#content404{
+    display: flex;
+    flex-direction: column;
+    background-color: $bottom-color-blue;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+}

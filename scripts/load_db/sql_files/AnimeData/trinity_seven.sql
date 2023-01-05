@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>In order to investigate the phenomenon, Lilith Asami appears before Arata, whose artificial world suddenly disintegrates. He is given two choices: hand over the book, or die. However, Arata chooses the third option—enrolling in the top-secret magic school Royal Biblia Academy, where six other magical users await him. Together with Lilith, these six form the Trinity Seven, the elite of the school who each bolster their own power and skill.<br>
 <br>With the ambition to save Hijiri and the help of his newfound friends, Arata stops at nothing to prevent the destruction of his beloved hometown and to bring his best friend back.<br>
 <br>[Written by MAL Rewrite]'), 2, '2014-10-08', '2014-12-24', 'Fall 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/67795.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1387, 1947, '"Seven Doors"', ' by ZAQ', 'js-theme-songs', 'https://open.spotify.com/track/74ZcoP9bqvEvCBJrpEQ3T6')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (812, 1947, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4847, 1947, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4848, 1947, 12);

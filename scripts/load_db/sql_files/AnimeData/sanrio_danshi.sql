@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Through a series of unexpected events, Kouta ends up meeting others at school who also like Sanrio characters—Yuu Mizuno, a flashy boy who is popular with girls Shunsuke Yoshino, a member of the soccer team Ryou Nishimiya, an underclassman who is a library assistant and Seiichirou Minamoto, the student council president.<br>
 <br>Through his new friends, Kouta learns that there is no need to be embarrassed for liking Sanrio characters and together, they aim to create a play for the cultural festival in order to transform his normal school life into a sparkly one.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-01-06', '2018-03-24', 'Winter 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/89890.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1136, 1611, '"Seishun Interlude (青春インターリュード)"', ' by Sanrio Danshi [Kouta Hasegawa (Takuya Eguchi), Yuu Mizuno (Soma Saito), Shunsuke Hoshino (Jun Ootsuka), Ryou Nishimiya (Hiroyuki Kagura), Seiichirou Minamoto (Yuuma Uchida)]', 'js-theme-songs', 'https://open.spotify.com/track/5rjG0Hmvq44RMLzGVrj6Ew')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4012, 1611, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4013, 1611, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1732, 1611, 42);

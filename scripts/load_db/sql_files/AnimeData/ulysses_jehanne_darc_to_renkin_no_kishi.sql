@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1983, CONCAT('Ulysses: Jehanne Darc to Renkin no Kishi'), CONCAT('The story is set in the 15th century, during the Hundred Years', CHAR(39), ' War between France and England over the succession to the French throne. Montmorency, the son of a noble, immerses himself in the studies of magic and alchemy at a royal knight training school. However, following France', CHAR(39), 's crushing defeat at Agincourt, the school is dissolved. Having lost everything and now a wanted man, Montmorency, who had just become an alchemist, encounters a mysterious village girl named Jehanne.<br>
 <br>(Source: MAL News)'), 1, '2018-10-07', '2018-12-30', 'Fall 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1143/96156.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1417, 1983, '"Liberation (リベラシオン)"', ' by Mai Fuchigami', 'js-theme-songs', 'https://open.spotify.com/track/2Ho6Uvs4V1lOSGtgLHAzpb');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4949, 1983, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4950, 1983, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4951, 1983, 14);

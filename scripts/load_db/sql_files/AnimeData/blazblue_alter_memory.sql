@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (230, CONCAT('BlazBlue: Alter Memory'), CONCAT('The story is set in December of 2199, when the streets are full of anticipation for the end of the year and the start of the new one. Amid the celebrations, word spreads that Ragna the Bloodedge, an SS-class rebel with the highest ever bounty on his head, has appeared in the 13th Hierarchical City of Kagutsuchi. The apparent aim of Ragna or the "Grim Reaper" is the destruction of the system controlling the world. To collect the bounty, a motley array of unrivaled fighters converge on Kagutsuchi.<br>
 <br>(Source: ANN)'), 1, '2013-10-09', '2013-12-25', 'Fall 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/56137.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (161, 230, '"REINCARNATION BLUE"', ' by Aira Yuuki', 'js-theme-songs', 'https://open.spotify.com/track/5WODtEVLuACj56s3xpmE4z');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (533, 230, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (534, 230, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (258, 230, 8);

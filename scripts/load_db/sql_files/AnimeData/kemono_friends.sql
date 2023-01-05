@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>One lazy afternoon in the savannah area, the energetic Serval encounters a peculiar new Friend. Curious, she swiftly takes down the Friend, named Kaban, to try and discover what species she is. To Serval', CHAR(39), 's disappointment, not even Kaban herself knows the answer.<br>
 <br>The two become friends and set out on a grand adventure through the many habitats, landmarks, and attractions of Japari Park. Their destination is the park library, where they hope to shed some light on Kaban’s identity. Along the way, they meet many other Friends, looking into their lives and helping them out. However, they soon begin to uncover the sinister reality behind the park and their own existence.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-01-11', '2017-03-29', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/83518.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (701, 991, '"Youkoso Japari Park e (ようこそジャパリパークへ)"', ' by Doubutsu Biscuits [Common Raccoon (Saki Ono), Serval (Yuka Ozaki), Fennec (Kana Monomiya)] x', 'js-theme-songs', 'https://open.spotify.com/track/7z0HnNeAREuJmRvQtpQIz0')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (440, 991, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2403, 991, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2404, 991, 8);

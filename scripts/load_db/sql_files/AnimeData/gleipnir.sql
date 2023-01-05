@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The next day, the girl he saved—Claire Aoki—finds him and confronts him about his monster identity. She even goes so far as to push him off the school roof to prove her theory after Shuuichi denies her allegations. Desperate to save himself, he transforms, and Claire snaps a picture in order to blackmail him into telling her everything he knows about monsters, which, ironically, isn', CHAR(39), 't much.<br>
 <br>As it turns out, Claire has a secret of her own: she has been searching for her sister, who also became a monster. She enlists Shuuichi', CHAR(39), 's help to track her down, but they aren', CHAR(39), 't the only ones searching for answers.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2020-04-05', '2020-06-28', 'Spring 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1808/111697.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (445, 624, '"Altern-ate-"', ' by H-el-ical//', 'js-theme-songs', 'https://open.spotify.com/track/6IJJ8gIHQduNLbCIfvdSbF')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (280, 624, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1540, 624, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1541, 624, 4);

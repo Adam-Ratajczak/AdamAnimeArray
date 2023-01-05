@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1022, CONCAT('Kimi to Boku.'), CONCAT('Four childhood friends are in their second year at Homare High School: kind and cheerful Shun Matsuoka, hot-tempered Kaname Tsukahara, and the Asaba twins, gentle Yuuta and lazy Yuuki. When a dynamic transfer student, Chizuru Tachibana, joins their group, the friends get caught up in his creative yet troublesome ideas that end up bringing excitement to their everyday lives. With new encounters and experiences, they begin to learn more about each other and themselves.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2011-10-04', '2011-12-27', 'Fall 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/34949.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (726, 1022, '"Bye Bye (バイバイ)"', ' by 7!!', 'js-theme-songs', 'https://open.spotify.com/track/2QyBmA5YvoWCGO7MnPjSqd')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (459, 1022, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2484, 1022, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2485, 1022, 7);

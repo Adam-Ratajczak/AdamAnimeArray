@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (278, CONCAT('Butlers: Chitose Momotose Monogatari'), CONCAT('Butlers: They are guardians that hold a thousand-year history and a certain fate. Jay lived in peace with his little sister Tenna and a fellow Butler named Hayakawa. However, those peaceful days came to a sudden end. Tenna was swallowed up into the void and Jay was sent a hundred years into the future. Jay finds there is now an academy called Koyomi Academy standing in the place where his mansion once stood. Jay took up the name Jinguji Koma and became the student council president of the school as he looks for clues about the past. Jay will eventually find out the truth behind this world.<br>
 <br>(Source: Crunchyroll)'), 1, '2018-04-12', '2018-06-28', 'Spring 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1633/92012.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (198, 278, '"Growth Arrow"', ' by OLDCODEX', 'js-theme-songs', 'https://open.spotify.com/track/6WTsEpGVAUlA9d3u9laXqJ');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (645, 278, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (646, 278, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (647, 278, 10);

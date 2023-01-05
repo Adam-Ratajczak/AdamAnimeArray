@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1816, CONCAT('Strange+'), CONCAT('Kou comes to a slum neighborhood in search of his elder brother Takumi and finds him to have become the head of a private detective firm. Kou is drafted by Takumi to do errands and chores in the detective firm, and they come to meet various interesting people...<br>
 <br>(Source: MAL News)'), 2, '2014-01-10', '2014-03-28', 'Winter 2014', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/57481.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1291, 1816, '"Beauty Boy"', ' by Takumi (Jun Fukuyama)', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4492, 1816, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4493, 1816, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1966, 1816, 77);

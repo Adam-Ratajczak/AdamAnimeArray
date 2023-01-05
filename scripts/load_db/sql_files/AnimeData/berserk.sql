@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (204, CONCAT('Berserk'), CONCAT('Now branded for death and destined to be hunted by demons until the day he dies, Guts embarks on a journey to defy such a gruesome fate, as waves of beasts relentlessly pursue him. Steeling his resolve, he takes up the monstrous blade Dragonslayer and vows to exact vengeance on the one responsible, hunting down the very man he once looked up to and considered a friend.<br>
 <br>Along the way, he encounters some unlikely allies, such as a small elf named Puck, and Isidro, a young thief looking to learn swordsmanship from the former mercenary. As the ragtag group slowly comes together after having decided to join Guts in his quest, they will face incredible danger unlike anything they have ever experienced before.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-07-01', '2016-09-16', 'Summer 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/79352.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (147, 204, '"Inferno"', ' by 9mm Parabellum Bullet', 'js-theme-songs', 'https://open.spotify.com/track/3pQ0zUFOi4e1KZ8yQkeD42')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (95, 204, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (483, 204, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (484, 204, 2);

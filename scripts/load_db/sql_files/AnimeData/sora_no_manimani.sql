@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1778, CONCAT('Sora no Manimani'), CONCAT('Saku Ooyagi returns to his hometown after seven years and is soon reacquainted with his childhood friend, Mihoshi Akeno. The reunion is far from merry since the last memory they have of each other is of her falling off a tree and him saving her. In any case, Mihoshi is determined to improve their relationship and forces Saku to join the astronomy club she founded.'), 1, '2009-07-07', '2009-09-22', 'Summer 2009', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/75491.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1259, 1778, '"Super Noisy Nova"', ' by Sphere', 'js-theme-songs', 'https://open.spotify.com/track/5bGen5PODN5GNE8TmkFF27');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4412, 1778, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4413, 1778, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1922, 1778, 6);

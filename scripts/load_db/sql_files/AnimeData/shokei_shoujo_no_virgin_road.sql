@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Menou elaborates that she is part of a church that helps abandoned Lost Ones integrate into society. She invites him to spend the night at her church, where the two can probe the nature of his ability. Eventually, they discover that Mutou', CHAR(39), 's Special Concept is actually incredibly powerful and dangerous. <br>
 <br>But is Menou', CHAR(39), 's true goal is to assist Lost Ones—or the opposite? <br>
 <br>[Written by MAL Rewrite, edited]'), 1, '2022-04-02', '2022-06-18', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1423/122029.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1225, 1732, '"Paper Bouquet"', ' by Mili', 'js-theme-songs', 'https://open.spotify.com/track/4rkcFNlUtrTidZO9AmWWUt')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4304, 1732, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4305, 1732, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4306, 1732, 9);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Miu decides to accept the invitation and heads to the meeting spot where the eccentric ensemble of other candidates filter in, all summoned by their own letters. Not long after, the girls are escorted by a manager to a luxurious secret facility, where it is explained that they must follow the mysterious directions of "The Wall," whose orders are absolute. <br>
 <br>The 24th of December, 2016, will see the birth of idols like no other on that day, the group 22/7 will debut, whether or not Miu and the other members are ready to take the stage.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2020-01-11', '2020-03-28', 'Winter 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1485/108385.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (5, 7, '"Muzui (ムズイ)"', ' by 22/7', 'js-theme-songs', 'https://open.spotify.com/track/6WgPTB2vJe3BuRI86rULNb')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (7, 7, 6);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (5, 7, 5);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (6, 7, 6);

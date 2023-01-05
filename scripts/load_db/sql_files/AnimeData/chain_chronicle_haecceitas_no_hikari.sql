@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (304, CONCAT('Chain Chronicle: Haecceitas no Hikari'), CONCAT('Set in the land of Yuguto, the people thought that the land they live is the size of the world, but it', CHAR(39), 's actually divided into several areas, each with a respective king. Even though there were small wars among areas, the kings had roundtable meetings to maintain peace and balance. It was until a dark group of dark monsters appeared...<br>
 <br>(Source: MAL News)'), 1, '2017-01-08', '2017-03-26', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/83740.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (217, 304, '"MY LIBERATION"', ' by nano', 'js-theme-songs', 'https://open.spotify.com/track/3Z1DWc3OZlbP3wlKEKr7Mq')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (699, 304, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (700, 304, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (701, 304, 9);

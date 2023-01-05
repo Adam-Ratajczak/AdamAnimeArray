@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Yukina Shirahane, a reserved high school girl, is the daughter of the facility', CHAR(39), 's head scientist. While visiting her mother at the facility, Yukina manages to solve part of the artifact', CHAR(39), 's puzzle. To her surprise, what appears before her is Kennosuke Tokisada Ouma, a young samurai from the Sengoku era.<br>
 <br>As a threat approaches from outer space, Yukina, along with Kennosuke, finds herself defending Earth against the invading forces. Along the way, she discovers the mystery behind Kennosuke and the reason he is determined to protect her.<br>
 <br>[Written by MAL Rewrite] '), 1, '2016-04-07', '2016-09-29', 'Spring 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/82281.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (783, 1096, '"Deathtopia (デストピア)"', ' by Glay', 'js-theme-songs', 'https://open.spotify.com/track/5AaYReNHHWyEQKpJqxMEZM')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2664, 1096, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2665, 1096, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1190, 1096, 52);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1339, CONCAT('Natsume Yuujinchou San'), CONCAT('Natsume Yuujinchou San follows Takashi Natsume, a boy who is able to see youkai. Natsume and his bodyguard Madara, nicknamed Nyanko-sensei, continue on their quest to release youkai from their contracts in the "Book of Friends."<br>
 <br>Natsume comes to terms with his ability to see youkai and stops thinking of it as a curse. As he spends more time with his human and youkai friends, he realizes how much he values them both and decides he doesn', CHAR(39), 't have to choose between the spirit and human worlds to be happy.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-07-05', '2011-09-27', 'Summer 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/82394.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (940, 1339, '"Boku ni Dekiru Koto (僕にできること)"', ' by HOW MERRY MARRY', 'js-theme-songs', 'https://open.spotify.com/track/37pQwC2VkyqqQLYluqy2Ev')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (583, 1339, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3327, 1339, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3328, 1339, 8);

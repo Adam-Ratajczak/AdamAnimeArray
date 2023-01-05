@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As if fate was listening to her prayer, she wakes up reincarnated as Myne—a frail five-year-old girl living in a medieval era. What immediately comes to her mind is her passion. She tries to find something to read, only to become frustrated by the lack of books at her disposal.  <br>
 <br>Without the printing press, books have to be written and copied by hand, making them very expensive as such, only a few nobles can afford them—but this won', CHAR(39), 't stop Myne. She will prove that her will to read is unbreakable, and if there are no books around, she will make them herself! <br>
 <br>[Written by MAL Rewrite]'), 1, '2019-10-03', '2019-12-26', 'Fall 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1582/101697.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (563, 786, '"Masshiro (真っ白)"', ' by Sumire Moroboshi', 'js-theme-songs', 'https://open.spotify.com/track/4QGwWIrSqaITsefkbVSTHg')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (863, 786, 172);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (860, 786, 20);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (861, 786, 45);

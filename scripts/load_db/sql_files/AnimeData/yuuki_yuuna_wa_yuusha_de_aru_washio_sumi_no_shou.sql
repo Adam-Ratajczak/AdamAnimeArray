@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Unsure of when they would be called to duty, Sumi Washio, Sonoko Nogi, and Gin Minowa spent their time idly. However, with the sudden appearance of a Vertex, they realize they have no idea how to fight together as magical girls when they are nearly bested. They manage to defeat their enemy by sheer determination, but in the aftermath of the battle, the three decide to fix their teamwork issues and improve their combat capabilities.<br>
 <br>But as more enemies appear—and requiring even more power to defeat their nemeses—the girls may find themselves irreversibly changed by the use of their magic. What price will they have to pay to ensure victory, and is it one worth paying if humanity will be saved?<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-10-07', '2017-11-11', 'Fall 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/83012.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1499, 2096, '"Egao no Kimi e (エガオノキミへ)"', ' by Suzuko Mimori', 'js-theme-songs', 'https://open.spotify.com/track/5U4H3FvtyvFJfLzkZd1iKw')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5203, 2096, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5204, 2096, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5205, 2096, 8);

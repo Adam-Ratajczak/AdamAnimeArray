@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Ten years have passed since the disaster, and Ryouta is now living a normal life in high school. He vows to prove that aliens are real in honor of his late friend. A transfer student named Neko Kuroha unexpectedly arrives one day, bearing a striking resemblance to the late Kuroneko—even sharing a similar name. Most mysteriously, she seems to possess supernatural powers.<br>
 <br>As Ryouta takes more interest in Neko, he is drawn into a deadly world where dangerous scientists hunt magic-wielding witches that have escaped from their secret research laboratory. Neko is one of these escapees, but there are many others who are in similar situations, and it', CHAR(39), 's up to Ryouta to protect them from their would-be captors.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2014-04-06', '2014-06-29', 'Spring 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/61433.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (452, 631, '"Virtue and Vice"', ' by Nao Tokisawa (鴇沢 直)', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (283, 631, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1562, 631, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1563, 631, 4);

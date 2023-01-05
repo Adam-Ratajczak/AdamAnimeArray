@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (227, CONCAT('Black★Rock Shooter (TV)'), CONCAT('On the first day of junior high school, Mato Kuroi happens to run into Yomi Takanashi, a shy, withdrawn girl whom she immediately takes an interest in. Mato tries her best to make conversation with Yomi, wanting to befriend her. At first, she is avoided, but the ice breaks when Yomi happens to notice a decorative blue bird attached to Mato', CHAR(39), 's phone, which is from the book "Li', CHAR(39), 'l Birds At Play." Discovering they have a common interest, the two form a strong friendship.<br>
 <br>In an alternate universe, the young girls exist as parallel beings, Mato as Black★Rock Shooter, and Yomi as Dead Master. Somehow, what happens in one world seems to have an effect on the other, and unaware of this fact, the girls unknowingly become entangled by the threads of fate.<br>
 <br>[Written by MAL Rewrite]'), 1, '2012-02-03', '2012-03-23', 'Winter 2012', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/53909.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (160, 227, '"Bokura no Ashiato (僕らのあしあと)"', ' by supercell', 'js-theme-songs', 'https://open.spotify.com/track/3GwcspDvZfXSJWkABdg0vO');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (525, 227, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (526, 227, 6);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (254, 227, 87);

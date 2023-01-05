@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Meanwhile in the Kingdom of Black, rampaging monsters annihilate a certain boy', CHAR(39), 's village, leaving him the sole survivor. As he grieves in hopelessness, an armored man named Skeer notices the child and comforts him. Soon after, Skeer recognizes the boy', CHAR(39), 's potential to change the kingdom', CHAR(39), 's status quo and makes him his heir before passing away. The boy then vows to become the Prince of Darkness—the one who will replace the King—to bring the world back to its rightful path.<br>
 <br>As Iris and Prince of Darkness each challenge the impending doom the world faces in their own respective ways, their destinies will converge with each other, and perhaps, their bond will decide the fate of the world.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-04-06', '2020-06-22', 'Spring 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1072/111360.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1223, 1730, '"Tenbin -Libra- (天秤-Libra-)"', ' by Takahiro Nishikawa x ASCA', 'js-theme-songs', 'https://open.spotify.com/track/2wx8lvEwUel2EHvPiyYQ6z')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4299, 1730, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4300, 1730, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4301, 1730, 9);

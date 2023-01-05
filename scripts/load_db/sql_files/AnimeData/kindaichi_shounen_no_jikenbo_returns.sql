@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1024, CONCAT('Kindaichi Shounen no Jikenbo Returns'), CONCAT('High school student Hajime Kindaichi is the supposed grandson of famous private detective Kosuke Kindaichi. Visiting Hong Kong for a fashion event with Kindaichi, our hero', CHAR(39), 's girlfriend Miyuki is captured by a stranger in a case of mistaken identity. The journey to save Miyuki itself leads to yet another crime case...<br>
 <br>(Source: YTV)'), 1, '2014-04-05', '2014-09-27', 'Spring 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/61271.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (728, 1024, '"Yue ni, Matenrou (故に、摩天楼)"', ' by Shinsei Tokyo Performance Doll (新生・東京パフォーマンスドール)', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (460, 1024, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1113, 1024, 1);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (17746, 1024, 1, CONCAT('The Hong Kong Kowloon Treasure Murder Case'), NULL, 'https://streamtape.com/e/Pjq2Px2WoGiRBX/');

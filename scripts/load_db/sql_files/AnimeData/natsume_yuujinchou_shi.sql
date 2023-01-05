@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Natsume, while briefly separated from Nyanko-sensei, is ambushed and kidnapped by a strange group of masked, monkey-like youkai, who have spirited him away to their forest as they desperately search for the Book of Friends. Realizing that his "servant" has been taken out from right under his nose, Nyanko-sensei enlists the help of Natsume', CHAR(39), 's youkai friends and mounts a rescue operation. However, the forest of the monkey spirits holds many dangerous enemies, including the Matoba Clan, Natsume', CHAR(39), 's old nemesis.<br>
 <br>Stretching from the formidable hideout of the Matoba to Natsume', CHAR(39), 's own childhood home, Natsume Yuujinchou Shi is a sweeping but familiar return to a world of danger and friendship, where Natsume will finally confront the demons of his own past.<br>
 <br>[Written by MAL Rewrite]'), 1, '2012-01-03', '2012-03-27', 'Winter 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/37449.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (941, 1340, '"Ima, Kono Toki. (今、このとき。)"', ' by Hiiragi', 'js-theme-songs', 'https://open.spotify.com/track/3FujBBfhkuLZJeLe6Ec8g7')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (584, 1340, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3330, 1340, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3331, 1340, 8);

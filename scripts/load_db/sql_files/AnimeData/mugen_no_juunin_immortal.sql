@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>To atone for his crimes, Manji resolves to kill one thousand evil men. Yaobikuni agrees to this proposal, saying that if he succeeds, she will undo his curse of immortality. Soon after this promise, Manji meets Rin Asano, a 16-year-old girl who requests Manji', CHAR(39), 's assistance in killing those who slaughtered her parents.<br>
 <br>Initially reluctant, Manji refuses Rin', CHAR(39), 's desperate plea. However, owing to her evident lack of strength, Manji changes his mind and agrees to protect Rin for four years. With this partnership set in stone, the two embark on a perilous journey of bloodshed, vengeance, and redemption, each to fulfill their own life', CHAR(39), 's cause.<br>
 <br>[Written by MAL Rewrite]'), 4, '2019-10-10', '2020-03-26', '', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1054/110054.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (905, 1297, '"SURVIVE OF VISION"', ' by Kiyoharu', 'js-theme-songs', 'https://open.spotify.com/track/4uONfe8wZawR6sJyHbFaOO');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (558, 1297, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3201, 1297, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3202, 1297, 2);

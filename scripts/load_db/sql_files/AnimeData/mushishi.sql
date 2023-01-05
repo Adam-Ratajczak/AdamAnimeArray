@@ -4,7 +4,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Ginko chases rumors of occurrences that could be tied to Mushi, all for the sake of finding an answer.<br>
 <br>It could, after all, lead to the meaning of life itself.<br>
 <br>[Written by MAL Rewrite]'), 1, '2005-10-23', '2006-06-19', 'Fall 2005', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/73862.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (913, 1312, '"The Sore Feet Song"', ' by Ally Kerr', 'js-theme-songs', 'https://open.spotify.com/track/2aDi7Lxx2z76E1K6CupJzw');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (566, 1312, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3243, 1312, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3244, 1312, 9);

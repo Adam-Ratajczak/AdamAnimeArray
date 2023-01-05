@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The desperate Ranka tries to invite Jin into joining her pack Jin, who hates animals, naturally refuses. Amid this situation, Jin meets Hitomi Hino, a fellow human, and promptly becomes infatuated with her. After getting to know each other, the two decide to create a cooking club, and after a few bad-blooded misunderstandings, Ranka soon joins the club as well.<br>
 <br>Thus begins the howl-some and howl-arious story of two normal humans an adorable wolf a cheerful koala a sluggish, blonde sloth and a feline with cattitude in their newfound club—in a story that teaches that friendship can be forged by creatures of different kinds.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-07', '2020-03-24', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1558/104666.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (910, 1305, '"Gakuen Soukan Zoo (学園壮観Zoo)"', ' by Ryouri-bu', 'js-theme-songs', 'https://open.spotify.com/track/2AhEZOIJ7eQ56bMGYx985O')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1410, 1305, 16);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1429, 1305, 23);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1430, 1305, 13);

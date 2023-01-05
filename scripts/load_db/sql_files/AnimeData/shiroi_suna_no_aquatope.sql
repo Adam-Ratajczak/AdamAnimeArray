@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>With a lack of visitors and costly but necessary repairs needed to keep its doors open, the director is faced with shutting down the establishment for good by the end of the summer. The director', CHAR(39), 's aquatic life-loving granddaughter—Kukuru Misakino—cannot stand the thought of the aquarium closing and is determined to make enough money by the end of the season to keep the doors open.<br>
 <br>Seeing the unique magic of the aquarium, Fuuka begs Kukuru for a job however, she soon finds that her lack of experience makes her more of a hindrance than anything else. At the same time, Kukuru realizes that her ambitious goal might be more than she can handle. With mounting pressure from all around them, will Kukuru and Fuuka be able to save the one place they hold close to their hearts?<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-07-09', '2021-12-17', 'Summer 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1932/114952.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1221, 1728, '"Tayutae, Nanairo (たゆたえ、七色)"', ' by ARCANA PROJECT', 'js-theme-songs', 'https://open.spotify.com/track/1qq8cGoT2aw76ad0b2wGcA')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4295, 1728, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4296, 1728, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1867, 1728, 52);

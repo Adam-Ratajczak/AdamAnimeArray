@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Upon his arrival, Dan is immediately thrust into a conflict between the kingdom', CHAR(39), 's imperial army and its oppressed natives. There, he learns that he is a prophetic warrior known as a "bearer of cores', CHAR(39), ' light," chosen to save the land from its evil king. Accompanied by a young boy named Zungurii and the eccentric witch Magisa, Dan travels across Grand Rolo and encounters the other chosen warriors through card battles. <br>
 <br>With the name of the Clash King gaining fame throughout Grand Rolo, secrets that lurk within the shadows of the kingdom', CHAR(39), 's colonial past begin to surface. Only time will tell if Dan', CHAR(39), 's campaign will affect the world on a scale much larger than he ever could have imagined.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-09-13', '2010-09-05', 'Fall 2009', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/21263.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (137, 192, '"Battle No Limit!"', ' by JAM Project', 'js-theme-songs', 'https://open.spotify.com/track/3WhlR8CKVOwVLTbZNM8eSW')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (449, 192, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (450, 192, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (451, 192, 12);

@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1870, CONCAT('Teekyuu 4'), CONCAT('Fourth season of Teekyuu series.'), 1, '2015-04-07', '2015-06-23', 'Spring 2015', '2 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/73472.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1331, 1870, '"Fattoshite Tougenkyou (ファッとして桃源郷)"', ' by Kanae Shinjou (Suzuko Mimori)', 'js-theme-songs', 'https://open.spotify.com/track/6PscdmhyvdmFl2puhQD5cM');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (778, 1870, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4633, 1870, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4634, 1870, 19);

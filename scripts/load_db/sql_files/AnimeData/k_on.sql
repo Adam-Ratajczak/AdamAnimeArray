@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Meanwhile, the Light Music Club faces disbandment due to a lack of members. This causes the club members to offer anything, from food to slacking off during club time, in order to convince Yui to join. Despite their efforts, Yui insists on leaving due to her lack of musical experience. As a last resort, they play a piece for Yui, which sparks her fiery passion and finally convinces her to join the club.<br>
 <br>From then onward, it', CHAR(39), 's just plain messing around with bits and pieces of practice. The members of the Light Music Club are ready to make their time together a delightful one!<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-04-03', '2009-06-26', 'Spring 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/76120.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (660, 927, '"Cagayake! GIRLS"', ' by Sakurakou Keion-bu (Aki Toyosaki, Yoko Hisaka, Satomi Satou, Minako Kotobuki)', 'js-theme-songs', 'https://open.spotify.com/track/6dCeYPmR97wXMKgfZxU4wU')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (407, 927, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1010, 927, 21);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1032, 927, 1);

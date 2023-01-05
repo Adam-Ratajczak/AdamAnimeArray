@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1473, CONCAT('Pingu in the City'), CONCAT('Pingu and his family move from their small village to the big city in which there are many people with many different occupations. The ever-curious Pingu tries to join them at their jobs, but his mischievous side gets the better of him and he ends up messing things up.<br>
 <br>(Source: ANN)'), 1, '2017-10-07', '2018-03-31', 'Fall 2017', '7 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1140/95174.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1043, 1473, '"PINGU A GO! GO!"', ' by Ken Arai', 'js-theme-songs', 'https://open.spotify.com/track/33xsPpGivsj7DlLLZzPZSm')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (631, 1473, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3655, 1473, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3656, 1473, 8);

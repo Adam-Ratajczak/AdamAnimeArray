@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1122, CONCAT('Leadale no Daichi nite'), CONCAT('The previously bedridden Keina Kagami finds herself in the world of her favorite VRMMORPG—titled Leadale—after the life support keeping her alive fails. Reincarnated in the body of her high-level character, "Cayna," she notices that the world of Leadale is different from what she remembers playing.<br>
 <br>As she comes to learn, two hundred years have passed since she last interacted with the world. However, this does not sadden Cayna—as it means that a new journey awaits her, filled with exciting prospects and unfamiliar faces all waiting to be discovered.<br>
 <br>[Written by MAL Rewrite]'), 1, '2022-01-05', '2022-03-23', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1671/120628.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (802, 1122, '"Happy Encount"', ' by TRUE ', 'js-theme-songs', 'https://open.spotify.com/track/4QfitwAHVGAUu3hc2HFfH6')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2726, 1122, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2727, 1122, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1216, 1122, 193);

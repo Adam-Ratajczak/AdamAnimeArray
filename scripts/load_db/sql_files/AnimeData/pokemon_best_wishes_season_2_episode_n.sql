@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1485, CONCAT('Pokemon Best Wishes! Season 2: Episode N'), CONCAT('In this new series, Satoshi, Pikachu and friends start a new journey towards the "White Ruins." There, they meet the young "N", who can hear the voices from Pokémon', CHAR(39), 's hearts... The door of truth leading to an Utopia for Pokémon and humans now lies open!<br>
 <br>(Source: AniDB)'), 1, '2013-01-17', '2013-04-18', 'Winter 2013', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/45749.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1052, 1485, '"Sakura Go-Round (サクラ・ゴーラウンド)"', ' by Shiritsu Ebisu Chuugaku (私立恵比寿中学)', 'js-theme-songs', 'https://open.spotify.com/track/3zm3TV4AGIMAxzikjzj8Du');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (641, 1485, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3696, 1485, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3697, 1485, 2);

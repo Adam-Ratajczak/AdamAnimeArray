@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>In the Japanese city surrounding Hell’s Gate, Section 4 Chief Misaki Kirihara finds herself at odds with an infamous Contractor codenamed Hei. Called "Black Reaper" in the underground world, Hei, like his associates, undertakes missions for the mysterious and ruthless Syndicate while slowly peeling back the dark layers covering a nefarious plot that threatens the very existence of Contractors.<br>
 <br>From the mind of Tensai Okamura comes a sci-fi thriller taking the form of a subtle exposé on a war in which political positions and justice have no sway—a war waged exclusively in the shadows.<br>
 <br>[Written by MAL Rewrite]'), 1, '2007-04-06', '2007-09-28', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/19570.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (277, 387, '"Howling"', ' by Abingdon Boys School', 'js-theme-songs', 'https://open.spotify.com/track/3PlJ0mc8d17WhW1IJZ7bFo');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (278, 387, '"Dreams"', ' by Rie Fu ', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (903, 387, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (904, 387, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (905, 387, 3);

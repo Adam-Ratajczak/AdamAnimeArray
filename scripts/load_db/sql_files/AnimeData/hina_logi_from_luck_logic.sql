@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (774, CONCAT('Hina Logi: From Luck & Logic'), CONCAT('Liones Yelistratova, a pure princess from a small country, enters a school in Hokkaido on a spring day. The school is a specialized educational institution operated by ALCA to train Logicalists, who maintain world peace. Liones enters class S, where she meets many classmates with unique personalities, like Nina. A lively and cute everyday life begins now.<br>
 <br>(Source: MAL News)'), 1, '2017-07-01', '2017-09-23', 'Summer 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/86576.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (554, 774, '"BUTTERFLY EFFECTOR"', ' by TRUE', 'js-theme-songs', 'https://open.spotify.com/track/5HX0dSTo2WTMTHDi0DSliW');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1904, 774, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1905, 774, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1906, 774, 9);

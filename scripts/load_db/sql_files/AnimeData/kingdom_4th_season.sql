@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Meanwhile, a Zhao army numbering 20,000 troops has set out toward Qin. In the royal court, due to the lack of generals capable of responding to the incoming threat, Lü slyly suggests that Zheng take command. However, Cheng Jiao, Zheng', CHAR(39), 's half-brother, volunteers instead. As they grew to trust each other during the coalition battle, Zheng now accepts Jiao as his replacement.<br>
 <br>However, the Zhao forces retreat a mere half-day after clashing with Jiao', CHAR(39), 's army. With trouble quickly brewing in the shadows, the internal struggle of Qin is only complicated further. There are only two men Zheng feels he can rely on: Bi, a general who commands 30,000 men and Xin, the leader of the Fei Xin force.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-10', '2022-10-02', 'Spring 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1566/122794.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (733, 1029, '"Genyou (眩耀)"', ' by Haku (珀)', 'js-theme-songs', 'https://open.spotify.com/track/3PyiFQfwoqy9tquKKdbSS3');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (463, 1029, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1118, 1029, 42);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1131, 1029, 31);

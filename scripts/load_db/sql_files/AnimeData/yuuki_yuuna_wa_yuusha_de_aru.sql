@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>But Yuuna, always up to any task, is about to become an even bigger hero. Mysterious destructive forces called Vertexes begin threatening the world she loves, and the Hero Club is called upon by a strange phone app to save it. Along with her best friend Mimori Tougou, as well as sisters Fuu and Itsuki Inubouzaki, they must transform into magical girls in order to battle the Vertexes.<br>
 <br>In between studying and putting on shows for kids, Yuuna and the Hero Club must fight for the very existence of their world and face the harsh truths behind their own powers, all the while discovering what it truly means to be a hero.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-10-17', '2014-12-26', 'Fall 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/77057.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1498, 2095, '"Hoshi to Hana (ホシトハナ)"', ' by Sanshuu Chuugaku Yuusha-bu (讃州中学勇者部) (Haruka Terui, Suzuko Mimori, Yumi Uchida, Tomoyo Kurosawa) ', 'js-theme-songs', 'https://open.spotify.com/track/3lSE84rWIDEBDs4sJS8apY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5200, 2095, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5201, 2095, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5202, 2095, 8);

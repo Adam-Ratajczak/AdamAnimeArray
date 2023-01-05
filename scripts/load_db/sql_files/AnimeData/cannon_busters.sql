@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (285, CONCAT('Cannon Busters'), CONCAT('Follow the adventures and exploits of S.A.M, a high-end, royal-class friendship droid who', CHAR(39), 's joined by a quirky, discarded maintenance robot and a brash, deadly fugitive. Together, the unlikely trio embarks on an unforgettable journey in a fantastic and dangerous world in search of S.A.M', CHAR(39), 's best friend, the heir to a powerful kingdom under siege.<br>
 <br>(Source: Official Website)'), 1, '2019-08-15', NULL, '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1452/102628.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (202, 285, '"Showdown"', ' by Marty Grimes and BJRNCK', 'js-theme-songs', 'https://open.spotify.com/track/0NKmwQhgNeTlfe5vcC5krz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (666, 285, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (667, 285, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (668, 285, 7);

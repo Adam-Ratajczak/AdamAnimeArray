@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2061, CONCAT('Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku'), CONCAT('With the Volunteer Service Club now firmly established, it is receiving more requests from students in search of solutions to their various issues. However, the club members often struggle to see eye to eye when it comes to their problem-solving ideals. The suggestions that Hachiman Hikigaya recommends frequently clash with those of Yukino Yukinoshita, fracturing the relationships within the club. <br>
 <br>Despite their differences, with the trio constantly trying to find common ground, they may soon reach a point where they discover something genuine.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2015-04-03', '2015-06-26', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/75376.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1474, 2061, '"Harumodoki (春擬き)"', ' by Nagi Yanagi', 'js-theme-songs', 'https://open.spotify.com/track/29CiLtYHYgzNNd3I0hfVPw')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5121, 2061, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5122, 2061, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2233, 2061, 35);

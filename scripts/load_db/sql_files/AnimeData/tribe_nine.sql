@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>When a group of youngsters bullies spineless Haru Shirokane, he is saved by an unexpected pair: Shun Kamiya and Taiga. As it turns out, Shun is a star player of Extreme Baseball who leads the Minato Tribe, the top-ranked team in Minato City. Meanwhile, Taiga aims to defeat Shun in hopes of becoming the strongest in the sport. In a string of spontaneous events that allow Shun to discover their potential, Taiga and Haru are roped into joining the Minato Tribe.<br>
 <br>As the tribes across Minato City face a new threat led by the mysterious Oujirou Otori, the Minato Tribe might just need the power of their two new rookies to overcome the clutches of evil.<br>
 <br>[Written by MAL Rewrite]'), 1, '2022-01-10', '2022-03-28', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1050/118367.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1382, 1943, '"Strike It Out"', ' by MIYAVI', 'js-theme-songs', 'https://open.spotify.com/track/13pExaXcujflZ57yN2QGuZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4831, 1943, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4832, 1943, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4833, 1943, 19);

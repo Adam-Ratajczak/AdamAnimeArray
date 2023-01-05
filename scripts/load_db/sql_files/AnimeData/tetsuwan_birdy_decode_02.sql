@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1892, CONCAT('Tetsuwan Birdy Decode:02'), CONCAT('Following the Ryunka disaster, Tokyo is left in a period of social turmoil. To make matters worse, the group of aliens directly responsible for the catastrophic event have escaped from the Space Federation and are hiding on Earth.<br>
 <br>Still sharing a body, Space Federation officer Birdy Cephon Altera, and high schooler, Tsutomu Senkawa, are tasked with capturing the fugitives and bringing them to justice. However, an unexpected crisis develops when the outlaws become targets of an unknown assassin with a vendetta. Now Birdy must deal with the chaos of everyday life and also uncover the identity of the assassin before more escapees fall victim.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-01-10', '2009-03-28', 'Winter 2009', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/53907.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1348, 1892, '"Kiseki"', ' by NIRGILIS', 'js-theme-songs', 'https://open.spotify.com/track/5tfXtUpsW0ozIAjX8OorlY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (787, 1892, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4689, 1892, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4690, 1892, 12);

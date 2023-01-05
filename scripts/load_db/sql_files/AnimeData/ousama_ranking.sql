@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, while Bojji may not be physically strong, he is certainly not weak of heart. When a chance encounter with a shadow creature should have left him traumatized, it instead makes him believe that he has found a friend amidst those who only choose to notice his shortcomings. He starts meeting with Kage, the shadow, regularly, to the point where even the otherwise abrasive creature begins to warm up to him.<br>
 <br>Kage and Bojji', CHAR(39), 's unlikely friendship lays the budding foundations of the prince', CHAR(39), 's journey, one where he intends to conquer his fears and insecurities. Despite the constant ridicule he faces, Bojji resolves to fulfill his desire of becoming the best king he can be.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-10-15', '2022-03-25', 'Fall 2021', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1347/117616.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1015, 1437, '"BOY "', ' by King Gnu', 'js-theme-songs', 'https://open.spotify.com/track/3oQaOjaIYPsnJbGNzXcIID')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3564, 1437, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3565, 1437, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1544, 1437, 158);

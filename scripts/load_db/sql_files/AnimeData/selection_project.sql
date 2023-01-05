@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Anxious but excited, Suzune enters the preliminary round of Selection Project. Though her singing dazzles the judges and her fellow competitors, Suzune is unfortunately overcome by her nerves and freezes up in the middle of her performance. She recovers quickly, but the stumble is great enough that she loses the winning spot and is disqualified.<br>
 <br>Or so it seems—until Seira Kurusu, the girl Suzune lost to, announces that she plans to drop out of Selection Project, believing Suzune is a more talented singer and therefore deserves the right to compete. Suzune is caught off guard by the decision, but promises Seira that they will meet again as top idols. She prepares herself for the challenging obstacles that lie ahead.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-10-01', '2021-12-24', 'Fall 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1174/113554.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1165, 1654, '"Glorious Days "', ' by 9-tie', 'js-theme-songs', 'https://open.spotify.com/track/3yB0xOL51jeAD4M2ZCahKA')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1780, 1654, 27);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1817, 1654, 5);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1818, 1654, 6);

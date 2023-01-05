@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (302, CONCAT('Centaur no Nayami'), CONCAT('Himeno is a sweet, shy little centaur girl. In her world, everyone seems to be a supernatural creature, and all her classmates have some kind of horns, wings, tails, halos, or other visible supernatural body part. Despite their supernatural elements, Himeno and her best friends, Nozomi and Kyouko, have a fun and mostly normal daily school life!<br>
 <br>(Source: MangaHelpers)'), 1, '2017-07-09', '2017-09-24', 'Summer 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/86767.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (215, 302, '"Oshiete Darwin (教えてダーウィン)"', ' by Purely Monster (ピュアリーモンスター)', 'js-theme-songs', 'https://open.spotify.com/track/0qnhmexPxUyhJahGnFfvzD')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (147, 302, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (693, 302, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (694, 302, 9);

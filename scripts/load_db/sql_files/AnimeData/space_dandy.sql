@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1803, CONCAT('Space☆Dandy'), CONCAT('Dandy is a groovy, pompadour-wearing man who explores the stars in search of strange aliens for money, desiring to visit his favorite place: BooBies, the best diner in all the cosmos. Traversing the galaxies in his trusty ship, the Aloha Oe, Dandy is accompanied by his two equally unique friends: QT, the vacuum cleaner robot, and Meow, an alien with a cat-like appearance. <br>
 <br>Although exciting, Dandy', CHAR(39), 's job is never simple, and each new day promises a completely different, thrilling adventure. Together, Dandy and his crew get dragged into perilous journeys, misadventures in romance, and out of this world scenarios—all whilst steering clear of the evil scientist, Dr. Gel of the Gogol Empire.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2014-01-05', '2014-03-27', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/56611.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1281, 1803, '"Viva Namida (ビバナミダ)"', ' by Yasuyuki Okamura', 'js-theme-songs', 'https://open.spotify.com/track/6tiadvOemhAo1LAUoxBZS6');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4472, 1803, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4473, 1803, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1948, 1803, 77);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>During a mission to assist a village occupied by renegade soldiers, Alice meets Randal Oland, a scarred former soldier with a sordid past and kind heart. Encouraged by the efforts of the Pumpkin Scissors, he joins the team on their mission. During the assault, however, Randal enters a trance-like state prompted by a mysterious blue lantern. As a result, he acquires monstrous strength and decimates the enemy forces.<br>
 <br>Despite having witnessed Randal', CHAR(39), 's disturbing transformation, Alice invites him to join her squandrant, confident that his gentle nature will prevail and make him a perfect fit for the Pumpkin Scissors.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-10-03', '2007-03-18', 'Fall 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/75181.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1070, 1506, '"Aoki Flamme"', ' by Takahashi, Yoko', 'js-theme-songs', 'https://open.spotify.com/track/46vutJGOZAiZCIjqkslAB0');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3755, 1506, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3756, 1506, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1623, 1506, 5);

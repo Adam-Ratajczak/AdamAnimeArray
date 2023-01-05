@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (418, CONCAT('Devils Line'), CONCAT('Vampires walk among society, existing as part of its underbelly. They do not require blood to survive, but extreme emotions can immensely increase their bloodlust, turning them into uncontrollable monsters. Tsukasa Taira, a 22-year-old university student, learns of the existence of vampires when her longtime friend reveals himself to be one of them after a tense confrontation with Yuuki Anzai—a human and vampire hybrid.<br>
 <br>Her friend is arrested, and Tsukasa soon finds herself drawn to Anzai, who reluctantly reciprocates her feelings. However, this unconventional romance may prove too difficult to maintain, as Anzai struggles to contain the part of him that wishes to devour Tsukasa.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-04-07', '2018-06-23', 'Spring 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1053/98838.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (304, 418, '"Eclipse"', ' by Shouta Aoi', 'js-theme-songs', 'https://open.spotify.com/track/7mijyfIOav7iwaqanw8cyZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (188, 418, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (989, 418, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (990, 418, 6);

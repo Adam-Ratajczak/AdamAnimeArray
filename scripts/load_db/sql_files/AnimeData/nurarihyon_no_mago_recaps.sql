@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1390, CONCAT('Nurarihyon no Mago Recaps'), CONCAT('Nurarihyon no Mago Recaps.'), 1, '2010-09-28', '2010-12-28', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/26961.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (977, 1390, '"Fast Forward"', ' by Monkey Majik', 'js-theme-songs', 'https://open.spotify.com/track/29ISYL7OevTODNWiLSyA7K')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (601, 1390, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3450, 1390, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3451, 1390, 10);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Once the war was over, mysteries and accounts of the Incarnates submitting to the misfortune of their war days surfaced. Aware of the horrors they faced during the war, Special Sergeant Major and former captain of the Incarnates Hank Henriette becomes a Beast Hunter—those who take the lives of Incarnates who have succumbed to the issues they experienced on the battlefields. <br>
 <br>After witnessing her father, a former Incarnate soldier, meet his end at the hands of one such Beast Hunter, Nancy Schaal Bancroft resolves to hunt the man who took her father', CHAR(39), 's life. However, Nancy', CHAR(39), 's eye-opening encounter with the Beast Hunter influences her to instead seek the reason behind her father', CHAR(39), 's death and the Incarnates', CHAR(39), ' problematic existence in society.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-07-01', '2019-09-16', 'Summer 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1109/101230.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (692, 980, '"Sacrifice (サクリファイス)"', ' by Mafumafu', 'js-theme-songs', 'https://open.spotify.com/track/45oVY6oQcKsMmRhacvLhsG')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (435, 980, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2372, 980, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2373, 980, 6);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>To find out information on these supernatural beings, Kazuya and his friends set up a counselor', CHAR(39), 's club at school. But behind the typical-seeming troubles he hears about, he uncovers a major plot to target Kukuri...<br>
 <br>In addition to the sadistic-yet-beautiful tsukumogami Kiriha, the situation draws other girls to Kazuya to join the fray!<br>
 <br>(Source: Crunchyroll)'), 1, '2020-04-05', '2020-06-21', 'Spring 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1997/106184.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1394, 1952, '"Kaze Fukeba Tsukiyo no Hate ni (風吹けば月夜の果てに)"', ' by AOP', 'js-theme-songs', 'https://open.spotify.com/track/2Pf5dm8dqL8mvj8VgRwUdg')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (816, 1952, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4866, 1952, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4867, 1952, 12);

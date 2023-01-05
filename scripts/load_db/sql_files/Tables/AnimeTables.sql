@@ -1,3 +1,18 @@
+-- Drop all tables
+DROP TABLE IF EXISTS AnimeDemographics;
+DROP TABLE IF EXISTS AnimeProducers;
+DROP TABLE IF EXISTS AnimeGenres;
+DROP TABLE IF EXISTS AnimeRelations;
+DROP TABLE IF EXISTS AnimeThemes;
+DROP TABLE IF EXISTS Episodes;
+DROP TABLE IF EXISTS Songs;
+DROP TABLE IF EXISTS Animes;
+DROP TABLE IF EXISTS Demographics;
+DROP TABLE IF EXISTS Genres;
+DROP TABLE IF EXISTS Producers;
+DROP TABLE IF EXISTS Themes;
+DROP TABLE IF EXISTS Types;
+
 -- Types of anime in the database
 CREATE TABLE IF NOT EXISTS Types(
     TypeID int PRIMARY KEY,
@@ -94,7 +109,6 @@ CREATE TABLE IF NOT EXISTS Songs(
     AnimeID int NOT NULL,
     Title VARCHAR(64) NOT NULL,
     Artist VARCHAR(64) NOT NULL,
-    Type VARCHAR(64) NOT NULL,
     SpotifyUrl VARCHAR(256),
     FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)
 );

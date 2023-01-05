@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1959, CONCAT('Tsukiuta. The Animation'), CONCAT('Tsukino Talent Productions is home to two up-and-coming idol units named Six Gravity and Procellarum. The units all live together in the same dormitory and try to juggle their budding careers and daily lives. At their joint handshake event, unit leaders Hajime Mutsuki and Shun Shimotsuki announce the "Full Moon Festival"—a collaboration concert in a few months. Excited about the upcoming event, these 12 male idols must learn to collaborate with each other in order to pull it off successfully.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2016-07-06', '2016-09-28', 'Summer 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/80936.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1401, 1959, '"GRAVITIC-LOVE"', ' by Six Gravity', 'js-theme-songs', 'https://open.spotify.com/track/2WEuGtcD3aBweiS6DVpxUa')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4887, 1959, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4888, 1959, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4889, 1959, 4);

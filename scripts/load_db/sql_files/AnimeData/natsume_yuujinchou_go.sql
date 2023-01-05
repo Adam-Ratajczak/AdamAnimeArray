@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1335, CONCAT('Natsume Yuujinchou Go'), CONCAT('Season 5 of Natsume Yuujinchou.'), 1, '2016-10-05', '2016-12-21', 'Fall 2016', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/81755.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (936, 1335, '"Takarabako (タカラバコ)"', ' by Sasanomaly (ササノマリイ)', 'js-theme-songs', 'https://open.spotify.com/track/4Fg4MeatIYTzVlQI9PxtE9')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (579, 1335, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3315, 1335, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3316, 1335, 8);

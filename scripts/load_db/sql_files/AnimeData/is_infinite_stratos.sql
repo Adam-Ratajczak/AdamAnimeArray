@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>When it is discovered that 15-year-old Ichika Orimura is the only male capable of steering an IS, he is forcibly enrolled in the Infinite Stratos Academy: an all-female boarding school, the students of which graduate to become IS pilots. At this training school, Ichika is reunited with two of his childhood friends, Houki Shinonono and Lingyin Huang, and befriends Cecilia Alcott, an IS representative from the United Kingdom.<br>
 <br>Guided by the legendary pilot Chifuyu Orimura—their strict homeroom teacher and Ichika', CHAR(39), 's older sister—Ichika and the girls will need to use everything at their disposal to defend themselves and their academy against the dangers that will arise during the course of their thrilling school life.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-01-07', '2011-04-01', 'Winter 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/74045.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (617, 873, '"STRAIGHT JET"', ' by Minami Kuribayashi', 'js-theme-songs', 'https://open.spotify.com/track/4CBqVCGmfnPniNVf7VLEvO');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2101, 873, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2102, 873, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2103, 873, 3);

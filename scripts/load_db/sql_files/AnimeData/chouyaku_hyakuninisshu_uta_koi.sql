@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (325, CONCAT('Chouyaku Hyakuninisshu: Uta Koi.'), CONCAT('Uta Koi tells the "super-liberal interpretation" of the Hyakuninisshu anthology compiled during Japan', CHAR(39), 's Heian period of 100 romantic poems from 100 different poets such as The Tale of Genji', CHAR(39), 's Murasaki Shikibu.'), 1, '2012-07-03', '2012-09-25', 'Summer 2012', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/42007.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (232, 325, '"Love Letter from Nanika? (ラブレター・フロム・何か？)"', ' by ecosystem', 'js-theme-songs', 'https://open.spotify.com/track/1AxipzFOqz0qSCzJJ8WBeR')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (156, 325, 5);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (745, 325, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (746, 325, 7);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (141, CONCAT('Atom: The Beginning'), CONCAT('Japan in the near future suffers an unexplained major disaster. Five years later, reconstruction is well underway. Two young researchers at a university are pinning all their hopes on robot development. Now their new interpretation of the eternal hero Astro Boy up until his birth is just about to start!<br>
 <br>(Source: Showgate)'), 1, '2017-04-15', '2017-07-08', 'Spring 2017', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/86607.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (92, 141, '"Kaidoku Funou (解読不能)"', ' by After the Rain (そらる x まふまふ)', 'js-theme-songs', 'https://open.spotify.com/track/5GYYe4BEBoBEYlWPYOxGyM')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (69, 141, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (321, 141, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (322, 141, 3);

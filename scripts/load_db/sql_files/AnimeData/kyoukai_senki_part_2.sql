@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1108, CONCAT('Kyoukai Senki Part 2'), CONCAT('Second part of Kyoukai Senki.'), 1, '2022-04-12', '2022-06-28', 'Spring 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1968/122304.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (793, 1108, '"Overload"', ' by Yuuna Fukinbara (富金原佑菜)', 'js-theme-songs', 'https://open.spotify.com/track/5V6AiDZLS838X2NceqiPja')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2695, 1108, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2696, 1108, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1202, 1108, 111);

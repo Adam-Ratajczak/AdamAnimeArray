@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (614, CONCAT('Gintama.: Porori-hen'), CONCAT('Following the grim events of Iga, Kokujou Island, Rakuyou, and multiple fruitless confrontations with the Tenshouin Naraku and Tendoshuu, Gintama.: Porori-hen takes its viewers on a trip down memory lane to when Yorozuya were mostly doing what they did best—odd jobs. The great space hunter Umibouzu has returned to Edo and is livid when he finds out that his daughter Kagura has a boyfriend. He blames Gintoki for being an incompetent guardian, but has the time finally come for him to let go of his daughter?<br>
 <br>Back with shameless parodies, risqué humor, and lively camaraderie, Gintoki, Kagura, and Shinpachi are faced with unforeseen situations that manage to be both hilarious and emotionally stirring.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-10-02', '2017-12-25', 'Fall 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/88325.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (437, 614, '"VS"', ' by BLUE ENCOUNT', 'js-theme-songs', 'https://open.spotify.com/track/0v07NKL3fTtcPTI7HwSlsf')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (273, 614, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1511, 614, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1512, 614, 12);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1387, CONCAT('Null Peta'), CONCAT('Genius inventor Null tragically loses her older sister Peta in an accident. To get over the grief, Null develops "Peta Robo," a robot with the same characteristics as her late sister. However, the robot is a little different as to what Null expected.<br>
 <br>(Source: MAL News)'), 4, '2019-10-04', '2019-12-20', '', '5 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1586/103381.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (975, 1387, '"#NULL!*Peta"', ' by Null (Azuki Waki), Peta (Reina Ueda)', 'js-theme-songs', 'https://open.spotify.com/track/0UJ4wQxkt0rGdXdYSCwBOx');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3446, 1387, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3447, 1387, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1494, 1387, 56);

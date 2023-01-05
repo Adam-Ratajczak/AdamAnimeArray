@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (813, CONCAT('Hyakuren no Haou to Seiyaku no Valkyria'), CONCAT('Some urban legends are best left untested! Yuuto Suou gets more than he bargained for when he joins his childhood friend Mitsuki Shimoya in testing out an urban legend. When he uses his phone to take a picture of himself with the local shrine', CHAR(39), 's divine mirror, he is whisked off into another world—one heavily steeped in the lore of the old Norse myths.<br>
 <br>Using his knowledge gained from school and from his solar-powered smartphone, he has the chance to bring the Wolf Clan, the same people who cared for him, to prominence, all while earning the adoration of a group of magic-wielding warrior maidens known as the Einherjar.<br>
 <br>(Source: J-Novel Club)'), 1, '2018-07-08', '2018-09-23', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1585/95225.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (579, 813, '"Bright way"', ' by Aya Uchida', 'js-theme-songs', 'https://open.spotify.com/track/3xwWlkfJx4lMZCafEaxCJ4')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (890, 813, 48);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (893, 813, 12);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (894, 813, 20);

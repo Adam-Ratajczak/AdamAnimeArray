@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (363, CONCAT('Cue!'), CONCAT('As a new agency, AiRBLUE', CHAR(39), 's roster consists of voice actresses with absolutely no experience. Expecting to hone their skills and build courage at a gradual pace, the girls are taken aback when the head of their agency, Masaki Ootori, announces that they will be partaking in an audition for Bloomball—a popular sports manga receiving an anime adaptation. Despite all odds being stacked against them, each of the girls is now presented with a momentous chance to make their debut in the unrelenting world of voice acting. <br>
 <br>[Written by MAL Rewrite]'), 1, '2022-01-08', '2022-06-25', 'Winter 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1039/120173.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (259, 363, '"Start Line (スタートライン)"', ' by AiRBLUE', 'js-theme-songs', 'https://open.spotify.com/track/4W8vkrV29Pzh6PdzUPqTVO')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (406, 363, 109);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (407, 363, 102);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (374, 363, 5);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1819, CONCAT('Strike the Blood III'), CONCAT('It was announced at a Dengeki Game Festival stage event that the Strike the Blood light novel series will get a third OVA release. It will cover until the end of Seisen-hen.<br>
 <br>(Source: MAL news)'), 3, '2018-12-19', '2019-09-25', '', '26 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1768/111676.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1295, 1819, '"Blood and Emotion"', ' by Kishida Kyoudan & The Akeboshi Rockets', 'js-theme-songs', 'https://open.spotify.com/track/4bvj3I91wjnErvSUVrEtSr')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4500, 1819, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4501, 1819, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4502, 1819, 10);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>When fellow classmate Hitagi Senjougahara falls down the stairs and is caught by Araragi, the boy realizes that the girl is unnaturally weightless. Despite Senjougahara', CHAR(39), 's protests, Araragi insists he help her, deciding to enlist the aid of Oshino, the very man who had once helped him with his own predicament.<br>
 <br>Through several tales involving demons and gods, Bakemonogatari follows Araragi as he attempts to help those who suffer from supernatural maladies.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-07-03', '2010-06-25', 'Summer 2009', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/75274.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (106, 159, '"staple stable"', ' by Chiwa Saito', 'js-theme-songs', 'https://open.spotify.com/track/5Y5ogKERtztymte4p1Jc93')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (360, 159, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (361, 159, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (362, 159, 10);

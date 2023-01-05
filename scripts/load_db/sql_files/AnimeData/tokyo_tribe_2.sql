@@ -1,6 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1929, CONCAT('Tokyo Tribe 2'), CONCAT('This is the other side of Tokyo, a Tokyo of a different color. There, various tribes are living. The SARU from Japan', CHAR(39), 's Musashino, WU-RONZE of Bukuro, and HANDS of Shindyuku... Young men living in the city...the public of modern times builds a home out of corruption, these young men of the sordid side of life, a side called "reality," are depicted here!<br><br>(Source: AnimeNfo)'), 1, '2006-11-12', '2007-02-18', 'Fall 2006', '21 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/50493.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1374, 1929, '"TOP OF TOKYO"', ' by Illmatic Buddha MC's', 'js-theme-songs', 'https://open.spotify.com/track/6yQjot5JkUPupshDZEyreg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1375, 1929, '"Owari no Uta"', ' by Scha Dara Parr', 'js-theme-songs', 'https://open.spotify.com/track/6VL9lLSoaaMUAzMCY33fEm');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (802, 1929, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4795, 1929, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4796, 1929, 9);

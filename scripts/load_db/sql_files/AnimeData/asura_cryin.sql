@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>After moving into his brother', CHAR(39), 's old house, Tomoharu expects to continue living his normal life but is one day left with a mysterious and locked briefcase without any instruction. At first he plans to leave it in storage however, his house is soon invaded by multiple groups of people after the briefcase. Although still not knowing the purpose of the briefcase, Tomoharu and Misao attempt to escape with it.<br>
 <br>From there on, Tomoharu tries to learn the secrets behind the briefcase, the connections between it and Misao, and why it has the power to change the world.<br>
 <br>[Written by MAL Rewrite]'), 1, '2009-04-02', '2009-06-25', 'Spring 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/17071.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (90, 139, '"Spiral"', ' by angela', 'js-theme-songs', 'https://open.spotify.com/track/6Xf8LbNHGcKBRzSP5XXQiK')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (317, 139, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (318, 139, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (157, 139, 12);

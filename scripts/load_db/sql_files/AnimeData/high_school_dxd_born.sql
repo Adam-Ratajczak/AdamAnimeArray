@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (752, CONCAT('High School DxD BorN'), CONCAT('The Red Dragon Emperor, Issei Hyoudou, and the Occult Research Club are back in action as summer break comes for the students of Kuoh Academy. After their fight with Issei’s sworn enemy, Vali and the Chaos Brigade, it is clear just how inexperienced Rias Gremory', CHAR(39), 's team is. As a result, she and Azazel lead the club on an intense training regime in the Underworld to prepare them for the challenges that lie ahead.<br>
 <br>While they slowly mature as a team, Issei will once again find himself in intimate situations with the girls of the Occult Research Club. Meanwhile, their adversaries grow stronger and more numerous as they rally their forces. And with the sudden appearance of Loki, the Evil God of Norse Mythology, the stage is set for epic fights and wickedly powerful devils in High School DxD BorN!<br>
 <br>[Written by MAL Rewrite]'), 1, '2015-04-04', '2015-06-20', 'Spring 2015', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/73642.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (541, 752, '"BLESS YoUr NAME"', ' by ChouCho', 'js-theme-songs', 'https://open.spotify.com/track/4IlgFE3fR0XvtOXtu5cXIf');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1840, 752, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1841, 752, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1842, 752, 7);

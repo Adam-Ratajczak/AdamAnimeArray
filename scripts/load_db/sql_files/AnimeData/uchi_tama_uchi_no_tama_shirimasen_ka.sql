@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1971, CONCAT('Uchi Tama?! Uchi no Tama Shirimasen ka?'), CONCAT('The animals of Third Street are seen getting into many misadventures. Tama Okamoto, the curious feline, often goes missing from his home, causing his owner to have posters up looking for him. However, Tama', CHAR(39), 's absence is his opportunity to visit all of his wandering furry friends around the neighborhood. From Tama', CHAR(39), 's best friend Pochi Yamada to the stray alley cat Nora, these animals take human form to hang out, to cause various mischief, but most of all, to have fun!<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-10', '2020-03-20', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1624/103162.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1409, 1971, '"Friends (フレンズ)"', ' by wacci', 'js-theme-songs', 'https://open.spotify.com/track/2yw4gK5iALigexA3jUiX3g');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2137, 1971, 73);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2138, 1971, 130);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2181, 1971, 8);

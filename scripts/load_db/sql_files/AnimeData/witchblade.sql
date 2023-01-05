@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2040, CONCAT('Witchblade'), CONCAT('Masane Amaha and her daughter Rihoko are on the run from a government child welfare agency that wants to take Rihoko away from her mother. They are caught and Rihoko is taken away. Meanwhile, Masane is attacked by an advanced weapon that can disguise itself as a human being. When faced with the danger, a strange light emits from her wrist and she transforms into a powerful being. She destroys the weapon and consequently becomes involved in a power struggle between powerful organizations, with her at the center of their attention. Because she holds the greatest power of them all, the legendary Witchblade.<br>
 <br>(Source: AniDB)'), 1, '2006-04-06', '2006-09-21', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1/935.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1460, 2040, '"Dear Bob"', ' by Psychic Lover', 'js-theme-songs', '');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1461, 2040, '"Kutsu Himo"', ' by Mamiko Noto', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5078, 2040, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5079, 2040, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2212, 2040, 5);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (773, CONCAT('Himouto! Umaru-chan R'), CONCAT('Umaru Doma is a model student who has a hidden side: when she gets home each day, she puts on her hamster hoodie and turns into a sluggish otaku fond of junk food. As Umaru continues these daily antics, the friendship between her and her classmates—Nana Ebina, Kirie Motoba, and Sylphinford Tachibana—deepens, and more and more interesting events begin to unfold.<br>
 <br>Of course, these events give rise to numerous questions. What did Nana ask of Umaru', CHAR(39), 's brother Taihei? Who is the mysterious girl with the diamond hairpin? And most important of all: why does this girl seem to know Umaru? These questions and more will be answered in Himouto! Umaru-chan R!<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-10-08', '2017-12-24', 'Fall 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/89671.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (553, 773, '"Nimensei☆Ura Omote Life! (にめんせい☆ウラオモテライフ！)"', ' by Umaru Doma (Aimi Tanaka)', 'js-theme-songs', 'https://open.spotify.com/track/2lvdlPqQoMxv0mPZwy05lY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (351, 773, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (849, 773, 13);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (850, 773, 18);

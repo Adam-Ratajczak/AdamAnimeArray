@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Now attending Hidaka University in Tokyo, Haruka Nanase unexpectedly runs into Shiina Asahi, an old teammate and friend from his middle school days. Consequently, the troubling memories regarding his middle school swim team resurface, as it was a time when Haruka', CHAR(39), 's views on swimming became negative and led him to quit the team. Haruka later reconnects with his other middle school classmates all except for Ikuya Kirishima, who still resents Haruka for quitting the team, resulting in its disbandment. Aware of the issues between them, Haruka resolves to improve his friendship with Ikuya. However, he quickly realizes that making amends with an old friend isn', CHAR(39), 't his only obstacle. <br>
 <br>Facing the reality and challenges of encountering higher calibre swimmers, Haruka must work hard to establish himself if he dreams of competing on an international level.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-07-12', '2018-09-27', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1243/95025.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (380, 524, '"Heading to Over"', ' by OLDCODEX', 'js-theme-songs', 'https://open.spotify.com/track/6oXSxVkAytFi7N1BRUVXei');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (228, 524, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1297, 524, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1298, 524, 10);

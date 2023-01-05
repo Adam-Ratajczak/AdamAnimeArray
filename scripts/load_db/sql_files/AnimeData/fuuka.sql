@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>On his way to buy dinner while looking at his Twitter account, a high school girl suddenly crashes into him. Thinking he was taking upskirt pictures of her, the girl takes Yuu', CHAR(39), 's phone, breaks it, and slaps him before leaving Yuu lying on the ground. As it turns out, this girl—Fuuka Akitsuki—also goes to the school Yuu is transferring to.<br>
 <br>Unlike most people, Fuuka doesn', CHAR(39), 't own a cellphone she even listens to music using a CD player. Eventually these two become closer, and decide to form a band with their friends and enter the professional world of music. With Fuuka around, what will now become of Yuu', CHAR(39), 's new life in Tokyo?<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-01-06', '2017-03-24', 'Winter 2017', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/83735.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (396, 556, '"Climber's High!"', ' by Manami Numakura', 'js-theme-songs', 'https://open.spotify.com/track/0HRqi9FitCXtngrDqIwMdH')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (250, 556, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1384, 556, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1385, 556, 7);

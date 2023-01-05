@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2014, CONCAT('Venus Versus Virus'), CONCAT('Venus Versus Virus follows regular schoolgirl Sumire who', CHAR(39), 's had the ability to see ghosts since a young age. She tells friends and family about this fact and they just dismiss it, thinking she', CHAR(39), 's a liar. A chance encounter with a broach flying out of nowhere, a monster and gothloli clad monster killer named Lucia leaves her with a life changing decision to use her ability and fight against these "viruses" feeding upon the human race.<br>
 <br>(Source: AnimeNewsService) '), 1, '2007-01-12', '2007-03-30', 'Winter 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/18842.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1440, 2014, '"Shijun no Zankoku"', ' by Yousei Teikoku', 'js-theme-songs', 'https://open.spotify.com/track/7biJ72xSjTdF1qkkYUjeMS');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5019, 2014, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5020, 2014, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5021, 2014, 14);

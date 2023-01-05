@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (596, CONCAT('Getsuyoubi no Tawawa'), CONCAT('Oniisan, a typical salaryman, has the weekly duty of protecting high school student Ai-chan from gropers by escorting her during their Monday morning train commutes. Despite the short time Oniisan and Ai-chan spend together, they manage to bond and learn more about each other', CHAR(39), 's lives. To help Oniisan get through his Monday blues, Ai-chan gives him small presents as motivation.<br>
 <br>Ai-chan and many other girls—who all share a certain attractive trait—lighten up the Mondays of their male friends and colleagues for the long week ahead.<br>
 <br>[Written by MAL Rewrite]<br>'), 4, '2016-10-10', '2016-12-26', '', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/83576.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (422, 596, '"Otome no Tawawa (乙女のたわわ)"', ' by Sayaka Harada', 'js-theme-songs', 'https://open.spotify.com/track/3jm9Rk4dofGpzusHKcbTAu');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1472, 596, 8);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1473, 596, 14);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (663, 596, 145);

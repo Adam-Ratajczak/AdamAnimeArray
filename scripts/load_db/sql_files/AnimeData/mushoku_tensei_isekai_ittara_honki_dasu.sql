@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Preserving his memories and knowledge from his previous life, Rudeus quickly adapts to his new environment. With the mind of a grown adult, he starts to display magical talent that exceeds all expectations, honing his skill with the help of a mage named Roxy Migurdia. Rudeus learns swordplay from his father, Paul, and meets Sylphiette, a girl his age who quickly becomes his closest friend.<br>
 <br>As Rudeus', CHAR(39), ' second chance at life begins, he tries to make the most of his new opportunity while conquering his traumatic past. And perhaps, one day, he may find the one thing he could not find in his old world—love.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-01-11', '2021-03-22', 'Winter 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1530/117776.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (916, 1315, '"Tabibito no Uta (旅人の唄)"', ' by Yuiko Oohara', 'js-theme-songs', 'https://open.spotify.com/track/4PV6kMVIn85ao77AQzjcDO')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3258, 1315, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3259, 1315, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3260, 1315, 14);

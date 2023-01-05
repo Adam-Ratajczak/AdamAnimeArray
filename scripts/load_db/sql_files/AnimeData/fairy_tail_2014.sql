@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (505, CONCAT('Fairy Tail (2014)'), CONCAT('The Grand Magic Games reaches its climax following Natsu Dragneel and Gajeel Redfox', CHAR(39), 's stunning victory over Sting Eucliffe and Rogue Cheney of the Sabertooth guild. This success pushes the Fairy Tail guild closer to being crowned the overall champions, but obtaining victory isn', CHAR(39), 't the only challenge they face. A mystery still surrounds a hooded stranger and the ominous Eclipse Gate, leaving more questions than answers.<br>
 <br>More crazy adventures are on the horizon for Fairy Tail as their destructive antics and joyful rowdiness continue unabated. Their greatest trial is quickly approaching, but united as a family, the guild will always be ready to face any threat that comes their way.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-04-05', '2016-03-26', 'Spring 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/60551.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (365, 505, '"MASAYUME CHASING"', ' by BoA', 'js-theme-songs', 'https://open.spotify.com/track/6RwSgUYOHSN6qvmshUzVwx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (224, 505, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1247, 505, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1248, 505, 2);

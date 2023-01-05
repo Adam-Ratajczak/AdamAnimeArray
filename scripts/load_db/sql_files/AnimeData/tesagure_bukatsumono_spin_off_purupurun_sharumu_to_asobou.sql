@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1890, CONCAT('Tesagure! Bukatsumono Spin-off Purupurun Sharumu to Asobou'), CONCAT('A spin-off of the Tesagure! Bukatsumono series.'), 1, '2015-04-05', '2015-06-28', 'Spring 2015', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/72297.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1346, 1890, '"Yappari Stand Up!!!!! (やっぱりStand Up!!!!!)"', ' by Shiori Mikami, Rumi Ookubo, Mikako Komatsu, Natsumi Takamori, Sumire Uesaka', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2045, 1890, 194);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2095, 1890, 21);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2096, 1890, 13);

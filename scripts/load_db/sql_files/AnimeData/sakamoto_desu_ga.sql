@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1598, CONCAT('Sakamoto Desu ga?'), CONCAT('Sophisticated, suave, sublime all words which describe the exceedingly handsome and patently perfect Sakamoto. Though it is only his first day in high school, his attractiveness, intelligence, and charm already has the girls swooning and the guys fuming with jealousy. No one seems able to derail him, as all attempts at tripping him up are quickly foiled. His sangfroid is indomitable, his wits peerless. Will any of Sakamoto', CHAR(39), 's classmates, or even teachers, be able to reach his level of excellence? Probably not, but they just might learn a thing or two trying...<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-04-08', '2016-07-01', 'Spring 2016', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/79468.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1127, 1598, '"Nakushita Hibi ni Sayonara (無くした日々にさよなら)"', ' by Suneohair', 'js-theme-songs', 'https://open.spotify.com/track/1fqwJ7EuDICo1O8Mu5jg1H');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (686, 1598, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1719, 1598, 46);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1744, 1598, 38);

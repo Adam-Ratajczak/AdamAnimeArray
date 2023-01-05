@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Kotetsu T. Kaburagi, known as "Wild Tiger," is a veteran hero whose performance has been dwindling as of late, partially due to his inability to cooperate with other heroes. After a disappointing season in which most of the other heroes far outperformed Tiger, he is paired up with a brand new hero who identifies himself by his real name—Barnaby Brooks Jr.<br>
 <br>Barnaby, nicknamed "Bunny" by his frivolous new partner, quickly makes it clear that the two could not be more different. Though they mix as well as oil and water, Tiger and Bunny must learn to work together, both for the sake of their careers and to face the looming threats within Stern Bild.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-04-03', '2011-09-18', 'Spring 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/29466.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1351, 1898, '"Orion wo nazoru (オリオンをなぞる)"', ' by UNISON SQUARE GARDEN', 'js-theme-songs', 'https://open.spotify.com/track/0opkjjC7nn6YO8NXzkDAPP')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4705, 1898, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4706, 1898, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4707, 1898, 4);

@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (782, CONCAT('Hitsugi no Chaika: Avenging Battle'), CONCAT('The search for the remains of Emperor Gaz continues. Chaika still in search of knowing who she really is and what her purpose is. Similarly, the Red Chaika continues the search for the rest of Emperor Gaz', CHAR(39), 's remains. The Gillette corporation continues the mission to catch every last Chaika. In their adventure they give a revealing account kept secret by the Emperor, which Chaika, Fredrica, Toru, and Akari decide to uncover.<br>
 <br>(Source: ANN, edited)'), 1, '2014-10-09', '2014-12-11', 'Fall 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/3/67797.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (561, 782, '"Shikkoku wo Nuritsubuse (漆黒を塗りつぶせ)"', ' by Iori Nomizu', 'js-theme-songs', 'https://open.spotify.com/track/3wwPSaO8AxvnJk88N25KiJ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1927, 782, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1928, 782, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1929, 782, 12);

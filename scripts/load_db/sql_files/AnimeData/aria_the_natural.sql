@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As the group continues to meet interesting and unforgettable people through their daily routines, they will also come closer to the secrets that make the enigmatic and ever beautiful city of Neo Venezia so warm and alive.<br>
 <br>Welcome back to Neo Venezia: the city where miracles can be created by hand.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-04-03', '2006-09-25', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/77621.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (79, 124, '"Euphoria (ユーフォリア)"', ' by Yui Makino', 'js-theme-songs', 'https://open.spotify.com/track/3rkgKM75u0cdUG8yRzOYhU');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (80, 124, '"Natsumachi (夏待ち)"', ' by ROUND TABLE feat. Nino', 'js-theme-songs', 'https://open.spotify.com/track/1pU6PB9hZyoqTPTOyorkWL');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (286, 124, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (287, 124, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (138, 124, 64);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Seven years later, Joe now goes by "Nomad" and keeps a low profile, occasionally fighting in a few underground matches to get by. He is haunted by hallucinations and relies on a set of painkillers to numb his mind.<br>
 <br>During a match, Joe wins against an opponent, Chief, who purposefully loses for some extra cash from gamblers. Subsequently, Joe discovers that Chief is from a community of immigrants called the Casa. Chief is gradually trying to make enough money to purchase the land where they live illegally. At first, Joe hesitates to get involved, but eventually decides to lend the Casa a helping hand.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-04-04', '2021-06-27', 'Spring 2021', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1190/113352.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (969, 1378, '"The theme of the NOMAD"', ' by mabanua', 'js-theme-songs', 'https://open.spotify.com/track/2pUYYcI5qnN2gby1P1x5PB')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3428, 1378, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3429, 1378, 19);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1485, 1378, 23);

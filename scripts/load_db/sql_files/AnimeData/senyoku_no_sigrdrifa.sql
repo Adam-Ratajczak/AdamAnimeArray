@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Claudia "Schwertleite" Bruford is the ace of the European Valkyrie Wing. When Japan', CHAR(39), 's S-class Valkyrie passes away in battle, Claudia is relocated to Japan as a replacement. However, with a dark record of being the sole survivor in every mission that results in being nicknamed "Grim Reaper," she suspects she already knows why she was chosen.<br>
 <br>Prepared to be shunned yet again, she arrives at the Tateyama Valkyrie Wing. Little does she know, her new comrades are a bunch of oddballs who have zero intention of accepting her dreadful nickname!<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-03', '2020-12-26', 'Fall 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1576/109007.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1181, 1673, '"Higher's High"', ' by Akari Nanawo', 'js-theme-songs', 'https://open.spotify.com/track/1qsCLieHNQXNi1nRjkt0QO')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1803, 1673, 6);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30349, 1673, 1, CONCAT('Welcome to Tateyama Base!'), NULL, 'https://ebd.cda.pl/620x368/589326863');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30350, 1673, 2, CONCAT('Umihotaru Sea Assault!'), NULL, 'https://ebd.cda.pl/620x368/593217246');

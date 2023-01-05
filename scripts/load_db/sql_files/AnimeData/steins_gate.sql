@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, when Rintarou decides to attend neuroscientist Kurisu Makise', CHAR(39), 's conference on time travel, he experiences a series of strange events that lead him to believe that there is more to the "Phone Microwave" gadget than meets the eye. Apparently able to send text messages into the past using the microwave, Rintarou dabbles further with the "time machine," attracting the ire and attention of the mysterious organization SERN.<br>
 <br>Due to the novel discovery, Rintarou and his friends find themselves in an ever-present danger. As he works to mitigate the damage his invention has caused to the timeline, he is not only fighting a battle to save his loved ones, but also one against his degrading sanity.<br>
 <br>[Written by MAL Rewrite]'), 2, '2011-04-06', '2011-09-14', 'Spring 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1935/127974.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1289, 1814, '"Hacking to the Gate"', ' by Kanako Itou', 'js-theme-songs', 'https://open.spotify.com/track/78dl9lfz8vogpSxpdpWQdl')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4490, 1814, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4491, 1814, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1964, 1814, 38);

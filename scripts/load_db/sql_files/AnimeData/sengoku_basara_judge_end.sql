@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1657, CONCAT('Sengoku Basara: Judge End'), CONCAT('Based on CAPCOM', CHAR(39), 's 2010 game Sengoku Basara 3 (Sengoku Basara: Samurai Heroes), Sengoku Basara: Judge End will depict the epic Battle of Sekigahara.<br>
 <br>(Source: ANN)'), 5, '2014-07-06', '2014-09-28', 'Summer 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/62511.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1168, 1657, '"Thunderclap"', ' by Fear, and Loathing in Las Vegas', 'js-theme-songs', 'https://open.spotify.com/track/2ftDCZTbtOHAVVdPC2Trjl')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1783, 1657, 2);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1827, 1657, 31);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1828, 1657, 24);

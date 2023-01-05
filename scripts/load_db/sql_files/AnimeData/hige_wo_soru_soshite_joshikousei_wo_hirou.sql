@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The previous night, despite finally gathering the courage to confess to his boss and longtime crush, Airi Gotou, Yoshida was rejected. After drowning his sorrows at a bar with his good friend Hashimoto, Yoshida headed back to his home in a drunken stupor, only to run into Sayu Ogiwara, a runaway high schooler. She asked him to let her stay the night, and with his judgment clouded by alcohol, Yoshida complied.<br>
 <br>Now, with his head on straight but with no memory of last night', CHAR(39), 's events, Yoshida has Sayu explain just how she ended up sleeping at his apartment. Having listened to her story, Yoshida finds himself unable to kick her out—especially after learning that she came all the way from Hokkaido! So, despite his reservations about sheltering an underage girl, Yoshida allows her to stay, and their life together begins.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-04-05', '2021-06-28', 'Spring 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1146/113477.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (540, 750, '"Omoide Shiritori (おもいでしりとり)"', ' by DIALOGUE+', 'js-theme-songs', 'https://open.spotify.com/track/21I2N3whjE3lanhe0CuJNH');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1834, 750, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1835, 750, 7);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (827, 750, 106);

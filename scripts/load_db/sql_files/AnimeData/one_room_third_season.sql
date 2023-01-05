@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1409, CONCAT('One Room Third Season'), CONCAT('Third season of One Room. '), 1, '2020-10-06', '2020-12-22', 'Fall 2020', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1553/109101.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (992, 1409, '"Taiyou to Rainbow (太陽とレインボー)"', ' by Natsuki Momohara (Rie Murakawa)', 'js-theme-songs', '');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1517, 1409, 122);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25558, 1409, 1, CONCAT('Kotokawa Akira Is Clingy'), '2020-10-06', 'https://ebd.cda.pl/620x368/59091924d');
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (25559, 1409, 2, CONCAT('Kotokawa Akira Is Worried About It'), NULL, 'https://ebd.cda.pl/620x368/59472293d');

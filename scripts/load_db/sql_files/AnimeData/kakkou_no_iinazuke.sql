@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (944, CONCAT('Kakkou no Iinazuke'), CONCAT('Nagi Umino and Erika Amano, a studious high school student and a social media star, had nothing that linked them together—until they found out they were swapped at birth. When the sudden news is revealed to both of their families, their parents quickly devise a proposition with neither Nagi', CHAR(39), 's nor Erika', CHAR(39), 's knowledge: in order to restore them both to their rightful families and ensure everyone', CHAR(39), 's happiness, the two should get engaged.<br>
 <br>When informed of this, Nagi and Erika are quick to reject the absurd plan, refusing to go along with their parents', CHAR(39), ' wishes. But, with neither party willing to back down, only time can tell where their relationship will go.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-24', '2022-10-02', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1285/120529.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (670, 944, '"Dekoboko (凸凹)"', ' by Kiyoe Yoshioka', 'js-theme-songs', 'https://open.spotify.com/track/59zVkMccrN10JrDGdV4JeG')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (415, 944, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2286, 944, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2287, 944, 7);

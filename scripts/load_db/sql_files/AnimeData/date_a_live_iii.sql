@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (394, CONCAT('Date A Live III'), CONCAT('Shidou Itsuka carries on with his quest for Ratatoskr in finding Spirits and trying to seal their powers, all while maintaining his relationships with the ones he had already sealed. Moreover, as new Spirits appear, he must undergo more complicated trials—all to put a stop to further disasters as he discovers more about the Spirits', CHAR(39), ' origin.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2019-01-11', '2019-03-29', 'Winter 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1055/100468.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (284, 394, '"Last Promise"', ' by Erii Yamazaki', 'js-theme-songs', 'https://open.spotify.com/track/3n0z4EYGSVg05caYFoTSAH');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (925, 394, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (926, 394, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (927, 394, 3);

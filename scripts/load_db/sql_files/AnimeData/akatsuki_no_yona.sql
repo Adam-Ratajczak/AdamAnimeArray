@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Yona', CHAR(39), 's perfect world comes crashing down when a heinous act of treason threatens to erase all that she holds dear, including her birthright as the princess of Kouka. Left with no one to trust but her childhood friend and loyal bodyguard Son Hak, she is forced to flee the palace. Faced with the perils of surviving in the wild with a target on her back, Yona realizes that her kingdom is no longer the safe haven it once was.<br>
 <br>Free from the shackles of naivety, Yona vows to do everything in her power to become strong enough to crush her enemies. With Hak by her side, she must piece together the remains of an ancient legend that might be the key to reclaiming her kingdom from those who conspired to steal it from her.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-10-07', '2015-03-24', 'Fall 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/64225.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (34, 61, '"Akatsuki no Yona (暁のヨナ)"', ' by Kunihiko Ryo', 'js-theme-songs', 'https://open.spotify.com/track/3EyWHf7bkEK2FtkXTjq5bh')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (34, 61, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (143, 61, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (144, 61, 2);

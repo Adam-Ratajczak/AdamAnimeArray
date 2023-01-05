@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The shy and easily flustered Miyano harbors an embarrassing secret—he is a "fudanshi," a boy who likes boys', CHAR(39), ' love (BL) manga. The last thing he wants is for other students to find out, but through a slip of the tongue, he reveals the truth to Sasaki. Intrigued, the clueless Sasaki asks to borrow a book to read, which he is given very reluctantly. To Miyano', CHAR(39), 's surprise, Sasaki enjoys the BL that he receives and asks for more, marking a shift in their strange dynamic.<br>
 <br>Although Sasaki appears to possess some personal agenda, his feelings for Miyano become complicated the more time they spend together. As they now share a common interest, their relationship is poised to change and further develop.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-01-10', '2022-03-28', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1182/119308.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1140, 1615, '"Mabataki (瞬き)"', ' by Miracle Chimpanzee (ミラクルチンパンジー)', 'js-theme-songs', 'https://open.spotify.com/track/5FS9KaSs34YFQtwOZKVgFh')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4021, 1615, 17);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4022, 1615, 8);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1738, 1615, 46);

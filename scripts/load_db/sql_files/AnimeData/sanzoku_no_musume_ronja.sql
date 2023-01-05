@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1612, CONCAT('Sanzoku no Musume Ronja'), CONCAT('The story is about a girl named Ronja who is the daughter of a chief of a tribe of bandits and lives in a huge castle in the forest with the bandits. The story follows Ronja as she encounters mystical creatures, makes friends with another young child like herself, and experiences life in the forest.'), 1, '2014-10-11', '2015-03-28', 'Fall 2014', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/68125.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1137, 1612, '"Player"', ' by Mari Natsuki', 'js-theme-songs', 'https://open.spotify.com/track/40Ra29rZ861Z5zurrgJ8S5');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1733, 1612, 181);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1734, 1612, 171);
 INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (29469, 1612, 1, CONCAT('Born in the Storm'), '2014-10-11', 'https://streamtape.com/e/7DDkMaVXvRiAkwO/');

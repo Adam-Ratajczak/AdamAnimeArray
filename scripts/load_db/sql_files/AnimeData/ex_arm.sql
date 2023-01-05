@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>While initially reluctant to fight, Akira soon recalls his brother', CHAR(39), 's words from before the accident. The memory inspires him to take action, possessing Alma', CHAR(39), 's body to fight his opponents using martial arts. Once Alma plugs him into one of the ship', CHAR(39), 's ports, he discovers the devastating potential of his EX-ARM by effortlessly hacking and assuming control of the vessel.<br>
 <br>Upon safely arriving back on land, Akira meets the other members of the EX-ARM Countermeasure Prevention Team, a police division working to mitigate the effects of EX-ARMs. Witnessing the atrocities committed by those who seek the power of EX-ARMs, he resolves to join the team and put an end to the terror caused by these weapons.<br>
 <br>[Written by MAL Rewrite]'), 2, '2021-01-11', '2021-03-29', 'Winter 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1847/113935.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (360, 499, '"Rise Again"', ' by AIRFLIP', 'js-theme-songs', 'https://open.spotify.com/track/427dGLaS9w3Qdap4a5dsEv')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (555, 499, 85);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (521, 499, 1);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (522, 499, 4);

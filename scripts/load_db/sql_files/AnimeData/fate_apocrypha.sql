@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Many years later, the magi clan Yggdmillennia announces its possession of the Holy Grail, and intends to leave the Mage', CHAR(39), 's Association. In response, the Association sends 50 elite magi to retrieve the Grail however, all but one are killed by an unknown servant. The lone survivor is used as a messenger to convey Yggdmillennia', CHAR(39), 's declaration of war on the Association.<br>
 <br>As there are only two parties involved in the conflict, the Holy Grail War takes on an unusual form. Yggdmillennia and the Mage', CHAR(39), 's Association will each deploy seven master-servant pairs, and the side that loses all its combatants first will forfeit the artifact. As the 14 masters summon their servants and assemble on the battlefield, the magical world shivers in anticipation with the rise of the Great Holy Grail War.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-07-02', '2017-12-31', 'Summer 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/86573.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (370, 511, '"Eiyuu Unmei no Uta (英雄 運命の詩)"', ' by EGOIST ', 'js-theme-songs', 'https://open.spotify.com/track/2NAWetxu8cigewSiBR6WhU');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1262, 511, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1263, 511, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1264, 511, 9);

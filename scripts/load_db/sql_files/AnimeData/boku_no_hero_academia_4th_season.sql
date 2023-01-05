@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As Midoriya', CHAR(39), 's classmates further their own abilities through various internships, up-and-coming villain Kai Chisaki utilizes his terrifying powers to gather favor in the criminal underworld. Known by the moniker Overhaul, Chisaki', CHAR(39), 's ambitions collide with the League of Villains and its leader, Tomura Shigaraki.<br>
 <br>Through his work with Sir Nighteye, Midoriya discovers Chisaki', CHAR(39), 's crime syndicate and the villain', CHAR(39), 's hostile relationship with a mysterious young girl named Eri. Fearing for the child', CHAR(39), 's safety, Midoriya and his upperclassman Mirio Toogata must work together to put an end to Chisaki', CHAR(39), 's reign of terror.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-10-12', '2020-04-04', 'Fall 2019', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1412/107914.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (175, 245, '"Polaris"', ' by BLUE ENCOUNT', 'js-theme-songs', 'https://open.spotify.com/track/28DlaPydCnrs8NxYOnUPZ8')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (121, 245, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (275, 245, 77);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (271, 245, 13);

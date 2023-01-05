@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1410, CONCAT('Ongaku Shoujo (TV)'), CONCAT('There are eleven girls that consist the C-class Ongaku Shoujo idol unit under Pine Records. Despite generating red sales marks and not being very popular, Producer Ikebashi and the members are trying their very best to up their levels. Nevertheless, Ikebashi suggests recruiting a new member for Ongaku Shoujo someone who can act as a catalyst for the success of the group. Thus, an audition was opened, leading to the soon-to-be legendary group', CHAR(39), 's meeting to a girl named Hanako.<br>
 <br>(Source: MAL News)'), 1, '2018-07-06', '2018-09-21', 'Summer 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1811/91043.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (993, 1410, '"Eien Shounen (永遠少年)"', ' by Yui Ogura', 'js-theme-songs', 'https://open.spotify.com/track/0T49DA1LlOxjFKAOvILIEL')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (610, 1410, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3493, 1410, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3494, 1410, 7);

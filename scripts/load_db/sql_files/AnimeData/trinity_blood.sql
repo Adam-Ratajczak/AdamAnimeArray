@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>To combat terrorist organizations, the Vatican has implemented the AX unit. Led by Cardinal Caterina Sforza, the AX agents investigate vampire-related disturbances with hopes that the Terrans and the Methuselah will one day achieve peaceful coexistence. Amongst the AX unit is priest Abel Nightroad—a seemingly disoriented but gentle-hearted fellow who is a fierce vampire slayer on the battlefield. Joining the unit as his partner is agent Sister Esther Blanchett, a brave and gentle young nun troubled with a tragic past. <br>
 <br>As the two grow closer, they begin to uncover signs of malicious schemes and dark forces working in the shadows. But the path they walk is riddled with misfortune that might just force them to confront the memories that plague their hearts.<br>
 <br>[Written by MAL Rewrite]'), 2, '2005-04-29', '2005-10-28', 'Spring 2005', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/24649.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1385, 1946, '"Dress (BLOODY TRINITY MIX)"', ' by BUCK-TICK', 'js-theme-songs', 'https://open.spotify.com/track/2Y3RBBBub98vYZzzdH3gcb');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1386, 1946, '"Broken Wings"', ' by Tomoko Tane', 'js-theme-songs', 'https://open.spotify.com/track/1mIFAbX8z0Q4aPKueXTe8u');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (811, 1946, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4842, 1946, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4843, 1946, 12);

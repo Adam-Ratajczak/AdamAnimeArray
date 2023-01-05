@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (80, CONCAT('Amanchu! Advance'), CONCAT('Second season of Amanchu!.'), 2, '2018-04-07', '2018-06-23', 'Spring 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1095/95063.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (47, 80, '"Crosswalk"', ' by Minori Suzuki', 'js-theme-songs', 'https://open.spotify.com/track/30swB3pqXVmqKYEucndomA')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (183, 80, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (184, 80, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (185, 80, 3);

@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>A llama-headed ', CHAR(39), 'teacher', CHAR(39), ' gathers them after level 1 is cleared to explain how the game will proceed.<br>
 <br>Will this group of gamers succeed, and make it back to their real lives?<br>
 <br>(Source: MangaHelpers)'), 1, '2019-07-07', '2019-09-22', 'Summer 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1725/102251.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (920, 1320, '"not GAME"', ' by Tasuku Hatanaka (畠中祐)', 'js-theme-songs', 'https://open.spotify.com/track/2qiSlliehs5VU9feMwMTPz')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3272, 1320, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3273, 1320, 6);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1425, 1320, 50);

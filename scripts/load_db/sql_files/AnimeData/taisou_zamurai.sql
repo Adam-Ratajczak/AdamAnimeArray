@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Together with his exuberant and supportive nine-year-old daughter, Rei, Joutarou takes a trip to Ego Wonderland to break the bitter news to her. However, their excursion ends in an odd encounter with a peculiar self-proclaimed ninja named Leonardo. He follows them home and interrupts Joutarou', CHAR(39), 's every attempt at telling his daughter.<br>
 <br>Upon learning that Leonardo hopes to witness his gymnastics again, Joutarou astounds Japan with his announcement that he is not retiring. Joutarou dedicates himself to the biggest challenge of his career to prove that the gymnastics world is right where he belongs.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-11', '2020-12-20', 'Fall 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1484/109365.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1313, 1846, '"Yume ja Nai (夢?（ゆめじゃない）)"', ' by Joutarou Aragaki (Daisuke Namikawa), Leonardo (Kensho Ono), Tetsuo Minamino (Yuki Kaji)', 'js-theme-songs', '');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (769, 1846, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4580, 1846, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4581, 1846, 7);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Following his father', CHAR(39), 's disappearance inside one of the biggest gates in Gatepia, Minato is urged by his childhood friend Yutoria to become the president of his father', CHAR(39), 's treasure-hunting company—the Kibou Company. He reluctantly agrees and meets with the other employees: the priest Makoto, the soldier Akari, and the accountant Guide.<br>
 <br>Thus, Minato begins his tenure as president. As he and his comrades strive to fulfill various missions and other assorted tasks in order to keep their small company alive, they will uncover the mystery behind their former leader', CHAR(39), 's sudden departure.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-04-05', '2020-06-28', 'Spring 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1044/106309.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1187, 1682, '"Hurry Love"', ' by Azumi Waki (和氣あず未)', 'js-theme-songs', 'https://open.spotify.com/track/5Yi4CZWuxYc3Ar0N5SPrFL');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4166, 1682, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4167, 1682, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4168, 1682, 12);

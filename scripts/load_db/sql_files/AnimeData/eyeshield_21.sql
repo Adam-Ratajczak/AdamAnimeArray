@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As Hiruma wants to conceal Sena', CHAR(39), 's identity from other clubs, Sena is forced to hide under the visored helmet of "Eyeshield 21," a mysterious running back wearing the number 21 jersey. The legendary Eyeshield 21 can supposedly run at the speed of light and has achieved remarkable feats in the United States during his time at the Notre Dame College.<br>
 <br>Accustomed to avoiding his problems in the past, Sena', CHAR(39), 's specialty might just help him become the new secret weapon of the Deimon Devil Bats. As he interacts with his teammates, Sena gradually gains more self-confidence and forges valuable bonds along the way.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2005-04-06', '2008-03-19', 'Spring 2005', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/66961.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (361, 502, '"BLAZE LINE"', ' by Coming Century', 'js-theme-songs', '');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (362, 502, '"Be Free"', ' by Rikken'z', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1238, 502, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1239, 502, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1240, 502, 6);

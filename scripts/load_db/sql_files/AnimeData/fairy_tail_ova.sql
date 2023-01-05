@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (506, CONCAT('Fairy Tail OVA'), CONCAT('When the members of Fairy Tail aren', CHAR(39), 't destroying towns or defeating powerful foes, they', CHAR(39), 're attending school, travelling back in time, visiting water parks, and taking on odd jobs from strange clients. No matter where they go, a fun adventure always awaits, sometimes in the most unexpected form!<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2011-04-15', '2013-06-17', '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/65661.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (366, 506, '"Eternal Fellows"', ' by Kakihara Tetsuya', 'js-theme-songs', 'https://open.spotify.com/track/2e5gpzvoWvZ2a0LiIZtsPj')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (225, 506, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1250, 506, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1251, 506, 2);

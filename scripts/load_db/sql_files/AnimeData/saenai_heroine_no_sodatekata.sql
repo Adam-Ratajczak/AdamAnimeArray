@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>He successfully recruits childhood friend Eriri Spencer Sawamura to illustrate and literary elitist Utaha Kasumigaoka to write the script for his visual novel, while he directs. Super-group now in hand, Tomoya only needs an inspiration to base his project on, and luckily meets the beautiful, docile Megumi Katou, who he then models his main character after.<br>
 <br>Using what knowledge he has, Tomoya creates a new doujin circle with hopes to touch the hearts of those who play their game. What he does not realize, is that to invoke these emotions, the creators have had to experience the same feelings in their own lives.<br>
 <br>[Written by MAL Rewrite]'), 5, '2015-01-16', '2015-03-27', 'Winter 2015', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/68783.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1119, 1584, '"Kimiiro Signal (君色シグナル)"', ' by Luna Haruna', 'js-theme-songs', 'https://open.spotify.com/track/6nBBFzrciNnxEaMuG7ZYam')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3944, 1584, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3945, 1584, 7);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3946, 1584, 14);

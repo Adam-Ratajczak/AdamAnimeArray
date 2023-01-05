@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Due to the disparity between Earth and this new world, Makoto', CHAR(39), 's inherent physical and magical capabilities awaken, making him extremely powerful. He meets various demihumans and mythical beings who all end up being captivated with his characteristics and join Makoto in building a new community where all of them can peacefully coexist.<br>
 <br>Nevertheless, despite this success, Makoto still yearns to meet fellow humans. In a world where the goddess herself has barred him from interacting with his kind, it is up to Makoto and his companions to fulfill his desire—and perhaps reform society along the way.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-07-07', '2021-09-22', 'Summer 2021', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1950/116474.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1397, 1955, '"Gamble (ギャンブル)"', ' by syudou', 'js-theme-songs', 'https://open.spotify.com/track/13So3NLN0wAesr39YSZQef')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4874, 1955, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4875, 1955, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4876, 1955, 12);

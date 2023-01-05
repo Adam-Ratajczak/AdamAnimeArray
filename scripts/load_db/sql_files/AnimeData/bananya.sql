@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (175, CONCAT('Bananya'), CONCAT('Above a nondescript kitchen counter quietly hangs a bunch of ripe, yellow bananas. Suddenly, one of the slender fruits begins to shake, gently at first but slowly increasing in ferocity until it tears itself away from the rest. With a graceful landing, the long and curvy edible gradually rolls back its golden peels, revealing what lies beneath its firm covering to be... a cat?<br>
 <br>This mysterious feline-fruit hybrid is named Bananya. Carefree and gentle, the adorable creature dreams of one day becoming a luscious bananya bathed in chocolate. Together with his fellow bananya, this kitten cloaked in yellow passes its days without a care in the world, enjoying a rather calm and peaceful existence as it experiences what the world has to offer.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-07-04', '2016-09-26', 'Summer 2016', '3 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/80200.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (121, 175, '"Lucky Holiday (ラッキーホリデー)"', ' by AXELL with Bananya (Yuki Kaji)', 'js-theme-songs', 'https://open.spotify.com/track/2mBM8ft6OOPTkYv8ExiHuj');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (82, 175, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (403, 175, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (404, 175, 8);

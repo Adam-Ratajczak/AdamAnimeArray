@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (790, CONCAT('Hoozuki no Reitetsu 2nd Season: Sono Ni'), CONCAT('The second cour of Hoozuki no Reitetsu season 2.'), 1, '2018-04-08', '2018-07-01', 'Spring 2018', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1113/92465.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (567, 790, '"Haikei, Jigoku yori (拝啓、地獄より)"', ' by Jigoku no Sata All Stars (Hiroki Yasumoto, Takashi Nagasako, Yumiko Kobayashi, Hiroki Gotou, Takashi Matsuyama, Satomi Sato, Yui Ogura, Atsumi Tanezaki x YOUR SONG IS GOOD)', 'js-theme-songs', 'https://open.spotify.com/track/57bbIRH8YFtEx4Me9zJyR7')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (358, 790, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1939, 790, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1940, 790, 9);

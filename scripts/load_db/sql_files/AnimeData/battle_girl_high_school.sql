@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (188, CONCAT('Battle Girl High School'), CONCAT('Based on COLOPL', CHAR(39), 's school action role-playing game. Set in the year 2045. The world has been contaminated by Irousu (mysterious invaders who suddenly appeared), 1, without a powerful army or even weapons.<br>
 <br>The Shinjugamine Girls Academy is a school for these "Hoshimori" (Star Guardians) destined to fight the Irousu. The player is assigned to this academy to train the girls and take back the contaminated Earth. And so, once again, the chimes echo through the sun-strewn schoolyard to mark the beginning of classes today...<br>
 <br>(Source: ANN, edited)'), 4, '2017-07-03', '2017-09-18', 'Summer 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/87837.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (134, 188, '"Hoshi no Kizuna (ホシノキズナ)"', ' by Shinjugamine Girls Academy Hoshimori Class', 'js-theme-songs', 'https://open.spotify.com/track/4fKlCTqzkcBd0rVwEnovCZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (436, 188, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (437, 188, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (438, 188, 3);

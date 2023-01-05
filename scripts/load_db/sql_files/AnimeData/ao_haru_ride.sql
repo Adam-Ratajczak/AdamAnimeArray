@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Nevertheless, scattered among Futaba', CHAR(39), 's unpleasant memories are the treasured moments with the boy she had a crush on, Kou Tanaka. Unfortunately, that spell abruptly ended on a sour note when he suddenly stopped attending school and never came back. When Futaba finds out that Kou has returned—with a different last name this time—she can already feel the butterflies in her stomach. However, Kou Mabuchi is not the warm boy that she remembers from her days in middle school he is now taller, more charismatic and withdrawn—making him far less approachable.<br>
 <br>Futaba believes that if she returns to her former self, Kou will begin to take notice of her again. But is she prepared to sacrifice her bubble of normalcy and risk losing her friends in the process?<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2014-07-08', '2014-09-23', 'Summer 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/64813.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (61, 99, '"Sekai wa Koi ni Ochiteiru (世界は恋に落ちている)"', ' by CHiCO with HoneyWorks', 'js-theme-songs', 'https://open.spotify.com/track/0PWIc3fMjsnfxv2SyQ2lRx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (46, 99, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (223, 99, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (224, 99, 7);

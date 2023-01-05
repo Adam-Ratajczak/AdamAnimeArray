@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Twenty-Fifth Bam is a boy who had only known a dark cave, a dirty cloth, and an unreachable light his entire life. So when a girl named Rachel came to him through the light, his entire world changed. Becoming close friends with Rachel, he learned various things about the outside world from her. But when Rachel says she must leave him to climb the Tower, his world shatters around him. Vowing to follow after her no matter what it takes, he sets his sight on the tower, and a miracle occurs.<br>
 <br>Thus begins the journey of Bam, a young boy who was not chosen by the Tower but opened its gates by himself. They call his kind "Irregulars"—beings that have shaken the very foundation of the Tower each time they set foot inside it.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2020-04-02', '2020-06-25', 'Spring 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1702/106229.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (675, 950, '"TOP"', ' by Stray Kids', 'js-theme-songs', 'https://open.spotify.com/track/6tuhGVjqfYYs0MYxapWibK')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (417, 950, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2299, 950, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2300, 950, 9);

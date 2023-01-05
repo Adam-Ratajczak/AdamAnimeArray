@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1516, CONCAT('Radiant'), CONCAT('Nemeses—powerful and mysterious demonic entities that fall from the sky and vaporize anything they touch. The only ones who can combat these creatures are Sorcerers, those who have survived an encounter with a Nemesis but were infected in the process.<br>
 <br>Seth, a Sorcerer from Pompo Hills, sets out on an adventure to exterminate all these Nemeses. Accompanying him are Doc and Mélie, fellow Sorcerers who share his ideal. Their main objective is to bring about a world where Sorcerers are no longer persecuted for being infected, and to that end, desire to destroy the source of the Nemeses themselves: the mythical Radiant.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-10-06', '2019-02-23', 'Fall 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1318/95345.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1077, 1516, '"Utopia"', ' by 04 Limited Sazabys', 'js-theme-songs', 'https://open.spotify.com/track/5co3rBpmrBiHQoOtROYgax')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3769, 1516, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3770, 1516, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3771, 1516, 9);

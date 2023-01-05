@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1741, CONCAT('Shounen Hollywood: Holly Stage for 50'), CONCAT('Second Season of Shounen Hollywood: Holly Stage for 49.'), 1, '2015-01-10', '2015-04-04', 'Winter 2015', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/70705.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1232, 1741, '"HOLLY TRIP"', ' by Shounen Hollywood [Kakeru Kazama (Ryota Ohsaka), Ikuma Amaki (Tetsuya Kakihara), Kira Sakeki (Daiki Yamashita), Daiki Tomii (Shouta Aoi), Shun Maiiyama (Kensho Ono)]', 'js-theme-songs', 'https://open.spotify.com/track/4Aa0Nmjgurnz7cEXUmMCvQ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1880, 1741, 44);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1936, 1741, 36);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1937, 1741, 6);

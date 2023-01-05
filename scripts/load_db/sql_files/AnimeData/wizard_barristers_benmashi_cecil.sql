@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2042, CONCAT('Wizard Barristers: Benmashi Cecil'), CONCAT('The story takes place in Tokyo in 2018, where normal humans and those who can use magic coexist. As a result, there are laws against using magic, and a "magic courtroom" exists to preside over lawsuits regarding magic use. In these cases, "Benmashi" or wizard barristers defend those who use magic. The anime follows Cecil, the youngest Benmashi in history, and her associates as they defend clients in these cases.<br>
 <br>(Source: ANN)'), 1, '2014-01-13', '2014-03-31', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/58145.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1463, 2042, '"JUSTITIA"', ' by Lia', 'js-theme-songs', 'https://open.spotify.com/track/5DtM70LfRbBfUsgI4N0xUn')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5080, 2042, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5081, 2042, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2214, 2042, 129);

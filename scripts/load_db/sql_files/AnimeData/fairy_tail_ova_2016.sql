@@ -3,7 +3,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As the Fairy Tail girls soak in the hot water together with their first master, Mavis Vermillion, they notice that despite the pleasant atmosphere in the bathhouse, Mavis is gloomy. When Warrod Sequen unexpectedly appears, he shares a century-old story about Mavis burying a secret treasure. While Natsu and his team set out to find the treasure to remind Mavis of the good old days, a dispute between Fairy Tail', CHAR(39), 's original members comes to light.<br><br>Yousei-tachi no Christmas (Fairies', CHAR(39), ' Christmas)
 <br>Fairy Tail members help their beloved city of Magnolia get into the holiday spirit. After a long day of hard work, Natsu and his friends gather to celebrate Christmas with alcohol and games, which soon escalates in real Fairy Tail fashion.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-05-17', '2016-12-16', '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/80112.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (367, 507, '"Give me five!"', ' by Chihiro Yonekura', 'js-theme-songs', 'https://open.spotify.com/track/56gw1aG7KTQVy9ZK68k42S')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (226, 507, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1253, 507, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1254, 507, 2);

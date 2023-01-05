@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Uncle', CHAR(39), 's beloved daughter Min-chan does not believe that such a vulgar fatty could be her father, and casts him out of his own home. Distraught and homeless, he joins up with his perverted neighbor Yamada-san, a small man with a fondness for streaking, and sets out to convince Min-chan that he is her father.<br>
 <br>Full of sexual innuendo and slapstick humor, To Be Hero follows Uncle as he befriends bizarre allies and combats even more bizarre foes, fighting for the future of earth against aliens and—more importantly—his future with his daughter.<br>
 <br>[Written by MAL Rewrite]'), 1, '2016-10-05', '2016-12-21', 'Fall 2016', '11 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/82347.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1356, 1904, '"Ainikoiyo (アイニコイヨ)"', ' by BRATS', 'js-theme-songs', 'https://open.spotify.com/track/05p580WKPMu9r2OHiaxZPL');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4721, 1904, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4722, 1904, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4723, 1904, 7);

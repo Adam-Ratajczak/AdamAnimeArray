@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Claiming to be a legendary detective, Siesta enlists Kimizuka to be her sidekick. Though Kimizuka refuses at first, with Siesta', CHAR(39), 's insistence, he eventually joins her—marking the start of a grand adventure spanning the entire world, preventing multiple threats that could spell doom for humanity along the way.<br>
 <br>Unfortunately, after three years of their unpredictable yet enjoyable time together, Siesta abruptly passes away. Distraught, Kimizuka tries to leave all memories of her behind, but as he begins to meet more people, it seems that Siesta', CHAR(39), 's influence will never truly die.<br>
 <br>[Written by MAL Rewrite]'), 1, '2021-07-04', '2021-09-19', 'Summer 2021', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1843/115815.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1321, 1858, '"Koko de Ikiteru. (ここで生きてる。)"', ' by Mary x jon-YAKITORY (めありー×jon-YAKITORY)', 'js-theme-songs', 'https://open.spotify.com/track/18MFFBKQ9ocC5ylPHlRfBH')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4601, 1858, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4602, 1858, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4603, 1858, 4);

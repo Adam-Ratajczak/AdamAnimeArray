@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1600, CONCAT('Saki Zenkoku-hen'), CONCAT('Saki Miyanaga, along with the rest of Kiyosumi High School', CHAR(39), 's mahjong team, proceeds to the national level of the Interhigh Mahjong Championship. However, reaching the top will prove difficult as she faces opponents on par with and, quite possibly, exceeding her skills. Even so, she refuses to back down, vowing to stop at nothing to fulfill her goal: to see her sister face-to-face once more.<br>
 <br>[Written by MAL Rewrite]'), 1, '2014-01-06', '2014-04-07', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/57979.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1129, 1600, '"New SPARKS!"', ' by Miyuki Hashimoto', 'js-theme-songs', 'https://open.spotify.com/track/1l1m4oPjvOzc52hrXWpxC9')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1721, 1600, 16);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1748, 1600, 13);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1749, 1600, 9);

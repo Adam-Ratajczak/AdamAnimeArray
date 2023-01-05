@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1037, CONCAT('Kiratto Pri☆chan'), CONCAT(' First-year middle school girls Mirai Momoyama and Emo Moegi are two aspiring idols who decide to use the "Pri☆Chan System," a system used by famous people and companies to broadcast content. Like many girls starting their own channels and uploading content, the pair decide to become their own producers, starting their own channel in an attempt to become Pri☆Chan idols.<br>
 <br>(Source: ANN)'), 1, '2018-04-08', '2019-03-31', 'Spring 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1628/95071.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (739, 1037, '"Kiratto Start (キラッとスタート)"', ' by Run Girls, Run!', 'js-theme-songs', 'https://open.spotify.com/track/4RZ1eG7m3j45AJqJBK6lQY')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (469, 1037, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1126, 1037, 98);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1127, 1037, 177);

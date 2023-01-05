@@ -2,8 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Due to their utter contempt for all teachers, the class', CHAR(39), ' students use psychological warfare to mentally break any new homeroom teacher they get, forcing them to quit and leave school. However, Onizuka isn', CHAR(39), 't your average teacher, and he', CHAR(39), 's ready for any challenge in his way.<br>
 <br>Bullying, suicide, and sexual harassment are just a few of the issues his students face daily. By tackling the roots of their problems, Onizuka supports them with his unpredictable and unconventional methods—even if it means jumping off a building to save a suicidal child. Thanks to his eccentric charm and fun-loving nature, Class 3-4 slowly learns just how enjoyable school can be when you', CHAR(39), 're the pupils of the Great Teacher Onizuka.<br>
 <br>[Written by MAL Rewrite]'), 7, '1999-06-30', '2000-09-17', 'Summer 1999', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/13/11460.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (461, 649, '"Driver's High"', ' by L'Arc~en~Ciel', 'js-theme-songs', 'https://open.spotify.com/track/0pJLK4Xxfs2Fg6COHpA7zh');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (462, 649, '"Last Piece"', ' by Kirari', 'js-theme-songs', 'https://open.spotify.com/track/4WRp6spRY8rIyzbQeng6jG');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (295, 649, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1601, 649, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1602, 649, 13);

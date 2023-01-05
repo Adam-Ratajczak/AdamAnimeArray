@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1061, CONCAT('Koisuru Tenshi Angelique: Kokoro no Mezameru Toki'), CONCAT('A young girl named Ange is summoned to a Sacred Land and is chosen as the Legendary Etoile, whose mission is to save the newly-born Cosmos of the Holy Beast, which has recently fallen under a crisis. With the support of nine Guardians (who have the power of nine elements), she embarks on a journey to save the dying land of the Holy Beast and to discover her true self. <br><br>(Source: ANN)'), 2, '2006-07-08', '2006-09-30', 'Summer 2006', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/76293.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (758, 1061, '"Infinite Love"', ' by GRANRODEO', 'js-theme-songs', 'https://open.spotify.com/track/1qBQAgT9lhTjKiK9hAWKbU');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (478, 1061, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2570, 1061, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2571, 1061, 12);

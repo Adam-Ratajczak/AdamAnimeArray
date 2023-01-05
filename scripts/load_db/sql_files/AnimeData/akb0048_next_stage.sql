@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (63, CONCAT('AKB0048: Next Stage'), CONCAT('In the year since the 77th generation understudies joined AKB0048, the Deep Galactic Trade Organization [DGTO] and DES have stepped up their attacks on entertainment. In response, AKB0048 brings back the general elections and the center nova position. The understudies are now thrusted into a new competition directly against the successors. But as AKB0048 brings back policies not seen since Acchan', CHAR(39), 's disappearance, a new more powerful enemy is quietly moving behind the scenes.<br>
 <br>(Source: ANN)'), 1, '2013-01-06', '2013-03-31', 'Winter 2013', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/44450.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (36, 63, '"Aruji Naki Sono Koe (主なきその声)"', ' by NO NAME', 'js-theme-songs', '')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (74, 63, 43);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (67, 63, 5);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (68, 63, 6);

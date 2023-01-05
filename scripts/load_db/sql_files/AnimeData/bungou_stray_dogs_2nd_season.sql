@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, one night, Ango disappears. A photograph taken at the bar is all that is left of the three together.<br>
 <br>Fast forward to the present, and Dazai is now a member of the Armed Detective Agency. The Guild, an American gifted organization, has entered the fray and is intent on taking the Agency', CHAR(39), 's work permit. They must now divide their attention between the two groups, the Guild and the Port Mafia, who oppose their very existence.   <br>
 <br>[Written by MAL Rewrite]'), 1, '2016-10-06', '2016-12-16', 'Fall 2016', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/88585.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (190, 270, '"Reason Living"', ' by SCREEN mode', 'js-theme-songs', 'https://open.spotify.com/track/6OxshsKktUpFcSaN1NAP4h')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (134, 270, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (621, 270, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (622, 270, 4);

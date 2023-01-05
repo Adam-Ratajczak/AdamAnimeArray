@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>After a chance encounter where the two "save" the young model Tsubame Misuzaki from her overprotective bodyguard, a connection instantly sparks between Asakusa and Misuzaki, as both share an intense passion for art and animation. Whereas Asakusa is interested in backgrounds and settings, Misuzaki loves drawing the human form. Sensing a money-making opportunity, Kanamori suggests that they start an animation club, which they disguise as a motion picture club since the school already has an anime club. Thus begins the trio', CHAR(39), 's journey of producing animation that will awe the world. <br>
 <br>From the brilliant mind of Masaaki Yuasa, Eizouken ni wa Te wo Dasu na! is a love letter to animation, wildly creative in its approach, and a testament to the potential of the medium.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-01-06', '2020-03-23', 'Winter 2020', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1680/110451.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (343, 479, '"Easy Breezy"', ' by chelmico', 'js-theme-songs', 'https://open.spotify.com/track/4B0iIMQz88iQiMlRP47fJ1')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (218, 479, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1175, 479, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1176, 479, 13);

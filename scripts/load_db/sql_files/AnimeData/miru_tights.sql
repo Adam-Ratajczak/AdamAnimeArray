@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1263, CONCAT('Miru Tights'), CONCAT('Light showers accompany falling cherry blossoms as they flood the view of another April morning, marking the start of a new school year for students Homi Moegi, Ren Aikawa, and Yua Nakabeni. Discovering that they all share the same class, the three playfully reunite as the new semester begins.<br>
 <br>Starting another important time of their lives, the girls deepen their friendship through laughter, happiness, sadness, and all other struggles that come their way—all the while wearing dazzling, silky nylon tights.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-05-11', '2019-07-27', '', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1122/103222.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (881, 1263, '"True Days (Ren ver.) (True Days (レンver.))"', ' by Ren Aikawa (Haruka Tomatsu)', 'js-theme-songs', 'https://open.spotify.com/track/5chj5yV5A5SH7GlcRM63bj');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (551, 1263, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3100, 1263, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3101, 1263, 3);

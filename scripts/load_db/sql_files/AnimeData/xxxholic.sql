@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2057, CONCAT('xxxHOLiC'), CONCAT('Kimihiro Watanuki can see spirits and other assorted supernatural creatures, which is quite a bothersome ability he strongly dislikes. On the way home one day, while plagued by some spirits, he is inexplicably compelled to enter a strange house. There, he encounters Yuuko, a mysterious woman who claims to be able to rid him of the ability to see and attract the troublesome creatures—for a price. She demands that he work at her "store" that grants wishes to people, and thus begins Watanuki', CHAR(39), 's adventures through weird and wonderful events.<br>
 <br>[Written by MAL Rewrite]'), 1, '2006-04-07', '2006-09-29', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/21858.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1470, 2057, '"19sai"', ' by Shikao Suga', 'js-theme-songs', 'https://open.spotify.com/track/3qfppeFBUSbNJx8LLJmna0');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1471, 2057, '"Reason"', ' by Fonogenico', 'js-theme-songs', 'https://open.spotify.com/track/6FIl9mjnEYzE8ZPfmkM6SS');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (852, 2057, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5108, 2057, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5109, 2057, 6);

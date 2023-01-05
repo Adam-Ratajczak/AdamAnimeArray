@@ -1,0 +1,47 @@
+@import 'src/styles/colors';
+
+#PlayerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: $bottom-color-blue;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#Player{
+    width: auto;
+    height: 500px;
+    width: 900px;
+}
+
+#PlayerHeaders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#PlayerHeaders > q{
+    color: lightblue;
+}
+
+#EpisodeList{
+    display: flex;
+    flex-direction: row;
+    background-color: $bottom-tilted-color;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#EpisodeBtnWidget{
+    width: 50%;
+}

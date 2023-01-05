@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2066, CONCAT('Yami Shibai 4'), CONCAT('Excited children gather around the enigmatic masked Storyteller once more. His unique kamishibai storytelling draws them into tales of fear and dread. These are dark and foreboding stories, which could happen to anyone...<br>
 <br>This season has tales of a salaryman who buries a dead cat, only to be haunted soon after a college student and her cheap new apartment that hides a ghastly secret boys exploring an abandoned haunted house before coming across a strange fish tank a man who finds himself on the wrong bus, and in more danger than he thought possible and a young couple', CHAR(39), 's visit to an amusement park, which suddenly takes a dark turn. All these stories and more await in Yami Shibai 4.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-01-16', '2017-03-27', 'Winter 2017', '4 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/83113.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1478, 2066, '"Yume Oi Bito (夢負い人)"', ' by Takuto', 'js-theme-songs', 'https://open.spotify.com/track/1NJjtKi7iUsN0E1mPZb2um');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5134, 2066, 20);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5135, 2066, 11);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5136, 2066, 10);

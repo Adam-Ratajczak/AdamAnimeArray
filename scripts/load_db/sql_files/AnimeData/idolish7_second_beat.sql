@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (827, CONCAT('IDOLiSH7: Second Beat!'), CONCAT('Following their performance at the Black or White event, the idol group IDOLiSH7 is at the height of its popularity, with offers for various concerts and work coming in every day, much to the joy of the seven boys and their manager. However, as their fame continues to rise, Riku Nanase', CHAR(39), 's health begins worsening due to the heavy workload.<br>
 <br>With the gigantic idol duo Re:vale showing interest in the group and the reopening event of the Zero Arena coming up, IDOLiSH7: Second Beat follows IDOLiSH7 as they not only struggle to adapt to the challenges of the idol life but also to face their personal troubles, all while continuously meeting the expectations of their treasured fans.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-04-05', '2020-12-27', 'Spring 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1962/106361.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (589, 827, '"DiSCOVER THE FUTURE"', ' by IDOLiSH7', 'js-theme-songs', 'https://open.spotify.com/track/1996GO8XdzaIzstVxlQ6VT')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (907, 827, 45);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (917, 827, 36);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (918, 827, 6);

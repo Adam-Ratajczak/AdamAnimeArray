@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1433, CONCAT('Otome wa Boku ni Koishiteru'), CONCAT('Mizuho can', CHAR(39), 't believe his ears when Grandpa', CHAR(39), 's will is read out. Grandpa', CHAR(39), 's final wish is for Mizuho to attend the same academy as Mizuho', CHAR(39), 's mother. The catch is it', CHAR(39), 's an all-girls school. With the help of friend Mariya however, he gets a makeover good enough to fool everyone at the academy. <br>
 <br>(Source: ANN)'), 1, '2006-10-08', '2006-12-24', 'Fall 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/75483.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1012, 1433, '"Love Power"', ' by Aice5', 'js-theme-songs', 'https://open.spotify.com/track/5pv51Mkx6YJuPANhkF9KgV');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3552, 1433, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3553, 1433, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3554, 1433, 7);

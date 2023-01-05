@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1152, CONCAT('Lucky☆Star'), CONCAT('Lucky☆Star follows the daily lives of four cute high school girls—Konata Izumi, the lazy otaku the Hiiragi twins, Tsukasa and Kagami (sugar and spice, respectively) and the smart and well-mannered Miyuki Takara.<br>
 <br>As they go about their lives at school and beyond, they develop their eccentric and lively friendship and making humorous observations about the world around them. Be it Japanese tradition, the intricacies of otaku culture, academics, or the correct way of preparing and eating various foods—no subject is safe from their musings.<br>
 <br>[Written by MAL Rewrite]'), 1, '2007-04-08', '2007-09-17', 'Spring 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1561/115660.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (820, 1152, '"Uchuu Tetsujin Kyoodain (宇宙鉄人キョーダイン)"', ' by Aya Hirano', 'js-theme-songs', 'https://open.spotify.com/track/1i1AXP0X1deAtNfnvwaxC8');
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1249, 1152, 14);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1271, 1152, 28);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1272, 1152, 38);

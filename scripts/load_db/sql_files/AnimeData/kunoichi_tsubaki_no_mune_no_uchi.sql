@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1093, CONCAT('Kunoichi Tsubaki no Mune no Uchi'), CONCAT('Tsubaki hails from an all-female clan of ninjas hidden deep in the forest. While a strict code guides the many kunoichi in training, the most important rule the young women must adhere to is: never interact with men, for they are far too dangerous to be trusted.<br>
 <br>As the leader of Team Dog, Tsubaki has many duties she must handle. However, despite being a skilled trainee, she begins to react strangely whenever the topic of men surfaces. Unaware of what mysterious feelings are taking over her heart, Tsubaki', CHAR(39), 's growing curiosity soon interferes with her ability to keep up with her work.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-10', '2022-07-03', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1724/121343.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (781, 1093, '"Highlight Highlight (ハイライト・ハイライト)"', ' by the peggies', 'js-theme-songs', 'https://open.spotify.com/track/4n9ZDnOKEFlOUvQvLZqUJ3')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (490, 1093, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1187, 1093, 22);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (1200, 1093, 28);

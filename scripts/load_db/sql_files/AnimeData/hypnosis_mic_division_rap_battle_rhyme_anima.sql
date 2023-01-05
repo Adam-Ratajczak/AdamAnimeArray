@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>As a result of swooping in during the chaos, the all-female Party of Words rules over the Japanese government. Women in Japan now live in Chuuouku, while men battle over surrounding territories outside the ward through rap battles.<br>
 <br>With intentions unknown, the Party of Words begins to gather the former members of the now-disbanded legendary rap crew The Dirty Dawg to fight not for territory or war, but for their respective crew', CHAR(39), 's pride and honor in the greatest rap battle of all time. The first Division Rap Battle is about to commence, and practice isn', CHAR(39), 't something these rappers are going to need.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-03', '2020-12-26', 'Fall 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1677/106540.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (581, 815, '"Hypnosis Mic -Rhyme Anima- (ヒプノシスマイク -Rhyme Anima-)"', ' by Division All Stars', 'js-theme-songs', 'https://open.spotify.com/track/6KPz9deEnFK7OWmkwpuSjB')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1999, 815, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2000, 815, 3);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (892, 815, 6);

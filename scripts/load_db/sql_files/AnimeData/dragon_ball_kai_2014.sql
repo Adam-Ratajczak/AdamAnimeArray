@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (455, CONCAT('Dragon Ball Kai (2014)'), CONCAT('Remastered version of the Majin Buu saga that adheres more to the manga', CHAR(39), 's story.'), 1, '2014-04-06', '2015-06-28', 'Spring 2014', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/59275.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (324, 455, '"Kuu-Zen-Zetsu-Go (空•前•絶•後)"', ' by Takayoshi Tanimoto (Dragon Soul)', 'js-theme-songs', 'https://open.spotify.com/track/4C3nb1e9Shnv03eSbO0Zr9')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (209, 455, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1107, 455, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1108, 455, 2);

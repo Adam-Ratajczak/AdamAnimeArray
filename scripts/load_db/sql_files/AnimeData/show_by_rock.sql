@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>However, the path there is long and tough, and keeping in high spirits is important. By battling against other strange bands, Plasmagica slowly grows toward a top-grade band. In the end, they', CHAR(39), 'll be a band that becomes the driving force of MIDICITY', CHAR(39), 's music industry... Maybe?<br>
 <br>Gonna be a music millionaire!<br>
 <br>(Source: Sanrio)'), 4, '2016-10-02', '2016-12-18', 'Fall 2016', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/80734.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1236, 1746, '"Heart wo Rock!! (ハートをRock!!)"', ' by Plasmagica', 'js-theme-songs', 'https://open.spotify.com/track/2JjpJpUd1Al6s2uO17dmow')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4328, 1746, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4329, 1746, 6);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1885, 1746, 87);

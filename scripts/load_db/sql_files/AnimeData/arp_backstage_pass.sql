@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (129, CONCAT('ARP Backstage Pass'), CONCAT('ARP: A 4-member dance and vocal group created by the latest AR technology. This popular group got their start with Avex, and are unique for their interactive concerts which combine highly-skilled song and dance routines with a format that changes based on how much the fans are cheering them on.<br>
 <br>(Source: Crunchyroll)'), 5, '2020-01-13', '2020-03-30', 'Winter 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1559/110721.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (84, 129, '"Burn it up"', ' by ARP', 'js-theme-songs', 'https://open.spotify.com/track/5MArrkmNEt9CDc1Y34e9mi')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (145, 129, 67);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (126, 129, 36);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (127, 129, 6);

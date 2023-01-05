@@ -1,7 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1007, CONCAT('Kiba'), CONCAT('In a dystopian future, two friends dream of freedom... and gain more than they bargain for! Hothead Zed is on the run from the authorities, while his brainy pal Noah struggles with his own battered body. Both find a magical world that seems to offer escape and power undreamed of. Join Zed and his powerful, rebellious spirit Amir Gaul on their search for the ultimate power. It', CHAR(39), 's a force that can save the world—or destroy life as we know it. This is the world of KIBA! Where you must harness the power within and fight with all you got!<br>
 <br>(Source: RightStuf)'), 1, '2006-04-02', '2007-03-25', 'Spring 2006', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1522/114250.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (715, 1007, '"Sanctuary"', ' by Nami Tamaki', 'js-theme-songs', 'https://open.spotify.com/track/0CQqzhvE6mz9AalZQbJfdd');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (716, 1007, '"Solar Wind"', ' by Afromania', 'js-theme-songs', '');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2441, 1007, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2442, 1007, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2443, 1007, 10);

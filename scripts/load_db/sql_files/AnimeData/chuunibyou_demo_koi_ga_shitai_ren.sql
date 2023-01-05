@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (332, CONCAT('Chuunibyou demo Koi ga Shitai! Ren'), CONCAT('The awkward lovebirds, Yuuta Togashi and Rikka Takanashi are now living together as they enter a new school year, but their adorable relationship remains stagnant. Yuuta struggles to adapt to having a chuuni girlfriend while the gang—Sanae Dekomori, Shinka Nibutani and Kumin Tsuyuri—are still keeping up with their quirks despite having advanced a grade. Making matters worse, another chuuni girl from Yuuta', CHAR(39), 's middle school, Satone Shichimiya, appears...<br>
 <br>With the various events revolving around Yuuta, will he be able to develop his relationship with Rikka?<br>
 <br>[Written by MAL Rewrite]<br>'), 2, '2014-01-09', '2014-03-27', 'Winter 2014', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/56643.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (238, 332, '"VOICE"', ' by ZAQ', 'js-theme-songs', 'https://open.spotify.com/track/6ysyGkEAHi2obFmW21eSyl');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (762, 332, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (763, 332, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (764, 332, 7);

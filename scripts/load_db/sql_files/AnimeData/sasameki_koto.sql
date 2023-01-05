@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1616, CONCAT('Sasameki Koto'), CONCAT('Murasame Sumika is popular in the high school for her excellence in the marks and sports. However, she has a secret: she is in love with her classmate Kazama Ushio. Ushio also has a liking to the love between girls, but she hasn', CHAR(39), 't noticed Sumika', CHAR(39), 's feelings and has always been refused by other girls.'), 1, '2009-10-08', '2009-12-31', 'Fall 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/75225.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1141, 1616, '"Kanashii Hodo Aoku"', ' by Natsumi Kiyoura', 'js-theme-songs', 'https://open.spotify.com/track/5JbPRgSVv6q6PSlTT8HhII')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4023, 1616, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4024, 1616, 16);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4025, 1616, 7);

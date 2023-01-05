@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1337, CONCAT('Natsume Yuujinchou Roku'), CONCAT('Takashi Natsume has grown accustomed to his encounters with youkai through the Book of Friends, which contains the names of youkai whom his grandmother, Reiko Natsume, has sealed in contracts. These encounters allow Natsume to better understand the youkai, Reiko, and himself. <br>
 <br>The Book of Friends is a powerful tool that can be used to control youkai it is sought after by both youkai and exorcists alike. Natsume just wants to live out his daily life in peace but is constantly disrupted by these experiences. If he is to end this torment, Natsume must explore more about the book and the world of exorcism, as well as begin to open his heart to those who can help him.<br>
 <br>[Written by MAL Rewrite]'), 1, '2017-04-12', '2017-06-21', 'Spring 2017', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/84416.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (938, 1337, '"Floria (フローリア)"', ' by Tomohisa Sako', 'js-theme-songs', 'https://open.spotify.com/track/4zbuKQ5shNTlcvYwFy0VIi')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (581, 1337, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3321, 1337, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3322, 1337, 8);

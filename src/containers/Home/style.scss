@@ -1,0 +1,36 @@
+@import 'src/styles/colors';
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    background-color: $bottom-color-blue;
+    height: 100%;
+}
+
+#ContentHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+#SampleAnimeList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

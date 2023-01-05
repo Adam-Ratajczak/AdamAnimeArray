@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (184, CONCAT('Basquash!'), CONCAT('On the planet Earthdash, its inhabitants gaze on its moon and the technologically advanced lunar city of Mooneyes with awe. Dan JD, a boy living in Rollingtown on Earthdash', CHAR(39), 's surface, gets caught up in Bigfoot Basketball—a fast-paced sport played with giant Bigfoot robots.<br>
 <br>(Source: AniDB)'), 1, '2009-04-03', '2009-10-02', 'Spring 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/13680.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (131, 184, '"free"', ' by Yu Yamada', 'js-theme-songs', 'https://open.spotify.com/track/0BK9QktcEAPlEh0oaOqD8m');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (421, 184, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (422, 184, 19);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (207, 184, 43);

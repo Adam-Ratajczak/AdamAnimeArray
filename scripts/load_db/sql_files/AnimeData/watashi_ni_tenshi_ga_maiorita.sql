@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2031, CONCAT('Watashi ni Tenshi ga Maiorita!'), CONCAT('College student Miyako Hoshino is quite shy around other people. She mostly spends her time in her room making cosplay outfits. When her fifth-grade sister Hinata brings her classmate Hana Shirosaki home, Miyako instantly becomes captivated with Hana', CHAR(39), 's cuteness. <br>
 <br>Miyako tries to do various things, ranging from making Hana wear cosplay dresses to giving her sweets. This gives Hana a bad impression of her at first, but Miyako will do anything to grow closer to the angel who has descended before her.<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-01-08', '2019-03-26', 'Winter 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1778/100470.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1454, 2031, '"Kimama na Tenshitachi (気ままな天使たち)"', ' by Wataten☆Five (わたてん☆5（ファイブ）)', 'js-theme-songs', 'https://open.spotify.com/track/7GXPTAop1kVgWds4ZiAboh')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5057, 2031, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5058, 2031, 16);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (5059, 2031, 8);

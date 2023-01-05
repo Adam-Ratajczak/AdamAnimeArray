@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>The mysterious Garou continues his rampage against the Hero Association, crushing every hero he encounters. He turns out to be the legendary martial artist Silverfang', CHAR(39), 's best former disciple and seems driven by unknown motives. Regardless, this beast of a man seems unstoppable. Intrigued by this puzzling new foe and with an insatiable thirst for money, Saitama decides to seize the opportunity and joins the interesting martial arts competition.<br>
 <br>As the tournament commences and Garou continues his rampage, a new great menace reveals itself, threatening the entire human world. Could this finally be the earth-shattering catastrophe predicted by the great seer Madame Shibabawa?<br>
 <br>[Written by MAL Rewrite]'), 1, '2019-04-10', '2019-07-03', 'Spring 2019', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1247/122044.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (990, 1406, '"Seijaku no Apostle (静寂のアポストル)"', ' by JAM Project', 'js-theme-songs', 'https://open.spotify.com/track/1YlmNQyqgqmih1o96NGCZZ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (608, 1406, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3489, 1406, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3490, 1406, 12);

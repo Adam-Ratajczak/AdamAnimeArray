@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>From Natsu', CHAR(39), 's rivalrous antics with ice wizard Gray Fullbuster to the frightening presence of the unmatched combat goddess Erza Scarlet, Fairy Tail', CHAR(39), 's powerful mages have a slight penchant for trouble. Through all the lucrative odd jobs and adventures to save the world from destruction lies an absolute and unyielding trust stronger than family that has formed between each guild member.<br>
 <br>Teaming up with Natsu, Gray, and Erza, Lucy finds herself amidst the guild', CHAR(39), 's most misfit wizards. But as they constantly stand in the eye of every danger, there is one name that never ceases to resurface: Zeref, the feared master of dark magic.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2009-10-12', '2013-03-30', 'Fall 2009', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/18179.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (364, 504, '"Snow fairy"', ' by FUNKIST', 'js-theme-songs', 'https://open.spotify.com/track/3LqLpgyNp9s8puIUXvvMPx')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (223, 504, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1244, 504, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1245, 504, 2);

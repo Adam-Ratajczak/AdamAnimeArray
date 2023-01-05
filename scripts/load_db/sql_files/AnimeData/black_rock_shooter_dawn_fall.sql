@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (226, CONCAT('Black★★Rock Shooter:  Dawn Fall'), CONCAT('In the year 2062, Earth finds itself fiercely battling Artemis—an AI which rebelled against humankind following a grand-scale workforce automation project failure years prior. In the hope of winning the war, a group of three highly skilled human warriors is assembled, known as the guardians of humanity.<br>
 <br>Empress, the last surviving guardian, wakes up alone in an empty research facility. Unable to recall anything from the past except a place called "Lighthouse No. 8," she begins to search for answers. It is not long before she discovers an impending threat from Artemis—and she is the sole person who can save the world from destruction.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-03', '2022-06-19', 'Spring 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1549/121866.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (159, 226, '"ASEED"', ' by ZAQ', 'js-theme-songs', 'https://open.spotify.com/track/48eYAbFWCsSEs3oKMAlI0h')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (523, 226, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (524, 226, 6);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (252, 226, 87);

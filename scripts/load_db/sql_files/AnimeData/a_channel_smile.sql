@@ -4,7 +4,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>A Picture of a Wish
 <br>Yuuko catches a cold so the others pay her a visit and help look after her. Later, the girls get together for the New Year', CHAR(39), 's shrine visit.<br>
 <br>(Source: Wikipedia)'), 1, '2012-03-21', NULL, '', '25 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/35321.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (14, 20, '"Balloon Theater (バルーンシアター)"', ' by Marina Kawano', 'js-theme-songs', 'https://open.spotify.com/track/01y83efyJu5I0WDQLFHJ45');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (12, 20, 2);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (22, 20, 16);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (26, 20, 8);

@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1554, CONCAT('Rinne no Lagrange'), CONCAT('Madoka Kyouno is an energetic girl who is full of passion. As the proud, and only, member of the Kamogawa Girls', CHAR(39), ' High School Jersey Club, she goes around helping people in need.<br>
 <br>Madoka', CHAR(39), 's life is turned upside down when she is suddenly asked by a mysterious girl named Lan to pilot a robot. Motivated by her desire to protect the people and city of Kamogawa, Madoka agrees to pilot the resurrected Vox robot to fight against extraterrestrials that have come to attack Earth.<br>
 <br>(Source: VIZ Media)'), 1, '2012-01-08', '2012-03-25', 'Winter 2012', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/7/50439.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1101, 1554, '"TRY Unite!"', ' by Megumi Nakajima', 'js-theme-songs', 'https://open.spotify.com/track/6C3eQebZNtoeBZMx4jVxSr')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3860, 1554, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3861, 1554, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3862, 1554, 3);

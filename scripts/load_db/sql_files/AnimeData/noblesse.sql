@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Meanwhile, M-21—a Union agent gone rogue during Rai', CHAR(39), 's rescue operation—joins the Ye Ran High School security staff after a proposition by the school', CHAR(39), 's director, who happens to be none other than Frankenstein himself. On the surface, M-21 is a prim and proper employee, but in truth he is shackled by his former ties to the Union and the inevitable consequences of betraying the organization.<br>
 <br>To further complicate matters, Nobles Regis K. Landegre and Seira J. Loyard enroll in the same school to investigate the Noblesse. While the Union conducts a manhunt for M-21 to extract clues regarding their missing agents, Rai is forced to keep his identity hidden while protecting all that he holds dear.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-08', '2020-12-31', 'Fall 2020', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1903/111646.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (961, 1367, '"BREAKING DAWN"', ' by Jae Joong', 'js-theme-songs', 'https://open.spotify.com/track/5DuZeF0DJcMn5TBXLK2FhI')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3409, 1367, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3410, 1367, 10);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1473, 1367, 2);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>Soon after, Yuuichi and his friends are deceived into meeting up and knocked unconscious by unknown assailants. After waking, the group find themselves confined in a white room with controversial figure Manabu-kun, who reveals that one of the five has gathered them together to clear their personal debt of twenty million yen. To pay off the amount, they must participate in a variety of psychological games that will test the true nature of their friendship and humanity.<br>
 <br>Distressed and isolated from the outside world, Yuuichi and his friends need to cooperate to complete the games. But as their concealed feelings and problematic pasts begin to surface, their seemingly unbreakable bond may soon shatter into irreparable pieces.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-04-06', '2022-06-22', 'Spring 2022', '22 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1247/121345.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1376, 1930, '"Double Shuffle (ダブルシャッフル)"', ' by Nana Mizuki', 'js-theme-songs', 'https://open.spotify.com/track/2fP2NoqPvzIVyAgSa1gIqJ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (803, 1930, 1);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2094, 1930, 41);
 INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (2145, 1930, 37);

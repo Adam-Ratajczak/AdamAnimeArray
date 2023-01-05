@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1256, CONCAT('Miira no Kaikata'), CONCAT('High school student Sora Kashiwagi is accustomed to receiving bizarre presents from his father, who is on an expedition around the world. Unfortunately, these gifts have been nothing but nightmares. As a result, when his father sends him a huge package from Egypt, Sora prepares himself for the worst, only to be greeted by Mii-kun—a cute, pint-sized mummy! While initially wary, Sora soon learns that Mii-kun is harmless, a delicate creature yearning for attention.<br>
 <br>Throughout their amusing day-to-day lives, the unlikely pair meet other people with unique pets, while also strengthening their bond together. Although keeping a pet is a difficult task, Sora is set on caring for the lovable Mii-kun.<br>
 <br>[Written by MAL Rewrite]'), 1, '2018-01-12', '2018-03-30', 'Winter 2018', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1486/93811.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (877, 1256, '"Fushigi na Tabi wa Tsuzuku no sa (不思議な旅はつづくのさ)"', ' by Tsuri Bit', 'js-theme-songs', 'https://open.spotify.com/track/1I1MmAvxwzZamzXInNNsYQ')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3080, 1256, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3081, 1256, 8);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3082, 1256, 10);

@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>In an effort to spend his expiring credits, Dunbalf had purchased a cosmetic kit and tinkered with his character however, he accidentally fell asleep during the customization process. Upon waking up, Dunbalf not only notices that the world of Ark Earth Online has become more realistic, but also discovers that he has turned into a cute girl! After reaching Alcait, he learns it has been 30 years since he supposedly disappeared.<br>
 <br>Now tasked with finding the other missing mages by King Solomon, the avid role player proclaims his new identity as Mira—the Pupil of the Wise Man Dunbalf—and ventures forth to prove his legacy.<br>
 <br>[Written by MAL Rewrite]<br>'), 1, '2022-01-12', '2022-03-30', 'Winter 2022', '23 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1583/119223.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (709, 998, '"Ready Set Go!!"', ' by Asaka', 'js-theme-songs', 'https://open.spotify.com/track/1Mg2xpVLUfGkSYF33v3o2A')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2418, 998, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2419, 998, 9);
 INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1084, 998, 195);

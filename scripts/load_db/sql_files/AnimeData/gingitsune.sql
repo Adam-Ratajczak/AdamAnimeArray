@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (610, CONCAT('Gingitsune'), CONCAT('Gintarou is a fox spirit that has been protecting the small Inari temple since the Edo era. Saeki Makoto', CHAR(39), 's family possesses the power to see the gods', CHAR(39), ' agent, but the ability is limited to one living relative at a time. When Makoto', CHAR(39), 's mother passed away while she was still young, Makoto inherited the ability as the sole remaining family member. With the help of fox spirit', CHAR(39), 's power, Makoto and Gintarou help the people of their community, in spite of their many differences.<br>
 <br>(Source: MangaHelpers, edited)'), 1, '2013-10-07', '2013-12-23', 'Fall 2013', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/56247.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (433, 610, '"tiny lamp"', ' by fhána', 'js-theme-songs', 'https://open.spotify.com/track/5xu26tZrLeTRJEnj66s75V')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (269, 610, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1500, 610, 8);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1501, 610, 10);

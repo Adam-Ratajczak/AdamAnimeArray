@@ -2,7 +2,6 @@ INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd,
 <br>On a day like any other, Kujou visits the school', CHAR(39), 's extravagant library in search of ghost stories. However, his focus soon changes as he becomes curious about a golden strand of hair on the stairs. The steps lead him to a large garden and a beautiful doll-like girl known as Victorique de Blois, whose complex and imaginative foresight allows her to predict their futures, now intertwined.<br>
 <br>With more mysteries quickly developing—including the appearance of a ghost ship and an alchemist with the power of transmutation—Victorique and Kujou, bound by fate and their unique skills, have no choice but to rely on each other.<br>
 <br>[Written by MAL Rewrite]'), 1, '2011-01-08', '2011-07-02', 'Winter 2011', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/11/27906.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (456, 639, '"Destin Histoire"', ' by yoshiki*lisa (吉木りさ)', 'js-theme-songs', 'https://open.spotify.com/track/3qaywuuaEBUWdowIerY0J7');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1581, 639, 6);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1582, 639, 4);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1583, 639, 7);

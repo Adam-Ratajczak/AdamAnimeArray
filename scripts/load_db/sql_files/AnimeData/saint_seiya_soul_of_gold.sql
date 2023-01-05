@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1591, CONCAT('Saint Seiya: Soul of Gold'), CONCAT('In the Underworld, during the fight against Hades, the 12 Gold Saints gave up their lives to destroy the Wailing Wall and allow Seiya and his friends to keep moving forward. Aioria and the Gold Saints, who should have disappeared, come back to life in this beautiful Earth full of light. How have they resurrected if they were supposed to be dead? While the big mystery remains, Aioria gets involved in a new battle and when his Cosmo exceeds its limits.. a change happens to the Leo Cloth!<br>
 <br>(Source: AniChart/AniList)'), 3, '2015-04-11', '2015-09-26', '', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1052/122018.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1122, 1591, '"Soldier Dream (聖闘士神話（ソルジャードリーム）)"', ' by Root Five', 'js-theme-songs', 'https://open.spotify.com/track/3j7RJ5eI24H25Nm3wAj2Ik');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (681, 1591, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3960, 1591, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3961, 1591, 2);

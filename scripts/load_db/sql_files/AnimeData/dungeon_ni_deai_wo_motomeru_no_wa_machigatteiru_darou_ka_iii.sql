@@ -1,6 +1,5 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (470, CONCAT('Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III'), CONCAT('Upon his run-in with a Vouivre—a monster known to be very dangerous—Hestia Familia', CHAR(39), 's captain Bell Cranel is struck with incomprehension. Despite its preceding reputation, the supposed bloodthirsty creature happens to be crying and flees from a group of adventurers. The monster, taking the form of a terrified little girl, prompts Bell to swiftly decide to hide her. Unbeknownst to him, this act of kindness will cause massive repercussions that will soon echo throughout the entire city of Orario.<br>
 <br>[Written by MAL Rewrite]'), 1, '2020-10-03', '2020-12-19', 'Fall 2020', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1523/108380.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (336, 470, '"Evergreen"', ' by sajou no hana', 'js-theme-songs', 'https://open.spotify.com/track/42IxkFE571nYC8CoRualIn');
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1149, 470, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1150, 470, 2);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1151, 470, 9);

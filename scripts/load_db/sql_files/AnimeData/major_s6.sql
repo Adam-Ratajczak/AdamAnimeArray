@@ -1,7 +1,6 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1206, CONCAT('Major S6'), CONCAT('The intense Baseball World Cup has reached its conclusion. Gorou Honda has regained his passion for baseball and is once again back in full gear. He has secured a team position with the Hornets and has travelled back to America to prepare for his spectacular debut as a Major League pitcher.<br>
 <br>However, Gorou encounters a sudden series of unexpected issues and devastating events follow, crushing his motivation and potentially reducing the baseball career that he has worked tirelessly to maintain into crumbs. In the final season of Major, Gorou must yet again overcome immense hardship in order to save his baseball career. This time there is no simple solution, as the problem is deeply rooted within his own mind...<br>
 <br>[Written by MAL Rewrite]'), 1, '2010-04-03', '2010-09-25', 'Spring 2010', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/75216.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (851, 1206, '"Kokoro e"', ' by TRIPLANE', 'js-theme-songs', 'https://open.spotify.com/track/1Kc6hTgJ4LAWiAf3OoY2tv')INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl);
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (535, 1206, 1);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2943, 1206, 12);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2944, 1206, 6);

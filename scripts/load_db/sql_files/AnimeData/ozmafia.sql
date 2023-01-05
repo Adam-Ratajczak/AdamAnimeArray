@@ -1,5 +1,4 @@
 INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1447, CONCAT('Ozmafia!!'), CONCAT('The anime will feature an original story from the game on which it is based. '), 1, '2016-07-07', '2016-09-22', 'Summer 2016', '5 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/80549.jpg');
-INSERT INTO Songs(SongID, AnimeID, Title, Artist, Type, SpotifyUrl) VALUES (1024, 1447, '"I love you more"', ' by Article One', 'js-theme-songs', 'https://open.spotify.com/track/2xTiflLpOlIgXkMZIKU99q');
 INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (625, 1447, 3);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3588, 1447, 9);
 INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3589, 1447, 7);
