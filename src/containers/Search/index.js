@@ -189,7 +189,7 @@ class Search extends Component {
 
   document.getElementById("SearchbarLarge").value = searchPhraze;
 
-  SearchFoo(animeLimit);
+  SearchFoo(0, animeLimit);
 
   document.getElementById("SearchbtnLarge").onclick = () => {
     let newState = this.state;
