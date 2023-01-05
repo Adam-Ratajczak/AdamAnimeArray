@@ -163,15 +163,15 @@ class Search extends Component {
         this.setState(newState);
       });
 
-  const SearchFoo = () => {
+  const SearchFoo = (start, len) => {
     const AnimeName = document.getElementById("SearchbarLarge").value;
 
     FilterAnimes(AnimeName, this.state.TypeList, this.state.GenreList, this.state.ThemeList, this.state.ProducerList, this.state.DemographicsList)
       .then((response) => response.json())
       .then((result) => {
-          let res = [];
+          let res = this.state.Animes;
 
-          for(let i = 0; i < Math.min(animeLimit, result.length); i++){
+          for(let i = start; i < Math.min(start + len, result.length); i++){
             res.push(result[i]);
           }
 
@@ -189,14 +189,34 @@ class Search extends Component {
 
   document.getElementById("SearchbarLarge").value = searchPhraze;
 
-  SearchFoo();
+  SearchFoo(animeLimit);
 
   document.getElementById("SearchbtnLarge").onclick = () => {
     let newState = this.state;
     newState.Animes = [];
     this.setState(newState);
 
-    SearchFoo();
+    SearchFoo(0, animeLimit);
+  }
+
+  document.getElementById("SearchBarDiv").onsubmit = (event) => {
+    let newState = this.state;
+    newState.Animes = [];
+    this.setState(newState);
+
+    SearchFoo(0, animeLimit);
+
+    event.preventDefault();
+  }
+  
+  document.onscroll = () => {
+    let documentHeight = document.body.scrollHeight;
+    let currentScroll = window.scrollY + window.innerHeight;
+    
+    let modifier = 0; 
+    if(currentScroll + modifier > documentHeight) {
+      SearchFoo(this.state.Animes.length, animeLimit);
+    }
   }
 }
 
@@ -206,10 +226,10 @@ render(){
       <Menubar />
       <div id="contentSearch">
         <div id="SearchDiv">
-          <div id="SearchBarDiv">
+          <form id="SearchBarDiv">
             <input type="text" id="SearchbarLarge" placeholder="Search..."></input>
             <input type="button" id="SearchbtnLarge" value="Find"></input>
-          </div>
+          </form>
           <div id="SearchResults">
             {this.state.Animes.map(anime => {
               return (<AnimePanel AnimeID={anime.AnimeID} />)
