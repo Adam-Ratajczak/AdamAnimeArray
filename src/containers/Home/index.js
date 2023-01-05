@@ -4,46 +4,51 @@ import {GetAnime} from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
 
+const num_sample_animes = Math.floor(window.screen.width / 270) * 3;
+
 class Home extends Component {
 
   constructor(){
     super();
     this.state = {
-      num_sample_animes: Math.floor(window.screen.width / 270) * 3,
-      siteType: window.location.href.split("/").at(-1),
       AnimeHeader: "",
       AnimeContainer: [],
       AnimeCount: 0,
-      AnimeCountBegin: 0,
     }
   }
 
-  FillList(){
-    console.log(this.state.AnimeCountBegin);
+  FillList(AnimeCountBegin){
+    let newState = this.state;
+    newState.AnimeContainer = [];
+    this.setState(newState);
+
+    const siteType = window.location.href.split("/").at(-1);
     GetAnime()
     .then((response) => response.json())
     .then((result) =>{
 
+      let AnimeCountEnd = Math.min(AnimeCountBegin + num_sample_animes, result.length);
+
       let anime_id_arr = [];
       let anime_header = ""
 
-      if(this.state.siteType == "Random"){
+      if(siteType == "Random"){
         let num = Math.floor((Math.random() * (result.length + 1)) % result.length);
         redirect("Anime/" + num);
-      }else if(this.state.siteType == "Popular"){
+      }else if(siteType == "Popular"){
         anime_header = "Top Ranked Animes";
 
-        for(let i = this.state.AnimeCountBegin; i < this.state.AnimeCountBegin + this.state.num_sample_animes; i++){
+        for(let i = AnimeCountBegin; i < AnimeCountEnd; i++){
           anime_id_arr.push(result[i].AnimeID);
         }
-      }else if(this.state.siteType == "Recomended"){
+      }else if(siteType == "Recomended"){
         anime_header = "Recomended Animes";
 
-        for(let i = this.state.AnimeCountBegin; i < this.state.AnimeCountBegin + this.state.num_sample_animes; i++){
+        for(let i = AnimeCountBegin; i < AnimeCountEnd; i++){
           let AnimeNum = Math.floor((Math.random() * (result.length + 1)) % result.length);
           anime_id_arr.push(result[AnimeNum].AnimeID);
         }
-      }else if(this.state.siteType == "Newest"){
+      }else if(siteType == "Newest"){
         anime_header = "Recently Added Animes";
         let to_sort = result;
         to_sort.sort((a, b) =>{
@@ -54,7 +59,7 @@ class Home extends Component {
           return a.AiredBegin < b.AiredBegin;
         });
 
-        for(let i = this.state.AnimeCountBegin; i < this.state.AnimeCountBegin + this.state.num_sample_animes; i++){
+        for(let i = AnimeCountBegin; i < AnimeCountEnd; i++){
           anime_id_arr.push(to_sort[i].AnimeID);
         }
       }
@@ -67,9 +72,6 @@ class Home extends Component {
       }
 
       this.setState({
-        num_sample_animes: Math.floor(window.screen.width / 270) * 3,
-        siteType: window.location.href.split("/").at(-1),
-        AnimeCountBegin: this.state.AnimeCountBegin,
         AnimeHeader: anime_header,
         AnimeContainer: container,
         AnimeCount: result.length,
@@ -79,17 +81,11 @@ class Home extends Component {
 
   componentDidMount(){
     this.FillList(0);
-    this.forceUpdate();
   }
 
   render(){
-    const tab_count = Math.ceil(this.state.AnimeCount / this.state.num_sample_animes);
-
     const foo = (event, index) => {
-      let newState = this.state;
-      newState.AnimeCountBegin = (index - 1) * this.state.num_sample_animes;
-      this.setState(newState);
-      this.FillList(this.state.AnimeCountBegin);
+      this.FillList((index - 1) * num_sample_animes);
     }
 
     return (
@@ -103,7 +99,8 @@ class Home extends Component {
             {this.state.AnimeContainer}
           </div>
         </div>
-        <TabUnit TabCount={tab_count} TabCollapse="10" onChange={foo}/>
+        {/* <TabUnit TabCount={Math.ceil(this.state.AnimeCount / num_sample_animes)} TabCollapse="10" onChange={foo}/> */}
+        <TabUnit TabCount="142" TabCollapse="10" onChange={foo}/>
       </div>
     )
   }
