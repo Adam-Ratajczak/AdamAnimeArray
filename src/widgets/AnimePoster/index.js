@@ -1,5 +1,4 @@
-import React, {useEffect, useState, Tooltip} from 'react'
-import redirect from '../../redirect'
+import React, {useEffect, useState} from 'react'
 import { GetAnime, GetEpisodes, GetAnimeType } from '../../db_module'
 import './style.scss';
 
@@ -45,12 +44,9 @@ function AnimePoster(props){
     short_title = AnimeTitle;
   }
 
-  function redirection(){
-    redirect('/anime/' + props.AnimeID.toString())
-  }
-
   return (
-    <div class="AnimePoster" onClick={redirection}>
+    <a href={'/anime/' + props.AnimeID.toString()}>
+    <div class="AnimePoster">
       <div class="AnimePosterHover">
           <div class="AnimePosterHeader tooltip">
           <span class="tooltiptext">{AnimeTitle}</span>
@@ -77,6 +73,7 @@ function AnimePoster(props){
           </table>
       </div>
     </div>
+    </a>
   )
 }
 

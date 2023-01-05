@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import {Menubar, AnimePoster, EpisodeBtn} from '../../widgets'
-import {GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetAnimeType, GetEpisodes, GetFilterEntry, FilterAnimes} from "../../db_module"
+import {Menubar, EpisodeBtn} from '../../widgets'
+import {GetAnime, GetEpisodes,} from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
 

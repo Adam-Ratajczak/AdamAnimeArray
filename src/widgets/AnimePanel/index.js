@@ -1,5 +1,4 @@
-import React, {useEffect, useState, Tooltip} from 'react'
-import redirect from '../../redirect'
+import React, {useEffect, useState} from 'react'
 import { GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetDemographics, GetEpisodes, GetAnimeType } from '../../db_module'
 import './style.scss';
 
@@ -113,12 +112,9 @@ function AnimePanel(props){
     })
   }, []);
 
-  function redirection(){
-    redirect('/anime/' + props.AnimeID.toString())
-  }
-
   return (
-    <div class="AnimePanel" onClick={redirection}>
+    <a href={'/anime/' + props.AnimeID.toString()}>
+    <div class="AnimePanel">
       <div class="AnimePanelHover">
           <div class="AnimePanelHeader">
             <h1>{AnimeTitle}</h1>
@@ -165,6 +161,7 @@ function AnimePanel(props){
           </div>
       </div>
     </div>
+    </a>
   )
 }
 

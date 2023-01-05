@@ -14,32 +14,16 @@ class Menubar extends Component{
           </form>
         </div>
         <div id="MenuContent">
-          <div class="Button" id="anime_top_ranked"><p>Top Ranked</p></div>
-          <div class="Button" id="anime_newest"><p>Newest</p></div>
-          <div class="Button" id="anime_recomended"><p>Recomended</p></div>
-          <div class="Button" id="anime_random"><p>Random</p></div>
+          <a href='/Popular'><div class="Button" id="anime_top_ranked"><p>Top Ranked</p></div></a>
+          <a href='/Newest'><div class="Button" id="anime_newest"><p>Newest</p></div></a>
+          <a href='/Recomended'><div class="Button" id="anime_recomended"><p>Recomended</p></div></a>
+          <a href='/Random'><div class="Button" id="anime_random"><p>Random</p></div></a>
         </div>
       </div>
     )
   }
 
   componentDidMount(){
-    document.getElementById("anime_top_ranked").addEventListener("click", (event) =>{
-      redirect("/Popular")
-
-    });
-    document.getElementById("anime_newest").addEventListener("click", (event) =>{
-      redirect("/Newest")
-
-    });
-    document.getElementById("anime_recomended").addEventListener("click", (event) =>{
-      redirect("/Recomended")
-
-    });
-    document.getElementById("anime_random").addEventListener("click", (event) =>{
-      redirect("/Random")
-
-    });
     document.getElementById("Search").addEventListener("submit", (event) =>{
       let searchphraze = document.getElementById("Searchbar").value;
 

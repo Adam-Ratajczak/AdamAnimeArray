@@ -1,18 +1,13 @@
-import react, {} from 'react';
-import redirect from '../../redirect';
 import './style.scss'
 
 function EpisodeBtn(props){
-    const onClick = (index) =>{
-        redirect("/anime/" + props.AnimeID + "/ep/" + index);
-    }
     let btns = [];
 
     for(let i = 1; i <= props.EpisodeCount; i++){
         if(i == props.EpisodeNum){
-            btns.push((<div class="EpBtn EpBtnSelected" onClick={() => onClick(i)}><h3>{i}</h3></div>))
+            btns.push((<a href={"/anime/" + props.AnimeID + "/ep/" + i}><div class="EpBtn EpBtnSelected"><h3>{i}</h3></div></a>))
         }else{
-            btns.push((<div class="EpBtn EpBtnRegular" onClick={() => onClick(i)}><h3>{i}</h3></div>))
+            btns.push((<a href={"/anime/" + props.AnimeID + "/ep/" + i}><div class="EpBtn EpBtnRegular"><h3>{i}</h3></div></a>))
         }
     }
 

@@ -1,4 +1,4 @@
-import React, {Component, useCallback, useEffect, useState} from 'react'
+import React, {Component} from 'react'
 import {Menubar, AnimePoster, TabUnit} from '../../widgets'
 import {GetAnime} from "../../db_module"
 import redirect from '../../redirect'
