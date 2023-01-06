@@ -10,7 +10,7 @@
 #AnimeInfoContent{
     display: flex;
     flex-direction: row;
-    background-color: var(--background-color-theme, $background-color-theme);
+    background-color: $bottom-color-blue;
     height: 100%;
     color: white;
 }
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    background-color: $background-tilted-color;
+    background-color: $bottom-tilted-color;
 }
 
 #AnimeInfoContainer > h3{
@@ -28,7 +28,7 @@
 
 #AnimeInfoContainer > h2{
     margin-left: 10px;
-    color: var(--text-tilted-color, $text-tilted-color);;
+    color: lightblue;
 }
 
 #AnimeInfoContainer > table{
