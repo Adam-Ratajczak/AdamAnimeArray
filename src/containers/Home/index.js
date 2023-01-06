@@ -13,7 +13,7 @@ class Home extends Component {
     this.state = {
       AnimeHeader: "",
       AnimeContainer: [],
-      AnimeCount: 0,
+      AnimeTabUnit: 0
     }
   }
 
@@ -71,22 +71,25 @@ class Home extends Component {
         container.push((<AnimePoster AnimeID={AnimeID}/>))
       }
 
+      const foo = (event, index) => {
+        this.FillList((index - 1) * num_sample_animes);
+      }
+
       this.setState({
         AnimeHeader: anime_header,
         AnimeContainer: container,
-        AnimeCount: result.length,
+        AnimeTabUnit: (<TabUnit TabCount={Math.ceil(result.length / num_sample_animes)} TabCollapse="10" onChange={foo}/>),
       })
     })
   }
 
   componentDidMount(){
     this.FillList(0);
+
+    this.forceUpdate();
   }
 
   render(){
-    const foo = (event, index) => {
-      this.FillList((index - 1) * num_sample_animes);
-    }
 
     return (
       <div id="main">
@@ -99,8 +102,7 @@ class Home extends Component {
             {this.state.AnimeContainer}
           </div>
         </div>
-        {/* <TabUnit TabCount={Math.ceil(this.state.AnimeCount / num_sample_animes)} TabCollapse="10" onChange={foo}/> */}
-        <TabUnit TabCount="142" TabCollapse="10" onChange={foo}/>
+        {this.state.AnimeTabUnit}
       </div>
     )
   }
