@@ -19,9 +19,9 @@ body{
     padding-right: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 2px solid $cool-color;
-    background-color: $bottom-color;
-    color: $cool-color;
+    border: 2px solid $foreground-color;
+    background-color: $background-color;
+    color: $foreground-color;
 }
 
 .CoolButtonCb{
@@ -31,31 +31,31 @@ body{
 }
 
 .CoolButtonCb:checked + .CoolButton{
-    background-color: $cool-color;
-    color: white;
+    background-color: $foreground-color;
+    color: $text-color;
 }
 
 #contentSearch{
     display: flex;
     flex-direction: row;
-    background-color: $bottom-color-blue;
+    background-color: $background-color-theme;
 }
 
 #SearchbarLarge{
-    background-color: $bottom-color;
+    background-color: $background-color;
     border: 2px solid transparent;
     height: 24px;
     width: 60%;
-    color: white;
+    color: $text-color;
     font-size: medium;
 }
 
 #SearchbtnLarge{
-    background-color: $cool-color;
-    border: 2px solid $cool-color;
+    background-color: $foreground-color;
+    border: 2px solid $foreground-color;
     height: 30px;
     width: 50px;
-    color: white;
+    color: $text-color;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -72,14 +72,14 @@ body{
     justify-content: center;
     align-items: center;
     height: 80px;
-    background-color: $bottom-tilted-color;
+    background-color: $background-tilted-color;
 }
 
 #SearchResults{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    color: white;
+    color: $text-color;
     justify-content: center;
     font-size: larger;
 }
@@ -88,11 +88,11 @@ body{
     display: flex;
     flex-direction: column;
     width: 40%;
-    background-color: $bottom-tilted-color;
+    background-color: $background-tilted-color;
     padding: 10px;
-    color: lightblue;
+    color: $text-tilted-color;
 }
 
 .GenreHeader{
-    color: white;
+    color: $text-color;
 }

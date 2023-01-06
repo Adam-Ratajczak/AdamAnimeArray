@@ -10,6 +10,7 @@ class Home extends Component {
 
   constructor(){
     super();
+    document.documentElement.style.setProperty("--foreground-color", "#FF0000");
     this.state = {
       AnimeHeader: "",
       AnimeContainer: [],

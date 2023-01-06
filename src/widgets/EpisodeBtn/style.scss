@@ -20,16 +20,16 @@
 }
 
 .EpBtnSelected{
-    background-color: $cool-color;
-    border: 2px solid $cool-color;
+    background-color: $foreground-color;
+    border: 2px solid $foreground-color;
 }
 
 .EpBtnRegular{
-    background-color: $bottom-color;
-    border: 2px solid $bottom-color-dark;
+    background-color: $background-color;
+    border: 2px solid $background-color-dark;
 }
 
 .EpBtnRegular:hover{
     background-color: $btn-hover-color;
-    border: 2px solid $bottom-color-dark;
+    border: 2px solid $background-color-dark;
 }

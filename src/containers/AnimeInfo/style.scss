@@ -2,7 +2,7 @@
 
 #AnimeInfoHeader{
     background-color: #630f78;
-    color: white;
+    color: $text-color;
     margin: 0px;
     padding-left: 50px;
 }
@@ -10,16 +10,16 @@
 #AnimeInfoContent{
     display: flex;
     flex-direction: row;
-    background-color: $bottom-color-blue;
+    background-color: $background-color-theme;
     height: 100%;
-    color: white;
+    color: $text-color;
 }
 
 #AnimeInfoContainer{
     display: flex;
     flex-direction: column;
     width: 40%;
-    background-color: $bottom-tilted-color;
+    background-color: $background-tilted-color;
 }
 
 #AnimeInfoContainer > h3{
@@ -28,7 +28,7 @@
 
 #AnimeInfoContainer > h2{
     margin-left: 10px;
-    color: lightblue;
+    color: $text-tilted-color;
 }
 
 #AnimeInfoContainer > table{
@@ -70,11 +70,11 @@
 }
 
 #SimilliarAnimeHeader{
-    color: white;
+    color: $text-color;
 }
 
 .AnimePropertyName{
-    color: white;
+    color: $text-color;
     font-weight: bold;
     width: 200px;
 }

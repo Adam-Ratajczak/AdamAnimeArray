@@ -15,9 +15,9 @@ body{
 #content404{
     display: flex;
     flex-direction: column;
-    background-color: $bottom-color-blue;
+    background-color: $background-color-theme;
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    color: white;
+    color: $text-color;
 }
