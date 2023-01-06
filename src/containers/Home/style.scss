@@ -14,7 +14,7 @@ body{
 #content{
     display: flex;
     flex-direction: column;
-    background-color: $bottom-color-blue;
+    background-color: var(--background-color-theme, $background-color-theme);
     height: 100%;
 }
 
@@ -22,7 +22,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--text-color, $text-color);
     font-size: large;
     height: 50px;
     margin-bottom: 30px;

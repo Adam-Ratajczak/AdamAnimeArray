@@ -2,7 +2,7 @@
 @import 'src/styles/tooltips';
 
 .AnimePoster{
-    background-color: $bottom-color;
+    background-color: $background-color;
     width: 250px;
     height: 400px;
     margin: 10px;
@@ -15,7 +15,7 @@
     height: 40px;
     width: 100%;
     color: whitesmoke;
-    background-color: $bottom-color-dark;
+    background-color: var(--background-color-dark, $background-color-dark);
     font-size: small;
     margin-bottom: 10px;
     font-size: 0.7em;
@@ -43,7 +43,7 @@
 }
 
 .AnimePosterInfo{
-    color: white;
+    color: var(--text-color, $text-color);
     width: 80%;
 }
 
