@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {Home, NotFound, AnimeInfo, AnimePlayer, Search} from './containers'
+import {Home, NotFound, AnimeInfo, AnimePlayer, Search, Login, Signup} from './containers'
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 
 export default function App() {
@@ -15,6 +15,8 @@ export default function App() {
           <Route path="/Newest" element={<Home />}></Route>
           <Route path="*/Newest" element={<Navigate to="/Newest"/>}></Route>
           <Route path="/Random" element={<Home />}></Route>
+          <Route path="/Login" element={<Login />}></Route>
+          <Route path="/Signup" element={<Signup />}></Route>
           <Route path='/' element={<Navigate to="/Recomended"/>}></Route>
           <Route path="/Anime/:AnimeID" element={<AnimeInfo />}></Route>
           <Route path="/Anime/:AnimeID/Ep/:EpID" element={<AnimePlayer />}></Route>

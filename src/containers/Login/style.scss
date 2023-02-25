@@ -1,0 +1,43 @@
+@import 'src/styles/colors';
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#LoginForm{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    margin: 150px;
+    padding-bottom: 50px;
+    border: 4px double $background-color-theme;
+}
+
+#AlignToCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.RightLogin{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.RightLogin > input{
+    width: 80%;
+}
+
+#LoginLink{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+#ErrorMsg{
+    color: transparent;
+}

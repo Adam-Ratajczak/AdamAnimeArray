@@ -2,10 +2,18 @@ import React, {Component} from 'react'
 import redirect from '../../redirect.js'
 import './style.scss';
 
+function LoginBtn(){
+  
+}
+
 class Menubar extends Component{
   render(){
     return (
       <div id="content">
+        <div id="LoginBox">
+          <a id="SignUpBtn" href="/SignUp">Sign up</a>
+          <a id="LoginBtn" href="/Login">Login</a>
+        </div>
         <div id="HeaderContent">
           <h1 id="aaaHeader">AdamAnimeArray</h1>
           <form id="Search">

@@ -105,8 +105,47 @@ export function FilterAnimes(name, types, genres, themes, producers, demographic
         Producers: producers,
         Demographics: demographics
     };
-
-    console.log(req);
     
     return FetchToApiPost("animes/filter", req);
+}
+
+export function CreateUser(Name, Password, Email){
+    let req = {
+        UserName: Name,
+        UserEmail: Email,
+        UserPassword: Password
+    };
+    
+    return FetchToApiPost("auth/signup", req);
+}
+
+export function LoginUser(Name, Password){
+    let req = {
+        UserName: Name,
+        UserPassword: Password
+    };
+    
+    return FetchToApiPost("auth/login", req);
+}
+
+export function LogoutUser(id, token){
+    let req = {
+        UserID: id,
+        Token: token,
+    };
+    
+    return FetchToApiPost("auth/logout", req);
+}
+
+export function ChangeUserInfo(token, Name, Password, Email, ProfileUrl, ProfilePoster){
+    let req = {
+        Token: token,
+        UserName: Name,
+        UserEmail: Email,
+        UserPassword: Password,
+        UserProfileImageUrl: ProfileUrl,
+        UserProfileImagePoster: ProfilePoster
+    };
+    
+    return FetchToApiPost("auth/changeinfo", req);
 }

@@ -76,3 +76,28 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#LoginBox{
+    height: 40px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: large;
+}
+
+#LoginBox > a{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SignUpBtn{
+    border: 2px solid white;
+}
+
+#LoginBox > a:hover{
+    background-color: #99999955;
+}

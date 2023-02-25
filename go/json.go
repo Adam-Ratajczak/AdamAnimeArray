@@ -45,3 +45,40 @@ type FilterRequest struct {
 	Producers    []int
 	Demographics []int
 }
+
+type CreateUserRequest struct {
+	UserName     string
+	UserEmail    string
+	UserPassword string
+}
+
+type ChangeUserRequest struct {
+	Token                  string
+	UserName               string
+	UserEmail              string
+	UserPassword           string
+	UserProfileImageUrl    string
+	UserProfileImagePoster string
+}
+
+type UserRequest struct {
+	UserName               string
+	UserEmail              string
+	UserProfileImageUrl    string
+	UserProfileImagePoster string
+}
+
+type LoginUserRequest struct {
+	UserName     string
+	UserPassword string
+}
+
+type UserAuthRequest struct {
+	Token     string
+	Privilege string
+}
+
+type UserAuth struct {
+	UserID int
+	Token  string
+}

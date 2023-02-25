@@ -12,7 +12,7 @@
     }
     }
     
-    execute_sql("..\\sql_files\\Tables\\AnimeTables.sql");
+    get_files("..\\sql_files\\Tables");
     get_files("..\\sql_files\\StructuralData");
     get_files("..\\sql_files\\AnimeData");
 ?>

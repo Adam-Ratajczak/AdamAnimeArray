@@ -8,14 +8,13 @@ body{
 #main{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-content: stretch;
 }
 
 #content{
     display: flex;
     flex-direction: column;
     background-color: $background-color-theme;
-    height: 100%;
 }
 
 #ContentHeader{

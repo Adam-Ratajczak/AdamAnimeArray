@@ -60,9 +60,21 @@ func main() {
 			filters.GET("/demographics", filterGetAll("Demographics"))
 			filters.GET("/demographics/:id", filterGetByID("Demographics"))
 		}
+
+	}
+	e.POST("/auth", AuthUser)
+	auth := e.Group("/auth")
+	{
+		auth.POST("/signup", CreateUser)
+		auth.POST("/login", LoginUser)
+		auth.POST("/logout", LogoutUser)
+		auth.POST("/user", UserInfo)
+		auth.POST("/changeinfo", ChangeUserInfo)
 	}
 	err = e.Start(":2138")
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	ClearTokens()
 }
