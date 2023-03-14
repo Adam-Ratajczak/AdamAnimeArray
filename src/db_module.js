@@ -137,12 +137,20 @@ export function LogoutUser(id, token){
     return FetchToApiPost("auth/logout", req);
 }
 
-export function ChangeUserInfo(token, Name, Password, Email, ProfileUrl, ProfilePoster){
+export function GetUserInfo(id){
+    let req = {
+        UserID: id,
+        Token: undefined
+    };
+    
+    return FetchToApiPost("auth/changeinfo", req);
+}
+
+export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){
     let req = {
         Token: token,
         UserName: Name,
         UserEmail: Email,
-        UserPassword: Password,
         UserProfileImageUrl: ProfileUrl,
         UserProfileImagePoster: ProfilePoster
     };

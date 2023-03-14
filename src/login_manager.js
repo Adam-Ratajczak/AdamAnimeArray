@@ -1,10 +1,16 @@
-import { LoginUser, CreateUser } from "./db_module";
+import { LoginUser, CreateUser, LogoutUser, GetUserInfo } from "./db_module";
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
 class LoginManager{
+    constructor(){
+        localStorage.setItem("UserID", -1);
+        localStorage.setItem("Token", undefined);
+        localStorage.setItem("logged_in", false);
+    }
+
     async login(user, passwd){
         const response = await LoginUser(user, passwd)
 
@@ -12,9 +18,9 @@ class LoginManager{
 
         if(status == 202){
             const res = await response.json()
-            this.UserID = res.UserID;
-            this.Token = res.Token;
-            this.login = true;
+            localStorage.setItem("UserID", res.UserID);
+            localStorage.setItem("Token", res.Token);
+            localStorage.setItem("logged_in", true);
 
             return true;
         }
@@ -30,8 +36,37 @@ class LoginManager{
         return status == 202
     }
 
-    check_credentials(permission){
+    userinfo(){
+        return GetUserInfo(this.UserID);
+    }
 
+    async check_credentials(permission){
+
+    }
+
+    async logout(){
+        const response = await LogoutUser(this.UserID, this.Token)
+
+        if(response.status == 202){
+            localStorage.setItem("UserID", -1);
+            localStorage.setItem("Token", undefined);
+            localStorage.setItem("logged_in", false);
+            return true;
+        }
+
+        return false;
+    }
+
+    UserID(){
+        localStorage.getItem("UserID");
+    }
+
+    Token(){
+        localStorage.getItem("Token");
+    }
+
+    LoggedIn(){
+        localStorage.getItem("LoggedIn");
     }
 }
 

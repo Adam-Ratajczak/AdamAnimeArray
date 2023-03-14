@@ -1,19 +1,42 @@
 import React, {Component} from 'react'
+import LoginMan from '../../login_manager.js';
 import redirect from '../../redirect.js'
 import './style.scss';
 
 function LoginBtn(){
-  
+  let btns = 0;
+  let info = false;
+  console.log(LoginMan.UserID())
+  LoginMan.userinfo()
+  .then((response) => response.status == 202 ? response.json() : false)
+  .then((result) => {
+    console.log(result);
+    info = result;
+  });
+
+  if(!LoginMan.LoggedIn()){
+    btns = (
+      <div id="LoginBox">
+        <a id="SignUpBtn" href="/SignUp">Sign up</a>
+        <a id="LoginBtn" href="/Login">Login</a>
+      </div>
+    );
+  }else{
+    btns = (
+      <div id="LoginBox">
+        <a id="SignUpBtn" href="/">{}</a>
+      </div>
+    )
+  }
+
+  return btns;
 }
 
 class Menubar extends Component{
   render(){
     return (
       <div id="content">
-        <div id="LoginBox">
-          <a id="SignUpBtn" href="/SignUp">Sign up</a>
-          <a id="LoginBtn" href="/Login">Login</a>
-        </div>
+        <LoginBtn />
         <div id="HeaderContent">
           <h1 id="aaaHeader">AdamAnimeArray</h1>
           <form id="Search">
