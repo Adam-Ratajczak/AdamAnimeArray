@@ -3,6 +3,7 @@ import LoginMan from '../../login_manager';
 import redirect from '../../redirect';
 import {Menubar} from '../../widgets'
 import './style.scss';
+import {NavLink} from 'react-router-dom';
 
 class Signup extends Component {
   render() {
@@ -21,7 +22,7 @@ class Signup extends Component {
                   <tr><td>Password:</td><td class="RightLogin"><input type="password" id="Passwd" name="Passwd" /></td></tr>
                   <tr><td>Confirm password:</td><td class="RightLogin"><input type="password" id="ConfirmPasswd" name="ConfirmPasswd" /></td></tr>
                   <tr><td></td><td class="RightLogin"><button id="Send" name="Send" >Log in</button></td></tr>
-                  <tr><td colspan="2"><a id="LoginLink" href="/Login">Already have account? Login now!</a></td></tr>
+                  <tr><td colspan="2"><NavLink id="LoginLink" to="/Login">Already have account? Login now!</NavLink></td></tr>
                   <tr><td colspan="2"><p id="ErrorMsg">Username or password incorrect!</p></td></tr>
                 </tbody>
               </table>

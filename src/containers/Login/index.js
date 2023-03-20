@@ -3,6 +3,7 @@ import LoginMan from '../../login_manager';
 import redirect from '../../redirect';
 import {Menubar} from '../../widgets'
 import './style.scss';
+import {NavLink} from 'react-router-dom';
 
 class Login extends Component {
   render() {
@@ -19,7 +20,7 @@ class Login extends Component {
                   <tr><td>Username:</td><td class="RightLogin"><input type="text" id="Username" name="Username" required/></td></tr>
                   <tr><td>Password:</td><td class="RightLogin"><input type="password" id="Passwd" name="Passwd" required/></td></tr>
                   <tr><td><label>Remember me: <input type="checkbox" id="Remember" name="Remember" /></label></td><td class="RightLogin"><button id="Send" name="Send" >Log in</button></td></tr>
-                  <tr><td colspan="2"><a id="LoginLink" href="/Signup">No account? Sign up now for free!</a></td></tr>
+                  <tr><td colspan="2"><NavLink id="LoginLink" to="/Signup">No account? Sign up now for free!</NavLink></td></tr>
                   <tr><td colspan="2"><p id="ErrorMsg">Username or password incorrect!</p></td></tr>
                 </tbody>
               </table>
