@@ -25,9 +25,9 @@ func main() {
 	}
 	defer db.Close()
 
-	tablesFromSQLsINPATHS("..\\sql_files\\Tables")
-	tablesFromSQLsINPATHS("..\\sql_files\\StructuralData")
-	tablesFromSQLsINPATHS("..\\sql_files\\AnimeData")
+	tablesFromSQLsINPATHS("../sql_files/Tables")
+	tablesFromSQLsINPATHS("../sql_files/StructuralData")
+	tablesFromSQLsINPATHS("../sql_files/AnimeData")
 }
 
 func tablesFromSQLsINPATHS(path string) {
