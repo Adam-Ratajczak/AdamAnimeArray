@@ -1,17 +1,3 @@
--- Drop all tables
-DROP TABLE IF EXISTS AnimeDemographics;
-DROP TABLE IF EXISTS AnimeProducers;
-DROP TABLE IF EXISTS AnimeGenres;
-DROP TABLE IF EXISTS AnimeRelations;
-DROP TABLE IF EXISTS AnimeThemes;
-DROP TABLE IF EXISTS Episodes;
-DROP TABLE IF EXISTS Songs;
-DROP TABLE IF EXISTS Animes;
-DROP TABLE IF EXISTS Demographics;
-DROP TABLE IF EXISTS Genres;
-DROP TABLE IF EXISTS Producers;
-DROP TABLE IF EXISTS Themes;
-DROP TABLE IF EXISTS Types;
 
 -- Types of anime in the database
 CREATE TABLE IF NOT EXISTS Types(
