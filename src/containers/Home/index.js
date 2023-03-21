@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , Redirect} from "react";
+import { useNavigate } from "react-router-dom";
 import { Menubar, AnimePoster, TabUnit } from "../../widgets";
 import { GetAnime } from "../../db_module";
-import redirect from "../../redirect";
 import "./style.scss";
 
 const num_sample_animes = Math.floor(window.screen.width / 270) * 3;
@@ -12,6 +12,8 @@ function Home({ type: siteType }) {
   const [AnimeHeader, setAnimeHeader] = useState("");
   const [AnimeContainer, setAnimeContainer] = useState([]);
   const [AnimeTabUnit, setAnimeTabUnit] = useState(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function FillList(AnimeCountBegin) {
@@ -36,7 +38,8 @@ function Home({ type: siteType }) {
         let num = Math.floor(
           (Math.random() * (result.length + 1)) % result.length
         );
-        redirect("Anime/" + num);
+        setAnimeHeader("Selecting a random anime...");
+        navigate("/Anime/" + num);
       } else if (siteType === "Popular") {
         anime_header = "Top Ranked Animes";
 
@@ -94,7 +97,7 @@ function Home({ type: siteType }) {
       console.log(e);
       setAnimeHeader(<div>Error: {e.message}</div>);
     });
-  }, [siteType]);
+  }, [siteType, navigate]);
 
   return (
     <div id="main">
