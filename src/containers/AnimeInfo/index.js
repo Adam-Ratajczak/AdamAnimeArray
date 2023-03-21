@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
+import { useParams, useLoaderData } from "react-router-dom";
 import { Menubar, AnimePoster, EpisodeBtn } from "./../../widgets";
 import {
   GetAnime,
@@ -15,145 +15,96 @@ import {
 import redirect from "../../redirect";
 import "./style.scss";
 
-function AnimeInfo() {
-  const [AnimeTitle, SetAnimeTitle] = useState(0);
-  const [AnimeDesc, SetAnimeDesc] = useState(0);
-  const [AiredBegin, SetAiredBegin] = useState(0);
-  const [AiredEnd, SetAiredEnd] = useState(0);
-  const [PosterURL, SetPosterURL] = useState(0);
-  const [Premiered, SetPremiered] = useState(0);
-  const [EpisodeNum, SetEpisodeNum] = useState(0);
-  const [AnimeType, SetAnimeType] = useState(0);
-  const [AnimeGenres, SetAnimeGenres] = useState(0);
-  const [AnimeThemes, SetAnimeThemes] = useState(0);
-  const [AnimeProducers, SetAnimeProducers] = useState(0);
-  const [AnimeDemographics, SetAnimeDemographics] = useState(0);
+export async function AnimeInfo_loader({ params }) {
+  const AnimeID = params.AnimeID;
+  let response = await GetFilterEntry(AnimeID);
+  if (response.status !== 200) {
+    redirect("/");
+  }
 
-  const [Animes, SetAnimes] = useState([]);
+  let result = await (await GetAnime(AnimeID)).json();
+  const AnimeTitle = result.AnimeTitle;
+  const AnimeDesc = result.AnimeDesc;
+  const AiredBegin = result.AiredBegin;
+  const AiredEnd = result.AiredEnd;
+  const PosterURL = result.PosterURL;
+  const Premiered = result.Premiered;
+
+  result = await (await GetEpisodes(AnimeID)).json();
+  const EpisodeNum = result.length;
+
+  result = await (await GetAnimeGenres(AnimeID)).json();
+  const AnimeGenres = result.map((e) => e.Name).join(", ");
+
+  result = await (await GetAnimeThemes(AnimeID)).json();
+  const AnimeThemes = result.map((e) => e.Name).join(", ");
+
+  result = await (await GetAnimeProducers(AnimeID)).json();
+  const AnimeProducers = result.map((e) => e.Name).join(", ");
+
+  result = await (await GetAnimeDemographics(AnimeID)).json();
+  const AnimeDemographics = result.map((e) => e.Name).join(", ");
+
+  result = await (await GetAnimeType(AnimeID)).json();
+  const AnimeType = result.Name;
+
+  result = await (await GetFilterEntry(AnimeID)).json();
+
+  const AnimeList = await (
+    await FilterAnimes("", result.Types, result.Genres, result.Themes, [], [])
+  ).json();
+  let res = [];
+  for (
+    let i = 0;
+    i <
+    Math.min(AnimeList.length - 1, Math.floor(window.screen.width / 270) * 2);
+    i++
+  ) {
+    let AnimeNum = Math.floor(
+      (Math.random() * AnimeList.length) % AnimeList.length
+    );
+    let ID = AnimeList[AnimeNum].AnimeID;
+
+    res.push(<AnimePoster AnimeID={ID} />);
+  }
+  const Animes = res;
+
+  return {
+    AnimeTitle,
+    AnimeDesc,
+    AiredBegin,
+    AiredEnd,
+    PosterURL,
+    Premiered,
+    EpisodeNum,
+    AnimeType,
+    AnimeGenres,
+    AnimeThemes,
+    AnimeProducers,
+    AnimeDemographics,
+    Animes,
+  };
+}
+
+function AnimeInfo() {
+  const {
+    AnimeTitle,
+    AnimeDesc,
+    AiredBegin,
+    AiredEnd,
+    PosterURL,
+    Premiered,
+    EpisodeNum,
+    AnimeType,
+    AnimeGenres,
+    AnimeThemes,
+    AnimeProducers,
+    AnimeDemographics,
+    Animes,
+  } = useLoaderData();
 
   const { AnimeID } = useParams();
 
-  useEffect(() => {
-    GetFilterEntry(AnimeID).then((response) => {
-      if (response.status != 200) {
-        redirect("/");
-      }
-    });
-  }, [AnimeID]);
-
-  useEffect(() => {
-    GetAnime(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        SetAnimeTitle(result.AnimeTitle);
-        SetAnimeDesc(result.AnimeDesc);
-        SetAiredBegin(result.AiredBegin);
-        SetAiredEnd(result.AiredEnd);
-        SetPosterURL(result.PosterURL);
-        SetPremiered(result.Premiered);
-      });
-  }, [AnimeID]);
-
-  useEffect(() => {
-    GetEpisodes(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        SetEpisodeNum(result.length);
-      });
-  }, [AnimeID]);
-
-  useEffect(() => {
-    GetAnimeGenres(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        let res = "";
-
-        for (let elem of result) {
-          res += elem.Name + ", ";
-        }
-
-        SetAnimeGenres(res);
-      });
-  }, [AnimeID]);
-
-  useEffect(() => {
-    GetAnimeThemes(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        let res = "";
-
-        for (let elem of result) {
-          res += elem.Name + ", ";
-        }
-
-        SetAnimeThemes(res);
-      });
-  }, [AnimeID]);
-
-  useEffect(() => {
-    GetAnimeProducers(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        let res = "";
-
-        for (let elem of result) {
-          res += elem.Name + ", ";
-        }
-
-        SetAnimeProducers(res);
-      });
-  }, [AnimeID]);
-
-  useEffect(() => {
-    GetAnimeDemographics(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        let res = "";
-
-        for (let elem of result) {
-          res += elem.Name + ", ";
-        }
-
-        SetAnimeDemographics(res);
-      });
-  }, [AnimeID]);
-
-  useEffect(() => {
-    GetAnimeType(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        SetAnimeType(result.Name);
-      });
-  }, [AnimeID]);
-
-  useEffect(() => {
-    GetFilterEntry(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        FilterAnimes("", result.Types, result.Genres, result.Themes, [], [])
-          .then((response) => response.json())
-          .then((AnimeList) => {
-            let res = [];
-            for (
-              let i = 0;
-              i <
-              Math.min(
-                AnimeList.length - 1,
-                Math.floor(window.screen.width / 270) * 2
-              );
-              i++
-            ) {
-              let AnimeNum = Math.floor(
-                (Math.random() * AnimeList.length) % AnimeList.length
-              );
-              let ID = AnimeList[AnimeNum].AnimeID;
-
-              res.push(<AnimePoster AnimeID={ID} />);
-            }
-            SetAnimes(res);
-          });
-      });
-  }, [AnimeID]);
   const options = {
     weekday: "short",
     year: "numeric",

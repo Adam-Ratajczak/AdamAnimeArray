@@ -1,71 +1,89 @@
-import React, { useState, useEffect } from 'react'
-import {Menubar, EpisodeBtn} from '../../widgets'
-import {GetAnime, GetEpisodes,} from "../../db_module"
-import redirect from '../../redirect'
-import './style.scss';
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Menubar, EpisodeBtn } from "../../widgets";
+import { GetAnime, GetEpisodes } from "../../db_module";
+import redirect from "../../redirect";
+import "./style.scss";
+import { NavLink, useParams } from "react-router-dom";
 
-function AnimePlayer(){
-  const AnimeID = window.location.href.split("/").at(-3);
-  const EpNum = window.location.href.split("/").at(-1);
+function AnimePlayer() {
+  const { AnimeID, EpID } = useParams();
 
-  const [AnimeTitle, SetAnimeTitle] = useState(0)
-  const [EpisodeTitle, SetEpisodeTitle] = useState(0)
-  const [Aired, SetAired] = useState(0)
-  const [PlayerUrl, SetPlayerUrl] = useState(0)
-  const [EpisodeNum, SetEpisodeNum] = useState(0)
-  
-  useEffect(() =>{
+  const [AnimeTitle, SetAnimeTitle] = useState("");
+  const [EpisodeTitle, SetEpisodeTitle] = useState("");
+  const [Aired, SetAired] = useState(0);
+  const [PlayerUrl, SetPlayerUrl] = useState("");
+  const [EpisodeNum, SetEpisodeNum] = useState(0);
+
+  useEffect(() => {
+    SetPlayerUrl("");
     GetAnime(AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetAnimeTitle(result.AnimeTitle);
-    })
-  }, []);
-  
-  useEffect(() =>{
+      .then((response) => response.json())
+      .then((result) => {
+        SetAnimeTitle(result.AnimeTitle);
+      });
     GetEpisodes(AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      if(EpNum > result.length){
-        redirect("/anime/" + AnimeID);
-      }
-      
-      SetEpisodeNum(result.length);
-    })
-  }, []);
-  
-  useEffect(() =>{
-    GetEpisodes(AnimeID, EpNum)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetEpisodeTitle(result.Title);
-      SetAired(result.Aired);
-      SetPlayerUrl(result.PlayerUrl);
-    })
-  }, []);
-  
-  const options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
+      .then((response) => response.json())
+      .then((result) => {
+        if (EpID > result.length) {
+          redirect("/anime/" + AnimeID);
+        }
 
-  const EpAired = new Date(Aired.Time);
-  
+        SetEpisodeNum(result.length);
+      });
+    GetEpisodes(AnimeID, EpID)
+      .then((response) => response.json())
+      .then((result) => {
+        SetEpisodeTitle(result.Title);
+        console.log("result", result);
+        SetAired(result.Aired);
+        SetPlayerUrl(result.PlayerUrl);
+      });
+  }, [AnimeID, EpID]);
+
+  const options = {
+    weekday: "short",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+
+  console.log("PLAYER URL: ", AnimeID, EpID, PlayerUrl);
   return (
     <div id="main">
-      <Menubar/>
+      <Menubar />
       <div id="PlayerContent">
         <div id="PlayerHeaders">
-          <NavLink to={"/anime/" + AnimeID}><h1>{AnimeTitle + " (ep. " + EpNum + ")"}</h1></NavLink>
-          <p><q>{EpisodeTitle}</q> {(Aired.Valid) ? (" - " + EpAired.toLocaleDateString("en-EN", options)) : ""}</p>
+          <NavLink to={"/anime/" + AnimeID}>
+            <h1>{AnimeTitle + " (ep. " + EpID + ")"}</h1>
+          </NavLink>
+          <p>
+            <q>{EpisodeTitle}</q>{" "}
+            {Aired.Valid
+              ? " - " +
+                new Date(Aired.Time).toLocaleDateString("en-EN", options)
+              : ""}
+          </p>
         </div>
-        <iframe id="Player" title="Player" src={PlayerUrl} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        <iframe
+          id="Player"
+          title="Player"
+          src={PlayerUrl}
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+        ></iframe>
       </div>
       <div id="EpisodeList">
         <div id="EpisodeBtnWidget">
-          <EpisodeBtn AnimeID={AnimeID} EpisodeNum={EpNum} EpisodeCount={EpisodeNum}/>
+          <EpisodeBtn
+            AnimeID={AnimeID}
+            EpisodeNum={EpID}
+            EpisodeCount={EpisodeNum}
+          />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default AnimePlayer
+export default AnimePlayer;

@@ -11,85 +11,89 @@ function Home({ type: siteType }) {
 
   const [AnimeHeader, setAnimeHeader] = useState("");
   const [AnimeContainer, setAnimeContainer] = useState([]);
-  const [AnimeTabUnit, setAnimeTabUnit] = useState(0);
+  const [AnimeTabUnit, setAnimeTabUnit] = useState(null);
 
   useEffect(() => {
-    function FillList(AnimeCountBegin) {
+    async function FillList(AnimeCountBegin) {
       setAnimeContainer([]);
 
-      GetAnime()
-        .then((response) => response.json())
-        .then((result) => {
-          let AnimeCountEnd = Math.min(
-            AnimeCountBegin + num_sample_animes,
-            result.length
+      const response = await GetAnime();
+      if (response.status >= 400) {
+        throw new Error(`${response.status} ${response.statusText}`);
+      }
+      const result = await response.json();
+      let AnimeCountEnd = Math.min(
+        AnimeCountBegin + num_sample_animes,
+        result.length
+      );
+
+      let anime_id_arr = [];
+      let anime_header = "";
+
+      console.log("SITE TYPE", siteType);
+
+      if (siteType === "Random") {
+        let num = Math.floor(
+          (Math.random() * (result.length + 1)) % result.length
+        );
+        redirect("Anime/" + num);
+      } else if (siteType === "Popular") {
+        anime_header = "Top Ranked Animes";
+
+        for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
+          anime_id_arr.push(result[i].AnimeID);
+        }
+      } else if (siteType === "Recomended") {
+        anime_header = "Recomended Animes";
+
+        for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
+          let AnimeNum = Math.floor(
+            (Math.random() * (result.length + 1)) % result.length
           );
-
-          let anime_id_arr = [];
-          let anime_header = "";
-
-          console.log("SITE TYPE", siteType);
-
-          if (siteType === "Random") {
-            let num = Math.floor(
-              (Math.random() * (result.length + 1)) % result.length
-            );
-            redirect("Anime/" + num);
-          } else if (siteType === "Popular") {
-            anime_header = "Top Ranked Animes";
-
-            for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
-              anime_id_arr.push(result[i].AnimeID);
-            }
-          } else if (siteType === "Recomended") {
-            anime_header = "Recomended Animes";
-
-            for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
-              let AnimeNum = Math.floor(
-                (Math.random() * (result.length + 1)) % result.length
-              );
-              anime_id_arr.push(result[AnimeNum].AnimeID);
-            }
-          } else if (siteType === "Newest") {
-            anime_header = "Recently Added Animes";
-            let to_sort = result;
-            to_sort.sort((a, b) => {
-              if (!a.AiredBegin) {
-                return false;
-              }
-
-              return a.AiredBegin < b.AiredBegin;
-            });
-
-            for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
-              anime_id_arr.push(to_sort[i].AnimeID);
-            }
+          anime_id_arr.push(result[AnimeNum].AnimeID);
+        }
+      } else if (siteType === "Newest") {
+        anime_header = "Recently Added Animes";
+        let to_sort = result;
+        to_sort.sort((a, b) => {
+          if (!a.AiredBegin) {
+            return false;
           }
 
-          let container = [];
-
-          for (let id of anime_id_arr) {
-            const AnimeID = id.toString();
-            container.push(<AnimePoster AnimeID={AnimeID} />);
-          }
-
-          const foo = (event, index) => {
-            FillList((index - 1) * num_sample_animes);
-          };
-
-          setAnimeHeader(anime_header);
-          setAnimeContainer(container);
-          setAnimeTabUnit(
-            <TabUnit
-              TabCount={Math.ceil(result.length / num_sample_animes)}
-              TabCollapse="10"
-              onChange={foo}
-            />
-          );
+          return a.AiredBegin < b.AiredBegin;
         });
+
+        for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
+          anime_id_arr.push(to_sort[i].AnimeID);
+        }
+      }
+
+      let container = [];
+
+      for (let id of anime_id_arr) {
+        const AnimeID = id.toString();
+        container.push(<AnimePoster AnimeID={AnimeID} />);
+      }
+
+      const foo = (event, index) => {
+        FillList((index - 1) * num_sample_animes);
+      };
+
+      setAnimeHeader(anime_header);
+      setAnimeContainer(container);
+      setAnimeTabUnit(
+        <TabUnit
+          TabCount={Math.ceil(result.length / num_sample_animes)}
+          TabCollapse="10"
+          onChange={foo}
+        />
+      );
     }
 
-    FillList(0);
+    FillList(0).catch((e) => {
+      console.log(e);
+      setAnimeHeader(<div>Error: {e.message}</div>);
+    });
   }, [siteType]);
 
   return (
