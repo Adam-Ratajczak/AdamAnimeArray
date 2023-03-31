@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { GetAnime, GetEpisodes, GetAnimeType } from '../../db_module'
 import './style.scss';
-import { NavLink } from "react-router-dom";
 
 function AnimePoster(props){
 
@@ -46,7 +45,7 @@ function AnimePoster(props){
   }
 
   return (
-    <NavLink to={'/anime/' + props.AnimeID.toString()}>
+    <a href={'/anime/' + props.AnimeID.toString()}>
     <div class="AnimePoster">
       <div class="AnimePosterHover">
           <div class="AnimePosterHeader tooltip">
@@ -74,7 +73,7 @@ function AnimePoster(props){
           </table>
       </div>
     </div>
-    </NavLink>
+    </a>
   )
 }
 

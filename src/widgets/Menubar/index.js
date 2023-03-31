@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import LoginMan from '../../login_manager.js';
 import redirect from '../../redirect.js'
 import './style.scss';
-import { NavLink } from "react-router-dom";
 
 function LoginBtn(){
   let btns = 0;
@@ -18,14 +17,14 @@ function LoginBtn(){
   if(!LoginMan.LoggedIn()){
     btns = (
       <div id="LoginBox">
-        <NavLink id="SignUpBtn" to="/SignUp">Sign up</NavLink>
-        <NavLink id="LoginBtn" to="/Login">Login</NavLink>
+        <a id="SignUpBtn" href="/SignUp">Sign up</a>
+        <a id="LoginBtn" href="/Login">Login</a>
       </div>
     );
   }else{
     btns = (
       <div id="LoginBox">
-        <NavLink id="SignUpBtn" to="/">{}</NavLink>
+        <a id="SignUpBtn" href="/">{}</a>
       </div>
     )
   }
@@ -46,10 +45,10 @@ class Menubar extends Component{
           </form>
         </div>
         <div id="MenuContent">
-          <NavLink to='/Popular'><div class="Button" id="anime_top_ranked"><p>Top Ranked</p></div></NavLink>
-          <NavLink to='/Newest'><div class="Button" id="anime_newest"><p>Newest</p></div></NavLink>
-          <NavLink to='/Recomended'><div class="Button" id="anime_recomended"><p>Recomended</p></div></NavLink>
-          <NavLink to='/Random'><div class="Button" id="anime_random"><p>Random</p></div></NavLink>
+          <a href='/Popular'><div class="Button" id="anime_top_ranked"><p>Top Ranked</p></div></a>
+          <a href='/Newest'><div class="Button" id="anime_newest"><p>Newest</p></div></a>
+          <a href='/Recomended'><div class="Button" id="anime_recomended"><p>Recomended</p></div></a>
+          <a href='/Random'><div class="Button" id="anime_random"><p>Random</p></div></a>
         </div>
       </div>
     )

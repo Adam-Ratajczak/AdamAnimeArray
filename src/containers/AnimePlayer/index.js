@@ -3,7 +3,6 @@ import {Menubar, EpisodeBtn} from '../../widgets'
 import {GetAnime, GetEpisodes,} from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
-import { NavLink } from "react-router-dom";
 
 function AnimePlayer(){
   const AnimeID = window.location.href.split("/").at(-3);
@@ -54,7 +53,7 @@ function AnimePlayer(){
       <Menubar/>
       <div id="PlayerContent">
         <div id="PlayerHeaders">
-          <NavLink to={"/anime/" + AnimeID}><h1>{AnimeTitle + " (ep. " + EpNum + ")"}</h1></NavLink>
+          <a href={"/anime/" + AnimeID}><h1>{AnimeTitle + " (ep. " + EpNum + ")"}</h1></a>
           <p><q>{EpisodeTitle}</q> {(Aired.Valid) ? (" - " + EpAired.toLocaleDateString("en-EN", options)) : ""}</p>
         </div>
         <iframe id="Player" title="Player" src={PlayerUrl} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
