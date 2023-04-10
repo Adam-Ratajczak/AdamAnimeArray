@@ -167,27 +167,49 @@ func steal_anime(url string) int {
 			write_episode_to_db(ep)
 		}
 
-		e.ForEach("div.di-tc", func(i int, h *colly.HTMLElement) {
-			SongType := ""
-			if h.ChildText("h2") == "Opening Theme" {
-				SongType = "opening"
-			} else if h.ChildText("h2") == "Ending Theme" {
-				SongType = "ending"
-			}
-
-			if SongType == "" {
-				return
-			}
-
+		e.ForEach("div.opnening", func(i int, h *colly.HTMLElement) {
 			h.ForEach("tr", func(j int, s *colly.HTMLElement) {
-				if strings.Trim(s.ChildText("span.theme-song-title"), " ") == "" {
+				title := s.ChildText("td:nth-of-type(2)")
+				if title == "" {
 					return
 				}
+				if strings.Contains(title, "Music") {
+					return
+				}
+
+				title = strings.Split(title, "\"")[1]
 				song := Song{}
 				song.AnimeID = anime_id
-				song.Title = strings.Replace(s.ChildText("span.theme-song-title"), "\"", "", -1)
+				song.Title = title
 				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
-				song.Type = SongType
+				song.Type = "opening"
+
+				s.ForEach("input", func(k int, link *colly.HTMLElement) {
+					if strings.Contains(link.Attr("value"), "spotify") {
+						song.SpotifyURL = link.Attr("value")
+						return
+					}
+				})
+
+				write_song_to_db(song)
+			})
+		})
+		e.ForEach("div.ending", func(i int, h *colly.HTMLElement) {
+			h.ForEach("tr", func(j int, s *colly.HTMLElement) {
+				title := s.ChildText("td:nth-of-type(2)")
+				if title == "" {
+					return
+				}
+				if strings.Contains(title, "Music") {
+					return
+				}
+
+				title = strings.Split(title, "\"")[1]
+				song := Song{}
+				song.AnimeID = anime_id
+				song.Title = title
+				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
+				song.Type = "ending"
 
 				s.ForEach("input", func(k int, link *colly.HTMLElement) {
 					if strings.Contains(link.Attr("value"), "spotify") {

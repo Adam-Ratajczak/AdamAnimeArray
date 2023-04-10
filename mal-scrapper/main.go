@@ -143,12 +143,18 @@ func fix_songs(url, name string) {
 	c.OnHTML("body", func(e *colly.HTMLElement) {
 		e.ForEach("div.opnening", func(i int, h *colly.HTMLElement) {
 			h.ForEach("tr", func(j int, s *colly.HTMLElement) {
-				if strings.Trim(s.ChildText("span.theme-song-title"), " ") == "" {
+				title := s.ChildText("td:nth-of-type(2)")
+				if title == "" {
 					return
 				}
+				if strings.Contains(title, "Music") {
+					return
+				}
+
+				title = strings.Split(title, "\"")[1]
 				song := Song{}
 				song.AnimeID = anime_id
-				song.Title = strings.Replace(s.ChildText("span.theme-song-title"), "\"", "", -1)
+				song.Title = title
 				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
 				song.Type = "opening"
 
@@ -164,12 +170,18 @@ func fix_songs(url, name string) {
 		})
 		e.ForEach("div.ending", func(i int, h *colly.HTMLElement) {
 			h.ForEach("tr", func(j int, s *colly.HTMLElement) {
-				if strings.Trim(s.ChildText("span.theme-song-title"), " ") == "" {
+				title := s.ChildText("td:nth-of-type(2)")
+				if title == "" {
 					return
 				}
+				if strings.Contains(title, "Music") {
+					return
+				}
+
+				title = strings.Split(title, "\"")[1]
 				song := Song{}
 				song.AnimeID = anime_id
-				song.Title = strings.Replace(s.ChildText("span.theme-song-title"), "\"", "", -1)
+				song.Title = title
 				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
 				song.Type = "ending"
 
@@ -283,5 +295,6 @@ func main() {
 	steal_series(0, 15000)
 
 	// steal_anime("https://myanimelist.net/anime/32615/Youjo_Senki")
+	// fix_songs("https://myanimelist.net/anime/32615/Youjo_Senki", "Youjo Senki")
 	// steal_anime("https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2")
 }

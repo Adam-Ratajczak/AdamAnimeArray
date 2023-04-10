@@ -291,6 +291,8 @@ func write_song_to_db(s Song) int {
 			return -1
 		}
 
+		fmt.Println("Written song \"", s.Title+"\" of Author ", s.Artist)
+
 		return int(id)
 	}
 }
