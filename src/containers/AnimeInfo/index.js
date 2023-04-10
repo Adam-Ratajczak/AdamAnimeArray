@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {Menubar, AnimePoster, EpisodeBtn} from './../../widgets'
-import {GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetAnimeType, GetEpisodes, GetFilterEntry, FilterAnimes} from "../../db_module"
+import {GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetAnimeType, GetEpisodes, GetFilterEntry, FilterAnimes, GetAnimeStudios} from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
 
@@ -17,6 +17,7 @@ function AnimeInfo(){
   const [AnimeType, SetAnimeType] = useState(0)
   const [AnimeGenres, SetAnimeGenres] = useState(0)
   const [AnimeThemes, SetAnimeThemes] = useState(0)
+  const [AnimeStudios, SetAnimeStudios] = useState(0)
   const [AnimeProducers, SetAnimeProducers] = useState(0)
   const [AnimeDemographics, SetAnimeDemographics] = useState(0)
   
@@ -77,6 +78,20 @@ function AnimeInfo(){
       }
 
       SetAnimeThemes(res);
+    })
+  }, []);
+
+  useEffect(() =>{
+    GetAnimeStudios(AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      let res = "";
+
+      for(let elem of result){
+        res += elem.Name + ", ";
+      }
+
+      SetAnimeStudios(res);
     })
   }, []);
 
@@ -185,6 +200,10 @@ function AnimeInfo(){
                 <td>{(AnimeThemes != "") ? AnimeThemes.toString().substring(0, AnimeThemes.toString().length - 2) : "None"}</td>
               </tr>
               <tr>
+                <td class="AnimePropertyName">Studios: </td>
+                <td>{(AnimeStudios != "") ? AnimeStudios.toString().substring(0, AnimeProducers.toString().length - 2) : "None"}</td>
+              </tr>
+              <tr>
                 <td class="AnimePropertyName">Producers: </td>
                 <td>{(AnimeProducers != "") ? AnimeProducers.toString().substring(0, AnimeProducers.toString().length - 2) : "None"}</td>
               </tr>
@@ -197,7 +216,7 @@ function AnimeInfo(){
         </div>
           </div>
           <div>
-            {AnimeDesc.toString().split("<br>").map(line => {return <p>{line}</p>})}
+            {AnimeDesc.toString().split("\n\n").map(line => {return <p>{line}</p>})}
        
           </div>
         </div>

@@ -67,7 +67,7 @@ class Home extends Component {
 
       let container = [];
 
-      for(let id of anime_id_arr){
+      for(let id in anime_id_arr){
         const AnimeID = id.toString();
         container.push((<AnimePoster AnimeID={AnimeID}/>))
       }

@@ -3,6 +3,7 @@ import { GetAnime, GetEpisodes, GetAnimeType } from '../../db_module'
 import './style.scss';
 
 function AnimePoster(props){
+  console.log(props.AnimeID)
 
   const [AnimeTitle, SetAnimeTitle] = useState(0)
   const [AnimePoster, SetAnimePoster] = useState(0)

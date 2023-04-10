@@ -1,9 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (646, CONCAT('Gravitation: Lyrics of Love'), CONCAT('Bad Luck', CHAR(39), 's lead singer and lyricist, Shindou Shuichi, is a total wreck. With deadlines for the band', CHAR(39), 's next album looming, the pressure is on, but the normally energetic Shuichi has become listless and fallen into a writing slump. It', CHAR(39), 's all because Yuki - the great love of his life - has suddenly become cold and distant. Depressed and anxious, Shuichi doesn', CHAR(39), 't want to think about lyrics - he just wants to know how to get Yuki to talk to him!<br>
-<br>Now, thanks to Shuichi', CHAR(39), 's big mouth bragging to the press about how talented he is, the band can', CHAR(39), 't even hire someone else to write the lyrics for them. If they don', CHAR(39), 't manage to break Shuichi out of his slump soon, it could mean the end of Bad Luck for good! <br>
-<br>(Source: RightStuf) '), 3, '1999-07-23', '1999-09-22', '', '26 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1656/94257.jpg');
-INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (294, 646, 3);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1594, 646, 17);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (1595, 646, 12);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (718, 646, 157);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11737, 646, 1, CONCAT('Gravitation: Lyrics of Love 1'), NULL, 'https://www.youtube.com/embed/xZ__8Y3reNw');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (11738, 646, 2, CONCAT('Gravitation: Lyrics of Love 2'), NULL, 'https://www.youtube.com/embed/qUXYNpSd2tI');

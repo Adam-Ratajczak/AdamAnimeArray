@@ -44,9 +44,6 @@ func filter(c echo.Context) error {
 
 func filterSqlBuilder(table string, filter []int) (string, string) {
 	coll := table[:len(table)-1]
-	if table == "Demographics" {
-		coll = "Group"
-	}
 	join := ""
 	where := ""
 	if len(filter) != 0 {
@@ -79,6 +76,7 @@ func sqlBuilder(filter FilterRequest) string {
 	sqlAppend(filterSqlBuilder("Types", filter.Types))
 	sqlAppend(filterSqlBuilder("Themes", filter.Themes))
 	sqlAppend(filterSqlBuilder("Genres", filter.Genres))
+	sqlAppend(filterSqlBuilder("Studios", filter.Studios))
 	sqlAppend(filterSqlBuilder("Producers", filter.Producers))
 	sqlAppend(filterSqlBuilder("Demographics", filter.Demographics))
 	wheres = append(wheres, fmt.Sprintf(` a.AnimeTitle LIKE "%%%v%%" ORDER BY a.AnimeTitle`, filter.Title))

@@ -1,8 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1881, CONCAT('Tensei Kenja no Isekai Life: Dai-2 no Shokugyou wo Ete, Sekai Saikyou ni Narimashita'), CONCAT('After working himself to death in a hostile corporate environment, Yuuji Sano gets a second chance when he transmigrates to a game-like fantasy world. Although he wishes to lead an unassuming life, Yuuji learns that he has the title of a Monster Tamer, the weakest rank of adventurer. With his newfound skills, he tames a number of slimes around him and, with their help, acquires magical powers to become a Sage—a second profession that capitalizes on such potential.<br>
-<br>Even after gaining overwhelming strength, the scars from the life Yuuji left behind keep him from going all out. However, he might not be able to hide his abilities for much longer, as unforeseen dangers threaten to destroy the world that is now his only home.<br>
-<br>[Written by MAL Rewrite]<br>'), 1, '2022-07-04', '2022-09-12', 'Summer 2022', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1436/124788.jpg');
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4659, 1881, 1);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4660, 1881, 2);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4661, 1881, 9);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2036, 1881, 228);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (33554, 1881, 1, CONCAT('I Wanted to Protect the Town'), '2022-07-04', 'https://ebd.cda.pl/620x368/1136072062');

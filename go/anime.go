@@ -16,7 +16,7 @@ func anime(c echo.Context) error {
 	}
 	anime := Anime{}
 	row := db.QueryRow("SELECT * FROM Animes WHERE AnimeID = ?", id)
-	err = row.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+	err = row.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return c.NoContent(http.StatusBadRequest)
@@ -59,13 +59,95 @@ func animeEpisodes(c echo.Context) error {
 	}
 	for rows.Next() {
 		episode := Episode{}
-		err := rows.Scan(&episode.EpisodeID, &episode.AnimeID, &episode.EpisodeNr, &episode.Title, &episode.Aired, &episode.PlayerUrl)
+		err := rows.Scan(&episode.EpisodeID, &episode.AnimeID, &episode.EpisodeNr, &episode.Title, &episode.Aired)
 		if err != nil {
 			return err
 		}
 		episodes = append(episodes, episode)
 	}
 	return c.JSON(http.StatusOK, episodes)
+}
+
+func animePlayers(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	ep, err := strconv.Atoi(c.Param("ep"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	rows, err := db.Query("SELECT * FROM episodeplayers WHERE EpisodeID IN (SELECT EpisodeID FROM episodes WHERE AnimeID = ? AND EpisodeNr = ?) GROUP BY PlayerUrl;", id, ep)
+	players := []Player{}
+	if err != nil {
+		return err
+	}
+
+	for rows.Next() {
+		player := Player{}
+		err := rows.Scan(&player.PlayerID, &player.EpisodeID, &player.LangCode, &player.Source, &player.Quality, &player.PlayerUrl)
+		if err != nil {
+			return err
+		}
+		players = append(players, player)
+	}
+	return c.JSON(http.StatusOK, players)
+}
+
+func animePlayersFromLanguage(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	ep, err := strconv.Atoi(c.Param("ep"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	lang := c.Param("lang")
+
+	rows, err := db.Query("SELECT * FROM episodeplayers WHERE EpisodeID IN (SELECT EpisodeID FROM episodes WHERE AnimeID = ? AND EpisodeNr = ? AND LangCode = ?) GROUP BY PlayerUrl;", id, ep, lang)
+	players := []Player{}
+	if err != nil {
+		return err
+	}
+
+	for rows.Next() {
+		player := Player{}
+		err := rows.Scan(&player.PlayerID, &player.EpisodeID, &player.LangCode, &player.Source, &player.Quality, &player.PlayerUrl)
+		if err != nil {
+			return err
+		}
+		players = append(players, player)
+	}
+	return c.JSON(http.StatusOK, players)
+}
+
+func episodeLanguages(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	ep, err := strconv.Atoi(c.Param("ep"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	rows, err := db.Query("SELECT l.LangCode, l.LanguageName, l.LanguageFlag FROM Languages l INNER JOIN episodeplayers ep ON l.LangCode = ep.LangCode WHERE EpisodeID IN (SELECT EpisodeID FROM episodes WHERE AnimeID = ? AND EpisodeNr = ?) GROUP BY LangCode", id, ep)
+	languages := []Lang{}
+	if err != nil {
+		return err
+	}
+
+	for rows.Next() {
+		l := Lang{}
+		err := rows.Scan(&l.Code, &l.Name, &l.FlagUrl)
+		if err != nil {
+			return err
+		}
+		languages = append(languages, l)
+	}
+	return c.JSON(http.StatusOK, languages)
 }
 
 func animeEpisode(c echo.Context) error {
@@ -80,7 +162,7 @@ func animeEpisode(c echo.Context) error {
 
 	episode := Episode{}
 	row := db.QueryRow("SELECT * FROM Episodes WHERE AnimeID = ? AND EpisodeNr = ?", id, ep)
-	err = row.Scan(&episode.EpisodeID, &episode.AnimeID, &episode.EpisodeNr, &episode.Title, &episode.Aired, &episode.PlayerUrl)
+	err = row.Scan(&episode.EpisodeID, &episode.AnimeID, &episode.EpisodeNr, &episode.Title, &episode.Aired)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return c.NoContent(http.StatusBadRequest)
@@ -111,90 +193,28 @@ func getType(id int, column string, table string) []int {
 	return result
 }
 
-func animeGenres(c echo.Context) error {
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		return c.NoContent(http.StatusBadRequest)
-	}
-	genres := []Filter{}
-	rows, err := db.Query("SELECT GenreID, (SELECT GenreName FROM Genres g WHERE g.GenreID = ag.GenreID) FROM AnimeGenres ag WHERE AnimeID = ?", id)
-	if err != nil {
-		return err
-	}
-	for rows.Next() {
-		genre := Filter{}
-		err := rows.Scan(&genre.ID, &genre.Name)
+func getAnimeGroup(group string) func(c echo.Context) error {
+	table := group[:len(group)-1]
+	return func(c echo.Context) error {
+		id, err := strconv.Atoi(c.Param("id"))
+		if err != nil {
+			return c.NoContent(http.StatusBadRequest)
+		}
+		arr := []Filter{}
+		rows, err := db.Query("SELECT "+table+"ID, (SELECT "+table+"Name FROM "+table+"s g WHERE g."+table+"ID = ag."+table+"ID) FROM Anime"+table+"s ag WHERE AnimeID = ?", id)
 		if err != nil {
 			return err
 		}
-		genres = append(genres, genre)
-	}
-	return c.JSON(http.StatusOK, genres)
-}
-
-func animeThemes(c echo.Context) error {
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		return c.NoContent(http.StatusBadRequest)
-	}
-	themes := []Filter{}
-	rows, err := db.Query("SELECT ThemeID, (SELECT ThemeName FROM Themes t WHERE t.ThemeID = at.ThemeID) FROM AnimeThemes at WHERE AnimeID = ?", id)
-	if err != nil {
-		return err
-	}
-	for rows.Next() {
-		theme := Filter{}
-		err := rows.Scan(&theme.ID, &theme.Name)
-		if err != nil {
-			return err
+		for rows.Next() {
+			genre := Filter{}
+			err := rows.Scan(&genre.ID, &genre.Name)
+			if err != nil {
+				return err
+			}
+			arr = append(arr, genre)
 		}
-		themes = append(themes, theme)
+		return c.JSON(http.StatusOK, arr)
 	}
-	return c.JSON(http.StatusOK, themes)
-}
-
-func animeProducers(c echo.Context) error {
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		return c.NoContent(http.StatusBadRequest)
-	}
-	producers := []Filter{}
-	rows, err := db.Query("SELECT ProducerID, (SELECT ProducerName FROM Producers p WHERE p.ProducerID = ap.ProducerID) FROM AnimeProducers ap WHERE AnimeID = ?", id)
-	if err != nil {
-		return err
-	}
-	for rows.Next() {
-		producer := Filter{}
-		err := rows.Scan(&producer.ID, &producer.Name)
-		if err != nil {
-			return err
-		}
-		producers = append(producers, producer)
-	}
-	return c.JSON(http.StatusOK, producers)
-}
-
-func animeDemographics(c echo.Context) error {
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		return c.NoContent(http.StatusBadRequest)
-	}
-	demographics := []Filter{}
-	rows, err := db.Query("SELECT GroupID, (SELECT GroupName FROM Demographics d WHERE d.GroupID = ad.GroupID) FROM AnimeDemographics ad WHERE AnimeID = ?", id)
-	if err != nil {
-		log.Println(err)
-		return err
-	}
-	for rows.Next() {
-		demographic := Filter{}
-		err := rows.Scan(&demographic.ID, &demographic.Name)
-		if err != nil {
-			log.Println(err)
-			return err
-		}
-		demographics = append(demographics, demographic)
-	}
-	return c.JSON(http.StatusOK, demographics)
 }
 
 func animeType(c echo.Context) error {

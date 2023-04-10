@@ -1,9 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1500, CONCAT('Prism Ark'), CONCAT('The Sablum Empire has been attempting to take over the kingdom of Windland for many years, and are now plotting with the mercenaries Sister Hell and Darkness Knight to start a new offensive using powerful magical beings called Angels. <br>
-<br>Hyaweh, a carefree yet talented swordsman, and Priecia, who just might be the lost princess of Windland, are enrolled at the Knight', CHAR(39), 's Academy in Windland to hone their skill at swords and sorcery. There they meet many friends and allies who can help them protect their homeland from the impending invasion. '), 1, '2007-10-08', '2007-12-24', 'Fall 2007', '24 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/23155.jpg');
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3743, 1500, 1);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3744, 1500, 12);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3745, 1500, 9);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1617, 1500, 50);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27724, 1500, 1, CONCAT('The Knights', CHAR(39), ' Battlefield'), '2007-10-08', 'https://vk.com/video_ext.php?oid=191293674&id=164563848&hash=42bee3008ab878e9');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27725, 1500, 2, CONCAT('The Knights', CHAR(39), ' Academy'), '2007-10-15', 'https://vk.com/video_ext.php?oid=191293674&id=164563849&hash=db1c3eaebc5d0b33');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (27726, 1500, 3, CONCAT('The Knights', CHAR(39), ' Goal'), '2007-10-22', 'https://vk.com/video_ext.php?oid=191293674&id=164563850&hash=69348fc51cb8f18a');
