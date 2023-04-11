@@ -229,8 +229,8 @@ func write_episode_to_db(e Episode) int {
 	}
 }
 
-func write_relation_to_db(lhs, rhs int, relation_type string) int {
-	row, err := db.Exec("INSERT INTO AnimeRelations(AnimeID, OtherID, RelationType) VALUES (?, ?, ?);", lhs, rhs, relation_type)
+func write_relation_to_db(lhs, rhs, relation_type int) int {
+	row, err := db.Exec("INSERT INTO AnimeRelations(AnimeID, OtherID, RelationID) VALUES (?, ?, ?);", lhs, rhs, relation_type)
 
 	if err != nil {
 		return -1
@@ -280,13 +280,21 @@ func write_player_to_db(p Player) int {
 }
 
 func write_song_to_db(s Song) int {
-	row, err := db.Exec("INSERT INTO Songs(AnimeID, Title, Artist, SongType, SpotifyUrl) VALUES (?, ?, ?, ?, ?);", s.AnimeID, s.Title, s.Artist, s.Type, s.SpotifyURL)
+	row := db.QueryRow("SELECT SongID FROM Songs WHERE AnimeID = ? ABD Title LIKE ? AND Artist LIKE ?", s.AnimeID, s.Title, s.Artist)
+	id := 0
+
+	err := row.Scan(&id)
+
+	if err == nil {
+		return id
+	}
+	res, err := db.Exec("INSERT INTO Songs(AnimeID, Title, Artist, SongType, SpotifyUrl) VALUES (?, ?, ?, ?, ?);", s.AnimeID, s.Title, s.Artist, s.Type, s.SpotifyURL)
 
 	if err != nil {
 		fmt.Println(err)
 		return -1
 	} else {
-		id, err := row.LastInsertId()
+		id, err := res.LastInsertId()
 		if err != nil {
 			return -1
 		}
@@ -319,6 +327,10 @@ func get_studios_in_db(name string) int {
 
 func get_demographics_in_db(name string) int {
 	return getting_sql_builder("Demographics", "DemographicID", "DemographicName", name)
+}
+
+func get_relation_in_db(name string) int {
+	return getting_sql_builder("Relations", "RelationID", "RelationType", name)
 }
 
 func write_binding_to_db(binding string, anime_id int, binding_id int) int {

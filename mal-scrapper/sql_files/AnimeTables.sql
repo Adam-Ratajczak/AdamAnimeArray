@@ -95,14 +95,21 @@ CREATE TABLE IF NOT EXISTS AnimeDemographics(
     FOREIGN KEY (DemographicID) REFERENCES Demographics(DemographicID)
 );
 
+-- Store connection types
+CREATE TABLE IF NOT EXISTS Relations(
+    RelationID int PRIMARY KEY AUTO_INCREMENT,
+    RelationType VARCHAR(64) NOT NULL
+);
+
 -- Bound of two anime seasons cnnected in some way
 CREATE TABLE IF NOT EXISTS AnimeRelations(
-    RelationID int PRIMARY KEY AUTO_INCREMENT,
+    BindingID int PRIMARY KEY AUTO_INCREMENT,
     AnimeID int NOT NULL,
     OtherID int NOT NULL,
-    RelationType VARCHAR(64) NOT NULL,
+    RelationID int NOT NULL,
     FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID),
-    FOREIGN KEY (OtherID) REFERENCES Animes(AnimeID)
+    FOREIGN KEY (OtherID) REFERENCES Animes(AnimeID),
+    FOREIGN KEY (RelationID) REFERENCES Relations(RelationID)
 );
 
 -- Table for storing basic anime songs

@@ -120,8 +120,78 @@ func steal_anime(url string) int {
 				a.Duration = strings.Trim(strings.Split(pad.Text, "\n")[2], " ")
 			}
 		})
+		fake_link := "https://ogladajanime.pl/search/name/"
 
-		c.Visit("https://ogladajanime.pl/search/name/" + strings.Replace(a.AnimeTitle, " ", "-", -1))
+		response, _ := fetch.Post("https://ogladajanime.pl/command_manager.php?action=search_anime", &fetch.Config{
+			Headers: map[string]string{
+				"authority":    "ogladajanime.pl",
+				"origin":       "https://ogladajanime.pl",
+				"referer":      fake_link,
+				"user-agent":   "Mozilla/5.0",
+				"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+			},
+			Body: map[string]string{
+				"search":      a.AnimeTitle,
+				"search_type": "name",
+			},
+		})
+
+		res, err := response.JSON()
+		if err != nil {
+			fmt.Println(err)
+		}
+		js_code := OgladajAnimePlayer{}
+		err = json.Unmarshal([]byte(res), &js_code)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+
+		marker := "chujwdupiepsa"
+
+		js_code.Data = strings.Replace(js_code.Data, "\\n", "\n", -1)
+		js_code.Data = strings.Replace(js_code.Data, "\\t", "\t", -1)
+		js_code.Data = strings.Replace(js_code.Data, "<h5 class=\"card-title text-dark\">", marker, -1)
+		js_code.Data = strings.Replace(js_code.Data, "</h5>", marker, -1)
+		arr := strings.Split(js_code.Data, marker)
+
+		link = ""
+
+		max_val := 0.0
+
+		for key, header := range arr {
+			if key%2 == 0 {
+				continue
+			}
+
+			header = strings.Replace(header, "\t", "", -1)
+			header = strings.Replace(header, "\n", "", -1)
+			header = strings.Replace(header, "<a href=\"", "", -1)
+			header = strings.Replace(header, " onClick=\"", "", -1)
+			header = strings.Replace(header, "</a>", "", -1)
+			header = strings.Replace(header, ">", "", -1)
+			header = strings.Replace(header, ":", "", -1)
+			header = strings.Replace(header, ";", "", -1)
+
+			content := strings.Split(header, "\"")
+
+			value := math.Max(CompareTwoStrings(a.AnimeTitle, content[2]), CompareTwoStrings(a.EnglishTitle, content[2]))
+			if value < 0.8 {
+				continue
+			}
+
+			if value > max_val {
+				max_val = value
+				link = "https://ogladajanime.pl" + content[0]
+			}
+		}
+
+		if link == "" {
+			return
+		}
+
+		c.Visit(link)
+
 		keySlice := make([]int, 0)
 		for key, _ := range ogladajanime_ep_id {
 			keySlice = append(keySlice, key)

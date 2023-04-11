@@ -80,7 +80,9 @@ func fill_relations(url, name string) {
 					return
 				}
 
-				write_relation_to_db(anime_id, other_anime_id, relation)
+				relation_id := get_relation_in_db(relation)
+
+				write_relation_to_db(anime_id, other_anime_id, relation_id)
 			})
 		})
 	})
@@ -222,7 +224,7 @@ func (tcf Block) Do(url, name string) {
 	tcf.Try(url, name)
 }
 
-const MAX_CONCURRENT_JOBS = 40
+const MAX_CONCURRENT_JOBS = 50
 
 func steal_series(a, b int) {
 	c := colly.NewCollector()
@@ -256,9 +258,9 @@ func steal_series(a, b int) {
 					// } else {
 					// 	fmt.Println("Skipping!")
 					// }
-					// fill_relations(url, name)
+					fill_relations(url, name)
 					// fix_posters(url, name)
-					fix_songs(url, name)
+					// fix_songs(url, name)
 				},
 				Catch: func(e Exception) {
 					fmt.Printf("Caught %v\n", e)
@@ -292,8 +294,9 @@ func main() {
 	// loadSQLFile("sql_files/AnimeTables.sql")
 	// loadSQLFile("sql_files/Last.sql")
 
-	steal_series(0, 15000)
+	steal_series(0, 20000)
 
+	// steal_anime("https://myanimelist.net/anime/41457/86?q=eigh&cat=anime")
 	// steal_anime("https://myanimelist.net/anime/32615/Youjo_Senki")
 	// fix_songs("https://myanimelist.net/anime/32615/Youjo_Senki", "Youjo Senki")
 	// steal_anime("https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2")
