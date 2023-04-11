@@ -9,7 +9,7 @@ function FetchToApiGet(url){
         }});
 }
 function FetchToApiPost(url, con){
-    return fetch('http://localhost:2138/' + url, { 
+    return fetch('http://localhost:' + port.toString() + url, { 
         method: 'POST', 
         body: JSON.stringify(con), 
         headers: {

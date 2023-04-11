@@ -3,7 +3,12 @@ import { AnimePanel, Menubar } from '../../widgets'
 import { FilterAnimes, GetDemographics, GetGenre, GetProducer, GetTheme, GetType } from '../../db_module';
 import './style.scss'
 
-const animeLimit = 20;
+const scrollHeight = Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+);
+const animeLimit = scrollHeight / 220;
 
 class TypeButton extends Component {
   render() {
@@ -115,8 +120,7 @@ class Search extends Component {
             this.setState(newState);
           };
         }
-  
-        res.push((<TypeButton TypeName={typename} TypeID={elem.ID} AnimeName={elem.Name.toString()} onChange={callback} />))
+        res.push((<TypeButton TypeName={typename} TypeID={elem.ID} AnimeName={elem.Name == "" ? "Unknown" : elem.Name.toString()} onChange={callback} />))
       }
   
       return res;
