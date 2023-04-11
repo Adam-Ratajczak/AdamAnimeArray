@@ -234,6 +234,71 @@ func animeType(c echo.Context) error {
 	return c.JSON(http.StatusOK, res)
 }
 
+func animeRelations(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT RelationType FROM Relations r WHERE r.RelationID = ar.RelationID) FROM AnimeRelations ar WHERE ar.AnimeID = ?;", id)
+	if err != nil {
+		return err
+	}
+	result := []Relation{}
+
+	for rows.Next() {
+		res := Relation{}
+		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.RelationID, &res.RelationType)
+		if err != nil {
+			return err
+		}
+
+		result = append(result, res)
+	}
+
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return c.NoContent(http.StatusBadRequest)
+		}
+		return err
+	}
+	return c.JSON(http.StatusOK, result)
+}
+
+func animeRelation(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	rel, err := strconv.Atoi(c.Param("rel"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT RelationType FROM Relations r WHERE r.RelationID = ar.RelationID) FROM AnimeRelations ar WHERE ar.AnimeID = ? AND ar.RelationID = ?;", id, rel)
+	if err != nil {
+		return err
+	}
+	result := []Relation{}
+
+	for rows.Next() {
+		res := Relation{}
+		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.RelationID, &res.RelationType)
+		if err != nil {
+			return err
+		}
+
+		result = append(result, res)
+	}
+
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return c.NoContent(http.StatusBadRequest)
+		}
+		return err
+	}
+	return c.JSON(http.StatusOK, result)
+}
+
 func animeGetFilterEntry(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {

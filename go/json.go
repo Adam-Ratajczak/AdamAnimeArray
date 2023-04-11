@@ -54,6 +54,13 @@ type Lang struct {
 	FlagUrl string
 }
 
+type Relation struct {
+	AnimeID      int
+	OtherID      int
+	RelationID   int
+	RelationType string
+}
+
 type Filter struct {
 	ID   int
 	Name string

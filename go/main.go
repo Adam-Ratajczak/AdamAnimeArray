@@ -49,6 +49,8 @@ func main() {
 		animes.GET("/:id/producers", getAnimeGroup("Producers"))
 		animes.GET("/:id/demographics", getAnimeGroup("Demographics"))
 		animes.GET("/:id/type", animeType)
+		animes.GET("/:id/relations", animeRelations)
+		animes.GET("/:id/relations/:rel", animeRelation)
 		animes.GET("/:id/filterentry", animeGetFilterEntry)
 
 		filters := animes.Group("/filters")
@@ -67,6 +69,8 @@ func main() {
 			filters.GET("/demographics/:id", filterGetByID("Demographics"))
 		}
 
+		animes.GET("/relations", filterGetAll("Relations"))
+		animes.GET("/relations/:id", filterGetByID("Relations"))
 	}
 	e.POST("/auth", AuthUser)
 	auth := e.Group("/auth")
