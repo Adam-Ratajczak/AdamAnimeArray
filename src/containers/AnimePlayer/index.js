@@ -103,18 +103,20 @@ function AnimePlayer() {
   const EpAired = new Date(Aired.Time);
 
   useEffect(() =>{
+    let cb = document.getElementById("PlayerCb")
+
     GetPlayers(AnimeID, EpNum)
     .then((response) => response.json())
     .then((result) => {
       if(result.length > 0){
-        SetPlayerUrl(result[0].PlayerUrl)
-        SetCurrLang(result[0].LangCode)
+        if(CurrLang == ""){
+          SetPlayerUrl(result[0].PlayerUrl)
+          SetCurrLang(result[0].LangCode)
+        }
       }else{
 
       }
     })
-
-    let cb = document.getElementById("PlayerCb")
     cb.onchange = (ev) =>{
       let player_url = cb.options[cb.selectedIndex].value
       SetPlayerUrl(player_url)
