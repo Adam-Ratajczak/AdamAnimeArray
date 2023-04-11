@@ -3,12 +3,7 @@ import { AnimePanel, Menubar } from '../../widgets'
 import { FilterAnimes, GetDemographics, GetGenre, GetProducer, GetTheme, GetType } from '../../db_module';
 import './style.scss'
 
-const scrollHeight = Math.max(
-  document.body.scrollHeight, document.documentElement.scrollHeight,
-  document.body.offsetHeight, document.documentElement.offsetHeight,
-  document.body.clientHeight, document.documentElement.clientHeight
-);
-const animeLimit = scrollHeight / 220;
+const animeLimit = 100
 
 class TypeButton extends Component {
   render() {

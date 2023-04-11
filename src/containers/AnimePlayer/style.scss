@@ -32,16 +32,15 @@ a{
     color: $text-tilted-color;
 }
 
-#EpisodeList{
+#LanguageList{
     display: flex;
     flex-direction: row;
-    background-color: $background-tilted-color;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
-#EpisodeBtnWidget{
-    width: 50%;
+#LanguageList img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
 }

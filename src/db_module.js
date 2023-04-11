@@ -5,7 +5,7 @@ function FetchToApiGet(url){
         method: 'GET', 
         headers: {
             'Content-Type': 'application/json', 
-            "Access-Control-Allow-Origin": "*"
+            'Access-Control-Allow-Origin': '*'
         }});
 }
 function FetchToApiPost(url, con){
@@ -14,7 +14,7 @@ function FetchToApiPost(url, con){
         body: JSON.stringify(con), 
         headers: {
             'Content-Type': 'application/json', 
-            "Access-Control-Allow-Origin": "*"
+            'Access-Control-Allow-Origin': '*'
         }});
 }
 
@@ -75,31 +75,31 @@ export function GetAnime(id = -1){
 }
 
 export function GetAnimeGenres(id){
-    return FetchToApiGet(`/animes/` + id.toString() + "/genres");
+    return FetchToApiGet(`/animes/` + id.toString() + `/genres`);
 }
 
 export function GetAnimeThemes(id){
-    return FetchToApiGet(`/animes/` + id.toString() + "/themes");
+    return FetchToApiGet(`/animes/` + id.toString() + `/themes`);
 }
 
 export function GetAnimeStudios(id){
-    return FetchToApiGet(`/animes/` + id.toString() + "/studios");
+    return FetchToApiGet(`/animes/` + id.toString() + `/studios`);
 }
 
 export function GetAnimeProducers(id){
-    return FetchToApiGet(`/animes/` + id.toString() + "/producers");
+    return FetchToApiGet(`/animes/` + id.toString() + `/producers`);
 }
 
 export function GetAnimeDemographics(id){
-    return FetchToApiGet(`/animes/` + id.toString() + "/demographics");
+    return FetchToApiGet(`/animes/` + id.toString() + `/demographics`);
 }
 
 export function GetAnimeType(id){
-    return FetchToApiGet(`/animes/` + id.toString() + "/type");
+    return FetchToApiGet(`/animes/` + id.toString() + `/type`);
 }
 
 export function GetFilterEntry(id){
-    return FetchToApiGet(`/animes/` + id.toString() + "/filterentry");
+    return FetchToApiGet(`/animes/` + id.toString() + `/filterentry`);
 }
 
 export function GetEpisodes(AnimeID, id = -1){
@@ -107,6 +107,18 @@ export function GetEpisodes(AnimeID, id = -1){
         return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes`);
     }else{
         return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString());
+    }
+}
+
+export function GetEpisodeLanguages(AnimeID, id){
+    return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString() + `/languages`);
+}
+
+export function GetPlayers(AnimeID, id, lang = ''){
+    if(lang == ``){
+        return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString() + `/players`);
+    }else{
+        return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString() + `/players/` + lang);
     }
 }
 
@@ -121,7 +133,7 @@ export function FilterAnimes(name, types, genres, themes, studios, producers, de
         Demographics: demographics
     };
     
-    return FetchToApiPost("/animes/filter", req);
+    return FetchToApiPost(`/animes/filter`, req);
 }
 
 export function CreateUser(Name, Password, Email){
@@ -131,7 +143,7 @@ export function CreateUser(Name, Password, Email){
         UserPassword: Password
     };
     
-    return FetchToApiPost("/auth/signup", req);
+    return FetchToApiPost(`/auth/signup`, req);
 }
 
 export function LoginUser(Name, Password){
@@ -140,7 +152,7 @@ export function LoginUser(Name, Password){
         UserPassword: Password
     };
     
-    return FetchToApiPost("/auth/login", req);
+    return FetchToApiPost(`/auth/login`, req);
 }
 
 export function LogoutUser(id, token){
@@ -149,7 +161,7 @@ export function LogoutUser(id, token){
         Token: token,
     };
     
-    return FetchToApiPost("/auth/logout", req);
+    return FetchToApiPost(`/auth/logout`, req);
 }
 
 export function GetUserInfo(id){
@@ -158,7 +170,7 @@ export function GetUserInfo(id){
         Token: undefined
     };
     
-    return FetchToApiPost("/auth/changeinfo", req);
+    return FetchToApiPost(`/auth/changeinfo`, req);
 }
 
 export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){
@@ -170,5 +182,5 @@ export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){
         UserProfileImagePoster: ProfilePoster
     };
     
-    return FetchToApiPost("/auth/changeinfo", req);
+    return FetchToApiPost(`/auth/changeinfo`, req);
 }
