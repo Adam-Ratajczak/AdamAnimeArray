@@ -277,6 +277,111 @@ func steal_series(a, b int) {
 	}
 }
 
+func steal_alpha(url string) {
+	c := colly.NewCollector()
+	c.SetRequestTimeout(120 * time.Second)
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visiting", r.URL)
+	})
+
+	c.OnResponse(func(r *colly.Response) {
+		fmt.Println("Got a response from", r.Request.URL)
+	})
+
+	valid := true
+
+	c.OnError(func(r *colly.Response, e error) {
+		fmt.Println("Got this error:", e)
+		valid = false
+	})
+
+	waitChan := make(chan struct{}, MAX_CONCURRENT_JOBS)
+	count := 0
+
+	c.OnHTML("div.list tr", func(e *colly.HTMLElement) {
+		link := e.ChildAttr("div.title a:first-of-type", "href")
+		title := strings.Trim(strings.Replace(e.ChildText("div.title a:first-of-type"), "\n", "", -1), " ")
+
+		waitChan <- struct{}{}
+		count++
+		go func(count int) {
+			Block{
+				Try: func(url, name string) {
+					// if find_anime_in_db(name) == -1 {
+					// 	steal_anime(url)
+					// } else {
+					// 	fmt.Println("Skipping!")
+					// }
+					fill_relations(url, name)
+					// fix_posters(url, name)
+					// fix_songs(url, name)
+				},
+				Catch: func(e Exception) {
+					fmt.Printf("Caught %v\n", e)
+				},
+				Finally: func() {
+				},
+			}.Do(link, title)
+			<-waitChan
+		}(count)
+	})
+
+	for i := 0; valid; i += 50 {
+		c.Visit(url + "&show=" + strconv.FormatInt(int64(i), 10))
+	}
+}
+
+func steal_genre(url string, a, b int) {
+	c := colly.NewCollector()
+	c.SetRequestTimeout(120 * time.Second)
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visiting", r.URL)
+	})
+
+	c.OnResponse(func(r *colly.Response) {
+		fmt.Println("Got a response from", r.Request.URL)
+	})
+
+	c.OnError(func(r *colly.Response, e error) {
+		fmt.Println("Got this error:", e)
+	})
+
+	waitChan := make(chan struct{}, MAX_CONCURRENT_JOBS)
+	count := 0
+
+	c.OnHTML("div.seasonal-anime", func(e *colly.HTMLElement) {
+		link := e.ChildAttr("a.link-title", "href")
+		title := strings.Trim(strings.Replace(e.ChildText("a.link-title"), "\n", "", -1), " ")
+
+		waitChan <- struct{}{}
+		count++
+		go func(count int) {
+			Block{
+				Try: func(url, name string) {
+					if find_anime_in_db(name) == -1 {
+						steal_anime(url)
+					} else {
+						fmt.Println("Skipping!")
+					}
+					// fill_relations(url, name)
+					// fix_posters(url, name)
+					// fix_songs(url, name)
+				},
+				Catch: func(e Exception) {
+					fmt.Printf("Caught %v\n", e)
+				},
+				Finally: func() {
+				},
+			}.Do(link, title)
+			<-waitChan
+		}(count)
+	})
+
+	for i := a; i <= b; i++ {
+		c.Visit(url + "?page=" + strconv.FormatInt(int64(i), 10))
+	}
+}
+
 func main() {
 	err := godotenv.Load()
 	if err != nil {
@@ -294,9 +399,17 @@ func main() {
 	// loadSQLFile("sql_files/AnimeTables.sql")
 	// loadSQLFile("sql_files/Last.sql")
 
-	steal_series(0, 20000)
+	// steal_series(0, 20000)
 
-	// steal_anime("https://myanimelist.net/anime/41457/86?q=eigh&cat=anime")
+	arr := []string{".", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
+
+	for _, key := range arr {
+		steal_alpha("https://myanimelist.net/anime.php?letter=" + key)
+		fmt.Println(key + ": waiting")
+		time.Sleep(5000)
+	}
+
+	// steal_anime("https://myanimelist.net/anime/1639/Boku_no_Pico")
 	// steal_anime("https://myanimelist.net/anime/32615/Youjo_Senki")
 	// fix_songs("https://myanimelist.net/anime/32615/Youjo_Senki", "Youjo Senki")
 	// steal_anime("https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2")
