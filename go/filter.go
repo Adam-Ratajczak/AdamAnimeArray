@@ -16,7 +16,8 @@ func all(c echo.Context) error {
 	}
 	for rows.Next() {
 		anime := Anime{}
-		rows.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+		rows.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+
 		animes = append(animes, anime)
 	}
 	return c.JSON(http.StatusOK, animes)
