@@ -55,10 +55,10 @@ type Lang struct {
 }
 
 type Relation struct {
-	AnimeID      int
-	OtherID      int
-	RelationID   int
-	RelationType string
+	AnimeID    int
+	OtherID    int
+	RelationID int
+	OtherName  string
 }
 
 type Filter struct {

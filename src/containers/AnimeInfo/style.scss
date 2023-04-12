@@ -1,13 +1,13 @@
 @import 'src/styles/colors';
 
-#AnimeInfoHeader{
+#AnimeInfoHeader {
     background-color: #630f78;
     color: $text-color;
     margin: 0px;
     padding-left: 50px;
 }
 
-#AnimeInfoContent{
+#AnimeInfoContent {
     display: flex;
     flex-direction: row;
     background-color: $background-color-theme;
@@ -15,37 +15,40 @@
     color: $text-color;
 }
 
-#AnimeInfoContainer{
+#AnimeInfoContainer {
     display: flex;
     flex-direction: column;
     width: 40%;
     background-color: $background-tilted-color;
 }
 
-#AnimeInfoContainer > h3{
+#AnimeInfoContainer>h3 {
     margin-left: 20px;
 }
 
-#AnimeInfoContainer > h2{
+#AnimeInfoContainer>h2 {
     margin-left: 10px;
     color: $text-tilted-color;
 }
 
-#AnimeInfoContainer > table{
+#AnimeInfoContainer>table {
     margin-left: 30px;
 }
 
-#AnimeDescContainer{
+#AnimeDescContainer {
     display: flex;
     flex-direction: column;
     width: 60%;
-    text-align: justify;
-    text-justify: inter-word;
     padding: 50px;
     font-size: 0.85em;
 }
 
-#AnimeInfoPosterContainer{
+#AnimeDescContainer p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#AnimeInfoPosterContainer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -53,7 +56,7 @@
     height: 400px;
 }
 
-#AnimeInfoPoster{
+#AnimeInfoPoster {
     max-width: 100%;
     max-height: 90%;
     width: auto;
@@ -61,7 +64,7 @@
     margin-right: 50px;
 }
 
-#SimiliarAnimes{
+#SimiliarAnimes {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -69,12 +72,74 @@
     flex-wrap: wrap;
 }
 
-#SimilliarAnimeHeader{
+#SimilliarAnimeHeader {
     color: $text-color;
 }
 
-.AnimePropertyName{
+.AnimePropertyName {
     color: $text-color;
     font-weight: bold;
     width: 200px;
+}
+
+#AnimeRelationContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.RelationType {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    max-height: 200px;
+    margin: 20px;
+    padding: 0%;
+    background-color: $background-tilted-color;
+}
+
+.RelationType div {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* width */
+.RelationType div::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.RelationType div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.RelationType div::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.RelationType div::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.RelationHeader {
+    background-color: $background-color-dark;
+    height: 50px;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.RelationEntry {
+    height: 40px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.RelationEntry:hover {
+    background-color: $btn-hover-text-color;
+    color: $base-color;
+    height: 40px;
 }

@@ -240,7 +240,7 @@ func animeRelations(c echo.Context) error {
 		return c.NoContent(http.StatusBadRequest)
 	}
 
-	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT RelationType FROM Relations r WHERE r.RelationID = ar.RelationID) FROM AnimeRelations ar WHERE ar.AnimeID = ?;", id)
+	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT AnimeTitle FROM Animes a WHERE a.AnimeID = ar.OtherID) FROM AnimeRelations ar WHERE ar.AnimeID = ?;", id)
 	if err != nil {
 		return err
 	}
@@ -248,7 +248,7 @@ func animeRelations(c echo.Context) error {
 
 	for rows.Next() {
 		res := Relation{}
-		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.RelationID, &res.RelationType)
+		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.RelationID, &res.OtherName)
 		if err != nil {
 			return err
 		}
@@ -274,7 +274,7 @@ func animeRelation(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT RelationType FROM Relations r WHERE r.RelationID = ar.RelationID) FROM AnimeRelations ar WHERE ar.AnimeID = ? AND ar.RelationID = ?;", id, rel)
+	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT AnimeTitle FROM Animes a WHERE a.AnimeID = ar.OtherID) FROM AnimeRelations ar WHERE ar.AnimeID = ? AND ar.RelationID = ?;", id, rel)
 	if err != nil {
 		return err
 	}
@@ -282,7 +282,7 @@ func animeRelation(c echo.Context) error {
 
 	for rows.Next() {
 		res := Relation{}
-		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.RelationID, &res.RelationType)
+		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.RelationID, &res.OtherName)
 		if err != nil {
 			return err
 		}

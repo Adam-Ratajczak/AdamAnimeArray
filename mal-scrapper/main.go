@@ -62,9 +62,9 @@ func fill_relations(url, name string) {
 
 	c.OnHTML("table.anime_detail_related_anime", func(e *colly.HTMLElement) {
 		e.ForEach("tr", func(i int, h *colly.HTMLElement) {
-			relation := h.ChildText("td")
+			relation := h.ChildText("td.ar")
 			relation = strings.Split(relation, ":")[0]
-			e.ForEach("a", func(j int, a *colly.HTMLElement) {
+			h.ForEach("a", func(j int, a *colly.HTMLElement) {
 				link := a.Attr("href")
 
 				if !strings.Contains(link, "anime") {
@@ -224,7 +224,7 @@ func (tcf Block) Do(url, name string) {
 	tcf.Try(url, name)
 }
 
-const MAX_CONCURRENT_JOBS = 50
+const MAX_CONCURRENT_JOBS = 40
 
 func steal_series(a, b int) {
 	c := colly.NewCollector()
@@ -408,6 +408,8 @@ func main() {
 		fmt.Println(key + ": waiting")
 		time.Sleep(5000)
 	}
+
+	// fill_relations("https://myanimelist.net/anime/11597/Nisemonogatari", "Nisemonogatari")
 
 	// steal_anime("https://myanimelist.net/anime/1639/Boku_no_Pico")
 	// steal_anime("https://myanimelist.net/anime/32615/Youjo_Senki")

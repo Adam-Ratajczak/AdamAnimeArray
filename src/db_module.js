@@ -74,6 +74,14 @@ export function GetAnime(id = -1){
     }
 }
 
+export function GetRelations(id = -1){
+    if(id < 0){
+        return FetchToApiGet(`/animes/relations`);
+    }else{
+        return FetchToApiGet(`/animes/relations/` + id.toString());
+    }
+}
+
 export function GetAnimeGenres(id){
     return FetchToApiGet(`/animes/` + id.toString() + `/genres`);
 }
@@ -100,6 +108,10 @@ export function GetAnimeType(id){
 
 export function GetFilterEntry(id){
     return FetchToApiGet(`/animes/` + id.toString() + `/filterentry`);
+}
+
+export function GetAnimeRelations(id){
+    return FetchToApiGet(`/animes/` + id.toString() + `/relations`);
 }
 
 export function GetEpisodes(AnimeID, id = -1){

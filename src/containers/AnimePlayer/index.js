@@ -16,7 +16,7 @@ function LangWidget(props) {
       .then((result) => {
         let flag_widget = []
         for (let lang of result) {
-          flag_widget.push((<input type="radio" name="LanguageList"><img src={process.env.PUBLIC_URL + "/flags/" + lang.FlagUrl} alt={lang.Name} /></input>))
+          flag_widget.push((<img src={process.env.PUBLIC_URL + "/flags/" + lang.FlagUrl} alt={lang.Name} class={lang.Code == props.Lang ? "active" : ""} role="button"/>))
         }
 
         SetFlags(flag_widget)
@@ -27,9 +27,9 @@ function LangWidget(props) {
     foo()
   }
 
-  return (<fieldset id="LanguageList">
-    {/* {Flags} */}
-  </fieldset>)
+  return (<div id="LanguageList">
+    {Flags}
+  </div>)
 }
 
 function PlayerCb(props){
@@ -121,6 +121,24 @@ function AnimePlayer() {
       let player_url = cb.options[cb.selectedIndex].value
       SetPlayerUrl(player_url)
     }
+    
+    let all_flags = document.querySelectorAll("#LanguageList img")
+
+    for(let i = 0; i < all_flags.length; i++){
+      all_flags[i].onclick = () =>{
+        GetEpisodeLanguages(AnimeID, EpNum)
+        .then((response) => response.json())
+        .then((result) => {
+          SetCurrLang(result[i].Code)
+
+          for(let img of all_flags){
+            img.classList.remove("active")
+          }
+
+          all_flags[i].classList.add("active")
+        })
+      }
+    }
   }, []);
 
   return (
@@ -133,8 +151,9 @@ function AnimePlayer() {
         </div>
         <iframe id="Player" title="Player" src={PlayerUrl} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
         <div id="PlayerLink">
-          <LangWidget AnimeID={AnimeID} EpNum={EpNum} />
+          <LangWidget AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} />
           <PlayerCb AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} />
+          {CurrLang}
         </div>
       </div>
     </div>
