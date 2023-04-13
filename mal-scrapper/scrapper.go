@@ -90,7 +90,7 @@ func steal_anime(url string) int {
 			return
 		}
 
-		a.EnglishTitle = e.ChildText("p.title-english")
+		a.EnglishTitle = strings.Trim(strings.Replace(e.ChildText("p.title-english"), "\n", "", -1), " ")
 		a.PosterURL = e.ChildAttr("img[itemprop=\"image\"]", "data-src")
 		a.AnimeDesc = e.ChildText("p[itemprop=\"description\"]")
 
@@ -203,6 +203,10 @@ func steal_anime(url string) int {
 		if movie {
 			ep := Episode{}
 			ep.Title = a.EnglishTitle
+			if ep.Title == "" {
+				ep.Title = a.AnimeTitle
+			}
+
 			ep.Aired = a.AiredBegin
 			ep.EpisodeNr = 1
 			episodes[1] = ep

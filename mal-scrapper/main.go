@@ -202,6 +202,36 @@ func fix_songs(url, name string) {
 	c.Visit(url)
 }
 
+func fix_movie_names() {
+	rows, err := db.Query("SELECT a.AnimeID, e.EpisodeID FROM Episodes e INNER JOIN Animes a ON e.AnimeID = a.AnimeID WHERE a.TypeID = (SELECT TypeID FROM Types t WHERE t.TypeName LIKE 'Movie') AND TRIM(e.Title) LIKE ''")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	for rows.Next() {
+		AnimeID := 0
+		EpID := 0
+
+		err := rows.Scan(&AnimeID, &EpID)
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+
+		title := find_anime_name_in_db(AnimeID)
+
+		_, err = db.Exec("UPDATE Episodes SET Title = ? WHERE EpisodeID = ?;", title, EpID)
+
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+
+		fmt.Println("Written", title, "to db")
+	}
+}
+
 type Block struct {
 	Try     func(string, string)
 	Catch   func(Exception)
@@ -401,13 +431,15 @@ func main() {
 
 	// steal_series(0, 20000)
 
-	arr := []string{".", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
+	fix_movie_names()
 
-	for _, key := range arr {
-		steal_alpha("https://myanimelist.net/anime.php?letter=" + key)
-		fmt.Println(key + ": waiting")
-		time.Sleep(5000)
-	}
+	// arr := []string{".", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
+
+	// for _, key := range arr {
+	// 	steal_alpha("https://myanimelist.net/anime.php?letter=" + key)
+	// 	fmt.Println(key + ": waiting")
+	// 	time.Sleep(5000)
+	// }
 
 	// fill_relations("https://myanimelist.net/anime/11597/Nisemonogatari", "Nisemonogatari")
 

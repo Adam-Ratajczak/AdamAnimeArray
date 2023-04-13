@@ -51,9 +51,12 @@ function Home() {
               return -1
             }
 
-            if(a.AiredBegin.Time < b.AiredBegin.Time){
+            const ABegin = new Date(a.AiredBegin.Time)
+            const BBegin = new Date(b.AiredBegin.Time)
+
+            if(ABegin < BBegin){
               return 1
-            }else if(a.AiredBegin.Time == b.AiredBegin.Time){
+            }else if(ABegin == BBegin){
               return 0
             }else{
               return -1
