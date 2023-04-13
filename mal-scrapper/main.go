@@ -16,6 +16,9 @@ import (
 
 var db *sql.DB
 
+const MODE = 0
+const MAX_CONCURRENT_JOBS = 15
+
 func loadSQLFile(path string) error {
 	file, err := os.ReadFile(path)
 	if err != nil {
@@ -90,43 +93,21 @@ func fill_relations(url, name string) {
 	c.Visit(url)
 }
 
-func delete_animes_over_100_eps() {
-	rows, err := db.Query("SELECT AnimeID FROM Animes a WHERE (SELECT COUNT(EpisodeID) FROM Episodes e WHERE e.AnimeID = a.AnimeID) = 100")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	for rows.Next() {
-		id := 0
-		err = rows.Scan(&id)
-
-		if err != nil {
-			fmt.Println(err)
-			continue
-		}
-
-		delete_anime(id)
-	}
-}
-
 type Block struct {
 	Try     func(string, string)
 	Catch   func(Exception)
 	Finally func()
 }
 
-var mode = 0
-
 var ErrBlock = Block{
 	Try: func(url, name string) {
-		if mode == 0 {
+		if MODE == 0 {
 			if find_anime_in_db(name) == -1 {
 				steal_anime(url)
 			} else {
 				fmt.Println("Skipping!")
 			}
-		} else if mode == 1 {
+		} else if MODE == 1 {
 			fill_relations(url, name)
 		}
 	},
@@ -152,8 +133,6 @@ func (tcf Block) Do(url, name string) {
 	}
 	tcf.Try(url, name)
 }
-
-const MAX_CONCURRENT_JOBS = 15
 
 func steal_series(a, b int) {
 	c := colly.NewCollector()
@@ -275,6 +254,11 @@ func main() {
 	}
 	defer db.Close()
 
+	// loadSQLFile("sql_files/YeetTables.sql")
+	// loadSQLFile("sql_files/AnimeTables.sql")
+	// loadSQLFile("sql_files/UserTables.sql")
+	// loadSQLFile("sql_files/Last.sql")
+
 	arr := []string{".", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
 
 	for _, key := range arr {
@@ -282,7 +266,4 @@ func main() {
 		fmt.Println(key + ": waiting")
 		time.Sleep(5000)
 	}
-
-	// delete_animes_over_100_eps()
-	// steal_anime("https://myanimelist.net/anime/21/One_Piece")
 }
