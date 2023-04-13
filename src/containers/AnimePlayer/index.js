@@ -14,9 +14,33 @@ function LangWidget(props) {
     GetEpisodeLanguages(AnimeID, EpNum)
       .then((response) => response.json())
       .then((result) => {
+
         let flag_widget = []
         for (let lang of result) {
-          flag_widget.push((<img src={process.env.PUBLIC_URL + "/flags/" + lang.FlagUrl} alt={lang.Name} class={lang.Code == props.Lang ? "active" : ""} role="button" />))
+          function eventHandler(){
+            let i = 0
+            while(i < result.length){
+              if(lang.Code == result[i].Code){
+                break
+              }
+              i++
+            }
+            props.OnClick(lang.Code)
+            let img = document.querySelectorAll("#LanguageList img")
+
+            for(let image of img){
+              image.classList.remove("active")
+            }
+
+            img[i].classList.add("active")
+          }
+
+          flag_widget.push((
+            <div class="tooltip">
+              <span class="tooltiptext">{lang.Name}</span>
+              <img onClick={(ev) => eventHandler()} src={process.env.PUBLIC_URL + "/flags/" + lang.FlagUrl} alt={lang.Name} class={lang.Code == props.Lang ? "active" : ""} role="button" />
+            </div>
+          ))
         }
 
         SetFlags(flag_widget)
@@ -56,7 +80,7 @@ function PlayerCb(props) {
     foo()
   }
 
-  return (<select id="PlayerCb" onchange={props.onchange}>
+  return (<select id="PlayerCb" class="minimal" onchange={props.onchange}>
     {Players}
   </select>)
 }
@@ -90,9 +114,9 @@ function EpList(props) {
               title = title.substring(0, 21) + "..."
             }
             if (EpNum == ep.EpisodeNr) {
-              list.push(<span class="EpisodeEntry"><span class="EpisodeNr">{ep.EpisodeNr}</span><span>{title}</span></span>)
+              list.push(<span class="EpisodeEntry tooltip"><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span>{title}</span></span>)
             } else {
-              list.push(<a class="EpisodeEntry" href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="EpisodeNr">{ep.EpisodeNr}</span><span>{title}</span></a>)
+              list.push(<a class="EpisodeEntry tooltip" href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span>{title}</span></a>)
             }
           }
           SetEps(list)
@@ -162,6 +186,8 @@ function AnimePlayer() {
         if (result.length > 0) {
           SetPlayerUrl(result[0].PlayerUrl)
           SetCurrLang(result[0].LangCode)
+          SetCurrPlayer(result[0].Source)
+          SetCurrQuality(result[0].Quality)
         }
       })
     cb.onchange = (ev) => {
@@ -171,35 +197,34 @@ function AnimePlayer() {
       SetCurrPlayer(player.split(" - ")[0])
       SetCurrQuality(player.split(" - ")[1])
     }
-
-    let all_flags = document.querySelectorAll("#LanguageList img")
-
-    for (let i = 0; i < all_flags.length; i++) {
-      all_flags[i].onclick = () => {
-        GetEpisodeLanguages(AnimeID, EpNum)
-          .then((response) => response.json())
-          .then((result) => {
-            SetCurrLang(result[i].Code)
-
-            for (let img of all_flags) {
-              img.classList.remove("active")
-            }
-
-            all_flags[i].classList.add("active")
-          })
-      }
-    }
   }, []);
+
+  function changeLang(LangID){
+    SetCurrLang(LangID)
+    
+    let cb = document.getElementById("PlayerCb")
+
+    cb.innerHTML = ""
+    GetPlayers(AnimeID, EpNum, LangID)
+      .then((response) => response.json())
+      .then((result) => {
+        SetPlayerUrl(result[0].PlayerUrl)
+        for (let player of result) {
+          cb.innerHTML += "<option value=\"" + player.PlayerUrl + "\">" + player.Source + " - " + ((player.Quality) ? player.Quality : "Unknown") + "</option>"
+        }
+      })
+
+  }
 
   return (
     <div id="main">
       <Menubar />
-      <div id="AnimeInfoHeaderDiv"><h1>{AnimeTitle}</h1><LangWidget AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} /></div>
+      <div id="AnimeInfoHeaderDiv"><h1>{AnimeTitle}</h1><LangWidget AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} OnClick={changeLang} /></div>
       <div id="PlayerContent">
         <EpList AnimeID={AnimeID} EpNum={EpNum} />
         <div id="PlayerMainDiv">
           <div id="PlayerDiv">
-            <iframe id="Player" src={PlayerUrl} />
+            <iframe id="Player" src={PlayerUrl} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" />
             <div id="PlayerInfoDiv">
               <table>
                 <tbody>

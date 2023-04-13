@@ -1,4 +1,5 @@
 @import 'src/styles/colors';
+@import 'src/styles/select';
 
 #AnimeInfoHeaderDiv{
     background-color: #630f78;
@@ -12,7 +13,7 @@
 
 #AnimeInfoHeaderDiv > h1{
     margin: 0%;
-    width: 30%;
+    width: 100%;
 }
 
 #PlayerContent{
@@ -35,7 +36,7 @@
     background-color: $background-tilted-color;
 }
 
-#EpList div{
+#EpList > div{
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -46,6 +47,9 @@
     flex-basis: 60px;
     margin: 0%;
     padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* width */
@@ -181,8 +185,14 @@ a{
 
 #PlayerInfoDiv > a{
     color: $foreground-color;
+    width: 100%;
+    text-align: left;
 }
 
 #PlayerInfoDiv > table{
     width: 100%;
+}
+
+#PlayerCb{
+    margin-left: 500px;
 }
