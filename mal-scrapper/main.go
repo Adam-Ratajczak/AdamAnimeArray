@@ -203,7 +203,7 @@ func fix_songs(url, name string) {
 }
 
 func fix_movie_names() {
-	rows, err := db.Query("SELECT a.AnimeID, e.EpisodeID FROM Episodes e INNER JOIN Animes a ON e.AnimeID = a.AnimeID WHERE a.TypeID = (SELECT TypeID FROM Types t WHERE t.TypeName LIKE 'Movie') AND TRIM(e.Title) LIKE ''")
+	rows, err := db.Query("SELECT a.AnimeID, e.EpisodeID FROM Episodes e INNER JOIN Animes a ON e.AnimeID = a.AnimeID WHERE TRIM(e.Title) LIKE ''")
 	if err != nil {
 		fmt.Println(err)
 		return
