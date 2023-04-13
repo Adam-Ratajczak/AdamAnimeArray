@@ -90,145 +90,23 @@ func fill_relations(url, name string) {
 	c.Visit(url)
 }
 
-func fix_posters(url, name string) {
-	anime_id := find_anime_in_db(name)
-	if anime_id == -1 {
-		return
-	}
-
-	c := colly.NewCollector()
-	c.SetRequestTimeout(120 * time.Second)
-	c.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visiting", r.URL)
-	})
-
-	c.OnResponse(func(r *colly.Response) {
-		fmt.Println("Got a response from", r.Request.URL)
-	})
-
-	c.OnError(func(r *colly.Response, e error) {
-		fmt.Println("Got this error:", e)
-	})
-
-	c.OnHTML("body", func(e *colly.HTMLElement) {
-		url := e.ChildAttr("img[itemprop=\"image\"]", "data-src")
-
-		_, err := db.Exec("UPDATE Animes SET PosterUrl = ? WHERE AnimeID = ?;", url, anime_id)
-		if err != nil {
-			fmt.Println(err)
-		}
-	})
-
-	c.Visit(url)
-}
-
-func fix_songs(url, name string) {
-	anime_id := find_anime_in_db(name)
-	if anime_id == -1 {
-		return
-	}
-
-	c := colly.NewCollector()
-	c.SetRequestTimeout(120 * time.Second)
-	c.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visiting", r.URL)
-	})
-
-	c.OnResponse(func(r *colly.Response) {
-		fmt.Println("Got a response from", r.Request.URL)
-	})
-
-	c.OnError(func(r *colly.Response, e error) {
-		fmt.Println("Got this error:", e)
-	})
-
-	c.OnHTML("body", func(e *colly.HTMLElement) {
-		e.ForEach("div.opnening", func(i int, h *colly.HTMLElement) {
-			h.ForEach("tr", func(j int, s *colly.HTMLElement) {
-				title := s.ChildText("td:nth-of-type(2)")
-				if title == "" {
-					return
-				}
-				if strings.Contains(title, "Music") {
-					return
-				}
-
-				title = strings.Split(title, "\"")[1]
-				song := Song{}
-				song.AnimeID = anime_id
-				song.Title = title
-				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
-				song.Type = "opening"
-
-				s.ForEach("input", func(k int, link *colly.HTMLElement) {
-					if strings.Contains(link.Attr("value"), "spotify") {
-						song.SpotifyURL = link.Attr("value")
-						return
-					}
-				})
-
-				write_song_to_db(song)
-			})
-		})
-		e.ForEach("div.ending", func(i int, h *colly.HTMLElement) {
-			h.ForEach("tr", func(j int, s *colly.HTMLElement) {
-				title := s.ChildText("td:nth-of-type(2)")
-				if title == "" {
-					return
-				}
-				if strings.Contains(title, "Music") {
-					return
-				}
-
-				title = strings.Split(title, "\"")[1]
-				song := Song{}
-				song.AnimeID = anime_id
-				song.Title = title
-				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
-				song.Type = "ending"
-
-				s.ForEach("input", func(k int, link *colly.HTMLElement) {
-					if strings.Contains(link.Attr("value"), "spotify") {
-						song.SpotifyURL = link.Attr("value")
-						return
-					}
-				})
-
-				write_song_to_db(song)
-			})
-		})
-	})
-
-	c.Visit(url)
-}
-
-func fix_movie_names() {
-	rows, err := db.Query("SELECT a.AnimeID, e.EpisodeID FROM Episodes e INNER JOIN Animes a ON e.AnimeID = a.AnimeID WHERE TRIM(e.Title) LIKE ''")
+func delete_animes_over_100_eps() {
+	rows, err := db.Query("SELECT AnimeID FROM Animes a WHERE (SELECT COUNT(EpisodeID) FROM Episodes e WHERE e.AnimeID = a.AnimeID) = 100")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
 	for rows.Next() {
-		AnimeID := 0
-		EpID := 0
-
-		err := rows.Scan(&AnimeID, &EpID)
-		if err != nil {
-			fmt.Println(err)
-			continue
-		}
-
-		title := find_anime_name_in_db(AnimeID)
-
-		_, err = db.Exec("UPDATE Episodes SET Title = ? WHERE EpisodeID = ?;", title, EpID)
+		id := 0
+		err = rows.Scan(&id)
 
 		if err != nil {
 			fmt.Println(err)
 			continue
 		}
 
-		fmt.Println("Written", title, "to db")
+		delete_anime(id)
 	}
 }
 
@@ -236,6 +114,27 @@ type Block struct {
 	Try     func(string, string)
 	Catch   func(Exception)
 	Finally func()
+}
+
+var mode = 0
+
+var ErrBlock = Block{
+	Try: func(url, name string) {
+		if mode == 0 {
+			if find_anime_in_db(name) == -1 {
+				steal_anime(url)
+			} else {
+				fmt.Println("Skipping!")
+			}
+		} else if mode == 1 {
+			fill_relations(url, name)
+		}
+	},
+	Catch: func(e Exception) {
+		fmt.Printf("Caught %v\n", e)
+	},
+	Finally: func() {
+	},
 }
 
 type Exception interface{}
@@ -254,7 +153,7 @@ func (tcf Block) Do(url, name string) {
 	tcf.Try(url, name)
 }
 
-const MAX_CONCURRENT_JOBS = 40
+const MAX_CONCURRENT_JOBS = 15
 
 func steal_series(a, b int) {
 	c := colly.NewCollector()
@@ -281,23 +180,7 @@ func steal_series(a, b int) {
 		waitChan <- struct{}{}
 		count++
 		go func(count int) {
-			Block{
-				Try: func(url, name string) {
-					// if find_anime_in_db(name) == -1 {
-					// 	steal_anime(url)
-					// } else {
-					// 	fmt.Println("Skipping!")
-					// }
-					fill_relations(url, name)
-					// fix_posters(url, name)
-					// fix_songs(url, name)
-				},
-				Catch: func(e Exception) {
-					fmt.Printf("Caught %v\n", e)
-				},
-				Finally: func() {
-				},
-			}.Do(link, title)
+			ErrBlock.Do(link, title)
 			<-waitChan
 		}(count)
 	})
@@ -335,23 +218,7 @@ func steal_alpha(url string) {
 		waitChan <- struct{}{}
 		count++
 		go func(count int) {
-			Block{
-				Try: func(url, name string) {
-					// if find_anime_in_db(name) == -1 {
-					// 	steal_anime(url)
-					// } else {
-					// 	fmt.Println("Skipping!")
-					// }
-					fill_relations(url, name)
-					// fix_posters(url, name)
-					// fix_songs(url, name)
-				},
-				Catch: func(e Exception) {
-					fmt.Printf("Caught %v\n", e)
-				},
-				Finally: func() {
-				},
-			}.Do(link, title)
+			ErrBlock.Do(link, title)
 			<-waitChan
 		}(count)
 	})
@@ -386,23 +253,7 @@ func steal_genre(url string, a, b int) {
 		waitChan <- struct{}{}
 		count++
 		go func(count int) {
-			Block{
-				Try: func(url, name string) {
-					if find_anime_in_db(name) == -1 {
-						steal_anime(url)
-					} else {
-						fmt.Println("Skipping!")
-					}
-					// fill_relations(url, name)
-					// fix_posters(url, name)
-					// fix_songs(url, name)
-				},
-				Catch: func(e Exception) {
-					fmt.Printf("Caught %v\n", e)
-				},
-				Finally: func() {
-				},
-			}.Do(link, title)
+			ErrBlock.Do(link, title)
 			<-waitChan
 		}(count)
 	})
@@ -424,27 +275,14 @@ func main() {
 	}
 	defer db.Close()
 
-	// loadSQLFile("sql_files/YeetTables.sql")
-	// loadSQLFile("sql_files/UserTables.sql")
-	// loadSQLFile("sql_files/AnimeTables.sql")
-	// loadSQLFile("sql_files/Last.sql")
+	arr := []string{".", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
 
-	// steal_series(0, 20000)
+	for _, key := range arr {
+		steal_alpha("https://myanimelist.net/anime.php?letter=" + key)
+		fmt.Println(key + ": waiting")
+		time.Sleep(5000)
+	}
 
-	fix_movie_names()
-
-	// arr := []string{".", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
-
-	// for _, key := range arr {
-	// 	steal_alpha("https://myanimelist.net/anime.php?letter=" + key)
-	// 	fmt.Println(key + ": waiting")
-	// 	time.Sleep(5000)
-	// }
-
-	// fill_relations("https://myanimelist.net/anime/11597/Nisemonogatari", "Nisemonogatari")
-
-	// steal_anime("https://myanimelist.net/anime/1639/Boku_no_Pico")
-	// steal_anime("https://myanimelist.net/anime/32615/Youjo_Senki")
-	// fix_songs("https://myanimelist.net/anime/32615/Youjo_Senki", "Youjo Senki")
-	// steal_anime("https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2")
+	// delete_animes_over_100_eps()
+	// steal_anime("https://myanimelist.net/anime/21/One_Piece")
 }

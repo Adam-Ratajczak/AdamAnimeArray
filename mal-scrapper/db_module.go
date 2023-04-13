@@ -181,12 +181,16 @@ func write_anime_to_db(a Animes) int {
 }
 
 func delete_anime(id int) {
-	fmt.Println("Deleting Anime")
+	fmt.Println("Deleting Anime with id:", id)
 	row, err := db.Exec("DELETE FROM EpisodePlayers WHERE EpisodeID IN (SELECT EpisodeID FROM Episodes WHERE AnimeID = ?);", id)
 	if err != nil {
 		log.Fatal(err)
 	}
 	row, err = db.Exec("DELETE FROM Episodes WHERE AnimeID = ?;", id)
+	if err != nil {
+		log.Fatal(err)
+	}
+	row, err = db.Exec("DELETE FROM Songs WHERE AnimeID = ?;", id)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -207,6 +211,14 @@ func delete_anime(id int) {
 		log.Fatal(err)
 	}
 	row, err = db.Exec("DELETE FROM AnimeDemographics WHERE AnimeID = ?;", id)
+	if err != nil {
+		log.Fatal(err)
+	}
+	row, err = db.Exec("DELETE FROM AnimeRelations WHERE AnimeID = ? OR OtherID = ?;", id, id)
+	if err != nil {
+		log.Fatal(err)
+	}
+	row, err = db.Exec("DELETE FROM Animes WHERE AnimeID = ?;", id)
 	if err != nil {
 		log.Fatal(err)
 	}

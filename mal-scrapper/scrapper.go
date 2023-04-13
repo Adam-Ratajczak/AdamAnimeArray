@@ -66,6 +66,7 @@ func steal_anime(url string) int {
 	anime_id := -1
 	worthit := false
 	movie := false
+	EpisodeReader := true
 	episodes := make(map[int]Episode)
 	ogladajanime_ep_id := make(map[int]string)
 	gogoanime_ep_links := make(map[int]string)
@@ -139,6 +140,7 @@ func steal_anime(url string) int {
 		res, err := response.JSON()
 		if err != nil {
 			fmt.Println(err)
+			return
 		}
 		js_code := OgladajAnimePlayer{}
 		err = json.Unmarshal([]byte(res), &js_code)
@@ -151,7 +153,7 @@ func steal_anime(url string) int {
 
 		js_code.Data = strings.Replace(js_code.Data, "\\n", "\n", -1)
 		js_code.Data = strings.Replace(js_code.Data, "\\t", "\t", -1)
-		js_code.Data = strings.Replace(js_code.Data, "<h5 class=\"card-title text-dark\">", marker, -1)
+		js_code.Data = strings.Replace(js_code.Data, "<h5 class=\"card-title text-dark text-trim m-0 p-0\">", marker, -1)
 		js_code.Data = strings.Replace(js_code.Data, "</h5>", marker, -1)
 		arr := strings.Split(js_code.Data, marker)
 
@@ -187,6 +189,7 @@ func steal_anime(url string) int {
 		}
 
 		if link == "" {
+			fmt.Println("Not worth it!")
 			return
 		}
 
@@ -211,7 +214,12 @@ func steal_anime(url string) int {
 			ep.EpisodeNr = 1
 			episodes[1] = ep
 		} else {
-			c.Visit(url + "/episode")
+			i := 0
+			for EpisodeReader {
+				EpisodeReader = false
+				c.Visit(url + "/episode?offset=" + strconv.FormatInt(int64(i), 10))
+				i += 100
+			}
 		}
 
 		if len(episodes) == 0 {
@@ -445,6 +453,7 @@ func steal_anime(url string) int {
 	})
 
 	c.OnHTML("table.episode_list", func(e *colly.HTMLElement) {
+		EpisodeReader = true
 		e.ForEach("tr.episode-list-data", func(i int, h *colly.HTMLElement) {
 			ep_num, err := strconv.Atoi(h.ChildText("td.episode-number"))
 			if err != nil {
