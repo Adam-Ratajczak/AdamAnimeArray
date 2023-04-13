@@ -80,11 +80,12 @@ func sqlBuilder(filter FilterRequest) string {
 	sqlAppend(filterSqlBuilder("Studios", filter.Studios))
 	sqlAppend(filterSqlBuilder("Producers", filter.Producers))
 	sqlAppend(filterSqlBuilder("Demographics", filter.Demographics))
-	wheres = append(wheres, fmt.Sprintf(` a.AnimeTitle LIKE "%%%v%%" OR a.EnglishTitle LIKE "%%%v%%" ORDER BY a.AnimeTitle`, filter.Title, filter.Title))
+	wheres = append(wheres, fmt.Sprintf(` (a.AnimeTitle LIKE "%%%v%%" OR a.EnglishTitle LIKE "%%%v%%") ORDER BY a.AnimeTitle`, filter.Title, filter.Title))
 	where := strings.Join(wheres, " AND ")
 	join := strings.Join(joins, " ")
 	if where != "" {
 		where = fmt.Sprintf(" WHERE %v ", where)
 	}
+
 	return fmt.Sprintf(sql, join, where)
 }
