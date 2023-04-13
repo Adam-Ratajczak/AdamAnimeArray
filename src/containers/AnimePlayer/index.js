@@ -56,35 +56,6 @@ function LangWidget(props) {
   </div>)
 }
 
-function PlayerCb(props) {
-  const [Players, SetPlayers] = useState([])
-
-  const AnimeID = props.AnimeID
-  const EpNum = props.EpNum
-  const Lang = props.Lang
-
-  const foo = useCallback(() => {
-    GetPlayers(AnimeID, EpNum, Lang)
-      .then((response) => response.json())
-      .then((result) => {
-        let options = []
-        for (let player of result) {
-          options.push((<option value={player.PlayerUrl}>{player.Source + " - " + ((player.Quality) ? player.Quality : "Unknown")}</option>))
-        }
-
-        SetPlayers(options)
-      })
-  })
-
-  if (Players.length == 0) {
-    foo()
-  }
-
-  return (<select id="PlayerCb" class="minimal" onchange={props.onchange}>
-    {Players}
-  </select>)
-}
-
 function EpList(props) {
   const [Eps, SetEps] = useState([])
 
@@ -142,7 +113,7 @@ function AnimePlayer() {
   const [EpisodeTitle, SetEpisodeTitle] = useState(0)
   const [Aired, SetAired] = useState(0)
   const [PlayerUrl, SetPlayerUrl] = useState("/NoPlayer")
-  const [CurrLang, SetCurrLang] = useState("pl")
+  const [CurrLang, SetCurrLang] = useState("")
   const [CurrPlayer, SetCurrPlayer] = useState("")
   const [CurrQuality, SetCurrQuality] = useState("")
 
@@ -177,28 +148,6 @@ function AnimePlayer() {
 
   const EpAired = new Date(Aired.Time);
 
-  useEffect(() => {
-    let cb = document.getElementById("PlayerCb")
-
-    GetPlayers(AnimeID, EpNum)
-      .then((response) => response.json())
-      .then((result) => {
-        if (result.length > 0) {
-          SetPlayerUrl(result[0].PlayerUrl)
-          SetCurrLang(result[0].LangCode)
-          SetCurrPlayer(result[0].Source)
-          SetCurrQuality(result[0].Quality)
-        }
-      })
-    cb.onchange = (ev) => {
-      let player_url = cb.options[cb.selectedIndex].value
-      let player = cb.options[cb.selectedIndex].text
-      SetPlayerUrl(player_url)
-      SetCurrPlayer(player.split(" - ")[0])
-      SetCurrQuality(player.split(" - ")[1])
-    }
-  }, []);
-
   function changeLang(LangID){
     SetCurrLang(LangID)
     
@@ -213,8 +162,32 @@ function AnimePlayer() {
           cb.innerHTML += "<option value=\"" + player.PlayerUrl + "\">" + player.Source + " - " + ((player.Quality) ? player.Quality : "Unknown") + "</option>"
         }
       })
-
   }
+
+  useEffect(() => {
+    let cb = document.getElementById("PlayerCb")
+
+    GetPlayers(AnimeID, EpNum)
+      .then((response) => response.json())
+      .then((result) => {
+        if (result.length > 0) {
+          changeLang(result[0].LangCode)
+          SetCurrPlayer(result[0].Source)
+          SetCurrQuality(result[0].Quality)
+          
+          let img = document.querySelectorAll("#LanguageList img")[0]
+
+          img.classList.add("active")
+        }
+      })
+    cb.onchange = (ev) => {
+      let player_url = cb.options[cb.selectedIndex].value
+      let player = cb.options[cb.selectedIndex].text
+      SetPlayerUrl(player_url)
+      SetCurrPlayer(player.split(" - ")[0])
+      SetCurrQuality(player.split(" - ")[1])
+    }
+  }, []);
 
   return (
     <div id="main">
@@ -239,7 +212,7 @@ function AnimePlayer() {
             </div>
           </div>
           <div id="PlayerFooter">
-            <label>Choose Player:<PlayerCb AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} /></label>
+            <label>Choose Player:<select id="PlayerCb" class="minimal"></select></label>
           </div>
         </div>
       </div>
