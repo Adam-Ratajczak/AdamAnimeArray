@@ -72,7 +72,7 @@ function Home() {
 
         for (let id of anime_id_arr) {
           const AnimeID = id.toString();
-          container.push((<AnimePoster AnimeID={AnimeID} />))
+          container.push((<AnimePoster AnimeID={AnimeID} key={AnimeID}/>))
         }
 
         const foo = (event, index) => {
