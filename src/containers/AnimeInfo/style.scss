@@ -143,3 +143,8 @@
     color: $base-color;
     height: 40px;
 }
+
+#PlayerDiv{
+    display: flex;
+    flex-direction: row;
+}
