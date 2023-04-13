@@ -117,7 +117,7 @@ function AnimePlayer() {
   const [AnimeTitle, SetAnimeTitle] = useState(0)
   const [EpisodeTitle, SetEpisodeTitle] = useState(0)
   const [Aired, SetAired] = useState(0)
-  const [PlayerUrl, SetPlayerUrl] = useState(0)
+  const [PlayerUrl, SetPlayerUrl] = useState("/NoPlayer")
   const [CurrLang, SetCurrLang] = useState("pl")
   const [CurrPlayer, SetCurrPlayer] = useState("")
   const [CurrQuality, SetCurrQuality] = useState("")
