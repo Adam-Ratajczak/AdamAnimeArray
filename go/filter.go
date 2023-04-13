@@ -16,7 +16,8 @@ func all(c echo.Context) error {
 	}
 	for rows.Next() {
 		anime := Anime{}
-		rows.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+		rows.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+
 		animes = append(animes, anime)
 	}
 	return c.JSON(http.StatusOK, animes)
@@ -44,9 +45,6 @@ func filter(c echo.Context) error {
 
 func filterSqlBuilder(table string, filter []int) (string, string) {
 	coll := table[:len(table)-1]
-	if table == "Demographics" {
-		coll = "Group"
-	}
 	join := ""
 	where := ""
 	if len(filter) != 0 {
@@ -79,13 +77,15 @@ func sqlBuilder(filter FilterRequest) string {
 	sqlAppend(filterSqlBuilder("Types", filter.Types))
 	sqlAppend(filterSqlBuilder("Themes", filter.Themes))
 	sqlAppend(filterSqlBuilder("Genres", filter.Genres))
+	sqlAppend(filterSqlBuilder("Studios", filter.Studios))
 	sqlAppend(filterSqlBuilder("Producers", filter.Producers))
 	sqlAppend(filterSqlBuilder("Demographics", filter.Demographics))
-	wheres = append(wheres, fmt.Sprintf(` a.AnimeTitle LIKE "%%%v%%" ORDER BY a.AnimeTitle`, filter.Title))
+	wheres = append(wheres, fmt.Sprintf(` (a.AnimeTitle LIKE "%%%v%%" OR a.EnglishTitle LIKE "%%%v%%") ORDER BY a.AnimeTitle`, filter.Title, filter.Title))
 	where := strings.Join(wheres, " AND ")
 	join := strings.Join(joins, " ")
 	if where != "" {
 		where = fmt.Sprintf(" WHERE %v ", where)
 	}
+
 	return fmt.Sprintf(sql, join, where)
 }

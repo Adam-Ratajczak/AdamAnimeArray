@@ -1,8 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (207, CONCAT('Bible Black Only Version'), CONCAT('Bible Black Only explores the sexual misadventures of the supporting cast from the main Bible Black series. Miss Takashiro reminisces on her demonic capture, Itoh reveals her sadistic side, and Saeki is stalked by her classmates. Bible Black Only is a series of stand-alone episodes that do not affect the continuity of the main Bible Black series, and it contains footage that was previously only available on the R2 Bible Black Perfect Collection DVD.<br>
-<br>(Source: ANN)'), 3, '2005-07-25', '2006-04-25', '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/12/10104.jpg');
-INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (97, 207, 2);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (232, 207, 21);
-INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (211, 207, 1);
-INSERT INTO AnimeThemes(BindingID, AnimeID, ThemeID) VALUES (212, 207, 40);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2932, 207, 1, CONCAT('At the Faculty Room Toilet... / Secret Lesson / Events in the Locker Room'), '2005-07-25', 'https://htstreaming.com/player/index.php?data=55b1927fdafef39c48e5b73b5d61ea60');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (2933, 207, 2, CONCAT('Virgin Hunting: Obscene Dance of the Devils / Secret Torture / That`s a Teacher...'), '2006-04-25', 'https://htstreaming.com/player/index.php?data=285f89b802bcb2651801455c86d78f2a');

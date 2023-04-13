@@ -3,7 +3,7 @@ import { AnimePanel, Menubar } from '../../widgets'
 import { FilterAnimes, GetDemographics, GetGenre, GetProducer, GetTheme, GetType } from '../../db_module';
 import './style.scss'
 
-const animeLimit = 20;
+const animeLimit = 100
 
 class TypeButton extends Component {
   render() {
@@ -27,6 +27,7 @@ class Search extends Component {
     this.state = {
       Genres: [],
       Themes: [],
+      Studios: [],
       Producers: [],
       Demographics: [],
       Types: [],
@@ -34,6 +35,7 @@ class Search extends Component {
   
       GenreList: [],
       ThemeList: [],
+      StudioList: [],
       ProducerList: [],
       DemographicsList: [],
       TypeList: []
@@ -80,6 +82,14 @@ class Search extends Component {
             newState.ThemeList = arr;
             this.setState(newState);
           };
+        } else if (typename == "studio") {
+          callback = () => {
+            const arr = getArr(this.state.StudioList, elem.ID);
+  
+            let newState = this.state;
+            newState.ProducerList = arr;
+            this.setState(newState);
+          };
         } else if (typename == "producer") {
           callback = () => {
             const arr = getArr(this.state.ProducerList, elem.ID);
@@ -105,8 +115,7 @@ class Search extends Component {
             this.setState(newState);
           };
         }
-  
-        res.push((<TypeButton TypeName={typename} TypeID={elem.ID} AnimeName={elem.Name.toString()} onChange={callback} />))
+        res.push((<TypeButton TypeName={typename} TypeID={elem.ID} AnimeName={elem.Name == "" ? "Unknown" : elem.Name.toString()} onChange={callback} />))
       }
   
       return res;
@@ -132,6 +141,16 @@ class Search extends Component {
         newState.Themes = res;
         this.setState(newState);
       });
+  
+    GetProducer()
+      .then((response) => response.json())
+      .then((result) => {
+        const res = this.GetButtons("studio", result);
+    
+        let newState = this.state;
+        newState.Studios = res;
+        this.setState(newState);
+    });
   
     GetProducer()
       .then((response) => response.json())
@@ -166,7 +185,7 @@ class Search extends Component {
   const SearchFoo = (start, len) => {
     const AnimeName = document.getElementById("SearchbarLarge").value;
 
-    FilterAnimes(AnimeName, this.state.TypeList, this.state.GenreList, this.state.ThemeList, this.state.ProducerList, this.state.DemographicsList)
+    FilterAnimes(AnimeName, this.state.TypeList, this.state.GenreList, this.state.ThemeList, this.state.StudioList, this.state.ProducerList, this.state.DemographicsList)
       .then((response) => response.json())
       .then((result) => {
           let res = this.state.Animes;
@@ -252,6 +271,10 @@ render(){
           <h3 class="GenreHeader">Types:</h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Types}
+          </div>
+          <h3 class="GenreHeader">Studios:</h3>
+          <div class="AnimeTypeBtnDiv">
+            {this.state.Studios}
           </div>
           <h3 class="GenreHeader">Producers:</h3>
           <div class="AnimeTypeBtnDiv">

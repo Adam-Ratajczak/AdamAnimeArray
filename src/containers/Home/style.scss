@@ -1,14 +1,17 @@
 @import 'src/styles/colors';
 
-body{
+html, body{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 #main{
     display: flex;
     flex-direction: column;
     align-content: stretch;
+
+    height: 100%;
 }
 
 #content{

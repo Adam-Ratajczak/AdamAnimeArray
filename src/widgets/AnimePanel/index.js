@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetDemographics, GetEpisodes, GetAnimeType } from '../../db_module'
+import { GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetDemographics, GetEpisodes, GetAnimeType, GetAnimeStudios } from '../../db_module'
 import './style.scss';
 
 function AnimePanel(props){
@@ -11,6 +11,7 @@ function AnimePanel(props){
   const [AnimeType, SetAnimeType] = useState(0)
   const [AnimeGenres, SetAnimeGenres] = useState(0)
   const [AnimeThemes, SetAnimeThemes] = useState(0)
+  const [AnimeStudios, SetAnimeStudios] = useState(0)
   const [AnimeProducers, SetAnimeProducers] = useState(0)
   const [AnimeDemographics, SetAnimeDemographics] = useState(0)
 
@@ -61,6 +62,14 @@ function AnimePanel(props){
     .then((response) => response.json())
     .then((result) =>{
       SetAnimeThemes(get_genre_str(result));
+    })
+  }, []);
+
+  useEffect(() =>{
+    GetAnimeStudios(props.AnimeID)
+    .then((response) => response.json())
+    .then((result) =>{
+      SetAnimeStudios(get_genre_str(result));
     })
   }, []);
 
@@ -124,6 +133,10 @@ function AnimePanel(props){
                 <tr>
                   <td class="PropertyName">Themes: </td>
                   <td>{(AnimeThemes) ? AnimeThemes : "None"}</td>
+                </tr>
+                <tr>
+                  <td class="PropertyName">Studios:</td>
+                  <td>{(AnimeStudios) ? AnimeStudios : "None"}</td>
                 </tr>
                 <tr>
                   <td class="PropertyName">Producers:</td>

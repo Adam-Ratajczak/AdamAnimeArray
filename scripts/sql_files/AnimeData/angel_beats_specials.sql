@@ -1,7 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (87, CONCAT('Angel Beats! Specials'), CONCAT('As the Shinda Sekai Sensen (SSS) continue their vindictive rebellion against God, their leader, Yuri Nakamura, comes up with an ingenious plan to escape the afterlife. Her subordinates prepare to carry out "Operation High Tension Syndrome" to deceive Kanade Tachibana, student council president and alleged associate of God, into thinking that they are ready to pass on. With a week', CHAR(39), 's worth of food on the line and with Heaven as the ultimate prize, will the SSS members be able to fool the inscrutable Kanade?<br>
-<br>[Written by MAL Rewrite]<br>'), 5, '2010-12-22', '2015-06-24', '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/4/25073.jpg');
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (202, 87, 12);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (203, 87, 10);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (100, 87, 52);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1282, 87, 1, CONCAT('Stairway to Heaven'), '2010-12-22', 'https://ebd.cda.pl/620x368/1301478b6');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (1283, 87, 2, CONCAT('Hell', CHAR(39), 's Kitchen'), '2015-06-24', 'https://ebd.cda.pl/800x450/1980039c7');

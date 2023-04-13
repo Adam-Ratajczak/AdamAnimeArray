@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {Home, NotFound, AnimeInfo, AnimePlayer, Search, Login, Signup} from './containers'
+import {Home, NotFound, AnimeInfo, AnimePlayer, Search, Login, Signup, NoPlayer} from './containers'
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 
 export default function App() {
@@ -25,6 +25,7 @@ export default function App() {
           <Route path="/Search/:searchrule" element={<Search />}></Route>
           <Route path='/Search' element={<Navigate to="/Search/*"/>}></Route>
           <Route path="*" element={<NotFound />}></Route>
+          <Route path="/NoPlayer" element={<NoPlayer />}></Route>
       </Routes>
     </BrowserRouter>
   );

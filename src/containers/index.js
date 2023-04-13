@@ -5,6 +5,7 @@ import NotFound from './NotFound'
 import Search from './Search'
 import Login from './Login'
 import Signup from './Signup'
+import NoPlayer from './NoPlayer'
 
 export {
     AnimeInfo,
@@ -13,5 +14,6 @@ export {
     NotFound,
     Search,
     Login,
-    Signup
+    Signup,
+    NoPlayer
 }

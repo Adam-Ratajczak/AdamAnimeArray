@@ -1,9 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1681, CONCAT('Sex Pistols'), CONCAT('An average boy named Norio is suddenly getting a lot of unwanted romantic attention. A fall down the stairs into the arms of a handsome stranger sets off the beginnings of an explanation, and it is one Norio never could have possibly imagined. Soon a whole new world opens up for Norio revealing a secret society of special people evolved from animals other than monkeys. Norio turns out to be a particularly rare breed and his DNA is in high demand. Now that he', CHAR(39), 's suddenly the prey, it', CHAR(39), 'll take much effort to survive in this modern jungle. <br><br>This story revolves around a high school boy who discovers that he is part of a select group of humans who did not evolve from monkeys, but various animals such as leopards and black bears. <br><br>(Source: ANN) '), 3, '2010-03-26', '2011-04-27', '', '33 min. per ep.', 'https://cdn.myanimelist.net/images/anime/9/23742.jpg');
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4161, 1681, 17);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4162, 1681, 12);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4163, 1681, 6);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4164, 1681, 10);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (4165, 1681, 18);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1815, 1681, 224);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30463, 1681, 1, CONCAT('Chapter 1'), '2010-03-26', 'https://ebd.cda.pl/800x450/76658431f');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30464, 1681, 2, CONCAT('Chapter 2'), '2011-04-27', 'https://ebd.cda.pl/800x450/7829753d3');

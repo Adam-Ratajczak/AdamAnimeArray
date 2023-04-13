@@ -1,0 +1,13 @@
+@import 'src/styles/colors';
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#NoPlayer{
+    text-align: center;
+    margin-top: 25%;
+    color: white;
+}

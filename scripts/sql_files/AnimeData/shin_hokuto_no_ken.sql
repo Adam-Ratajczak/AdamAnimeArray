@@ -1,8 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1699, CONCAT('Shin Hokuto no Ken'), CONCAT('In a post-apocalyptic Earth, the water has become entirely toxic, except for some kept safe in a reservoir. A fortified zone has been created by a man named Sanga, he calls it The Lastland. A group of villagers have discovered safe water, and Sanga wants it. He and his band of killers go to kill everyone and steal it. As they do a mysterious man appears out of nowhere, instantly killing some of Sanga', CHAR(39), 's men. His name is Kenshiro, and he can beat any man with his martial art, Hokuto Shin Ken. Sanga will do anything for the water, and Kenshiro will do anything to try and stop him.<br>
-<br>(Source: ANN)'), 1, '2003-07-24', '2004-05-28', '', '58 min. per ep.', 'https://cdn.myanimelist.net/images/anime/6/2901.jpg');
-INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (711, 1699, 2);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1833, 1699, 135);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1834, 1699, 136);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30766, 1699, 1, CONCAT('The Cursed City'), '2003-07-04', 'https://ebd.cda.pl/620x395/597034744');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30767, 1699, 2, CONCAT('The Forbidden Fist'), '2003-10-23', 'https://ebd.cda.pl/800x450/5970344ff');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (30768, 1699, 3, CONCAT('When a Man Carries Sorrow'), '2004-05-28', 'https://video.sibnet.ru/shell.php?videoid=4115442');

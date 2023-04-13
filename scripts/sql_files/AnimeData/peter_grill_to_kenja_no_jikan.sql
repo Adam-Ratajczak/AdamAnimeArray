@@ -1,8 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1460, CONCAT('Peter Grill to Kenja no Jikan'), CONCAT('After gaining the title of the strongest warrior in the world, Peter Grill has finally proven his worth and is ready to take the hand of his beloved senior, the beautiful and innocent Luvelia Sanctos. Peter expects to have a healthy relationship with her, despite some objections from her father.<br>
-<br>Unfortunately, this dream quickly breaks apart as news of his grand victory spreads among the womenfolk of other races—ogres, orcs, elves, and others—some of them even vying for his seed to produce offspring blessed with his might. To avoid betraying the trust of his cherished Luvelia and causing a scandal, Peter strives to avoid other women', CHAR(39), 's salacious advances. However, accomplishing such a feat with so many alluring women on his trail is easier said than done.<br>
-<br>[Written by MAL Rewrite]'), 1, '2020-07-11', '2020-09-26', 'Summer 2020', '12 min. per ep.', 'https://cdn.myanimelist.net/images/anime/1368/108441.jpg');
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3621, 1460, 12);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3622, 1460, 9);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (3623, 1460, 14);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1567, 1460, 216);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (26226, 1460, 1, CONCAT('Peter Grill and the Ogre Sisters'), '2020-07-11', 'https://ebd.cda.pl/620x368/546556186');
