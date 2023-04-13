@@ -1,6 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (860, CONCAT('Interlude'), CONCAT('The unnamed main character has been having strange dreams, seeing strange things, and meeting strange people. He investigates these events and finds a strange girl named Aya. With her help, he discovers that his world may not in fact be real and many of the people he thinks he knows may not exist anymore.<br>
-<br>(Source: FUNimation)'), 5, '2004-03-25', '2004-08-27', '', '40 min. per ep.', 'https://cdn.myanimelist.net/images/anime/2/75602.jpg');
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (942, 860, 90);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15215, 860, 1, CONCAT('Interlude Vol. 1'), NULL, 'https://ebd.cda.pl/800x450/55987688e');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15216, 860, 2, CONCAT('Interlude Vol. 2'), NULL, 'https://ebd.cda.pl/800x450/561131752');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (15217, 860, 3, CONCAT('Interlude Vol. 3'), NULL, 'https://ebd.cda.pl/800x450/56215351e');

@@ -1,8 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (968, CONCAT('Kara no Shoujo'), CONCAT('Reiji is a private detective. One day, he receives a strange offer from a girl, "Please look for... me. True me." At that time, a series of abnormal murder cases happen and Reiji is offered to investigate it as well. There is a girls', CHAR(39), ' high school Yukari, Reiji', CHAR(39), 's younger sister, goes and two female students are missing. Tokio, vice principal of the school, offers Reiji to search for them. As a result, Reiji receives three offers at the same time. To collect information, he starts working at the school in disguise and meets Toko, who asked him to look for real her before. "Hi, nice to see you again, sir." The killing never stops.... A spiral of tragedy.... What breaks through this tragic condition might be a girl', CHAR(39), 's smile.... <br>
-<br>(Source: Himeya Shop) '), 1, '2010-01-15', '2010-10-15', '', '27 min. per ep.', 'https://cdn.myanimelist.net/images/anime/5/37361.jpg');
-INSERT INTO AnimeDemographics(BindingID, AnimeID, GroupID) VALUES (427, 968, 3);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2348, 968, 12);
-INSERT INTO AnimeGenres(BindingID, AnimeID, GenreID) VALUES (2349, 968, 7);
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1054, 968, 61);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16880, 968, 1, CONCAT('Episode 1'), '2010-01-15', 'https://ebd.cda.pl/800x450/5465780d7');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (16881, 968, 2, CONCAT('Episode 2'), '2010-10-15', 'https://ebd.cda.pl/800x450/54657894a');

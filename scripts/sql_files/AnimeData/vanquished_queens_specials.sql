@@ -1,6 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (2011, CONCAT('Vanquished Queens Specials'), CONCAT('Specials included on the Vanquished Queens Blu-rays/DVDs.'), 5, '2013-03-29', '2014-09-30', '', '6 min. per ep.', 'https://cdn.myanimelist.net/images/anime/8/48913.jpg');
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (2183, 2011, 129);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35437, 2011, 1, CONCAT('Warrior Priestess Breaking Method'), '2013-03-29', 'https://mp4upload.com/embed-hri85565ckdx.html');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35438, 2011, 2, CONCAT('Airi', CHAR(39), 's Midnight Snack Bonanza'), '2013-07-31', 'https://mp4upload.com/embed-6te418mwtrno.html');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35439, 2011, 3, CONCAT('The Wandering Warrior (Leina Chapter) - Alternate Ending'), '2014-03-29', 'https://mp4upload.com/embed-t9dtuakwc0jg.html');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (35440, 2011, 4, CONCAT('Aldra', CHAR(39), 's Torment - Alternate Ending'), '2014-09-30', 'https://mp4upload.com/embed-r361ssyyaych.html');

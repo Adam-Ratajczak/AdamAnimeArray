@@ -1,112 +1,151 @@
+const port = 2137
+
 function FetchToApiGet(url){
-    return fetch('http://localhost:2138/' + url, { 
+    return fetch('http://localhost:' + port.toString() + url, { 
         method: 'GET', 
         headers: {
             'Content-Type': 'application/json', 
-            "Access-Control-Allow-Origin": "*"
+            'Access-Control-Allow-Origin': '*'
         }});
 }
 function FetchToApiPost(url, con){
-    return fetch('http://localhost:2138/' + url, { 
+    return fetch('http://localhost:' + port.toString() + url, { 
         method: 'POST', 
         body: JSON.stringify(con), 
         headers: {
             'Content-Type': 'application/json', 
-            "Access-Control-Allow-Origin": "*"
+            'Access-Control-Allow-Origin': '*'
         }});
 }
 
 export function GetType(id = -1){
     if(id < 0){
-        return FetchToApiGet(`animes/filters/types`);
+        return FetchToApiGet(`/animes/filters/types`);
     }else{
-        return FetchToApiGet(`animes/filters/types/` + id.toString());
+        return FetchToApiGet(`/animes/filters/types/` + id.toString());
     }
 }
 
 export function GetGenre(id = -1){
     if(id < 0){
-        return FetchToApiGet(`animes/filters/genres`);
+        return FetchToApiGet(`/animes/filters/genres`);
     }else{
-        return FetchToApiGet(`animes/filters/genres/` + id.toString());
+        return FetchToApiGet(`/animes/filters/genres/` + id.toString());
     }
 }
 
 export function GetTheme(id = -1){
     if(id < 0){
-        return FetchToApiGet(`animes/filters/themes`);
+        return FetchToApiGet(`/animes/filters/themes`);
     }else{
-        return FetchToApiGet(`animes/filters/themes/` + id.toString());
+        return FetchToApiGet(`/animes/filters/themes/` + id.toString());
+    }
+}
+
+export function GetStudio(id = -1){
+    if(id < 0){
+        return FetchToApiGet(`/animes/filters/studios`);
+    }else{
+        return FetchToApiGet(`/animes/filters/studios/` + id.toString());
     }
 }
 
 export function GetProducer(id = -1){
     if(id < 0){
-        return FetchToApiGet(`animes/filters/producers`);
+        return FetchToApiGet(`/animes/filters/producers`);
     }else{
-        return FetchToApiGet(`animes/filters/producers/` + id.toString());
+        return FetchToApiGet(`/animes/filters/producers/` + id.toString());
     }
 }
 
 export function GetDemographics(id = -1){
     if(id < 0){
-        return FetchToApiGet(`animes/filters/demographics`);
+        return FetchToApiGet(`/animes/filters/demographics`);
     }else{
-        return FetchToApiGet(`animes/filters/demographics/` + id.toString());
+        return FetchToApiGet(`/animes/filters/demographics/` + id.toString());
     }
 }
 
 export function GetAnime(id = -1){
     if(id < 0){
-        return FetchToApiGet(`animes/`);
+        return FetchToApiGet(`/animes/`);
     }else{
-        return FetchToApiGet(`animes/` + id.toString());
+        return FetchToApiGet(`/animes/` + id.toString());
+    }
+}
+
+export function GetRelations(id = -1){
+    if(id < 0){
+        return FetchToApiGet(`/animes/relations`);
+    }else{
+        return FetchToApiGet(`/animes/relations/` + id.toString());
     }
 }
 
 export function GetAnimeGenres(id){
-    return FetchToApiGet(`animes/` + id.toString() + "/genres");
+    return FetchToApiGet(`/animes/` + id.toString() + `/genres`);
 }
 
 export function GetAnimeThemes(id){
-    return FetchToApiGet(`animes/` + id.toString() + "/themes");
+    return FetchToApiGet(`/animes/` + id.toString() + `/themes`);
+}
+
+export function GetAnimeStudios(id){
+    return FetchToApiGet(`/animes/` + id.toString() + `/studios`);
 }
 
 export function GetAnimeProducers(id){
-    return FetchToApiGet(`animes/` + id.toString() + "/producers");
+    return FetchToApiGet(`/animes/` + id.toString() + `/producers`);
 }
 
 export function GetAnimeDemographics(id){
-    return FetchToApiGet(`animes/` + id.toString() + "/demographics");
+    return FetchToApiGet(`/animes/` + id.toString() + `/demographics`);
 }
 
 export function GetAnimeType(id){
-    return FetchToApiGet(`animes/` + id.toString() + "/type");
+    return FetchToApiGet(`/animes/` + id.toString() + `/type`);
 }
 
 export function GetFilterEntry(id){
-    return FetchToApiGet(`animes/` + id.toString() + "/filterentry");
+    return FetchToApiGet(`/animes/` + id.toString() + `/filterentry`);
+}
+
+export function GetAnimeRelations(id){
+    return FetchToApiGet(`/animes/` + id.toString() + `/relations`);
 }
 
 export function GetEpisodes(AnimeID, id = -1){
     if(id < 0){
-        return FetchToApiGet(`animes/` + AnimeID.toString() + `/episodes`);
+        return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes`);
     }else{
-        return FetchToApiGet(`animes/` + AnimeID.toString() + `/episodes/` + id.toString());
+        return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString());
     }
 }
 
-export function FilterAnimes(name, types, genres, themes, producers, demographics){
+export function GetEpisodeLanguages(AnimeID, id){
+    return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString() + `/languages`);
+}
+
+export function GetPlayers(AnimeID, id, lang = ''){
+    if(lang == ``){
+        return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString() + `/players`);
+    }else{
+        return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString() + `/players/` + lang);
+    }
+}
+
+export function FilterAnimes(name, types, genres, themes, studios, producers, demographics){
     let req = {
         Title: name,
         Types: types,
         Genres: genres,
         Themes: themes,
+        Studios: studios,
         Producers: producers,
         Demographics: demographics
     };
     
-    return FetchToApiPost("animes/filter", req);
+    return FetchToApiPost(`/animes/filter`, req);
 }
 
 export function CreateUser(Name, Password, Email){
@@ -116,7 +155,7 @@ export function CreateUser(Name, Password, Email){
         UserPassword: Password
     };
     
-    return FetchToApiPost("auth/signup", req);
+    return FetchToApiPost(`/auth/signup`, req);
 }
 
 export function LoginUser(Name, Password){
@@ -125,7 +164,7 @@ export function LoginUser(Name, Password){
         UserPassword: Password
     };
     
-    return FetchToApiPost("auth/login", req);
+    return FetchToApiPost(`/auth/login`, req);
 }
 
 export function LogoutUser(id, token){
@@ -134,7 +173,7 @@ export function LogoutUser(id, token){
         Token: token,
     };
     
-    return FetchToApiPost("auth/logout", req);
+    return FetchToApiPost(`/auth/logout`, req);
 }
 
 export function GetUserInfo(id){
@@ -143,7 +182,7 @@ export function GetUserInfo(id){
         Token: undefined
     };
     
-    return FetchToApiPost("auth/changeinfo", req);
+    return FetchToApiPost(`/auth/changeinfo`, req);
 }
 
 export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){
@@ -155,5 +194,5 @@ export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){
         UserProfileImagePoster: ProfilePoster
     };
     
-    return FetchToApiPost("auth/changeinfo", req);
+    return FetchToApiPost(`/auth/changeinfo`, req);
 }

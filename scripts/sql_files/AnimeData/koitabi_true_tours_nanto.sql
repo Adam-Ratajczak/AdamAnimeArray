@@ -1,6 +1,0 @@
-INSERT INTO Animes(AnimeID, AnimeTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (1062, CONCAT('Koitabi: True Tours Nanto'), CONCAT('The short tells three love stories set in Nanto. '), 5, '2013-04-28', NULL, '', '7 min. per ep.', 'https://cdn.myanimelist.net/images/anime/10/50321.jpg');
-INSERT INTO AnimeProducers(BindingID, AnimeID, ProducerID) VALUES (1152, 1062, 52);
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18378, 1062, 1, CONCAT('Youji and Chiaki, Part 1'), '2013-04-28', 'https://drive.google.com/file/d/1m3p8UL0Y1HVRW7RmvT3jfREo_d_UTh4k/preview');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18379, 1062, 2, CONCAT('Youji and Chiaki, Part 2'), '2013-04-28', 'https://drive.google.com/file/d/1WmHBQTsEDG1G1sqrfvr9HxQpbRQp4dbU/preview');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18380, 1062, 3, CONCAT('Aoi and Haruki, Part 1'), '2013-04-28', 'https://drive.google.com/file/d/1d-OkUKDXfG7zz8FO1kyFLuIIcr0fqbuM/preview');
-INSERT INTO Episodes(EpisodeID, AnimeID, EpisodeNr, Title, Aired, PlayerUrl) VALUES (18381, 1062, 4, CONCAT('Aoi and Haruki, Part 2'), '2013-04-28', 'https://drive.google.com/file/d/1LG1Ef5jk2xujWwqif3M5S8NQ3EYDCvyh/preview');
