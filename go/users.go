@@ -6,8 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"math/rand"
-
+	cryptorand "crypto/rand"
 	"crypto/sha256"
 	"encoding/hex"
 
@@ -20,12 +19,19 @@ func hashPassword(password string) string {
 	return hex.EncodeToString(hashed_passwd[:])
 }
 
+// Generate a 255-char (127B) authentication token
+func generateToken() string {
+	buffer := [127]byte{}
+	cryptorand.Read(buffer[:])
+	return hex.EncodeToString(buffer[:])
+}
+
 func CreateUser(c echo.Context) error {
 	rq := CreateUserRequest{}
 
 	err := c.Bind(&rq)
 	if err != nil {
-		fmt.Printf("Bad request")
+		fmt.Println("Bad request")
 		return c.NoContent(http.StatusBadRequest)
 	}
 
@@ -35,7 +41,7 @@ func CreateUser(c echo.Context) error {
 	err = row.Scan(&id)
 
 	if err == nil {
-		fmt.Printf("User exists")
+		fmt.Println("User exists")
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
@@ -62,7 +68,7 @@ func LoginUser(c echo.Context) error {
 
 	err := c.Bind(&rq)
 	if err != nil {
-		fmt.Printf("Bad request")
+		fmt.Println("Bad request")
 		return c.NoContent(http.StatusBadRequest)
 	}
 
@@ -77,31 +83,22 @@ func LoginUser(c echo.Context) error {
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	token := ""
-
-	for i := 0; i < 255; i++ {
-		token += string(rune(rand.Intn(255)))
-	}
-
-	res, err := db.Exec("INSERT INTO UserAuth(UserID, Token) VALUES (?, ?);", id, token)
-
+	// Doing insert first because it's not possible to fail this statement
+	// when run from a GUI.
+	auth := UserAuth{id, generateToken()}
+	_, err = db.Exec("INSERT INTO UserAuth(UserID, Token) VALUES (?, ?);", id, auth.Token)
 	if err != nil {
-		fmt.Printf("Session opened")
-		auth := UserAuth{}
-		row := db.QueryRow("SELECT UserID, Token FROM UserAuth WHERE UserID = ?;", id)
-
-		auth.UserID = id
-		err = row.Scan(&auth.Token)
-
-		return c.JSON(http.StatusAccepted, auth)
+		// Row probably exists, try select it
+		// FIXME: TOCTOU here, because user may logout already (small chance, and
+		// 		  shouldn't be exploitable)
+		fmt.Println("Session already exists, getting its token")
+		row = db.QueryRow("SELECT UserID, Token FROM UserAuth WHERE UserID = ?;", id)
+		err = row.Scan(&auth.UserID, &auth.Token)
+		if err != nil {
+			fmt.Println("Failed to auth user:", err)
+			return c.NoContent(http.StatusInternalServerError)
+		}
 	}
-
-	res.RowsAffected()
-
-	auth := UserAuth{}
-	auth.UserID = id
-	auth.Token = token
-
 	return c.JSON(http.StatusAccepted, auth)
 }
 
