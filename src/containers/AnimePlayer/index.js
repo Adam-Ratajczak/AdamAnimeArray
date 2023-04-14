@@ -38,7 +38,7 @@ function LangWidget(props) {
           flag_widget.push((
             <div class="tooltip">
               <span class="tooltiptext">{lang.Name}</span>
-              <img onClick={(ev) => eventHandler()} src={process.env.PUBLIC_URL + "/flags/" + lang.FlagUrl} alt={lang.Name} class={lang.Code == props.Lang ? "active" : ""} role="button" />
+              <img onClick={(ev) => eventHandler()} src={process.env.PUBLIC_URL + "/flags/" + lang.FlagUrl} alt={lang.Code} class={lang.Code == props.Lang ? "active" : ""} role="button" />
             </div>
           ))
         }
@@ -170,6 +170,15 @@ function AnimePlayer() {
     GetPlayers(AnimeID, EpNum)
       .then((response) => response.json())
       .then((result) => {
+        result.sort((a, b) => {
+          if(a.LangCode < b.LangCode){
+            return -1
+          }else if(a.LangCode == b.LangCode){
+            return 0
+          }else{
+            return 1
+          }
+        })
         if (result.length > 0) {
           changeLang(result[0].LangCode)
           SetCurrPlayer(result[0].Source)
