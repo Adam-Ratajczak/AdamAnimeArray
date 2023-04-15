@@ -1,4 +1,6 @@
 @import 'src/styles/colors';
+@import 'src/styles/arrows';
+@import 'src/styles/utils';
 
 body{
     background-color: black;
@@ -96,4 +98,8 @@ body{
 
 .GenreHeader{
     color: $text-color;
+}
+
+.AnimeTypeBtnDiv{
+    display: none;
 }

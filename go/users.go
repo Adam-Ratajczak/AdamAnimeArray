@@ -6,19 +6,32 @@ import (
 	"fmt"
 	"net/http"
 
-	"math/rand"
-
+	cryptorand "crypto/rand"
 	"crypto/sha256"
+	"encoding/hex"
 
 	"github.com/labstack/echo/v4"
 )
+
+// Convert password to hex sha256
+func hashPassword(password string) string {
+	hashed_passwd := sha256.Sum256([]byte(password))
+	return hex.EncodeToString(hashed_passwd[:])
+}
+
+// Generate a 255-char (127B) authentication token
+func generateToken() string {
+	buffer := [127]byte{}
+	cryptorand.Read(buffer[:])
+	return hex.EncodeToString(buffer[:])
+}
 
 func CreateUser(c echo.Context) error {
 	rq := CreateUserRequest{}
 
 	err := c.Bind(&rq)
 	if err != nil {
-		fmt.Printf("Bad request")
+		fmt.Println("Bad request")
 		return c.NoContent(http.StatusBadRequest)
 	}
 
@@ -28,21 +41,15 @@ func CreateUser(c echo.Context) error {
 	err = row.Scan(&id)
 
 	if err == nil {
-		fmt.Printf("User exists")
+		fmt.Println("User exists")
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	passwd := sha256.Sum256([]byte(rq.UserPassword))
-	password := ""
-
-	for i := 0; i < len(passwd); i++ {
-		password += string(rune(passwd[i]))
-	}
-
+	password := hashPassword(rq.UserPassword)
 	row2, err2 := db.Exec("INSERT INTO Users(UserName, UserEmail, UserPassword) VALUES (?, ?, ?);", rq.UserName, rq.UserEmail, password)
 
 	if err2 != nil {
-		fmt.Printf("User cannot be created")
+		fmt.Println("User cannot be created:", err2)
 		return c.NoContent(http.StatusInternalServerError)
 	}
 	row2.RowsAffected()
@@ -61,52 +68,37 @@ func LoginUser(c echo.Context) error {
 
 	err := c.Bind(&rq)
 	if err != nil {
-		fmt.Printf("Bad request")
+		fmt.Println("Bad request")
 		return c.NoContent(http.StatusBadRequest)
 	}
 
-	passwd := sha256.Sum256([]byte(rq.UserPassword))
-	password := ""
-
-	for i := 0; i < len(passwd); i++ {
-		password += string(rune(passwd[i]))
-	}
-
+	password := hashPassword(rq.UserPassword)
 	row := db.QueryRow("SELECT UserID FROM Users WHERE UserName = ? AND UserPassword = ?", rq.UserName, password)
 
 	id := 0
 
 	err = row.Scan(&id)
 	if err != nil {
-		fmt.Printf("Can't find valid user")
+		fmt.Println("Can't find valid user:", password, err)
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	token := ""
-
-	for i := 0; i < 255; i++ {
-		token += string(rune(rand.Intn(255)))
-	}
-
-	res, err := db.Exec("INSERT INTO UserAuth(UserID, Token) VALUES (?, ?);", id, token)
-
+	// Doing insert first because it's not possible to fail this statement
+	// when run from a GUI.
+	auth := UserAuth{id, generateToken()}
+	_, err = db.Exec("INSERT INTO UserAuth(UserID, Token) VALUES (?, ?);", id, auth.Token)
 	if err != nil {
-		fmt.Printf("Session opened")
-		auth := UserAuth{}
-		row := db.QueryRow("SELECT UserID, Token FROM UserAuth WHERE UserID = ?;", id)
-
-		auth.UserID = id
-		err = row.Scan(&auth.Token)
-
-		return c.JSON(http.StatusAccepted, auth)
+		// Row probably exists, try select it
+		// FIXME: TOCTOU here, because user may logout already (small chance, and
+		// 		  shouldn't be exploitable)
+		fmt.Println("Session already exists, getting its token")
+		row = db.QueryRow("SELECT UserID, Token FROM UserAuth WHERE UserID = ?;", id)
+		err = row.Scan(&auth.UserID, &auth.Token)
+		if err != nil {
+			fmt.Println("Failed to auth user:", err)
+			return c.NoContent(http.StatusInternalServerError)
+		}
 	}
-
-	res.RowsAffected()
-
-	auth := UserAuth{}
-	auth.UserID = id
-	auth.Token = token
-
 	return c.JSON(http.StatusAccepted, auth)
 }
 
@@ -166,9 +158,8 @@ func ChangeUserInfo(c echo.Context) error {
 	}
 
 	if rq.UserPassword != "" {
-		passwd := sha256.Sum256([]byte(rq.UserPassword))
-
-		res, err := db.Exec("UPDATE Users SET UserName = ?, UserEmail = ?, UserPassword = ?, UserProfileImageUrl = ?, UserProfileImagePoster = ? WHERE UserID = ?;", rq.UserName, rq.UserEmail, passwd, rq.UserProfileImageUrl, rq.UserProfileImagePoster, id)
+		password := hashPassword(rq.UserPassword)
+		res, err := db.Exec("UPDATE Users SET UserName = ?, UserEmail = ?, UserPassword = ?, UserProfileImageUrl = ?, UserProfileImagePoster = ? WHERE UserID = ?;", rq.UserName, rq.UserEmail, password, rq.UserProfileImageUrl, rq.UserProfileImagePoster, id)
 
 		if err != nil {
 			return c.NoContent(http.StatusNotAcceptable)
