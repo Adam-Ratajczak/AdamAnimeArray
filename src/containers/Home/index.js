@@ -52,7 +52,7 @@ function Home() {
             fillList(0)
           }
 
-          SetAnimeTabUnit((<TabUnit TabCount={Math.ceil(result.AnimeCount / num_sample_animes)} TabCollapse="10" onChange={foo} />))
+          SetAnimeTabUnit((<TabUnit Index="1" TabCount={Math.ceil(result.AnimeCount / num_sample_animes)} TabCollapse="10" onChange={foo} />))
         })
     }
   })

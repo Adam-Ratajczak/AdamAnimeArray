@@ -13,7 +13,11 @@ function TabUnit(props) {
             props.onChange(event, index);
         }
 
-        result.push((<div class="TabCell BorderTab" onClick={event => foo(event, 1)}>1</div>));
+        if(index == 1){
+            result.push((<div class="TabCell BorderTab SelectedTab" onClick={event => foo(event, 1)}>1</div>));
+        }else{
+            result.push((<div class="TabCell BorderTab" onClick={event => foo(event, 1)}>1</div>));
+        }
 
         if (props.TabCount <= props.TabCollapse) {
             for (let i = 2; i < props.TabCount; i++) {
@@ -56,14 +60,18 @@ function TabUnit(props) {
                 }
             }
         }
-
-        result.push((<div class="TabCell BorderTab" onClick={event => foo(event, props.TabCount)}>{props.TabCount}</div>));
+        
+        if(index == props.TabCount){
+            result.push((<div class="TabCell BorderTab SelectedTab" onClick={event => foo(event, props.TabCount)}>{props.TabCount}</div>));
+        }else{
+            result.push((<div class="TabCell BorderTab" onClick={event => foo(event, props.TabCount)}>{props.TabCount}</div>));
+        }
 
         SetTabs(result)
     }
 
     if(Tabs.length == 0){
-        modify_tab(0)
+        modify_tab(props.Index)
     }
 
     return (
