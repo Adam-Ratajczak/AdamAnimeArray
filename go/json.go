@@ -16,6 +16,12 @@ type Anime struct {
 	Duration     string
 	PosterURL    string
 	EpisodeNum   int
+
+	Genres       []Filter
+	Themes       []Filter
+	Producers    []Filter
+	Studios      []Filter
+	Demographics []Filter
 }
 
 type AnimeRequest struct {
@@ -61,10 +67,10 @@ type Lang struct {
 }
 
 type Relation struct {
-	AnimeID    int
-	OtherID    int
-	RelationID int
-	OtherName  string
+	AnimeID   int
+	OtherID   int
+	Relation  Filter
+	OtherName string
 }
 
 type Filter struct {
