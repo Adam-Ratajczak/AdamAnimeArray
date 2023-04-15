@@ -10,15 +10,14 @@ function Home() {
   const [AnimeHeader, SetAnimeHeader] = useState("")
   const [AnimeContainer, SetAnimeContainer] = useState([])
   const [AnimeTabUnit, SetAnimeTabUnit] = useState(0)
-  const [AnimeCountBegin, SetAnimeCountBegin] = useState(0)
 
   const siteType = window.location.href.split("/").at(-1);
-  const fillList = useCallback(() => {
-    GetAnimeRange(AnimeCountBegin, AnimeCountBegin + num_sample_animes)
+  const fillList = useCallback((begin) => {
+    GetAnimeRange(begin, begin + num_sample_animes)
       .then((response) => response.json())
       .then((result) => {
         SetAnimeContainer([])
-        let AnimeCountEnd = Math.min(AnimeCountBegin + num_sample_animes, result.length);
+        let AnimeCountEnd = Math.min(num_sample_animes, result.length)
 
         let anime_id_arr = [];
         let anime_header = ""
@@ -26,13 +25,13 @@ function Home() {
         if (siteType == "Popular") {
           anime_header = "Top Ranked Animes";
 
-          for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
+          for (let i = 0; i < AnimeCountEnd; i++) {
             anime_id_arr.push(result[i].AnimeID);
           }
         } else if (siteType == "Recomended") {
           anime_header = "Recomended Animes";
 
-          for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
+          for (let i = begin; i < AnimeCountEnd; i++) {
             let AnimeNum = Math.floor((Math.random() * (result.length + 1)) % result.length);
             anime_id_arr.push(result[AnimeNum].AnimeID);
           }
@@ -60,7 +59,7 @@ function Home() {
             }
           });
 
-          for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
+          for (let i = begin; i < AnimeCountEnd; i++) {
             anime_id_arr.push(to_sort[i].AnimeID);
           }
         }
@@ -77,14 +76,19 @@ function Home() {
       })
 
   })
+
   useEffect(() => {
     if (AnimeTabUnit == 0) {
       GetDbInfo()
         .then((response) => response.json())
         .then((result) => {
           const foo = (event, index) => {
-            SetAnimeCountBegin((index - 1) * num_sample_animes);
             SetAnimeContainer([])
+            fillList((index - 1) * num_sample_animes)
+          }
+
+          if(AnimeContainer.length == 0){
+            fillList(0)
           }
 
           SetAnimeTabUnit((<TabUnit TabCount={Math.ceil(result.AnimeCount / num_sample_animes)} TabCollapse="10" onChange={foo} />))
@@ -92,9 +96,6 @@ function Home() {
     }
   })
 
-  if (AnimeContainer.length == 0) {
-    fillList()
-  }
   return (
     <div id="main">
       <Menubar />
