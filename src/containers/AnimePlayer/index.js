@@ -215,7 +215,7 @@ function AnimePlayer() {
               <table>
                 <tbody>
                   <tr><th>Title:</th><td>{EpisodeTitle}</td></tr>
-                  <tr><th>Aired:</th><td>{(Aired.Valid) ? (EpAired.toLocaleDateString("en-EN", options)) : "Unknown"}</td></tr>
+                  <tr><th>Aired:</th><td>{(Aired.Time != "0001-01-01T00:00:00Z") ? (EpAired.toLocaleDateString("en-EN", options)) : "Unknown"}</td></tr>
                   <tr><th>Lang:</th><td>{CurrLang}</td></tr>
                   <tr><th>Player:</th><td>{CurrPlayer}</td></tr>
                   <tr><th>Quality:</th><td>{CurrQuality}</td></tr>

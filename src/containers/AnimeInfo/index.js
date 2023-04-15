@@ -193,7 +193,7 @@ function AnimeInfo() {
             <tr>
               <td class="AnimePropertyName">Aired: </td>
               <td>
-                {AiredBegin.Valid
+                {AiredBegin.Time != "0001-01-01T00:00:00Z"
                   ? ABegin.toLocaleDateString("en-EN", options)
                   : "Unknown"}
               </td>
@@ -201,7 +201,7 @@ function AnimeInfo() {
             <tr>
               <td class="AnimePropertyName">Finished: </td>
               <td>
-                {AiredEnd.Valid
+                {AiredEnd.Time != "0001-01-01T00:00:00Z"
                   ? AEnd.toLocaleDateString("en-EN", options)
                   : "Unknown"}
               </td>
