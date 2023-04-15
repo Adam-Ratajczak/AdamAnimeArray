@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect, useRef } from "react";
-import { AnimePanel, Menubar } from "../../widgets";
-import { FilterAnimes, GetAnimeThemes, GetDbInfo } from "../../db_module";
+import { AnimePanel } from "../../widgets";
+import { FilterAnimes, GetDbInfo } from "../../db_module";
 import "./style.scss";
 
 const animeLimit = 10;
@@ -228,68 +228,65 @@ function Search() {
   }
 
   return (
-    <div id="main">
-      <Menubar />
-      <div id="contentSearch">
-        <div id="SearchDiv">
-          <div id="SearchBarDiv">
-            <input
-              type="text"
-              id="SearchbarLarge"
-              onKeyDown={searchBarOnKeyDown}
-              defaultValue={searchPhrase}
-              ref={searchBar}
-              placeholder="Search..."
-            />
-            <input
-              type="submit"
-              onClick={clearBtnOnClick}
-              id="SearchbtnLarge" // FIXME: ID
-              value="Clear"
-            />
-          </div>
-          <div id="SearchResults">
-            {Animes.map((anime) => {
-              return <AnimePanel AnimeID={anime.AnimeID} key={anime.AnimeID} />;
-            })}
-          </div>
+    <div id="contentSearch">
+      <div id="SearchDiv">
+        <div id="SearchBarDiv">
+          <input
+            type="text"
+            id="SearchbarLarge"
+            onKeyDown={searchBarOnKeyDown}
+            defaultValue={searchPhrase}
+            ref={searchBar}
+            placeholder="Search..."
+          />
+          <input
+            type="submit"
+            onClick={clearBtnOnClick}
+            id="SearchbtnLarge" // FIXME: ID
+            value="Clear"
+          />
         </div>
-        <div id="AnimeTypeDiv">
-          <h3 className="FilterCategoryHeader">
-            Genres
-            <i class="arrow right"></i>
-          </h3>
-          <div class="AnimeTypeBtnDiv">{renderButtons("genre", Genres)}</div>
-          <h3 className="FilterCategoryHeader">
-            Themes
-            <i class="arrow right"></i>
-          </h3>
-          <div class="AnimeTypeBtnDiv">{renderButtons("theme", Themes)}</div>
-          <h3 className="FilterCategoryHeader">
-            Studios
-            <i class="arrow right"></i>
-          </h3>
-          <div class="AnimeTypeBtnDiv">{renderButtons("studio", Studios)}</div>
-          <h3 className="FilterCategoryHeader">
-            Producers
-            <i class="arrow right"></i>
-          </h3>
-          <div class="AnimeTypeBtnDiv">
-            {renderButtons("producer", Producers)}
-          </div>
-          <h3 className="FilterCategoryHeader">
-            Demographics
-            <i class="arrow right"></i>
-          </h3>
-          <div class="AnimeTypeBtnDiv">
-            {renderButtons("demographics", Demographics)}
-          </div>
-          <h3 className="FilterCategoryHeader">
-            Types
-            <i class="arrow right"></i>
-          </h3>
-          <div class="AnimeTypeBtnDiv">{renderButtons("type", Types)}</div>
+        <div id="SearchResults">
+          {Animes.map((anime) => {
+            return <AnimePanel AnimeID={anime.AnimeID} key={anime.AnimeID} />;
+          })}
         </div>
+      </div>
+      <div id="AnimeTypeDiv">
+        <h3 className="FilterCategoryHeader">
+          Genres
+          <i class="arrow right"></i>
+        </h3>
+        <div class="AnimeTypeBtnDiv">{renderButtons("genre", Genres)}</div>
+        <h3 className="FilterCategoryHeader">
+          Themes
+          <i class="arrow right"></i>
+        </h3>
+        <div class="AnimeTypeBtnDiv">{renderButtons("theme", Themes)}</div>
+        <h3 className="FilterCategoryHeader">
+          Studios
+          <i class="arrow right"></i>
+        </h3>
+        <div class="AnimeTypeBtnDiv">{renderButtons("studio", Studios)}</div>
+        <h3 className="FilterCategoryHeader">
+          Producers
+          <i class="arrow right"></i>
+        </h3>
+        <div class="AnimeTypeBtnDiv">
+          {renderButtons("producer", Producers)}
+        </div>
+        <h3 className="FilterCategoryHeader">
+          Demographics
+          <i class="arrow right"></i>
+        </h3>
+        <div class="AnimeTypeBtnDiv">
+          {renderButtons("demographics", Demographics)}
+        </div>
+        <h3 className="FilterCategoryHeader">
+          Types
+          <i class="arrow right"></i>
+        </h3>
+        <div class="AnimeTypeBtnDiv">{renderButtons("type", Types)}</div>
       </div>
     </div>
   );
