@@ -1,103 +1,111 @@
-@import 'src/styles/colors';
+@import "src/styles/colors";
 
-#Content{
-    display: flex;
-    flex-direction: column;
-    height: 125px;
-    color: whitesmoke;
-    margin-left: 20px;
-    margin-right: 20px;
+#Content {
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  color: whitesmoke;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-#HeaderContent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-    background-color: $base-color;
-    background-image: url("headerbg.png");
-    background-repeat: no-repeat;
+#HeaderContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background-color: $base-color;
+  background-image: url("headerbg.png");
+  background-repeat: no-repeat;
 }
 
-#aaaHeader{
-    color: $text-color;
-    text-align: right;
-    width: 40%;
+#aaaHeader {
+  color: $text-color;
+  text-align: right;
+  width: 40%;
 }
 
-#Search{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 20px;
-    width: 50%;
+#Search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 50%;
 }
 
-#MenuContent{
-    height: 50px;
-    background-color: $background-color;
-    justify-content: space-around;
-    align-items: center;
+#MenuContent {
+  height: 50px;
+  background-color: $background-color;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.Button{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $text-color;
-    float: left;
+.Button {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $text-color;
+  float: left;
 }
 
-.Button:hover{
-    color: $btn-hover-text-color;
-    background-color: $btn-hover-color;
+.Button:hover {
+  color: $btn-hover-text-color;
+  background-color: $btn-hover-color;
 }
 
-#Searchbar{
-    height: 25px;
-    width: 50%;
-    background-color: $background-color;
-    color: $text-color;
-    border: 2px solid transparent;
-    font-size: medium;
+#Searchbar {
+  height: 25px;
+  width: 50%;
+  background-color: $background-color;
+  color: $text-color;
+  border: 2px solid transparent;
+  font-size: medium;
 }
 
-#Searchbtn{
-    width: 30px;
-    height: 30px;
-    background-color: $foreground-color;
-    border: 2px solid $foreground-color;
+#Searchbtn {
+  width: 30px;
+  height: 30px;
+  background-color: $foreground-color;
+  border: 2px solid $foreground-color;
 
-    background-image: url("searchicon.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("searchicon.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#LoginBox{
-    height: 40px;
-    color: white;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    font-size: large;
+#LoginBox {
+  height: 40px;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  font-size: large;
 }
 
-#LoginBox > a{
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#LoginBox > a,
+#LoginBox > button {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-#SignUpBtn{
-    border: 2px solid white;
+#SignUpBtn {
+  border: 2px solid white;
 }
 
-#LoginBox > a:hover{
-    background-color: #99999955;
+#LoginBox > a:hover,
+#LoginBox > button:hover {
+  background-color: #99999955;
 }

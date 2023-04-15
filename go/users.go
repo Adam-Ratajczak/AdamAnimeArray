@@ -186,13 +186,11 @@ func LogoutUser(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	row, err := db.Exec("DELETE FROM UserAuth WHERE UserID = ? AND Token = ?;", rq.UserID, rq.Token)
+	_, err = db.Exec("DELETE FROM UserAuth WHERE UserID = ? AND Token = ?;", rq.UserID, rq.Token)
 
 	if err != nil {
 		return c.NoContent(http.StatusNotAcceptable)
 	}
-
-	row.RowsAffected()
 
 	return c.NoContent(http.StatusAccepted)
 }
