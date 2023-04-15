@@ -138,10 +138,9 @@ function Search() {
 
   useEffect(() => {
     function onScroll() {
-      let documentHeight = document.body.scrollHeight;
       let currentScroll = window.scrollY + window.innerHeight;
 
-      if (!fetching && currentScroll >= documentHeight - 50) {
+      if (!fetching && currentScroll >= Animes.length * 240 - 50) {
         // console.log("SCROLL", currentScroll, documentHeight);
         fetchMoreResults(Animes.length);
         document.onscroll = null;
