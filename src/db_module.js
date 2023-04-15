@@ -74,6 +74,20 @@ export function GetAnime(id = -1){
     }
 }
 
+export function GetDbInfo(){
+    return FetchToApiGet(`/info`);
+}
+
+export function GetAnimeRange(begin, end, mode){
+    let req = {
+        AnimeBegin: begin,
+        AnimeEnd: end,
+        Mode: mode
+    };
+    
+    return FetchToApiPost(`/animes/`, req);
+}
+
 export function GetRelations(id = -1){
     if(id < 0){
         return FetchToApiGet(`/animes/relations`);
@@ -134,8 +148,10 @@ export function GetPlayers(AnimeID, id, lang = ''){
     }
 }
 
-export function FilterAnimes(name, types, genres, themes, studios, producers, demographics){
+export function FilterAnimes(ABegin, AEnd, name, types, genres, themes, studios, producers, demographics){
     let req = {
+        ABegin: ABegin,
+        AEnd: AEnd,
         Title: name,
         Types: types,
         Genres: genres,

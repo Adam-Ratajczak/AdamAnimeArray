@@ -9,18 +9,94 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
+func GetAnime(id int) (Anime, error) {
+	anime := Anime{}
+	row := db.QueryRow("SELECT AnimeID, AnimeTitle, EnglishTitle, AnimeDesc, TypeID, (SELECT TypeName FROM Types t WHERE t.TypeID = a.TypeID), AiredBegin, AiredEnd, Premiered, Duration, PosterUrl, (SELECT COUNT(EpisodeID) FROM Episodes e WHERE e.AnimeID = a.AnimeID) FROM Animes a WHERE AnimeID = ?", id)
+	err := row.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.Type.ID, &anime.Type.Name, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL, &anime.EpisodeNum)
+	if err != nil {
+		return Anime{}, err
+	}
+
+	anime.Genres, err = getAnimeGroupArr(id, "Genres")
+	if err != nil {
+		return Anime{}, err
+	}
+
+	anime.Themes, err = getAnimeGroupArr(id, "Themes")
+	if err != nil {
+		return Anime{}, err
+	}
+
+	anime.Demographics, err = getAnimeGroupArr(id, "Demographics")
+	if err != nil {
+		return Anime{}, err
+	}
+
+	anime.Studios, err = getAnimeGroupArr(id, "Studios")
+	if err != nil {
+		return Anime{}, err
+	}
+
+	anime.Producers, err = getAnimeGroupArr(id, "Producers")
+	if err != nil {
+		return Anime{}, err
+	}
+
+	return anime, nil
+}
+
+func DatabaseInfo(c echo.Context) error {
+	info := DBInfo{}
+	row := db.QueryRow("SELECT COUNT(AnimeID) FROM Animes;")
+	err := row.Scan(&info.AnimeCount)
+	if err != nil {
+		return err
+	}
+
+	info.Types, err = filterGetAllArr("Types")
+	if err != nil {
+		return err
+	}
+
+	info.Genres, err = filterGetAllArr("Genres")
+	if err != nil {
+		return err
+	}
+
+	info.Themes, err = filterGetAllArr("Themes")
+	if err != nil {
+		return err
+	}
+
+	info.Studios, err = filterGetAllArr("Studios")
+	if err != nil {
+		return err
+	}
+
+	info.Producers, err = filterGetAllArr("Producers")
+	if err != nil {
+		return err
+	}
+
+	info.Demographics, err = filterGetAllArr("Demographics")
+	if err != nil {
+		return err
+	}
+
+	return c.JSON(http.StatusOK, info)
+}
+
 func anime(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	anime := Anime{}
-	row := db.QueryRow("SELECT * FROM Animes WHERE AnimeID = ?", id)
-	err = row.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+	anime, err := GetAnime(id)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return c.NoContent(http.StatusBadRequest)
 		}
+
 		return err
 	}
 	return c.JSON(http.StatusOK, anime)
@@ -217,6 +293,24 @@ func getAnimeGroup(group string) func(c echo.Context) error {
 	}
 }
 
+func getAnimeGroupArr(id int, group string) ([]Filter, error) {
+	table := group[:len(group)-1]
+	arr := []Filter{}
+	rows, err := db.Query("SELECT "+table+"ID, (SELECT "+table+"Name FROM "+table+"s g WHERE g."+table+"ID = ag."+table+"ID) FROM Anime"+table+"s ag WHERE AnimeID = ?", id)
+	if err != nil {
+		return arr, err
+	}
+	for rows.Next() {
+		genre := Filter{}
+		err := rows.Scan(&genre.ID, &genre.Name)
+		if err != nil {
+			return arr, err
+		}
+		arr = append(arr, genre)
+	}
+	return arr, nil
+}
+
 func animeType(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
@@ -240,7 +334,7 @@ func animeRelations(c echo.Context) error {
 		return c.NoContent(http.StatusBadRequest)
 	}
 
-	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT AnimeTitle FROM Animes a WHERE a.AnimeID = ar.OtherID) FROM AnimeRelations ar WHERE ar.AnimeID = ?;", id)
+	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT AnimeTitle FROM Animes a WHERE a.AnimeID = ar.OtherID), (SELECT RelationType FROM Relations r WHERE r.RelationID = ar.RelationID) FROM AnimeRelations ar WHERE ar.AnimeID = ?;", id)
 	if err != nil {
 		return err
 	}
@@ -248,7 +342,7 @@ func animeRelations(c echo.Context) error {
 
 	for rows.Next() {
 		res := Relation{}
-		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.RelationID, &res.OtherName)
+		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.Relation.ID, &res.OtherName, &res.Relation.Name)
 		if err != nil {
 			return err
 		}
@@ -274,7 +368,7 @@ func animeRelation(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT AnimeTitle FROM Animes a WHERE a.AnimeID = ar.OtherID) FROM AnimeRelations ar WHERE ar.AnimeID = ? AND ar.RelationID = ?;", id, rel)
+	rows, err := db.Query("SELECT ar.AnimeID, ar.OtherID, ar.RelationID, (SELECT AnimeTitle FROM Animes a WHERE a.AnimeID = ar.OtherID), (SELECT RelationType FROM Relations r WHERE r.RelationID = ar.RelationID) FROM AnimeRelations ar WHERE ar.AnimeID = ? AND ar.RelationID = ?;", id, rel)
 	if err != nil {
 		return err
 	}
@@ -282,7 +376,7 @@ func animeRelation(c echo.Context) error {
 
 	for rows.Next() {
 		res := Relation{}
-		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.RelationID, &res.OtherName)
+		err = rows.Scan(&res.AnimeID, &res.OtherID, &res.Relation.ID, &res.OtherName, &res.Relation.Name)
 		if err != nil {
 			return err
 		}

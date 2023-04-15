@@ -9,12 +9,25 @@ type Anime struct {
 	AnimeTitle   string
 	EnglishTitle string
 	AnimeDesc    string
-	TypeID       int
+	Type         Filter
 	AiredBegin   mysql.NullTime
 	AiredEnd     mysql.NullTime
 	Premiered    string
 	Duration     string
 	PosterURL    string
+	EpisodeNum   int
+
+	Genres       []Filter
+	Themes       []Filter
+	Producers    []Filter
+	Studios      []Filter
+	Demographics []Filter
+}
+
+type AnimeRequest struct {
+	AnimeBegin int
+	AnimeEnd   int
+	Mode       int
 }
 
 type Song struct {
@@ -55,10 +68,10 @@ type Lang struct {
 }
 
 type Relation struct {
-	AnimeID    int
-	OtherID    int
-	RelationID int
-	OtherName  string
+	AnimeID   int
+	OtherID   int
+	Relation  Filter
+	OtherName string
 }
 
 type Filter struct {
@@ -66,7 +79,19 @@ type Filter struct {
 	Name string
 }
 
+type DBInfo struct {
+	AnimeCount   int
+	Types        []Filter
+	Genres       []Filter
+	Themes       []Filter
+	Producers    []Filter
+	Studios      []Filter
+	Demographics []Filter
+}
+
 type FilterRequest struct {
+	ABegin       int
+	AEnd         int
 	Title        string
 	Types        []int
 	Themes       []int

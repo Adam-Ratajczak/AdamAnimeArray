@@ -1,19 +1,11 @@
 import React, { Component, useEffect } from 'react'
 import LoginMan from '../../login_manager.js';
 import redirect from '../../redirect.js'
-import { GetAnime } from '../../db_module.js';
+import { GetAnime, GetDbInfo } from '../../db_module.js';
 import './style.scss';
 
 function LoginBtn() {
   let btns = 0;
-  let info = false;
-  console.log(LoginMan.UserID())
-  LoginMan.userinfo()
-    .then((response) => response.status == 202 ? response.json() : false)
-    .then((result) => {
-      console.log(result);
-      info = result;
-    });
 
   if (!LoginMan.LoggedIn()) {
     btns = (
@@ -48,11 +40,11 @@ function Menubar() {
     });
 
     document.getElementById("random").addEventListener("click", (ev) => {
-      GetAnime()
+      GetDbInfo()
         .then((response) => response.json())
         .then((result) => {
-          let num = Math.floor(Math.random() * result.length);
-          redirect("/Anime/" + result[num].AnimeID);
+          let num = Math.floor(Math.random() * result.AnimeCount);
+          redirect("/Anime/" + num);
         })
     })
   })
