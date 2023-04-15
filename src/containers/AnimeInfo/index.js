@@ -391,11 +391,6 @@ function AnimeInfo() {
         </div>)) :
           (<></>)}
       </div>
-      <h1 id="AnimeInfoHeader">
-        {AnimeTitle}
-        <br />
-        <i>{EnglishTitle}</i>
-      </h1>
       {renderAnimeInfo()}
       <h1 id="SimilliarAnimeHeader">You may also like: </h1>
       <div id="SimiliarAnimes">{Animes}</div>
