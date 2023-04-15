@@ -6,6 +6,7 @@ import './style.scss';
 
 function LangWidget(props) {
   const [Flags, SetFlags] = useState([])
+  const [Reload, SetReload] = useState(true)
 
   const AnimeID = props.AnimeID
   const EpNum = props.EpNum
@@ -44,10 +45,11 @@ function LangWidget(props) {
         }
 
         SetFlags(flag_widget)
+        SetReload(false)
       })
   })
 
-  if (Flags.length == 0) {
+  if (Reload) {
     foo()
   }
 
@@ -110,6 +112,7 @@ function AnimePlayer() {
   const EpNum = window.location.href.split("/").at(-1);
 
   const [AnimeTitle, SetAnimeTitle] = useState(0)
+  const [EnglishTitle, SetEnglishTitle] = useState(0)
   const [EpisodeTitle, SetEpisodeTitle] = useState(0)
   const [Aired, SetAired] = useState(0)
   const [PlayerUrl, SetPlayerUrl] = useState("/NoPlayer")
@@ -122,6 +125,7 @@ function AnimePlayer() {
       .then((response) => response.json())
       .then((result) => {
         SetAnimeTitle(result.AnimeTitle);
+        SetEnglishTitle(result.EnglishTitle);
       })
   }, []);
 
@@ -201,7 +205,7 @@ function AnimePlayer() {
   return (
     <div id="main">
       <Menubar />
-      <div id="AnimeInfoHeaderDiv"><h1>{AnimeTitle}</h1><LangWidget AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} OnClick={changeLang} /></div>
+      <div id="AnimeInfoHeaderDiv"><h1>{AnimeTitle}<br/><i>{EnglishTitle}</i></h1><LangWidget AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} OnClick={changeLang} /></div>
       <div id="PlayerContent">
         <EpList AnimeID={AnimeID} EpNum={EpNum} />
         <div id="PlayerMainDiv">

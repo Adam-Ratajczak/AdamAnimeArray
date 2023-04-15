@@ -12,6 +12,7 @@ function AnimeInfo() {
   const AnimeID = window.location.href.split("/").at(-1);
 
   const [AnimeTitle, SetAnimeTitle] = useState(null);
+  const [EnglishTitle, SetEnglishTitle] = useState(null);
   const [AnimeDesc, SetAnimeDesc] = useState(null);
   const [AiredBegin, SetAiredBegin] = useState(null);
   const [AiredEnd, SetAiredEnd] = useState(null);
@@ -31,6 +32,7 @@ function AnimeInfo() {
   function isLoaded() {
     return (
       AnimeTitle !== null &&
+      EnglishTitle !== null &&
       AnimeDesc !== null &&
       AiredBegin !== null &&
       AiredEnd !== null &&
@@ -51,6 +53,7 @@ function AnimeInfo() {
       .then((response) => response.json())
       .then((result) => {
         SetAnimeTitle(result.AnimeTitle);
+        SetEnglishTitle(result.EnglishTitle);
         SetAnimeDesc(result.AnimeDesc);
         SetAiredBegin(result.AiredBegin);
         SetAiredEnd(result.AiredEnd);
@@ -324,7 +327,7 @@ function AnimeInfo() {
   return (
     <div id="main">
       <Menubar />
-      <h1 id="AnimeInfoHeader">{AnimeTitle}</h1>
+      <h1 id="AnimeInfoHeader">{AnimeTitle}<br/><i>{EnglishTitle}</i></h1>
       {renderAnimeInfo()}
       <h1 id="SimilliarAnimeHeader">You may also like: </h1>
       <div id="SimiliarAnimes">{Animes}</div>
