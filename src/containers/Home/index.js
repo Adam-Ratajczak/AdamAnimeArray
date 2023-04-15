@@ -12,65 +12,29 @@ function Home() {
 
   const siteType = window.location.href.split("/").at(-1);
   const fillList = useCallback((begin) => {
-    GetAnimeRange(begin, begin + num_sample_animes)
+    let mode = 0
+    let anime_header = ""
+
+    if(siteType == "Popular"){
+      mode = 0
+      anime_header = "Top Ranked Animes";
+    }else if(siteType == "Newest"){
+      mode = 1
+      anime_header = "Recently Added Animes";
+    }else if(siteType == "Recomended"){
+      mode = 2
+      anime_header = "Recomended Animes";
+    }
+    SetAnimeHeader(anime_header)
+
+    GetAnimeRange(begin, num_sample_animes, mode)
       .then((response) => response.json())
       .then((result) => {
-        SetAnimeContainer([])
-        let AnimeCountEnd = Math.min(num_sample_animes, result.length)
-
-        let anime_id_arr = [];
-        let anime_header = ""
-
-        if (siteType == "Popular") {
-          anime_header = "Top Ranked Animes";
-
-          for (let i = 0; i < AnimeCountEnd; i++) {
-            anime_id_arr.push(result[i].AnimeID);
-          }
-        } else if (siteType == "Recomended") {
-          anime_header = "Recomended Animes";
-
-          for (let i = begin; i < AnimeCountEnd; i++) {
-            let AnimeNum = Math.floor((Math.random() * (result.length + 1)) % result.length);
-            anime_id_arr.push(result[AnimeNum].AnimeID);
-          }
-        } else if (siteType == "Newest") {
-          anime_header = "Recently Added Animes";
-          let to_sort = result;
-          to_sort.sort((a, b) => {
-            if (!a.AiredBegin.Valid) {
-              return 1;
-            }
-
-            if (a.AiredBegin.Time < "1900-01-01T00:00:00Z") {
-              return -1
-            }
-
-            const ABegin = new Date(a.AiredBegin.Time)
-            const BBegin = new Date(b.AiredBegin.Time)
-
-            if (ABegin < BBegin) {
-              return 1
-            } else if (ABegin == BBegin) {
-              return 0
-            } else {
-              return -1
-            }
-          });
-
-          for (let i = begin; i < AnimeCountEnd; i++) {
-            anime_id_arr.push(to_sort[i].AnimeID);
-          }
+        let container = []
+        for (let elem of result) {
+          container.push((<AnimePoster AnimeID={elem.AnimeID} Title={elem.AnimeTitle} Poster={elem.PosterURL} Premiered={elem.Premiered} EpNum={elem.EpisodeNum} Type={elem.Type.Name} />))
         }
 
-        let container = [];
-
-        for (let id of anime_id_arr) {
-          const elem = result.find((val) => val.AnimeID == id)
-          container.push((<AnimePoster AnimeID={id} Title={elem.AnimeTitle} Poster={elem.PosterURL} Premiered={elem.Premiered} EpNum={elem.EpisodeNum} Type={elem.Type.Name} />))
-        }
-
-        SetAnimeHeader(anime_header)
         SetAnimeContainer(container)
       })
 

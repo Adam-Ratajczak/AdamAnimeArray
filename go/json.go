@@ -27,6 +27,7 @@ type Anime struct {
 type AnimeRequest struct {
 	AnimeBegin int
 	AnimeEnd   int
+	Mode       int
 }
 
 type Song struct {

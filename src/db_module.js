@@ -78,10 +78,11 @@ export function GetDbInfo(){
     return FetchToApiGet(`/info`);
 }
 
-export function GetAnimeRange(begin, end){
+export function GetAnimeRange(begin, end, mode){
     let req = {
         AnimeBegin: begin,
-        AnimeEnd: end
+        AnimeEnd: end,
+        Mode: mode
     };
     
     return FetchToApiPost(`/animes/`, req);

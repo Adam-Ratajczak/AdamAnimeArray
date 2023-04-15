@@ -34,7 +34,18 @@ func animeRange(c echo.Context) error {
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	rows, err := db.Query("SELECT AnimeID FROM Animes LIMIT ?, ?;", rq.AnimeBegin, rq.AnimeEnd)
+
+	order_by := ""
+
+	if rq.Mode == 0 {
+		order_by = "ORDER BY AnimeID ASC"
+	} else if rq.Mode == 1 {
+		order_by = "WHERE AiredBegin IS NOT NULL ORDER BY AiredBegin DESC"
+	} else if rq.Mode == 2 {
+		order_by = "ORDER BY RAND()"
+	}
+
+	rows, err := db.Query("SELECT AnimeID FROM Animes "+order_by+" LIMIT ?, ?;", rq.AnimeBegin, rq.AnimeEnd)
 	if err != nil {
 		return err
 	}
