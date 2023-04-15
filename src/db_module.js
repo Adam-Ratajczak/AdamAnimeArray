@@ -192,6 +192,35 @@ export function LogoutUser(id, token){
     return FetchToApiPost(`/auth/logout`, req);
 }
 
+export function GetWatchlist(id, token){
+    let req = {
+        UserID: id,
+        Token: token,
+    };
+    
+    return FetchToApiPost(`/auth/watchlist`, req);
+}
+
+export function AddToWatchlist(id, token, AnimeID){
+    let req = {
+        UserID: id,
+        Token: token,
+        AnimeID: parseInt(AnimeID),
+    };
+    
+    return FetchToApiPost(`/auth/watchlist/add`, req);
+}
+
+export function RemoveFromWatchlist(id, token, AnimeID){
+    let req = {
+        UserID: id,
+        Token: token,
+        AnimeID: parseInt(AnimeID),
+    };
+    
+    return FetchToApiPost(`/auth/watchlist/remove`, req);
+}
+
 export function GetUserInfo(id){
     let req = {
         UserID: id,

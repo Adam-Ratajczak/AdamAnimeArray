@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menubar, AnimePoster, EpisodeBtn } from "./../../widgets";
+import LoginMan from "../../login_manager.js";
 import {
   GetAnime,
   GetFilterEntry,
@@ -7,6 +8,8 @@ import {
   GetAnimeRelations
 } from "../../db_module";
 import "./style.scss";
+import plus from './plus.png'
+import minus from './minus.png'
 
 function AnimeInfo() {
   const AnimeID = window.location.href.split("/").at(-1);
@@ -28,6 +31,7 @@ function AnimeInfo() {
 
   const [Animes, SetAnimes] = useState([]);
   const [AnimeRelations, SetAnimeRelations] = useState([]);
+  const [SavedToWatchlist, SetSavedToWatchlist] = useState(false);
 
   function isLoaded() {
     return (
@@ -113,7 +117,7 @@ function AnimeInfo() {
 
         arr.forEach((val, key) => {
           const elem = result.find((v) => v.Relation.ID == key)
-          
+
           relations.push(
             <div class="RelationType">
               <h2 class="RelationHeader">{elem.Relation.Name}</h2>
@@ -162,6 +166,35 @@ function AnimeInfo() {
           });
       });
   }, []);
+
+  useEffect(() => {
+    (async () => {
+      if (LoginMan.LoggedIn()) {
+        const watchlist = await LoginMan.getWatchlist()
+        console.log(watchlist)
+        const test = watchlist.find((val) => val.AnimeID == parseInt(AnimeID))
+
+        if (test == undefined) {
+          SetSavedToWatchlist(false)
+        } else {
+          SetSavedToWatchlist(true)
+        }
+
+        let img = document.getElementById("WatchlistBtn")
+        img.onclick = async () => {
+          if (img.classList.contains("RemFrom")) {
+            LoginMan.removeFromWatchlist(AnimeID)
+          } else if (img.classList.contains("AddTo")) {
+            LoginMan.addToWatchlist(AnimeID)
+          }
+
+          window.location.reload()
+        }
+      }
+    })();
+
+  }, []);
+
   const options = {
     weekday: "short",
     year: "numeric",
@@ -327,7 +360,17 @@ function AnimeInfo() {
   return (
     <div id="main">
       <Menubar />
-      <h1 id="AnimeInfoHeader">{AnimeTitle}<br/><i>{EnglishTitle}</i></h1>
+      <div id="AnimeInfoHeaderDiv">
+        <h1>{AnimeTitle}<br /><i>{EnglishTitle}</i></h1>
+        {LoginMan.LoggedIn() ? (!SavedToWatchlist ? (<div class="tooltip">
+          <span class="tooltiptext">Add to watchlist</span>
+          <img id="WatchlistBtn" class="AddTo" src={plus} width="32" height="32" />
+        </div>) : (<div class="tooltip">
+          <span class="tooltiptext">Remove from watchlist</span>
+          <img id="WatchlistBtn" class="RemFrom" src={minus} width="32" height="32" />
+        </div>)) :
+          (<></>)}
+      </div>
       {renderAnimeInfo()}
       <h1 id="SimilliarAnimeHeader">You may also like: </h1>
       <div id="SimiliarAnimes">{Animes}</div>

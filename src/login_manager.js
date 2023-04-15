@@ -1,4 +1,4 @@
-import { LoginUser, CreateUser, LogoutUser, GetUserInfo } from "./db_module";
+import { LoginUser, CreateUser, LogoutUser, GetUserInfo, GetWatchlist, AddToWatchlist, RemoveFromWatchlist } from "./db_module";
 
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
@@ -32,6 +32,18 @@ class LoginManager {
 
   async fetchUserInfo() {
     return (await GetUserInfo(this.UserID(), this.Token())).json();
+  }
+
+  async getWatchlist() {
+    return (await GetWatchlist(this.UserID(), this.Token())).json();
+  }
+
+  async addToWatchlist(AnimeID) {
+    return (await AddToWatchlist(this.UserID(), this.Token(), AnimeID)).status() == 200 ? true : false;
+  }
+
+  async removeFromWatchlist(AnimeID) {
+    return (await RemoveFromWatchlist(this.UserID(), this.Token(), AnimeID)).status() == 200 ? true : false;
   }
 
   async check_credentials(permission) {

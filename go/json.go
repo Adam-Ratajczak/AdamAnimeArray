@@ -144,3 +144,9 @@ type UserAuth struct {
 	UserID int
 	Token  string
 }
+
+type AnimeUserRequest struct {
+	UserID  int
+	Token   string
+	AnimeID int
+}

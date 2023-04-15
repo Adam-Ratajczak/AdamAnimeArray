@@ -1,14 +1,8 @@
 @import 'src/styles/colors';
 
-#AnimeInfoHeader {
-    background-color: #630f78;
-    color: $text-color;
-    margin: 0px;
-    padding-left: 50px;
-}
-
-#AnimeInfoHeader i{
-    font-weight: 100;
+#AnimeInfoHeaderDiv img{
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 #AnimeInfoContent {
