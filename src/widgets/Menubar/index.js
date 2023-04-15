@@ -53,7 +53,7 @@ function Menubar() {
       GetDbInfo()
         .then((response) => response.json())
         .then((result) => {
-          let num = Math.floor(Math.random() * result.AnimeCount);
+          let num = Math.floor(Math.random() * result.AnimeCount + 1);
           redirect("/Anime/" + num);
         });
     });
