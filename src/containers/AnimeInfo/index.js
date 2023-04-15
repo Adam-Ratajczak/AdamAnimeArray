@@ -9,6 +9,7 @@ import {
 import "./style.scss";
 import plus from './plus.png'
 import minus from './minus.png'
+import LoginMan from "../../login_manager";
 
 function AnimeInfo() {
   const AnimeID = window.location.href.split("/").at(-1);
@@ -267,9 +268,9 @@ function AnimeInfo() {
               <td>
                 {AnimeGenres !== ""
                   ? AnimeGenres.toString().substring(
-                      0,
-                      AnimeGenres.toString().length - 2
-                    )
+                    0,
+                    AnimeGenres.toString().length - 2
+                  )
                   : "None"}
               </td>
             </tr>
@@ -278,9 +279,9 @@ function AnimeInfo() {
               <td>
                 {AnimeThemes !== ""
                   ? AnimeThemes.toString().substring(
-                      0,
-                      AnimeThemes.toString().length - 2
-                    )
+                    0,
+                    AnimeThemes.toString().length - 2
+                  )
                   : "None"}
               </td>
             </tr>
@@ -289,9 +290,9 @@ function AnimeInfo() {
               <td>
                 {AnimeStudios !== ""
                   ? AnimeStudios.toString().substring(
-                      0,
-                      AnimeProducers.toString().length - 2
-                    )
+                    0,
+                    AnimeProducers.toString().length - 2
+                  )
                   : "None"}
               </td>
             </tr>
@@ -300,9 +301,9 @@ function AnimeInfo() {
               <td>
                 {AnimeProducers != ""
                   ? AnimeProducers.toString().substring(
-                      0,
-                      AnimeProducers.toString().length - 2
-                    )
+                    0,
+                    AnimeProducers.toString().length - 2
+                  )
                   : "None"}
               </td>
             </tr>
@@ -311,9 +312,9 @@ function AnimeInfo() {
               <td>
                 {AnimeDemographics != ""
                   ? AnimeDemographics.toString().substring(
-                      0,
-                      AnimeDemographics.toString().length - 2
-                    )
+                    0,
+                    AnimeDemographics.toString().length - 2
+                  )
                   : "None"}
               </td>
             </tr>
@@ -378,8 +379,7 @@ function AnimeInfo() {
   }
 
   return (
-    <div id="main">
-      <Menubar />
+    <>
       <div id="AnimeInfoHeaderDiv">
         <h1>{AnimeTitle}<br /><i>{EnglishTitle}</i></h1>
         {LoginMan.LoggedIn() ? (!SavedToWatchlist ? (<div class="tooltip">
@@ -391,6 +391,11 @@ function AnimeInfo() {
         </div>)) :
           (<></>)}
       </div>
+      <h1 id="AnimeInfoHeader">
+        {AnimeTitle}
+        <br />
+        <i>{EnglishTitle}</i>
+      </h1>
       {renderAnimeInfo()}
       <h1 id="SimilliarAnimeHeader">You may also like: </h1>
       <div id="SimiliarAnimes">{Animes}</div>
