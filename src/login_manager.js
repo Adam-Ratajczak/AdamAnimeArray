@@ -52,7 +52,7 @@ class LoginManager {
   }
 
   UserID() {
-    return localStorage.getItem("UserID");
+    return Number(localStorage.getItem("UserID"));
   }
 
   Token() {
