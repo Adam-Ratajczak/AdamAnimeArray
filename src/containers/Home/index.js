@@ -23,10 +23,7 @@ function Home() {
         let anime_id_arr = [];
         let anime_header = ""
 
-        if (siteType == "Random") {
-          let num = Math.floor((Math.random() * (result.length + 1)) % result.length);
-          redirect("Anime/" + num);
-        } else if (siteType == "Popular") {
+        if (siteType == "Popular") {
           anime_header = "Top Ranked Animes";
 
           for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
