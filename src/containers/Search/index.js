@@ -45,7 +45,7 @@ class Search extends Component {
   SearchFoo(start, len) {
     const AnimeName = document.getElementById("SearchbarLarge").value;
 
-    FilterAnimes(AnimeName, this.state.TypeList, this.state.GenreList, this.state.ThemeList, this.state.StudioList, this.state.ProducerList, this.state.DemographicsList)
+    FilterAnimes(this.state.Animes.length, this.state.Animes.length + animeLimit, AnimeName, this.state.TypeList, this.state.GenreList, this.state.ThemeList, this.state.StudioList, this.state.ProducerList, this.state.DemographicsList)
       .then((response) => response.json())
       .then((result) => {
         let res = this.state.Animes;
@@ -152,7 +152,6 @@ class Search extends Component {
   }
 
   componentDidMount() {
-    
     GetDbInfo()
     .then((response) => response.json())
     .then((result) => {

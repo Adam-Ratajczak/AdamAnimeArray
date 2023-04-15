@@ -89,6 +89,8 @@ type DBInfo struct {
 }
 
 type FilterRequest struct {
+	ABegin       int
+	AEnd         int
 	Title        string
 	Types        []int
 	Themes       []int

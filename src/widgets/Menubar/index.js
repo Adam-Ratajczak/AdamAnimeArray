@@ -1,7 +1,7 @@
 import React, { Component, useEffect } from 'react'
 import LoginMan from '../../login_manager.js';
 import redirect from '../../redirect.js'
-import { GetAnime } from '../../db_module.js';
+import { GetAnime, GetDbInfo } from '../../db_module.js';
 import './style.scss';
 
 function LoginBtn() {
@@ -40,11 +40,11 @@ function Menubar() {
     });
 
     document.getElementById("random").addEventListener("click", (ev) => {
-      GetAnime()
+      GetDbInfo()
         .then((response) => response.json())
         .then((result) => {
-          let num = Math.floor(Math.random() * result.length);
-          redirect("/Anime/" + result[num].AnimeID);
+          let num = Math.floor(Math.random() * result.AnimeCount);
+          redirect("/Anime/" + num);
         })
     })
   })

@@ -147,8 +147,10 @@ export function GetPlayers(AnimeID, id, lang = ''){
     }
 }
 
-export function FilterAnimes(name, types, genres, themes, studios, producers, demographics){
+export function FilterAnimes(ABegin, AEnd, name, types, genres, themes, studios, producers, demographics){
     let req = {
+        ABegin: ABegin,
+        AEnd: AEnd,
         Title: name,
         Types: types,
         Genres: genres,

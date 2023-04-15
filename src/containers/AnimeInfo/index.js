@@ -128,7 +128,7 @@ function AnimeInfo() {
     GetFilterEntry(AnimeID)
       .then((response) => response.json())
       .then((result) => {
-        FilterAnimes("", result.Types, result.Genres, result.Themes, [], [])
+        FilterAnimes(0, 24, "", result.Types, result.Genres, result.Themes, [], [])
           .then((response) => response.json())
           .then((AnimeList) => {
             let res = [];

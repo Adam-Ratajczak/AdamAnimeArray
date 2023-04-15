@@ -60,7 +60,7 @@ func filter(c echo.Context) error {
 	}
 	sql := sqlBuilder(rq)
 	animes := []Anime{}
-	rows, err := db.Query(sql)
+	rows, err := db.Query(sql+" LIMIT ?, ?;", rq.ABegin, rq.AEnd)
 	if err != nil {
 		return err
 	}
