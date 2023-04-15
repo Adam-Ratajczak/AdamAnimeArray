@@ -203,14 +203,19 @@ func ClearTokens() error {
 
 func UserInfo(c echo.Context) error {
 	rq := UserAuth{}
+	err := c.Bind(&rq)
+	if err != nil {
+		return err
+	}
 
 	row := db.QueryRow("SELECT UserName, UserEmail, UserProfileImageUrl, UserProfileImagePoster FROM Users WHERE UserID = ?;", rq.UserID)
 
 	res := UserRequest{}
 
-	err := row.Scan(&res.UserName, &res.UserEmail, &res.UserProfileImageUrl, &res.UserProfileImagePoster)
+	err = row.Scan(&res.UserName, &res.UserEmail, &res.UserProfileImageUrl, &res.UserProfileImagePoster)
 
 	if err != nil {
+		fmt.Printf("Failed to get user info for UserID=%d: %s\n", rq.UserID, err)
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 

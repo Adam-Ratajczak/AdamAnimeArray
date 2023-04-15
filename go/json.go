@@ -1,6 +1,8 @@
 package main
 
 import (
+	"database/sql"
+
 	"github.com/go-sql-driver/mysql"
 )
 
@@ -124,8 +126,8 @@ type ChangeUserRequest struct {
 type UserRequest struct {
 	UserName               string
 	UserEmail              string
-	UserProfileImageUrl    string
-	UserProfileImagePoster string
+	UserProfileImageUrl    sql.NullString
+	UserProfileImagePoster sql.NullString
 }
 
 type LoginUserRequest struct {

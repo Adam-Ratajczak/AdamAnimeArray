@@ -89,7 +89,9 @@
 
 #LoginBox > a,
 #LoginBox > button {
-  width: 120px;
+  box-sizing: border-box;
+  min-width: 120px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,4 +110,15 @@
 #LoginBox > a:hover,
 #LoginBox > button:hover {
   background-color: #99999955;
+}
+
+// What to do if your style doesn't want to apply:
+#UserInfo#UserInfo {
+  display: flex;
+  padding: 5px;
+  gap: 5px;
+}
+
+#UserInfo img, #UserInfo svg {
+  height: 100%;
 }

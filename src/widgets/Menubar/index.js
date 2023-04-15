@@ -1,8 +1,45 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import LoginMan from "../../login_manager.js";
 import redirect from "../../redirect.js";
 import { GetDbInfo } from "../../db_module.js";
 import "./style.scss";
+import UserDefaultSVG from "./userdefault.js";
+
+function UserInfo() {
+  const [userInfo, setUserInfo] = useState(null);
+
+  useEffect(() => {
+    (async () => {
+      setUserInfo(await LoginMan.fetchUserInfo());
+    })();
+  }, []);
+
+  function renderUserProfileButton() {
+    return (
+      <>
+        {userInfo.UserProfileImageUrl.Valid ? (
+          <img
+            src={userInfo.UserProfileImageUrl.String}
+            alt="User profile"
+          ></img>
+        ) : (
+          <UserDefaultSVG/>
+        )}
+
+        {userInfo.UserName}
+      </>
+    );
+  }
+
+  // TODO: User profile page
+  return userInfo ? (
+    <a id="UserInfo" href="/UserProfile">
+      {renderUserProfileButton()}
+    </a>
+  ) : (
+    <div class="Loading"></div>
+  );
+}
 
 function LoginBtn() {
   let btns = 0;
@@ -27,6 +64,7 @@ function LoginBtn() {
   } else {
     btns = (
       <div id="LoginBox">
+        <UserInfo />
         <button onClick={logout}>Logout</button>
       </div>
     );

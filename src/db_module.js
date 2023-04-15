@@ -198,7 +198,7 @@ export function GetUserInfo(id){
         Token: undefined
     };
     
-    return FetchToApiPost(`/auth/changeinfo`, req);
+    return FetchToApiPost(`/auth/user`, req);
 }
 
 export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){

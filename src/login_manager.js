@@ -30,8 +30,8 @@ class LoginManager {
     return status === 202;
   }
 
-  userinfo() {
-    return GetUserInfo(this.UserID(), this.Token());
+  async fetchUserInfo() {
+    return (await GetUserInfo(this.UserID(), this.Token())).json();
   }
 
   async check_credentials(permission) {
