@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './style.scss'
 
 function TabUnit(props) {
@@ -74,9 +74,34 @@ function TabUnit(props) {
         modify_tab(props.Index)
     }
 
+    useEffect(() => {
+        let page_input = document.querySelector(".TabUnitDiv input")
+
+        if(page_input.value == 0){
+            page_input.value = 1
+        }
+
+        page_input.onchange = () => {
+            let index = page_input.value
+
+            if(index <= 0){
+                index = 1
+            }
+
+            if(index > props.TabCount){
+                index = props.TabCount
+            }
+            page_input.value = index
+
+            modify_tab(parseInt(index))
+            props.onChange(0, parseInt(index));
+        }
+    })
+
     return (
         <div class="TabUnitDiv">
             {Tabs}
+            <label>Go to page: <input type="number"/></label>
         </div>
     )
 }
