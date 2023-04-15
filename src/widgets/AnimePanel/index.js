@@ -38,62 +38,13 @@ function AnimePanel(props){
       SetAnimeTitle(result.AnimeTitle);
       SetAnimePoster(result.PosterURL);
       SetPremiered(result.Premiered);
-    })
-  }, []);
-  
-  useEffect(() =>{
-    GetEpisodes(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetEpisodeNum(result.length);
-    })
-  }, []);
-
-  useEffect(() =>{
-    GetAnimeGenres(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetAnimeGenres(get_genre_str(result));
-    })
-  }, []);
-
-  useEffect(() =>{
-    GetAnimeThemes(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetAnimeThemes(get_genre_str(result));
-    })
-  }, []);
-
-  useEffect(() =>{
-    GetAnimeStudios(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetAnimeStudios(get_genre_str(result));
-    })
-  }, []);
-
-  useEffect(() =>{
-    GetAnimeProducers(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetAnimeProducers(get_genre_str(result));
-    })
-  }, []);
-
-  useEffect(() =>{
-    GetAnimeDemographics(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetAnimeDemographics(get_genre_str(result));
-    })
-  }, []);
-  
-  useEffect(() =>{
-    GetAnimeType(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetAnimeType(result.Name)
+      SetEpisodeNum(result.EpisodeNum);
+      SetAnimeGenres(get_genre_str(result.Genres));
+      SetAnimeThemes(get_genre_str(result.Themes));
+      SetAnimeStudios(get_genre_str(result.Studios));
+      SetAnimeProducers(get_genre_str(result.Producers));
+      SetAnimeDemographics(get_genre_str(result.Demographics));
+      SetAnimeType(result.Type.Name)
     })
   }, []);
 
