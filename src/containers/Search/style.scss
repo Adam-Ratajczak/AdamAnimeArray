@@ -7,12 +7,10 @@ body {
 }
 
 .CoolButtonDiv {
-  position: relative;
   display: inline-block;
-  margin-bottom: 20px;
 }
 
-.CoolButton {
+.CoolButton > span {
   height: fit-content;
   width: fit-content;
   border-radius: 5px;
@@ -27,17 +25,17 @@ body {
   cursor: pointer;
 }
 
+.CoolButtonCb:checked + span {
+  background-color: $foreground-color;
+  color: $text-color;
+} 
+
 .CoolButtonCb {
   opacity: 0;
   width: 0;
   height: 0;
   margin: 0;
   padding: 0;
-}
-
-.CoolButtonCb:checked + .CoolButton {
-  background-color: $foreground-color;
-  color: $text-color;
 }
 
 #contentSearch {
@@ -104,4 +102,5 @@ body {
 
 .AnimeTypeBtnDiv {
   display: none;
+  line-height: 2.5rem;
 }

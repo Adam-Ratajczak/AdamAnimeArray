@@ -11,11 +11,11 @@ function TypeButton({ AnimeName, TypeID, onChecked }) {
       <label className="CoolButton unselectable">
         <input
           type="checkbox"
-          className="CoolButton"
+          className="CoolButtonCb"
           onChange={(evt) => onChecked(evt.target.checked)}
           value={TypeID}
         />
-        {AnimeName}
+        <span>{AnimeName}</span>
       </label>
     </div>
   );
