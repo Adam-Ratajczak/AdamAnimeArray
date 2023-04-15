@@ -191,6 +191,7 @@ class Search extends Component {
       newState.StudioList = [];
       newState.DemographicsList = [];
       newState.TypeList = [];
+      newState.Animes = [];
 
       this.setState(newState);
 
@@ -224,7 +225,8 @@ class Search extends Component {
       let currentScroll = window.scrollY + window.innerHeight;
 
       let modifier = 0;
-      if (currentScroll + modifier > documentHeight) {
+      if (currentScroll + modifier > documentHeight && this.state.Animes.length == animeLimit) {
+        window.scrollBy(0, -50)
         this.SearchFoo(this.state.Animes.length, animeLimit);
       }
     }
