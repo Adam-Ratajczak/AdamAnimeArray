@@ -10,13 +10,42 @@ import (
 
 func all(c echo.Context) error {
 	animes := []Anime{}
-	rows, err := db.Query("Select * FROM Animes")
+	rows, err := db.Query("SELECT AnimeID FROM Animes;")
 	if err != nil {
 		return err
 	}
 	for rows.Next() {
-		anime := Anime{}
-		rows.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+		id := 0
+		rows.Scan(&id)
+
+		anime, err := GetAnime(id)
+		if err != nil {
+			continue
+		}
+
+		animes = append(animes, anime)
+	}
+	return c.JSON(http.StatusOK, animes)
+}
+func animeRange(c echo.Context) error {
+	animes := []Anime{}
+	rq := AnimeRequest{}
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	rows, err := db.Query("SELECT AnimeID FROM Animes LIMIT ?, ?;", rq.AnimeBegin, rq.AnimeEnd)
+	if err != nil {
+		return err
+	}
+	for rows.Next() {
+		id := 0
+		rows.Scan(&id)
+
+		anime, err := GetAnime(id)
+		if err != nil {
+			continue
+		}
 
 		animes = append(animes, anime)
 	}
@@ -36,8 +65,14 @@ func filter(c echo.Context) error {
 		return err
 	}
 	for rows.Next() {
-		anime := Anime{}
-		rows.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+		id := 0
+		rows.Scan(&id)
+
+		anime, err := GetAnime(id)
+		if err != nil {
+			continue
+		}
+
 		animes = append(animes, anime)
 	}
 	return c.JSON(http.StatusOK, animes)
@@ -65,7 +100,7 @@ func filterSqlBuilder(table string, filter []int) (string, string) {
 }
 
 func sqlBuilder(filter FilterRequest) string {
-	sql := "SELECT DISTINCT a.AnimeID, a.AnimeTitle, a.AnimeDesc, a.TypeID, a.AiredBegin, a.AiredEnd, a.Premiered, a.Duration, a.PosterUrl FROM Animes a %v %v"
+	sql := "SELECT DISTINCT a.AnimeID FROM Animes a %v %v"
 	joins := []string{}
 	wheres := []string{}
 	sqlAppend := func(j, w string) {

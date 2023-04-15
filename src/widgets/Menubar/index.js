@@ -6,13 +6,13 @@ import './style.scss';
 function LoginBtn(){
   let btns = 0;
   let info = false;
-  console.log(LoginMan.UserID())
-  LoginMan.userinfo()
-  .then((response) => response.status == 202 ? response.json() : false)
-  .then((result) => {
-    console.log(result);
-    info = result;
-  });
+  // console.log(LoginMan.UserID())
+  // LoginMan.userinfo()
+  // .then((response) => response.status == 202 ? response.json() : false)
+  // .then((result) => {
+  //   console.log(result);
+  //   info = result;
+  // });
 
   if(!LoginMan.LoggedIn()){
     btns = (

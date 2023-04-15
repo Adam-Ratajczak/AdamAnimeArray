@@ -48,3 +48,20 @@ func filterGetAll(table string) func(c echo.Context) error {
 		return c.JSON(http.StatusOK, filters)
 	}
 }
+func filterGetAllArr(table string) ([]Filter, error) {
+	sql := fmt.Sprintf("SELECT * FROM %v", table)
+	rows, err := db.Query(sql)
+	if err != nil {
+		return []Filter{}, err
+	}
+	filters := []Filter{}
+	for rows.Next() {
+		filter := Filter{}
+		err := rows.Scan(&filter.ID, &filter.Name)
+		if err != nil {
+			return []Filter{}, err
+		}
+		filters = append(filters, filter)
+	}
+	return filters, nil
+}

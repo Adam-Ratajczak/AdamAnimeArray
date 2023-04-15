@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { Menubar, AnimePoster, TabUnit } from '../../widgets'
-import { GetAnime } from "../../db_module"
+import { GetAnimeRange, GetDbInfo } from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
 
@@ -14,7 +14,7 @@ function Home() {
 
   const siteType = window.location.href.split("/").at(-1);
   const fillList = useCallback(() => {
-    GetAnime()
+    GetAnimeRange(AnimeCountBegin, AnimeCountBegin + num_sample_animes)
       .then((response) => response.json())
       .then((result) => {
         SetAnimeContainer([])
@@ -23,10 +23,7 @@ function Home() {
         let anime_id_arr = [];
         let anime_header = ""
 
-        if (siteType == "Random") {
-          let num = Math.floor((Math.random() * (result.length + 1)) % result.length);
-          redirect("Anime/" + num);
-        } else if (siteType == "Popular") {
+        if (siteType == "Popular") {
           anime_header = "Top Ranked Animes";
 
           for (let i = AnimeCountBegin; i < AnimeCountEnd; i++) {
@@ -47,18 +44,18 @@ function Home() {
               return 1;
             }
 
-            if(a.AiredBegin.Time < "1900-01-01T00:00:00Z"){
+            if (a.AiredBegin.Time < "1900-01-01T00:00:00Z") {
               return -1
             }
 
             const ABegin = new Date(a.AiredBegin.Time)
             const BBegin = new Date(b.AiredBegin.Time)
 
-            if(ABegin < BBegin){
+            if (ABegin < BBegin) {
               return 1
-            }else if(ABegin == BBegin){
+            } else if (ABegin == BBegin) {
               return 0
-            }else{
+            } else {
               return -1
             }
           });
@@ -71,22 +68,31 @@ function Home() {
         let container = [];
 
         for (let id of anime_id_arr) {
-          const AnimeID = id.toString();
-          container.push((<AnimePoster AnimeID={AnimeID} key={AnimeID}/>))
-        }
-
-        const foo = (event, index) => {
-          SetAnimeCountBegin((index - 1) * num_sample_animes);
-          SetAnimeContainer([])
+          const elem = result.find((val) => val.AnimeID == id)
+          container.push((<AnimePoster AnimeID={id} Title={elem.AnimeTitle} Poster={elem.PosterURL} Premiered={elem.Premiered} EpNum={elem.EpisodeNum} Type={elem.Type.Name} />))
         }
 
         SetAnimeHeader(anime_header)
         SetAnimeContainer(container)
-        SetAnimeTabUnit((<TabUnit TabCount={Math.ceil(result.length / num_sample_animes)} TabCollapse="10" onChange={foo} />))
       })
+
+  })
+  useEffect(() => {
+    if (AnimeTabUnit == 0) {
+      GetDbInfo()
+        .then((response) => response.json())
+        .then((result) => {
+          const foo = (event, index) => {
+            SetAnimeCountBegin((index - 1) * num_sample_animes);
+            SetAnimeContainer([])
+          }
+
+          SetAnimeTabUnit((<TabUnit TabCount={Math.ceil(result.AnimeCount / num_sample_animes)} TabCollapse="10" onChange={foo} />))
+        })
+    }
   })
 
-  if(AnimeContainer.length == 0){
+  if (AnimeContainer.length == 0) {
     fillList()
   }
   return (

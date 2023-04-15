@@ -27,9 +27,11 @@ func main() {
 
 	e := echo.New()
 	e.Use(middleware.Recover(), middleware.Logger(), middleware.CORS())
+	e.GET("info", DatabaseInfo)
 	animes := e.Group("/animes")
 	{
 		animes.GET("/", all)
+		animes.POST("/", animeRange)
 
 		animes.GET("/filter", filter)
 		animes.POST("/filter", filter)

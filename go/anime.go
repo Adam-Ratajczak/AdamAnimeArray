@@ -9,18 +9,69 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
+func GetAnime(id int) (Anime, error) {
+	anime := Anime{}
+	row := db.QueryRow("SELECT AnimeID, AnimeTitle, EnglishTitle, AnimeDesc, TypeID, (SELECT TypeName FROM Types t WHERE t.TypeID = a.TypeID), AiredBegin, AiredEnd, Premiered, Duration, PosterUrl, (SELECT COUNT(EpisodeID) FROM Episodes e WHERE e.AnimeID = a.AnimeID) FROM Animes a WHERE AnimeID = ?", id)
+	err := row.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.Type.ID, &anime.Type.Name, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL, &anime.EpisodeNum)
+	if err != nil {
+		return Anime{}, err
+	}
+
+	return anime, nil
+}
+
+func DatabaseInfo(c echo.Context) error {
+	info := DBInfo{}
+	row := db.QueryRow("SELECT COUNT(AnimeID) FROM Animes;")
+	err := row.Scan(&info.AnimeCount)
+	if err != nil {
+		return err
+	}
+
+	info.Types, err = filterGetAllArr("Types")
+	if err != nil {
+		return err
+	}
+
+	info.Genres, err = filterGetAllArr("Genres")
+	if err != nil {
+		return err
+	}
+
+	info.Themes, err = filterGetAllArr("Themes")
+	if err != nil {
+		return err
+	}
+
+	info.Studios, err = filterGetAllArr("Studios")
+	if err != nil {
+		return err
+	}
+
+	info.Producers, err = filterGetAllArr("Producers")
+	if err != nil {
+		return err
+	}
+
+	info.Demographics, err = filterGetAllArr("Demographics")
+	if err != nil {
+		return err
+	}
+
+	return c.JSON(http.StatusOK, info)
+}
+
 func anime(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		return c.NoContent(http.StatusBadRequest)
 	}
-	anime := Anime{}
-	row := db.QueryRow("SELECT * FROM Animes WHERE AnimeID = ?", id)
-	err = row.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.TypeID, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL)
+	anime, err := GetAnime(id)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return c.NoContent(http.StatusBadRequest)
 		}
+
 		return err
 	}
 	return c.JSON(http.StatusOK, anime)

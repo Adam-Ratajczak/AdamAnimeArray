@@ -74,6 +74,19 @@ export function GetAnime(id = -1){
     }
 }
 
+export function GetDbInfo(){
+    return FetchToApiGet(`/info`);
+}
+
+export function GetAnimeRange(begin, end){
+    let req = {
+        AnimeBegin: begin,
+        AnimeEnd: end
+    };
+    
+    return FetchToApiPost(`/animes/`, req);
+}
+
 export function GetRelations(id = -1){
     if(id < 0){
         return FetchToApiGet(`/animes/relations`);
