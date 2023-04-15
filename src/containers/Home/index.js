@@ -9,6 +9,7 @@ function Home() {
   const [AnimeHeader, SetAnimeHeader] = useState("")
   const [AnimeContainer, SetAnimeContainer] = useState([])
   const [AnimeTabUnit, SetAnimeTabUnit] = useState(0)
+  const [FirstTime, SetFirstTime] = useState(true)
 
   const siteType = window.location.href.split("/").at(-1);
   const fillList = useCallback((begin) => {
@@ -31,29 +32,21 @@ function Home() {
       .then((response) => response.json())
       .then((result) => {
         let container = []
-        for (let elem of result) {
+        const foo = (event, index) => {
+          fillList((index - 1) * num_sample_animes)
+        }
+        SetAnimeTabUnit((<TabUnit Index="1" TabCount={Math.ceil(result.AnimeCount / num_sample_animes)} TabCollapse="10" onChange={foo} />))
+        for (let elem of result.Animes) {
           container.push((<AnimePoster AnimeID={elem.AnimeID} Title={elem.AnimeTitle} Poster={elem.PosterURL} Premiered={elem.Premiered} EpNum={elem.EpisodeNum} Type={elem.Type.Name} />))
         }
         SetAnimeContainer(container)
       })
-
   })
 
   useEffect(() => {
-    if (AnimeTabUnit == 0) {
-      GetDbInfo()
-        .then((response) => response.json())
-        .then((result) => {
-          const foo = (event, index) => {
-            fillList((index - 1) * num_sample_animes)
-          }
-
-          if (AnimeContainer.length == 0) {
-            fillList(0)
-          }
-
-          SetAnimeTabUnit((<TabUnit Index="1" TabCount={Math.ceil(result.AnimeCount / num_sample_animes)} TabCollapse="10" onChange={foo} />))
-        })
+    if (FirstTime) {
+      SetFirstTime(false)
+      fillList(0)
     }
   })
 

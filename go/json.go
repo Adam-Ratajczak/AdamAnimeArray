@@ -24,6 +24,11 @@ type Anime struct {
 	Demographics []Filter
 }
 
+type Range struct {
+	Animes     []Anime
+	AnimeCount int
+}
+
 type AnimeRequest struct {
 	AnimeBegin int
 	AnimeEnd   int

@@ -40,10 +40,12 @@ func animeRange(c echo.Context) error {
 	if rq.Mode == 0 {
 		order_by = "ORDER BY AnimeID ASC"
 	} else if rq.Mode == 1 {
-		order_by = "WHERE AiredBegin IS NOT NULL ORDER BY AiredBegin DESC"
+		order_by = "WHERE AiredBegin != '0000-00-00' ORDER BY AiredBegin DESC"
 	} else if rq.Mode == 2 {
 		order_by = "ORDER BY RAND()"
 	}
+
+	AniRange := Range{}
 
 	rows, err := db.Query("SELECT AnimeID FROM Animes "+order_by+" LIMIT ?, ?;", rq.AnimeBegin, rq.AnimeEnd)
 	if err != nil {
@@ -60,7 +62,15 @@ func animeRange(c echo.Context) error {
 
 		animes = append(animes, anime)
 	}
-	return c.JSON(http.StatusOK, animes)
+	AniRange.Animes = animes
+
+	row := db.QueryRow("SELECT COUNT(AnimeID) FROM Animes " + order_by)
+	err = row.Scan(&AniRange.AnimeCount)
+	if err != nil {
+		return err
+	}
+
+	return c.JSON(http.StatusOK, AniRange)
 }
 
 func filter(c echo.Context) error {
