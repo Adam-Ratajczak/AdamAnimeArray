@@ -217,6 +217,7 @@ function AnimeInfo() {
           .then((response) => response.json())
           .then((AnimeList) => {
             let res = [];
+            let IDs = []
             for (
               let i = 0;
               i <
@@ -231,7 +232,13 @@ function AnimeInfo() {
               );
               let ID = AnimeList[AnimeNum].AnimeID;
 
+              if(ID == AnimeID || IDs.indexOf(ID) != -1){
+                i--
+                continue
+              }
+
               res.push(<AnimePoster AnimeID={ID} key={ID} />);
+              IDs.push(ID)
             }
             SetAnimes(res);
           });
