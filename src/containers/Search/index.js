@@ -5,19 +5,17 @@ import './style.scss'
 
 const animeLimit = 50
 
-class TypeButton extends Component {
-  render() {
-    let cb_id = this.props.TypeName + "_" + this.props.TypeID.toString();
+function TypeButton(props) {
+  let cb_id = props.TypeName + "_" + props.TypeID.toString();
 
-    return (
-      <div class="CoolButtonDiv">
-        <input type="checkbox" class="CoolButtonCb" id={cb_id} name={cb_id} onChange={this.props.onChange} value={this.props.TypeID} />
-        <label class="CoolButton unselectable" for={cb_id}>
-          {this.props.AnimeName}
-        </label>
-      </div>
-    )
-  }
+  return (
+    <div class="CoolButtonDiv">
+      <input type="checkbox" class="CoolButtonCb" id={cb_id} name={cb_id} onChange={props.onChange} value={props.TypeID} />
+      <label class="CoolButton unselectable" for={cb_id}>
+        {props.AnimeName}
+      </label>
+    </div>
+  )
 }
 
 class Search extends Component {
