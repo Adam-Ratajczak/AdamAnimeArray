@@ -24,7 +24,7 @@ function TabUnit(props) {
                 }
             }
         } else {
-            if (index < Math.ceil(props.TabCollapse / 2) + 2) {
+            if (index < Math.floor(props.TabCollapse / 2) + 2) {
                 for (let i = 2; i < props.TabCollapse; i++) {
                     if (i == index) {
                         result.push((<div class="TabCell SelectedTab"><h3>{i}</h3></div>));
@@ -37,7 +37,7 @@ function TabUnit(props) {
                 result.push((<div class="TabCell"><h3>...</h3></div>));
 
                 if (index > props.TabCount - Math.floor(props.TabCollapse / 2)) {
-                    for (let i = index - Math.floor(props.TabCollapse / 2); i < props.TabCount; i++) {
+                    for (let i = props.TabCount - props.TabCollapse + 2; i < props.TabCount; i++) {
                         if (i == index) {
                             result.push((<div class="TabCell SelectedTab"><h3>{i}</h3></div>));
                         } else {
@@ -45,7 +45,7 @@ function TabUnit(props) {
                         }
                     }
                 } else {
-                    for (let i = index - Math.floor(props.TabCollapse / 2); i < index + Math.ceil(props.TabCollapse / 2); i++) {
+                    for (let i = index - Math.floor(props.TabCollapse / 2) + 3; i < index + Math.floor(props.TabCollapse / 2); i++) {
                         if (i == index) {
                             result.push((<div class="TabCell SelectedTab"><h3>{i}</h3></div>));
                         } else {

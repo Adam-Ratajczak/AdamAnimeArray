@@ -15,13 +15,13 @@ function Home() {
     let mode = 0
     let anime_header = ""
 
-    if(siteType == "Popular"){
+    if (siteType == "Popular") {
       mode = 0
       anime_header = "Top Ranked Animes";
-    }else if(siteType == "Newest"){
+    } else if (siteType == "Newest") {
       mode = 1
       anime_header = "Recently Added Animes";
-    }else if(siteType == "Recomended"){
+    } else if (siteType == "Recomended") {
       mode = 2
       anime_header = "Recomended Animes";
     }
@@ -34,7 +34,6 @@ function Home() {
         for (let elem of result) {
           container.push((<AnimePoster AnimeID={elem.AnimeID} Title={elem.AnimeTitle} Poster={elem.PosterURL} Premiered={elem.Premiered} EpNum={elem.EpisodeNum} Type={elem.Type.Name} />))
         }
-
         SetAnimeContainer(container)
       })
 
@@ -46,11 +45,10 @@ function Home() {
         .then((response) => response.json())
         .then((result) => {
           const foo = (event, index) => {
-            SetAnimeContainer([])
             fillList((index - 1) * num_sample_animes)
           }
 
-          if(AnimeContainer.length == 0){
+          if (AnimeContainer.length == 0) {
             fillList(0)
           }
 
