@@ -1,4 +1,4 @@
-import react, { Component, useState } from 'react';
+import { useState } from 'react';
 import './style.scss'
 
 function TabUnit(props) {

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { GetAnime, GetEpisodes, GetAnimeType } from "../../db_module";
+import React from "react";
 import "./style.scss";
 
 function AnimePoster(props) {

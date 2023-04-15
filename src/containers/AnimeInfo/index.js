@@ -4,8 +4,7 @@ import {
   GetAnime,
   GetFilterEntry,
   FilterAnimes,
-  GetAnimeRelations,
-  GetRelations,
+  GetAnimeRelations
 } from "../../db_module";
 import "./style.scss";
 

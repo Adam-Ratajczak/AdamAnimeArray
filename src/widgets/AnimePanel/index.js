@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { GetAnime, GetAnimeDemographics, GetAnimeGenres, GetAnimeProducers, GetAnimeThemes, GetDemographics, GetEpisodes, GetAnimeType, GetAnimeStudios } from '../../db_module'
+import { GetAnime } from '../../db_module'
 import './style.scss';
 
 function AnimePanel(props){

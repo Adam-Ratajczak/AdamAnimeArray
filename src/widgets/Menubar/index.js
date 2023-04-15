@@ -1,7 +1,7 @@
-import React, { Component, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import LoginMan from '../../login_manager.js';
 import redirect from '../../redirect.js'
-import { GetAnime, GetDbInfo } from '../../db_module.js';
+import { GetDbInfo } from '../../db_module.js';
 import './style.scss';
 
 function LoginBtn() {

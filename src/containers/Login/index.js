@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import LoginMan from '../../login_manager';
 import redirect from '../../redirect';
 import { Menubar } from '../../widgets'

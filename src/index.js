@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { Home, NotFound, AnimeInfo, AnimePlayer, Search, Login, Signup, NoPlayer } from './containers'
