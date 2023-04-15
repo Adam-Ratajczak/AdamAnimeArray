@@ -30,7 +30,7 @@ func filterGetByID(table string) func(c echo.Context) error {
 	}
 }
 func filterGetAll(table string) func(c echo.Context) error {
-	sql := fmt.Sprintf("SELECT * FROM %v", table)
+	sql := fmt.Sprintf("SELECT * FROM %v ORDER BY %vName ASC", table, table[:len(table)-1])
 	return func(c echo.Context) error {
 		rows, err := db.Query(sql)
 		if err != nil {
@@ -49,7 +49,7 @@ func filterGetAll(table string) func(c echo.Context) error {
 	}
 }
 func filterGetAllArr(table string) ([]Filter, error) {
-	sql := fmt.Sprintf("SELECT * FROM %v", table)
+	sql := fmt.Sprintf("SELECT * FROM %v ORDER BY %vName ASC", table, table[:len(table)-1])
 	rows, err := db.Query(sql)
 	if err != nil {
 		return []Filter{}, err
