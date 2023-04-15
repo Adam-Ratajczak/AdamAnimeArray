@@ -23,7 +23,7 @@ function UserInfo() {
             alt="User profile"
           ></img>
         ) : (
-          <UserDefaultSVG/>
+          <UserDefaultSVG />
         )}
 
         {userInfo.UserName}
@@ -98,7 +98,7 @@ function Menubar() {
   });
 
   return (
-    <div id="content">
+    <div id="MenuBar">
       <LoginBtn />
       <div id="HeaderContent">
         <h1 id="aaaHeader">AdamAnimeArray</h1>

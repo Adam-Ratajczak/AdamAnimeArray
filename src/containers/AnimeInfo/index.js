@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Menubar, AnimePoster, EpisodeBtn } from "./../../widgets";
-import LoginMan from "../../login_manager.js";
+import { AnimePoster, EpisodeBtn } from "./../../widgets";
 import {
   GetAnime,
   GetFilterEntry,
   FilterAnimes,
-  GetAnimeRelations
+  GetAnimeRelations,
 } from "../../db_module";
 import "./style.scss";
 import plus from './plus.png'
@@ -63,8 +62,8 @@ function AnimeInfo() {
         SetAiredEnd(result.AiredEnd);
         SetPosterURL(result.PosterURL);
         SetPremiered(result.Premiered);
-        SetEpisodeNum(result.EpisodeNum)
-        SetAnimeType(result.Type.Name)
+        SetEpisodeNum(result.EpisodeNum);
+        SetAnimeType(result.Type.Name);
 
         function PrepareGenreString(arr) {
           let res = "";
@@ -73,15 +72,15 @@ function AnimeInfo() {
             res += elem.Name + ", ";
           }
 
-          return res
+          return res;
         }
 
-        SetAnimeGenres(PrepareGenreString(result.Genres))
-        SetAnimeThemes(PrepareGenreString(result.Themes))
-        SetAnimeStudios(PrepareGenreString(result.Studios))
-        SetAnimeProducers(PrepareGenreString(result.Producers))
-        SetAnimeDemographics(PrepareGenreString(result.Demographics))
-        SetAnimeGenres(PrepareGenreString(result.Genres))
+        SetAnimeGenres(PrepareGenreString(result.Genres));
+        SetAnimeThemes(PrepareGenreString(result.Themes));
+        SetAnimeStudios(PrepareGenreString(result.Studios));
+        SetAnimeProducers(PrepareGenreString(result.Producers));
+        SetAnimeDemographics(PrepareGenreString(result.Demographics));
+        SetAnimeGenres(PrepareGenreString(result.Genres));
       });
   }, []);
 
@@ -116,7 +115,7 @@ function AnimeInfo() {
         let relations = [];
 
         arr.forEach((val, key) => {
-          const elem = result.find((v) => v.Relation.ID == key)
+          const elem = result.find((v) => v.Relation.ID == key);
 
           relations.push(
             <div class="RelationType">
@@ -134,11 +133,20 @@ function AnimeInfo() {
     GetFilterEntry(AnimeID)
       .then((response) => response.json())
       .then((result) => {
-        FilterAnimes(0, 24, "", result.Types, result.Genres, result.Themes, [], [])
+        FilterAnimes(
+          0,
+          24,
+          "",
+          result.Types,
+          result.Genres,
+          result.Themes,
+          [],
+          []
+        )
           .then((response) => response.json())
           .then((AnimeList) => {
             let res = [];
-            let IDs = []
+            let IDs = [];
             for (
               let i = 0;
               i <
@@ -151,16 +159,25 @@ function AnimeInfo() {
               let AnimeNum = Math.floor(
                 (Math.random() * AnimeList.length) % AnimeList.length
               );
-              const elem = AnimeList[AnimeNum]
+              const elem = AnimeList[AnimeNum];
               let ID = elem.AnimeID;
 
               if (ID == AnimeID || IDs.indexOf(ID) != -1) {
-                i--
-                continue
+                i--;
+                continue;
               }
 
-              res.push(<AnimePoster AnimeID={ID} Title={elem.AnimeTitle} Poster={elem.PosterURL} Premiered={elem.Premiered} EpNum={elem.EpisodeNum} Type={elem.Type.Name} />);
-              IDs.push(ID)
+              res.push(
+                <AnimePoster
+                  AnimeID={ID}
+                  Title={elem.AnimeTitle}
+                  Poster={elem.PosterURL}
+                  Premiered={elem.Premiered}
+                  EpNum={elem.EpisodeNum}
+                  Type={elem.Type.Name}
+                />
+              );
+              IDs.push(ID);
             }
             SetAnimes(res);
           });
@@ -250,9 +267,9 @@ function AnimeInfo() {
               <td>
                 {AnimeGenres !== ""
                   ? AnimeGenres.toString().substring(
-                    0,
-                    AnimeGenres.toString().length - 2
-                  )
+                      0,
+                      AnimeGenres.toString().length - 2
+                    )
                   : "None"}
               </td>
             </tr>
@@ -261,9 +278,9 @@ function AnimeInfo() {
               <td>
                 {AnimeThemes !== ""
                   ? AnimeThemes.toString().substring(
-                    0,
-                    AnimeThemes.toString().length - 2
-                  )
+                      0,
+                      AnimeThemes.toString().length - 2
+                    )
                   : "None"}
               </td>
             </tr>
@@ -272,9 +289,9 @@ function AnimeInfo() {
               <td>
                 {AnimeStudios !== ""
                   ? AnimeStudios.toString().substring(
-                    0,
-                    AnimeProducers.toString().length - 2
-                  )
+                      0,
+                      AnimeProducers.toString().length - 2
+                    )
                   : "None"}
               </td>
             </tr>
@@ -283,9 +300,9 @@ function AnimeInfo() {
               <td>
                 {AnimeProducers != ""
                   ? AnimeProducers.toString().substring(
-                    0,
-                    AnimeProducers.toString().length - 2
-                  )
+                      0,
+                      AnimeProducers.toString().length - 2
+                    )
                   : "None"}
               </td>
             </tr>
@@ -294,9 +311,9 @@ function AnimeInfo() {
               <td>
                 {AnimeDemographics != ""
                   ? AnimeDemographics.toString().substring(
-                    0,
-                    AnimeDemographics.toString().length - 2
-                  )
+                      0,
+                      AnimeDemographics.toString().length - 2
+                    )
                   : "None"}
               </td>
             </tr>
@@ -350,7 +367,10 @@ function AnimeInfo() {
               />
             </>
           ) : (
-            <div className="Loading" style={{ width: "100%", height: "100%" }} />
+            <div
+              className="Loading"
+              style={{ width: "100%", height: "100%" }}
+            />
           )}
         </div>
       </div>
@@ -374,7 +394,7 @@ function AnimeInfo() {
       {renderAnimeInfo()}
       <h1 id="SimilliarAnimeHeader">You may also like: </h1>
       <div id="SimiliarAnimes">{Animes}</div>
-    </div>
+    </>
   );
 }
 
