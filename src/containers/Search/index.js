@@ -237,6 +237,24 @@ class Search extends Component {
       SearchFoo(this.state.Animes.length, animeLimit);
     }
   }
+
+  let headers = document.querySelectorAll(".GenreHeader")
+  let arrows = document.querySelectorAll(".arrow")
+  let btns = document.querySelectorAll(".AnimeTypeBtnDiv")
+
+  for(let i = 0; i < headers.length; i++){
+    headers[i].onclick = () =>{
+      if(arrows[i].classList.contains("right")){
+        arrows[i].classList.remove("right")
+        arrows[i].classList.add("down")
+        btns[i].style.display = "block"
+      }else if(arrows[i].classList.contains("down")){
+        arrows[i].classList.remove("down")
+        arrows[i].classList.add("right")
+        btns[i].style.display = "none"
+      }
+    }
+  }
 }
 
 render(){
@@ -256,27 +274,27 @@ render(){
           </div>
         </div>
         <div id="AnimeTypeDiv">
-          <h3 class="GenreHeader">Genres:</h3>
+          <h3 class="GenreHeader">Genres<i class="arrow right"></i></h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Genres}
           </div>
-          <h3 class="GenreHeader">Themes:</h3>
+          <h3 class="GenreHeader">Themes<i class="arrow right"></i></h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Themes}
           </div>
-          <h3 class="GenreHeader">Demographics:</h3>
+          <h3 class="GenreHeader">Demographics<i class="arrow right"></i></h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Demographics}
           </div>
-          <h3 class="GenreHeader">Types:</h3>
+          <h3 class="GenreHeader">Types<i class="arrow right"></i></h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Types}
           </div>
-          <h3 class="GenreHeader">Studios:</h3>
+          <h3 class="GenreHeader">Studios<i class="arrow right"></i></h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Studios}
           </div>
-          <h3 class="GenreHeader">Producers:</h3>
+          <h3 class="GenreHeader">Producers<i class="arrow right"></i></h3>
           <div class="AnimeTypeBtnDiv">
             {this.state.Producers}
           </div>
@@ -285,6 +303,7 @@ render(){
     </div>
   )
 }
+
 }
 
 export default Search
