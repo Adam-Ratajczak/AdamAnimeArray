@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { AnimePanel, Menubar } from '../../widgets'
-import { FilterAnimes, GetDemographics, GetGenre, GetProducer, GetTheme, GetType } from '../../db_module';
+import { FilterAnimes, GetDbInfo } from '../../db_module';
 import './style.scss'
 
 const animeLimit = 50
@@ -152,65 +152,19 @@ class Search extends Component {
   }
 
   componentDidMount() {
-    GetGenre()
-      .then((response) => response.json())
-      .then((result) => {
-        const res = this.GetButtons("genre", result);
-
-        let newState = this.state;
-        newState.Genres = res;
-        this.setState(newState);
-      });
-
-    GetTheme()
-      .then((response) => response.json())
-      .then((result) => {
-        const res = this.GetButtons("theme", result);
-
-        let newState = this.state;
-        newState.Themes = res;
-        this.setState(newState);
-      });
-
-    GetProducer()
-      .then((response) => response.json())
-      .then((result) => {
-        const res = this.GetButtons("studio", result);
-
-        let newState = this.state;
-        newState.Studios = res;
-        this.setState(newState);
-      });
-
-    GetProducer()
-      .then((response) => response.json())
-      .then((result) => {
-        const res = this.GetButtons("producer", result);
-
-        let newState = this.state;
-        newState.Producers = res;
-        this.setState(newState);
-      });
-
-    GetDemographics()
-      .then((response) => response.json())
-      .then((result) => {
-        const res = this.GetButtons("demographics", result);
-
-        let newState = this.state;
-        newState.Demographics = res;
-        this.setState(newState);
-      });
-
-    GetType()
-      .then((response) => response.json())
-      .then((result) => {
-        const res = this.GetButtons("type", result);
-
-        let newState = this.state;
-        newState.Types = res;
-        this.setState(newState);
-      });
+    
+    GetDbInfo()
+    .then((response) => response.json())
+    .then((result) => {
+      let newState = this.state;
+      newState.Genres = this.GetButtons("genre", result.Genres);
+      newState.Themes = this.GetButtons("theme", result.Themes);
+      newState.Studios = this.GetButtons("studio", result.Studios);
+      newState.Producers = this.GetButtons("oriducer", result.Producers);
+      newState.Demographics = this.GetButtons("demographics", result.Demographics);
+      newState.Types = this.GetButtons("type", result.Types);
+      this.setState(newState);
+    })
 
     let searchPhraze = window.location.href.split("/").at(-1).split("%20").join(" ");
 

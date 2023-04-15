@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { Menubar, AnimePoster, TabUnit } from '../../widgets'
 import { GetAnimeRange, GetDbInfo } from "../../db_module"
-import redirect from '../../redirect'
 import './style.scss';
 
 const num_sample_animes = Math.floor(window.screen.width / 270) * 3;
