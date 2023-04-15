@@ -23,7 +23,7 @@ function UserInfo() {
             alt="User profile"
           ></img>
         ) : (
-          <UserDefaultSVG/>
+          <UserDefaultSVG />
         )}
 
         {userInfo.UserName}
