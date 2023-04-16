@@ -15,6 +15,7 @@ function UserProfile() {
           const watchlist = await LoginMan.getWatchlist()
 
           let res = []
+          let ids = []
 
           for (const elem of watchlist) {
             res.push((
@@ -27,7 +28,7 @@ function UserProfile() {
                   EpNum={elem.EpisodeNum}
                   Type={elem.Type.Name}
                 />
-                <img width="30" height="30" src={minus} class="RemoveAnimeImg"/>
+                <img width="30" height="30" src={minus} alt={elem.AnimeID} class="RemoveAnimeImg" />
               </div>
             ))
           }
@@ -35,6 +36,14 @@ function UserProfile() {
         }
       } else {
         redirect("/login")
+      }
+      let btns = document.querySelectorAll(".RemoveAnimeImg")
+
+      for (const img of btns) {
+        img.onclick = () => {
+          LoginMan.removeFromWatchlist(img.alt)
+          SetWatchlist([])
+        }
       }
     })()
   })
