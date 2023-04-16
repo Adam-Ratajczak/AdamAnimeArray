@@ -169,14 +169,16 @@ function AnimeInfo() {
               }
 
               res.push(
-                <AnimePoster
-                  AnimeID={ID}
-                  Title={elem.AnimeTitle}
-                  Poster={elem.PosterURL}
-                  Premiered={elem.Premiered}
-                  EpNum={elem.EpisodeNum}
-                  Type={elem.Type.Name}
-                />
+                <div class="PosterOutline">
+                  <AnimePoster
+                    AnimeID={ID}
+                    Title={elem.AnimeTitle}
+                    Poster={elem.PosterURL}
+                    Premiered={elem.Premiered}
+                    EpNum={elem.EpisodeNum}
+                    Type={elem.Type.Name}
+                  />
+                </div>
               );
               IDs.push(ID);
             }
@@ -225,101 +227,105 @@ function AnimeInfo() {
 
   function renderInfoTable() {
     return (
-      <div>
-        <h3 class="InfoHeader">General information:</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td class="AnimePropertyName">Type: </td>
-              <td>{AnimeType ? AnimeType.toString() : "Unknown"}</td>
-            </tr>
-            <tr>
-              <td class="AnimePropertyName">Episodes: </td>
-              <td>{EpisodeNum ? EpisodeNum.toString() : "Unknown"}</td>
-            </tr>
-            <tr>
-              <td class="AnimePropertyName">Premiered: </td>
-              <td>{Premiered ? Premiered.toString() : "Unknown"}</td>
-            </tr>
-            <tr>
-              <td class="AnimePropertyName">Aired: </td>
-              <td>
-                {AiredBegin.Time != "0001-01-01T00:00:00Z"
-                  ? ABegin.toLocaleDateString("en-EN", options)
-                  : "Unknown"}
-              </td>
-            </tr>
-            <tr>
-              <td class="AnimePropertyName">Finished: </td>
-              <td>
-                {AiredEnd.Time != "0001-01-01T00:00:00Z"
-                  ? AEnd.toLocaleDateString("en-EN", options)
-                  : "Unknown"}
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div id="AnimeProperties">
+        <div>
+          <h3 class="InfoHeader">General information:</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td class="AnimePropertyName">Type: </td>
+                <td>{AnimeType ? AnimeType.toString() : "Unknown"}</td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Episodes: </td>
+                <td>{EpisodeNum ? EpisodeNum.toString() : "Unknown"}</td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Premiered: </td>
+                <td>{Premiered ? Premiered.toString() : "Unknown"}</td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Aired: </td>
+                <td>
+                  {AiredBegin.Time != "0001-01-01T00:00:00Z"
+                    ? ABegin.toLocaleDateString("en-EN", options)
+                    : "Unknown"}
+                </td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Finished: </td>
+                <td>
+                  {AiredEnd.Time != "0001-01-01T00:00:00Z"
+                    ? AEnd.toLocaleDateString("en-EN", options)
+                    : "Unknown"}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <h3 class="InfoHeader">Anime type:</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td class="AnimePropertyName">Genres: </td>
-              <td>
-                {AnimeGenres !== ""
-                  ? AnimeGenres.toString().substring(
-                    0,
-                    AnimeGenres.toString().length - 2
-                  )
-                  : "None"}
-              </td>
-            </tr>
-            <tr>
-              <td class="AnimePropertyName">Themes: </td>
-              <td>
-                {AnimeThemes !== ""
-                  ? AnimeThemes.toString().substring(
-                    0,
-                    AnimeThemes.toString().length - 2
-                  )
-                  : "None"}
-              </td>
-            </tr>
-            <tr>
-              <td class="AnimePropertyName">Studios: </td>
-              <td>
-                {AnimeStudios !== ""
-                  ? AnimeStudios.toString().substring(
-                    0,
-                    AnimeProducers.toString().length - 2
-                  )
-                  : "None"}
-              </td>
-            </tr>
-            <tr>
-              <td class="AnimePropertyName">Producers: </td>
-              <td>
-                {AnimeProducers != ""
-                  ? AnimeProducers.toString().substring(
-                    0,
-                    AnimeProducers.toString().length - 2
-                  )
-                  : "None"}
-              </td>
-            </tr>
-            <tr>
-              <td class="AnimePropertyName">Demographics: </td>
-              <td>
-                {AnimeDemographics != ""
-                  ? AnimeDemographics.toString().substring(
-                    0,
-                    AnimeDemographics.toString().length - 2
-                  )
-                  : "None"}
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div>
+          <h3 class="InfoHeader">Anime type:</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td class="AnimePropertyName">Genres: </td>
+                <td>
+                  {AnimeGenres !== ""
+                    ? AnimeGenres.toString().substring(
+                      0,
+                      AnimeGenres.toString().length - 2
+                    )
+                    : "None"}
+                </td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Themes: </td>
+                <td>
+                  {AnimeThemes !== ""
+                    ? AnimeThemes.toString().substring(
+                      0,
+                      AnimeThemes.toString().length - 2
+                    )
+                    : "None"}
+                </td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Studios: </td>
+                <td>
+                  {AnimeStudios !== ""
+                    ? AnimeStudios.toString().substring(
+                      0,
+                      AnimeProducers.toString().length - 2
+                    )
+                    : "None"}
+                </td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Producers: </td>
+                <td>
+                  {AnimeProducers != ""
+                    ? AnimeProducers.toString().substring(
+                      0,
+                      AnimeProducers.toString().length - 2
+                    )
+                    : "None"}
+                </td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Demographics: </td>
+                <td>
+                  {AnimeDemographics != ""
+                    ? AnimeDemographics.toString().substring(
+                      0,
+                      AnimeDemographics.toString().length - 2
+                    )
+                    : "None"}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
@@ -380,20 +386,24 @@ function AnimeInfo() {
 
   return (
     <>
-      <div id="AnimeInfoHeaderDiv">
-        <h1>{AnimeTitle}<br /><i>{EnglishTitle}</i></h1>
-        {LoginMan.LoggedIn() ? (!SavedToWatchlist ? (<div class="tooltip">
-          <span class="tooltiptext">Add to watchlist</span>
-          <img id="WatchlistBtn" class="AddTo" src={plus} width="32" height="32" />
-        </div>) : (<div class="tooltip">
-          <span class="tooltiptext">Remove from watchlist</span>
-          <img id="WatchlistBtn" class="RemFrom" src={minus} width="32" height="32" />
-        </div>)) :
-          (<></>)}
+      <div id="content">
+        <div id="AnimeInfoHeaderDiv">
+          <h1>{AnimeTitle}<br /><i>{EnglishTitle}</i></h1>
+          {LoginMan.LoggedIn() ? (!SavedToWatchlist ? (<div class="tooltip">
+            <span class="tooltiptext">Add to watchlist</span>
+            <img id="WatchlistBtn" class="AddTo" src={plus} width="32" height="32" />
+          </div>) : (<div class="tooltip">
+            <span class="tooltiptext">Remove from watchlist</span>
+            <img id="WatchlistBtn" class="RemFrom" src={minus} width="32" height="32" />
+          </div>)) :
+            (<></>)}
+        </div>
+        {renderAnimeInfo()}
+        <div>
+          <h1 id="SimilliarAnimeHeader">You may also like: </h1>
+          <div id="SimiliarAnimes">{Animes}</div>
+        </div>
       </div>
-      {renderAnimeInfo()}
-      <h1 id="SimilliarAnimeHeader">You may also like: </h1>
-      <div id="SimiliarAnimes">{Animes}</div>
     </>
   );
 }

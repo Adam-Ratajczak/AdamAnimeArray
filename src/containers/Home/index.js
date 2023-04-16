@@ -45,14 +45,16 @@ function Home() {
         );
         for (let elem of result.Animes) {
           container.push(
-            <AnimePoster
-              AnimeID={elem.AnimeID}
-              Title={elem.AnimeTitle}
-              Poster={elem.PosterURL}
-              Premiered={elem.Premiered}
-              EpNum={elem.EpisodeNum}
-              Type={elem.Type.Name}
-            />
+            <div class="PosterOutline">
+              <AnimePoster
+                AnimeID={elem.AnimeID}
+                Title={elem.AnimeTitle}
+                Poster={elem.PosterURL}
+                Premiered={elem.Premiered}
+                EpNum={elem.EpisodeNum}
+                Type={elem.Type.Name}
+              />
+            </div>
           );
         }
         SetAnimeContainer(container);

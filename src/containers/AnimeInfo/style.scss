@@ -1,6 +1,6 @@
 @import 'src/styles/colors';
 
-#AnimeInfoHeaderDiv img{
+#AnimeInfoHeaderDiv img {
     margin-right: 10px;
     margin-top: 10px;
 }
@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     background-color: $background-color-theme;
-    height: 100%;
+    height: fit-content;
     color: $text-color;
 }
 
@@ -17,20 +17,41 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    background-color: $background-tilted-color;
+    background-color: #33333e;
 }
 
-#AnimeInfoContainer>h3 {
+#AnimeProperties {
+    max-height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+#AnimeProperties > div{
+    width: 50%;
+    margin: 10px;
+}
+
+#AnimeInfoContainer h3 {
     margin-left: 20px;
 }
 
-#AnimeInfoContainer>h2 {
+#AnimeInfoContainer h2 {
     margin-left: 10px;
     color: $text-tilted-color;
 }
 
-#AnimeInfoContainer>table {
+#AnimeInfoContainer table {
     margin-left: 30px;
+}
+
+#AnimeInfoContainer td {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+#AnimeInfoContainer th {
+    width: 100px;
 }
 
 #AnimeDescContainer {
@@ -142,7 +163,7 @@
     height: 40px;
 }
 
-#PlayerDiv{
+#PlayerDiv {
     display: flex;
     flex-direction: row;
 }

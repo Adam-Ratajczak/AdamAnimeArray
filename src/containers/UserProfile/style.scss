@@ -1,1 +1,12 @@
 @import 'src/styles/colors';
+
+.PosterOutline{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.RemoveAnimeImg{
+    background-color: $background-color-dark;
+    padding: 5px;
+}
