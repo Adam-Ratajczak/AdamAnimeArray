@@ -22,8 +22,10 @@
 
 #AnimeProperties {
     max-height: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #AnimeProperties > div{
@@ -31,11 +33,11 @@
     margin: 10px;
 }
 
-#AnimeInfoContainer h3 {
+#AnimeInfoContainer > h3 {
     margin-left: 20px;
 }
 
-#AnimeInfoContainer h2 {
+#AnimeInfoContainer > h2 {
     margin-left: 10px;
     color: $text-tilted-color;
 }
@@ -98,7 +100,8 @@
 .AnimePropertyName {
     color: $text-color;
     font-weight: bold;
-    width: 200px;
+    max-width: 200px;
+    min-width: fit-content;
 }
 
 #AnimeRelationContainer {
