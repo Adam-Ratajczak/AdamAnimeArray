@@ -24,8 +24,6 @@ function AnimePanel(props){
 
     if(res.length == 0){
       res = "None";
-    }else if(res.length > 30){
-      res = res.substring(0, 17) + "...";
     }
 
     return res;
