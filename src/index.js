@@ -10,6 +10,7 @@ import {
   Login,
   Signup,
   NoPlayer,
+  UserProfile,
 } from "./containers";
 import Root from "./containers/Root";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/Newest" element={<Home />}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
+          <Route path="/UserProfile" element={<UserProfile />}></Route>
           <Route
             path="*/Recomended"
             element={<Navigate to="/Recomended" />}
