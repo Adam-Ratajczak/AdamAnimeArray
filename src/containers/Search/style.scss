@@ -42,6 +42,8 @@ body {
   display: flex;
   flex-direction: row;
   background-color: $background-color-theme;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 #SearchbarLarge {
@@ -67,6 +69,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 60%;
+  min-height: 100%;
 }
 
 #SearchBarDiv {
@@ -76,6 +79,7 @@ body {
   align-items: center;
   height: 80px;
   background-color: $background-tilted-color;
+  padding: 20px;
 }
 
 #SearchResults {
@@ -91,6 +95,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 40%;
+  min-height: 100%;
   background-color: #33333e;
   padding: 10px;
   color: $text-tilted-color;

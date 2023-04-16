@@ -61,7 +61,23 @@ function Search() {
   }
 
   function clearBtnOnClick() {
+    setGenreFilter(new Set())
+    setThemeFilter(new Set())
+    setStudioFilter(new Set())
+    setProducerFilter(new Set())
+    setDemographicsFilter(new Set())
+    setTypeFilter(new Set())
+
+    let btns = document.querySelectorAll(".CoolButtonCb")
+
+    for (let btn of btns) {
+      btn.checked = false;
+    }
+
     updateSearchPhrase("");
+
+    setAnimes([])
+    fetchMoreResults()
   }
 
   function searchBarOnKeyDown(event) {
@@ -137,19 +153,21 @@ function Search() {
   );
 
   useEffect(() => {
+    const content = document.getElementById("contentSearch")
     function onScroll() {
-      let currentScroll = window.scrollY + window.innerHeight;
+      let currentScroll = content.scrollTop + window.innerHeight
 
       if (!fetching && currentScroll >= Animes.length * 240 - 50) {
         // console.log("SCROLL", currentScroll, documentHeight);
         fetchMoreResults(Animes.length);
-        document.onscroll = null;
+        content.onscroll = null;
       }
     }
+    document.getElementById("AnimeTypeDiv").style.minHeight = (Animes.length * 240 + 40).toString() + "px"
     // console.log("new onscroll ", fetching);
-    document.onscroll = onScroll;
+    content.onscroll = onScroll;
     return () => {
-      document.onscroll = null;
+      content.onscroll = null;
     };
   }, [Animes.length, fetching, fetchMoreResults]);
 
