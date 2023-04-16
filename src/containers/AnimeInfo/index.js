@@ -399,7 +399,7 @@ function AnimeInfo() {
             (<></>)}
         </div>
         {renderAnimeInfo()}
-        <div>
+        <div id="SimiliarAnimeDiv">
           <h1 id="SimilliarAnimeHeader">You may also like: </h1>
           <div id="SimiliarAnimes">{Animes}</div>
         </div>
