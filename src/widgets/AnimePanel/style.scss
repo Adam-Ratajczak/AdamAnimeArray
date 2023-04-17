@@ -3,7 +3,6 @@
 .AnimePanel{
     background-color: $background-color;
     width: 95%;
-    min-width: fit-content;
     height: 200px;
     min-height: fit-content;
     margin: 20px;
@@ -23,7 +22,15 @@
 }
 
 .AnimePanelHeader > h1{
-    margin-left: 10px;
+    max-width: 100%;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    // display: -webkit-box;
+    // -webkit-line-clamp: 1;
+    // -webkit-box-orient: vertical;
 }
 
 .AnimePanelHover{
@@ -67,6 +74,9 @@
 .AnimeTypePanel{
     width: 40%;
     height: 140px;
+}
+
+.AnimeTypePanel:first-child {
     padding-left: 30px;
 }
 
