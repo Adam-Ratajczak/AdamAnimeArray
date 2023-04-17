@@ -7,8 +7,8 @@ import {
   GetAnimeRelations,
 } from "../../db_module";
 import "./style.scss";
-import plus from './plus.png'
-import minus from './minus.png'
+import plus from "./plus.png";
+import minus from "./minus.png";
 import LoginMan from "../../login_manager";
 
 function AnimeInfo() {
@@ -190,29 +190,17 @@ function AnimeInfo() {
   useEffect(() => {
     (async () => {
       if (LoginMan.LoggedIn()) {
-        const watchlist = await LoginMan.getWatchlist()
-        console.log(watchlist)
-        const test = watchlist.find((val) => val.AnimeID == parseInt(AnimeID))
+        const watchlist = await LoginMan.getWatchlist();
+        console.log(watchlist);
+        const test = watchlist.find((val) => val.AnimeID == parseInt(AnimeID));
 
         if (test == undefined) {
-          SetSavedToWatchlist(false)
+          SetSavedToWatchlist(false);
         } else {
-          SetSavedToWatchlist(true)
-        }
-
-        let img = document.getElementById("WatchlistBtn")
-        img.onclick = async () => {
-          if (img.classList.contains("RemFrom")) {
-            LoginMan.removeFromWatchlist(AnimeID)
-          } else if (img.classList.contains("AddTo")) {
-            LoginMan.addToWatchlist(AnimeID)
-          }
-
-          window.location.reload()
+          SetSavedToWatchlist(true);
         }
       }
     })();
-
   }, []);
 
   const options = {
@@ -273,9 +261,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeGenres !== ""
                     ? AnimeGenres.toString().substring(
-                      0,
-                      AnimeGenres.toString().length - 2
-                    )
+                        0,
+                        AnimeGenres.toString().length - 2
+                      )
                     : "None"}
                 </td>
               </tr>
@@ -284,9 +272,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeThemes !== ""
                     ? AnimeThemes.toString().substring(
-                      0,
-                      AnimeThemes.toString().length - 2
-                    )
+                        0,
+                        AnimeThemes.toString().length - 2
+                      )
                     : "None"}
                 </td>
               </tr>
@@ -295,9 +283,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeStudios !== ""
                     ? AnimeStudios.toString().substring(
-                      0,
-                      AnimeProducers.toString().length - 2
-                    )
+                        0,
+                        AnimeProducers.toString().length - 2
+                      )
                     : "None"}
                 </td>
               </tr>
@@ -306,9 +294,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeProducers != ""
                     ? AnimeProducers.toString().substring(
-                      0,
-                      AnimeProducers.toString().length - 2
-                    )
+                        0,
+                        AnimeProducers.toString().length - 2
+                      )
                     : "None"}
                 </td>
               </tr>
@@ -317,9 +305,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeDemographics != ""
                     ? AnimeDemographics.toString().substring(
-                      0,
-                      AnimeDemographics.toString().length - 2
-                    )
+                        0,
+                        AnimeDemographics.toString().length - 2
+                      )
                     : "None"}
                 </td>
               </tr>
@@ -384,19 +372,46 @@ function AnimeInfo() {
     );
   }
 
+  function watchlistBtnOnClick() {
+    if (SavedToWatchlist) {
+      LoginMan.removeFromWatchlist(AnimeID).then((v) => {
+        if (v) {
+          SetSavedToWatchlist(false);
+        }
+      });
+    } else {
+      LoginMan.addToWatchlist(AnimeID).then((v) => {
+        if (v) {
+          SetSavedToWatchlist(true);
+        }
+      });
+    }
+  }
+
   return (
     <>
       <div id="content">
         <div id="AnimeInfoHeaderDiv">
-          <h1>{AnimeTitle}<br /><i>{EnglishTitle}</i></h1>
-          {LoginMan.LoggedIn() ? (!SavedToWatchlist ? (<div class="tooltip">
-            <span class="tooltiptext">Add to watchlist</span>
-            <img id="WatchlistBtn" class="AddTo" src={plus} width="32" height="32" />
-          </div>) : (<div class="tooltip">
-            <span class="tooltiptext">Remove from watchlist</span>
-            <img id="WatchlistBtn" class="RemFrom" src={minus} width="32" height="32" />
-          </div>)) :
-            (<></>)}
+          <h1>
+            {AnimeTitle}
+            <br />
+            <i>{EnglishTitle}</i>
+          </h1>
+          {LoginMan.LoggedIn() ? (
+            <div class="tooltip">
+              <span class="tooltiptext">Add to watchlist</span>
+              <img
+                id="WatchlistBtn"
+                alt="Add to watchlist"
+                src={SavedToWatchlist ? minus : plus}
+                width="32"
+                height="32"
+                onClick={watchlistBtnOnClick}
+              />
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
         {renderAnimeInfo()}
         <div id="SimiliarAnimeDiv">

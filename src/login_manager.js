@@ -39,11 +39,11 @@ class LoginManager {
   }
 
   async addToWatchlist(AnimeID) {
-    return (await AddToWatchlist(this.UserID(), this.Token(), AnimeID)).status() == 200 ? true : false;
+    return (await AddToWatchlist(this.UserID(), this.Token(), AnimeID)).status === 200 ? true : false;
   }
 
   async removeFromWatchlist(AnimeID) {
-    return (await RemoveFromWatchlist(this.UserID(), this.Token(), AnimeID)).status() == 200 ? true : false;
+    return (await RemoveFromWatchlist(this.UserID(), this.Token(), AnimeID)).status === 200 ? true : false;
   }
 
   async check_credentials(permission) {
