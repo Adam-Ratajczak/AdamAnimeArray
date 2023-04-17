@@ -154,7 +154,7 @@ func animePlayers(c echo.Context) error {
 		return c.NoContent(http.StatusBadRequest)
 	}
 
-	rows, err := db.Query("SELECT * FROM episodeplayers WHERE EpisodeID IN (SELECT EpisodeID FROM episodes WHERE AnimeID = ? AND EpisodeNr = ?) GROUP BY PlayerUrl;", id, ep)
+	rows, err := db.Query("SELECT * FROM EpisodePlayers WHERE EpisodeID IN (SELECT EpisodeID FROM Episodes WHERE AnimeID = ? AND EpisodeNr = ?) GROUP BY PlayerUrl;", id, ep)
 	players := []Player{}
 	if err != nil {
 		return err
@@ -182,7 +182,7 @@ func animePlayersFromLanguage(c echo.Context) error {
 	}
 	lang := c.Param("lang")
 
-	rows, err := db.Query("SELECT * FROM episodeplayers WHERE EpisodeID IN (SELECT EpisodeID FROM episodes WHERE AnimeID = ? AND EpisodeNr = ? AND LangCode = ?) GROUP BY PlayerUrl;", id, ep, lang)
+	rows, err := db.Query("SELECT * FROM EpisodePlayers WHERE EpisodeID IN (SELECT EpisodeID FROM Episodes WHERE AnimeID = ? AND EpisodeNr = ? AND LangCode = ?) GROUP BY PlayerUrl;", id, ep, lang)
 	players := []Player{}
 	if err != nil {
 		return err
@@ -209,7 +209,7 @@ func episodeLanguages(c echo.Context) error {
 		return c.NoContent(http.StatusBadRequest)
 	}
 
-	rows, err := db.Query("SELECT l.LangCode, l.LanguageName, l.LanguageFlag FROM Languages l INNER JOIN episodeplayers ep ON l.LangCode = ep.LangCode WHERE EpisodeID IN (SELECT EpisodeID FROM episodes WHERE AnimeID = ? AND EpisodeNr = ?) GROUP BY LangCode", id, ep)
+	rows, err := db.Query("SELECT l.LangCode, l.LanguageName, l.LanguageFlag FROM Languages l INNER JOIN EpisodePlayers ep ON l.LangCode = ep.LangCode WHERE EpisodeID IN (SELECT EpisodeID FROM Episodes WHERE AnimeID = ? AND EpisodeNr = ?) GROUP BY LangCode", id, ep)
 	languages := []Lang{}
 	if err != nil {
 		return err
