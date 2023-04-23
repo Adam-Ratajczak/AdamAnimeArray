@@ -169,6 +169,7 @@ func write_anime_to_db(a Animes) int {
 	row, err := db.Exec("INSERT INTO Animes(AnimeTitle, EnglishTitle, AnimeDesc, TypeID, AiredBegin, AiredEnd, Premiered, Duration, PosterUrl) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);", a.AnimeTitle, a.EnglishTitle, a.AnimeDesc, a.TypeID, a.AiredBegin, a.AiredEnd, a.Premiered, a.Duration, a.PosterURL)
 
 	if err != nil {
+		fmt.Println(err)
 		return -1
 	} else {
 		id, err := row.LastInsertId()

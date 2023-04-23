@@ -38,7 +38,7 @@ func animeRange(c echo.Context) error {
 	order_by := ""
 
 	if rq.Mode == 0 {
-		order_by = "ORDER BY AnimeID ASC"
+		order_by = "WHERE MalRank != 0 ORDER BY MalRank ASC"
 	} else if rq.Mode == 1 {
 		order_by = "WHERE AiredBegin != '0000-00-00' ORDER BY AiredBegin DESC"
 	} else if rq.Mode == 2 {

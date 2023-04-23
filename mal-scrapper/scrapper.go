@@ -168,7 +168,7 @@ func steal_anime(url string) int {
 
 			header = strings.Replace(header, "\t", "", -1)
 			header = strings.Replace(header, "\n", "", -1)
-			header = strings.Replace(header, "<a href=\"", "", -1)
+			header = strings.Split(header, "href=\"")[1]
 			header = strings.Replace(header, " onClick=\"", "", -1)
 			header = strings.Replace(header, "</a>", "", -1)
 			header = strings.Replace(header, ">", "", -1)
@@ -467,6 +467,7 @@ func steal_anime(url string) int {
 			ep.Aired = conv_date(h.ChildText("td.episode-aired"))
 
 			episodes[ep_num] = ep
+
 		})
 	})
 

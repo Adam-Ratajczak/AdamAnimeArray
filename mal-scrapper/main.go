@@ -16,8 +16,8 @@ import (
 
 var db *sql.DB
 
-const MODE = 0
-const MAX_CONCURRENT_JOBS = 15
+const MODE = 3
+const MAX_CONCURRENT_JOBS = 40
 
 func loadSQLFile(path string) error {
 	file, err := os.ReadFile(path)
@@ -93,6 +93,78 @@ func fill_relations(url, name string) {
 	c.Visit(url)
 }
 
+func fix_posters(url, name string) {
+	anime_id := find_anime_in_db(name)
+	if anime_id == -1 {
+		return
+	}
+
+	c := colly.NewCollector()
+	c.SetRequestTimeout(120 * time.Second)
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visiting", r.URL)
+	})
+
+	c.OnResponse(func(r *colly.Response) {
+		fmt.Println("Got a response from", r.Request.URL)
+	})
+
+	c.OnError(func(r *colly.Response, e error) {
+		fmt.Println("Got this error:", e)
+	})
+
+	c.OnHTML("body", func(e *colly.HTMLElement) {
+		PosterURL := e.ChildAttr("img[itemprop=\"image\"]", "data-src")
+
+		_, err := db.Exec("UPDATE Animes SET PosterUrl = ? WHERE AnimeID = ?;", PosterURL, anime_id)
+		if err != nil {
+			return
+		}
+	})
+
+	c.Visit(url)
+}
+
+func add_mal_data(url, name string) {
+	anime_id := find_anime_in_db(name)
+	if anime_id == -1 {
+		return
+	}
+
+	c := colly.NewCollector()
+	c.SetRequestTimeout(120 * time.Second)
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visiting", r.URL)
+	})
+
+	c.OnResponse(func(r *colly.Response) {
+		fmt.Println("Got a response from", r.Request.URL)
+	})
+
+	c.OnError(func(r *colly.Response, e error) {
+		fmt.Println("Got this error:", e)
+	})
+
+	c.OnHTML("body", func(e *colly.HTMLElement) {
+		rank_str := e.ChildText("span.numbers.ranked > strong")
+		rank_str = strings.Replace(rank_str, "#", "", -1)
+
+		rank, err := strconv.ParseInt(rank_str, 10, 32)
+
+		if err != nil {
+			rank = 0
+		}
+
+		_, err = db.Exec("UPDATE Animes SET MalUrl = ?, MalRank = ? WHERE AnimeID = ?;", url, rank, anime_id)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+	})
+
+	c.Visit(url)
+}
+
 type Block struct {
 	Try     func(string, string)
 	Catch   func(Exception)
@@ -109,6 +181,10 @@ var ErrBlock = Block{
 			}
 		} else if MODE == 1 {
 			fill_relations(url, name)
+		} else if MODE == 2 {
+			fix_posters(url, name)
+		} else if MODE == 3 {
+			add_mal_data(url, name)
 		}
 	},
 	Catch: func(e Exception) {
@@ -239,6 +315,23 @@ func steal_genre(url string, a, b int) {
 
 	for i := a; i <= b; i++ {
 		c.Visit(url + "?page=" + strconv.FormatInt(int64(i), 10))
+	}
+}
+
+func fix_title_len() {
+	rows, err := db.Query("SELECT AnimeID FROM `animes` WHERE LENGTH(AnimeTitle) >= 64 OR LENGTH(EnglishTitle) >= 64")
+	if err != nil {
+		return
+	}
+
+	for rows.Next() {
+		id := 0
+		err = rows.Scan(&id)
+		if err != nil {
+			continue
+		}
+
+		delete_anime(id)
 	}
 }
 
