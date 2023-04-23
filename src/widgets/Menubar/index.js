@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import LoginMan from "../../login_manager.js";
 import redirect from "../../redirect.js";
-import { GetDbInfo } from "../../db_module.js";
+import { GetAnimeRange } from "../../db_module.js";
 import "./style.scss";
 import UserDefaultSVG from "./userdefault.js";
 
@@ -88,11 +88,10 @@ function Menubar() {
     });
 
     document.getElementById("random").addEventListener("click", (ev) => {
-      GetDbInfo()
+      GetAnimeRange(0, 1, 2)
         .then((response) => response.json())
         .then((result) => {
-          let num = Math.floor(Math.random() * result.AnimeCount + 1);
-          redirect("/Anime/" + num);
+          redirect("/Anime/" + result.Animes[0].AnimeID);
         });
     });
   });
