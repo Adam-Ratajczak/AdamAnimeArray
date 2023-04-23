@@ -24,6 +24,10 @@
 
 .AnimePanelHeader > h1{
     margin-left: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .AnimePanelHover{
