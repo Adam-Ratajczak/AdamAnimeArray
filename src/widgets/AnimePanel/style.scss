@@ -71,6 +71,9 @@
 .AnimeTypePanel{
     width: 40%;
     height: 140px;
+}
+
+.AnimeTypePanel:first-child {
     padding-left: 30px;
 }
 
