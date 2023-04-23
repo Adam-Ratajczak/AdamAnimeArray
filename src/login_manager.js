@@ -1,4 +1,4 @@
-import { LoginUser, CreateUser, LogoutUser, GetUserInfo, GetWatchlist, AddToWatchlist, RemoveFromWatchlist } from "./db_module";
+import { LoginUser, CreateUser, LogoutUser, GetUserInfo, GetWatchlist, AddToWatchlist, RemoveFromWatchlist, WriteChat } from "./db_module";
 
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
@@ -44,6 +44,10 @@ class LoginManager {
 
   async removeFromWatchlist(AnimeID) {
     return (await RemoveFromWatchlist(this.UserID(), this.Token(), AnimeID)).status === 200 ? true : false;
+  }
+
+  async writeComment(AnimeID, ReplyID, CommentText) {
+    return (await WriteChat(this.Token(), AnimeID, ReplyID, CommentText)).status() == 200 ? true : false;
   }
 
   async check_credentials(permission) {

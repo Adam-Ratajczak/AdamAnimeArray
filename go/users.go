@@ -5,6 +5,7 @@ import (
 
 	"fmt"
 	"net/http"
+	"strconv"
 
 	cryptorand "crypto/rand"
 	"crypto/sha256"
@@ -268,6 +269,64 @@ func UserWatchlistRem(c echo.Context) error {
 	return c.NoContent(http.StatusOK)
 }
 
+func UserCommentAnime(c echo.Context) error {
+	rq := UserCommentRequest{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	_, err = db.Exec("INSERT INTO ChatEntry(UserID, AnimeID, OtherID, CommentText) VALUES (?, ?, ?, ?);", id, rq.AnimeID, rq.OtherID, rq.CommentText)
+	if err != nil {
+		return err
+	}
+
+	return c.NoContent(http.StatusOK)
+}
+
+func getComments(id, reply int) ([]UserComment, error) {
+	comments := []UserComment{}
+	rows, err := db.Query("SELECT EntryID, UserID, AnimeID, CommentText FROM ChatEntry WHERE AnimeID = ? AND OtherID = ?;", id, reply)
+	if err != nil {
+		return comments, err
+	}
+
+	for rows.Next() {
+		entry := UserComment{}
+		err = rows.Scan(&entry.EntryID, &entry.UserID, &entry.AnimeID, &entry.CommentText)
+		entry.Replies, err = getComments(id, entry.EntryID)
+		if err != nil {
+			return comments, err
+		}
+
+		comments = append(comments, entry)
+	}
+
+	return comments, nil
+}
+
+func UserCommentList(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	comments, err := getComments(id, 0)
+	if err != nil {
+		return err
+	}
+
+	return c.JSON(http.StatusOK, comments)
+}
+
 func LogoutUser(c echo.Context) error {
 	rq := UserAuth{}
 
@@ -304,9 +363,47 @@ func UserInfo(c echo.Context) error {
 	err = row.Scan(&res.UserName, &res.UserEmail, &res.UserProfileImageUrl, &res.UserProfileImagePoster)
 
 	if err != nil {
-		fmt.Printf("Failed to get user info for UserID=%d: %s\n", rq.UserID, err)
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
 	return c.JSON(http.StatusAccepted, res)
+}
+
+func UserBasicInfo(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	row := db.QueryRow("SELECT UserID, UserName, UserProfileImageUrl FROM Users WHERE UserID = ?;", id)
+
+	res := BasicUserInfo{}
+
+	err = row.Scan(&res.UserID, &res.UserName, &res.UserProfileImageUrl)
+
+	if err != nil {
+		return c.NoContent(http.StatusNoContent)
+	}
+
+	return c.JSON(http.StatusOK, res)
+}
+
+func UsersBasicInfo(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	rows, err := db.Query("SELECT UserID, UserName, UserProfileImageUrl FROM Users WHERE UserID = ?;", id)
+	if err != nil {
+		return err
+	}
+
+	res := []BasicUserInfo{}
+
+	for rows.Next() {
+
+	}
+
+	return c.JSON(http.StatusOK, res)
 }

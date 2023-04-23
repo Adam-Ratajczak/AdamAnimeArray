@@ -205,7 +205,7 @@ export function AddToWatchlist(id, token, AnimeID){
     let req = {
         UserID: id,
         Token: token,
-        AnimeID: parseInt(AnimeID),
+        AnimeID: AnimeID,
     };
     
     return FetchToApiPost(`/auth/watchlist/add`, req);
@@ -215,7 +215,7 @@ export function RemoveFromWatchlist(id, token, AnimeID){
     let req = {
         UserID: id,
         Token: token,
-        AnimeID: parseInt(AnimeID),
+        AnimeID: AnimeID,
     };
     
     return FetchToApiPost(`/auth/watchlist/remove`, req);
@@ -240,4 +240,15 @@ export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){
     };
     
     return FetchToApiPost(`/auth/changeinfo`, req);
+}
+
+export function WriteChat(token, id, reply, chattext){
+    let req = {
+        Token: token,
+        AnimeID: id,
+        OtherID: reply,
+        CommentText: chattext
+    };
+    
+    return FetchToApiPost(`/auth/comment/write`, req);
 }

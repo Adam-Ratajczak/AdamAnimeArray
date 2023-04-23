@@ -11,8 +11,33 @@ import plus from "./plus.png";
 import minus from "./minus.png";
 import LoginMan from "../../login_manager";
 
+function ChatEntry(props){
+  const [UserName, SetUserName] = useState(0)
+  const [UserIcon, SetUserIcon] = useState(0)
+
+  const UserID = props.UserID
+  const CommentText = props.CommentText
+  const depth = props.Depth
+
+  useEffect(() => {
+    
+  })
+
+  return (
+    <div class="ChatEntry">
+      <div class="ChatUserImg">
+        <img src={UserIcon}/>
+      </div>
+      <div class="ChatContent">
+        <h2>{UserName}</h2>
+        <p>{CommentText}</p>
+      </div>
+    </div>
+  )
+}
+
 function AnimeInfo() {
-  const AnimeID = window.location.href.split("/").at(-1);
+  const AnimeID = parseInt(window.location.href.split("/").at(-1));
 
   const [AnimeTitle, SetAnimeTitle] = useState(null);
   const [EnglishTitle, SetEnglishTitle] = useState(null);
@@ -121,7 +146,7 @@ function AnimeInfo() {
           relations.push(
             <div class="RelationType">
               <h2 class="RelationHeader">{elem.Relation.Name}</h2>
-              <div>{val}</div>
+              <div  style={{height: val.length * 48}}>{val}</div>
             </div>
           );
         });
@@ -199,6 +224,14 @@ function AnimeInfo() {
         } else {
           SetSavedToWatchlist(true);
         }
+
+        document.getElementById("WriteChat").addEventListener("submit", async (ev) => {
+          let input = document.getElementById("WriteChatInput")
+          await LoginMan.writeComment(AnimeID, 0, input.value)
+          input.value = ""
+
+          window.location.reload()
+        })
       }
     })();
   }, []);
@@ -417,6 +450,20 @@ function AnimeInfo() {
         <div id="SimiliarAnimeDiv">
           <h1 id="SimilliarAnimeHeader">You may also like: </h1>
           <div id="SimiliarAnimes">{Animes}</div>
+        </div>
+        <div id="ChatDiv">
+          <h2>Comments:</h2>
+          {LoginMan.LoggedIn() ? (
+            <form id="WriteChat">
+              <p>Did you like this anime? Share your opinion with others!</p>
+              <input type="text" id="WriteChatInput" required placeholder="Write comment" />
+              <input type="submit" id="WriteChatSubmit" value="Post a comment" />
+            </form>
+          ) : (
+            <div id="WriteChat">
+              Log in to post comments!
+            </div>
+          )}
         </div>
       </div>
     </>

@@ -123,6 +123,12 @@ type ChangeUserRequest struct {
 	UserProfileImagePoster string
 }
 
+type BasicUserInfo struct {
+	UserID              int
+	UserName            string
+	UserProfileImageUrl string
+}
+
 type UserRequest struct {
 	UserName               string
 	UserEmail              string
@@ -149,4 +155,19 @@ type AnimeUserRequest struct {
 	UserID  int
 	Token   string
 	AnimeID int
+}
+
+type UserCommentRequest struct {
+	Token       string
+	AnimeID     int
+	OtherID     int
+	CommentText string
+}
+
+type UserComment struct {
+	EntryID     int
+	UserID      int
+	AnimeID     int
+	Replies     []UserComment
+	CommentText string
 }

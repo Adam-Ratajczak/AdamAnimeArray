@@ -39,6 +39,7 @@ func main() {
 		animes.GET("/songs/:id", song)
 
 		animes.GET("/:id", anime)
+		animes.GET("/:id/comments", UserCommentList)
 		animes.GET("/:id/songs", animeSongs)
 		animes.GET("/:id/episodes", animeEpisodes)
 		animes.GET("/:id/episodes/:ep", animeEpisode)
@@ -74,6 +75,7 @@ func main() {
 		animes.GET("/relations", filterGetAll("Relations"))
 		animes.GET("/relations/:id", filterGetByID("Relations"))
 	}
+	e.GET("/users/:id", UserBasicInfo)
 	e.POST("/auth", AuthUser)
 	auth := e.Group("/auth")
 	{
@@ -85,6 +87,7 @@ func main() {
 		auth.POST("/watchlist", UserWatchlist)
 		auth.POST("/watchlist/add", UserWatchlistAdd)
 		auth.POST("/watchlist/remove", UserWatchlistRem)
+		auth.POST("/comment/write", UserCommentAnime)
 	}
 	err = e.Start(":2137")
 	if err != nil {

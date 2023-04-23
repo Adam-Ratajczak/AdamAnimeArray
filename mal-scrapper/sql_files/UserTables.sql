@@ -60,10 +60,12 @@ CREATE TABLE IF NOT EXISTS UserDokiThemes(
     FOREIGN KEY (ThemeID) REFERENCES DokiThemes(ThemeID)
 );
 
-
 CREATE TABLE IF NOT EXISTS ChatEntry(
     EntryID INT PRIMARY KEY AUTO_INCREMENT,
     UserID INT NOT NULL,
-    PageUrl VARCHAR(255),
-    FOREIGN KEY ChatEntry(UserID) REFERENCES Users(UserID)
+    AnimeID INT NOT NULL,
+    OtherID INT,
+    CommentText VARCHAR(65536),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)
 );

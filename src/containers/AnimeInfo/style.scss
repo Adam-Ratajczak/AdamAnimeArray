@@ -120,11 +120,11 @@
     background-color: $background-tilted-color;
 }
 
-.RelationType div {
+.RelationType > div {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
 }
 
 .RelationHeader {
@@ -135,15 +135,22 @@
 }
 
 .RelationEntry {
-    height: 40px;
+    min-height: 50px;
+    line-height: 20px;
     padding: 10px;
     padding-left: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    overflow: hidden;
+    hyphens: auto;
+    background-color: #33333e;
 }
 
 .RelationEntry:hover {
     background-color: $btn-hover-text-color;
     color: $base-color;
-    height: 40px;
 }
 
 #PlayerDiv {
@@ -153,4 +160,43 @@
 
 #SimiliarAnimeDiv{
     background-color: black;
+}
+
+#ChatDiv{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+#ChatDiv > h2{
+    border-bottom: 2px solid white;
+}
+
+#ChatDiv{
+    padding-bottom: 150px;
+}
+
+#WriteChat p{
+    padding-left: 30px;
+}
+
+#WriteChatInput{
+    background-color: $background-color;
+    border: 2px solid transparent;
+    height: 24px;
+    width: 60%;
+    color: $text-color;
+    font-size: medium;
+}
+
+#WriteChatSubmit{
+  background-color: $foreground-color;
+  border: 0px solid transparent;
+  width: 150px;
+  height: 28px;
+  color: $text-color;
+//   border-top-right-radius: 5px;
+//   border-bottom-right-radius: 5px;
 }
