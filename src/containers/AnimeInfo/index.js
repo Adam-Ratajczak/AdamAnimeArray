@@ -104,7 +104,7 @@ function AnimeInfo() {
             res += elem.Name + ", ";
           }
 
-          return res;
+          return res.length > 50 ? (res.substring(0, 47) + "...") : res;
         }
 
         SetAnimeGenres(PrepareGenreString(result.Genres));
@@ -268,56 +268,31 @@ function AnimeInfo() {
               <tr>
                 <td class="AnimePropertyName">Genres: </td>
                 <td>
-                  {AnimeGenres !== ""
-                    ? AnimeGenres.toString().substring(
-                      0,
-                      AnimeGenres.toString().length - 2
-                    )
-                    : "None"}
+                  {AnimeGenres !== "" ? AnimeGenres : "None"}
                 </td>
               </tr>
               <tr>
                 <td class="AnimePropertyName">Themes: </td>
                 <td>
-                  {AnimeThemes !== ""
-                    ? AnimeThemes.toString().substring(
-                      0,
-                      AnimeThemes.toString().length - 2
-                    )
-                    : "None"}
+                  {AnimeThemes !== ""? AnimeThemes : "None"}
                 </td>
               </tr>
               <tr>
                 <td class="AnimePropertyName">Studios: </td>
                 <td>
-                  {AnimeStudios !== ""
-                    ? AnimeStudios.toString().substring(
-                      0,
-                      AnimeProducers.toString().length - 2
-                    )
-                    : "None"}
+                  {AnimeStudios !== "" ? AnimeStudios : "None"}
                 </td>
               </tr>
               <tr>
                 <td class="AnimePropertyName">Producers: </td>
                 <td>
-                  {AnimeProducers != ""
-                    ? AnimeProducers.toString().substring(
-                      0,
-                      AnimeProducers.toString().length - 2
-                    )
-                    : "None"}
+                  {AnimeProducers != "" ? AnimeProducers : "None"}
                 </td>
               </tr>
               <tr>
                 <td class="AnimePropertyName">Demographics: </td>
                 <td>
-                  {AnimeDemographics != ""
-                    ? AnimeDemographics.toString().substring(
-                      0,
-                      AnimeDemographics.toString().length - 2
-                    )
-                    : "None"}
+                  {AnimeDemographics != "" ? AnimeDemographics : "None"}
                 </td>
               </tr>
             </tbody>
