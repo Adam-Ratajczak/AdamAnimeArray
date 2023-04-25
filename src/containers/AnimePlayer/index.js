@@ -135,10 +135,10 @@ function AnimePlayer() {
           redirect("/anime/" + AnimeID);
         }
 
-        SetEpisodeControls((<div id="EpControls">
+        SetEpisodeControls(result.EpisodeNum > 1 ? (<div id="EpControls">
           {EpNum != 1 ? (<a href={"/anime/"+AnimeID+"/ep/"+(EpNum-1).toString()} style={{backgroundColor: "red"}}>Previous Episode</a>) : (<a style={{backgroundColor: "gray"}}>Previous Episode</a>)}
           {EpNum != result.EpisodeNum ? (<a href={"/anime/"+AnimeID+"/ep/"+(EpNum+1).toString()} style={{backgroundColor: "green"}}>Next Episode</a>) : (<a style={{backgroundColor: "gray"}}>Next Episode</a>)}
-        </div>))
+        </div>) : (<></>))
       })
   }, []);
 
