@@ -17,6 +17,8 @@ CREATE TABLE IF NOT EXISTS Animes(
     Premiered VARCHAR(64),
     Duration VARCHAR(64),
     PosterUrl VARCHAR(256),
+    MalUrl VARCHAR(256),
+    MalRank INT,
     FOREIGN KEY (TypeID) REFERENCES Types(TypeID)
 );
 

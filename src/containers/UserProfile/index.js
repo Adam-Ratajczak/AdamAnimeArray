@@ -13,9 +13,7 @@ function UserProfile() {
       if (LoginMan.LoggedIn()) {
         if (Watchlist.length == 0) {
           const watchlist = await LoginMan.getWatchlist()
-
           let res = []
-          let ids = []
 
           for (const elem of watchlist) {
             res.push((
@@ -41,7 +39,7 @@ function UserProfile() {
 
       for (const img of btns) {
         img.onclick = () => {
-          LoginMan.removeFromWatchlist(img.alt)
+          LoginMan.removeFromWatchlist(parseInt(img.alt))
           SetWatchlist([])
         }
       }

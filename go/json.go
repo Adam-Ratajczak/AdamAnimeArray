@@ -17,6 +17,8 @@ type Anime struct {
 	Premiered    string
 	Duration     string
 	PosterURL    string
+	MalLink      string
+	MalRank      int
 	EpisodeNum   int
 
 	Genres       []Filter

@@ -11,8 +11,8 @@ import (
 
 func GetAnime(id int) (Anime, error) {
 	anime := Anime{}
-	row := db.QueryRow("SELECT AnimeID, AnimeTitle, EnglishTitle, AnimeDesc, TypeID, (SELECT TypeName FROM Types t WHERE t.TypeID = a.TypeID), AiredBegin, AiredEnd, Premiered, Duration, PosterUrl, (SELECT COUNT(EpisodeID) FROM Episodes e WHERE e.AnimeID = a.AnimeID) FROM Animes a WHERE AnimeID = ?", id)
-	err := row.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.Type.ID, &anime.Type.Name, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL, &anime.EpisodeNum)
+	row := db.QueryRow("SELECT AnimeID, AnimeTitle, EnglishTitle, AnimeDesc, TypeID, (SELECT TypeName FROM Types t WHERE t.TypeID = a.TypeID), AiredBegin, AiredEnd, Premiered, Duration, PosterUrl, MalUrl, MalRank, (SELECT COUNT(EpisodeID) FROM Episodes e WHERE e.AnimeID = a.AnimeID) FROM Animes a WHERE AnimeID = ?", id)
+	err := row.Scan(&anime.AnimeID, &anime.AnimeTitle, &anime.EnglishTitle, &anime.AnimeDesc, &anime.Type.ID, &anime.Type.Name, &anime.AiredBegin, &anime.AiredEnd, &anime.Premiered, &anime.Duration, &anime.PosterURL, &anime.MalLink, &anime.MalRank, &anime.EpisodeNum)
 	if err != nil {
 		return Anime{}, err
 	}

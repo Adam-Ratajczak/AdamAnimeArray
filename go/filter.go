@@ -80,8 +80,9 @@ func filter(c echo.Context) error {
 		return c.NoContent(http.StatusBadRequest)
 	}
 	sql := sqlBuilder(rq)
-	animes := []Anime{}
-	rows, err := db.Query(sql+" LIMIT ?, ?;", rq.ABegin, rq.AEnd)
+	res := Range{}
+	res.Animes = []Anime{}
+	rows, err := db.Query("SELECT DISTINCT a.AnimeID "+sql+" LIMIT ?, ?;", rq.ABegin, rq.AEnd)
 	if err != nil {
 		return err
 	}
@@ -94,9 +95,13 @@ func filter(c echo.Context) error {
 			continue
 		}
 
-		animes = append(animes, anime)
+		res.Animes = append(res.Animes, anime)
 	}
-	return c.JSON(http.StatusOK, animes)
+
+	row := db.QueryRow("SELECT COUNT(a.AnimeID) " + sql + ";")
+	err = row.Scan(&res.AnimeCount)
+
+	return c.JSON(http.StatusOK, res)
 }
 
 func filterSqlBuilder(table string, filter []int) (string, string) {
@@ -121,7 +126,7 @@ func filterSqlBuilder(table string, filter []int) (string, string) {
 }
 
 func sqlBuilder(filter FilterRequest) string {
-	sql := "SELECT DISTINCT a.AnimeID FROM Animes a %v %v"
+	sql := "FROM Animes a %v %v"
 	joins := []string{}
 	wheres := []string{}
 	sqlAppend := func(j, w string) {

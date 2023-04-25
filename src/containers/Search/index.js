@@ -42,6 +42,7 @@ function Search() {
   const [TypeFilter, setTypeFilter] = useState(new Set());
 
   const [fetching, setFetching] = useState(true);
+  const [foundNum, setFoundNum] = useState(true);
 
   const searchBar = useRef();
 
@@ -76,8 +77,7 @@ function Search() {
 
     updateSearchPhrase("");
 
-    setAnimes([])
-    fetchMoreResults()
+    fetchMoreResults(0, true)
   }
 
   function searchBarOnKeyDown(event) {
@@ -118,7 +118,7 @@ function Search() {
   }, []);
 
   const fetchMoreResults = useCallback(
-    (offset) => {
+    (offset, clear) => {
       // console.log("Fetching = true");
       setFetching(true);
       // console.log("Fetch", Animes.length, animeLimit);
@@ -136,9 +136,14 @@ function Search() {
         .then((response) => response.json())
         .then((result) => {
           // console.log("Returned " + result.length + " results");
-          setAnimes((animes) => [...animes, ...result]);
+          if(clear){
+            setAnimes(() => [...result.Animes]);
+          }else{
+            setAnimes((animes) => [...animes, ...result.Animes]);
+          }
           // console.log("Fetching = false");
           setFetching(false);
+          setFoundNum(result.AnimeCount)
         });
     },
     [
@@ -159,11 +164,11 @@ function Search() {
 
       if (!fetching && currentScroll >= Animes.length * 240 - 50) {
         // console.log("SCROLL", currentScroll, documentHeight);
-        fetchMoreResults(Animes.length);
+        fetchMoreResults(Animes.length, false);
         content.onscroll = null;
       }
     }
-    document.getElementById("AnimeTypeDiv").style.minHeight = (Animes.length * 240 + 40).toString() + "px"
+    document.getElementById("AnimeTypeDiv").style.minHeight = (Animes.length * 240 + 150).toString() + "px"
     // console.log("new onscroll ", fetching);
     content.onscroll = onScroll;
     return () => {
@@ -172,7 +177,7 @@ function Search() {
   }, [Animes.length, fetching, fetchMoreResults]);
 
   useEffect(() => {
-    fetchMoreResults(0);
+    fetchMoreResults(0, true);
     return () => {
       setAnimes([]);
     };
@@ -264,6 +269,7 @@ function Search() {
           />
         </div>
         <div id="SearchResults">
+          <h4>Results: {foundNum}</h4>
           {Animes.map((anime) => {
             return <AnimePanel AnimeID={anime.AnimeID} key={anime.AnimeID} />;
           })}
