@@ -28,7 +28,6 @@ func all(c echo.Context) error {
 	return c.JSON(http.StatusOK, animes)
 }
 func animeRange(c echo.Context) error {
-	animes := []Anime{}
 	rq := AnimeRequest{}
 	err := c.Bind(&rq)
 	if err != nil {
@@ -45,7 +44,8 @@ func animeRange(c echo.Context) error {
 		order_by = "ORDER BY RAND()"
 	}
 
-	AniRange := Range{}
+	res := Range{}
+	res.Animes = []AnimeShort{}
 
 	rows, err := db.Query("SELECT AnimeID FROM Animes "+order_by+" LIMIT ?, ?;", rq.AnimeBegin, rq.AnimeEnd)
 	if err != nil {
@@ -59,18 +59,24 @@ func animeRange(c echo.Context) error {
 		if err != nil {
 			continue
 		}
+		short := AnimeShort{}
+		short.AnimeID = anime.AnimeID
+		short.AnimeTitle = anime.AnimeTitle
+		short.PosterURL = anime.PosterURL
+		short.Type = anime.Type
+		short.Premiered = anime.Premiered
+		short.EpisodeNum = anime.EpisodeNum
 
-		animes = append(animes, anime)
+		res.Animes = append(res.Animes, short)
 	}
-	AniRange.Animes = animes
 
 	row := db.QueryRow("SELECT COUNT(AnimeID) FROM Animes " + order_by)
-	err = row.Scan(&AniRange.AnimeCount)
+	err = row.Scan(&res.AnimeCount)
 	if err != nil {
 		return err
 	}
 
-	return c.JSON(http.StatusOK, AniRange)
+	return c.JSON(http.StatusOK, res)
 }
 
 func filter(c echo.Context) error {
@@ -80,8 +86,8 @@ func filter(c echo.Context) error {
 		return c.NoContent(http.StatusBadRequest)
 	}
 	sql := sqlBuilder(rq)
-	res := Range{}
-	res.Animes = []Anime{}
+	res := FilterRange{}
+	res.Animes = []int{}
 	rows, err := db.Query("SELECT DISTINCT a.AnimeID "+sql+" LIMIT ?, ?;", rq.ABegin, rq.AEnd)
 	if err != nil {
 		return err
@@ -90,12 +96,7 @@ func filter(c echo.Context) error {
 		id := 0
 		rows.Scan(&id)
 
-		anime, err := GetAnime(id)
-		if err != nil {
-			continue
-		}
-
-		res.Animes = append(res.Animes, anime)
+		res.Animes = append(res.Animes, id)
 	}
 
 	row := db.QueryRow("SELECT COUNT(a.AnimeID) " + sql + ";")

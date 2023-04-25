@@ -28,8 +28,22 @@ type Anime struct {
 	Demographics []Filter
 }
 
+type AnimeShort struct {
+	AnimeID    int
+	AnimeTitle string
+	PosterURL  string
+	Type       Filter
+	Premiered  string
+	EpisodeNum int
+}
+
 type Range struct {
-	Animes     []Anime
+	Animes     []AnimeShort
+	AnimeCount int
+}
+
+type FilterRange struct {
+	Animes     []int
 	AnimeCount int
 }
 

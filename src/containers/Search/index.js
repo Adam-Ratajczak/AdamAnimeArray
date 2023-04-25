@@ -271,7 +271,7 @@ function Search() {
         <div id="SearchResults">
           <h4>Results: {foundNum}</h4>
           {Animes.map((anime) => {
-            return <AnimePanel AnimeID={anime.AnimeID} key={anime.AnimeID} />;
+            return <AnimePanel AnimeID={anime}/>;
           })}
         </div>
       </div>
