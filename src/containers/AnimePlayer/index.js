@@ -18,10 +18,10 @@ function LangWidget(props) {
 
         let flag_widget = []
         for (let lang of result) {
-          function eventHandler(){
+          function eventHandler() {
             let i = 0
-            while(i < result.length){
-              if(lang.Code == result[i].Code){
+            while (i < result.length) {
+              if (lang.Code == result[i].Code) {
                 break
               }
               i++
@@ -29,7 +29,7 @@ function LangWidget(props) {
             props.OnClick(lang.Code)
             let img = document.querySelectorAll("#LanguageList img")
 
-            for(let image of img){
+            for (let image of img) {
               image.classList.remove("active")
             }
 
@@ -83,13 +83,10 @@ function EpList(props) {
 
           for (let ep of to_sort) {
             let title = ep.Title
-            if (title.length > 24) {
-              title = title.substring(0, 21) + "..."
-            }
             if (EpNum == ep.EpisodeNr) {
-              list.push(<span class="EpisodeEntry tooltip"><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span>{title}</span></span>)
+              list.push(<span class="EpisodeEntry tooltip"><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span class="EpTitle">{title}</span></span>)
             } else {
-              list.push(<a class="EpisodeEntry tooltip" href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span>{title}</span></a>)
+              list.push(<a class="EpisodeEntry tooltip" href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span class="EpTitle">{title}</span></a>)
             }
           }
           SetEps(list)
@@ -108,12 +105,13 @@ function EpList(props) {
 }
 
 function AnimePlayer() {
-  const AnimeID = window.location.href.split("/").at(-3);
-  const EpNum = window.location.href.split("/").at(-1);
+  const AnimeID = parseInt(window.location.href.split("/").at(-3));
+  const EpNum = parseInt(window.location.href.split("/").at(-1));
 
   const [AnimeTitle, SetAnimeTitle] = useState(0)
   const [EnglishTitle, SetEnglishTitle] = useState(0)
   const [EpisodeTitle, SetEpisodeTitle] = useState(0)
+  const [EpisodeControls, SetEpisodeControls] = useState(0)
   const [Aired, SetAired] = useState(0)
   const [PlayerUrl, SetPlayerUrl] = useState("/NoPlayer")
   const [CurrLang, SetCurrLang] = useState("")
@@ -126,16 +124,21 @@ function AnimePlayer() {
       .then((result) => {
         SetAnimeTitle(result.AnimeTitle);
         SetEnglishTitle(result.EnglishTitle);
-      })
-  }, []);
 
-  useEffect(() => {
-    GetEpisodes(AnimeID)
-      .then((response) => response.json())
-      .then((result) => {
-        if (EpNum > result.length) {
+        if(result.EnglishTitle == ""){
+          document.getElementById("EpList").style.height = "532px"
+        }else{
+          document.getElementById("EpList").style.height = "500px"
+        }
+
+        if (EpNum > result.EpisodeNum) {
           redirect("/anime/" + AnimeID);
         }
+
+        SetEpisodeControls((<div id="EpControls">
+          {EpNum != 1 ? (<a href={"/anime/"+AnimeID+"/ep/"+(EpNum-1).toString()} style={{backgroundColor: "red"}}>Previous Episode</a>) : (<a style={{backgroundColor: "gray"}}>Previous Episode</a>)}
+          {EpNum != result.EpisodeNum ? (<a href={"/anime/"+AnimeID+"/ep/"+(EpNum+1).toString()} style={{backgroundColor: "green"}}>Next Episode</a>) : (<a style={{backgroundColor: "gray"}}>Next Episode</a>)}
+        </div>))
       })
   }, []);
 
@@ -152,9 +155,9 @@ function AnimePlayer() {
 
   const EpAired = new Date(Aired.Time);
 
-  function changeLang(LangID){
+  function changeLang(LangID) {
     SetCurrLang(LangID)
-    
+
     let cb = document.getElementById("PlayerCb")
 
     cb.innerHTML = ""
@@ -175,11 +178,11 @@ function AnimePlayer() {
       .then((response) => response.json())
       .then((result) => {
         result.sort((a, b) => {
-          if(a.LangCode < b.LangCode){
+          if (a.LangCode < b.LangCode) {
             return -1
-          }else if(a.LangCode == b.LangCode){
+          } else if (a.LangCode == b.LangCode) {
             return 0
-          }else{
+          } else {
             return 1
           }
         })
@@ -187,7 +190,7 @@ function AnimePlayer() {
           changeLang(result[0].LangCode)
           SetCurrPlayer(result[0].Source)
           SetCurrQuality(result[0].Quality)
-          
+
           let img = document.querySelectorAll("#LanguageList img")[0]
 
           img.classList.add("active")
@@ -205,27 +208,26 @@ function AnimePlayer() {
   return (
     <div id="main">
       <Menubar />
-      <div id="AnimeInfoHeaderDiv"><h1>{AnimeTitle}<br/><i>{EnglishTitle}</i></h1><LangWidget AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} OnClick={changeLang} /></div>
+      <div id="AnimeInfoHeaderDiv"><h1>{AnimeTitle}<br /><i>{EnglishTitle}</i></h1><LangWidget AnimeID={AnimeID} EpNum={EpNum} Lang={CurrLang} OnClick={changeLang} /></div>
       <div id="PlayerContent">
         <EpList AnimeID={AnimeID} EpNum={EpNum} />
         <div id="PlayerMainDiv">
           <div id="PlayerDiv">
             <iframe id="Player" src={PlayerUrl} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" />
-            <div id="PlayerInfoDiv">
-              <table>
-                <tbody>
-                  <tr><th>Title:</th><td>{EpisodeTitle}</td></tr>
-                  <tr><th>Aired:</th><td>{(Aired.Time != "0001-01-01T00:00:00Z") ? (EpAired.toLocaleDateString("en-EN", options)) : "Unknown"}</td></tr>
-                  <tr><th>Lang:</th><td>{CurrLang}</td></tr>
-                  <tr><th>Player:</th><td>{CurrPlayer}</td></tr>
-                  <tr><th>Quality:</th><td>{CurrQuality}</td></tr>
-                </tbody>
-              </table>
-              <a href={"/anime/" + AnimeID.toString()}>Back to anime info...</a>
-            </div>
+            <label><span>Choose Player:</span><select id="PlayerCb" class="minimal"></select></label>
           </div>
-          <div id="PlayerFooter">
-            <label>Choose Player:<select id="PlayerCb" class="minimal"></select></label>
+          <div id="PlayerInfoDiv">
+            <table>
+              <tbody>
+                <tr><th>Title:</th><td>{EpisodeTitle}</td></tr>
+                <tr><th>Aired:</th><td>{(Aired.Time != "0001-01-01T00:00:00Z") ? (EpAired.toLocaleDateString("en-EN", options)) : "Unknown"}</td></tr>
+                <tr><th>Lang:</th><td>{CurrLang}</td></tr>
+                <tr><th>Player:</th><td>{CurrPlayer}</td></tr>
+                <tr><th>Quality:</th><td>{CurrQuality}</td></tr>
+              </tbody>
+            </table>
+            <a href={"/anime/" + AnimeID.toString()}>Back to anime info...</a>
+            {EpisodeControls}
           </div>
         </div>
       </div>
