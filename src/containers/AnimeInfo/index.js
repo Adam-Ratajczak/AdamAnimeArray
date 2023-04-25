@@ -5,13 +5,14 @@ import {
   GetFilterEntry,
   FilterAnimes,
   GetAnimeRelations,
+  GetAnimeRange,
 } from "../../db_module";
 import "./style.scss";
 import plus from "./plus.png";
 import minus from "./minus.png";
 import LoginMan from "../../login_manager";
 
-function ChatEntry(props){
+function ChatEntry(props) {
   const [UserName, SetUserName] = useState(0)
   const [UserIcon, SetUserIcon] = useState(0)
 
@@ -20,13 +21,13 @@ function ChatEntry(props){
   const depth = props.Depth
 
   useEffect(() => {
-    
+
   })
 
   return (
     <div class="ChatEntry">
       <div class="ChatUserImg">
-        <img src={UserIcon}/>
+        <img src={UserIcon} />
       </div>
       <div class="ChatContent">
         <h2>{UserName}</h2>
@@ -146,7 +147,7 @@ function AnimeInfo() {
           relations.push(
             <div class="RelationType">
               <h2 class="RelationHeader">{elem.Relation.Name}</h2>
-              <div  style={{height: val.length * 48}}>{val}</div>
+              <div style={{ height: val.length * 48 }}>{val}</div>
             </div>
           );
         });
@@ -156,59 +157,29 @@ function AnimeInfo() {
   }, []);
 
   useEffect(() => {
-    GetFilterEntry(AnimeID)
+    GetAnimeRange(0, Math.floor(window.screen.width / 270 * 2), 2)
       .then((response) => response.json())
-      .then((result) => {
-        FilterAnimes(
-          0,
-          24,
-          "",
-          result.Types,
-          result.Genres,
-          result.Themes,
-          [],
-          []
-        )
-          .then((response) => response.json())
-          .then((AnimeList) => {
-            let res = [];
-            let IDs = [];
-            for (
-              let i = 0;
-              i <
-              Math.min(
-                AnimeList.length - 1,
-                Math.floor(window.screen.width / 270) * 2
-              );
-              i++
-            ) {
-              let AnimeNum = Math.floor(
-                (Math.random() * AnimeList.length) % AnimeList.length
-              );
-              const elem = AnimeList[AnimeNum];
-              let ID = elem.AnimeID;
-
-              if (ID == AnimeID || IDs.indexOf(ID) != -1) {
-                i--;
-                continue;
-              }
-
-              res.push(
-                <div class="PosterOutline">
-                  <AnimePoster
-                    AnimeID={ID}
-                    Title={elem.AnimeTitle}
-                    Poster={elem.PosterURL}
-                    Premiered={elem.Premiered}
-                    EpNum={elem.EpisodeNum}
-                    Type={elem.Type.Name}
-                  />
-                </div>
-              );
-              IDs.push(ID);
-            }
-            SetAnimes(res);
-          });
+      .then((AnimeList) => {
+        let res = [];
+        let IDs = [];
+        for (let i = 0; i < AnimeList.Animes.length - 1; i++) {
+          const elem = AnimeList.Animes[i];
+          let ID = elem.AnimeID;
+          res.push(
+            <div class="PosterOutline">
+              <AnimePoster
+                AnimeID={ID}
+                Title={elem.AnimeTitle}
+                Poster={elem.PosterURL}
+                Premiered={elem.Premiered}
+                EpNum={elem.EpisodeNum}
+                Type={elem.Type.Name}
+              />
+            </div>
+          );
+          IDs.push(ID);
+        }
+        SetAnimes(res);
       });
   }, []);
 
@@ -294,9 +265,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeGenres !== ""
                     ? AnimeGenres.toString().substring(
-                        0,
-                        AnimeGenres.toString().length - 2
-                      )
+                      0,
+                      AnimeGenres.toString().length - 2
+                    )
                     : "None"}
                 </td>
               </tr>
@@ -305,9 +276,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeThemes !== ""
                     ? AnimeThemes.toString().substring(
-                        0,
-                        AnimeThemes.toString().length - 2
-                      )
+                      0,
+                      AnimeThemes.toString().length - 2
+                    )
                     : "None"}
                 </td>
               </tr>
@@ -316,9 +287,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeStudios !== ""
                     ? AnimeStudios.toString().substring(
-                        0,
-                        AnimeProducers.toString().length - 2
-                      )
+                      0,
+                      AnimeProducers.toString().length - 2
+                    )
                     : "None"}
                 </td>
               </tr>
@@ -327,9 +298,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeProducers != ""
                     ? AnimeProducers.toString().substring(
-                        0,
-                        AnimeProducers.toString().length - 2
-                      )
+                      0,
+                      AnimeProducers.toString().length - 2
+                    )
                     : "None"}
                 </td>
               </tr>
@@ -338,9 +309,9 @@ function AnimeInfo() {
                 <td>
                   {AnimeDemographics != ""
                     ? AnimeDemographics.toString().substring(
-                        0,
-                        AnimeDemographics.toString().length - 2
-                      )
+                      0,
+                      AnimeDemographics.toString().length - 2
+                    )
                     : "None"}
                 </td>
               </tr>
