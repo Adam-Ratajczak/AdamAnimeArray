@@ -55,6 +55,9 @@ function AnimeInfo() {
   const [AnimeProducers, SetAnimeProducers] = useState(null);
   const [AnimeDemographics, SetAnimeDemographics] = useState(null);
 
+  const [MalLink, SetMalLink] = useState(null);
+  const [MalRank, SetMalRank] = useState(null);
+
   const [Animes, SetAnimes] = useState([]);
   const [AnimeRelations, SetAnimeRelations] = useState([]);
   const [SavedToWatchlist, SetSavedToWatchlist] = useState(false);
@@ -91,6 +94,8 @@ function AnimeInfo() {
         SetPremiered(result.Premiered);
         SetEpisodeNum(result.EpisodeNum);
         SetAnimeType(result.Type.Name);
+        SetMalLink(result.MalLink);
+        SetMalRank(result.MalRank);
 
         function PrepareGenreString(arr) {
           let res = "";
@@ -313,6 +318,25 @@ function AnimeInfo() {
                       AnimeDemographics.toString().length - 2
                     )
                     : "None"}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3 class="InfoHeader">External data:</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td class="AnimePropertyName">More info: </td>
+                <td>
+                  <a href={MalLink}>{MalLink.length > 70 ? (MalLink.substring(0, 67) + "...") : MalLink}</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="AnimePropertyName">Popularity: </td>
+                <td>
+                  <span>{MalRank == 0 ? "N / A" : ("#" + MalRank)}</span>
                 </td>
               </tr>
             </tbody>
