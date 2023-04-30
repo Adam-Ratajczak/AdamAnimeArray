@@ -117,12 +117,18 @@ CREATE TABLE IF NOT EXISTS AnimeRelations(
 -- Table for storing basic anime songs
 CREATE TABLE IF NOT EXISTS Songs(
     SongID int PRIMARY KEY AUTO_INCREMENT,
-    AnimeID int NOT NULL,
     Title VARCHAR(64) NOT NULL,
     Artist VARCHAR(64) NOT NULL,
-    SongType VARCHAR(32) NOT NULL,
-    SpotifyUrl VARCHAR(256),
-    FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)
+    SongType VARCHAR(32) NOT NULL
+);
+
+-- Table for storing basic song player links
+CREATE TABLE IF NOT EXISTS SongPlayers(
+    PlayerID int PRIMARY KEY AUTO_INCREMENT,
+    SongID int NOT NULL,
+    Source VARCHAR(64),
+    PlayerUrl VARCHAR(256),
+    FOREIGN KEY (SongID) REFERENCES Songs(SongID)
 );
 
 -- Table for storing basic anime episodes records
@@ -133,6 +139,27 @@ CREATE TABLE IF NOT EXISTS Episodes(
     Title VARCHAR(256) NOT NULL,
     Aired DATE,
     FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)
+);
+
+-- Table for storing anime episode player info
+CREATE TABLE IF NOT EXISTS EpisodePlayers(
+    PlayerID int PRIMARY KEY AUTO_INCREMENT,
+    EpisodeID int NOT NULL,
+    LangCode CHAR(2) NOT NULL,
+    Source VARCHAR(64),
+    Quality VARCHAR(16),
+    PlayerUrl VARCHAR(256),
+    FOREIGN KEY (EpisodeID) REFERENCES Episodes(EpisodeID),
+    FOREIGN KEY (LangCode) REFERENCES Languages(LangCode)
+);
+
+-- Table for storing anime openings and endings
+CREATE TABLE IF NOT EXISTS EpisodeSongs(
+    EntryID int PRIMARY KEY AUTO_INCREMENT,
+    EpisodeID int NOT NULL,
+    SongID int NOT NULL,
+    FOREIGN KEY (EpisodeID) REFERENCES Episodes(EpisodeID),
+    FOREIGN KEY (SongID) REFERENCES Songs(SongID)
 );
 
 -- Table for storing episode language info
@@ -149,15 +176,3 @@ INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('de', 'Germa
 INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('fr', 'French', 'fr_flag.png');
 INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('it', 'Italian', 'it_flag.png');
 INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('jp', 'Japanese', 'jp_flag.png');
-
--- Table for storing anime episode player info
-CREATE TABLE IF NOT EXISTS EpisodePlayers(
-    PlayerID int PRIMARY KEY AUTO_INCREMENT,
-    EpisodeID int NOT NULL,
-    LangCode CHAR(2) NOT NULL,
-    Source VARCHAR(64),
-    Quality VARCHAR(16),
-    PlayerUrl VARCHAR(256),
-    FOREIGN KEY (EpisodeID) REFERENCES Episodes(EpisodeID),
-    FOREIGN KEY (LangCode) REFERENCES Languages(LangCode)
-);

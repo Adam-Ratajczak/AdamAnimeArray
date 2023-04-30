@@ -293,7 +293,7 @@ func write_player_to_db(p Player) int {
 }
 
 func write_song_to_db(s Song) int {
-	row := db.QueryRow("SELECT SongID FROM Songs WHERE AnimeID = ? ABD Title LIKE ? AND Artist LIKE ?", s.AnimeID, s.Title, s.Artist)
+	row := db.QueryRow("SELECT SongID FROM Songs WHERE Title LIKE ? AND Artist LIKE ?", s.Title, s.Artist)
 	id := 0
 
 	err := row.Scan(&id)
@@ -301,7 +301,7 @@ func write_song_to_db(s Song) int {
 	if err == nil {
 		return id
 	}
-	res, err := db.Exec("INSERT INTO Songs(AnimeID, Title, Artist, SongType, SpotifyUrl) VALUES (?, ?, ?, ?, ?);", s.AnimeID, s.Title, s.Artist, s.Type, s.SpotifyURL)
+	res, err := db.Exec("INSERT INTO Songs(Title, Artist, SongType) VALUES (?, ?, ?);", s.Title, s.Artist, s.Type)
 
 	if err != nil {
 		fmt.Println(err)
@@ -315,6 +315,38 @@ func write_song_to_db(s Song) int {
 		fmt.Println("Written song \"", s.Title+"\" of Author ", s.Artist)
 
 		return int(id)
+	}
+}
+
+func write_song_player_to_db(p SongPlayer) int {
+	res, err := db.Exec("INSERT INTO SongPlayers(SongID, Source, PlayerUrl) VALUES (?, ?, ?);", p.SongID, p.Source, p.Player)
+
+	if err != nil {
+		fmt.Println(err)
+		return -1
+	} else {
+		id, err := res.LastInsertId()
+		if err != nil {
+			return -1
+		}
+		return int(id)
+	}
+}
+
+func write_song_episode_binding_to_db(AnimeID, EpBegin, EpEnd, SongID int) {
+	for i := EpBegin; i <= EpEnd; i++ {
+		id := find_ep_in_db(AnimeID, i)
+
+		if id == -1 {
+			continue
+		}
+
+		_, err := db.Exec("INSERT INTO EpisodeSongs(EpisodeID, SongID) VALUES (?, ?);", id, SongID)
+
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
 	}
 }
 

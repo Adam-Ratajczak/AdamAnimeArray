@@ -53,13 +53,17 @@ type AnimeRequest struct {
 	Mode       int
 }
 
+type SongPlayer struct {
+	Source    string
+	PlayerUrl string
+}
+
 type Song struct {
-	SongID     int
-	AnimeID    int
-	Title      string
-	Artist     string
-	Type       string
-	SpotifyURL string
+	SongID  int
+	Title   string
+	Artist  string
+	Type    string
+	Players []SongPlayer
 }
 
 type Episode struct {

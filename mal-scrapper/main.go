@@ -16,7 +16,7 @@ import (
 
 var db *sql.DB
 
-const MODE = 3
+const MODE = 4
 const MAX_CONCURRENT_JOBS = 40
 
 func loadSQLFile(path string) error {
@@ -125,6 +125,163 @@ func fix_posters(url, name string) {
 	c.Visit(url)
 }
 
+func add_songs(url, name string) {
+	anime_id := find_anime_in_db(name)
+	if anime_id == -1 {
+		return
+	}
+
+	c := colly.NewCollector()
+	c.SetRequestTimeout(120 * time.Second)
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visiting", r.URL)
+	})
+
+	c.OnResponse(func(r *colly.Response) {
+		fmt.Println("Got a response from", r.Request.URL)
+	})
+
+	c.OnError(func(r *colly.Response, e error) {
+		fmt.Println("Got this error:", e)
+	})
+
+	c.OnHTML("body", func(e *colly.HTMLElement) {
+
+		e.ForEach("div.opnening", func(i int, h *colly.HTMLElement) {
+			h.ForEach("tr", func(j int, s *colly.HTMLElement) {
+				title := s.ChildText("td:nth-of-type(2)")
+				if title == "" {
+					return
+				}
+				if strings.Contains(title, "Music") {
+					return
+				}
+
+				title = strings.Split(title, "\"")[1]
+				song := Song{}
+				song.Title = title
+				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
+				song.Type = "opening"
+				if song.Artist == "" {
+					return
+				}
+				song_id := write_song_to_db(song)
+
+				s.ForEach("input", func(k int, link *colly.HTMLElement) {
+					p := SongPlayer{}
+					p.SongID = song_id
+					p.Player = link.Attr("value")
+					p.Source = strings.Split(link.Attr("id"), "_url_")[0]
+
+					if p.Player == "" {
+						return
+					}
+
+					write_song_player_to_db(p)
+				})
+
+				episodes := s.ChildText("span.theme-song-episode")
+
+				if episodes == "" {
+					num := find_ep_num_in_db(anime_id)
+					write_song_episode_binding_to_db(anime_id, 1, num, song_id)
+				} else {
+					episodes = strings.Replace(episodes, "(eps ", "", -1)
+					episodes = strings.Replace(episodes, ")", "", -1)
+					arr := strings.Split(episodes, "-")
+
+					if len(arr) == 1 {
+						ep, err := strconv.ParseInt(arr[0], 10, 32)
+						if err != nil {
+							return
+						}
+
+						write_song_episode_binding_to_db(anime_id, int(ep), int(ep), song_id)
+					} else if len(arr) == 2 {
+						ep_begin, err := strconv.ParseInt(arr[0], 10, 32)
+						if err != nil {
+							return
+						}
+						ep_end, err := strconv.ParseInt(arr[1], 10, 32)
+						if err != nil {
+							return
+						}
+
+						write_song_episode_binding_to_db(anime_id, int(ep_begin), int(ep_end), song_id)
+					}
+				}
+			})
+		})
+		e.ForEach("div.ending", func(i int, h *colly.HTMLElement) {
+			h.ForEach("tr", func(j int, s *colly.HTMLElement) {
+				title := s.ChildText("td:nth-of-type(2)")
+				if title == "" {
+					return
+				}
+				if strings.Contains(title, "Music") {
+					return
+				}
+
+				title = strings.Split(title, "\"")[1]
+				song := Song{}
+				song.Title = title
+				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
+				song.Type = "ending"
+				if song.Artist == "" {
+					return
+				}
+				song_id := write_song_to_db(song)
+
+				s.ForEach("input", func(k int, link *colly.HTMLElement) {
+					p := SongPlayer{}
+					p.SongID = song_id
+					p.Player = link.Attr("value")
+					p.Source = strings.Split(link.Attr("id"), "_url_")[0]
+
+					if p.Player == "" {
+						return
+					}
+
+					write_song_player_to_db(p)
+				})
+
+				episodes := s.ChildText("span.theme-song-episode")
+
+				if episodes == "" {
+					num := find_ep_num_in_db(anime_id)
+					write_song_episode_binding_to_db(anime_id, 1, num, song_id)
+				} else {
+					episodes = strings.Replace(episodes, "(eps ", "", -1)
+					episodes = strings.Replace(episodes, ")", "", -1)
+					arr := strings.Split(episodes, "-")
+
+					if len(arr) == 1 {
+						ep, err := strconv.ParseInt(arr[0], 10, 32)
+						if err != nil {
+							return
+						}
+
+						write_song_episode_binding_to_db(anime_id, int(ep), int(ep), song_id)
+					} else if len(arr) == 2 {
+						ep_begin, err := strconv.ParseInt(arr[0], 10, 32)
+						if err != nil {
+							return
+						}
+						ep_end, err := strconv.ParseInt(arr[1], 10, 32)
+						if err != nil {
+							return
+						}
+
+						write_song_episode_binding_to_db(anime_id, int(ep_begin), int(ep_end), song_id)
+					}
+				}
+			})
+		})
+	})
+
+	c.Visit(url)
+}
+
 func add_mal_data(url, name string) {
 	anime_id := find_anime_in_db(name)
 	if anime_id == -1 {
@@ -185,6 +342,8 @@ var ErrBlock = Block{
 			fix_posters(url, name)
 		} else if MODE == 3 {
 			add_mal_data(url, name)
+		} else if MODE == 4 {
+			add_songs(url, name)
 		}
 	},
 	Catch: func(e Exception) {

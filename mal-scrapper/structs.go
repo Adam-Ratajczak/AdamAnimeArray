@@ -13,11 +13,15 @@ type Animes struct {
 }
 
 type Song struct {
-	AnimeID    int
-	Title      string
-	Artist     string
-	Type       string
-	SpotifyURL string
+	Title  string
+	Artist string
+	Type   string
+}
+
+type SongPlayer struct {
+	SongID int
+	Source string
+	Player string
 }
 
 type Episode struct {

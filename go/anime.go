@@ -102,27 +102,6 @@ func anime(c echo.Context) error {
 	return c.JSON(http.StatusOK, anime)
 }
 
-func animeSongs(c echo.Context) error {
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		return c.NoContent(http.StatusBadRequest)
-	}
-	rows, err := db.Query("SELECT * FROM Songs Where AnimeID = ?", id)
-	songs := []Song{}
-	if err != nil {
-		return err
-	}
-	for rows.Next() {
-		song := Song{}
-		err := rows.Scan(&song.SongID, &song.AnimeID, &song.Title, &song.Artist, &song.Type, &song.SpotifyURL)
-		if err != nil {
-			return err
-		}
-		songs = append(songs, song)
-	}
-	return c.JSON(http.StatusOK, songs)
-}
-
 func animeEpisodes(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
@@ -139,6 +118,7 @@ func animeEpisodes(c echo.Context) error {
 		if err != nil {
 			return err
 		}
+
 		episodes = append(episodes, episode)
 	}
 	return c.JSON(http.StatusOK, episodes)
@@ -246,6 +226,49 @@ func animeEpisode(c echo.Context) error {
 		return err
 	}
 	return c.JSON(http.StatusOK, episode)
+}
+
+func episodeSongs(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	ep, err := strconv.Atoi(c.Param("ep"))
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	ep_id := 0
+	row := db.QueryRow("SELECT EpisodeID FROM Episodes WHERE AnimeID = ? AND EpisodeNr = ?", id, ep)
+	err = row.Scan(&ep_id)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return c.NoContent(http.StatusBadRequest)
+		}
+		return err
+	}
+
+	songs := []Song{}
+	rows, err := db.Query("SELECT SongID FROM EpisodeSongs WHERE EpisodeID = ?", ep_id)
+	if err != nil {
+		return err
+	}
+
+	for rows.Next() {
+		song_id := 0
+		err = rows.Scan(&song_id)
+		if err != nil {
+			return err
+		}
+
+		song, err := get_song(song_id)
+		if err != nil {
+			return err
+		}
+
+		songs = append(songs, song)
+	}
+	return c.JSON(http.StatusOK, songs)
 }
 
 func getType(id int, column string, table string) []int {

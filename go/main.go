@@ -27,7 +27,9 @@ func main() {
 
 	e := echo.New()
 	e.Use(middleware.Recover(), middleware.Logger(), middleware.CORS())
-	e.GET("info", DatabaseInfo)
+	e.GET("/info", DatabaseInfo)
+	e.GET("/songs", songs)
+	e.GET("/songs/:id", song)
 	animes := e.Group("/animes")
 	{
 		animes.GET("/", all)
@@ -36,14 +38,12 @@ func main() {
 		animes.GET("/filter", filter)
 		animes.POST("/filter", filter)
 
-		animes.GET("/songs/:id", song)
-
 		animes.GET("/:id", anime)
 		animes.GET("/:id/comments", UserCommentList)
-		animes.GET("/:id/songs", animeSongs)
 		animes.GET("/:id/episodes", animeEpisodes)
 		animes.GET("/:id/episodes/:ep", animeEpisode)
 		animes.GET("/:id/episodes/:ep/players", animePlayers)
+		animes.GET("/:id/episodes/:ep/songs", episodeSongs)
 		animes.GET("/:id/episodes/:ep/players/:lang", animePlayersFromLanguage)
 		animes.GET("/:id/episodes/:ep/languages", episodeLanguages)
 		animes.GET("/:id/genres", getAnimeGroup("Genres"))

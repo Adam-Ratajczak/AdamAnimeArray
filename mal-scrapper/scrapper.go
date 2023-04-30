@@ -261,14 +261,13 @@ func steal_anime(url string) int {
 
 				title = strings.Split(title, "\"")[1]
 				song := Song{}
-				song.AnimeID = anime_id
 				song.Title = title
 				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
 				song.Type = "opening"
 
 				s.ForEach("input", func(k int, link *colly.HTMLElement) {
 					if strings.Contains(link.Attr("value"), "spotify") {
-						song.SpotifyURL = link.Attr("value")
+						// song.SpotifyURL = link.Attr("value")
 						return
 					}
 				})
@@ -288,14 +287,13 @@ func steal_anime(url string) int {
 
 				title = strings.Split(title, "\"")[1]
 				song := Song{}
-				song.AnimeID = anime_id
 				song.Title = title
 				song.Artist = strings.Replace(s.ChildText("span.theme-song-artist"), "by ", "", -1)
 				song.Type = "ending"
 
 				s.ForEach("input", func(k int, link *colly.HTMLElement) {
 					if strings.Contains(link.Attr("value"), "spotify") {
-						song.SpotifyURL = link.Attr("value")
+						// song.SpotifyURL = link.Attr("value")
 						return
 					}
 				})
