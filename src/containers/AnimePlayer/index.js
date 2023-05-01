@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { Menubar } from '../../widgets'
-import { GetAnime, GetEpisodeLanguages, GetEpisodes, GetPlayers } from "../../db_module"
+import { GetAnime, GetEpisodeLanguages, GetEpisodes, GetPlayers, GetSongs } from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
 
@@ -113,6 +113,7 @@ function AnimePlayer() {
   const [EpisodeTitle, SetEpisodeTitle] = useState(0)
   const [EpisodeControls, SetEpisodeControls] = useState(0)
   const [Aired, SetAired] = useState(0)
+  const [Songs, SetSongs] = useState([])
   const [PlayerUrl, SetPlayerUrl] = useState("/NoPlayer")
   const [CurrLang, SetCurrLang] = useState("")
   const [CurrPlayer, SetCurrPlayer] = useState("")
@@ -125,9 +126,9 @@ function AnimePlayer() {
         SetAnimeTitle(result.AnimeTitle);
         SetEnglishTitle(result.EnglishTitle);
 
-        if(result.EnglishTitle == ""){
+        if (result.EnglishTitle == "") {
           document.getElementById("EpList").style.height = "532px"
-        }else{
+        } else {
           document.getElementById("EpList").style.height = "500px"
         }
 
@@ -136,8 +137,8 @@ function AnimePlayer() {
         }
 
         SetEpisodeControls(result.EpisodeNum > 1 ? (<div id="EpControls">
-          {EpNum != 1 ? (<a href={"/anime/"+AnimeID+"/ep/"+(EpNum-1).toString()} style={{backgroundColor: "red"}}>Previous Episode</a>) : (<a style={{backgroundColor: "gray"}}>Previous Episode</a>)}
-          {EpNum != result.EpisodeNum ? (<a href={"/anime/"+AnimeID+"/ep/"+(EpNum+1).toString()} style={{backgroundColor: "green"}}>Next Episode</a>) : (<a style={{backgroundColor: "gray"}}>Next Episode</a>)}
+          {EpNum != 1 ? (<a href={"/anime/" + AnimeID + "/ep/" + (EpNum - 1).toString()} style={{ backgroundColor: "red" }}>Previous Episode</a>) : (<a style={{ backgroundColor: "gray" }}>Previous Episode</a>)}
+          {EpNum != result.EpisodeNum ? (<a href={"/anime/" + AnimeID + "/ep/" + (EpNum + 1).toString()} style={{ backgroundColor: "green" }}>Next Episode</a>) : (<a style={{ backgroundColor: "gray" }}>Next Episode</a>)}
         </div>) : (<></>))
       })
   }, []);
@@ -205,6 +206,51 @@ function AnimePlayer() {
     }
   }, []);
 
+  useEffect(() => {
+    document.getElementById("EpSongs").onclick = () => {
+      document.getElementById("SongMainContainer").style.display = "flex"
+      document.getElementById("SongContainer").style.display = "flex"
+    }
+    document.getElementById("SongExit").onclick = () => {
+      document.getElementById("SongMainContainer").style.display = "none"
+      document.getElementById("SongContainer").style.display = "none"
+    }
+
+    GetSongs(AnimeID, EpNum)
+      .then((response) => response.json())
+      .then((result) => {
+        if (result.length == 0) {
+          document.getElementById("EpSongs").style.display = "none"
+        }
+
+        let arr = []
+
+        for (let elem of result) {
+          arr.push((
+            <tr>
+              <td>{elem.Title}</td>
+              <td>{elem.Artist}</td>
+              <td>{elem.Type}</td>
+            </tr>
+          ))
+
+          let players = []
+
+          for (let p of elem.Players) {
+            players.push((<span><a class="MusicLink" href={p.PlayerUrl} target="_blank">{p.Source.charAt(0).toUpperCase() + p.Source.slice(1)}</a>, </span>))
+          }
+
+          if(elem.Players.length == 0){
+            arr.push((<tr><td style={{textAlign: "center"}} colSpan="3">No player information provided for this track!</td></tr>))
+          }else{
+            arr.push((<tr><th>Players:</th><td colSpan={2}>{players}</td></tr>))
+          }
+        }
+
+        SetSongs(arr)
+      })
+  }, [])
+
   return (
     <div id="main">
       <Menubar />
@@ -227,8 +273,21 @@ function AnimePlayer() {
               </tbody>
             </table>
             <a href={"/anime/" + AnimeID.toString()}>Back to anime info...</a>
+            <a id="EpSongs">Show episode opening / ending</a>
             {EpisodeControls}
           </div>
+        </div>
+      </div>
+
+      <div id="SongMainContainer">
+        <div id="SongContainer">
+          <h1 id="SongExit">X</h1>
+          <table>
+            <tbody>
+              <tr><th>Title:</th><th>Artist:</th><th>Type:</th></tr>
+              {Songs}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

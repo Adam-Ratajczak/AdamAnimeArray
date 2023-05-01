@@ -1,4 +1,3 @@
-
 -- Types of anime in the database
 CREATE TABLE IF NOT EXISTS Types(
     TypeID int PRIMARY KEY AUTO_INCREMENT,
@@ -117,8 +116,8 @@ CREATE TABLE IF NOT EXISTS AnimeRelations(
 -- Table for storing basic anime songs
 CREATE TABLE IF NOT EXISTS Songs(
     SongID int PRIMARY KEY AUTO_INCREMENT,
-    Title VARCHAR(64) NOT NULL,
-    Artist VARCHAR(64) NOT NULL,
+    Title VARCHAR(256) NOT NULL,
+    Artist VARCHAR(256) NOT NULL,
     SongType VARCHAR(32) NOT NULL
 );
 

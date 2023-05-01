@@ -148,6 +148,10 @@ export function GetPlayers(AnimeID, id, lang = ''){
     }
 }
 
+export function GetSongs(AnimeID, id){
+    return FetchToApiGet(`/animes/` + AnimeID.toString() + `/episodes/` + id.toString() + `/songs`);
+}
+
 export function FilterAnimes(ABegin, AEnd, name, types, genres, themes, studios, producers, demographics){
     let req = {
         ABegin: ABegin,
