@@ -140,6 +140,21 @@ CREATE TABLE IF NOT EXISTS Episodes(
     FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)
 );
 
+-- Table for storing episode language info
+CREATE TABLE IF NOT EXISTS Languages(
+    LangCode CHAR(2) PRIMARY KEY,
+    LanguageName VARCHAR(64),
+    LanguageFlag VARCHAR(256)
+);
+
+INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('pl', 'Polish', 'pl_flag.png');
+INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('en', 'English', 'us_flag.png');
+INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('gb', 'British English', 'gb_flag.png');
+INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('de', 'German', 'ger_flag.png');
+INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('fr', 'French', 'fr_flag.png');
+INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('it', 'Italian', 'it_flag.png');
+INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('jp', 'Japanese', 'jp_flag.png');
+
 -- Table for storing anime episode player info
 CREATE TABLE IF NOT EXISTS EpisodePlayers(
     PlayerID int PRIMARY KEY AUTO_INCREMENT,
@@ -160,18 +175,3 @@ CREATE TABLE IF NOT EXISTS EpisodeSongs(
     FOREIGN KEY (EpisodeID) REFERENCES Episodes(EpisodeID),
     FOREIGN KEY (SongID) REFERENCES Songs(SongID)
 );
-
--- Table for storing episode language info
-CREATE TABLE IF NOT EXISTS Languages(
-    LangCode CHAR(2) PRIMARY KEY,
-    LanguageName VARCHAR(64),
-    LanguageFlag VARCHAR(256)
-);
-
-INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('pl', 'Polish', 'pl_flag.png');
-INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('en', 'English', 'us_flag.png');
-INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('gb', 'British English', 'gb_flag.png');
-INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('de', 'German', 'ger_flag.png');
-INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('fr', 'French', 'fr_flag.png');
-INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('it', 'Italian', 'it_flag.png');
-INSERT INTO Languages(LangCode, LanguageName, LanguageFlag) VALUES ('jp', 'Japanese', 'jp_flag.png');

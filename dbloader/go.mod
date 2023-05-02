@@ -1,6 +1,8 @@
-module github.com/Adam-Ratajczak/mal-scrapper
+module github.com/Adam-Ratajczak/aaa-export-tool
 
 go 1.19
+
+require github.com/go-sql-driver/mysql v1.7.0
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.1 // indirect
@@ -8,7 +10,6 @@ require (
 	github.com/antchfx/htmlquery v1.3.0 // indirect
 	github.com/antchfx/xmlquery v1.3.15 // indirect
 	github.com/antchfx/xpath v1.2.4 // indirect
-	github.com/go-sql-driver/mysql v1.7.0 // indirect
 	github.com/go-zoox/core-utils v1.2.7 // indirect
 	github.com/go-zoox/fetch v1.7.6 // indirect
 	github.com/go-zoox/headers v1.0.6 // indirect
