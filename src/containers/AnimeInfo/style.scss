@@ -201,3 +201,16 @@
 //   border-top-right-radius: 5px;
 //   border-bottom-right-radius: 5px;
 }
+
+#InfoHeaderDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+    padding: 10px;
+}
+
+#clearhistory{
+    color: $foreground-color;
+}

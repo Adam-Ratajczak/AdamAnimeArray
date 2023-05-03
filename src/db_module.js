@@ -274,3 +274,12 @@ export function GetProgress(token, id){
     
     return FetchToApiPost(`/auth/progress/get`, req);
 }
+
+export function ClearProgress(token, id){
+    let req = {
+        Token: token,
+        AnimeID: id
+    };
+    
+    return FetchToApiPost(`/auth/progress/rem`, req);
+}

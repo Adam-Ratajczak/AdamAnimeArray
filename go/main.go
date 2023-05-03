@@ -90,6 +90,7 @@ func main() {
 		auth.POST("/comment/write", UserCommentAnime)
 		auth.POST("/progress", UserProgress)
 		auth.POST("/progress/get", GetAnimeProgress)
+		auth.POST("/progress/rem", DeleteAnimeProgress)
 	}
 	err = e.Start(":2137")
 	if err != nil {

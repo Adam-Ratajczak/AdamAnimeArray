@@ -421,6 +421,28 @@ func UserProgress(c echo.Context) error {
 	return c.NoContent(http.StatusOK)
 }
 
+func DeleteAnimeProgress(c echo.Context) error {
+	rq := AnimeUserRequest{}
+	err := c.Bind(&rq)
+	if err != nil {
+		return err
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	_, err = db.Exec("DELETE FROM UserAnimeProgress WHERE EpisodeID IN (SELECT EpisodeID FROM Episodes WHERE AnimeID = ?);", rq.AnimeID)
+	if err != nil {
+		return err
+	}
+
+	return c.NoContent(http.StatusOK)
+}
+
 func GetAnimeProgress(c echo.Context) error {
 	rq := AnimeUserRequest{}
 	err := c.Bind(&rq)

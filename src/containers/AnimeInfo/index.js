@@ -4,6 +4,7 @@ import {
   GetAnime,
   GetAnimeRelations,
   GetAnimeRange,
+  ClearProgress,
 } from "../../db_module";
 import "./style.scss";
 import plus from "./plus.png";
@@ -210,6 +211,12 @@ function AnimeInfo() {
     })();
   }, []);
 
+  const foo = () => {
+    ClearProgress(LoginMan.Token(), parseInt(AnimeID))
+
+    window.location.reload()
+  }
+
   const options = {
     weekday: "short",
     year: "numeric",
@@ -272,7 +279,7 @@ function AnimeInfo() {
               <tr>
                 <td class="AnimePropertyName">Themes: </td>
                 <td>
-                  {AnimeThemes !== ""? AnimeThemes : "None"}
+                  {AnimeThemes !== "" ? AnimeThemes : "None"}
                 </td>
               </tr>
               <tr>
@@ -355,7 +362,7 @@ function AnimeInfo() {
         <div id="AnimeInfoContainer">
           {isLoaded() ? (
             <>
-              <h2 class="InfoHeader">Episodes:</h2>
+              <div id="InfoHeaderDiv"><h2 class="InfoHeader">Episodes:</h2>{LoginMan.LoggedIn() ? (<span id="clearhistory" onClick={foo}>clear history</span>) : (<></>)}</div>
               <EpisodeBtn AnimeID={AnimeID} />
             </>
           ) : (
