@@ -6,7 +6,7 @@
 3. Install go
 4. Install mysql database, using XAMPP is adviceable
 5. Create database for your animes
-6. Write .env file with correct database connection string. It should look like that: 'user:password@(host:port)/database_name' and paste it inside folders 'go' and 'dbloader'
+6. Write .env file with correct database connection string. It should look like that: MARIADB_CONN="user:password@(host:port)/database_name" and paste it inside folders 'go' and 'dbloader'
 7. To obtain database:
    1. Get zip archive from repo releases
    2. Compile and run dbloader subproject
