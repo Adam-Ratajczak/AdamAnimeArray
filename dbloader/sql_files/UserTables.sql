@@ -12,22 +12,6 @@ INSERT INTO PrivilegeTypes(PrivilegeID, PrivilegeName) VALUES (5, 'MODIFY_ANIME'
 INSERT INTO PrivilegeTypes(PrivilegeID, PrivilegeName) VALUES (6, 'MODIFY_THEMES');
 INSERT INTO PrivilegeTypes(PrivilegeID, PrivilegeName) VALUES (7, 'ADMIN');
 
-CREATE TABLE IF NOT EXISTS DokiThemes(
-    ThemeID INT PRIMARY KEY AUTO_INCREMENT,
-    ThemeName VARCHAR(255) NOT NULL,
-    ThemeBaseColor CHAR(9),
-    ThemeBgColor CHAR(9),
-    ThemeBgColorDark CHAR(9),
-    ThemeBgColorTheme CHAR(9),
-    ThemeBgTiltedColor CHAR(9),
-    ThemeBtnHoverColor CHAR(9),
-    ThemeBtnHoverTextColor CHAR(9),
-    ThemeFgColor CHAR(9),
-    ThemeTextColor CHAR(9),
-    ThemeTextTiltedColor CHAR(9),
-    ThemeBgPicture VARCHAR(255)
-);
-
 CREATE TABLE IF NOT EXISTS Users(
     UserID INT PRIMARY KEY AUTO_INCREMENT,
     UserName VARCHAR(64) UNIQUE NOT NULL,
@@ -50,14 +34,6 @@ CREATE TABLE IF NOT EXISTS UserPrivileges(
     PrivilegeID INT NOT NULL,
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (PrivilegeID) REFERENCES PrivilegeTypes(PrivilegeID)
-);
-
-CREATE TABLE IF NOT EXISTS UserDokiThemes(
-    EntryID INT PRIMARY KEY AUTO_INCREMENT,
-    UserID INT NOT NULL,
-    ThemeID INT NOT NULL,
-    FOREIGN KEY (UserID) REFERENCES Users(UserID),
-    FOREIGN KEY (ThemeID) REFERENCES DokiThemes(ThemeID)
 );
 
 CREATE TABLE IF NOT EXISTS ChatEntry(

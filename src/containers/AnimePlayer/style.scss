@@ -1,7 +1,7 @@
 @import 'src/styles/colors';
 @import 'src/styles/select';
 
-#AnimeInfoHeaderDiv{
+#AnimeInfoHeaderDiv {
     background-color: #630f78;
     color: $text-color;
     margin: 0px;
@@ -11,16 +11,16 @@
     justify-content: space-between;
 }
 
-#AnimeInfoHeaderDiv > h1{
+#AnimeInfoHeaderDiv>h1 {
     margin: 0%;
     width: 100%;
 }
 
-#AnimeInfoHeaderDiv i{
+#AnimeInfoHeaderDiv i {
     font-weight: 100;
 }
 
-#PlayerContent{
+#PlayerContent {
     display: flex;
     flex-direction: Row;
     height: 100%;
@@ -28,12 +28,12 @@
     background-color: $background-color-theme;
 }
 
-#PlayerMainDiv{
+#PlayerMainDiv {
     display: flex;
     flex-direction: column;
 }
 
-#EpList{
+#EpList {
     width: 300px;
     height: 500px;
     display: flex;
@@ -41,14 +41,14 @@
     background-color: $background-tilted-color;
 }
 
-#EpList > div{
+#EpList>div {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-#EpList > h2{
+#EpList>h2 {
     background-color: $background-color-dark;
     flex-basis: 60px;
     margin: 0%;
@@ -58,25 +58,25 @@
     align-items: center;
 }
 
-.EpisodeEntry{
+.EpisodeEntry {
     display: flex;
     flex-direction: row;
 }
 
-a.EpisodeEntry:hover{
+a.EpisodeEntry:hover {
     background-color: $btn-hover-text-color;
     color: $base-color;
 }
 
-span.EpisodeEntry{
+span.EpisodeEntry {
     background-color: $background-color-dark;
 }
 
-.EpisodeEntry > span{
+.EpisodeEntry>span {
     padding-left: 5px;
 }
 
-.EpTitle{
+.EpTitle {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -84,7 +84,7 @@ span.EpisodeEntry{
     line-height: 40px;
 }
 
-.EpisodeNr{
+.EpisodeNr {
     min-width: 40px;
     line-height: 40px;
     padding-left: 0%;
@@ -92,21 +92,17 @@ span.EpisodeEntry{
     font-weight: bold;
 }
 
-a > .EpisodeNr{
-    background-color: $foreground-color;
-}
-
-span > .EpisodeNr{
+span>.EpisodeNr {
     background-color: $btn-hover-text-color;
     color: $base-color;
 }
 
-a{
+a {
     color: $text-color;
     text-decoration: none;
 }
 
-#PlayerMainDiv{
+#PlayerMainDiv {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -115,17 +111,17 @@ a{
     padding: 10px;
 }
 
-#PlayerInfoDiv th{
+#PlayerInfoDiv th {
     text-align: left;
     width: 35%;
 }
 
-#Player{
+#Player {
     height: 420px;
     width: 746px;
 }
 
-#PlayerHeaders{
+#PlayerHeaders {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,25 +129,25 @@ a{
     margin-bottom: 20px;
 }
 
-#LanguageList{
+#LanguageList {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: flex-start;
 }
 
-#LanguageList img{
+#LanguageList img {
     width: 2em;
     height: 2em;
     margin: 10px;
     filter: brightness(0.75)
 }
 
-#LanguageList img.active{
+#LanguageList img.active {
     filter: brightness(1.25)
 }
 
-#PlayerDiv{
+#PlayerDiv {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -161,7 +157,7 @@ a{
     margin-right: 20px;
 }
 
-#PlayerDiv > label{
+#PlayerDiv>label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -169,7 +165,7 @@ a{
     width: 100%;
 }
 
-#PlayerInfoDiv{
+#PlayerInfoDiv {
     width: 300px;
     height: 100%;
     display: flex;
@@ -178,17 +174,17 @@ a{
     align-items: center;
 }
 
-#PlayerInfoDiv > a{
+#PlayerInfoDiv>a {
     color: $foreground-color;
     width: 100%;
     text-align: left;
 }
 
-#PlayerInfoDiv > table{
+#PlayerInfoDiv>table {
     width: 100%;
 }
 
-#EpControls{
+#EpControls {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -197,14 +193,14 @@ a{
     user-select: none;
 }
 
-#EpControls > a{
+#EpControls>a {
     padding: 10px;
     width: 40%;
     text-align: center;
     cursor: pointer;
 }
 
-#SongMainContainer{
+#SongMainContainer {
     position: absolute;
     left: 0;
     top: 0;
@@ -215,7 +211,7 @@ a{
     align-items: center;
 }
 
-#SongContainer{
+#SongContainer {
     background-color: white;
     width: 40%;
     min-height: 60%;
@@ -226,19 +222,32 @@ a{
     padding: 10px;
 }
 
-#SongExit{
+#SongExit {
     color: black;
     text-align: right;
     margin: 0px;
 }
 
-#SongContainer a{
+#SongContainer a {
     color: #630f78;
 }
 
-#SongContainer th{
+#SongContainer th {
     text-align: left;
 }
-#SongContainer td::first-letter{
+
+#SongContainer td::first-letter {
     text-transform: uppercase;
+}
+
+#IframeWrapper {
+    display: inline-block;
+    position: relative;
+    max-width: min-content;
+    max-height: min-content;
+}
+
+#IframeWrapper iframe {
+    vertical-align: top;
+    pointer-events: none;
 }

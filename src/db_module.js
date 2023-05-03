@@ -205,9 +205,8 @@ export function GetWatchlist(id, token){
     return FetchToApiPost(`/auth/watchlist`, req);
 }
 
-export function AddToWatchlist(id, token, AnimeID){
+export function AddToWatchlist(token, AnimeID){
     let req = {
-        UserID: id,
         Token: token,
         AnimeID: AnimeID,
     };
@@ -215,9 +214,8 @@ export function AddToWatchlist(id, token, AnimeID){
     return FetchToApiPost(`/auth/watchlist/add`, req);
 }
 
-export function RemoveFromWatchlist(id, token, AnimeID){
+export function RemoveFromWatchlist(token, AnimeID){
     let req = {
-        UserID: id,
         Token: token,
         AnimeID: AnimeID,
     };
@@ -255,4 +253,24 @@ export function WriteChat(token, id, reply, chattext){
     };
     
     return FetchToApiPost(`/auth/comment/write`, req);
+}
+
+export function ChangeProgress(token, id, EpNr, Progress){
+    let req = {
+        Token: token,
+        AnimeID: id,
+        EpNum: EpNr,
+        Mode: Progress
+    };
+    
+    return FetchToApiPost(`/auth/progress`, req);
+}
+
+export function GetProgress(token, id){
+    let req = {
+        Token: token,
+        AnimeID: id
+    };
+    
+    return FetchToApiPost(`/auth/progress/get`, req);
 }

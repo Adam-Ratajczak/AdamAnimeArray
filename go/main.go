@@ -88,6 +88,8 @@ func main() {
 		auth.POST("/watchlist/add", UserWatchlistAdd)
 		auth.POST("/watchlist/remove", UserWatchlistRem)
 		auth.POST("/comment/write", UserCommentAnime)
+		auth.POST("/progress", UserProgress)
+		auth.POST("/progress/get", GetAnimeProgress)
 	}
 	err = e.Start(":2137")
 	if err != nil {

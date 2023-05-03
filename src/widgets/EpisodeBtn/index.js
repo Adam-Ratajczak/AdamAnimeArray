@@ -1,19 +1,66 @@
-import './style.scss'
+import React, { useState, useEffect } from 'react'
+import { GetEpisodes, GetProgress } from "../../db_module"
+import './style.scss';
+import LoginMan from '../../login_manager';
 
-function EpisodeBtn(props){
-    let btns = [];
+function EpisodeBtn(props) {
+    const [Eps, SetEps] = useState([])
+    const [Progress, SetProgress] = useState([])
 
-    for(let i = 1; i <= props.EpisodeCount; i++){
-        if(i == props.EpisodeNum){
-            btns.push((<a href={"/anime/" + props.AnimeID + "/ep/" + i}><div class="EpBtn EpBtnSelected"><h3>{i}</h3></div></a>))
-        }else{
-            btns.push((<a href={"/anime/" + props.AnimeID + "/ep/" + i}><div class="EpBtn EpBtnRegular"><h3>{i}</h3></div></a>))
+    const AnimeID = props.AnimeID
+
+    useEffect(() => {
+        if (Eps.length == 0) {
+            if (LoginMan.LoggedIn() && Progress.length == 0) {
+                GetProgress(LoginMan.Token(), parseInt(AnimeID))
+                    .then((response) => response.json())
+                    .then((result) => {
+                        SetProgress(result)
+                    })
+            }
+
+            if (LoginMan.LoggedIn() != (Progress.length == 0)) {
+                GetEpisodes(AnimeID)
+                    .then((response) => response.json())
+                    .then((result) => {
+                        let to_sort = result;
+                        let list = []
+                        to_sort.sort((a, b) => {
+                            if (a.EpisodeNr < b.EpisodeNr) {
+                                return -1
+                            } else if (a.EpisodeNr == b.EpisodeNr) {
+                                return 0
+                            } else {
+                                return 1
+                            }
+                        })
+
+                        let i = 0
+                        for (let ep of to_sort) {
+                            let color = "transparent"
+
+                            if (Progress.length > 0) {
+                                if (Progress[i] == 0) {
+                                    color = "transparent"
+                                } else if (Progress[i] == 1) {
+                                    color = "#ffff0044"
+                                } else if (Progress[i] == 2) {
+                                    color = "#00ff0044"
+                                }
+                            }
+
+                            list.push((<a href={"/anime/" + props.AnimeID + "/ep/" + ep.EpisodeNr}><div class="EpBtn EpBtnRegular"><h3 style={{backgroundColor: color}}>{ep.EpisodeNr}</h3></div></a>))
+                            i++
+                        }
+                        SetEps(list)
+                    })
+            }
         }
-    }
+    })
 
     return (
         <div class="EpBtnContainer">
-            {btns}
+            {Eps}
         </div>
     )
 }

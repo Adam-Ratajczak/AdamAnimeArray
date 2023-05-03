@@ -166,13 +166,19 @@ type UserAuthRequest struct {
 	Privilege string
 }
 
+type UserProgressRequest struct {
+	Token   string
+	AnimeID int
+	EpNum   int
+	Mode    int
+}
+
 type UserAuth struct {
 	UserID int
 	Token  string
 }
 
 type AnimeUserRequest struct {
-	UserID  int
 	Token   string
 	AnimeID int
 }

@@ -225,6 +225,7 @@ func animeEpisode(c echo.Context) error {
 		}
 		return err
 	}
+
 	return c.JSON(http.StatusOK, episode)
 }
 

@@ -5,3 +5,12 @@ CREATE TABLE IF NOT EXISTS UserSavedAnimes(
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)
 );
+
+CREATE TABLE IF NOT EXISTS UserAnimeProgress(
+    EntryID INT PRIMARY KEY AUTO_INCREMENT,
+    UserID INT NOT NULL,
+    EpisodeID INT NOT NULL,
+    Progress INT,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (EpisodeID) REFERENCES Episodes(EpisodeID)
+);

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { AnimePoster, EpisodeBtn } from "./../../widgets";
 import {
   GetAnime,
-  GetFilterEntry,
-  FilterAnimes,
   GetAnimeRelations,
   GetAnimeRange,
 } from "../../db_module";
@@ -358,11 +356,7 @@ function AnimeInfo() {
           {isLoaded() ? (
             <>
               <h2 class="InfoHeader">Episodes:</h2>
-              <EpisodeBtn
-                AnimeID={AnimeID}
-                EpisodeNum="0"
-                EpisodeCount={EpisodeNum}
-              />
+              <EpisodeBtn AnimeID={AnimeID} />
             </>
           ) : (
             <div

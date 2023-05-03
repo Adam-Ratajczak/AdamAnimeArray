@@ -369,6 +369,97 @@ func UserInfo(c echo.Context) error {
 	return c.JSON(http.StatusAccepted, res)
 }
 
+func UserProgress(c echo.Context) error {
+	rq := UserProgressRequest{}
+	err := c.Bind(&rq)
+	if err != nil {
+		return err
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	row = db.QueryRow("SELECT EpisodeID FROM Episodes WHERE AnimeID = ? AND EpisodeNr = ?;", rq.AnimeID, rq.EpNum)
+	ep_id := 0
+
+	err = row.Scan(&ep_id)
+	if err != nil {
+		return err
+	}
+
+	row = db.QueryRow("SELECT Progress FROM UserAnimeProgress WHERE UserID = ? AND EpisodeID = ?;", id, ep_id)
+	progress := 0
+	err = row.Scan(&progress)
+	if err != nil {
+		progress = 0
+	}
+
+	if rq.Mode > 1 {
+		return c.NoContent(http.StatusBadRequest)
+	}
+
+	if rq.Mode == progress {
+		if rq.Mode == 0 && progress == 0 {
+			_, err = db.Exec("INSERT INTO UserAnimeProgress(UserID, EpisodeID, Progress) VALUES (?, ?, 1);", id, ep_id)
+			if err != nil {
+				return err
+			}
+		} else if rq.Mode == 1 && progress == 1 {
+			_, err = db.Exec("UPDATE UserAnimeProgress SET Progress = 2 WHERE UserID = ? AND EpisodeID = ?;", id, ep_id)
+			if err != nil {
+				return err
+			}
+		}
+	} else {
+		return c.NoContent(http.StatusAlreadyReported)
+	}
+
+	return c.NoContent(http.StatusOK)
+}
+
+func GetAnimeProgress(c echo.Context) error {
+	rq := AnimeUserRequest{}
+	err := c.Bind(&rq)
+	if err != nil {
+		return err
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	rows, err := db.Query("SELECT EpisodeID FROM Episodes WHERE AnimeID = ? ORDER BY EpisodeNr;", rq.AnimeID)
+	if err != nil {
+		return err
+	}
+
+	res := []int{}
+
+	for rows.Next() {
+		ep_id := 0
+
+		err = rows.Scan(&ep_id)
+
+		row = db.QueryRow("SELECT Progress FROM UserAnimeProgress WHERE UserID = ? AND EpisodeID = ?;", id, ep_id)
+		progress := 0
+		err = row.Scan(&progress)
+		if err != nil {
+			progress = 0
+		}
+
+		res = append(res, progress)
+	}
+
+	return c.JSON(http.StatusOK, res)
+}
+
 func UserBasicInfo(c echo.Context) error {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {

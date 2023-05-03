@@ -340,6 +340,7 @@ func main() {
 			loadSQLFile(path)
 			return nil
 		})
+		loadSQLFile(path + "/structure/AnimeRelations.sql")
 	} else {
 		path += "/" + strings.Split(os.Getenv("MARIADB_CONN"), "/")[1]
 		os.Mkdir(path, os.ModeDir)

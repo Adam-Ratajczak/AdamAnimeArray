@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { Menubar } from '../../widgets'
-import { GetAnime, GetEpisodeLanguages, GetEpisodes, GetPlayers, GetSongs } from "../../db_module"
+import { GetAnime, GetEpisodeLanguages, GetEpisodes, GetPlayers, GetSongs, ChangeProgress, GetProgress } from "../../db_module"
 import redirect from '../../redirect'
 import './style.scss';
+import LoginMan from '../../login_manager';
 
 function LangWidget(props) {
   const [Flags, SetFlags] = useState([])
@@ -60,37 +61,62 @@ function LangWidget(props) {
 
 function EpList(props) {
   const [Eps, SetEps] = useState([])
+  const [Progress, SetProgress] = useState([])
 
   const AnimeID = props.AnimeID
   const EpNum = props.EpNum
 
   useEffect(() => {
     if (Eps.length == 0) {
-      GetEpisodes(AnimeID)
-        .then((response) => response.json())
-        .then((result) => {
-          let to_sort = result;
-          let list = []
-          to_sort.sort((a, b) => {
-            if (a.EpisodeNr < b.EpisodeNr) {
-              return -1
-            } else if (a.EpisodeNr == b.EpisodeNr) {
-              return 0
-            } else {
-              return 1
-            }
+      if (LoginMan.LoggedIn() && Progress.length == 0) {
+        GetProgress(LoginMan.Token(), parseInt(AnimeID))
+          .then((response) => response.json())
+          .then((result) => {
+            SetProgress(result)
           })
+      }
 
-          for (let ep of to_sort) {
-            let title = ep.Title
-            if (EpNum == ep.EpisodeNr) {
-              list.push(<span class="EpisodeEntry tooltip"><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span class="EpTitle">{title}</span></span>)
-            } else {
-              list.push(<a class="EpisodeEntry tooltip" href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span class="EpTitle">{title}</span></a>)
+      if (LoginMan.LoggedIn() != (Progress.length == 0)) {
+        GetEpisodes(AnimeID)
+          .then((response) => response.json())
+          .then((result) => {
+            let to_sort = result;
+            let list = []
+            to_sort.sort((a, b) => {
+              if (a.EpisodeNr < b.EpisodeNr) {
+                return -1
+              } else if (a.EpisodeNr == b.EpisodeNr) {
+                return 0
+              } else {
+                return 1
+              }
+            })
+
+            let i = 0
+            for (let ep of to_sort) {
+              let color = "purple"
+
+              if (Progress.length > 0) {
+                if (Progress[i] == 0) {
+                  color = "purple"
+                } else if (Progress[i] == 1) {
+                  color = "gold"
+                } else if (Progress[i] == 2) {
+                  color = "lime"
+                }
+              }
+
+              let title = ep.Title
+              if (EpNum == ep.EpisodeNr) {
+                list.push(<span class="EpisodeEntry tooltip"><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span class="EpTitle">{title}</span></span>)
+              } else {
+                list.push(<a class="EpisodeEntry tooltip" href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr" style={{ backgroundColor: color }}>{ep.EpisodeNr}</span><span class="EpTitle">{title}</span></a>)
+              }
+              i++
             }
-          }
-          SetEps(list)
-        })
+            SetEps(list)
+          })
+      }
     }
   })
 
@@ -240,15 +266,25 @@ function AnimePlayer() {
             players.push((<span><a class="MusicLink" href={p.PlayerUrl} target="_blank">{p.Source.charAt(0).toUpperCase() + p.Source.slice(1)}</a>, </span>))
           }
 
-          if(elem.Players.length == 0){
-            arr.push((<tr><td style={{textAlign: "center"}} colSpan="3">No player information provided for this track!</td></tr>))
-          }else{
+          if (elem.Players.length == 0) {
+            arr.push((<tr><td style={{ textAlign: "center" }} colSpan="3">No player information provided for this track!</td></tr>))
+          } else {
             arr.push((<tr><th>Players:</th><td colSpan={2}>{players}</td></tr>))
           }
         }
 
         SetSongs(arr)
       })
+  }, [])
+
+  useEffect(() => {
+    if (LoginMan.LoggedIn()) {
+      ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
+      document.getElementById("IframeWrapper").onclick = () => {
+        ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 1)
+        document.getElementById("Player").style.pointerEvents = "all"
+      }
+    }
   }, [])
 
   return (
@@ -259,7 +295,9 @@ function AnimePlayer() {
         <EpList AnimeID={AnimeID} EpNum={EpNum} />
         <div id="PlayerMainDiv">
           <div id="PlayerDiv">
-            <iframe id="Player" src={PlayerUrl} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" />
+            <div id="IframeWrapper">
+              <iframe id="Player" src={PlayerUrl} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" />
+            </div>
             <label><span>Choose Player:</span><select id="PlayerCb" class="minimal"></select></label>
           </div>
           <div id="PlayerInfoDiv">
