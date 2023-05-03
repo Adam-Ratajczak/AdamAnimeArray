@@ -211,7 +211,7 @@ function AnimeInfo() {
     })();
   }, []);
 
-  const foo = () => {
+  const ClearFunc = () => {
     ClearProgress(LoginMan.Token(), parseInt(AnimeID))
 
     window.location.reload()
@@ -362,7 +362,7 @@ function AnimeInfo() {
         <div id="AnimeInfoContainer">
           {isLoaded() ? (
             <>
-              <div id="InfoHeaderDiv"><h2 class="InfoHeader">Episodes:</h2>{LoginMan.LoggedIn() ? (<span id="clearhistory" onClick={foo}>clear history</span>) : (<></>)}</div>
+              <div id="InfoHeaderDiv"><h2 class="InfoHeader">Episodes:</h2>{LoginMan.LoggedIn() ? (<span id="clearhistory" onClick={ClearFunc}>clear history</span>) : (<></>)}</div>
               <EpisodeBtn AnimeID={AnimeID} />
             </>
           ) : (
