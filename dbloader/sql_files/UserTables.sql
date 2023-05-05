@@ -42,6 +42,16 @@ CREATE TABLE IF NOT EXISTS ChatEntry(
     AnimeID INT NOT NULL,
     OtherID INT,
     CommentText VARCHAR(65536),
+    Submitted DATETIME,
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)
+);
+
+CREATE TABLE IF NOT EXISTS UserReactions(
+    ReactionID INT PRIMARY KEY AUTO_INCREMENT,
+    EntryID INT NOT NULL,
+    UserID INT NOT NULL,
+    ReactionType BIT,
+    FOREIGN KEY (EntryID) REFERENCES ChatEntry(EntryID),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );

@@ -15,38 +15,30 @@ import LoginMan from "../../login_manager";
 import Icon from "../../widgets/Menubar/userdefault";
 
 function ChatEntry(props) {
-  const [UserName, SetUserName] = useState(0)
-  const [UserIcon, SetUserIcon] = useState({})
-
   const EntryID = parseInt(props.EntryID)
   const AnimeID = parseInt(props.AnimeID)
-  const UserID = parseInt(props.UserID)
   const CommentText = props.CommentText
+  const UserID = parseInt(props.User.UserID)
+  const UserName = props.User.UserName
+  const UserIcon = props.User.UserProfileImageUrl
   const Submitted = props.Submitted
   const Depth = parseInt(props.Depth)
 
   useEffect(() => {
-    GetBasicUserInfo(UserID)
-      .then((response) => response.json())
-      .then((result) => {
-        SetUserName(result.UserName)
-        SetUserIcon(result.UserProfileImageUrl)
-      })
+    document.getElementById("ReplyPrompt" + EntryID).addEventListener("submit", (ev) => {
+      let value = document.getElementById("ReplyValue" + EntryID).value
+      LoginMan.writeComment(AnimeID, EntryID, value)
 
-      document.getElementById("ReplyPrompt" + EntryID).addEventListener("submit", (ev) => {
-        let value = document.getElementById("ReplyValue" + EntryID).value
-        LoginMan.writeComment(AnimeID, EntryID, value)
-
-        ev.preventDefault()
-        window.location.reload()
-      })
+      ev.preventDefault()
+      window.location.reload()
+    })
   }, [])
 
-  function ReplyFunc(){
+  function ReplyFunc() {
     document.getElementById("ReplyPrompt" + EntryID).style.display = "block"
   }
 
-  function DelFunc(){
+  function DelFunc() {
     LoginMan.delComment(AnimeID, EntryID)
     window.location.reload()
   }
@@ -68,9 +60,9 @@ function ChatEntry(props) {
           {LoginMan.LoggedIn() ? (<span onClick={ReplyFunc}>Reply</span>) : (<></>)}
           {LoginMan.UserID() == UserID ? (<span onClick={DelFunc}>Delete</span>) : (<></>)}
         </div>
-        <form id={"ReplyPrompt" + EntryID} class="ReplyPrompt" style={{display: "none"}}>
-          <input id={"ReplyValue" + EntryID} class="ReplyValue" type="text" required/>
-          <input type="submit" class="ReplySubmit" value="Reply user"/>
+        <form id={"ReplyPrompt" + EntryID} class="ReplyPrompt" style={{ display: "none" }}>
+          <input id={"ReplyValue" + EntryID} class="ReplyValue" type="text" required />
+          <input type="submit" class="ReplySubmit" value="Reply user" />
         </form>
       </div>
     </div>
@@ -272,7 +264,14 @@ function AnimeInfo() {
           };
           let date_submitted = new Date(res.Submitted.Time)
 
-          arr.push((<ChatEntry  EntryID={res.EntryID} AnimeID={AnimeID} UserID={res.UserID} CommentText={res.CommentText} Depth={depth} Submitted={date_submitted.toLocaleDateString("en-EN", options)} />))
+          arr.push((<ChatEntry
+            EntryID={res.EntryID}
+            AnimeID={AnimeID}
+            User={res.User}
+            CommentText={res.CommentText}
+            Depth={depth}
+            Submitted={date_submitted.toLocaleDateString("en-EN", options)}
+          />))
 
           for (let rep of res.Replies) {
             commentbuilder(rep, depth + 1)

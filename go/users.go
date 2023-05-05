@@ -357,8 +357,14 @@ func getComments(id, reply int) ([]UserComment, error) {
 
 	for rows.Next() {
 		entry := UserComment{}
-		err = rows.Scan(&entry.EntryID, &entry.UserID, &entry.AnimeID, &entry.CommentText, &entry.Submitted)
+		err = rows.Scan(&entry.EntryID, &entry.User.UserID, &entry.AnimeID, &entry.CommentText, &entry.Submitted)
 		entry.Replies, err = getComments(id, entry.EntryID)
+		if err != nil {
+			return comments, err
+		}
+
+		row := db.QueryRow("SELECT UserName, UserProfileImageUrl FROM Users WHERE UserID = ?;", entry.User.UserID)
+		err = row.Scan(&entry.User.UserName, &entry.User.UserProfileImageUrl)
 		if err != nil {
 			return comments, err
 		}

@@ -198,7 +198,7 @@ type UserCommentDelRequest struct {
 
 type UserComment struct {
 	EntryID     int
-	UserID      int
+	User        BasicUserInfo
 	AnimeID     int
 	Replies     []UserComment
 	CommentText string
