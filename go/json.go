@@ -146,7 +146,7 @@ type ChangeUserRequest struct {
 type BasicUserInfo struct {
 	UserID              int
 	UserName            string
-	UserProfileImageUrl string
+	UserProfileImageUrl sql.NullString
 }
 
 type UserRequest struct {
@@ -190,10 +190,17 @@ type UserCommentRequest struct {
 	CommentText string
 }
 
+type UserCommentDelRequest struct {
+	Token     string
+	AnimeID   int
+	CommentID int
+}
+
 type UserComment struct {
 	EntryID     int
 	UserID      int
 	AnimeID     int
 	Replies     []UserComment
 	CommentText string
+	Submitted   mysql.NullTime
 }

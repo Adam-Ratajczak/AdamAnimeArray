@@ -190,6 +190,7 @@
     width: 60%;
     color: $text-color;
     font-size: medium;
+    margin-bottom: 50px;
 }
 
 #WriteChatSubmit{
@@ -213,4 +214,78 @@
 
 #clearhistory{
     color: $foreground-color;
+}
+
+.ChatEntry{
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    max-width: 100%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    background-color: $background-color;
+}
+
+.ChatUserImg{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color-dark;
+}
+
+.ChatUserImg > img, svg{
+    width: 80px;
+    height: 80px;
+}
+
+.ChatContent{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.ChatContent h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ChatContent i{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.ChatContent p{
+    margin-left: 20px;
+}
+
+.ChatContent span{
+    color: $foreground-color;
+    margin-right: 20px;
+}
+
+.ReplyPrompt{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.ReplyValue{
+    background-color: $background-color-dark;
+    border: 2px solid transparent;
+    width: 25%;
+    height: 20px;
+    color: $text-color;
+    font-size: medium;
+}
+
+.ReplySubmit{
+    background-color: $foreground-color;
+    border: 0px solid transparent;
+    width: 100px;
+    height: 24px;
+    color: $text-color;
 }

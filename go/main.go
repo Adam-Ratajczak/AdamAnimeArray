@@ -88,6 +88,7 @@ func main() {
 		auth.POST("/watchlist/add", UserWatchlistAdd)
 		auth.POST("/watchlist/remove", UserWatchlistRem)
 		auth.POST("/comment/write", UserCommentAnime)
+		auth.POST("/comment/remove", UserCommentDel)
 		auth.POST("/progress", UserProgress)
 		auth.POST("/progress/get", GetAnimeProgress)
 		auth.POST("/progress/rem", DeleteAnimeProgress)

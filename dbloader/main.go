@@ -42,6 +42,7 @@ func loadSQLFile(path string) error {
 			continue
 		}
 		if _, err := tx.Exec(q); err != nil {
+			fmt.Println(q)
 			log.Fatal(err)
 		}
 	}
@@ -73,7 +74,7 @@ func exportStructuralData(path, shortname string) {
 		name = formatStr(name)
 
 		id_str := strconv.FormatInt(int64(id), 10)
-		content += "INSERT INTO " + shortname + "s(" + shortname + "ID, " + shortname + "Name) VALUES (" + id_str + ", '" + name + "');\n"
+		content += "INSERT INTO " + shortname + "s(" + shortname + "ID, " + shortname + "Name) VALUES (" + id_str + ", '" + formatStr(name) + "');\n"
 	}
 
 	os.WriteFile(path+"/structure/"+shortname+"sTable.sql", []byte(content), os.ModeAppend)

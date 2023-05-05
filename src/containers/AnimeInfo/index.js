@@ -5,32 +5,73 @@ import {
   GetAnimeRelations,
   GetAnimeRange,
   ClearProgress,
+  GetBasicUserInfo,
+  GetComments,
 } from "../../db_module";
 import "./style.scss";
 import plus from "./plus.png";
 import minus from "./minus.png";
 import LoginMan from "../../login_manager";
+import Icon from "../../widgets/Menubar/userdefault";
 
 function ChatEntry(props) {
   const [UserName, SetUserName] = useState(0)
-  const [UserIcon, SetUserIcon] = useState(0)
+  const [UserIcon, SetUserIcon] = useState({})
 
-  const UserID = props.UserID
+  const EntryID = parseInt(props.EntryID)
+  const AnimeID = parseInt(props.AnimeID)
+  const UserID = parseInt(props.UserID)
   const CommentText = props.CommentText
-  const depth = props.Depth
+  const Submitted = props.Submitted
+  const Depth = parseInt(props.Depth)
 
   useEffect(() => {
+    GetBasicUserInfo(UserID)
+      .then((response) => response.json())
+      .then((result) => {
+        SetUserName(result.UserName)
+        SetUserIcon(result.UserProfileImageUrl)
+      })
 
-  })
+      document.getElementById("ReplyPrompt" + EntryID).addEventListener("submit", (ev) => {
+        let value = document.getElementById("ReplyValue" + EntryID).value
+        LoginMan.writeComment(AnimeID, EntryID, value)
+
+        ev.preventDefault()
+        window.location.reload()
+      })
+  }, [])
+
+  function ReplyFunc(){
+    document.getElementById("ReplyPrompt" + EntryID).style.display = "block"
+  }
+
+  function DelFunc(){
+    LoginMan.delComment(AnimeID, EntryID)
+    window.location.reload()
+  }
 
   return (
-    <div class="ChatEntry">
+    <div class="ChatEntry" style={{ marginLeft: Depth * 30 }}>
       <div class="ChatUserImg">
-        <img src={UserIcon} />
+        {UserIcon.Valid ? (
+          <img
+            src={UserIcon.String}
+            alt="User profile"
+          ></img>
+        ) : (Icon())}
       </div>
       <div class="ChatContent">
-        <h2>{UserName}</h2>
+        <h2>{UserName}:<i>{Submitted}</i></h2>
         <p>{CommentText}</p>
+        <div>
+          {LoginMan.LoggedIn() ? (<span onClick={ReplyFunc}>Reply</span>) : (<></>)}
+          {LoginMan.UserID() == UserID ? (<span onClick={DelFunc}>Delete</span>) : (<></>)}
+        </div>
+        <form id={"ReplyPrompt" + EntryID} class="ReplyPrompt" style={{display: "none"}}>
+          <input id={"ReplyValue" + EntryID} class="ReplyValue" type="text" required/>
+          <input type="submit" class="ReplySubmit" value="Reply user"/>
+        </form>
       </div>
     </div>
   )
@@ -60,6 +101,8 @@ function AnimeInfo() {
   const [Animes, SetAnimes] = useState([]);
   const [AnimeRelations, SetAnimeRelations] = useState([]);
   const [SavedToWatchlist, SetSavedToWatchlist] = useState(false);
+
+  const [Comments, SetComments] = useState([]);
 
   function isLoaded() {
     return (
@@ -200,16 +243,49 @@ function AnimeInfo() {
           SetSavedToWatchlist(true);
         }
 
-        document.getElementById("WriteChat").addEventListener("submit", async (ev) => {
+        document.getElementById("WriteChat").addEventListener("submit", (ev) => {
           let input = document.getElementById("WriteChatInput")
-          await LoginMan.writeComment(AnimeID, 0, input.value)
+          LoginMan.writeComment(AnimeID, 0, input.value)
           input.value = ""
 
+          ev.preventDefault()
           window.location.reload()
         })
       }
     })();
   }, []);
+
+  useEffect(() => {
+    GetComments(AnimeID)
+      .then((response) => response.json())
+      .then((result) => {
+        let arr = []
+        function commentbuilder(res, depth) {
+
+          const options = {
+            weekday: "short",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit"
+          };
+          let date_submitted = new Date(res.Submitted.Time)
+
+          arr.push((<ChatEntry  EntryID={res.EntryID} AnimeID={AnimeID} UserID={res.UserID} CommentText={res.CommentText} Depth={depth} Submitted={date_submitted.toLocaleDateString("en-EN", options)} />))
+
+          for (let rep of res.Replies) {
+            commentbuilder(rep, depth + 1)
+          }
+        }
+
+        for (let res of result) {
+          commentbuilder(res, 0)
+        }
+
+        SetComments(arr)
+      })
+  }, [])
 
   const ClearFunc = () => {
     ClearProgress(LoginMan.Token(), parseInt(AnimeID))
@@ -435,6 +511,7 @@ function AnimeInfo() {
               Log in to post comments!
             </div>
           )}
+          {Comments}
         </div>
       </div>
     </>

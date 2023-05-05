@@ -223,13 +223,21 @@ export function RemoveFromWatchlist(token, AnimeID){
     return FetchToApiPost(`/auth/watchlist/remove`, req);
 }
 
-export function GetUserInfo(id){
+export function GetUserInfo(id, token){
     let req = {
         UserID: id,
-        Token: undefined
+        Token: token
     };
     
     return FetchToApiPost(`/auth/user`, req);
+}
+
+export function GetBasicUserInfo(id){
+    return FetchToApiGet(`/users/` + id);
+}
+
+export function GetComments(id){
+    return FetchToApiGet(`/animes/` + id + "/comments");
 }
 
 export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){
@@ -245,6 +253,10 @@ export function ChangeUserInfo(token, Name, Email, ProfileUrl, ProfilePoster){
 }
 
 export function WriteChat(token, id, reply, chattext){
+    if(chattext == ""){
+        return
+    }
+    
     let req = {
         Token: token,
         AnimeID: id,
@@ -253,6 +265,16 @@ export function WriteChat(token, id, reply, chattext){
     };
     
     return FetchToApiPost(`/auth/comment/write`, req);
+}
+
+export function DelChat(token, id, entry){
+    let req = {
+        Token: token,
+        AnimeID: id,
+        CommentID: entry
+    };
+    
+    return FetchToApiPost(`/auth/comment/remove`, req);
 }
 
 export function ChangeProgress(token, id, EpNr, Progress){

@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net/http"
 	"strconv"
+	"time"
 
 	cryptorand "crypto/rand"
 	"crypto/sha256"
@@ -284,7 +285,7 @@ func UserCommentAnime(c echo.Context) error {
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	_, err = db.Exec("INSERT INTO ChatEntry(UserID, AnimeID, OtherID, CommentText) VALUES (?, ?, ?, ?);", id, rq.AnimeID, rq.OtherID, rq.CommentText)
+	_, err = db.Exec("INSERT INTO ChatEntry(UserID, AnimeID, OtherID, CommentText, Submitted) VALUES (?, ?, ?, ?, ?);", id, rq.AnimeID, rq.OtherID, rq.CommentText, time.Now())
 	if err != nil {
 		return err
 	}
@@ -292,16 +293,71 @@ func UserCommentAnime(c echo.Context) error {
 	return c.NoContent(http.StatusOK)
 }
 
+func delComments(anime_id int, ids []int) ([]int, error) {
+	rows, err := db.Query("SELECT EntryID FROM ChatEntry WHERE AnimeID = ? AND OtherID = ?;", anime_id, ids[len(ids)-1])
+	if err != nil {
+		return ids, err
+	}
+
+	for rows.Next() {
+		id := 0
+		err = rows.Scan(&id)
+		ids = append(ids, id)
+		ids, err = delComments(anime_id, ids)
+		if err != nil {
+			return ids, err
+		}
+	}
+
+	return ids, nil
+}
+
+func UserCommentDel(c echo.Context) error {
+	rq := UserCommentDelRequest{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	row = db.QueryRow("SELECT EntryID FROM ChatEntry WHERE UserID = ?;", id)
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	ids, err := delComments(rq.AnimeID, []int{rq.CommentID})
+	if err != nil {
+		return err
+	}
+
+	for _, id := range ids {
+		_, err := db.Exec("DELETE FROM ChatEntry WHERE EntryID = ?;", id)
+		if err != nil {
+			return err
+		}
+	}
+
+	return c.NoContent(http.StatusOK)
+}
+
 func getComments(id, reply int) ([]UserComment, error) {
 	comments := []UserComment{}
-	rows, err := db.Query("SELECT EntryID, UserID, AnimeID, CommentText FROM ChatEntry WHERE AnimeID = ? AND OtherID = ?;", id, reply)
+	rows, err := db.Query("SELECT EntryID, UserID, AnimeID, CommentText, Submitted FROM ChatEntry WHERE AnimeID = ? AND OtherID = ? ORDER BY Submitted DESC;", id, reply)
 	if err != nil {
 		return comments, err
 	}
 
 	for rows.Next() {
 		entry := UserComment{}
-		err = rows.Scan(&entry.EntryID, &entry.UserID, &entry.AnimeID, &entry.CommentText)
+		err = rows.Scan(&entry.EntryID, &entry.UserID, &entry.AnimeID, &entry.CommentText, &entry.Submitted)
 		entry.Replies, err = getComments(id, entry.EntryID)
 		if err != nil {
 			return comments, err
@@ -495,6 +551,7 @@ func UserBasicInfo(c echo.Context) error {
 	err = row.Scan(&res.UserID, &res.UserName, &res.UserProfileImageUrl)
 
 	if err != nil {
+		fmt.Println(err)
 		return c.NoContent(http.StatusNoContent)
 	}
 
