@@ -114,6 +114,12 @@ function EpList(props) {
           })
       }
     }
+
+    let eplist = document.querySelector("#EpList > div")
+    let sc = EpNum * 40 - eplist.clientHeight / 2
+    if (sc > 0) {
+      eplist.scrollTop = sc
+    }
   })
 
   return (
@@ -276,11 +282,11 @@ function AnimePlayer() {
   useEffect(() => {
     if (LoginMan.LoggedIn()) {
       ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
-      .then((response) =>{
-        if(response.status == 200){
-          document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#FFFF0044"
-        }
-      })
+        .then((response) => {
+          if (response.status == 200) {
+            document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#FFFF0044"
+          }
+        })
       document.getElementById("IframeWrapper").onclick = () => {
         ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 1)
         document.getElementById("Player").style.pointerEvents = "all"
