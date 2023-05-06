@@ -279,6 +279,7 @@ function AnimePlayer() {
       document.getElementById("IframeWrapper").onclick = () => {
         ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 1)
         document.getElementById("Player").style.pointerEvents = "all"
+        document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#00FF0044"
       }
     }
   }, [])
