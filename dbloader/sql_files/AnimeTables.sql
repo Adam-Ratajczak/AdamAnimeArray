@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS AnimeDemographics(
 -- Store connection types
 CREATE TABLE IF NOT EXISTS Relations(
     RelationID int PRIMARY KEY AUTO_INCREMENT,
-    RelationType VARCHAR(64) NOT NULL
+    RelationName VARCHAR(64) NOT NULL
 );
 
 -- Bound of two anime seasons cnnected in some way

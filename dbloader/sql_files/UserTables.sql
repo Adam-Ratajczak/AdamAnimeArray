@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS ChatEntry(
     UserID INT NOT NULL,
     AnimeID INT NOT NULL,
     OtherID INT,
-    CommentText VARCHAR(65536),
+    CommentText TEXT,
     Submitted DATETIME,
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (AnimeID) REFERENCES Animes(AnimeID)

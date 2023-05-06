@@ -14,6 +14,8 @@ import minus from "./minus.png";
 import LoginMan from "../../login_manager";
 import Icon from "../../widgets/Menubar/userdefault";
 
+const isFirefox = navigator.userAgent.indexOf("Firefox") != -1
+
 function ChatEntry(props) {
   const EntryID = parseInt(props.EntryID)
   const AnimeID = parseInt(props.AnimeID)
@@ -25,12 +27,17 @@ function ChatEntry(props) {
   const Depth = parseInt(props.Depth)
 
   useEffect(() => {
-    document.getElementById("ReplyPrompt" + EntryID).addEventListener("submit", (ev) => {
+    document.getElementById("ReplyPrompt" + EntryID).addEventListener("submit", async (ev) => {
       let value = document.getElementById("ReplyValue" + EntryID).value
-      LoginMan.writeComment(AnimeID, EntryID, value)
-
-      ev.preventDefault()
-      window.location.reload()
+      if (isFirefox) {
+        try {
+          await LoginMan.writeComment(AnimeID, EntryID, value)
+        } catch {
+          await LoginMan.writeComment(AnimeID, EntryID, value)
+        }
+      } else {
+        await LoginMan.writeComment(AnimeID, EntryID, value)
+      }
     })
   }, [])
 
@@ -40,7 +47,7 @@ function ChatEntry(props) {
 
   function DelFunc() {
     LoginMan.delComment(AnimeID, EntryID)
-    window.location.reload()
+    window.location.reload(true)
   }
 
   return (
@@ -235,13 +242,17 @@ function AnimeInfo() {
           SetSavedToWatchlist(true);
         }
 
-        document.getElementById("WriteChat").addEventListener("submit", (ev) => {
+        document.getElementById("WriteChat").addEventListener("submit", async (ev) => {
           let input = document.getElementById("WriteChatInput")
-          LoginMan.writeComment(AnimeID, 0, input.value)
-          input.value = ""
-
-          ev.preventDefault()
-          window.location.reload()
+          if (isFirefox) {
+            try {
+              await LoginMan.writeComment(AnimeID, 0, input.value)
+            } catch {
+              await LoginMan.writeComment(AnimeID, 0, input.value)
+            }
+          } else {
+            await LoginMan.writeComment(AnimeID, 0, input.value)
+          }
         })
       }
     })();
