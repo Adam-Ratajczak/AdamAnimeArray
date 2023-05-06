@@ -63,8 +63,8 @@ function EpList(props) {
   const [Eps, SetEps] = useState([])
   const [Progress, SetProgress] = useState([])
 
-  const AnimeID = props.AnimeID
-  const EpNum = props.EpNum
+  const AnimeID = parseInt(props.AnimeID)
+  const EpNum = parseInt(props.EpNum)
 
   useEffect(() => {
     if (Eps.length == 0) {
@@ -98,23 +98,19 @@ function EpList(props) {
 
               if (Progress.length > 0) {
                 if (Progress[i] == 0) {
-                  color = "purple"
+                  color = "transparent"
                 } else if (Progress[i] == 1) {
-                  color = "gold"
+                  color = "#FFFF0044"
                 } else if (Progress[i] == 2) {
-                  color = "lime"
+                  color = "#00FF0044"
                 }
               }
 
               let title = ep.Title
-              if (EpNum == ep.EpisodeNr) {
-                list.push(<span class="EpisodeEntry tooltip"><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr">{ep.EpisodeNr}</span><span class="EpTitle">{title}</span></span>)
-              } else {
-                list.push(<a class="EpisodeEntry tooltip" href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class="EpisodeNr" style={{ backgroundColor: color }}>{ep.EpisodeNr}</span><span class="EpTitle">{title}</span></a>)
-              }
+              list.push(<a class={"EpisodeEntry tooltip"} href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class={"EpisodeNr" + (i + 1 == EpNum ? " SelectedEpNr" : "")}>{ep.EpisodeNr}</span><span class="EpTitle" style={{ backgroundColor: color }}>{title}</span></a>)
               i++
+              SetEps(list)
             }
-            SetEps(list)
           })
       }
     }
