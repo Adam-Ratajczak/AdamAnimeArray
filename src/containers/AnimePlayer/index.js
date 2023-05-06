@@ -276,6 +276,11 @@ function AnimePlayer() {
   useEffect(() => {
     if (LoginMan.LoggedIn()) {
       ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
+      .then((response) =>{
+        if(response.status == 200){
+          document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#FFFF0044"
+        }
+      })
       document.getElementById("IframeWrapper").onclick = () => {
         ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 1)
         document.getElementById("Player").style.pointerEvents = "all"
