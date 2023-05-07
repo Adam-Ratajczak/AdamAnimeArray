@@ -280,6 +280,7 @@ func main() {
 		fmt.Println("-i\t--import <path_to_sql_file>\t\tImports database from specified path")
 		fmt.Println("-e\t--export <sql_export_path>\t\tExports database to sql files")
 		fmt.Println("\nMySQL connection string pattern: \"user:password@(host:port)/database_name\"")
+		return
 	} else if args[0] == "--import" || args[0] == "-i" {
 		mode = 0
 		if len(args) == 1 {
