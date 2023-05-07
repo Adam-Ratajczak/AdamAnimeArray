@@ -148,6 +148,22 @@ function AnimePlayer() {
   const [CurrQuality, SetCurrQuality] = useState("")
 
   useEffect(() => {
+    if (LoginMan.LoggedIn()) {
+      ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
+        .then((response) => {
+          if (response.status == 200) {
+            document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#FFFF0044"
+          }
+        })
+      document.getElementById("IframeWrapper").onclick = () => {
+        ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 1)
+        document.getElementById("Player").style.pointerEvents = "all"
+        document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#00FF0044"
+      }
+    }
+  }, [])
+
+  useEffect(() => {
     GetAnime(AnimeID)
       .then((response) => response.json())
       .then((result) => {
@@ -277,22 +293,6 @@ function AnimePlayer() {
 
         SetSongs(arr)
       })
-  }, [])
-
-  useEffect(() => {
-    if (LoginMan.LoggedIn()) {
-      ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
-        .then((response) => {
-          if (response.status == 200) {
-            document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#FFFF0044"
-          }
-        })
-      document.getElementById("IframeWrapper").onclick = () => {
-        ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 1)
-        document.getElementById("Player").style.pointerEvents = "all"
-        document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#00FF0044"
-      }
-    }
   }, [])
 
   return (
