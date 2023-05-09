@@ -305,3 +305,22 @@ export function ClearProgress(token, id){
     
     return FetchToApiPost(`/auth/progress/rem`, req);
 }
+
+export function ReactToChatMessage(token, id, reaction){
+    let req = {
+        Token: token,
+        CommentID: id,
+        Reaction: reaction
+    };
+    
+    return FetchToApiPost(`/auth/comment/react`, req);
+}
+
+export function GetUserReactions(id, token){
+    let req = {
+        UserID: id,
+        Token: token
+    };
+    
+    return FetchToApiPost(`/auth/comment/getreaction`, req);
+}

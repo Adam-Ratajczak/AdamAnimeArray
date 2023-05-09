@@ -1,4 +1,4 @@
-import { LoginUser, CreateUser, LogoutUser, GetUserInfo, GetWatchlist, AddToWatchlist, RemoveFromWatchlist, WriteChat, DelChat } from "./db_module";
+import { LoginUser, CreateUser, LogoutUser, GetUserInfo, GetWatchlist, AddToWatchlist, RemoveFromWatchlist, ReactToChatMessage, WriteChat, DelChat, GetUserReactions } from "./db_module";
 
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
@@ -52,6 +52,14 @@ class LoginManager {
   
   async delComment(AnimeID, EntryID) {
     return (await DelChat(this.Token(), AnimeID, EntryID)).status() == 200 ? true : false;
+  }
+  
+  async reactComment(EntryID, reaction) {
+    return (await ReactToChatMessage(this.Token(), EntryID, reaction)).status() == 200 ? true : false;
+  }
+
+  UserReactions() {
+    return GetUserReactions(this.UserID(), this.Token());
   }
 
   async check_credentials(permission) {

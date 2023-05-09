@@ -196,6 +196,17 @@ type UserCommentDelRequest struct {
 	CommentID int
 }
 
+type UserCommentReactRequest struct {
+	Token     string
+	CommentID int
+	Reaction  int
+}
+
+type CommentReaction struct {
+	CommentID int
+	Reaction  int
+}
+
 type UserComment struct {
 	EntryID     int
 	User        BasicUserInfo
@@ -203,4 +214,6 @@ type UserComment struct {
 	Replies     []UserComment
 	CommentText string
 	Submitted   mysql.NullTime
+	Upvotes     int
+	Downvotes   int
 }

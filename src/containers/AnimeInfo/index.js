@@ -5,18 +5,22 @@ import {
   GetAnimeRelations,
   GetAnimeRange,
   ClearProgress,
-  GetBasicUserInfo,
   GetComments,
 } from "../../db_module";
 import "./style.scss";
 import plus from "./plus.png";
 import minus from "./minus.png";
+import thumbup from "./thumbup.png"
+import thumbdown from "./thumbdown.png"
 import LoginMan from "../../login_manager";
 import Icon from "../../widgets/Menubar/userdefault";
 
 const isFirefox = navigator.userAgent.indexOf("Firefox") != -1
 
 function ChatEntry(props) {
+  const [Upvotes, SetUpvotes] = useState(0)
+  const [Downvotes, SetDownvotes] = useState(0)
+
   const EntryID = parseInt(props.EntryID)
   const AnimeID = parseInt(props.AnimeID)
   const CommentText = props.CommentText
@@ -25,8 +29,15 @@ function ChatEntry(props) {
   const UserIcon = props.User.UserProfileImageUrl
   const Submitted = props.Submitted
   const Depth = parseInt(props.Depth)
+  const Upvote = parseInt(props.Upvote)
+  const Downvote = parseInt(props.Downvote)
+  const Reaction = parseInt(props.Reaction)
 
   useEffect(() => {
+    if (!LoginMan.LoggedIn()) {
+      return
+    }
+
     document.getElementById("ReplyPrompt" + EntryID).addEventListener("submit", async (ev) => {
       let value = document.getElementById("ReplyValue" + EntryID).value
       if (isFirefox) {
@@ -39,6 +50,55 @@ function ChatEntry(props) {
         await LoginMan.writeComment(AnimeID, EntryID, value)
       }
     })
+    SetUpvotes(Upvote)
+    SetDownvotes(Downvote)
+
+    let upvote_btn = document.getElementById("upvote" + EntryID)
+    let downvote_btn = document.getElementById("downvote" + EntryID)
+
+    if(Reaction == -1){
+      downvote_btn.classList.add("Reacted")
+    }else if(Reaction == 1){
+      upvote_btn.classList.add("Reacted")
+    }
+
+    upvote_btn.onclick = () => {
+      let upvote_int = parseInt(upvote_btn.querySelector("span").innerText)
+      let downvote_int = parseInt(downvote_btn.querySelector("span").innerText)
+
+      if (upvote_btn.classList.contains("Reacted")) {
+        upvote_btn.classList.remove("Reacted")
+        SetUpvotes(upvote_int - 1)
+        LoginMan.reactComment(EntryID, 0)
+      } else {
+        upvote_btn.classList.add("Reacted")
+        if (downvote_btn.classList.contains("Reacted")) {
+          downvote_btn.classList.remove("Reacted")
+          SetDownvotes(downvote_int - 1)
+        }
+        SetUpvotes(upvote_int + 1)
+        LoginMan.reactComment(EntryID, 1)
+      }
+    }
+
+    downvote_btn.onclick = () => {
+      let upvote_int = parseInt(upvote_btn.querySelector("span").innerText)
+      let downvote_int = parseInt(downvote_btn.querySelector("span").innerText)
+
+      if (downvote_btn.classList.contains("Reacted")) {
+        downvote_btn.classList.remove("Reacted")
+        SetDownvotes(downvote_int - 1)
+        LoginMan.reactComment(EntryID, 0)
+      } else {
+        downvote_btn.classList.add("Reacted")
+        if (upvote_btn.classList.contains("Reacted")) {
+          upvote_btn.classList.remove("Reacted")
+          SetUpvotes(upvote_int - 1)
+        }
+        SetDownvotes(downvote_int + 1)
+        LoginMan.reactComment(EntryID, -1)
+      }
+    }
   }, [])
 
   function ReplyFunc() {
@@ -63,10 +123,22 @@ function ChatEntry(props) {
       <div class="ChatContent">
         <h2>{UserName}:<i>{Submitted}</i></h2>
         <p>{CommentText}</p>
-        <div>
-          {LoginMan.LoggedIn() ? (<span onClick={ReplyFunc}>Reply</span>) : (<></>)}
-          {LoginMan.UserID() == UserID ? (<span onClick={DelFunc}>Delete</span>) : (<></>)}
-        </div>
+        {LoginMan.LoggedIn() ? (<div class="MessageFooter">
+          <div>
+            <span onClick={ReplyFunc}>Reply</span>
+            {LoginMan.UserID() == UserID ? (<span onClick={DelFunc}>Delete</span>) : (<></>)}
+          </div>
+          <div>
+            <div class="ReactionContainer" id={"upvote" + EntryID}>
+              <img src={thumbup} width="16" height="16" />
+              <span>{Upvotes}</span>
+            </div>
+            <div class="ReactionContainer" id={"downvote" + EntryID}>
+              <img src={thumbdown} width="16" height="16" />
+              <span>{Downvotes}</span>
+            </div>
+          </div>
+        </div>) : (<i>Log in to reply this message!</i>)}
         <form id={"ReplyPrompt" + EntryID} class="ReplyPrompt" style={{ display: "none" }}>
           <input id={"ReplyValue" + EntryID} class="ReplyValue" type="text" required />
           <input type="submit" class="ReplySubmit" value="Reply user" />
@@ -259,41 +331,61 @@ function AnimeInfo() {
   }, []);
 
   useEffect(() => {
-    GetComments(AnimeID)
+    LoginMan.UserReactions()
       .then((response) => response.json())
-      .then((result) => {
-        let arr = []
-        function commentbuilder(res, depth) {
+      .then((reactions) => {
+        GetComments(AnimeID)
+          .then((response) => response.json())
+          .then((result) => {
+            let arr = []
+            function commentbuilder(res, depth) {
+              const options = {
+                weekday: "short",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "2-digit",
+                minute: "2-digit"
+              };
+              let date_submitted = new Date(res.Submitted.Time)
+              let reaction = 0
 
-          const options = {
-            weekday: "short",
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour: "2-digit",
-            minute: "2-digit"
-          };
-          let date_submitted = new Date(res.Submitted.Time)
+              if (LoginMan.LoggedIn()) {
+                for (let r of reactions) {
+                  if (r.CommentID == res.EntryID) {
+                    if (r.Reaction == 1) {
+                      reaction = -1
+                    } else {
+                      reaction = 1
+                    }
+                    break
+                  }
+                }
+              }
 
-          arr.push((<ChatEntry
-            EntryID={res.EntryID}
-            AnimeID={AnimeID}
-            User={res.User}
-            CommentText={res.CommentText}
-            Depth={depth}
-            Submitted={date_submitted.toLocaleDateString("en-EN", options)}
-          />))
+              arr.push((<ChatEntry
+                EntryID={res.EntryID}
+                AnimeID={AnimeID}
+                User={res.User}
+                CommentText={res.CommentText}
+                Depth={depth}
+                Submitted={date_submitted.toLocaleDateString("en-EN", options)}
+                Upvote={res.Upvotes}
+                Downvote={res.Downvotes}
+                Reaction={reaction}
+              />))
 
-          for (let rep of res.Replies) {
-            commentbuilder(rep, depth + 1)
-          }
-        }
+              for (let rep of res.Replies) {
+                commentbuilder(rep, depth + 1)
+              }
+            }
 
-        for (let res of result) {
-          commentbuilder(res, 0)
-        }
+            for (let res of result) {
+              commentbuilder(res, 0)
+            }
 
-        SetComments(arr)
+            SetComments(arr)
+          })
       })
   }, [])
 

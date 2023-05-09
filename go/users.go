@@ -339,13 +339,90 @@ func UserCommentDel(c echo.Context) error {
 	}
 
 	for _, id := range ids {
-		_, err := db.Exec("DELETE FROM ChatEntry WHERE EntryID = ?;", id)
+		_, err = db.Exec("DELETE FROM UserReactions WHERE EntryID = ?;", id)
+		if err != nil {
+			return err
+		}
+
+		_, err = db.Exec("DELETE FROM ChatEntry WHERE EntryID = ?;", id)
 		if err != nil {
 			return err
 		}
 	}
 
 	return c.NoContent(http.StatusOK)
+}
+
+func UserCommentReact(c echo.Context) error {
+	rq := UserCommentReactRequest{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+	_, err = db.Exec("DELETE FROM UserReactions WHERE UserID = ? AND EntryID = ?;", id, rq.CommentID)
+	if err != nil {
+		return err
+	}
+
+	if rq.Reaction == -1 {
+		_, err = db.Exec("INSERT INTO UserReactions(UserID, EntryID, ReactionType) VALUES (?, ?, 1);", id, rq.CommentID)
+		if err != nil {
+			return err
+		}
+	} else if rq.Reaction == 0 {
+	} else if rq.Reaction == 1 {
+		_, err = db.Exec("INSERT INTO UserReactions(UserID, EntryID, ReactionType) VALUES (?, ?, 0);", id, rq.CommentID)
+		if err != nil {
+			return err
+		}
+	} else {
+		c.NoContent(http.StatusBadRequest)
+	}
+
+	return c.NoContent(http.StatusOK)
+}
+
+func UserCommentGetReactions(c echo.Context) error {
+	rq := UserAuth{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.JSON(http.StatusOK, []CommentReaction{})
+	}
+
+	res := []CommentReaction{}
+
+	rows, err := db.Query("SELECT EntryID, ReactionType FROM UserReactions WHERE UserID = ?;", id)
+	if err != nil {
+		return err
+	}
+
+	for rows.Next() {
+		entry := CommentReaction{}
+		err = rows.Scan(&entry.CommentID, &entry.Reaction)
+		if err != nil {
+			return err
+		}
+
+		res = append(res, entry)
+	}
+
+	return c.JSON(http.StatusOK, res)
 }
 
 func getComments(id, reply int) ([]UserComment, error) {
@@ -367,6 +444,25 @@ func getComments(id, reply int) ([]UserComment, error) {
 		err = row.Scan(&entry.User.UserName, &entry.User.UserProfileImageUrl)
 		if err != nil {
 			return comments, err
+		}
+
+		reaction_rows, err := db.Query("SELECT COUNT(ReactionID), ReactionType FROM UserReactions WHERE EntryID = ? GROUP BY ReactionType;", entry.EntryID)
+		if err != nil {
+			return comments, err
+		}
+		for reaction_rows.Next() {
+			votes := 0
+			votetype := 0
+			err = reaction_rows.Scan(&votes, &votetype)
+			if err != nil {
+				return comments, err
+			}
+
+			if votetype == 1 {
+				entry.Downvotes = votes
+			} else {
+				entry.Upvotes = votes
+			}
 		}
 
 		comments = append(comments, entry)
