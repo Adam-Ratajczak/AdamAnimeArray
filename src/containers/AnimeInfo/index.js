@@ -138,7 +138,7 @@ function ChatEntry(props) {
               <span>{Downvotes}</span>
             </div>
           </div>
-        </div>) : (<i>Log in to reply this message!</i>)}
+        </div>) : (<i class="MessageFooter">Log in to reply this message!</i>)}
         <form id={"ReplyPrompt" + EntryID} class="ReplyPrompt" style={{ display: "none" }}>
           <input id={"ReplyValue" + EntryID} class="ReplyValue" type="text" required />
           <input type="submit" class="ReplySubmit" value="Reply user" />
