@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS UserReactions(
     ReactionID INT PRIMARY KEY AUTO_INCREMENT,
     EntryID INT NOT NULL,
     UserID INT NOT NULL,
-    ReactionType BIT,
+    ReactionType INT,
     FOREIGN KEY (EntryID) REFERENCES ChatEntry(EntryID),
     FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
