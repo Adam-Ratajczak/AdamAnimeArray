@@ -11,40 +11,35 @@ function UserProfile() {
   useEffect(() => {
     (async () => {
       if (LoginMan.LoggedIn()) {
-        if (Watchlist.length == 0) {
-          const watchlist = await LoginMan.getWatchlist()
-          let res = []
+        const watchlist = await LoginMan.getWatchlist()
+        let res = []
 
-          for (const elem of watchlist) {
-            res.push((
-              <div class="PosterOutline">
-                <AnimePoster
-                  AnimeID={elem.AnimeID}
-                  Title={elem.AnimeTitle}
-                  Poster={elem.PosterURL}
-                  Premiered={elem.Premiered}
-                  EpNum={elem.EpisodeNum}
-                  Type={elem.Type.Name}
-                />
-                <img width="30" height="30" src={minus} alt={elem.AnimeID} class="RemoveAnimeImg" />
-              </div>
-            ))
+        for (const elem of watchlist) {
+          function delete_func() {
+            LoginMan.removeFromWatchlist(parseInt(elem.AnimeID))
+            window.location.reload()
           }
+          res.push((
+            <div class="PosterOutline">
+              <AnimePoster
+                AnimeID={elem.AnimeID}
+                Title={elem.AnimeTitle}
+                Poster={elem.PosterURL}
+                Premiered={elem.Premiered}
+                EpNum={elem.EpisodeNum}
+                Type={elem.Type.Name}
+              />
+              <img width="30" height="30" src={minus} onClick={delete_func} class="RemoveAnimeImg" />
+            </div>
+          ))
           SetWatchlist(res)
         }
       } else {
         redirect("/login")
       }
       let btns = document.querySelectorAll(".RemoveAnimeImg")
-
-      for (const img of btns) {
-        img.onclick = () => {
-          LoginMan.removeFromWatchlist(parseInt(img.alt))
-          SetWatchlist([])
-        }
-      }
     })()
-  })
+  }, [])
 
   return (
     <>
