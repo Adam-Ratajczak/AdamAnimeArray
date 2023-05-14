@@ -217,3 +217,20 @@ type UserComment struct {
 	Upvotes     int
 	Downvotes   int
 }
+
+type UserTheme struct {
+	BaseColor         string
+	BgColor           string
+	BgColorDark       string
+	BgColorTheme      string
+	BgColorTilted     string
+	BtnHoverColor     string
+	BtnHoverTextColor string
+	FgColor           string
+	FgColorDark       string
+	TextColor         string
+	TextColorDark     string
+	TextColorTilted   string
+	LeftImgUrl        sql.NullString
+	RightImgUrl       sql.NullString
+}

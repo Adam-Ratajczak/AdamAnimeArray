@@ -94,6 +94,7 @@ func main() {
 		auth.POST("/progress", UserProgress)
 		auth.POST("/progress/get", GetAnimeProgress)
 		auth.POST("/progress/rem", DeleteAnimeProgress)
+		auth.POST("/theme", GetUserTheme)
 	}
 	err = e.Start(":2137")
 	if err != nil {

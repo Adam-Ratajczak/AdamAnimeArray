@@ -4,6 +4,7 @@ import redirect from "../../redirect.js";
 import { GetAnimeRange } from "../../db_module.js";
 import "./style.scss";
 import UserDefaultSVG from "./userdefault.js";
+import HeaderBg from "./headerbg.png"
 
 function UserInfo() {
   const [userInfo, setUserInfo] = useState(null);
@@ -100,6 +101,7 @@ function Menubar() {
     <div id="MenuBar">
       <LoginBtn />
       <div id="HeaderContent">
+        <img src={HeaderBg}/>
         <h1 id="aaaHeader">AdamAnimeArray</h1>
         <form id="Search">
           <input type="submit" id="Searchbtn" value=""></input>

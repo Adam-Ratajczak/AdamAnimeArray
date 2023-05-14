@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    background-color: #33333e;
+    background-color: $background-tilted-color;
 }
 
 #AnimeProperties {
@@ -146,7 +146,7 @@
     word-break: break-all;
     overflow: hidden;
     hyphens: auto;
-    background-color: #33333e;
+    background-color: $background-tilted-color;
 }
 
 .RelationEntry:hover {
@@ -165,14 +165,14 @@
 
 #ChatDiv{
     background-color: black;
-    color: white;
+    color: $text-color;
     display: flex;
     flex-direction: column;
     padding-left: 50px;
 }
 
 #ChatDiv > h2{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $text-color;
 }
 
 #ChatDiv{

@@ -324,3 +324,12 @@ export function GetUserReactions(id, token){
     
     return FetchToApiPost(`/auth/comment/getreaction`, req);
 }
+
+export function GetUserTheme(id, token){
+    let req = {
+        UserID: id,
+        Token: token
+    };
+    
+    return FetchToApiPost(`/auth/theme`, req);
+}

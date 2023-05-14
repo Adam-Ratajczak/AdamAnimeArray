@@ -54,13 +54,23 @@ func CreateUser(c echo.Context) error {
 		fmt.Println("User cannot be created:", err2)
 		return c.NoContent(http.StatusInternalServerError)
 	}
-	row2.RowsAffected()
 
-	user := db.QueryRow("SELECT UserID FROM Users ORDER BY UserID DESC LIMIT 1")
+	user, err := row2.LastInsertId()
+	if err != nil {
+		return err
+	}
 
-	user.Scan(&id)
+	_, err2 = db.Exec("INSERT INTO UserPrivileges(UserID, PrivilegeID) VALUES (?, 1);", user)
+	if err2 != nil {
+		fmt.Println("User cannot be created:", err2)
+		return c.NoContent(http.StatusInternalServerError)
+	}
 
-	row2, err2 = db.Exec("INSERT INTO UserPrivileges(UserID, PrivilegeID) VALUES (?, 1);", id)
+	_, err2 = db.Exec("INSERT INTO UserDokiThemes(UserID, ThemeID) VALUES (?, 1);", user)
+	if err2 != nil {
+		fmt.Println("User cannot be created:", err2)
+		return c.NoContent(http.StatusInternalServerError)
+	}
 
 	return c.NoContent(http.StatusAccepted)
 }
@@ -635,6 +645,38 @@ func GetAnimeProgress(c echo.Context) error {
 		}
 
 		res = append(res, progress)
+	}
+
+	return c.JSON(http.StatusOK, res)
+}
+
+func GetUserTheme(c echo.Context) error {
+	rq := AnimeUserRequest{}
+	err := c.Bind(&rq)
+	if err != nil {
+		return err
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	res := UserTheme{}
+	theme_id := 0
+
+	row = db.QueryRow("SELECT ThemeID, BgPosterLeft, BgPosterRight FROM UserDokiThemes WHERE UserID = ?;", id)
+	err = row.Scan(&theme_id, &res.LeftImgUrl, &res.RightImgUrl)
+	if err != nil {
+		return err
+	}
+
+	row = db.QueryRow("SELECT * FROM DokiThemes WHERE ThemeID = ?;", theme_id)
+	err = row.Scan(&theme_id, &res.BaseColor, &res.BgColor, &res.BgColorDark, &res.BgColorTheme, &res.BgColorTilted, &res.BtnHoverColor, &res.BtnHoverTextColor, &res.FgColor, &res.FgColorDark, &res.TextColor, &res.TextColorDark, &res.TextColorTilted)
+	if err != nil {
+		return err
 	}
 
 	return c.JSON(http.StatusOK, res)

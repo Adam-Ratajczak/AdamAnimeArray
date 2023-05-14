@@ -2,7 +2,7 @@
 @import 'src/styles/select';
 
 #AnimeInfoHeaderDiv {
-    background-color: #630f78;
+    background-color: $foreground-color-dark;
     color: $text-color;
     margin: 0px;
     padding-left: 50px;
@@ -232,7 +232,7 @@ a {
 }
 
 #SongContainer a {
-    color: #630f78;
+    color: $foreground-color-dark;
 }
 
 #SongContainer th {

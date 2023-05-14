@@ -21,7 +21,7 @@ body {
   padding-bottom: 5px;
   border: 2px solid $foreground-color;
   background-color: $background-color;
-  color: white;
+  color: $text-color;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ body {
   flex-direction: column;
   width: 40%;
   min-height: 100%;
-  background-color: #33333e;
+  background-color: $background-tilted-color;
   padding: 10px;
   color: $text-tilted-color;
 }

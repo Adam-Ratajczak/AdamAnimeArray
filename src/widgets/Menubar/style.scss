@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   height: 125px;
-  color: whitesmoke;
+  color: $text-color-dark;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -16,13 +16,16 @@
   align-items: center;
   height: 75px;
   background-color: $base-color;
-  background-image: url("headerbg.png");
   background-repeat: no-repeat;
+}
+
+#HeaderContent > img{
+  max-width: max-content;
 }
 
 #aaaHeader {
   color: $text-color;
-  text-align: right;
+  text-align: left;
   width: 40%;
 }
 
