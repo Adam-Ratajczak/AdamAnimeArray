@@ -4,6 +4,11 @@ import redirect from "../../redirect";
 import "./style.scss";
 
 function Signup() {
+  if(LoginMan.LoggedIn()){
+    // eslint-disable-next-line no-restricted-globals
+    history.back()
+  }
+
   useEffect(() => {
     document.getElementById("Send").onclick = async (event) => {
       let user = document.getElementById("Username").value;
@@ -99,7 +104,7 @@ function Signup() {
                 <td></td>
                 <td class="RightLogin">
                   <button id="Send" name="Send">
-                    Log in
+                    Sign up
                   </button>
                 </td>
               </tr>

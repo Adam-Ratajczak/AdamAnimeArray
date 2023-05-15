@@ -105,7 +105,7 @@ function Menubar() {
         <h1 id="aaaHeader">AdamAnimeArray</h1>
         <form id="Search">
           <input type="submit" id="Searchbtn" value=""></input>
-          <input type="text" id="Searchbar" placeholder="Search..."></input>
+          <input type="text" id="Searchbar" placeholder="Search..." autocomplete="off"></input>
         </form>
       </div>
       <div id="MenuContent">

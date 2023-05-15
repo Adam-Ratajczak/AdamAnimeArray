@@ -9,6 +9,7 @@ import change_theme from "../../themes";
 function UserProfile() {
   const [Watchlist, SetWatchlist] = useState([])
 
+
   useEffect(() => {
     (async () => {
       if (LoginMan.LoggedIn()) {
@@ -45,6 +46,10 @@ function UserProfile() {
     (async () => {
       change_theme(document.getElementById("SampleAnimeList"))
     })()
+    
+    if (!LoginMan.LoggedIn()) {
+      redirect("/")
+    }
   });
 
   return (

@@ -268,6 +268,7 @@ function Search() {
             defaultValue={searchPhrase}
             ref={searchBar}
             placeholder="Search..."
+            autocomplete="off"
           />
           <input
             type="submit"

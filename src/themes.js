@@ -108,22 +108,42 @@ export default async function change_theme(root) {
             r.style.color = user_theme.FgColor
         }
 
-        var css1 = ".HeaderHover:hover{ background-color: " + user_theme.BtnHoverTextColor + "; color: " + user_theme.BaseColor + "; } .BtnHover:hover{ background-color: " + user_theme.BtnHoverColor + "; } .Button:hover { color: " + user_theme.BtnHoverTextColor + "; background-color: " + user_theme.BtnHoverColor + "; }";
-        var css2 = "::placeholder { color: " + user_theme.TextColorDark + "; } :-ms-input-placeholder { color: " + user_theme.TextColorDark + "; }";
-        var css3 = ".BorderTab{ background-color: " + user_theme.FgColor + "; border: 2px solid " + user_theme.FgColor + "; } .RegularTab{ background-color: " + user_theme.BgColor + "; border: 2px solid " + user_theme.BgColorDark + "; } .SelectedTab{ background-color: " + user_theme.BgColorTilted + "; border: 2px solid " + user_theme.FgColor + "; }";
+        let hovers = document.getElementsByClassName("HeaderHover")
+        for(let h of hovers){
+            h.onmouseover = () => {
+                h.style.backgroundColor = user_theme.BtnHoverTextColor
+                h.style.color = user_theme.BaseColor
+            }
 
-
-        var style = document.createElement('style');
-
-        if (style.styleSheet) {
-            style.styleSheet.cssText = css1 + css2 + css3;
-        } else {
-            style.appendChild(document.createTextNode(css1));
-            style.appendChild(document.createTextNode(css2));
-            style.appendChild(document.createTextNode(css3));
+            h.onmouseout = () => {
+                h.style.backgroundColor = user_theme.BgColorTilted
+                h.style.color = ""
+            }
         }
 
-        document.getElementsByTagName('head')[0].appendChild(style);
+        hovers = document.getElementsByClassName("BtnHover")
+        for(let h of hovers){
+            h.onmouseover = () => {
+                h.style.backgroundColor = user_theme.BtnHoverColor
+            }
+
+            h.onmouseout = () => {
+                h.style.backgroundColor = user_theme.BgColor
+            }
+        }
+
+        hovers = document.getElementsByClassName("Button")
+        for(let h of hovers){
+            h.onmouseover = () => {
+                h.style.backgroundColor = user_theme.BtnHoverColor
+                h.style.color = user_theme.BtnHoverTextColor
+            }
+
+            h.onmouseout = () => {
+                h.style.backgroundColor = ""
+                h.style.color = ""
+            }
+        }
     } else {
         ChangeMenubarImg("#a334e8ff")
     }

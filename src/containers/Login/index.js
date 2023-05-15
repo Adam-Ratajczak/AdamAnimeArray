@@ -13,7 +13,8 @@ function Login() {
     let res = await LoginMan.login(user.current.value, passwd.current.value);
 
     if (res) {
-      redirect("/");
+      // eslint-disable-next-line no-restricted-globals
+      history.back()
     } else {
       // FIXME: Display more info from server here.
       setErrorMsg("Login failed");
