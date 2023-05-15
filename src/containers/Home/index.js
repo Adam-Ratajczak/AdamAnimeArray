@@ -54,6 +54,7 @@ function Home() {
                 Premiered={elem.Premiered}
                 EpNum={elem.EpisodeNum}
                 Type={elem.Type.Name}
+                TypeID={elem.Type.ID}
               />
             </div>
           );

@@ -144,6 +144,19 @@ export default async function change_theme(root) {
                 h.style.color = ""
             }
         }
+
+        hovers = document.getElementsByClassName("CoolButtonCb")
+        for(let h of hovers){
+            h.onchange = () => {
+                if(h.value){
+                    h.style.backgroundColor = user_theme.FgColor
+                    h.style.color = user_theme.TextColor
+                }else{
+                    h.style.backgroundColor = ""
+                    h.style.color = ""
+                }
+            }
+        }
     } else {
         ChangeMenubarImg("#a334e8ff")
     }

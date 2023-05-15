@@ -297,6 +297,7 @@ function AnimeInfo() {
                 Premiered={elem.Premiered}
                 EpNum={elem.EpisodeNum}
                 Type={elem.Type.Name}
+                TypeID={elem.Type.ID}
               />
             </div>
           );
@@ -550,7 +551,7 @@ function AnimeInfo() {
             </>
           ) : (
             <div
-              className="Loading"
+              class="Loading"
               style={{ width: "100%", height: "100%" }}
             />
           )}

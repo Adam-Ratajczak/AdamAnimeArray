@@ -8,11 +8,11 @@ const animeLimit = 10;
 
 function TypeButton({ AnimeName, TypeID, onChecked }) {
   return (
-    <div className="CoolButtonDiv">
-      <label className="CoolButton unselectable">
+    <div class="CoolButtonDiv">
+      <label class="CoolButton unselectable">
         <input
           type="checkbox"
-          className="CoolButtonCb"
+          class="CoolButtonCb"
           onChange={(evt) => onChecked(evt.target.checked)}
           value={TypeID}
         />
@@ -285,36 +285,36 @@ function Search() {
         </div>
       </div>
       <div id="AnimeTypeDiv">
-        <h3 className="FilterCategoryHeader">
+        <h3 class="FilterCategoryHeader">
           Genres
           <i class="arrow right"></i>
         </h3>
         <div class="AnimeTypeBtnDiv">{renderButtons("genre", Genres)}</div>
-        <h3 className="FilterCategoryHeader">
+        <h3 class="FilterCategoryHeader">
           Themes
           <i class="arrow right"></i>
         </h3>
         <div class="AnimeTypeBtnDiv">{renderButtons("theme", Themes)}</div>
-        <h3 className="FilterCategoryHeader">
+        <h3 class="FilterCategoryHeader">
           Studios
           <i class="arrow right"></i>
         </h3>
         <div class="AnimeTypeBtnDiv">{renderButtons("studio", Studios)}</div>
-        <h3 className="FilterCategoryHeader">
+        <h3 class="FilterCategoryHeader">
           Producers
           <i class="arrow right"></i>
         </h3>
         <div class="AnimeTypeBtnDiv">
           {renderButtons("producer", Producers)}
         </div>
-        <h3 className="FilterCategoryHeader">
+        <h3 class="FilterCategoryHeader">
           Demographics
           <i class="arrow right"></i>
         </h3>
         <div class="AnimeTypeBtnDiv">
           {renderButtons("demographics", Demographics)}
         </div>
-        <h3 className="FilterCategoryHeader">
+        <h3 class="FilterCategoryHeader">
           Types
           <i class="arrow right"></i>
         </h3>
