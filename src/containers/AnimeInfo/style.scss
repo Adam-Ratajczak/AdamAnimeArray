@@ -44,6 +44,10 @@
     color: $text-tilted-color;
 }
 
+h2.InfoHeader{
+    color: $text-tilted-color;
+}
+
 #AnimeInfoContainer table {
     margin-left: 30px;
 }
@@ -287,6 +291,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 .MessageFooter > div{
     display: flex;
     flex-direction: row;
