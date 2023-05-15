@@ -1,4 +1,5 @@
 @import 'src/styles/colors';
+@import 'src/styles/hover';
 
 #AnimeInfoHeaderDiv img {
     margin-right: 10px;
@@ -147,11 +148,6 @@
     overflow: hidden;
     hyphens: auto;
     background-color: $background-tilted-color;
-}
-
-.RelationEntry:hover {
-    background-color: $btn-hover-text-color;
-    color: $base-color;
 }
 
 #PlayerDiv {

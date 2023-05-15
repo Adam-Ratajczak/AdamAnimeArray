@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { GetEpisodes, GetProgress } from "../../db_module"
 import './style.scss';
 import LoginMan from '../../login_manager';
+import change_theme from '../../themes';
 
 function EpisodeBtn(props) {
     const [Eps, SetEps] = useState([])
@@ -49,7 +50,7 @@ function EpisodeBtn(props) {
                                 }
                             }
 
-                            list.push((<a href={"/anime/" + props.AnimeID + "/ep/" + ep.EpisodeNr}><div class="EpBtn EpBtnRegular"><h3 style={{backgroundColor: color}}>{ep.EpisodeNr}</h3></div></a>))
+                            list.push((<a href={"/anime/" + props.AnimeID + "/ep/" + ep.EpisodeNr}><div class="EpBtn EpBtnRegular BtnHover"><h3 style={{backgroundColor: color}}>{ep.EpisodeNr}</h3></div></a>))
                             i++
                         }
                         SetEps(list)
@@ -57,6 +58,12 @@ function EpisodeBtn(props) {
             }
         }
     })
+
+    useEffect(() => {
+      (async () => {
+        change_theme(document.getElementsByClassName("EpBtnContainer")[0])
+      })()
+    });
 
     return (
         <div class="EpBtnContainer">

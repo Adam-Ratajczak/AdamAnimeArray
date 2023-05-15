@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import './style.scss'
+import change_theme from '../../themes';
 
 function TabUnit(props) {
 
     const [Tabs, SetTabs] = useState([])
+    const [Changed, SetChanged] = useState(true)
 
     function modify_tab(index) {
         let result = [];
@@ -13,9 +15,9 @@ function TabUnit(props) {
             props.onChange(event, index);
         }
 
-        if(index == 1){
+        if (index == 1) {
             result.push((<div class="TabCell BorderTab SelectedTab" onClick={event => foo(event, 1)}>1</div>));
-        }else{
+        } else {
             result.push((<div class="TabCell BorderTab" onClick={event => foo(event, 1)}>1</div>));
         }
 
@@ -60,35 +62,36 @@ function TabUnit(props) {
                 }
             }
         }
-        
-        if(index == props.TabCount){
+
+        if (index == props.TabCount) {
             result.push((<div class="TabCell BorderTab SelectedTab" onClick={event => foo(event, props.TabCount)}>{props.TabCount}</div>));
-        }else{
+        } else {
             result.push((<div class="TabCell BorderTab" onClick={event => foo(event, props.TabCount)}>{props.TabCount}</div>));
         }
 
         SetTabs(result)
+        SetChanged(true)
     }
 
-    if(Tabs.length == 0){
-        modify_tab(props.Index)
+    if (Tabs.length == 0) {
+        modify_tab(parseInt(props.Index))
     }
 
     useEffect(() => {
         let page_input = document.querySelector(".TabUnitDiv input")
 
-        if(page_input.value == 0){
+        if (page_input.value == 0) {
             page_input.value = 1
         }
 
         page_input.onchange = () => {
             let index = page_input.value
 
-            if(index <= 0){
+            if (index <= 0) {
                 index = 1
             }
 
-            if(index > props.TabCount){
+            if (index > props.TabCount) {
                 index = props.TabCount
             }
             page_input.value = index
@@ -96,12 +99,12 @@ function TabUnit(props) {
             modify_tab(parseInt(index))
             props.onChange(0, parseInt(index));
         }
-    })
+    }, [])
 
     return (
         <div class="TabUnitDiv">
             {Tabs}
-            <label>Go to page: <input type="number"/></label>
+            <label>Go to page: <input type="number" /></label>
         </div>
     )
 }

@@ -14,6 +14,7 @@ import thumbup from "./thumbup.png"
 import thumbdown from "./thumbdown.png"
 import LoginMan from "../../login_manager";
 import Icon from "../../widgets/Menubar/userdefault";
+import change_theme from "../../themes";
 
 const isFirefox = navigator.userAgent.indexOf("Firefox") != -1
 
@@ -56,9 +57,9 @@ function ChatEntry(props) {
     let upvote_btn = document.getElementById("upvote" + EntryID)
     let downvote_btn = document.getElementById("downvote" + EntryID)
 
-    if(Reaction == -1){
+    if (Reaction == -1) {
       downvote_btn.classList.add("Reacted")
-    }else if(Reaction == 1){
+    } else if (Reaction == 1) {
       upvote_btn.classList.add("Reacted")
     }
 
@@ -79,6 +80,8 @@ function ChatEntry(props) {
         SetUpvotes(upvote_int + 1)
         LoginMan.reactComment(EntryID, 1)
       }
+
+      change_theme(document.getElementById("chat" + EntryID))
     }
 
     downvote_btn.onclick = () => {
@@ -98,6 +101,8 @@ function ChatEntry(props) {
         SetDownvotes(downvote_int + 1)
         LoginMan.reactComment(EntryID, -1)
       }
+
+      change_theme(document.getElementById("chat" + EntryID))
     }
   }, [])
 
@@ -111,7 +116,7 @@ function ChatEntry(props) {
   }
 
   return (
-    <div class="ChatEntry" style={{ marginLeft: Depth * 30 }}>
+    <div class="ChatEntry" id={"chat" + EntryID} style={{ marginLeft: Depth * 30 }}>
       <div class="ChatUserImg">
         {UserIcon.Valid ? (
           <img
@@ -239,7 +244,7 @@ function AnimeInfo() {
           if (arr.has(rel.Relation.ID)) {
             arr.get(rel.Relation.ID).push(
               <a
-                class="RelationEntry"
+                class="RelationEntry HeaderHover"
                 href={"/anime/" + rel.OtherID.toString()}
               >
                 {rel.OtherName}
@@ -248,7 +253,7 @@ function AnimeInfo() {
           } else {
             arr.set(rel.Relation.ID, [
               <a
-                class="RelationEntry"
+                class="RelationEntry HeaderHover"
                 href={"/anime/" + rel.OtherID.toString()}
               >
                 {rel.OtherName}
@@ -569,6 +574,12 @@ function AnimeInfo() {
       });
     }
   }
+
+  useEffect(() => {
+    (async () => {
+      change_theme(document.getElementById("content"))
+    })()
+  });
 
   return (
     <>

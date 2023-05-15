@@ -1,3 +1,13 @@
+@import 'src/styles/colors';
+
 .unselectable {
     user-select: none;
+}
+
+::placeholder {
+    color: $text-color-dark;
+}
+
+:-ms-input-placeholder {
+    color: $text-color-dark;
 }

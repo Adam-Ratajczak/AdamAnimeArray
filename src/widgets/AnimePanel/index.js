@@ -49,7 +49,7 @@ function AnimePanel(props){
   return (
     <a href={'/anime/' + props.AnimeID.toString()}>
     <div class="AnimePanel">
-      <div class="AnimePanelHover">
+      <div class="AnimePanelHover BtnHover">
           <div class="AnimePanelHeader">
             <h1>{AnimeTitle}</h1>
           </div>

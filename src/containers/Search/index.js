@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect, useRef } from "react";
 import { AnimePanel } from "../../widgets";
 import { FilterAnimes, GetDbInfo } from "../../db_module";
 import "./style.scss";
+import change_theme from "../../themes";
 
 const animeLimit = 10;
 
@@ -248,6 +249,13 @@ function Search() {
 
     return res;
   }
+
+  useEffect(() => {
+    (async () => {
+      change_theme(document.getElementById("SearchResults"))
+      change_theme(document.getElementById("AnimeTypeDiv"))
+    })()
+  });
 
   return (
     <div id="contentSearch">

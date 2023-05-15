@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { AnimePoster, TabUnit } from "../../widgets";
 import { GetAnimeRange } from "../../db_module";
 import "./style.scss";
+import change_theme from "../../themes";
 
 const num_sample_animes = Math.floor(window.screen.width / 270) * 3;
 
@@ -66,7 +67,12 @@ function Home() {
       SetFirstTime(false);
       fillList(0);
     }
+
+    (async () => {
+      change_theme(document.getElementById("SampleAnimeList"))
+    })()
   });
+  
 
   return (
     <>

@@ -1,5 +1,6 @@
 @import 'src/styles/colors';
 @import 'src/styles/tooltips';
+@import 'src/styles/hover';
 
 .AnimePoster{
     background-color: $background-color;
@@ -25,9 +26,6 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-}
-.AnimePosterHover:hover{
-    background-color: $btn-hover-color;
 }
 
 .AnimePosterDiv{

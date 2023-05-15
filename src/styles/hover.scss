@@ -1,0 +1,10 @@
+@import 'src/styles/colors';
+
+.HeaderHover:hover{
+    background-color: $btn-hover-text-color;
+    color: $base-color;
+}
+
+.BtnHover:hover{
+    background-color: $btn-hover-color;
+}

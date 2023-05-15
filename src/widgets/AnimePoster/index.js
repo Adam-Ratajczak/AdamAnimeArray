@@ -22,7 +22,7 @@ function AnimePoster(props) {
   return (
     <a href={"/anime/" + props.AnimeID}>
       <div class="AnimePoster">
-        <div class="AnimePosterHover">
+        <div class="AnimePosterHover BtnHover">
           <div class="AnimePosterHeader tooltip">
             <span class="tooltiptext">{AnimeTitle}</span>
             <h1>{shortTitle()}</h1>

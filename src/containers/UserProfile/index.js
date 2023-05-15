@@ -4,6 +4,7 @@ import LoginMan from "../../login_manager";
 import { redirect } from "react-router-dom";
 import { AnimePoster } from "../../widgets";
 import minus from "./minus.png";
+import change_theme from "../../themes";
 
 function UserProfile() {
   const [Watchlist, SetWatchlist] = useState([])
@@ -37,9 +38,14 @@ function UserProfile() {
       } else {
         redirect("/login")
       }
-      let btns = document.querySelectorAll(".RemoveAnimeImg")
     })()
   }, [])
+
+  useEffect(() => {
+    (async () => {
+      change_theme(document.getElementById("SampleAnimeList"))
+    })()
+  });
 
   return (
     <>

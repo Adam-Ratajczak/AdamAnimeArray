@@ -107,7 +107,7 @@ function EpList(props) {
               }
 
               let title = ep.Title
-              list.push(<a class={"EpisodeEntry tooltip"} href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class={"EpisodeNr" + (i + 1 == EpNum ? " SelectedEpNr" : "")}>{ep.EpisodeNr}</span><span class="EpTitle" style={{ backgroundColor: color }}>{title}</span></a>)
+              list.push(<a class={"EpisodeEntry tooltip HeaderHover"} href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class={"EpisodeNr" + (i + 1 == EpNum ? " SelectedEpNr" : "")}>{ep.EpisodeNr}</span><span class="EpTitle" style={{ backgroundColor: color }}>{title}</span></a>)
               i++
               SetEps(list)
             }

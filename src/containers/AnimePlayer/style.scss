@@ -1,5 +1,6 @@
 @import 'src/styles/colors';
 @import 'src/styles/select';
+@import 'src/styles/hover';
 
 #AnimeInfoHeaderDiv {
     background-color: $foreground-color-dark;
@@ -61,11 +62,6 @@
 .EpisodeEntry {
     display: flex;
     flex-direction: row;
-}
-
-a.EpisodeEntry:hover {
-    background-color: $btn-hover-text-color;
-    color: $base-color;
 }
 
 .EpisodeEntry>span {
