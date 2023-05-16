@@ -3,25 +3,72 @@ import { AnimePoster, TabUnit } from "../../widgets";
 import { GetAnimeRange } from "../../db_module";
 import "./style.scss";
 import redirect from "../../redirect";
+import LoginMan from "../../login_manager";
 
 const num_sample_animes = 18
 
-function List() {
-  const [animes, setAnimes] = useState(0);
+function List(props) {
+  const [animes, setAnimes] = useState([]);
   const [tabs, setTabs] = useState(0);
+  const [header, setHeader] = useState(0);
+
+  if (!LoginMan.LoggedIn()) {
+    redirect("/")
+  }
 
   useEffect(() => {
     (async () => {
       // eslint-disable-next-line no-restricted-globals
       let mode = location.href.split("/").at(-1)
       async function GetAnimes(index) {
-        await GetAnimeRange(index, num_sample_animes, mode)
-          .then((response) => response.json())
-          .then((result) => {
-            let animes = []
-            for (let elem of result.Animes) {
-              animes.push((
-                <div class="PosterWrapper">
+        if (props.Mode == "Watchlist") {
+          const watchlist = await LoginMan.getWatchlist()
+          let animeList = []
+
+          for (let i = index; i < index + num_sample_animes; i++) {
+            if (i >= watchlist.length) {
+              break
+            }
+
+            const elem = watchlist[i]
+
+            animeList.push((
+              <AnimePoster
+                AnimeID={elem.AnimeID}
+                Title={elem.AnimeTitle}
+                Poster={elem.PosterURL}
+                Premiered={elem.Premiered}
+                EpNum={elem.EpisodeNum}
+                Type={elem.Type.Name}
+                TypeID={elem.Type.ID}
+                Mode="watchlist"
+              />
+            ))
+          }
+
+          setHeader("Your watchlist:")
+          setAnimes(animeList);
+
+          function OnChange(event, index) {
+            setAnimes([])
+            GetAnimes((index - 1) * num_sample_animes);
+          }
+
+          setTabs((
+            <TabUnit
+              Index="1"
+              TabCount={Math.ceil(watchlist.length / num_sample_animes)}
+              TabCollapse="10"
+              onChange={OnChange}
+            />
+          ))
+        } else if (props.Mode == "List") {
+          await GetAnimeRange(index, num_sample_animes, mode)
+            .then((response) => response.json())
+            .then((result) => {
+              let animeList = []
+              for (let elem of result.Animes) {
+                animeList.push((
                   <AnimePoster
                     AnimeID={elem.AnimeID}
                     Title={elem.AnimeTitle}
@@ -31,36 +78,26 @@ function List() {
                     Type={elem.Type.Name}
                     TypeID={elem.Type.ID}
                   />
-                </div>
+                ))
+              }
+
+              setHeader(result.Header)
+              setAnimes(animeList);
+
+              function OnChange(event, index) {
+                GetAnimes((index - 1) * num_sample_animes);
+              }
+
+              setTabs((
+                <TabUnit
+                  Index="1"
+                  TabCount={Math.ceil(result.AnimeCount / num_sample_animes)}
+                  TabCollapse="10"
+                  onChange={OnChange}
+                />
               ))
-            }
-
-            setAnimes((
-              <div class="AnimeSection">
-                <div class="AnimeListHeader">
-                  <a class="BackBtn" href="/"><span>Back to main page</span></a>
-                  <h2>{result.Header}</h2>
-                </div>
-                <div id="AnimeList">
-                  {animes}
-                </div>
-                {tabs}
-              </div>
-            ));
-
-            function OnChange(event, index) {
-              GetAnimes((index - 1) * num_sample_animes);
-            }
-
-            setTabs((
-              <TabUnit
-                Index="1"
-                TabCount={Math.ceil(result.AnimeCount / num_sample_animes)}
-                TabCollapse="10"
-                onChange={OnChange}
-              />
-            ))
-          })
+            })
+        }
       }
 
       GetAnimes(0)
@@ -72,7 +109,15 @@ function List() {
   return (
     <>
       <div id="content">
-        <div id="SampleAnimeList">{animes}</div>
+        <div class="AnimeSection">
+          <div class="AnimeListHeader">
+            <a class="BackBtn" href="/"><span>Back to main page</span></a>
+            <h2>{header}</h2>
+          </div>
+          <div id="AnimeList">
+            {animes}
+          </div>
+        </div>
       </div>
       {tabs}
     </>

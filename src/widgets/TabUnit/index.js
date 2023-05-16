@@ -64,7 +64,9 @@ function TabUnit(props) {
         }
 
         if (index == props.TabCount) {
-            result.push((<div class="TabCell BorderTab SelectedTab" onClick={event => foo(event, props.TabCount)}>{props.TabCount}</div>));
+            if (index != 1) {
+                result.push((<div class="TabCell BorderTab SelectedTab" onClick={event => foo(event, props.TabCount)}>{props.TabCount}</div>));
+            }
         } else {
             result.push((<div class="TabCell BorderTab" onClick={event => foo(event, props.TabCount)}>{props.TabCount}</div>));
         }

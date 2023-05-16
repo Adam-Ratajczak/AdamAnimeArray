@@ -28,6 +28,6 @@ div::-webkit-scrollbar-thumb {
 }
 
 /* Handle on hover */
-div::-webkit-scrollbar-thumb:hover {
+div::-webkit-scrollbar-thumb:active {
     background: #555;
 }

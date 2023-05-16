@@ -29,7 +29,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Root />}>
           <Route path="" element={<Home/>}></Route>
-          <Route path="/List/:Code" element={<List/>}></Route>
+          <Route path="/List/:Code" element={<List Mode="List"/>}></Route>
+          <Route path="/watchlist" element={<List Mode="Watchlist"/>}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
           <Route path="/UserProfile" element={<UserProfile />}></Route>

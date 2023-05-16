@@ -7,41 +7,6 @@ import minus from "./minus.png";
 import change_theme from "../../themes";
 
 function UserProfile() {
-  const [Watchlist, SetWatchlist] = useState([])
-
-
-  useEffect(() => {
-    (async () => {
-      if (LoginMan.LoggedIn()) {
-        const watchlist = await LoginMan.getWatchlist()
-        let res = []
-
-        for (const elem of watchlist) {
-          function delete_func() {
-            LoginMan.removeFromWatchlist(parseInt(elem.AnimeID))
-            window.location.reload()
-          }
-          res.push((
-            <div class="PosterOutline">
-              <AnimePoster
-                AnimeID={elem.AnimeID}
-                Title={elem.AnimeTitle}
-                Poster={elem.PosterURL}
-                Premiered={elem.Premiered}
-                EpNum={elem.EpisodeNum}
-                Type={elem.Type.Name}
-              />
-              <img width="30" height="30" src={minus} onClick={delete_func} class="RemoveAnimeImg" />
-            </div>
-          ))
-          SetWatchlist(res)
-        }
-      } else {
-        redirect("/login")
-      }
-    })()
-  }, [])
-
   useEffect(() => {
     (async () => {
       change_theme(document.getElementById("SampleAnimeList"))
@@ -55,10 +20,7 @@ function UserProfile() {
   return (
     <>
       <div id="content">
-        <div id="ContentHeader">
-          <h1>Your Watchlist:</h1>
-        </div>
-        <div id="SampleAnimeList">{Watchlist}</div>
+        
       </div>
     </>
   );

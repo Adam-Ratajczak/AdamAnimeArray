@@ -11,14 +11,17 @@
     display: flex;
     flex-direction: row;
     background-color: $background-color-theme;
-    height: fit-content;
+    max-height: 1200px;
+    justify-content: flex-end;
+    align-items: stretch;
     color: $text-color;
 }
 
 #AnimeInfoContainer {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
+    margin-left: 30px;
     background-color: $background-tilted-color;
 }
 
@@ -95,7 +98,7 @@ h2.InfoHeader{
 #SimiliarAnimes {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }

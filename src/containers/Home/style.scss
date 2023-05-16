@@ -32,6 +32,8 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    padding-left: 40px;
+    width: fit-content;
 }
 
 .AnimeSectionHeader>h2 {
@@ -52,14 +54,16 @@ body {
 }
 
 .ShowMoreBtn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     background-color: $background-tilted-color;
     border: none;
     color: #ffffff;
     text-align: center;
     font-size: 17px;
-    padding: 16px;
+    // padding: 16px;
     width: 25%;
     transition: all 0.5s;
     cursor: pointer;

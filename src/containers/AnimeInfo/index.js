@@ -289,17 +289,15 @@ function AnimeInfo() {
           const elem = AnimeList.Animes[i];
           let ID = elem.AnimeID;
           res.push(
-            <div class="PosterOutline">
-              <AnimePoster
-                AnimeID={ID}
-                Title={elem.AnimeTitle}
-                Poster={elem.PosterURL}
-                Premiered={elem.Premiered}
-                EpNum={elem.EpisodeNum}
-                Type={elem.Type.Name}
-                TypeID={elem.Type.ID}
-              />
-            </div>
+            <AnimePoster
+              AnimeID={ID}
+              Title={elem.AnimeTitle}
+              Poster={elem.PosterURL}
+              Premiered={elem.Premiered}
+              EpNum={elem.EpisodeNum}
+              Type={elem.Type.Name}
+              TypeID={elem.Type.ID}
+            />
           );
           IDs.push(ID);
         }

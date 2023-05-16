@@ -6,8 +6,9 @@ import change_theme from "../../themes";
 import redirect from "../../redirect";
 import RandomIcon from './random.png'
 import { applyEffect } from 'fluent-reveal-effect';
+import LoginMan from "../../login_manager";
 
-const num_sample_animes = 6
+const num_sample_animes = 5
 
 function Home() {
   const [animes, setAnimes] = useState([]);
@@ -23,7 +24,7 @@ function Home() {
         await GetAnimeRange(0, num_sample_animes, mode)
           .then((response) => response.json())
           .then((result) => {
-            if(genres.indexOf(result.Code) != -1){
+            if (genres.indexOf(result.Code) != -1) {
               return
             }
 
@@ -31,17 +32,15 @@ function Home() {
             let animes = []
             for (let elem of result.Animes) {
               animes.push((
-                <div class="PosterWrapper">
-                  <AnimePoster
-                    AnimeID={elem.AnimeID}
-                    Title={elem.AnimeTitle}
-                    Poster={elem.PosterURL}
-                    Premiered={elem.Premiered}
-                    EpNum={elem.EpisodeNum}
-                    Type={elem.Type.Name}
-                    TypeID={elem.Type.ID}
-                  />
-                </div>
+                <AnimePoster
+                  AnimeID={elem.AnimeID}
+                  Title={elem.AnimeTitle}
+                  Poster={elem.PosterURL}
+                  Premiered={elem.Premiered}
+                  EpNum={elem.EpisodeNum}
+                  Type={elem.Type.Name}
+                  TypeID={elem.Type.ID}
+                />
               ))
             }
 
@@ -68,6 +67,49 @@ function Home() {
       await WriteAnimes("sample:0")
       await WriteAnimes("sample:1")
       await WriteAnimes("sample:2")
+
+      if (LoginMan.LoggedIn()) {
+        const watchlist = await LoginMan.getWatchlist()
+        let animes = []
+        let res = []
+        let i = 0;
+
+        for (let elem of watchlist) {
+          if (i == num_sample_animes) {
+            break
+          }
+          animes.push((
+            <AnimePoster
+              AnimeID={elem.AnimeID}
+              Title={elem.AnimeTitle}
+              Poster={elem.PosterURL}
+              Premiered={elem.Premiered}
+              EpNum={elem.EpisodeNum}
+              Type={elem.Type.Name}
+              TypeID={elem.Type.ID}
+              Mode="watchlist"
+            />
+          ))
+          i++
+        }
+
+        res.push((
+          <div class="AnimeSection">
+            <div class="AnimeSectionHeader">
+              <h2>Your watchlist:</h2>
+              {watchlist.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/watchlist"}><span>Show more</span></a>) : (<></>)}
+            </div>
+            {watchlist.length != 0 ? (
+              <div class="SampleAnimeList">
+                {animes}
+              </div>
+            ) : (
+              <p style={{color: "white", marginLeft: "50px", marginTop: "0px"}}>No series in your watchlist!</p>
+            )}
+          </div>
+        ))
+        setAnimes((animes) => [...animes, ...res]);
+      }
 
       function random_anime() {
         GetAnimeRange(0, 1, "sample:2")
