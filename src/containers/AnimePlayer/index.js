@@ -171,9 +171,9 @@ function AnimePlayer() {
         SetEnglishTitle(result.EnglishTitle);
 
         if (result.EnglishTitle == "") {
-          document.getElementById("EpList").style.height = "532px"
+          document.getElementById("EpList").style.height = (document.body.clientHeight - 50).toString() + "px"
         } else {
-          document.getElementById("EpList").style.height = "500px"
+          document.getElementById("EpList").style.height = (document.body.clientHeight - 90).toString() + "px"
         }
 
         if (EpNum > result.EpisodeNum) {
@@ -303,9 +303,14 @@ function AnimePlayer() {
         <EpList AnimeID={AnimeID} EpNum={EpNum} />
         <div id="PlayerMainDiv">
           <div id="PlayerDiv">
-            <div id="IframeWrapper">
+            {LoginMan.LoggedIn() ? (
+              <div id="IframeWrapper">
+                <iframe id="Player" src={PlayerUrl} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" />
+              </div>
+            ) : (
               <iframe id="Player" src={PlayerUrl} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" />
-            </div>
+            )}
+
             <label><span>Choose Player:</span><select id="PlayerCb" class="minimal"></select></label>
           </div>
           <div id="PlayerInfoDiv">
