@@ -38,13 +38,13 @@ export default async function change_theme(root) {
         return "#" + (r < 16 ? "0" : "") + r.toString(16) + (g < 16 ? "0" : "") + g.toString(16) + (b < 16 ? "0" : "") + b.toString(16) + (a < 16 ? "0" : "") + a.toString(16)
     }
 
-    function ChangeMenubarImg(FgColor) {
+    function ChangeImg(query, FgColor) {
         let r = parseInt(FgColor.substr(1, 2), 16)
         let g = parseInt(FgColor.substr(3, 2), 16)
         let b = parseInt(FgColor.substr(5, 2), 16)
 
         let hsv = rgb2hsv(r / 255, g / 255, b / 255)
-        document.querySelector("#MenuBar").style.filter = "hue-rotate(" + hsv[0] + "deg) brightness(" + hsv[1] * 100 + "%) saturate(" + hsv[2] * 100 + "%)"
+        document.querySelector(query).style.filter = "hue-rotate(" + hsv[0] + "deg) brightness(" + hsv[1] * 100 + "%) saturate(" + hsv[2] * 100 + "%)"
     }
 
     function ChangeColors(orginal, new_color) {
@@ -70,94 +70,95 @@ export default async function change_theme(root) {
     }
 
     if (LoginMan.LoggedIn()) {
-        if (user_theme.length == 0) {
-            const theme = await LoginMan.getTheme();
-            user_theme = theme
-        }
+        // if (user_theme.length == 0) {
+        //     const theme = await LoginMan.getTheme();
+        //     user_theme = theme
+        // }
 
-        ChangeMenubarImg(user_theme.FgColor)
-        ChangeColors("#011e2dff", user_theme.BaseColor)
-        ChangeColors("#444444ff", user_theme.BgColor)
-        ChangeColors("#333333ff", user_theme.BgColorDark)
-        ChangeColors("#222233ff", user_theme.BgColorTheme)
-        ChangeColors("#33333eff", user_theme.BgColorTilted)
-        ChangeColors("#2e2e6555", user_theme.BtnHoverColor)
-        ChangeColors("#f4f4ffff", user_theme.BtnHoverTextColor)
-        ChangeColors("#a334e8ff", user_theme.FgColor)
-        ChangeColors("#630f78ff", user_theme.FgColorDark)
-        ChangeColors("#ffffffff", user_theme.TextColor)
-        ChangeColors("#f5f5f5ff", user_theme.TextColorDark)
-        ChangeColors("#add8e6ff", user_theme.TextColorTilted)
+        // ChangeMenubarImg(user_theme.FgColor)
+        // ChangeColors("#011e2dff", user_theme.BaseColor)
+        // ChangeColors("#444444ff", user_theme.BgColor)
+        // ChangeColors("#333333ff", user_theme.BgColorDark)
+        // ChangeColors("#222233ff", user_theme.BgColorTheme)
+        // ChangeColors("#33333eff", user_theme.BgColorTilted)
+        // ChangeColors("#2e2e6555", user_theme.BtnHoverColor)
+        // ChangeColors("#f4f4ffff", user_theme.BtnHoverTextColor)
+        // ChangeColors("#a334e8ff", user_theme.FgColor)
+        // ChangeColors("#630f78ff", user_theme.FgColorDark)
+        // ChangeColors("#ffffffff", user_theme.TextColor)
+        // ChangeColors("#f5f5f5ff", user_theme.TextColorDark)
+        // ChangeColors("#add8e6ff", user_theme.TextColorTilted)
 
-        let reacts = document.querySelectorAll(".ReactionContainer")
-        for(let r of reacts){
-            r.style.borderColor = user_theme.FgColor
-            r.style.backgroundColor = user_theme.BgColorDark
-        }
-        reacts = document.querySelectorAll(".ReactionContainer span")
-        for(let r of reacts){
-            r.style.color = user_theme.TextColor
-        }
+        // let reacts = document.querySelectorAll(".ReactionContainer")
+        // for(let r of reacts){
+        //     r.style.borderColor = user_theme.FgColor
+        //     r.style.backgroundColor = user_theme.BgColorDark
+        // }
+        // reacts = document.querySelectorAll(".ReactionContainer span")
+        // for(let r of reacts){
+        //     r.style.color = user_theme.TextColor
+        // }
 
-        reacts = document.querySelectorAll(".Reacted")
-        for(let r of reacts){
-            r.style.backgroundColor = user_theme.TextColor
-        }
-        reacts = document.querySelectorAll(".Reacted span")
-        for(let r of reacts){
-            r.style.color = user_theme.FgColor
-        }
+        // reacts = document.querySelectorAll(".Reacted")
+        // for(let r of reacts){
+        //     r.style.backgroundColor = user_theme.TextColor
+        // }
+        // reacts = document.querySelectorAll(".Reacted span")
+        // for(let r of reacts){
+        //     r.style.color = user_theme.FgColor
+        // }
 
-        let hovers = document.getElementsByClassName("HeaderHover")
-        for(let h of hovers){
-            h.onmouseover = () => {
-                h.style.backgroundColor = user_theme.BtnHoverTextColor
-                h.style.color = user_theme.BaseColor
-            }
+        // let hovers = document.getElementsByClassName("HeaderHover")
+        // for(let h of hovers){
+        //     h.onmouseover = () => {
+        //         h.style.backgroundColor = user_theme.BtnHoverTextColor
+        //         h.style.color = user_theme.BaseColor
+        //     }
 
-            h.onmouseout = () => {
-                h.style.backgroundColor = user_theme.BgColorTilted
-                h.style.color = ""
-            }
-        }
+        //     h.onmouseout = () => {
+        //         h.style.backgroundColor = user_theme.BgColorTilted
+        //         h.style.color = ""
+        //     }
+        // }
 
-        hovers = document.getElementsByClassName("BtnHover")
-        for(let h of hovers){
-            h.onmouseover = () => {
-                h.style.backgroundColor = user_theme.BtnHoverColor
-            }
+        // hovers = document.getElementsByClassName("BtnHover")
+        // for(let h of hovers){
+        //     h.onmouseover = () => {
+        //         h.style.backgroundColor = user_theme.BtnHoverColor
+        //     }
 
-            h.onmouseout = () => {
-                h.style.backgroundColor = user_theme.BgColor
-            }
-        }
+        //     h.onmouseout = () => {
+        //         h.style.backgroundColor = user_theme.BgColor
+        //     }
+        // }
 
-        hovers = document.getElementsByClassName("Button")
-        for(let h of hovers){
-            h.onmouseover = () => {
-                h.style.backgroundColor = user_theme.BtnHoverColor
-                h.style.color = user_theme.BtnHoverTextColor
-            }
+        // hovers = document.getElementsByClassName("Button")
+        // for(let h of hovers){
+        //     h.onmouseover = () => {
+        //         h.style.backgroundColor = user_theme.BtnHoverColor
+        //         h.style.color = user_theme.BtnHoverTextColor
+        //     }
 
-            h.onmouseout = () => {
-                h.style.backgroundColor = ""
-                h.style.color = ""
-            }
-        }
+        //     h.onmouseout = () => {
+        //         h.style.backgroundColor = ""
+        //         h.style.color = ""
+        //     }
+        // }
 
-        hovers = document.getElementsByClassName("CoolButtonCb")
-        for(let h of hovers){
-            h.onchange = () => {
-                if(h.value){
-                    h.style.backgroundColor = user_theme.FgColor
-                    h.style.color = user_theme.TextColor
-                }else{
-                    h.style.backgroundColor = ""
-                    h.style.color = ""
-                }
-            }
-        }
+        // hovers = document.getElementsByClassName("CoolButtonCb")
+        // for(let h of hovers){
+        //     h.onchange = () => {
+        //         if(h.value){
+        //             h.style.backgroundColor = user_theme.FgColor
+        //             h.style.color = user_theme.TextColor
+        //         }else{
+        //             h.style.backgroundColor = ""
+        //             h.style.color = ""
+        //         }
+        //     }
+        // }
     } else {
-        ChangeMenubarImg("#a334e8ff")
+        ChangeImg("#MenuBar", "#a334e8ff")
+        ChangeImg("#PickRandomDiv > img", "#a334e8ff")
     }
 }

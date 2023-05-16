@@ -104,14 +104,6 @@ function Menubar() {
     document.getElementById("MainBtn").onclick = () => {
       redirect("/")
     }
-
-    // document.getElementById("random").addEventListener("click", (ev) => {
-    //   GetAnimeRange(0, 1, 2)
-    //     .then((response) => response.json())
-    //     .then((result) => {
-    //       redirect("/Anime/" + result.Animes[0].AnimeID);
-    //     });
-    // });
   });
 
   return (

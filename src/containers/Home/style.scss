@@ -1,24 +1,25 @@
 @import 'src/styles/colors';
 
-html, body{
+html,
+body {
     display: flex;
     flex-direction: column;
     height: 100%;
     overflow: hidden;
 }
 
-#root{
+#root {
     height: 100%;
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-#content{
+#content {
     display: flex;
     flex-direction: column;
     background-color: $background-color-theme;
@@ -27,25 +28,24 @@ html, body{
     overflow-x: hidden;
 }
 
-.AnimeSection{
+.AnimeSection {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
 }
 
-.AnimeSectionHeader > h2{
+.AnimeSectionHeader>h2 {
     color: $text-color;
     margin-left: 40px;
 }
 
-.SampleAnimeList{
+.SampleAnimeList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
-.AnimeSectionHeader{
+.AnimeSectionHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,4 +89,28 @@ html, body{
 .ShowMoreBtn:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+#PickRandomDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $foreground-color;
+    padding-bottom: 30px;
+}
+
+#PickRandomDiv > p{
+    color: $text-color-dark;
+    font-weight: 600;
+}
+
+#Randomize{
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: $background-color;
+    color: $text-color;
+    font-weight: 100;
+    user-select: none;
 }
