@@ -81,6 +81,18 @@ function Home() {
         </div>
       ))
       setAnimes((animes) => [...animes, ...res]);
+      const content = document.getElementById("content")
+      content.onscroll = () => {
+        let currentScroll = content.scrollTop + window.innerHeight
+
+        if (currentScroll >= content.scrollHeight) {
+          if (Math.random() < 0.5) {
+            WriteAnimes("genre:0")
+          } else {
+            WriteAnimes("theme:0")
+          }
+        }
+      }
     })()
 
     change_theme(document)
