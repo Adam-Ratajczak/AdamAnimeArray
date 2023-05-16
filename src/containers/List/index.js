@@ -35,14 +35,10 @@ function List() {
               ))
             }
 
-            function BackTo() {
-              redirect("/")
-            }
-
             setAnimes((
               <div class="AnimeSection">
                 <div class="AnimeListHeader">
-                  <button class="BackBtn" onClick={BackTo}><span>Back to main page</span></button>
+                  <a class="BackBtn" href="/"><span>Back to main page</span></a>
                   <h2>{result.Header}</h2>
                 </div>
                 <div id="AnimeList">

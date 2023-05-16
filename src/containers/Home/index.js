@@ -11,6 +11,7 @@ const num_sample_animes = 6
 
 function Home() {
   const [animes, setAnimes] = useState([]);
+  const [genres, setGenres] = useState([])
 
   useEffect(() => {
     (async () => {
@@ -22,6 +23,10 @@ function Home() {
         await GetAnimeRange(0, num_sample_animes, mode)
           .then((response) => response.json())
           .then((result) => {
+            if(genres.indexOf(result.Code) != -1){
+              return
+            }
+
             let res = []
             let animes = []
             for (let elem of result.Animes) {
@@ -40,15 +45,11 @@ function Home() {
               ))
             }
 
-            function ShowMore() {
-              redirect("/List/" + result.Code)
-            }
-
             res.push((
               <div class="AnimeSection">
                 <div class="AnimeSectionHeader">
                   <h2>{result.Header}</h2>
-                  <button class="ShowMoreBtn" onClick={ShowMore}><span>Show more</span></button>
+                  <a class="ShowMoreBtn" href={"/List/" + result.Code}><span>Show more</span></a>
                 </div>
                 <div class="SampleAnimeList">
                   {animes}
@@ -57,6 +58,10 @@ function Home() {
             ))
 
             setAnimes((animes) => [...animes, ...res]);
+
+            let res2 = genres
+            res2.push(result.Code)
+            setGenres(res2);
           })
       }
 
