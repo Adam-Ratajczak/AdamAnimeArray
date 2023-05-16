@@ -280,12 +280,12 @@ function AnimeInfo() {
   }, []);
 
   useEffect(() => {
-    GetAnimeRange(0, Math.floor(window.screen.width / 270 * 2), 2)
+    GetAnimeRange(0, 12, "sample:2")
       .then((response) => response.json())
       .then((AnimeList) => {
         let res = [];
         let IDs = [];
-        for (let i = 0; i < AnimeList.Animes.length - 1; i++) {
+        for (let i = 0; i < AnimeList.Animes.length; i++) {
           const elem = AnimeList.Animes[i];
           let ID = elem.AnimeID;
           res.push(
