@@ -11,6 +11,7 @@ import {
   Signup,
   NoPlayer,
   UserProfile,
+  List,
 } from "./containers";
 import Root from "./containers/Root";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -27,19 +28,11 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Root />}>
-          <Route path="" element={<Navigate to="/Recomended" />}></Route>
-          <Route path="/Recomended" element={<Home />}></Route>
-          <Route path="/Popular" element={<Home />}></Route>
-          <Route path="/Newest" element={<Home />}></Route>
+          <Route path="" element={<Home/>}></Route>
+          <Route path="/List/:Code" element={<List/>}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
           <Route path="/UserProfile" element={<UserProfile />}></Route>
-          <Route
-            path="*/Recomended"
-            element={<Navigate to="/Recomended" />}
-          ></Route>
-          <Route path="*/Popular" element={<Navigate to="/Popular" />}></Route>
-          <Route path="*/Newest" element={<Navigate to="/Newest" />}></Route>
           <Route path="/Anime" element={<Navigate to="/Search" />}></Route>
           <Route path="/Search/:searchrule" element={<Search />}></Route>
           <Route path="/Search" element={<Navigate to="/Search/*" />}></Route>

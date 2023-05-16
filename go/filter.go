@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"strconv"
 	"strings"
 
 	"github.com/labstack/echo/v4"
@@ -34,18 +35,76 @@ func animeRange(c echo.Context) error {
 		return c.NoContent(http.StatusBadRequest)
 	}
 
-	order_by := ""
+	keyword := strings.Split(rq.Mode, ":")[0]
 
-	if rq.Mode == 0 {
-		order_by = "WHERE MalRank != 0 ORDER BY MalRank ASC"
-	} else if rq.Mode == 1 {
-		order_by = "WHERE AiredBegin != '0000-00-00' ORDER BY AiredBegin DESC"
-	} else if rq.Mode == 2 {
-		order_by = "ORDER BY RAND()"
+	mode, err := strconv.ParseInt(strings.Split(rq.Mode, ":")[1], 10, 32)
+	if err != nil {
+		return err
 	}
+
+	order_by := ""
 
 	res := Range{}
 	res.Animes = []AnimeShort{}
+
+	if keyword == "sample" {
+		if mode == 0 {
+			res.Header = "Top Ranked Animes"
+			order_by = "WHERE MalRank != 0 ORDER BY MalRank ASC"
+		} else if mode == 1 {
+			res.Header = "Recently Added Animes"
+			order_by = "WHERE AiredBegin != '0000-00-00' ORDER BY AiredBegin DESC"
+		} else if mode == 2 {
+			res.Header = "Recomended Animes"
+			order_by = "ORDER BY RAND()"
+		}
+
+		res.Code = rq.Mode
+	} else if keyword == "genre" {
+		GenreName := ""
+		if mode == 0 {
+			row := db.QueryRow("SELECT GenreID, GenreName FROM Genres ORDER BY RAND() LIMIT 1")
+
+			err = row.Scan(&mode, &GenreName)
+			if err != nil {
+				return err
+			}
+		} else {
+			row := db.QueryRow("SELECT GenreName FROM Genres WHERE GenreID = ? LIMIT 1", mode)
+
+			err = row.Scan(&GenreName)
+			if err != nil {
+				return err
+			}
+		}
+
+		res.Header = GenreName + " Animes"
+		order_by = "WHERE AnimeID IN ((SELECT AnimeID FROM AnimeGenres WHERE GenreID = " + strconv.FormatInt(mode, 10) + ")) ORDER BY MalRank ASC"
+
+		res.Code = "genre:" + strconv.FormatInt(mode, 10)
+	} else if keyword == "theme" {
+		ThemeName := ""
+		if mode == 0 {
+			row := db.QueryRow("SELECT ThemeID, ThemeName FROM Themes ORDER BY RAND() LIMIT 1")
+
+			err = row.Scan(&mode, &ThemeName)
+			if err != nil {
+				return err
+			}
+		} else {
+			row := db.QueryRow("SELECT ThemeName FROM Themes WHERE ThemeID = ? LIMIT 1", mode)
+
+			err = row.Scan(&ThemeName)
+			if err != nil {
+				return err
+			}
+		}
+
+		res.Header = ThemeName + " Animes"
+		order_by = "WHERE AnimeID IN ((SELECT AnimeID FROM AnimeThemes WHERE ThemeID = " + strconv.FormatInt(mode, 10) + ")) ORDER BY MalRank ASC"
+
+		res.Code = "theme:" + strconv.FormatInt(mode, 10)
+	}
 
 	rows, err := db.Query("SELECT AnimeID FROM Animes "+order_by+" LIMIT ?, ?;", rq.AnimeBegin, rq.AnimeEnd)
 	if err != nil {

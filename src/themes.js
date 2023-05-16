@@ -44,7 +44,7 @@ export default async function change_theme(root) {
         let b = parseInt(FgColor.substr(5, 2), 16)
 
         let hsv = rgb2hsv(r / 255, g / 255, b / 255)
-        document.querySelector("#HeaderContent > img").style.filter = "hue-rotate(" + hsv[0] + "deg) brightness(" + hsv[1] * 100 + "%) saturate(" + hsv[2] * 100 + "%)"
+        document.querySelector("#MenuBar").style.filter = "hue-rotate(" + hsv[0] + "deg) brightness(" + hsv[1] * 100 + "%) saturate(" + hsv[2] * 100 + "%)"
     }
 
     function ChangeColors(orginal, new_color) {

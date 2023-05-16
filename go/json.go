@@ -40,6 +40,8 @@ type AnimeShort struct {
 type Range struct {
 	Animes     []AnimeShort
 	AnimeCount int
+	Header     string
+	Code       string
 }
 
 type FilterRange struct {
@@ -50,7 +52,7 @@ type FilterRange struct {
 type AnimeRequest struct {
 	AnimeBegin int
 	AnimeEnd   int
-	Mode       int
+	Mode       string
 }
 
 type SongPlayer struct {

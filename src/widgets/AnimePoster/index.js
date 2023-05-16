@@ -14,13 +14,13 @@ function AnimePoster(props) {
 
   return (
     <a href={"/anime/" + props.AnimeID}>
-      <div class="AnimePoster ripple-hover" style={{backgroundImage: "url(\'"+AnimePoster+"\')"}}>
+      <div class="AnimePoster ripple-hover" style={{ backgroundImage: "url(\'" + AnimePoster + "\')" }}>
         <h2>{AnimeTitle}</h2>
-        <div class="Triangle" style={{borderRightColor: color_array[AnimeTypeID - 1], borderTopColor: color_array[AnimeTypeID - 1]}}></div>
+        <div class="Triangle" style={{ borderRightColor: color_array[AnimeTypeID - 1], borderTopColor: color_array[AnimeTypeID - 1] }}></div>
         <div class="AnimeType">{AnimeType}</div>
         <div class="AnimePosterInfo">
+          <i>{AnimeTitle}</i>
           <table>
-            <thead>{AnimeTitle}</thead>
             <tbody>
               {Premiered ? (<tr><th>Premiered:</th><td>{Premiered}</td></tr>) : (<></>)}
               <tr><th>Episodes:</th><td>{EpisodeNum}</td></tr>

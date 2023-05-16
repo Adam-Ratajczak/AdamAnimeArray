@@ -3,51 +3,23 @@ import { AnimePoster, TabUnit } from "../../widgets";
 import { GetAnimeRange } from "../../db_module";
 import "./style.scss";
 import change_theme from "../../themes";
+import redirect from "../../redirect";
 
-const num_sample_animes = Math.floor(window.screen.width / 270) * 3;
+const num_sample_animes = 6
 
 function Home() {
-  const [AnimeHeader, SetAnimeHeader] = useState("");
-  const [AnimeContainer, SetAnimeContainer] = useState([]);
-  const [AnimeTabUnit, SetAnimeTabUnit] = useState(0);
-  const [FirstTime, SetFirstTime] = useState(true);
+  const [animes, setAnimes] = useState([]);
 
-  const siteType = window.location.href.split("/").at(-1);
-  const fillList = useCallback((begin) => {
-    let mode = 0;
-    let anime_header = "";
-
-    if (siteType == "Popular") {
-      mode = 0;
-      anime_header = "Top Ranked Animes";
-    } else if (siteType == "Newest") {
-      mode = 1;
-      anime_header = "Recently Added Animes";
-    } else if (siteType == "Recomended") {
-      mode = 2;
-      anime_header = "Recomended Animes";
-    }
-    SetAnimeHeader(anime_header);
-
-    GetAnimeRange(begin, num_sample_animes, mode)
-      .then((response) => response.json())
-      .then((result) => {
-        let container = [];
-        const foo = (event, index) => {
-          fillList((index - 1) * num_sample_animes);
-        };
-        SetAnimeTabUnit(
-          <TabUnit
-            Index="1"
-            TabCount={Math.ceil(result.AnimeCount / num_sample_animes)}
-            TabCollapse="10"
-            onChange={foo}
-          />
-        );
-        for (let elem of result.Animes) {
-          container.push(
-            <div class="PosterOutline">
-              <AnimePoster
+  useEffect(() => {
+    (async () => {
+      async function WriteAnimes(mode) {
+        await GetAnimeRange(0, num_sample_animes, mode)
+          .then((response) => response.json())
+          .then((result) => {
+            let res = []
+            let animes = []
+            for (let elem of result.Animes) {
+              animes.push((<AnimePoster
                 AnimeID={elem.AnimeID}
                 Title={elem.AnimeTitle}
                 Poster={elem.PosterURL}
@@ -55,35 +27,43 @@ function Home() {
                 EpNum={elem.EpisodeNum}
                 Type={elem.Type.Name}
                 TypeID={elem.Type.ID}
-              />
-            </div>
-          );
-        }
-        SetAnimeContainer(container);
-      });
-  });
+              />))
+            }
 
-  useEffect(() => {
-    if (FirstTime) {
-      SetFirstTime(false);
-      fillList(0);
-    }
+            function ShowMore(){
+              redirect("/List/" + result.Code)
+            }
 
-    (async () => {
-      change_theme(document.getElementById("SampleAnimeList"))
+            res.push((
+              <div class="AnimeSection">
+                <div class="AnimeSectionHeader">
+                  <h2>{result.Header}</h2>
+                  <button class="ShowMoreBtn" onClick={ShowMore}><span>Show more</span></button>
+                </div>
+                <div class="SampleAnimeList">
+                  {animes}
+                </div>
+              </div>
+            ))
+
+            setAnimes((animes) => [...animes, ...res]);
+          })
+      }
+
+      await WriteAnimes("sample:0")
+      await WriteAnimes("sample:1")
+      await WriteAnimes("sample:2")
+
+      await change_theme(document.getElementById("SampleAnimeList"))
     })()
-  });
-  
+  }, []);
+
 
   return (
     <>
       <div id="content">
-        <div id="ContentHeader">
-          <h1>{AnimeHeader}</h1>
-        </div>
-        <div id="SampleAnimeList">{AnimeContainer}</div>
+        <div id="SampleAnimeList">{animes}</div>
       </div>
-      {AnimeTabUnit}
     </>
   );
 }
