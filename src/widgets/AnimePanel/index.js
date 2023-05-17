@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { GetAnime } from '../../db_module'
 import './style.scss';
 
-function AnimePanel(props){
-
+function AnimePanel(props) {
   const [AnimeTitle, SetAnimeTitle] = useState(0)
   const [AnimePoster, SetAnimePoster] = useState(0)
   const [Premiered, SetPremiered] = useState(0)
@@ -15,41 +14,37 @@ function AnimePanel(props){
   const [AnimeProducers, SetAnimeProducers] = useState(0)
   const [AnimeDemographics, SetAnimeDemographics] = useState(0)
 
-  function get_genre_str(arr){
+  function get_genre_str(arr) {
     let res = "";
 
-    for(let elem of arr){
+    for (let elem of arr) {
       res += elem.Name + ", ";
     }
 
-    if(res.length == 0){
+    if (res.length == 0) {
       res = "None";
     }
 
     return res;
   }
-  
-  useEffect(() =>{
-    GetAnime(props.AnimeID)
-    .then((response) => response.json())
-    .then((result) =>{
-      SetAnimeTitle(result.AnimeTitle);
-      SetAnimePoster(result.PosterURL);
-      SetPremiered(result.Premiered);
-      SetEpisodeNum(result.EpisodeNum);
-      SetAnimeGenres(get_genre_str(result.Genres));
-      SetAnimeThemes(get_genre_str(result.Themes));
-      SetAnimeStudios(get_genre_str(result.Studios));
-      SetAnimeProducers(get_genre_str(result.Producers));
-      SetAnimeDemographics(get_genre_str(result.Demographics));
-      SetAnimeType(result.Type.Name)
-    })
-  }, []);
+
+  useEffect(() => {
+    SetAnimeTitle(props.Anime.AnimeTitle);
+    SetAnimePoster(props.Anime.PosterURL);
+    SetPremiered(props.Anime.Premiered);
+    SetEpisodeNum(props.Anime.EpisodeNum);
+    SetAnimeGenres(get_genre_str(props.Anime.Genres));
+    SetAnimeThemes(get_genre_str(props.Anime.Themes));
+    SetAnimeStudios(get_genre_str(props.Anime.Studios));
+    SetAnimeProducers(get_genre_str(props.Anime.Producers));
+    SetAnimeDemographics(get_genre_str(props.Anime.Demographics));
+    SetAnimeType(props.Anime.Type.Name)
+  }, [])
 
   return (
-    <a href={'/anime/' + props.AnimeID.toString()}>
-    <div class="AnimePanel">
-      <div class="AnimePanelHover BtnHover">
+    <a href={'/anime/' + props.Anime.AnimeID.toString()}>
+      <div class="AnimePanel">
+        <div class="AnimePanelHover BtnHover">
           <div class="AnimePanelHeader">
             <h1>{AnimeTitle}</h1>
           </div>
@@ -98,8 +93,8 @@ function AnimePanel(props){
               </tbody>
             </table>
           </div>
+        </div>
       </div>
-    </div>
     </a>
   )
 }

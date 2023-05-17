@@ -45,7 +45,7 @@ type Range struct {
 }
 
 type FilterRange struct {
-	Animes     []int
+	Animes     []Anime
 	AnimeCount int
 }
 

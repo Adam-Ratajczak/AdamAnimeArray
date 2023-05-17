@@ -146,7 +146,7 @@ func filter(c echo.Context) error {
 	}
 	sql := sqlBuilder(rq)
 	res := FilterRange{}
-	res.Animes = []int{}
+	res.Animes = []Anime{}
 	rows, err := db.Query("SELECT DISTINCT a.AnimeID "+sql+" LIMIT ?, ?;", rq.ABegin, rq.AEnd)
 	if err != nil {
 		return err
@@ -155,7 +155,12 @@ func filter(c echo.Context) error {
 		id := 0
 		rows.Scan(&id)
 
-		res.Animes = append(res.Animes, id)
+		anime, err := GetAnime(id)
+		if err != nil {
+			return err
+		}
+
+		res.Animes = append(res.Animes, anime)
 	}
 
 	row := db.QueryRow("SELECT COUNT(a.AnimeID) " + sql + ";")

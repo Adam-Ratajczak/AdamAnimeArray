@@ -280,7 +280,7 @@ function Search() {
         <div id="SearchResults">
           <h4>Results: {foundNum}</h4>
           {Animes.map((anime) => {
-            return <AnimePanel AnimeID={anime}/>;
+            return <AnimePanel Anime={anime}/>;
           })}
         </div>
       </div>
