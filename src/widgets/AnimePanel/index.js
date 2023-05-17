@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { GetAnime } from '../../db_module'
 import './style.scss';
 import { applyEffect } from 'fluent-reveal-effect';
 

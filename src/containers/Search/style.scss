@@ -103,13 +103,48 @@ body {
   background-color: $background-tilted-color;
   padding: 10px;
   color: $text-tilted-color;
+  padding-left: 0px;
 }
 
 .FilterCategoryHeader {
   color: $text-color;
+  user-select: none;
+  margin-left: 20px;
 }
 
-.AnimeTypeBtnDiv {
+.AnimeTypeBtnDivScroll {
+  direction: rtl;
+  overflow-y: auto;
   display: none;
+}
+
+.AnimeTypeBtnDiv{
+  direction: ltr;
   line-height: 2.5rem;
+  max-height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  margin-left: 20px;
+}
+
+/* width */
+.AnimeTypeBtnDivScroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.AnimeTypeBtnDivScroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.AnimeTypeBtnDivScroll::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+}
+
+/* Handle on hover */
+.AnimeTypeBtnDivScroll::-webkit-scrollbar-thumb:active {
+    background: $foreground-color-dark;
 }

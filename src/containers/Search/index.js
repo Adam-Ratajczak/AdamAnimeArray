@@ -101,7 +101,7 @@ function Search() {
 
     let headers = document.querySelectorAll(".FilterCategoryHeader");
     let arrows = document.querySelectorAll(".arrow");
-    let btns = document.querySelectorAll(".AnimeTypeBtnDiv");
+    let btns = document.querySelectorAll(".AnimeTypeBtnDivScroll");
 
     for (let i = 0; i < headers.length; i++) {
       headers[i].onclick = () => {
@@ -137,9 +137,9 @@ function Search() {
         .then((response) => response.json())
         .then((result) => {
           // console.log("Returned " + result.length + " results");
-          if(clear){
+          if (clear) {
             setAnimes(() => [...result.Animes]);
-          }else{
+          } else {
             setAnimes((animes) => [...animes, ...result.Animes]);
           }
           // console.log("Fetching = false");
@@ -280,7 +280,7 @@ function Search() {
         <div id="SearchResults">
           <h4>Results: {foundNum}</h4>
           {Animes.map((anime) => {
-            return <AnimePanel Anime={anime}/>;
+            return <AnimePanel Anime={anime} />;
           })}
         </div>
       </div>
@@ -289,37 +289,33 @@ function Search() {
           Genres
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDiv">{renderButtons("genre", Genres)}</div>
+        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("genre", Genres)}</div></div>
         <h3 class="FilterCategoryHeader">
           Themes
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDiv">{renderButtons("theme", Themes)}</div>
+        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("theme", Themes)}</div></div>
         <h3 class="FilterCategoryHeader">
           Studios
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDiv">{renderButtons("studio", Studios)}</div>
+        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("studio", Studios)}</div></div>
         <h3 class="FilterCategoryHeader">
           Producers
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDiv">
-          {renderButtons("producer", Producers)}
-        </div>
+        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("producer", Producers)}</div></div>
         <h3 class="FilterCategoryHeader">
           Demographics
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDiv">
-          {renderButtons("demographics", Demographics)}
-        </div>
+        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("demographics", Demographics)}</div></div>
         <h3 class="FilterCategoryHeader">
           Types
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDiv">{renderButtons("type", Types)}</div>
-      </div>
+        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("type", Types)}</div></div>
+        </div>
     </div>
   );
 }
