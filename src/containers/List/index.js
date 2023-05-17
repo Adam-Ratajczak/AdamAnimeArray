@@ -109,7 +109,7 @@ function List(props) {
   return (
     <>
       <div id="content">
-        <div class="AnimeSection">
+        <div class="AnimeListSection">
           <div class="AnimeListHeader">
             <a class="BackBtn" href="/"><span>Back to main page</span></a>
             <h2>{header}</h2>

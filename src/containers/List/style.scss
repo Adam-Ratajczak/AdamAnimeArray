@@ -1,9 +1,11 @@
 @import 'src/styles/colors';
 
-.AnimeSection{
+.AnimeListSection{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    width: 100%;
+    justify-content: center;
 }
 
 .AnimeListHeader > h2{
