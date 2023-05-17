@@ -63,11 +63,6 @@ function Home() {
             setGenres(res2);
           })
       }
-
-      await WriteAnimes("sample:0")
-      await WriteAnimes("sample:1")
-      await WriteAnimes("sample:2")
-
       if (LoginMan.LoggedIn()) {
         const watchlist = await LoginMan.getWatchlist()
         let animes = []
@@ -96,7 +91,7 @@ function Home() {
         res.push((
           <div class="AnimeSection">
             <div class="AnimeSectionHeader">
-              <h2>Your watchlist:</h2>
+              <h2 class="UserAnimes">Your watchlist:</h2>
               {watchlist.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/watchlist"}><span>Show more</span></a>) : (<></>)}
             </div>
             {watchlist.length != 0 ? (
@@ -110,6 +105,12 @@ function Home() {
         ))
         setAnimes((animes) => [...animes, ...res]);
       }
+
+      await WriteAnimes("sample:0")
+      await WriteAnimes("sample:1")
+      await WriteAnimes("sample:2")
+
+      
 
       function random_anime() {
         GetAnimeRange(0, 1, "sample:2")

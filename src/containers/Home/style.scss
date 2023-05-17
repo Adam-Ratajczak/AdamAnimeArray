@@ -36,9 +36,16 @@ body {
     width: fit-content;
 }
 
-.AnimeSectionHeader>h2 {
+h2{
     color: $text-color;
-    margin-left: 40px;
+}
+
+h2.UserAnimes{
+    color: $text-tilted-color;
+}
+
+.AnimeSectionHeader>h2 {
+    margin-left: 30px;
 }
 
 .SampleAnimeList {

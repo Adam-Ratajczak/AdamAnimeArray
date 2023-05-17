@@ -62,7 +62,7 @@ function AnimePanel(props) {
           <div class="AnimePanelHeader">
             <h1>{AnimeTitle}</h1>
           </div>
-          <div class="AnimePanelContent">
+          <div class="AnimePanelContent btn">
             <table class="AnimePanelInfo">
               <tbody>
                 <tr>

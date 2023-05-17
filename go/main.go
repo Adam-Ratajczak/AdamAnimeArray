@@ -84,6 +84,7 @@ func main() {
 		auth.POST("/logout", LogoutUser)
 		auth.POST("/user", UserInfo)
 		auth.POST("/changeinfo", ChangeUserInfo)
+		auth.POST("/watched", UserWatchlist)
 		auth.POST("/watchlist", UserWatchlist)
 		auth.POST("/watchlist/add", UserWatchlistAdd)
 		auth.POST("/watchlist/remove", UserWatchlistRem)

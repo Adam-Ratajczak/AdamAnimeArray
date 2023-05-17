@@ -572,12 +572,12 @@ func UserProgress(c echo.Context) error {
 
 	if rq.Mode == progress {
 		if rq.Mode == 0 && progress == 0 {
-			_, err = db.Exec("INSERT INTO UserAnimeProgress(UserID, EpisodeID, Progress) VALUES (?, ?, 1);", id, ep_id)
+			_, err = db.Exec("INSERT INTO UserAnimeProgress(UserID, EpisodeID, Progress, Seen) VALUES (?, ?, 1, ?);", id, ep_id, time.Now())
 			if err != nil {
 				return err
 			}
 		} else if rq.Mode == 1 && progress == 1 {
-			_, err = db.Exec("UPDATE UserAnimeProgress SET Progress = 2 WHERE UserID = ? AND EpisodeID = ?;", id, ep_id)
+			_, err = db.Exec("UPDATE UserAnimeProgress SET Progress = 2, Seen = ? WHERE UserID = ? AND EpisodeID = ?;", time.Now(), id, ep_id)
 			if err != nil {
 				return err
 			}
