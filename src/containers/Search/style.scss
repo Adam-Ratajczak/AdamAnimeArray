@@ -99,7 +99,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 40%;
-  min-height: 100%;
+  height: fit-content;
   background-color: $background-tilted-color;
   padding: 10px;
   color: $text-tilted-color;
@@ -116,12 +116,12 @@ body {
   direction: rtl;
   overflow-y: auto;
   display: none;
+  max-height: 400px;
 }
 
 .AnimeTypeBtnDiv{
   direction: ltr;
   line-height: 2.5rem;
-  max-height: 400px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
