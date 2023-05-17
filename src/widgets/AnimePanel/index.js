@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { GetAnime } from '../../db_module'
 import './style.scss';
+import { applyEffect } from 'fluent-reveal-effect';
 
 function AnimePanel(props) {
   const [AnimeTitle, SetAnimeTitle] = useState(0)
@@ -39,19 +40,30 @@ function AnimePanel(props) {
     SetAnimeProducers(get_genre_str(props.Anime.Producers));
     SetAnimeDemographics(get_genre_str(props.Anime.Demographics));
     SetAnimeType(props.Anime.Type.Name)
+
+    applyEffect('.AnimePanelHover', {
+      // clickEffect: true,
+      lightColor: 'rgba(255,255,255,0.6)',
+      gradientSize: 80,
+      isContainer: true,
+      children: {
+        borderSelector: '.btn-border',
+        elementSelector: '.btn',
+        lightColor: 'rgba(255,255,255,0.3)',
+        gradientSize: 150
+      }
+    });
   }, [])
 
   return (
     <a href={'/anime/' + props.Anime.AnimeID.toString()}>
       <div class="AnimePanel">
-        <div class="AnimePanelHover BtnHover">
+        <img class="AnimePanelImg" src={AnimePoster}></img>
+        <div class="AnimePanelHover">
           <div class="AnimePanelHeader">
             <h1>{AnimeTitle}</h1>
           </div>
           <div class="AnimePanelContent">
-            <div class="AnimePanelPosterDiv">
-              <img class="AnimePanelImg" src={AnimePoster}></img>
-            </div>
             <table class="AnimePanelInfo">
               <tbody>
                 <tr>
