@@ -28,13 +28,16 @@ func generateToken() string {
 	return hex.EncodeToString(buffer[:])
 }
 
+type ErrorResponse struct {
+	Message string `json:"message"`
+}
+
 func CreateUser(c echo.Context) error {
 	rq := CreateUserRequest{}
 
 	err := c.Bind(&rq)
 	if err != nil {
-		fmt.Println("Bad request")
-		return c.NoContent(http.StatusBadRequest)
+		return c.JSON(http.StatusBadRequest, ErrorResponse{Message: "Bad request"})
 	}
 
 	row := db.QueryRow("SELECT UserID FROM Users WHERE UserName = ?", rq.UserName)
@@ -43,15 +46,14 @@ func CreateUser(c echo.Context) error {
 	err = row.Scan(&id)
 
 	if err == nil {
-		fmt.Println("User exists")
-		return c.NoContent(http.StatusNotAcceptable)
+		return c.JSON(http.StatusNotAcceptable, ErrorResponse{Message: "Username is taken"})
 	}
 
 	password := hashPassword(rq.UserPassword)
 	row2, err2 := db.Exec("INSERT INTO Users(UserName, UserEmail, UserPassword) VALUES (?, ?, ?);", rq.UserName, rq.UserEmail, password)
 
 	if err2 != nil {
-		fmt.Println("User cannot be created:", err2)
+		fmt.Println("INSERT INTO Users failed:", err2)
 		return c.NoContent(http.StatusInternalServerError)
 	}
 
@@ -62,13 +64,13 @@ func CreateUser(c echo.Context) error {
 
 	_, err2 = db.Exec("INSERT INTO UserPrivileges(UserID, PrivilegeID) VALUES (?, 1);", user)
 	if err2 != nil {
-		fmt.Println("User cannot be created:", err2)
+		fmt.Println("INSERT INTO UserPrivileges failed:", err2)
 		return c.NoContent(http.StatusInternalServerError)
 	}
 
 	_, err2 = db.Exec("INSERT INTO UserDokiThemes(UserID, ThemeID) VALUES (?, 1);", user)
 	if err2 != nil {
-		fmt.Println("User cannot be created:", err2)
+		fmt.Println("INSERT INTO UserDokiThemes failed:", err2)
 		return c.NoContent(http.StatusInternalServerError)
 	}
 

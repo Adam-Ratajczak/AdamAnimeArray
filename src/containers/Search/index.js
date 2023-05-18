@@ -44,6 +44,7 @@ function Search() {
 
   const [fetching, setFetching] = useState(true);
   const [foundNum, setFoundNum] = useState(true);
+  const [noMoreFound, setNoMoreFound] = useState(false);
 
   const searchBar = useRef();
 
@@ -63,14 +64,14 @@ function Search() {
   }
 
   function clearBtnOnClick() {
-    setGenreFilter(new Set())
-    setThemeFilter(new Set())
-    setStudioFilter(new Set())
-    setProducerFilter(new Set())
-    setDemographicsFilter(new Set())
-    setTypeFilter(new Set())
+    setGenreFilter(new Set());
+    setThemeFilter(new Set());
+    setStudioFilter(new Set());
+    setProducerFilter(new Set());
+    setDemographicsFilter(new Set());
+    setTypeFilter(new Set());
 
-    let btns = document.querySelectorAll(".CoolButtonCb")
+    let btns = document.querySelectorAll(".CoolButtonCb");
 
     for (let btn of btns) {
       btn.checked = false;
@@ -78,7 +79,7 @@ function Search() {
 
     updateSearchPhrase("");
 
-    fetchMoreResults(0, true)
+    fetchMoreResults(0, true);
   }
 
   function searchBarOnKeyDown(event) {
@@ -139,12 +140,18 @@ function Search() {
           // console.log("Returned " + result.length + " results");
           if (clear) {
             setAnimes(() => [...result.Animes]);
+            if (result.Animes === null || result.Animes.length === 0) {
+              setNoMoreFound(true);
+            }
           } else {
             setAnimes((animes) => [...animes, ...result.Animes]);
+            if (result.Animes === null || result.Animes.length === 0) {
+              setNoMoreFound(true);
+            }
           }
           // console.log("Fetching = false");
           setFetching(false);
-          setFoundNum(result.AnimeCount)
+          setFoundNum(result.AnimeCount);
         });
     },
     [
@@ -159,9 +166,9 @@ function Search() {
   );
 
   useEffect(() => {
-    const content = document.getElementById("contentSearch")
+    const content = document.getElementById("contentSearch");
     function onScroll() {
-      let currentScroll = content.scrollTop + window.innerHeight
+      let currentScroll = content.scrollTop + window.innerHeight;
 
       if (!fetching && currentScroll >= Animes.length * 240 - 50) {
         // console.log("SCROLL", currentScroll, documentHeight);
@@ -169,7 +176,8 @@ function Search() {
         content.onscroll = null;
       }
     }
-    document.getElementById("AnimeTypeDiv").style.minHeight = (Animes.length * 240 + 150).toString() + "px"
+    document.getElementById("AnimeTypeDiv").style.minHeight =
+      (Animes.length * 240 + 150).toString() + "px";
     // console.log("new onscroll ", fetching);
     content.onscroll = onScroll;
     return () => {
@@ -252,9 +260,9 @@ function Search() {
 
   useEffect(() => {
     (async () => {
-      change_theme(document.getElementById("SearchResults"))
-      change_theme(document.getElementById("AnimeTypeDiv"))
-    })()
+      change_theme(document.getElementById("SearchResults"));
+      change_theme(document.getElementById("AnimeTypeDiv"));
+    })();
   });
 
   return (
@@ -282,6 +290,15 @@ function Search() {
           {Animes.map((anime) => {
             return <AnimePanel Anime={anime} />;
           })}
+          {fetching ? (
+            <div
+              className="Loading"
+              style={{ alignSelf: "center", width: "32px", height: "32px" }}
+            ></div>
+          ) : null}
+          {noMoreFound && foundNum > 0 ? (
+            <div style={{ textAlign: "center" }}>No more results</div>
+          ) : null}
         </div>
       </div>
       <div id="AnimeTypeDiv">
@@ -289,33 +306,49 @@ function Search() {
           Genres
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("genre", Genres)}</div></div>
+        <div class="AnimeTypeBtnDivScroll">
+          <div class="AnimeTypeBtnDiv">{renderButtons("genre", Genres)}</div>
+        </div>
         <h3 class="FilterCategoryHeader">
           Themes
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("theme", Themes)}</div></div>
+        <div class="AnimeTypeBtnDivScroll">
+          <div class="AnimeTypeBtnDiv">{renderButtons("theme", Themes)}</div>
+        </div>
         <h3 class="FilterCategoryHeader">
           Studios
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("studio", Studios)}</div></div>
+        <div class="AnimeTypeBtnDivScroll">
+          <div class="AnimeTypeBtnDiv">{renderButtons("studio", Studios)}</div>
+        </div>
         <h3 class="FilterCategoryHeader">
           Producers
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("producer", Producers)}</div></div>
+        <div class="AnimeTypeBtnDivScroll">
+          <div class="AnimeTypeBtnDiv">
+            {renderButtons("producer", Producers)}
+          </div>
+        </div>
         <h3 class="FilterCategoryHeader">
           Demographics
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("demographics", Demographics)}</div></div>
+        <div class="AnimeTypeBtnDivScroll">
+          <div class="AnimeTypeBtnDiv">
+            {renderButtons("demographics", Demographics)}
+          </div>
+        </div>
         <h3 class="FilterCategoryHeader">
           Types
           <i class="arrow right"></i>
         </h3>
-        <div class="AnimeTypeBtnDivScroll"><div class="AnimeTypeBtnDiv">{renderButtons("type", Types)}</div></div>
+        <div class="AnimeTypeBtnDivScroll">
+          <div class="AnimeTypeBtnDiv">{renderButtons("type", Types)}</div>
         </div>
+      </div>
     </div>
   );
 }

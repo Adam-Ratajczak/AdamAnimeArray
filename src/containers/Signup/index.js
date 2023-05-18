@@ -4,9 +4,9 @@ import redirect from "../../redirect";
 import "./style.scss";
 
 function Signup() {
-  if(LoginMan.LoggedIn()){
+  if (LoginMan.LoggedIn()) {
     // eslint-disable-next-line no-restricted-globals
-    history.back()
+    history.back();
   }
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function Signup() {
       if (interrupt) {
         return;
       }
-      let pattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+      let pattern = /^(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}$/;
 
       if (!pattern.exec(passwd)) {
         document.getElementById("ErrorMsg").innerText =
@@ -51,16 +51,12 @@ function Signup() {
         return;
       }
 
-      let res = await LoginMan.signup(user, email, passwd);
-
-      if (res) {
+      try {
+        await LoginMan.signup(user, email, passwd);
         redirect("/login");
-      } else {
-        document.getElementById("ErrorMsg").innerText =
-          "User with given name already exists!";
+      } catch (e) {
+        document.getElementById("ErrorMsg").innerText = e.message;
         document.getElementById("ErrorMsg").style.color = "red";
-
-        return;
       }
     };
   });
