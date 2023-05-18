@@ -243,7 +243,7 @@ func UserFinished(c echo.Context) error {
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	rows, err := db.Query("SELECT e.AnimeID, MAX(p.Seen) FROM UserAnimeProgress p JOIN Episodes e ON p.EpisodeID = e.EpisodeID WHERE p.UserID = ? AND p.Progress = 2 GROUP BY e.AnimeID HAVING COUNT(e.EpisodeID) = (SELECT COUNT(EpisodeID) FROM Episodes e2 WHERE e2.AnimeID = e.AnimeID) ORDER BY 2 DESC;", id)
+	rows, err := db.Query("SELECT e.AnimeID, MAX(p.Seen) FROM UserAnimeProgress p JOIN Episodes e ON p.EpisodeID = e.EpisodeID WHERE p.UserID = ? AND p.Progress = 2 AND (SELECT a.TypeID FROM Animes a WHERE a.AnimeID = e.AnimeID) != 6 GROUP BY e.AnimeID HAVING COUNT(e.EpisodeID) = (SELECT COUNT(EpisodeID) FROM Episodes e2 WHERE e2.AnimeID = e.AnimeID) ORDER BY 2 DESC;", id)
 	animes := []AnimeWached{}
 	for rows.Next() {
 		AnimeID := 0
