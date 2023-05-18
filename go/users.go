@@ -243,21 +243,22 @@ func UserFinished(c echo.Context) error {
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	rows, err := db.Query("SELECT e.AnimeID FROM UserAnimeProgress p JOIN Episodes e ON p.EpisodeID = e.EpisodeID WHERE p.UserID = ? AND p.Progress = 2 GROUP BY e.AnimeID HAVING COUNT(e.EpisodeID) = (SELECT COUNT(EpisodeID) FROM Episodes e2 WHERE e2.AnimeID = e.AnimeID);", id)
-	animes := []Anime{}
+	rows, err := db.Query("SELECT e.AnimeID, MAX(p.Seen) FROM UserAnimeProgress p JOIN Episodes e ON p.EpisodeID = e.EpisodeID WHERE p.UserID = ? AND p.Progress = 2 GROUP BY e.AnimeID HAVING COUNT(e.EpisodeID) = (SELECT COUNT(EpisodeID) FROM Episodes e2 WHERE e2.AnimeID = e.AnimeID) ORDER BY 2 DESC;", id)
+	animes := []AnimeWached{}
 	for rows.Next() {
 		AnimeID := 0
-		err = rows.Scan(&AnimeID)
+		Watched := AnimeWached{}
+		err = rows.Scan(&AnimeID, &Watched.Watched)
 		if err != nil {
 			return err
 		}
 
-		anime, err := GetAnime(AnimeID)
+		Watched.WatchedAnime, err = GetAnime(AnimeID)
 		if err != nil {
 			return err
 		}
 
-		animes = append(animes, anime)
+		animes = append(animes, Watched)
 	}
 
 	return c.JSON(http.StatusOK, animes)

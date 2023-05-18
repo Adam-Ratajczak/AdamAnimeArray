@@ -153,13 +153,16 @@ function Home() {
           }
           animes.push((
             <AnimePoster
-              AnimeID={elem.AnimeID}
-              Title={elem.AnimeTitle}
-              Poster={elem.PosterURL}
-              Premiered={elem.Premiered}
-              EpNum={elem.EpisodeNum}
-              Type={elem.Type.Name}
-              TypeID={elem.Type.ID}
+              AnimeID={elem.WatchedAnime.AnimeID}
+              Title={elem.WatchedAnime.AnimeTitle}
+              Poster={elem.WatchedAnime.PosterURL}
+              Premiered={elem.WatchedAnime.Premiered}
+              EpNum={elem.WatchedAnime.EpisodeNum}
+              Type={elem.WatchedAnime.Type.Name}
+              TypeID={elem.WatchedAnime.Type.ID}
+              Mode="finished"
+              EpNr={elem.WatchedEp}
+              Watched={elem.Watched}
             />
           ))
           i++
