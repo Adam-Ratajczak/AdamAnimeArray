@@ -17,7 +17,8 @@
     width: 100%;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    // align-items: center;
     justify-content: left;
 }
 
@@ -187,7 +188,7 @@ a {
     width: 100%;
 }
 
-#EpControls {
+.EpControls {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -197,10 +198,10 @@ a {
     gap: 10px;
 }
 
-#EpControls>a {
+.EpControls>a {
     padding: 10px;
     width: 40%;
-    min-width: 130px;
+    // min-width: 130px;
     text-align: center;
     cursor: pointer;
 

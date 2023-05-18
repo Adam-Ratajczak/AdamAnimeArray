@@ -300,6 +300,37 @@ func UserWatched(c echo.Context) error {
 	return c.JSON(http.StatusOK, animes)
 }
 
+func ReportPlayer(c echo.Context) error {
+	rq := AnimeUserRequest{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	row = db.QueryRow("SELECT AnimeID FROM UserSavedAnimes WHERE UserID = ? AND AnimeID = ?;", id, rq.AnimeID)
+	AnimeID := 0
+
+	err = row.Scan(&AnimeID)
+	if err == nil {
+		return c.NoContent(http.StatusConflict)
+	}
+
+	_, err = db.Exec("INSERT INTO UserSavedAnimes(UserID, AnimeID) VALUES (?, ?);", id, rq.AnimeID)
+	if err != nil {
+		return err
+	}
+
+	return c.NoContent(http.StatusOK)
+}
+
 func UserWatchlistAdd(c echo.Context) error {
 	rq := AnimeUserRequest{}
 

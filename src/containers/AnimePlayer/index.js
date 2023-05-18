@@ -75,7 +75,7 @@ function EpList(props) {
         .then((response) => response.json())
         .then((result) => {
           Progress = result
-        }).catch(() => {})
+        }).catch(() => { })
 
       await GetEpisodes(AnimeID)
         .then((response) => response.json())
@@ -141,6 +141,7 @@ function AnimePlayer() {
   const [EnglishTitle, SetEnglishTitle] = useState(0)
   const [EpisodeTitle, SetEpisodeTitle] = useState(0)
   const [EpisodeControls, SetEpisodeControls] = useState(0)
+  const [EpisodeAdminControls, SetEpisodeAdminControls] = useState(0)
   const [Aired, SetAired] = useState(0)
   const [Songs, SetSongs] = useState([])
   const [PlayerUrl, SetPlayerUrl] = useState("/NoPlayer")
@@ -175,10 +176,12 @@ function AnimePlayer() {
           redirect("/anime/" + AnimeID);
         }
 
-        SetEpisodeControls(result.EpisodeNum > 1 ? (<div id="EpControls">
-          {EpNum != 1 ? (<a href={"/anime/" + AnimeID + "/ep/" + (EpNum - 1).toString()} style={{ backgroundColor: "red" }}>Previous Episode</a>) : (<a style={{ backgroundColor: "gray" }}>Previous Episode</a>)}
-          {EpNum != result.EpisodeNum ? (<a href={"/anime/" + AnimeID + "/ep/" + (EpNum + 1).toString()} style={{ backgroundColor: "green" }}>Next Episode</a>) : (<a style={{ backgroundColor: "gray" }}>Next Episode</a>)}
-        </div>) : (<></>))
+        SetEpisodeControls(
+          result.EpisodeNum > 1 ? (<div class="EpControls">
+            {EpNum != 1 ? (<a href={"/anime/" + AnimeID + "/ep/" + (EpNum - 1).toString()} style={{ backgroundColor: "red", width: "140px" }}>Previous Episode</a>) : (<a style={{ backgroundColor: "gray", width: "140px" }}>Previous Episode</a>)}
+            {EpNum != result.EpisodeNum ? (<a href={"/anime/" + AnimeID + "/ep/" + (EpNum + 1).toString()} style={{ backgroundColor: "green", width: "140px" }}>Next Episode</a>) : (<a style={{ backgroundColor: "gray", width: "140px" }}>Next Episode</a>)}
+          </div>) : (<></>)
+        )
       })
   }, []);
 
@@ -235,6 +238,12 @@ function AnimePlayer() {
 
           img.classList.add("active")
         }
+
+        SetEpisodeAdminControls(LoginMan.LoggedIn() ? (
+          <div class="EpControls">
+            <a href="" style={{ backgroundColor: "gold", width: "300px" }}>Report player</a>
+          </div>) : (<></>)
+        )
       })
     cb.onchange = (ev) => {
       let player_url = cb.options[cb.selectedIndex].value
@@ -321,6 +330,7 @@ function AnimePlayer() {
             <a href={"/anime/" + AnimeID.toString()}>Back to anime info...</a>
             <a id="EpSongs">Show episode opening / ending</a>
             {EpisodeControls}
+            {EpisodeAdminControls}
           </div>
         </div>
       </div>

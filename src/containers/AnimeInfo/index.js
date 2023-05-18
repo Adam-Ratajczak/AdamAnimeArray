@@ -585,8 +585,7 @@ function AnimeInfo() {
       <div id="content">
         <div id="AnimeInfoHeaderDiv">
           <h1>
-            {AnimeTitle}
-            <br />
+            <span>{AnimeTitle}</span>
             <i>{EnglishTitle}</i>
           </h1>
           {LoginMan.LoggedIn() ? (

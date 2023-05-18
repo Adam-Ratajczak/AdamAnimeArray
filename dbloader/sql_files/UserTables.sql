@@ -103,3 +103,13 @@ CREATE TABLE IF NOT EXISTS UserDokiThemes(
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (ThemeID) REFERENCES DokiThemes(ThemeID)
 );
+
+-- table for reporting players
+CREATE TABLE IF NOT EXISTS UserReportedPlayers(
+    EntryID INT PRIMARY KEY,
+    UserID INT NOT NULL,
+    PlayerID INT NOT NULL,
+    ReportText VARCHAR(2048),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (PlayerID) REFERENCES EpisodePlayers(PlayerID)
+);
