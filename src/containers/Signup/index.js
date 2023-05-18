@@ -33,7 +33,7 @@ function Signup() {
       if (interrupt) {
         return;
       }
-      let pattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+      let pattern = /^(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}$/;
 
       if (!pattern.exec(passwd)) {
         document.getElementById("ErrorMsg").innerText =
