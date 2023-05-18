@@ -226,6 +226,41 @@ func UserWatchlist(c echo.Context) error {
 	return c.JSON(http.StatusOK, animes)
 }
 
+func UserFinished(c echo.Context) error {
+	rq := UserAuth{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	rows, err := db.Query("SELECT e.AnimeID FROM UserAnimeProgress p JOIN Episodes e ON p.EpisodeID = e.EpisodeID WHERE p.UserID = ? AND p.Progress = 2 GROUP BY e.AnimeID HAVING COUNT(e.EpisodeID) = (SELECT COUNT(EpisodeID) FROM Episodes e2 WHERE e2.AnimeID = e.AnimeID);", id)
+	animes := []Anime{}
+	for rows.Next() {
+		AnimeID := 0
+		err = rows.Scan(&AnimeID)
+		if err != nil {
+			return err
+		}
+
+		anime, err := GetAnime(AnimeID)
+		if err != nil {
+			return err
+		}
+
+		animes = append(animes, anime)
+	}
+
+	return c.JSON(http.StatusOK, animes)
+}
+
 func UserWatched(c echo.Context) error {
 	rq := UserAuth{}
 

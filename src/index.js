@@ -31,6 +31,8 @@ export default function App() {
           <Route path="" element={<Home/>}></Route>
           <Route path="/List/:Code" element={<List Mode="List"/>}></Route>
           <Route path="/watchlist" element={<List Mode="Watchlist"/>}></Route>
+          <Route path="/watched" element={<List Mode="Watched"/>}></Route>
+          <Route path="/finished" element={<List Mode="Finished"/>}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
           <Route path="/UserProfile" element={<UserProfile />}></Route>

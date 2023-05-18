@@ -214,6 +214,15 @@ export function GetWatched(id, token){
     return FetchToApiPost(`/auth/watched`, req);
 }
 
+export function GetFinished(id, token){
+    let req = {
+        UserID: id,
+        Token: token,
+    };
+    
+    return FetchToApiPost(`/auth/finished`, req);
+}
+
 export function AddToWatchlist(token, AnimeID){
     let req = {
         Token: token,

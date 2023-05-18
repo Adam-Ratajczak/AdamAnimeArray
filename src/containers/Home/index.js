@@ -143,6 +143,41 @@ function Home() {
           ))
         }
 
+        const finished = await LoginMan.getFinished()
+        animes = []
+        i = 0;
+
+        for (let elem of finished) {
+          if (i == num_sample_animes) {
+            break
+          }
+          animes.push((
+            <AnimePoster
+              AnimeID={elem.AnimeID}
+              Title={elem.AnimeTitle}
+              Poster={elem.PosterURL}
+              Premiered={elem.Premiered}
+              EpNum={elem.EpisodeNum}
+              Type={elem.Type.Name}
+              TypeID={elem.Type.ID}
+            />
+          ))
+          i++
+        }
+
+        if (finished.length > 0) {
+          res.push((
+            <div class="AnimeSection">
+              <div class="AnimeSectionHeader">
+                <h2 class="UserAnimes">Watch again:</h2>
+                {watchlist.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/finished"}><span>Show more</span></a>) : (<></>)}
+              </div>
+              <div class="SampleAnimeList">
+                {animes}
+              </div>
+            </div>
+          ))
+        }
 
         setAnimes((animes) => [...animes, ...res]);
       }

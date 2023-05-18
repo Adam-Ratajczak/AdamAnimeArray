@@ -62,6 +62,89 @@ function List(props) {
               onChange={OnChange}
             />
           ))
+        } else if (props.Mode == "Watched") {
+          const watchlist = await LoginMan.getWatched()
+          let animeList = []
+
+          for (let i = index; i < index + num_sample_animes; i++) {
+            if (i >= watchlist.length) {
+              break
+            }
+
+            const elem = watchlist[i]
+
+            animeList.push((
+              <AnimePoster
+                AnimeID={elem.WatchedAnime.AnimeID}
+                Title={elem.WatchedAnime.AnimeTitle}
+                Poster={elem.WatchedAnime.PosterURL}
+                Premiered={elem.WatchedAnime.Premiered}
+                EpNum={elem.WatchedAnime.EpisodeNum}
+                Type={elem.WatchedAnime.Type.Name}
+                TypeID={elem.WatchedAnime.Type.ID}
+                Mode="watched"
+                EpNr={elem.WatchedEp}
+                Watched={elem.Watched}
+              />
+            ))
+          }
+
+          setHeader("Recently watched:")
+          setAnimes(animeList);
+
+          function OnChange(event, index) {
+            setAnimes([])
+            GetAnimes((index - 1) * num_sample_animes);
+          }
+
+          setTabs((
+            <TabUnit
+              Index="1"
+              TabCount={Math.ceil(watchlist.length / num_sample_animes)}
+              TabCollapse="10"
+              onChange={OnChange}
+            />
+          ))
+        } else if (props.Mode == "Finished") {
+          const watchlist = await LoginMan.getFinished()
+          let animeList = []
+
+          for (let i = index; i < index + num_sample_animes; i++) {
+            if (i >= watchlist.length) {
+              break
+            }
+
+            const elem = watchlist[i]
+
+            animeList.push((
+              <AnimePoster
+                AnimeID={elem.AnimeID}
+                Title={elem.AnimeTitle}
+                Poster={elem.PosterURL}
+                Premiered={elem.Premiered}
+                EpNum={elem.EpisodeNum}
+                Type={elem.Type.Name}
+                TypeID={elem.Type.ID}
+              />
+            ))
+          }
+
+          setHeader("Already finished:")
+          setAnimes(animeList);
+
+          function OnChange(event, index) {
+            setAnimes([])
+            GetAnimes((index - 1) * num_sample_animes);
+          }
+
+          setTabs((
+            <TabUnit
+              Index="1"
+              TabCount={Math.ceil(watchlist.length / num_sample_animes)}
+              TabCollapse="10"
+              onChange={OnChange}
+            />
+          ))
         } else if (props.Mode == "List") {
           await GetAnimeRange(index, num_sample_animes, mode)
             .then((response) => response.json())

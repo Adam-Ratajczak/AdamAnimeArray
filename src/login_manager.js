@@ -1,4 +1,4 @@
-import { LoginUser, CreateUser, LogoutUser, GetUserInfo, GetWatchlist, AddToWatchlist, RemoveFromWatchlist, ReactToChatMessage, WriteChat, DelChat, GetUserReactions, GetUserTheme, GetWatched } from "./db_module";
+import { LoginUser, CreateUser, LogoutUser, GetUserInfo, GetWatchlist, AddToWatchlist, RemoveFromWatchlist, ReactToChatMessage, WriteChat, DelChat, GetUserReactions, GetUserTheme, GetWatched, GetFinished } from "./db_module";
 
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
@@ -40,6 +40,10 @@ class LoginManager {
 
   async getWatched() {
     return (await GetWatched(this.UserID(), this.Token())).json();
+  }
+
+  async getFinished() {
+    return (await GetFinished(this.UserID(), this.Token())).json();
   }
 
   async getTheme() {
