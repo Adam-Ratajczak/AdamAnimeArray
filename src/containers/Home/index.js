@@ -89,7 +89,7 @@ function Home() {
         }
 
         res.push((
-          <div class="AnimeSection">
+          <div class="AnimeSection Watchlist">
             <div class="AnimeSectionHeader">
               <h2 class="UserAnimes">Your watchlist:</h2>
               {watchlist.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/watchlist"}><span>Show more</span></a>) : (<></>)}
