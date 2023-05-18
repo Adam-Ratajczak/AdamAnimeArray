@@ -1,4 +1,19 @@
-import { LoginUser, CreateUser, LogoutUser, GetUserInfo, GetWatchlist, AddToWatchlist, RemoveFromWatchlist, ReactToChatMessage, WriteChat, DelChat, GetUserReactions, GetUserTheme, GetWatched, GetFinished } from "./db_module";
+import {
+  LoginUser,
+  CreateUser,
+  LogoutUser,
+  GetUserInfo,
+  GetWatchlist,
+  AddToWatchlist,
+  RemoveFromWatchlist,
+  ReactToChatMessage,
+  WriteChat,
+  DelChat,
+  GetUserReactions,
+  GetUserTheme,
+  GetWatched,
+  GetFinished,
+} from "./db_module";
 
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
@@ -27,7 +42,14 @@ class LoginManager {
 
     const status = response.status;
 
-    return status === 202;
+    if (status !== 202) {
+      if (status > 500) {
+        throw new Error("Server error.");
+      }
+      throw new Error((await response.json()).message);
+    } else {
+      return;
+    }
   }
 
   async fetchUserInfo() {
@@ -51,23 +73,37 @@ class LoginManager {
   }
 
   async addToWatchlist(AnimeID) {
-    return (await AddToWatchlist(this.Token(), AnimeID)).status === 200 ? true : false;
+    return (await AddToWatchlist(this.Token(), AnimeID)).status === 200
+      ? true
+      : false;
   }
 
   async removeFromWatchlist(AnimeID) {
-    return (await RemoveFromWatchlist(this.Token(), AnimeID)).status === 200 ? true : false;
+    return (await RemoveFromWatchlist(this.Token(), AnimeID)).status === 200
+      ? true
+      : false;
   }
 
   async writeComment(AnimeID, ReplyID, CommentText) {
-    return (await WriteChat(this.Token(), AnimeID, ReplyID, CommentText)).status() == 200 ? true : false;
+    return (
+      await WriteChat(this.Token(), AnimeID, ReplyID, CommentText)
+    ).status() == 200
+      ? true
+      : false;
   }
-  
+
   async delComment(AnimeID, EntryID) {
-    return (await DelChat(this.Token(), AnimeID, EntryID)).status() == 200 ? true : false;
+    return (await DelChat(this.Token(), AnimeID, EntryID)).status() == 200
+      ? true
+      : false;
   }
-  
+
   async reactComment(EntryID, reaction) {
-    return (await ReactToChatMessage(this.Token(), EntryID, reaction)).status() == 200 ? true : false;
+    return (
+      await ReactToChatMessage(this.Token(), EntryID, reaction)
+    ).status() == 200
+      ? true
+      : false;
   }
 
   UserReactions() {
