@@ -276,7 +276,7 @@ func UserWatched(c echo.Context) error {
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	rows, err := db.Query("SELECT e1.AnimeID, e1.EpisodeNr, p1.Seen FROM UserAnimeProgress p1 JOIN Episodes e1 ON p1.EpisodeID = e1.EpisodeID WHERE p1.UserID = ? AND p1.Progress = 1 AND (SELECT COUNT(e2.EpisodeID) FROM UserAnimeProgress p2 JOIN Episodes e2 ON p2.EpisodeID = e2.EpisodeID WHERE p2.UserID = ? AND p2.Progress = 2 AND e2.AnimeID = e1.AnimeID) > 0 AND (SELECT MIN(e3.EpisodeNr) FROM UserAnimeProgress p3 JOIN Episodes e3 ON p3.EpisodeID = e3.EpisodeID WHERE p3.UserID = ? AND p3.Progress = 1 AND e3.AnimeID = e1.AnimeID) = e1.EpisodeNr GROUP BY e1.AnimeID ORDER BY p1.Seen DESC;", id, id, id)
+	rows, err := db.Query("WITH cte AS ( SELECT AnimeID, EpisodeNr, EpisodeID, (SELECT p.EntryID FROM UserAnimeProgress p WHERE p.UserID = ? AND p.EpisodeID = e1.EpisodeID LIMIT 1) AS 'EntryID', (SELECT p.Progress FROM UserAnimeProgress p WHERE p.UserID = ? AND p.EpisodeID = e1.EpisodeID LIMIT 1) AS 'AnimeProgress' FROM Episodes e1 WHERE (SELECT COUNT(e2.EpisodeID) FROM UserAnimeProgress p2 JOIN Episodes e2 ON p2.EpisodeID = e2.EpisodeID WHERE p2.UserID = ? AND p2.Progress = 2 AND e1.AnimeID = e2.AnimeID) > 0 HAVING AnimeProgress = 1 OR AnimeProgress IS NULL ORDER BY e1.AnimeID, e1.EpisodeNr) SELECT AnimeID, EpisodeNr, Seen FROM cte c LEFT JOIN UserAnimeProgress p ON c.EpisodeID = p.EpisodeID WHERE p.EntryID = c.EntryID OR c.EntryID IS NULL GROUP BY AnimeID ORDER BY Seen DESC;", id, id, id)
 	animes := []AnimeWached{}
 	for rows.Next() {
 		Watched := AnimeWached{}

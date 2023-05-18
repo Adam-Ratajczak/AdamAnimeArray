@@ -26,7 +26,7 @@ function AnimePoster(props) {
     };
 
     const watchedTime = new Date(props.Watched.Time);
-    WatchedInfo = (<i>{"You finished watching this anime at ep. " + props.EpNr + " on " + watchedTime.toLocaleDateString("en-EN", options)}</i>)
+    WatchedInfo = (<i>{"You finished watching this anime at ep. " + props.EpNr + (props.Watched.Valid ? " on " + watchedTime.toLocaleDateString("en-EN", options) : "")}</i>)
   }
 
   function RemoveFramWatchlist() {
