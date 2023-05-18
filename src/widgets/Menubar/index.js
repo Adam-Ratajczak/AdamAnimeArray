@@ -37,7 +37,7 @@ function UserInfo() {
       {renderUserProfileButton()}
     </a>
   ) : (
-    <div class="Loading"></div>
+    <div className="Loading"></div>
   );
 }
 
@@ -108,10 +108,10 @@ function Menubar() {
 
   return (
     <div id="MenuBar">
-      <div id="MainBtn"><div class="btn"></div></div>
+      <div id="MainBtn"><div className="btn"></div></div>
       <form id="Search">
         <input type="submit" id="Searchbtn" value=""></input>
-        <input type="text" id="Searchbar" placeholder="Search..." autocomplete="off"></input>
+        <input type="text" id="Searchbar" placeholder="Search..." autoComplete="off"></input>
       </form>
       <LoginBtn />
     </div>
