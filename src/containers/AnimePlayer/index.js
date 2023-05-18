@@ -67,53 +67,56 @@ function EpList(props) {
   const EpNum = parseInt(props.EpNum)
 
   useEffect(() => {
-    if (Eps.length == 0) {
-      if (LoginMan.LoggedIn() && Progress.length == 0) {
-        GetProgress(LoginMan.Token(), parseInt(AnimeID))
-          .then((response) => response.json())
-          .then((result) => {
-            SetProgress(result)
-          })
-      }
+    (async () => {
+      if (Eps.length == 0) {
+        await ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
+        if (LoginMan.LoggedIn() && Progress.length == 0) {
+          GetProgress(LoginMan.Token(), parseInt(AnimeID))
+            .then((response) => response.json())
+            .then((result) => {
+              SetProgress(result)
+            })
+        }
 
-      if (LoginMan.LoggedIn() != (Progress.length == 0)) {
-        GetEpisodes(AnimeID)
-          .then((response) => response.json())
-          .then((result) => {
-            let to_sort = result;
-            let list = []
-            to_sort.sort((a, b) => {
-              if (a.EpisodeNr < b.EpisodeNr) {
-                return -1
-              } else if (a.EpisodeNr == b.EpisodeNr) {
-                return 0
-              } else {
-                return 1
+        if (LoginMan.LoggedIn() != (Progress.length == 0)) {
+          GetEpisodes(AnimeID)
+            .then((response) => response.json())
+            .then((result) => {
+              let to_sort = result;
+              let list = []
+              to_sort.sort((a, b) => {
+                if (a.EpisodeNr < b.EpisodeNr) {
+                  return -1
+                } else if (a.EpisodeNr == b.EpisodeNr) {
+                  return 0
+                } else {
+                  return 1
+                }
+              })
+
+              let i = 0
+              for (let ep of to_sort) {
+                let color = "purple"
+
+                if (Progress.length > 0) {
+                  if (Progress[i] == 0) {
+                    color = "transparent"
+                  } else if (Progress[i] == 1) {
+                    color = "#FFFF0044"
+                  } else if (Progress[i] == 2) {
+                    color = "#00FF0044"
+                  }
+                }
+
+                let title = ep.Title
+                list.push(<a class={"EpisodeEntry tooltip HeaderHover"} href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class={"EpisodeNr" + (i + 1 == EpNum ? " SelectedEpNr" : "")}>{ep.EpisodeNr}</span><span class="EpTitle" style={{ backgroundColor: color }}>{title}</span></a>)
+                i++
+                SetEps(list)
               }
             })
-
-            let i = 0
-            for (let ep of to_sort) {
-              let color = "purple"
-
-              if (Progress.length > 0) {
-                if (Progress[i] == 0) {
-                  color = "transparent"
-                } else if (Progress[i] == 1) {
-                  color = "#FFFF0044"
-                } else if (Progress[i] == 2) {
-                  color = "#00FF0044"
-                }
-              }
-
-              let title = ep.Title
-              list.push(<a class={"EpisodeEntry tooltip HeaderHover"} href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class={"EpisodeNr" + (i + 1 == EpNum ? " SelectedEpNr" : "")}>{ep.EpisodeNr}</span><span class="EpTitle" style={{ backgroundColor: color }}>{title}</span></a>)
-              i++
-              SetEps(list)
-            }
-          })
+        }
       }
-    }
+    })()
 
     let eplist = document.querySelector("#EpList > div")
     let sc = EpNum * 40 - eplist.clientHeight / 2
@@ -149,12 +152,6 @@ function AnimePlayer() {
 
   useEffect(() => {
     if (LoginMan.LoggedIn()) {
-      ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
-        .then((response) => {
-          if (response.status == 200) {
-            document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#FFFF0044"
-          }
-        })
       document.getElementById("IframeWrapper").onclick = () => {
         ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 1)
         document.getElementById("Player").style.pointerEvents = "all"
