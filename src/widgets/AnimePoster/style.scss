@@ -48,6 +48,13 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
+    padding-left: 10px;
+}
+
+.AnimePosterInfo i{
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .AnimePosterInfo > table{

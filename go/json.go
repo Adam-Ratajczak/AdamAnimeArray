@@ -37,6 +37,12 @@ type AnimeShort struct {
 	EpisodeNum int
 }
 
+type AnimeWached struct {
+	WatchedAnime Anime
+	WatchedEp    int
+	Watched      mysql.NullTime
+}
+
 type Range struct {
 	Animes     []AnimeShort
 	AnimeCount int

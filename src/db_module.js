@@ -205,6 +205,15 @@ export function GetWatchlist(id, token){
     return FetchToApiPost(`/auth/watchlist`, req);
 }
 
+export function GetWatched(id, token){
+    let req = {
+        UserID: id,
+        Token: token,
+    };
+    
+    return FetchToApiPost(`/auth/watched`, req);
+}
+
 export function AddToWatchlist(token, AnimeID){
     let req = {
         Token: token,

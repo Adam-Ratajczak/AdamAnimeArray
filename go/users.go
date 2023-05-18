@@ -226,6 +226,42 @@ func UserWatchlist(c echo.Context) error {
 	return c.JSON(http.StatusOK, animes)
 }
 
+func UserWatched(c echo.Context) error {
+	rq := UserAuth{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	rows, err := db.Query("SELECT e1.AnimeID, e1.EpisodeNr, p1.Seen FROM UserAnimeProgress p1 JOIN Episodes e1 ON p1.EpisodeID = e1.EpisodeID WHERE p1.UserID = ? AND p1.Progress = 1 AND (SELECT COUNT(e2.EpisodeID) FROM UserAnimeProgress p2 JOIN Episodes e2 ON p2.EpisodeID = e2.EpisodeID WHERE p2.UserID = ? AND p2.Progress = 2 AND e2.AnimeID = e1.AnimeID) > 0 AND (SELECT MIN(e3.EpisodeNr) FROM UserAnimeProgress p3 JOIN Episodes e3 ON p3.EpisodeID = e3.EpisodeID WHERE p3.UserID = ? AND p3.Progress = 1 AND e3.AnimeID = e1.AnimeID) = e1.EpisodeNr GROUP BY e1.AnimeID ORDER BY p1.Seen DESC;", id, id, id)
+	animes := []AnimeWached{}
+	for rows.Next() {
+		Watched := AnimeWached{}
+		AnimeID := 0
+		err = rows.Scan(&AnimeID, &Watched.WatchedEp, &Watched.Watched)
+		if err != nil {
+			return err
+		}
+
+		Watched.WatchedAnime, err = GetAnime(AnimeID)
+		if err != nil {
+			return err
+		}
+
+		animes = append(animes, Watched)
+	}
+
+	return c.JSON(http.StatusOK, animes)
+}
+
 func UserWatchlistAdd(c echo.Context) error {
 	rq := AnimeUserRequest{}
 

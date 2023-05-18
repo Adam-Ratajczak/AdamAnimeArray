@@ -15,6 +15,20 @@ function AnimePoster(props) {
   const AnimeTypeID = parseInt(props.TypeID)
   const Mode = props.Mode
 
+  let WatchedInfo = (<></>)
+
+  if(Mode == "watched"){
+    const options = {
+      weekday: "short",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+
+    const watchedTime = new Date(props.Watched.Time);
+    WatchedInfo = (<i>{"You finished watching this anime at ep. " + props.EpNr + " on " + watchedTime.toLocaleDateString("en-EN", options)}</i>)
+  }
+
   function RemoveFramWatchlist() {
     LoginMan.removeFromWatchlist(parseInt(props.AnimeID))
     window.location.reload()
@@ -22,14 +36,15 @@ function AnimePoster(props) {
 
   return (
     <div class="PosterWrapper">
-      <a href={"/anime/" + props.AnimeID}>
+      <a href={"/anime/" + props.AnimeID + (Mode == "watched" ? "/ep/" + props.EpNr : "") }>
         <div class="AnimePoster ripple-hover" style={{ backgroundImage: "url(\'" + AnimePoster + "\')" }}>
           <h2>{AnimeTitle}</h2>
           {Mode == "watchlist" ? (<a href=""><img class="WatchlistMinus" onClick={RemoveFramWatchlist} src={minus} /></a>) : (<></>)}
           <div class="Triangle" style={{ borderRightColor: color_array[AnimeTypeID - 1], borderTopColor: color_array[AnimeTypeID - 1] }}></div>
           <div class="AnimeType">{AnimeType}</div>
           <div class="AnimePosterInfo">
-            <i>{AnimeTitle}</i>
+            <i style={{fontWeight: 500}}>{AnimeTitle}</i>
+            {WatchedInfo}
             <table>
               <tbody>
                 {Premiered ? (<tr><th>Premiered:</th><td>{Premiered}</td></tr>) : (<></>)}

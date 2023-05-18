@@ -99,18 +99,57 @@ function Home() {
                 {animes}
               </div>
             ) : (
-              <p style={{color: "white", marginLeft: "50px", marginTop: "0px"}}>No series in your watchlist!</p>
+              <p style={{ color: "white", marginLeft: "50px", marginTop: "0px" }}>No series in your watchlist!</p>
             )}
           </div>
         ))
+
+        const watched = await LoginMan.getWatched()
+        animes = []
+        i = 0;
+
+        for (let elem of watched) {
+          if (i == num_sample_animes) {
+            break
+          }
+          animes.push((
+            <AnimePoster
+              AnimeID={elem.WatchedAnime.AnimeID}
+              Title={elem.WatchedAnime.AnimeTitle}
+              Poster={elem.WatchedAnime.PosterURL}
+              Premiered={elem.WatchedAnime.Premiered}
+              EpNum={elem.WatchedAnime.EpisodeNum}
+              Type={elem.WatchedAnime.Type.Name}
+              TypeID={elem.WatchedAnime.Type.ID}
+              Mode="watched"
+              EpNr={elem.WatchedEp}
+              Watched={elem.Watched}
+            />
+          ))
+          i++
+        }
+
+        if (watched.length > 0) {
+          res.push((
+            <div class="AnimeSection">
+              <div class="AnimeSectionHeader">
+                <h2 class="UserAnimes">Recently watched:</h2>
+                {watchlist.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/watched"}><span>Show more</span></a>) : (<></>)}
+              </div>
+              <div class="SampleAnimeList">
+                {animes}
+              </div>
+            </div>
+          ))
+        }
+
+
         setAnimes((animes) => [...animes, ...res]);
       }
 
       await WriteAnimes("sample:0")
       await WriteAnimes("sample:1")
       await WriteAnimes("sample:2")
-
-      
 
       function random_anime() {
         GetAnimeRange(0, 1, "sample:2")
