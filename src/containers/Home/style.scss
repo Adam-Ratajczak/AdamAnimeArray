@@ -52,6 +52,7 @@ h2.UserAnimes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 #SampleAnimeList {
@@ -80,7 +81,7 @@ h2.UserAnimes{
     width: 25%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 8px;
 }
 
 .ShowMoreBtn span {
