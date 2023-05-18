@@ -61,24 +61,16 @@ function LangWidget(props) {
 
 function EpList(props) {
   const [Eps, SetEps] = useState([])
-  const [Progress, SetProgress] = useState([])
 
   const AnimeID = parseInt(props.AnimeID)
   const EpNum = parseInt(props.EpNum)
 
   useEffect(() => {
     (async () => {
-      if (Eps.length == 0) {
-        await ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
-        if (LoginMan.LoggedIn() && Progress.length == 0) {
-          GetProgress(LoginMan.Token(), parseInt(AnimeID))
-            .then((response) => response.json())
-            .then((result) => {
-              SetProgress(result)
-            })
-        }
-
-        if (LoginMan.LoggedIn() != (Progress.length == 0)) {
+      await ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
+      GetProgress(LoginMan.Token(), parseInt(AnimeID))
+        .then((response) => response.json())
+        .then((Progress) => {
           GetEpisodes(AnimeID)
             .then((response) => response.json())
             .then((result) => {
@@ -114,10 +106,11 @@ function EpList(props) {
                 SetEps(list)
               }
             })
-        }
-      }
+        })
     })()
+  }, [])
 
+  useEffect(() => {
     let eplist = document.querySelector("#EpList > div")
     let sc = EpNum * 40 - eplist.clientHeight / 2
     if (sc > 0) {
