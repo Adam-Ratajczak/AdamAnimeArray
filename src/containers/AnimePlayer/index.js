@@ -68,44 +68,49 @@ function EpList(props) {
   useEffect(() => {
     (async () => {
       await ChangeProgress(LoginMan.Token(), parseInt(AnimeID), parseInt(EpNum), 0)
-      GetProgress(LoginMan.Token(), parseInt(AnimeID))
+
+      let Progress = []
+
+      await GetProgress(LoginMan.Token(), parseInt(AnimeID))
         .then((response) => response.json())
-        .then((Progress) => {
-          GetEpisodes(AnimeID)
-            .then((response) => response.json())
-            .then((result) => {
-              let to_sort = result;
-              let list = []
-              to_sort.sort((a, b) => {
-                if (a.EpisodeNr < b.EpisodeNr) {
-                  return -1
-                } else if (a.EpisodeNr == b.EpisodeNr) {
-                  return 0
-                } else {
-                  return 1
-                }
-              })
+        .then((result) => {
+          Progress = result
+        }).catch(() => {})
 
-              let i = 0
-              for (let ep of to_sort) {
-                let color = "purple"
+      await GetEpisodes(AnimeID)
+        .then((response) => response.json())
+        .then((result) => {
+          let to_sort = result;
+          let list = []
+          to_sort.sort((a, b) => {
+            if (a.EpisodeNr < b.EpisodeNr) {
+              return -1
+            } else if (a.EpisodeNr == b.EpisodeNr) {
+              return 0
+            } else {
+              return 1
+            }
+          })
 
-                if (Progress.length > 0) {
-                  if (Progress[i] == 0) {
-                    color = "transparent"
-                  } else if (Progress[i] == 1) {
-                    color = "#FFFF0044"
-                  } else if (Progress[i] == 2) {
-                    color = "#00FF0044"
-                  }
-                }
+          let i = 0
+          for (let ep of to_sort) {
+            let color = "transparent"
 
-                let title = ep.Title
-                list.push(<a class={"EpisodeEntry tooltip HeaderHover"} href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class={"EpisodeNr" + (i + 1 == EpNum ? " SelectedEpNr" : "")}>{ep.EpisodeNr}</span><span class="EpTitle" style={{ backgroundColor: color }}>{title}</span></a>)
-                i++
-                SetEps(list)
+            if (Progress.length > 0) {
+              if (Progress[i] == 0) {
+                color = "transparent"
+              } else if (Progress[i] == 1) {
+                color = "#FFFF0044"
+              } else if (Progress[i] == 2) {
+                color = "#00FF0044"
               }
-            })
+            }
+
+            let title = ep.Title
+            list.push(<a class={"EpisodeEntry tooltip HeaderHover"} href={"/anime/" + AnimeID + "/ep/" + ep.EpisodeNr}><span class="tooltiptext">{ep.Title}</span><span class={"EpisodeNr" + (i + 1 == EpNum ? " SelectedEpNr" : "")}>{ep.EpisodeNr}</span><span class="EpTitle" style={{ backgroundColor: color }}>{title}</span></a>)
+            i++
+            SetEps(list)
+          }
         })
     })()
   }, [])
