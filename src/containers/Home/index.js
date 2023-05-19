@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AnimePoster } from "../../widgets";
-import { GetAnimeRange } from "../../db_module";
+import { GetAnimeRange, GetDbInfo } from "../../db_module";
 import "./style.scss";
 import change_theme from "../../themes";
 import redirect from "../../redirect";
@@ -16,18 +16,13 @@ function Home() {
 
   useEffect(() => {
     (async () => {
-      if (animes.length > 0) {
-        return
-      }
-
       async function WriteAnimes(mode) {
+        if (genres.indexOf(mode) != -1) {
+          return
+        }
         await GetAnimeRange(0, num_sample_animes, mode)
           .then((response) => response.json())
           .then((result) => {
-            if (genres.indexOf(result.Code) != -1) {
-              return
-            }
-
             let res = []
             let animes = []
             for (let elem of result.Animes) {
@@ -59,7 +54,7 @@ function Home() {
             setAnimes((animes) => [...animes, ...res]);
 
             let res2 = genres
-            res2.push(result.Code)
+            res2.push(mode)
             setGenres(res2);
           })
       }
@@ -206,18 +201,23 @@ function Home() {
         </div>
       ))
       setAnimes((animes) => [...animes, ...res]);
-      const content = document.getElementById("content")
-      content.onscroll = () => {
-        let currentScroll = content.scrollTop + window.innerHeight
 
-        if (currentScroll >= content.scrollHeight) {
-          if (Math.random() < 0.5) {
-            WriteAnimes("genre:0")
-          } else {
-            WriteAnimes("theme:0")
+      GetDbInfo()
+        .then((response) => response.json())
+        .then((result) => {
+          const content = document.getElementById("content")
+          content.onscroll = () => {
+            let currentScroll = content.scrollTop + window.innerHeight
+
+            if (currentScroll >= content.scrollHeight) {
+              if (Math.random() < 0.5) {
+                WriteAnimes("genre:" + result.Genres[Math.round(Math.random() * result.Genres.length)].ID)
+              } else {
+                WriteAnimes("theme:" + result.Genres[Math.round(Math.random() * result.Themes.length)].ID)
+              }
+            }
           }
-        }
-      }
+        })
     })()
 
     change_theme(document)
@@ -233,7 +233,7 @@ function Home() {
         gradientSize: 150
       }
     });
-  });
+  }, []);
 
   return (
     <>
