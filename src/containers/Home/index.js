@@ -129,7 +129,7 @@ function Home() {
             <div class="AnimeSection">
               <div class="AnimeSectionHeader">
                 <h2 class="UserAnimes">Recently watched:</h2>
-                {watchlist.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/watched"}><span>Show more</span></a>) : (<></>)}
+                {watched.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/watched"}><span>Show more</span></a>) : (<></>)}
               </div>
               <div class="SampleAnimeList">
                 {animes}
@@ -156,7 +156,6 @@ function Home() {
               Type={elem.WatchedAnime.Type.Name}
               TypeID={elem.WatchedAnime.Type.ID}
               Mode="finished"
-              EpNr={elem.WatchedEp}
               Watched={elem.Watched}
             />
           ))
@@ -168,7 +167,7 @@ function Home() {
             <div class="AnimeSection">
               <div class="AnimeSectionHeader">
                 <h2 class="UserAnimes">Watch again:</h2>
-                {watchlist.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/finished"}><span>Show more</span></a>) : (<></>)}
+                {finished.length > num_sample_animes ? (<a class="ShowMoreBtn" href={"/finished"}><span>Show more</span></a>) : (<></>)}
               </div>
               <div class="SampleAnimeList">
                 {animes}
