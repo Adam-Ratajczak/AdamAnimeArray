@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"os/exec"
 	"path/filepath"
 	"strconv"
 	"strings"
@@ -317,10 +316,10 @@ func main() {
 	defer db.Close()
 
 	if mode == 0 {
-		loadSQLFile(path + "/tables/YeetTables.sql")
-		loadSQLFile(path + "/tables/AnimeTables.sql")
-		loadSQLFile(path + "/tables/UserTables.sql")
-		loadSQLFile(path + "/tables/Last.sql")
+		loadSQLFile("sql_files/YeetTables.sql")
+		loadSQLFile("sql_files/AnimeTables.sql")
+		loadSQLFile("sql_files/UserTables.sql")
+		loadSQLFile("sql_files/Last.sql")
 
 		loadSQLFile(path + "/structure/DemographicsTable.sql")
 		loadSQLFile(path + "/structure/GenresTable.sql")
@@ -346,9 +345,6 @@ func main() {
 	} else {
 		path += "/" + strings.Split(os.Getenv("MARIADB_CONN"), "/")[1]
 		os.Mkdir(path, os.ModeDir)
-		cmd := exec.Command("cp", "--recursive", "sql_files", path+"/tables")
-		cmd.Run()
-
 		os.Mkdir(path+"/structure", os.ModeDir)
 		exportStructuralData(path, "Demographic")
 		exportStructuralData(path, "Genre")

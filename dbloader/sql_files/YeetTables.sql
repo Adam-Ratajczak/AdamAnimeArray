@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS UserSearchHistory;
 DROP TABLE IF EXISTS UserReactions;
 DROP TABLE IF EXISTS UserAnimeProgress;
 DROP TABLE IF EXISTS UserReactions;
+DROP TABLE IF EXISTS UserReportedPlayers;
 DROP TABLE IF EXISTS ChatEntry;
 DROP TABLE IF EXISTS PrivilegeTypes;
 DROP TABLE IF EXISTS UserDokiThemes;
