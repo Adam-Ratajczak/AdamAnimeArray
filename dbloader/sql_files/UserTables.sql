@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS UserDokiThemes(
 
 -- table for reporting players
 CREATE TABLE IF NOT EXISTS UserReportedPlayers(
-    EntryID INT PRIMARY KEY,
+    EntryID INT PRIMARY KEY AUTO_INCREMENT,
     UserID INT NOT NULL,
     PlayerID INT NOT NULL,
     ReportText VARCHAR(2048),

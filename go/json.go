@@ -242,3 +242,14 @@ type UserTheme struct {
 	LeftImgUrl        sql.NullString
 	RightImgUrl       sql.NullString
 }
+
+type UserReportRequest struct {
+	Token     string
+	ID        int
+	ReportMsg string
+}
+
+type UserReported struct {
+	Players []int
+	Users   []int
+}

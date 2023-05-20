@@ -351,3 +351,22 @@ export function GetUserTheme(id, token){
     
     return FetchToApiPost(`/auth/theme`, req);
 }
+
+export function ReportPlayer(token, PlayerID, ReportMsg){
+    let req = {
+        Token: token,
+        ID: PlayerID,
+        ReportMsg: ReportMsg
+    };
+    
+    return FetchToApiPost(`/auth/report/player`, req);
+}
+
+export function GetReported(id, token){
+    let req = {
+        UserID: id,
+        Token: token
+    };
+    
+    return FetchToApiPost(`/auth/report`, req);
+}

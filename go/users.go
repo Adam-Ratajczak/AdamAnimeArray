@@ -264,6 +264,65 @@ func UserFinished(c echo.Context) error {
 	return c.JSON(http.StatusOK, animes)
 }
 
+func UserReportPlayer(c echo.Context) error {
+	rq := UserReportRequest{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	_, err = db.Exec("INSERT INTO UserReportedPlayers(UserID, PlayerID, ReportText) VALUES(?, ?, ?);", id, rq.ID, rq.ReportMsg)
+	if err != nil {
+		return err
+	}
+
+	return c.NoContent(http.StatusAccepted)
+}
+
+func GetUserReported(c echo.Context) error {
+	rq := UserAuth{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	rows, err := db.Query("SELECT PlayerID FROM UserReportedPlayers WHERE UserID = ?;", id)
+	if err != nil {
+		return err
+	}
+
+	reports := UserReported{}
+	reports.Players = []int{}
+	reports.Users = []int{}
+	for rows.Next() {
+		PlayerID := 0
+		err = rows.Scan(&PlayerID)
+		if err != nil {
+			return err
+		}
+
+		reports.Players = append(reports.Players, PlayerID)
+	}
+
+	return c.JSON(http.StatusOK, reports)
+}
+
 func UserWatched(c echo.Context) error {
 	rq := UserAuth{}
 

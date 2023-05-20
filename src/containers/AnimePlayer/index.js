@@ -148,6 +148,7 @@ function AnimePlayer() {
   const [CurrLang, SetCurrLang] = useState("")
   const [CurrPlayer, SetCurrPlayer] = useState("")
   const [CurrQuality, SetCurrQuality] = useState("")
+  const [Reported, SetReported] = useState("")
 
   useEffect(() => {
     if (LoginMan.LoggedIn()) {
@@ -156,6 +157,7 @@ function AnimePlayer() {
         document.getElementById("Player").style.pointerEvents = "all"
         document.querySelector(".SelectedEpNr + .EpTitle").style.backgroundColor = "#00FF0044"
       }
+
     }
   }, [])
 
@@ -209,7 +211,7 @@ function AnimePlayer() {
       .then((result) => {
         SetPlayerUrl(result[0].PlayerUrl)
         for (let player of result) {
-          cb.innerHTML += "<option value=\"" + player.PlayerUrl + "\">" + player.Source + " - " + ((player.Quality) ? player.Quality : "Unknown") + "</option>"
+          cb.innerHTML += "<option value=\"" + player.PlayerUrl + ";" + player.PlayerID + "\">" + player.Source + " - " + ((player.Quality) ? player.Quality : "Unknown") + "</option>"
         }
       })
   }
@@ -234,34 +236,90 @@ function AnimePlayer() {
           SetCurrPlayer(result[0].Source)
           SetCurrQuality(result[0].Quality)
 
+          if (LoginMan.LoggedIn()) {
+            (async () => {
+              const reported = await LoginMan.getReported();
+
+              if (reported.Players.indexOf(result[0].PlayerID) != -1) {
+                document.getElementById("ReportPlayerBtn").style.backgroundColor = "gray";
+              } else {
+                document.getElementById("ReportPlayerBtn").style.backgroundColor = "gold";
+              }
+            })()
+          }
+
           let img = document.querySelectorAll("#LanguageList img")[0]
 
           img.classList.add("active")
         }
 
-        SetEpisodeAdminControls(LoginMan.LoggedIn() ? (
-          <div class="EpControls">
-            <a href="" style={{ backgroundColor: "gold", width: "300px" }}>Report player</a>
-          </div>) : (<></>)
-        )
+        if (LoginMan.LoggedIn()) {
+          LoginMan.getReported()
+            .then((response) => response.json())
+            .then((result) => {
+              SetReported(result.Players)
+              function reportPlayer() {
+                let player_data = cb.options[cb.selectedIndex].value
+                let PlayerID = parseInt(player_data.split(";")[1])
+                if (result.Players.indexOf(PlayerID) == -1) {
+                  document.getElementsByClassName("OverlayContainer")[1].style.display = "flex"
+                  document.getElementsByClassName("FormContainer")[1].style.display = "flex"
+                }
+              }
+
+              let player_data = cb.options[cb.selectedIndex].value
+              let PlayerID = parseInt(player_data.split(";")[1])
+              SetEpisodeAdminControls((
+                <div class="EpControls">
+                  <a onClick={reportPlayer} id="ReportPlayerBtn" style={{ backgroundColor: result.Players.indexOf(PlayerID) == -1 ? "gold" : "gray", width: "300px" }}>Report player</a>
+                </div>
+              ))
+
+              document.getElementById("ReportPlayer").addEventListener("submit", (ev) => {
+                let cb = document.getElementById("PlayerCb")
+                let player_data = cb.options[cb.selectedIndex].value
+                let PlayerID = parseInt(player_data.split(";")[1])
+
+                LoginMan.reportPlayer(PlayerID, document.getElementById("ReportMsg").Value)
+                // ev.preventDefault()
+              })
+            })
+        }
       })
+
     cb.onchange = (ev) => {
-      let player_url = cb.options[cb.selectedIndex].value
+      let player_data = cb.options[cb.selectedIndex].value
       let player = cb.options[cb.selectedIndex].text
-      SetPlayerUrl(player_url)
+      SetPlayerUrl(player_data.split(";")[0])
       SetCurrPlayer(player.split(" - ")[0])
       SetCurrQuality(player.split(" - ")[1])
+
+      if (LoginMan.LoggedIn()) {
+        let PlayerID = parseInt(player_data.split(";")[1])
+        LoginMan.getReported()
+          .then((response) => response.json())
+          .then((result) => {
+            if (result.Players.indexOf(PlayerID) != -1) {
+              document.getElementById("ReportPlayerBtn").style.backgroundColor = "gray";
+            } else {
+              document.getElementById("ReportPlayerBtn").style.backgroundColor = "gold";
+            }
+          })
+      }
     }
   }, []);
 
   useEffect(() => {
     document.getElementById("EpSongs").onclick = () => {
-      document.getElementById("SongMainContainer").style.display = "flex"
-      document.getElementById("SongContainer").style.display = "flex"
+      document.getElementsByClassName("OverlayContainer")[0].style.display = "flex"
+      document.getElementsByClassName("FormContainer")[0].style.display = "flex"
     }
-    document.getElementById("SongExit").onclick = () => {
-      document.getElementById("SongMainContainer").style.display = "none"
-      document.getElementById("SongContainer").style.display = "none"
+    const exits = document.getElementsByClassName("Exit")
+    for (let i = 0; i < exits.length; i++) {
+      document.getElementsByClassName("Exit")[i].onclick = () => {
+        document.getElementsByClassName("OverlayContainer")[i].style.display = "none"
+        document.getElementsByClassName("FormContainer")[i].style.display = "none"
+      }
     }
 
     GetSongs(AnimeID, EpNum)
@@ -335,9 +393,9 @@ function AnimePlayer() {
         </div>
       </div>
 
-      <div id="SongMainContainer">
-        <div id="SongContainer">
-          <h1 id="SongExit">X</h1>
+      <div class="OverlayContainer">
+        <div class="FormContainer">
+          <h1 class="Exit">X</h1>
           <table>
             <tbody>
               <tr><th>Title:</th><th>Artist:</th><th>Type:</th></tr>
@@ -346,6 +404,17 @@ function AnimePlayer() {
           </table>
         </div>
       </div>
+
+      {LoginMan.LoggedIn() ? (<div class="OverlayContainer">
+        <div class="FormContainer">
+          <h1 class="Exit">X</h1>
+          <form id="ReportPlayer">
+            <h2>Report player:</h2>
+            <textarea id="ReportMsg" name="ReportMsg" rows="4" cols="64" placeholder="Write what's wrong with this player" required style={{ resize: "none" }} /><br />
+            <input type="submit" value="report" />
+          </form>
+        </div>
+      </div>) : (<></>)}
     </div>
   )
 }

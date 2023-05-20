@@ -13,6 +13,8 @@ import {
   GetUserTheme,
   GetWatched,
   GetFinished,
+  ReportPlayer,
+  GetReported,
 } from "./db_module";
 
 function delay(time) {
@@ -104,6 +106,18 @@ class LoginManager {
     ).status() == 200
       ? true
       : false;
+  }
+
+  async reportPlayer(PlayerID, Msg) {
+    return (
+      await ReportPlayer(this.Token(), PlayerID, Msg)
+    ).status() == 202
+      ? true
+      : false;
+  }
+
+  async getReported() {
+    return GetReported(this.UserID(), this.Token())
   }
 
   UserReactions() {
