@@ -1,4 +1,5 @@
 const port = 2137
+const isFirefox = navigator.userAgent.indexOf("Firefox") != -1
 
 function FetchToApiGet(url){
     return fetch('http://localhost:' + port.toString() + url, { 

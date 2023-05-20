@@ -87,17 +87,11 @@ class LoginManager {
   }
 
   async writeComment(AnimeID, ReplyID, CommentText) {
-    return (
-      await WriteChat(this.Token(), AnimeID, ReplyID, CommentText)
-    ).status() == 200
-      ? true
-      : false;
+    return WriteChat(this.Token(), AnimeID, ReplyID, CommentText)
   }
 
   async delComment(AnimeID, EntryID) {
-    return (await DelChat(this.Token(), AnimeID, EntryID)).status() == 200
-      ? true
-      : false;
+    return DelChat(this.Token(), AnimeID, EntryID)
   }
 
   async reactComment(EntryID, reaction) {

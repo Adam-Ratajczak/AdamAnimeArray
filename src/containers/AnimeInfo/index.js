@@ -16,8 +16,6 @@ import LoginMan from "../../login_manager";
 import Icon from "../../widgets/Menubar/userdefault";
 import change_theme from "../../themes";
 
-const isFirefox = navigator.userAgent.indexOf("Firefox") != -1
-
 function ChatEntry(props) {
   const [Upvotes, SetUpvotes] = useState(0)
   const [Downvotes, SetDownvotes] = useState(0)
@@ -39,17 +37,12 @@ function ChatEntry(props) {
       return
     }
 
-    document.getElementById("ReplyPrompt" + EntryID).addEventListener("submit", async (ev) => {
+    document.getElementById("ReplyPrompt" + EntryID).addEventListener("submit", (ev) => {
       let value = document.getElementById("ReplyValue" + EntryID).value
-      if (isFirefox) {
-        try {
-          await LoginMan.writeComment(AnimeID, EntryID, value)
-        } catch {
-          await LoginMan.writeComment(AnimeID, EntryID, value)
-        }
-      } else {
-        await LoginMan.writeComment(AnimeID, EntryID, value)
-      }
+      LoginMan.writeComment(AnimeID, EntryID, value).then(() => {
+        window.location.reload()
+      })
+      ev.preventDefault()
     })
     SetUpvotes(Upvote)
     SetDownvotes(Downvote)
@@ -111,8 +104,9 @@ function ChatEntry(props) {
   }
 
   function DelFunc() {
-    LoginMan.delComment(AnimeID, EntryID)
-    window.location.reload(true)
+    LoginMan.delComment(AnimeID, EntryID).then(() => {
+      window.location.reload(true)
+    })
   }
 
   return (
@@ -318,17 +312,13 @@ function AnimeInfo() {
           SetSavedToWatchlist(true);
         }
 
-        document.getElementById("WriteChat").addEventListener("submit", async (ev) => {
+        document.getElementById("WriteChat").addEventListener("submit", (ev) => {
           let input = document.getElementById("WriteChatInput")
-          if (isFirefox) {
-            try {
-              await LoginMan.writeComment(AnimeID, 0, input.value)
-            } catch {
-              await LoginMan.writeComment(AnimeID, 0, input.value)
-            }
-          } else {
-            await LoginMan.writeComment(AnimeID, 0, input.value)
-          }
+          LoginMan.writeComment(AnimeID, 0, input.value).then(() => {
+            window.location.reload()
+          })
+
+          ev.preventDefault()
         })
       }
     })();
@@ -394,9 +384,9 @@ function AnimeInfo() {
   }, [])
 
   const ClearFunc = () => {
-    ClearProgress(LoginMan.Token(), parseInt(AnimeID))
-
-    window.location.reload()
+    ClearProgress(LoginMan.Token(), parseInt(AnimeID)).then(() => {
+      window.location.reload()
+    })
   }
 
   const options = {

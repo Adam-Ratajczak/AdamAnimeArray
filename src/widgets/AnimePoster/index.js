@@ -29,9 +29,11 @@ function AnimePoster(props) {
     WatchedInfo = (<i>{"You finished watching this anime " + ((props.EpNr) ?  " at ep. " + props.EpNr : "") + (props.Watched.Valid ? " on " + watchedTime.toLocaleDateString("en-EN", options) : "")}</i>)
   }
 
-  function RemoveFramWatchlist() {
-    LoginMan.removeFromWatchlist(parseInt(props.AnimeID))
-    window.location.reload()
+  function RemoveFramWatchlist(ev) {
+    LoginMan.removeFromWatchlist(parseInt(props.AnimeID)).then(() => {
+      window.location.reload()
+    })
+    ev.preventDefault()
   }
 
   return (
