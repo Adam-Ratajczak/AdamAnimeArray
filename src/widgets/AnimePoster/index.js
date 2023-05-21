@@ -38,7 +38,7 @@ function AnimePoster(props) {
 
   return (
     <div class="PosterWrapper">
-      <a href={"/anime/" + props.AnimeID + (Mode == "watched" ? "/ep/" + props.EpNr : "") }>
+      <a href={"/anime/" + props.AnimeID + (props.EpNr ? "/ep/" + props.EpNr : "") }>
         <div class="AnimePoster ripple-hover" style={{ backgroundImage: "url(\'" + AnimePoster + "\')" }}>
           <h2>{AnimeTitle}</h2>
           {Mode == "watchlist" ? (<a href=""><img class="WatchlistMinus" onClick={RemoveFramWatchlist} src={minus} /></a>) : (<></>)}

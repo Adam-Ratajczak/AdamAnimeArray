@@ -113,3 +113,13 @@ CREATE TABLE IF NOT EXISTS UserReportedPlayers(
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (PlayerID) REFERENCES EpisodePlayers(PlayerID)
 );
+
+-- table for reporting users
+CREATE TABLE IF NOT EXISTS ReportedUsers(
+    EntryID INT PRIMARY KEY AUTO_INCREMENT,
+    UserID INT NOT NULL,
+    ReportedID INT NOT NULL,
+    ReportText VARCHAR(2048),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID),
+    FOREIGN KEY (ReportedID) REFERENCES Users(UserID)
+);
