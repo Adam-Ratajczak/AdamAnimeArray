@@ -337,11 +337,11 @@ function AnimePlayer() {
 
   useEffect(() => {
     if (LoginMan.LoggedIn()) {
-      if(Reported.length == 0){
+      let cb = document.getElementById("PlayerCb")
+      if(Reported.length == 0 || cb.options.length == 0){
         return
       }
       
-      let cb = document.getElementById("PlayerCb")
       let player_data = cb.options[cb.selectedIndex].value
       let PlayerID = parseInt(player_data.split(";")[1])
       if (Reported.indexOf(PlayerID) != -1) {
