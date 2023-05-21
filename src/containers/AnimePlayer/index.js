@@ -141,7 +141,6 @@ function AnimePlayer() {
   const [EnglishTitle, SetEnglishTitle] = useState(0)
   const [EpisodeTitle, SetEpisodeTitle] = useState(0)
   const [EpisodeControls, SetEpisodeControls] = useState(0)
-  const [EpisodeAdminControls, SetEpisodeAdminControls] = useState(0)
   const [Aired, SetAired] = useState(0)
   const [Songs, SetSongs] = useState([])
   const [PlayerUrl, SetPlayerUrl] = useState("/NoPlayer")
@@ -258,7 +257,7 @@ function AnimePlayer() {
             .then((response) => response.json())
             .then((result) => {
               SetReported(result.Players)
-              function reportPlayer() {
+              document.getElementById("ReportPlayerBtn").onclick = () => {
                 let player_data = cb.options[cb.selectedIndex].value
                 let PlayerID = parseInt(player_data.split(";")[1])
                 if (result.Players.indexOf(PlayerID) == -1) {
@@ -266,14 +265,6 @@ function AnimePlayer() {
                   document.getElementsByClassName("FormContainer")[1].style.display = "flex"
                 }
               }
-
-              let player_data = cb.options[cb.selectedIndex].value
-              let PlayerID = parseInt(player_data.split(";")[1])
-              SetEpisodeAdminControls((
-                <div class="EpControls">
-                  <a onClick={reportPlayer} id="ReportPlayerBtn" style={{ backgroundColor: result.Players.indexOf(PlayerID) == -1 ? "gold" : "gray", width: "300px" }}>Report player</a>
-                </div>
-              ))
 
               document.getElementById("ReportPlayer").addEventListener("submit", (ev) => {
                 let cb = document.getElementById("PlayerCb")
@@ -293,19 +284,6 @@ function AnimePlayer() {
       SetPlayerUrl(player_data.split(";")[0])
       SetCurrPlayer(player.split(" - ")[0])
       SetCurrQuality(player.split(" - ")[1])
-
-      if (LoginMan.LoggedIn()) {
-        let PlayerID = parseInt(player_data.split(";")[1])
-        LoginMan.getReported()
-          .then((response) => response.json())
-          .then((result) => {
-            if (result.Players.indexOf(PlayerID) != -1) {
-              document.getElementById("ReportPlayerBtn").style.backgroundColor = "gray";
-            } else {
-              document.getElementById("ReportPlayerBtn").style.backgroundColor = "gold";
-            }
-          })
-      }
     }
   }, []);
 
@@ -357,6 +335,23 @@ function AnimePlayer() {
       })
   }, [])
 
+  useEffect(() => {
+    if (LoginMan.LoggedIn()) {
+      if(Reported.length == 0){
+        return
+      }
+      
+      let cb = document.getElementById("PlayerCb")
+      let player_data = cb.options[cb.selectedIndex].value
+      let PlayerID = parseInt(player_data.split(";")[1])
+      if (Reported.indexOf(PlayerID) != -1) {
+        document.getElementById("ReportPlayerBtn").style.backgroundColor = "gray";
+      } else {
+        document.getElementById("ReportPlayerBtn").style.backgroundColor = "gold";
+      }
+    }
+  })
+
   return (
     <div id="main">
       <Menubar />
@@ -388,7 +383,10 @@ function AnimePlayer() {
             <a href={"/anime/" + AnimeID.toString()}>Back to anime info...</a>
             <a id="EpSongs">Show episode opening / ending</a>
             {EpisodeControls}
-            {EpisodeAdminControls}
+            {LoginMan.LoggedIn() ? (
+              <div class="EpControls">
+                <a id="ReportPlayerBtn" style={{ backgroundColor: "gold", width: "300px" }}>Report player</a>
+              </div>) : (<></>)}
           </div>
         </div>
       </div>
