@@ -153,6 +153,7 @@ CREATE TABLE IF NOT EXISTS UserDefaultLanguages(
     EntryID INT PRIMARY KEY AUTO_INCREMENT,
     UserID INT NOT NULL,
     LangCode CHAR(2) NOT NULL,
+    LangOrder INT NOT NULL,
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (LangCode) REFERENCES Languages(LangCode)
 );

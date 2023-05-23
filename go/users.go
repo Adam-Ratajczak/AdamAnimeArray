@@ -87,6 +87,7 @@ func CreateUser(c echo.Context) error {
 		return err
 	}
 
+	i := 1
 	for rows.Next() {
 		LangCode := ""
 		err = rows.Scan(&LangCode)
@@ -94,11 +95,12 @@ func CreateUser(c echo.Context) error {
 			return err
 		}
 
-		_, err = db.Exec("INSERT INTO UserDefaultLanguages(UserID, LangCode) VALUES (?, ?);", user, LangCode)
+		_, err = db.Exec("INSERT INTO UserDefaultLanguages(UserID, LangCode, LangOrder) VALUES (?, ?, ?);", user, LangCode, i)
 
 		if err != nil {
 			return err
 		}
+		i++
 	}
 
 	return c.NoContent(http.StatusAccepted)
