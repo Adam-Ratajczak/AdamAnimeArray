@@ -15,6 +15,7 @@ import {
   GetFinished,
   ReportPlayer,
   GetReported,
+  GetBasicUserInfo,
 } from "./db_module";
 
 function delay(time) {
@@ -56,6 +57,10 @@ class LoginManager {
 
   async fetchUserInfo() {
     return (await GetUserInfo(this.UserID(), this.Token())).json();
+  }
+
+  async getBasicInfo() {
+    return (await GetBasicUserInfo(this.UserID())).json();
   }
 
   async getWatchlist() {

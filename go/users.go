@@ -50,11 +50,11 @@ func CreateUser(c echo.Context) error {
 	}
 
 	password := hashPassword(rq.UserPassword)
-	row2, err2 := db.Exec("INSERT INTO Users(UserName, UserEmail, UserPassword) VALUES (?, ?, ?);", rq.UserName, rq.UserEmail, password)
+	row2, err := db.Exec("INSERT INTO Users(UserName, UserPassword) VALUES (?, ?);", rq.UserName, password)
 
-	if err2 != nil {
-		fmt.Println("INSERT INTO Users failed:", err2)
-		return c.NoContent(http.StatusInternalServerError)
+	if err != nil {
+		fmt.Println("INSERT INTO Users failed:", err)
+		return err
 	}
 
 	user, err := row2.LastInsertId()
@@ -62,16 +62,43 @@ func CreateUser(c echo.Context) error {
 		return err
 	}
 
-	_, err2 = db.Exec("INSERT INTO UserPrivileges(UserID, PrivilegeID) VALUES (?, 1);", user)
-	if err2 != nil {
-		fmt.Println("INSERT INTO UserPrivileges failed:", err2)
+	_, err = db.Exec("INSERT INTO UserPrivileges(UserID, PrivilegeID) VALUES (?, 1);", user)
+	if err != nil {
+		fmt.Println("INSERT INTO UserPrivileges failed:", err)
 		return c.NoContent(http.StatusInternalServerError)
 	}
 
-	_, err2 = db.Exec("INSERT INTO UserDokiThemes(UserID, ThemeID) VALUES (?, 1);", user)
-	if err2 != nil {
-		fmt.Println("INSERT INTO UserDokiThemes failed:", err2)
+	row = db.QueryRow("SELECT ImageID FROM UserImages WHERE ImageUrl LIKE 'wallpapers/%' ORDER BY RAND() LIMIT 1;")
+	image := 0
+	err = row.Scan(&image)
+	if err != nil {
+		return err
+	}
+
+	_, err = db.Exec("INSERT INTO UserSettings(UserID, UserEmail, ThemeID, UserProfileImagePoster, BgImage) VALUES (?, ?, 1, ?, 1);", user, rq.UserEmail, image)
+
+	if err != nil {
+		fmt.Println("INSERT INTO UserSettings failed:", err)
 		return c.NoContent(http.StatusInternalServerError)
+	}
+
+	rows, err := db.Query("SELECT LangCode FROM Languages;")
+	if err != nil {
+		return err
+	}
+
+	for rows.Next() {
+		LangCode := ""
+		err = rows.Scan(&LangCode)
+		if err != nil {
+			return err
+		}
+
+		_, err = db.Exec("INSERT INTO UserDefaultLanguages(UserID, LangCode) VALUES (?, ?);", user, LangCode)
+
+		if err != nil {
+			return err
+		}
 	}
 
 	return c.NoContent(http.StatusAccepted)

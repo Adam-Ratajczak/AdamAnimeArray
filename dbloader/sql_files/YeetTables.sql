@@ -1,17 +1,18 @@
 -- Drop all tables
 DROP TABLE IF EXISTS UserAuth;
-DROP TABLE IF EXISTS UserPrivileges;
-DROP TABLE IF EXISTS UserSavedAnimes;
-DROP TABLE IF EXISTS UserSearchHistory;
-DROP TABLE IF EXISTS UserReactions;
 DROP TABLE IF EXISTS UserAnimeProgress;
+DROP TABLE IF EXISTS UserDefaultLanguages;
+DROP TABLE IF EXISTS UserPrivileges;
 DROP TABLE IF EXISTS UserReactions;
 DROP TABLE IF EXISTS UserReportedPlayers;
-DROP TABLE IF EXISTS ReportedUsers;
+DROP TABLE IF EXISTS UserSavedAnimes;
+DROP TABLE IF EXISTS UserSearchHistory;
+DROP TABLE IF EXISTS UserSettings;
+DROP TABLE IF EXISTS BannedUsers;
 DROP TABLE IF EXISTS ChatEntry;
-DROP TABLE IF EXISTS PrivilegeTypes;
-DROP TABLE IF EXISTS UserDokiThemes;
 DROP TABLE IF EXISTS DokiThemes;
+DROP TABLE IF EXISTS PrivilegeTypes;
+DROP TABLE IF EXISTS ReportedUsers;
 DROP TABLE IF EXISTS Users;
 DROP TABLE IF EXISTS AnimeDemographics;
 DROP TABLE IF EXISTS AnimeProducers;

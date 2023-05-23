@@ -10,7 +10,7 @@ function UserInfo() {
 
   useEffect(() => {
     (async () => {
-      setUserInfo(await LoginMan.fetchUserInfo());
+      setUserInfo(await LoginMan.getBasicInfo());
     })();
   }, []);
 
@@ -100,15 +100,11 @@ function Menubar() {
         gradientSize: 150
       }
     });
-
-    document.getElementById("MainBtn").onclick = () => {
-      redirect("/")
-    }
   });
 
   return (
     <div id="MenuBar">
-      <div id="MainBtn"><div className="btn"></div></div>
+      <a href="/" id="MainBtn"><div className="btn"></div></a>
       <form id="Search">
         <input type="submit" id="Searchbtn" value=""></input>
         <input type="text" id="Searchbar" placeholder="Search..." autoComplete="off"></input>
