@@ -206,6 +206,15 @@ export function GetWatchlist(id, token){
     return FetchToApiPost(`/auth/watchlist`, req);
 }
 
+export function GetHistory(id, token){
+    let req = {
+        UserID: id,
+        Token: token,
+    };
+    
+    return FetchToApiPost(`/auth/history`, req);
+}
+
 export function GetWatched(id, token){
     let req = {
         UserID: id,
@@ -240,6 +249,24 @@ export function RemoveFromWatchlist(token, AnimeID){
     };
     
     return FetchToApiPost(`/auth/watchlist/remove`, req);
+}
+
+export function WriteHistory(token, AnimeID){
+    let req = {
+        Token: token,
+        AnimeID: AnimeID,
+    };
+    
+    return FetchToApiPost(`/auth/history/write`, req);
+}
+
+export function ClearHistory(id, token){
+    let req = {
+        UserID: id,
+        Token: token,
+    };
+    
+    return FetchToApiPost(`/auth/history/clear`, req);
 }
 
 export function GetUserInfo(id, token){

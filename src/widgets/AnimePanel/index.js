@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './style.scss';
 import { applyEffect } from 'fluent-reveal-effect';
+import LoginMan from '../../login_manager';
+import { redirect } from 'react-router-dom';
 
 function AnimePanel(props) {
   function get_genre_str(arr) {
@@ -30,10 +32,17 @@ function AnimePanel(props) {
         gradientSize: 150
       }
     });
+
+    document.getElementById("panel" + props.Anime.AnimeID.toString()).onclick = (ev) => {
+      if(LoginMan.LoggedIn()){
+        LoginMan.historyWrite(props.Anime.AnimeID);
+        // ev.preventDefault();
+      }
+    }
   }, [])
 
   return (
-    <a href={'/anime/' + props.Anime.AnimeID.toString()}>
+    <a id={"panel" + props.Anime.AnimeID.toString()} href={'/anime/' + props.Anime.AnimeID.toString()}>
       <div class="AnimePanel">
         <img class="AnimePanelImg" src={props.Anime.PosterURL}></img>
         <div class="AnimePanelHover">

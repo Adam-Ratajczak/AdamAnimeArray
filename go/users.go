@@ -257,6 +257,41 @@ func UserWatchlist(c echo.Context) error {
 	return c.JSON(http.StatusOK, animes)
 }
 
+func UserHistory(c echo.Context) error {
+	rq := UserAuth{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	rows, err := db.Query("SELECT AnimeID FROM UserSearchHistory WHERE UserID = ?;", id)
+	animes := []Anime{}
+	for rows.Next() {
+		AnimeID := 0
+		err = rows.Scan(&AnimeID)
+		if err != nil {
+			return err
+		}
+
+		anime, err := GetAnime(AnimeID)
+		if err != nil {
+			return err
+		}
+
+		animes = append(animes, anime)
+	}
+
+	return c.JSON(http.StatusOK, animes)
+}
+
 func UserFinished(c echo.Context) error {
 	rq := UserAuth{}
 
@@ -465,7 +500,60 @@ func UserWatchlistRem(c echo.Context) error {
 		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	_, err = db.Exec("DELETE FROM UserSavedAnimes WHERE USERID = ? AND AnimeID = ?;", id, rq.AnimeID)
+	_, err = db.Exec("DELETE FROM UserSavedAnimes WHERE UserID = ? AND AnimeID = ?;", id, rq.AnimeID)
+	if err != nil {
+		return err
+	}
+
+	return c.NoContent(http.StatusOK)
+}
+func UserHistoryWrite(c echo.Context) error {
+	rq := AnimeUserRequest{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	row = db.QueryRow("SELECT AnimeID FROM UserSearchHistory WHERE UserID = ? AND AnimeID = ?;", id, rq.AnimeID)
+	AnimeID := 0
+
+	err = row.Scan(&AnimeID)
+	if err == nil {
+		return c.NoContent(http.StatusAlreadyReported)
+	}
+
+	_, err = db.Exec("INSERT INTO UserSearchHistory(UserID, AnimeID, Seen) VALUES (?, ?, ?);", id, rq.AnimeID, time.Now())
+	if err != nil {
+		return err
+	}
+
+	return c.NoContent(http.StatusOK)
+}
+
+func UserHistoryClear(c echo.Context) error {
+	rq := UserAuth{}
+
+	err := c.Bind(&rq)
+	if err != nil {
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
+	}
+
+	_, err = db.Exec("DELETE FROM UserSearchHistory WHERE UserID = ?;", id)
 	if err != nil {
 		return err
 	}

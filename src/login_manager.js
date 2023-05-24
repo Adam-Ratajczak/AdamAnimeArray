@@ -16,6 +16,9 @@ import {
   ReportPlayer,
   GetReported,
   GetBasicUserInfo,
+  WriteHistory,
+  ClearHistory,
+  GetHistory,
 } from "./db_module";
 
 function delay(time) {
@@ -67,6 +70,10 @@ class LoginManager {
     return (await GetWatchlist(this.UserID(), this.Token())).json();
   }
 
+  async getHistory() {
+    return (await GetHistory(this.UserID(), this.Token())).json();
+  }
+
   async getWatched() {
     return (await GetWatched(this.UserID(), this.Token())).json();
   }
@@ -87,6 +94,18 @@ class LoginManager {
 
   async removeFromWatchlist(AnimeID) {
     return (await RemoveFromWatchlist(this.Token(), AnimeID)).status === 200
+      ? true
+      : false;
+  }
+
+  async historyWrite(AnimeID) {
+    return (await WriteHistory(this.Token(), AnimeID)).status === 200
+      ? true
+      : false;
+  }
+
+  async historyClear() {
+    return (await ClearHistory(this.UserID(), this.Token())).status === 200
       ? true
       : false;
   }

@@ -23,9 +23,7 @@
   max-width: max-content;
 }
 
-#aaaHeader {
-  color: $text-color;
-  text-align: left;
+#MainBtn {
   width: 40%;
 }
 
@@ -150,3 +148,56 @@
   border: 0;
   transition: all 200ms ease;
 }
+
+#HistoryList{
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: $background-color;
+  top: 35px;
+  left: 800px;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0px;
+}
+
+#HistoryList > a:first-of-type{
+  color: $foreground-color;
+  width: 100%;
+  background-color: $background-color-dark;
+  padding-left: 20px;
+}
+
+.HistoryEntry{
+  width: 400px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.HistoryEntry:hover{
+  background-color: $text-color;
+}
+
+.HistoryEntry:hover > h2{
+  color: $background-color;
+}
+
+.HistoryEntry > img{
+  max-width: 30px;
+  max-height: 40px;
+}
+
+.HistoryEntry > h2{
+  margin: 0px;
+  padding-left: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-top: 2px;
+}
+
+

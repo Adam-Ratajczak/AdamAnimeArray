@@ -74,9 +74,12 @@ function LoginBtn() {
 }
 
 function Menubar() {
+  const [history, setHistory] = useState([])
+
   useEffect(() => {
+    let searchbar = document.getElementById("Searchbar");
     document.getElementById("Search").addEventListener("submit", (event) => {
-      let searchphraze = document.getElementById("Searchbar").value;
+      let searchphraze = searchbar.value;
 
       if (searchphraze.length == 0) {
         searchphraze = "*";
@@ -87,6 +90,33 @@ function Menubar() {
       event.preventDefault();
     });
 
+    document.getElementById("ClearHistory").addEventListener("click", (event) => {
+      (async () => {
+        await LoginMan.historyClear()
+      })();
+
+      window.location.reload()
+    });
+
+    let historylist = document.getElementById("HistoryList");
+
+    searchbar.onclick = () => {
+      if(history.length > 0){ 
+        historylist.style.display = "flex";
+      }
+    }
+
+    searchbar.onmouseleave = () => {
+      historylist.style.display = "none";
+    }
+
+    historylist.onmouseenter = () => {
+      historylist.style.display = "flex";
+    }
+
+    historylist.onmouseleave = () => {
+      historylist.style.display = "none";
+    }
 
     applyEffect('#MainBtn', {
       // clickEffect: true,
@@ -102,14 +132,35 @@ function Menubar() {
     });
   });
 
+  useEffect(() => {
+    if (LoginMan.LoggedIn()) {
+      (async () => {
+        setHistory(await LoginMan.getHistory());
+      })();
+    }
+  }, [])
+
   return (
-    <div id="MenuBar">
-      <a href="/" id="MainBtn"><div className="btn"></div></a>
-      <form id="Search">
-        <input type="submit" id="Searchbtn" value=""></input>
-        <input type="text" id="Searchbar" placeholder="Search..." autoComplete="off"></input>
-      </form>
-      <LoginBtn />
+    <div>
+      <div id="MenuBar">
+        <a href="/" id="MainBtn"><div className="btn"></div></a>
+        <form id="Search">
+          <input type="submit" id="Searchbtn" value=""></input>
+          <input type="text" id="Searchbar" placeholder="Search..." autoComplete="off"></input>
+        </form>
+        <LoginBtn />
+      </div>
+      <div id="HistoryList">
+        <a href="" id="ClearHistory">Clear history</a>
+        {history.map((elem) => {
+          return (<a href={"/anime/" + elem.AnimeID}>
+            <div class="HistoryEntry">
+              <img src={elem.PosterURL} />
+              <h2>{elem.AnimeTitle}</h2>
+            </div>
+          </a>)
+        })}
+      </div>
     </div>
   );
 }
