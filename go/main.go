@@ -26,7 +26,7 @@ func main() {
 	defer db.Close()
 
 	e := echo.New()
-	e.Use(middleware.Recover(), middleware.Logger(), middleware.CORS())
+	e.Use(middleware.Recover(), middleware.Logger(), middleware.CORS(), middleware.RateLimiter(middleware.NewRateLimiterMemoryStore((20))))
 	e.GET("/info", DatabaseInfo)
 	e.GET("/songs", songs)
 	e.GET("/songs/:id", song)
