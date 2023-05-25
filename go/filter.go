@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"sort"
 	"strconv"
 	"strings"
 
@@ -148,6 +149,7 @@ func filter(c echo.Context) error {
 	res := FilterRange{}
 	res.Animes = []Anime{}
 	rows, err := db.Query("SELECT DISTINCT a.AnimeID "+sql+" LIMIT ?, ?;", rq.ABegin, rq.AEnd)
+	// fmt.Println("SELECT DISTINCT a.AnimeID " + sql)
 	if err != nil {
 		return err
 	}
@@ -169,33 +171,29 @@ func filter(c echo.Context) error {
 	return c.JSON(http.StatusOK, res)
 }
 
-func filterSqlBuilder(table string, filter []int) (string, string) {
+func filterSqlBuilder(table string, filter []int) string {
+	sort.Ints(filter)
 	coll := table[:len(table)-1]
-	join := ""
-	where := ""
+	result := ""
 	if len(filter) != 0 {
 		f := []string{}
 		for _, i := range filter {
 			f = append(f, fmt.Sprint(i))
 		}
 		i := strings.Join(f, ",")
-		p := string(table[0])
-		join = fmt.Sprintf(" JOIN Anime%v a%vxd ON a.AnimeID = a%vxd.AnimeID ", table, p, p)
-		where = fmt.Sprintf(" a%vxd.%vID IN (%v) ", p, coll, i)
+
 		if table == "Types" {
-			join = ""
-			where = fmt.Sprintf(" a.TypeID IN (%v)", i)
+			result = fmt.Sprintf(" a.TypeID IN(%v)", i)
+		} else {
+			result = fmt.Sprintf(" (SELECT GROUP_CONCAT(%vID) FROM Anime%v WHERE %vID IN (%v) AND AnimeID = a.AnimeID ORDER BY %vID) LIKE '%v' ", coll, table, coll, i, coll, i)
 		}
 	}
-	return join, where
+	return result
 }
 
 func sqlBuilder(filter FilterRequest) string {
-	sql := "FROM Animes a %v %v"
-	joins := []string{}
 	wheres := []string{}
-	sqlAppend := func(j, w string) {
-		joins = append(joins, j)
+	sqlAppend := func(w string) {
 		if w != "" {
 			wheres = append(wheres, w)
 		}
@@ -208,10 +206,9 @@ func sqlBuilder(filter FilterRequest) string {
 	sqlAppend(filterSqlBuilder("Demographics", filter.Demographics))
 	wheres = append(wheres, fmt.Sprintf(` (a.AnimeTitle LIKE "%%%v%%" OR a.EnglishTitle LIKE "%%%v%%") ORDER BY a.AnimeTitle`, filter.Title, filter.Title))
 	where := strings.Join(wheres, " AND ")
-	join := strings.Join(joins, " ")
 	if where != "" {
 		where = fmt.Sprintf(" WHERE %v ", where)
 	}
 
-	return fmt.Sprintf(sql, join, where)
+	return " FROM Animes a " + where
 }
