@@ -1,12 +1,54 @@
 @import 'src/styles/colors';
 
-.PosterOutline{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
+#content {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.RemoveAnimeImg{
-    background-color: $foreground-color;
-    padding: 5px;
+#UserHeader{
+    width: 100%;
+    min-height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#UserMain {
+    width: 100%;
+    min-height: 100%;
+    background-color: $base-color;
+    padding-left: 30px;
+}
+
+#SettingsForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#SettingsForm label{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    margin: 5px;
+}
+
+#SettingsForm > div{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#SettingsForm input{
+    width: 25%;
 }

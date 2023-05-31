@@ -509,11 +509,13 @@ function AnimeInfo() {
             </div>
             <div>
               {isLoaded() ? (
-                AnimeDesc.toString()
+                AnimeDesc.length != 0 ?
+                AnimeDesc
                   .split("\n\n")
                   .map((line) => {
                     return <p>{line}</p>;
                   })
+                  : (<p><b>No description provided for this title!</b></p>)
               ) : (
                 <div class="Loading" />
               )}

@@ -802,17 +802,24 @@ func UserInfo(c echo.Context) error {
 	rq := UserAuth{}
 	err := c.Bind(&rq)
 	if err != nil {
-		return err
+		return c.NoContent(http.StatusBadRequest)
+	}
+	row := db.QueryRow("SELECT UserID FROM UserAuth WHERE Token = ?;", rq.Token)
+	id := 0
+
+	err = row.Scan(&id)
+	if err != nil {
+		return c.NoContent(http.StatusNotAcceptable)
 	}
 
-	row := db.QueryRow("SELECT UserName, UserEmail, UserProfileImageUrl, UserProfileImagePoster FROM Users WHERE UserID = ?;", rq.UserID)
+	row = db.QueryRow("SELECT u.UserName, s.UserEmail, u.UserProfileImageUrl, (SELECT ImageUrl FROM UserImages WHERE ImageID = s.UserProfileImagePoster) FROM Users u JOIN UserSettings s ON u.UserID = s.UserID WHERE u.UserID = ?;", id)
 
 	res := UserRequest{}
 
 	err = row.Scan(&res.UserName, &res.UserEmail, &res.UserProfileImageUrl, &res.UserProfileImagePoster)
 
 	if err != nil {
-		return c.NoContent(http.StatusNotAcceptable)
+		return err
 	}
 
 	return c.JSON(http.StatusAccepted, res)
