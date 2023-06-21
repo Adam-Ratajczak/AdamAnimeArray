@@ -125,7 +125,7 @@ function List(props) {
               EpNum={elem.WatchedAnime.EpisodeNum}
               Type={elem.WatchedAnime.Type.Name}
               TypeID={elem.WatchedAnime.Type.ID}
-              Mode="finished"
+              Mode="watched"
               Watched={elem.Watched}
               />
             ))
