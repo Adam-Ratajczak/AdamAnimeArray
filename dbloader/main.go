@@ -320,6 +320,7 @@ func main() {
 		loadSQLFile("sql_files/AnimeTables.sql")
 		loadSQLFile("sql_files/UserTables.sql")
 		loadSQLFile("sql_files/Last.sql")
+		loadSQLFile("sql_files/Images.sql")
 
 		loadSQLFile(path + "/structure/DemographicsTable.sql")
 		loadSQLFile(path + "/structure/GenresTable.sql")
